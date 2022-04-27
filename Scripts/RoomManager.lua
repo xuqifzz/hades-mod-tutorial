@@ -5595,7 +5595,7 @@ function HandleSecretSpawns( currentRun )
 	local secretPointIds = GetIdsByType({ Name = "SecretPoint" })
 
 	-- Secret Door
-	if not IsEmpty( secretPointIds ) and IsSecretDoorEligible( currentRun, currentRoom ) then
+	if not IsEmpty( secretPointIds ) then
 		currentRoom.ForceSecretDoor = true
 		UseHeroTraitsWithValue("ForceSecretDoor", true)
 		local secretRoomData = ChooseNextRoomData( currentRun, { RoomDataSet = RoomSetData.Secrets } )
