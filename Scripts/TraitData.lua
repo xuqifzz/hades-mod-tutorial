@@ -10639,14 +10639,14 @@ TraitData =
 				TraitName = "AresRangedTrait",
 				WeaponNames = WeaponSets.HeroNonPhysicalWeapons,
 				ProjectileProperty = "VacuumStrength",
-				ChangeValue = 300,
+				ChangeValue = 3000,
 				ChangeType = "Add",
 			},
 			{
 				TraitName = "AresRangedTrait",
 				WeaponNames = WeaponSets.HeroNonPhysicalWeapons,
 				ProjectileProperty = "VacuumDistance",
-				ChangeValue = 100,
+				ChangeValue = 3000,
 				ChangeType = "Add",
 			},
 			{
