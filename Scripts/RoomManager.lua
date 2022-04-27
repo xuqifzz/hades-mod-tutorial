@@ -5725,7 +5725,7 @@ function HandleSecretSpawns( currentRun )
 
 	-- Fishing
 	local fishingPoints = GetInactiveIdsByType({ Name = "FishingPoint" })
-	if not IsEmpty( fishingPoints ) and IsFishingEligible( currentRun, currentRoom ) then
+	if not IsEmpty( fishingPoints ) then
 		currentRoom.ForceFishing = true
 		UseHeroTraitsWithValue("ForceFishingPoint", true)
 		CurrentRun.CurrentRoom.FishingPointId = GetRandomValue(fishingPoints)
