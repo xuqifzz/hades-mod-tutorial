@@ -887,12 +887,12 @@ MetaUpgradeOrder =
 	{ "StaminaMetaUpgrade", "PerfectDashMetaUpgrade" },
 	{ "StoredAmmoVulnerabilityMetaUpgrade", "StoredAmmoSlowMetaUpgrade" },
 	{ "AmmoMetaUpgrade", "ReloadAmmoMetaUpgrade" },
-	{ "MoneyMetaUpgrade", "InterestMetaUpgrade" },
+	{ "MoneyMetaUpgrade", "RerollPanelMetaUpgrade" },
 	{ "HealthMetaUpgrade", "HighHealthDamageMetaUpgrade" },
 	{ "VulnerabilityEffectBonusMetaUpgrade", "GodEnhancementMetaUpgrade" },
 	{ "RareBoonDropMetaUpgrade", "RunProgressRewardMetaUpgrade" },
 	{ "EpicBoonDropMetaUpgrade", "DuoRarityBoonDropMetaUpgrade" },
-	{ "RerollMetaUpgrade", "RerollPanelMetaUpgrade" },
+	{ "RerollMetaUpgrade", "InterestMetaUpgrade" },
 }
 
 BiomeTimeLimits =
