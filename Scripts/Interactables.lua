@@ -1308,7 +1308,7 @@ function AttemptPanelReroll( screen, button )
 
 	AddInputBlock({ Name = "AttemptPanelReroll" })
 	HideTopMenuScreenTooltips({ Id = button.Id })
-	CurrentRun.NumRerolls = CurrentRun.NumRerolls - cost
+	CurrentRun.NumRerolls = CurrentRun.NumRerolls + 1
 	CurrentRun.CurrentRoom.SpentRerolls = CurrentRun.CurrentRoom.SpentRerolls or {}
 	IncrementTableValue( CurrentRun.CurrentRoom.SpentRerolls, button.RerollId, RerollCosts.ReuseIncrement )
 	UpdateRerollUI( CurrentRun.NumRerolls )
@@ -1338,7 +1338,7 @@ function AttemptReroll( run, target )
 		return
 	end
 
-	run.NumRerolls = run.NumRerolls - 1
+	-- run.NumRerolls = run.NumRerolls - 1
 	UpdateRerollUI( run.NumRerolls )
 
 	RandomSynchronize( run.NumRerolls )
