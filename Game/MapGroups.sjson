@@ -1,0 +1,305 @@
+{
+  MapGroups = [
+
+    {
+      Name = "Tartarus"
+      Maps = [
+        {
+          Name = "A_*"
+        }
+        {
+          Name = "RoomSimple01"
+        }
+        {
+          Name = "RoomOpening"
+        }
+      ]
+	  Using = [
+		"Fx\Tartarus_Pillar04TransitionA"
+		"Fx\Tartarus_Pillar04TransitionB"
+	    "Fx\Tartarus_Pillar04TransitionC"
+		"Fx\Tartarus_Fountain_01_Water"
+		"Fx\Tartarus_Ghost_03_Dissipate"
+		"Fx\DoorOpen"
+		"Fx\DoorClose"
+		"Fx\LavaRippleA"
+		"Fx\Traps_DartTrapTop_Activate"
+		"Fx\TrapsDartPadPressedSmoke"
+		"Fx\FuryAlectoSpikes"
+		"Fx\FuryAlectoThrow"
+		"Fx\FuryAlectoThrowEnd"
+		"Fx\FuryBeamFire"
+		"Fx\FuryTisiphoneGhosts"
+		"Fx\FuryWhipArcAlecto"
+		"Fx\FuryRunBlur"
+		"Fx\TisiphoneSupportSmoke"
+		"Fx\SoulFlowA"
+		"Fx\SoulFlowB"
+		"Fx\Tartarus_UrnExpensive_01_Shine"
+		"Screens\BiomeMap\BiomeMapTraversalAtoB"
+		"Fx\HouseDoor02Open\HouseDoor02Open0120"
+
+	  	"Fx\HadesDisappear"
+		"Fx\SmokeTrapLoop"
+	  ]
+    }
+    {
+      Name = "DeathArea"
+      Maps = [
+        {
+          Name = "DeathArea*"
+        }
+        {
+          Name = "RoomPreRun"
+        }
+      ]
+	  Using = [
+	  	"Fx\House_Door_01a_Open"
+	  	"Fx\House_Door_01a_Close"
+	  	"Fx\House_Door_03_Open"
+	  	"Fx\House_Door_03_Close"
+	  	"Fx\HouseContractOpen"
+	  	"Fx\HouseContractClose"
+		"Fx\LevelUpMirrorOrbShine"
+		"Fx\SoulFlowA"
+		"Fx\SoulFlowB"
+		"Fx\WeaponEnchantmentInteract"
+		"Fx\TitanBloodFront"
+		"Fx\TitanBloodBack"
+		"Fx\StyxSewageDripB"
+		"GUI\Screens\CosmeticIcons"
+		"Fx\HydraToothSmokeDark"
+		"Fx\HydraToothSmokeBright"
+		"Fx\DeathAreaBloodSplashStairs"
+		"Fx\StyxDripRipple"
+		"Fx\PoseidonWallSplash"
+		"GUI\FamilyPortraits"
+		"GUI\Epilogue"
+		"Fx\HouseFireplaceFire"
+		"Fx\HouseFireplaceFireB"
+		"Fx\HouseFireplaceSmoke"
+		"Fx\HouseAquariumWater"
+	  ]
+    }
+    {
+      Name = "Asphodel"
+      Map = {
+        Name = "B_*"
+      }
+	  Using = [
+	  	"Fx\Vignette\VignetteLavaA"
+	  	"Fx\Vignette\VignetteLavaB"
+	  	"Fx\Asphodel_Vase_01d_Shine"
+	  	"Fx\Asphodel_Fountain_Water"
+	  	"Fx\Asphodel_Terrain_16c"
+	  	"Fx\Asphodel_Terrain_16d"
+	  	"Fx\Asphodel_Terrain_16e"
+	  	"Fx\AsphodelBoatSink"
+	  	"Fx\AsphodelBoatRipple"
+		"Fx\LavaFallA"
+		"Fx\LavaFallB"
+		"Fx\LavaFallC"
+		"Fx\LavaFallD"
+		"Fx\LavaFallE"
+		"Fx\LavaFallF"
+		"Fx\LavaFallG"
+		"Fx\LavaWave"
+		"Fx\LavaWaveB"
+		"Fx\LavaWaveC"
+		"Fx\LavaWaveD"
+		"Fx\LavaRippleA"
+		"Fx\LavaRippleB"
+		"Fx\LavaPuddleIn"
+		"Fx\LavaPuddleOut"
+		"Fx\LavaGoopStep"
+		"Fx\LavaFire"
+		"Fx\LavaEmbers"
+		"Fx\LavaBubble"
+		"Fx\LavaJellyCollapse"
+		"Fx\LavaMoundA"
+		"Fx\LavaMoundB"
+		"Fx\LavaMoundD"
+		"Fx\Asphodel_Stalagmite04TransitionA"
+		"Fx\Asphodel_Stalagmite04TransitionB"
+		"Fx\Asphodel_Stalagmite04TransitionC"
+		"Fx\AsphodelSkullDeath"
+		"Fx\Asphodel_Stalagmite_05_Disintegrate"
+		"Fx\Asphodel_Pillar06TransitionA"
+		"Fx\Asphodel_Pillar06TransitionB"
+		"Fx\Asphodel_Pillar06TransitionC"
+		"Fx\LavaSplashProjectileHead"
+		"Fx\LavaSplashProjectileTailA"
+		"Fx\LavaSplashProjectileTailB"
+		"Fx\LavaSplashProjectileTailC"
+		"Fx\LavaSplashProjectileTailD"
+		"Fx\SmokeTrapLoop"
+		"Fx\HydraTouchdown"
+		"Fx\HydraHeadLavaPop"
+		"Fx\HydraRoarPiece"
+		"Fx\HydraTooth"
+		"Fx\HydraToothSmokeBright"
+		"Fx\AshFootstep"
+		"Fx\SoulFlowA"
+		"Fx\SoulFlowB"
+		"Fx\CrusherUnitSlamRing"
+		"Screens\BiomeMap\BiomeMapTraversalBtoC"
+		"Fx\HydraToothSmokeDark"
+		"Fx\HydraBubble"
+		"Fx\HydraBaseDeath"
+		"Fx\MurderBoatGate"
+	  ]
+    }
+    {
+      Name = "Elysium"
+      Map = {
+        Name = "C_*"
+      }
+	  Using = [
+		"Fx\Elysium_Pillar04TransitionB"
+		"Fx\Elysium_Pillar04TransitionA"
+		"Fx\Elysium_Pillar04TransitionC"
+		"Fx\Elysium_Pillar06TransitionA"
+		"Fx\ElysiumDoorClose"
+		"Fx\ElysiumDoorOpen"
+		"Fx\MinotaurAxeArc"
+		"Fx\TheseusSpearReturnPointSpear"
+		"Fx\LavaRippleA"
+		"Fx\GroundFogIso"
+		"Fx\ElysiumFogCloudE"
+		"Fx\ElysiumFogCloudD"
+		"Fx\ElysiumFogCloudC"
+		"Fx\ElysiumFogCloudB"
+		"Fx\ElysiumFogCloud"
+		"Fx\ElysiumFogClouF"
+		"Fx\Elysium_Urn_04_Shine"
+		"Fx\TMConfetti"
+		"Fx\MinotaurAxeSwipe"
+		"Screens\BiomeMap\BiomeMapTraversalCtoD"
+	  	"Fx\HadesAmmoWeapon"
+	    "Fx\HadesAmmoWeaponCirclesBright"
+	    "Fx\HadesAmmoWeaponCirclesDark"
+	  ]
+    }
+	{
+		Name = "Styx"
+		Map = {
+		  Name = "D_*"
+		}
+		Using = [
+		  "Fx\Styx_Vase_Gold_01_Shine"
+		  "Fx\Styx_Vase_01_Shatter"
+		  "Fx\Styx_Vase_02_Shatter"
+		  "Fx\Styx_Vase_03_Shatter"
+		  "Fx\StyxHealthFountainWater"
+		  "Fx\StyxDoorOpen"
+		  "Fx\StyxDoorClose"
+		  "Fx\StyxPillarTransitionA"
+		  "Fx\StyxPillarTransitionB"
+		  "Fx\StyxPillarTransitionC"
+		  "Fx\BossPillarTransitionA"
+		  "Fx\BossPillarTransitionB"
+		  "Fx\BossPillarTransitionC"
+		  "Fx\DashCrackSnowHades"
+		  "Fx\HadesCastSkull"
+		  "Fx\GraspingHands"
+		  "Fx\HadesAmmo"
+		  "Fx\HadesAmmoBurst"
+		  "Fx\HadesAmmoWeapon"
+		  "Fx\HadesAmmoWeaponCirclesBright"
+		  "Fx\HadesAmmoWeaponCirclesDark"
+		  "Fx\HadesBattleSpawnCircle"
+		  "Fx\HadesBattleSpawnFront"
+		  "Fx\HadesBeam"
+		  "Fx\HadesBeamCapEnd"
+		  "Fx\HadesBeamCapStart"
+		  "Fx\HadesBeamPreview"
+		  "Fx\HadesBidentStrike"
+		  "Fx\HadesBidentSwipe"
+		  "Fx\HadesCastParticle"
+		  "Fx\HadesCastTrailA"
+		  "Fx\HadesCastTrailB"
+		  "Fx\HadesBattleDashStreaks"
+		  "Fx\HadesDisappear"
+		  "Fx\HadesStunTotemExplode"
+		  "Fx\HadesStunTotemFlame"
+		  "Fx\HadesStunTotemSpawn"
+		  "Fx\HadesStunTotemSpawnDecal"
+		  "Fx\StyxArchCrumble"
+		  "Fx\StyxBurrowHoleDecalIn"
+		  "Fx\StyxBurrowHoleDecalOut"
+		  "Fx\StyxDripRipple"
+		  "Fx\StyxFlies"
+		  "Fx\StyxLightShaft"
+		  "Fx\StyxPoisonCureWater"
+		  "Fx\StyxSewageDripB"
+		  "Fx\ShurikenTrap"
+		  "Fx\ShurikenStop"
+		  "Fx\PoisonTrapSmoke"
+		  "Fx\ElysiumFogCloud"
+		  "Fx\ElysiumFogClouF"
+		  "Fx\AphroditeDebuffB"
+		  "Fx\Travel_Door_03_Open"
+		  "Fx\Travel_Door_03_Close"
+		  "Fx\HydraToothSmokeDark"
+		  "Fx\LavaSplashProjectileHead"
+		  "Screens\BiomeMap\BiomeMapTraversalDtoE"
+		  "Animations\Weapons\GunLucifer\IdleOff\GunLuciferIdleOff0001"
+		  "Animations\Weapons\ShieldBeowulf\IdleOff\ShieldBeowulfIdleOff0001"
+		  "Animations\Weapons\BowRama\IdleOff\BowRamaIdleOff0001"
+		  "Animations\Weapons\SwordArthur\IdleOff\SwordArthurIdleOff0001"
+		  "Animations\Weapons\LunarSpear\IdleOff\SpearLunarIdleOff0001"
+		  "Animations\Weapons\FistsGilgamesh\IdleOff\FistsGilgameshIdleOff0001"
+		  "Fx\CharonWaveStraight"
+		  "Fx\HadesBidentReturnPoint"
+		]
+	}
+    {
+      Name = "Chaos"
+      Map = {
+        Name = "RoomSecret*"
+      }
+    }
+    {
+      Name = "Erebus"
+      Map = {
+        Name = "RoomChallenge*"
+      }
+	  Using = [
+	    "Fx\HydraToothSmokeDark"
+	  ]
+    }
+    {
+    	Name = "Surface"
+    	Maps = [
+    		{ 
+    			Name = "Return*" 
+    		}
+    		{
+    			Name = "E_*"
+    		}
+    	]
+		Using = [
+			"Screens\RoomTransition\RoomTransition0020"
+			"Fx\EndingBoatRipple"
+		]
+    }
+    {
+    	Name = "Charon"
+    	Maps = [
+    		{ 
+    			Name = "Charon*" 
+    		}
+    	]
+		Using = [
+			"Fx\CharonMeleeArc"
+			"Fx\CharonMeleeArcLong"
+			"Fx\CharonWaveStraight"
+			"Fx\CharonGhostCharge"
+			"Fx\CharonGhostChargeImpact"
+			"Fx\CharonGhostChargePhaseIn"
+			"Fx\CharonMoveTrail"
+			"Fx\Travel_CharonPillar_01_Disintegrate"
+		]
+    }
+  ]
+}

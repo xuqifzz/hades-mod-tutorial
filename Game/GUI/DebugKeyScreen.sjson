@@ -1,0 +1,97 @@
+{
+  DebugKeyScreen = {
+    Platform = "default"
+    SelectionSound = "null"
+    UseSelectionSoundWithMouse = false
+    UseClickAnimation = false
+    GamepadCursorControl = true
+    TransitionOnTime = 0.0
+    TransitionOffTime = 0.0
+    FreeFormSelectSuccessDistance = 16
+    FreeFormSelectSuccessDistanceStep = 4
+    ValidateCursorLocation = false
+    Back = {
+      Width = 1920
+      Height = 1080
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.9
+    }
+    DebugKeyButton = {
+      Name = "DebugKeyButton"
+      X = 50
+      Y = 150
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      Font = "MonospaceTypewriterBold"
+      FontSize = 14
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      OutlineThickness = 1
+      SelectedTextRed = 1.0
+      SelectedTextGreen = 1.0
+      SelectedTextBlue = 0.0
+      SpacingX = 960
+      SpacingY = 40
+      Justification = "Left"
+    }
+    LeftArrow = {
+      X = 600
+      Y = 50
+      Graphic = "GUI\\Graybox\\Arrow_Left"
+      SelectedGraphic = "GUI\\Graybox\\Arrow_Left_Highlight"
+      SelectedAnimationIsOverlay = false
+      PressSound = "/Leftovers/Menu Sounds/RosterSelection"
+      FadeOpacity = 0.0
+    }
+    RightArrow = {
+      InheritFrom = "LeftArrow"
+      AttachTo = "LeftArrow"
+      OffsetX = 100
+      Graphic = "GUI\\Graybox\\Arrow_Right"
+      SelectedGraphic = "GUI\\Graybox\\Arrow_Right_Highlight"
+      SelectedAnimationIsOverlay = false
+      PressSound = "/Leftovers/Menu Sounds/RosterSelection"
+      FadeOpacity = 0.0
+    }
+    FileFilter = {
+      X = 50
+      Y = 50
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 40
+      Width = 700
+      Height = 200
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+    }
+    FileFilterHint = {
+      InheritFrom = "FileFilter"
+      AttachTo = "FileFilter"
+      TextRed = 0.6
+      TextGreen = 0.6
+      TextBlue = 0.6
+      HelpTextId = "FilterSearchHint"
+    }
+    CancelButton = {
+      X = 1800
+      Y = 60
+      Graphic = "GUI\ExitButton"
+      Scale = 0.5
+      SelectedGraphic = "GUI\ExitButtonHighlight"
+      SelectedAnimationIsOverlay = false
+    }
+  }
+}

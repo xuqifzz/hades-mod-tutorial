@@ -1,0 +1,445 @@
+{
+  MiscSettingsScreen =
+  {
+    Platform = "default"
+    CloseSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.15
+    ShowControls = false
+    ForceShowCursor = true
+    GamepadSelectionStyle = "FreeForm"
+	FreeFormSelectGridLock = true
+	FreeFormSelectInitialStepDistance = 24
+    FreeFormSelectStepDistance = 16
+    FreeFormSelectSuccessDistance = 8
+    FreeFormSelectSuccessDistanceStep = 14
+
+	Back =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Width = 1920
+      Height = 1080
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "GUI\Shell\Box_FullScreen"
+      Scale = 1.0
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 168
+      Justification = "Center"
+      VerticalJustification = "Center"
+      DisplayNameId = "SettingsScreen_Options"
+      Font = "SpectralSCLightTitling"
+      
+      AlwaysUpperCase = false
+      FontSize = 40
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0.1
+      TextOutlineGreen = 0.1
+      TextOutlineBlue = 0.1
+      OutlineThickness = 1
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 0
+      ShadowBlur = 2
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.05
+      FadeDelayMax = 0.1
+      FadeSpeed = 10.0
+    }
+
+	/* Sliders */
+    BrightnessLabel =
+	{
+      X = 810
+      Y = 500
+      Justification = "Right"
+      VerticalJustification = "Center"
+      HelpTextId = "MiscSettingsScreen_Brightness"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 22
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      SelectedTextRed = 0.85
+      SelectedTextGreen = 0.6
+      SelectedTextBlue = 0.25
+      AlwaysUpperCase = false
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.1
+      FadeDelayMax = 0.15
+      FadeSpeed = 10.0
+      NonEnglishScaleModifier = 0.73
+    }
+
+    BrightnessSlider =
+	{
+      X = 1050
+      Y = 500
+      HighlightOffsetX = -160
+      BackGraphic = "GUI\\Shell\\settings_bar_bg"
+      FillGraphic = "GUI\\Shell\\settings_bar_fill"
+      TextJustification = "Right"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.05
+      FadeDelayMax = 0.1
+      FadeSpeed = 10.0
+      Height = 50
+	  GamepadSelectionStyle = "VerticalCycle"
+    }
+
+    MasterLabel =
+    {
+		InheritFrom = "BrightnessLabel"
+		X = 810
+		Y = 260
+		HelpTextId = "MiscSettingsScreen_MasterVolume"
+    }
+    MasterSlider =
+	{
+		X = 1050
+		Y = 260
+		InheritFrom = "BrightnessSlider"
+		ActionSound = "/SFX/StabSplatterMenu"
+    }
+
+    MusicLabel =
+	{
+      InheritFrom = "BrightnessLabel"
+      AttachTo = "MasterLabel"
+      OffsetY = 60
+      HelpTextId = "MiscSettingsScreen_MusicVolume"
+    }
+    MusicSlider =
+    {
+      InheritFrom = "BrightnessSlider"
+      AttachTo = "MasterSlider"
+      OffsetY = 60
+      ActionSound = "/Music/OrpheusSong1VACOUSTICmenu"
+    }
+
+    SfxLabel =
+	{
+      InheritFrom = "BrightnessLabel"
+      AttachTo = "MusicLabel"
+      OffsetY = 60
+      HelpTextId = "MiscSettingsScreen_SfxVolume"
+    }
+    SfxSlider =
+	{
+      InheritFrom = "BrightnessSlider"
+      AttachTo = "MusicSlider"
+      OffsetY = 60
+      ActionSound = "/SFX/StabSplatterMenu"
+    }
+
+    DialogueLabel =
+	{
+      InheritFrom = "BrightnessLabel"
+      AttachTo = "SfxLabel"
+      OffsetY = 60
+      HelpTextId = "MiscSettingsScreen_DialogueVolume"
+    }
+    DialogueSlider =
+	{
+      InheritFrom = "BrightnessSlider"
+      AttachTo = "SfxSlider"
+      OffsetY = 60
+      ActionSound = "/VO/HadesLaughMenu"
+    }
+
+	/* Toggles */
+
+	/* Row 1 */
+
+    SubtitlesButton =
+	{
+      AttachTo = "BrightnessLabel"
+      OffsetX = -120
+      OffsetY = 75
+      HelpTextId = "MiscSettingsScreen_SubtitlesLabel"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Graphic = "GUI\\Shell\\settings_toggle_on"
+      AlternateGraphic = "GUI\\Shell\\settings_toggle_off"
+      AddTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 22
+      NonEnglishScaleModifier = 0.8
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      SelectedTextRed = 0.85
+      SelectedTextGreen = 0.6
+      SelectedTextBlue = 0.25
+      AddColor = true
+      Red = 0
+      Green = 0
+      Blue = 0
+      SelectedRed = 0.2
+      SelectedGreen = 0.2
+      SelectedBlue = 0.2
+      AlwaysUpperCase = false
+      TextOffsetX = -60
+      TextJustification = "Right"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.15
+      FadeDelayMax = 0.2
+      FadeSpeed = 10.0
+      ToggleOnSound = "/SFX/Menu Sounds/MirrorMenuStatIncrease"
+      ToggleOffSound = "/SFX/Menu Sounds/MirrorMenuStatLower"
+      PressTopAnimation = "InvincibleHitSpark"
+	  GamepadSelectionStyle = "Direction"
+	  Connections =
+	  [
+		"BrightnessSlider"
+		"VibrationButton"
+		"EasyModeButton"
+	  ]
+    }
+
+	EasyModeButton =
+	{
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "SubtitlesButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_EasyModeLabel"
+      ToggleOnSound = "/Leftovers/Menu Sounds/TalismanRockUpLEGENDARY"
+      ToggleOffSound = "/SFX/Menu Sounds/MirrorMenuStatLower"
+	  DisabledPressSound = "/SFX/Menu Sounds/CameraZoom"
+	  TextSymbolScale = 1.3
+	  GamepadSelectionStyle = "FreeForm"
+	  Connections = []
+    }
+
+	GameplayTimerButton =
+	{
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "EasyModeButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_GameplayTimerLabel"
+	  GamepadSelectionStyle = "Direction"
+	  Connections =
+	  [
+		"BrightnessSlider"
+		"DamageNumbersButton"
+		"EasyModeButton"
+	  ]
+    }
+
+	/* Row 2 */
+
+    VibrationButton =
+	{
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "SubtitlesButton"
+      OffsetX = 0
+      OffsetY = 70
+      HelpTextId = "MiscSettingsScreen_VibrationLabel"
+	  GamepadSelectionStyle = "FreeForm"
+	  Connections = []
+    }
+
+	InputLockButton =
+	{
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "VibrationButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_InputLockLabel"
+	  GamepadSelectionStyle = "FreeForm"
+	  Connections = []
+    }
+
+  DamageNumbersButton =
+  {
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "InputLockButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_DamageNumbersLabel"
+    GamepadSelectionStyle = "FreeForm"
+    Connections = []
+    }
+
+	/* Row 3 */
+
+  AltCursorButton =
+  {
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "VibrationButton"
+      OffsetX = 0
+      OffsetY = 70
+      HelpTextId = "MiscSettingsScreen_AltCursorLabel"
+    GamepadSelectionStyle = "FreeForm"
+    Connections = []
+    }
+
+    CameraShakeButton =
+    {
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "AltCursorButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_CameraShakeLabel"
+	  GamepadSelectionStyle = "FreeForm"
+	  Connections = []
+    }
+
+    AnalyticsButton =
+	{
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "CameraShakeButton"
+      OffsetX = 400
+      OffsetY = 0
+      HelpTextId = "MiscSettingsScreen_AnalyticsLabel"
+	  GamepadSelectionStyle = "FreeForm"
+	  Connections = []
+    }
+
+    /* Row 4 */
+
+    EpicServiceButton =
+  {
+      InheritFrom = "SubtitlesButton"
+      AttachTo = "AltCursorButton"
+      OffsetX = 0
+      OffsetY = 70
+      HelpTextId = "MiscSettingsScreen_EpicSettingsToggle"
+    GamepadSelectionStyle = "FreeForm"
+    Connections = []
+    }
+
+    DescriptionBox =
+	{
+		X = 960
+		Y = 845
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansRegular"
+      FontSize = 20
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.0
+      ShadowGreen = 0.0
+      ShadowBlue = 0.0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      Width = 900
+      Height = 600
+      LangPlScaleModifier = 0.85
+      LangDeScaleModifier = 0.85
+      LangRuScaleModifier = 0.85
+      LangKoScaleModifier = 0.75
+      LangJaScaleModifier = 0.95
+    }
+
+	/* Info Panel */
+    DimBox =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.4
+    }
+    InfoPanel =
+	{
+      X = 960
+      Y = 540
+      Justification = "Left"
+      VerticalJustification = "Center"
+    }
+    InfoText =
+	{
+      X = 960
+      Y = 540
+      Justification = "Left"
+      VerticalJustification = "Center"
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      Width = 830
+      Height = 1080
+    }
+
+	/* Controls */
+    CancelButton =
+	{
+      Graphic = "CancelButtonFlash"
+      UnderCursorOnAnimation = "CancelButtonFlashHover"
+      UnderCursorOffAnimation = "CancelButtonFlash"
+      FreeFormSelectable = false
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 960
+      Y = 1030
+      FlashMin = 0.0
+      FlashMax = 0.5
+      FlashSpeed = 1.2
+      FlashRed = 0.6
+      FlashGreen = 0.4
+      FlashBlue = 0.0
+      MouseOverSound = "/SFX/Menu Sounds/DialoguePanelOut"
+      PressSound = "null"
+	  Scale = 0.8
+    }
+
+    XButton =
+	{
+      X = 960
+      Y = 935
+      Graphic = "Button_Default"
+      UnderCursorOnAnimation = "Button_HighlightOn"
+      UnderCursorOffAnimation = "Button_HighlightOff"
+      PressAnimation = "Button_Press"
+      DisplayNameId = "MiscSettingsScreen_RestoreDefaults"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 26
+      TextRed = 0.8
+      TextGreen = 0.714
+      TextBlue = 0.588
+      TextOffsetY = 0
+      PressSound = "/SFX/Menu Sounds/GodBoonChoiceConfirm"
+      Width = 280
+      Height = 60
+	  FreeFormSearchFromOffsetX = 0
+	  FreeFormSearchFromOffsetY = 0
+    }
+
+  }
+}

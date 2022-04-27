@@ -1,0 +1,2063 @@
+{
+  Animations = [
+
+    /* _____________________Charon_____________________ */
+    
+  {
+      Name = "Charon_IdleShop"
+      FilePath = "Animations\Charon\IdleShop\CharonIdleShop"
+      Type = "Book"
+      VideoTexture = "CharonIdleShop_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonIdleShop.sga"
+      EndFrame = 50
+      Loop = true
+      NumAngles = 16
+      NumFrames = 50
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      CreateAnimation = "CharonAura_Shop"
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+{
+      Name = "Charon_IdleGreeting"
+      FilePath = "Animations\Charon\IdleGreeting\CharonIdleGreeting"
+      Type = "Book"
+      VideoTexture = "CharonIdleGreeting_Bink"
+      ChainTo = "Charon_IdleShop"
+      FrameDataFile = "Game\Animations\FrameData\CharonIdleShop.sga"
+      EndFrame = 100
+      Loop = false
+      NumAngles = 8
+      NumFrames = 100
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "Charon_IdleBattle"
+      FilePath = "Animations\Charon\IdleBattle\CharonIdleBattle"
+      Type = "Book"
+      VideoTexture = "CharonIdleBattle_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonIdleBattle.sga"
+      EndFrame = 50
+      Loop = true
+      NumAngles = 64
+      NumFrames = 50
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "Charon_Move"
+      FilePath = "Animations\Charon\Move\CharonMove"
+      Type = "Book"
+      VideoTexture = "CharonMove_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonMove.sga"
+      PlaySpeed = 30
+      EndFrame = 22
+      Loop = true
+      NumAngles = 32
+      NumFrames = 22
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      VisualFx = "CharonMoveTrail"
+      VisualFxDistanceMin = 40
+      VisualFxDistanceMax = 40
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonMoveTrail"
+      Type = "Book"
+      FilePath = "Fx\CharonMoveTrail\CharonMoveTrail"
+      NumFrames = 1
+      NumAngles = 32
+      Material = "Unlit"
+      GroupName = "Standing"
+      AddColor = true
+      StartRed = 0.34
+      StartGreen = 0.18
+      StartBlue = 0.5
+      EndRed = 0
+      EndGreen = 0
+      EndBlue = 0
+      Duration = 0.5
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Take"
+      OffsetZ = 100
+      AngleFromOwner = "Take"
+      ColorFromOwner = "Ignore"
+      StartAlpha = 1
+      EndAlpha = 0
+      EaseIn = 0.5
+      EaseOut = 1
+      DrawBehindOwner = true
+    }
+
+
+    {
+      Name = "CharonTaunt"
+      FilePath = "Animations\Charon\Taunt\CharonTaunt"
+      ChainTo = "Charon_IdleBattle"
+      Type = "Book"
+      VideoTexture = "CharonTaunt_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonTaunt.sga"
+      AngleFromOwner = "Ignore"
+      EndFrame = 60
+      Loop = false
+      NumAngles = 1
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /* _____________________MeleeFront_____________________ */
+    
+    {
+      Name = "CharonMeleeFront_PreAttackRight"
+      FilePath = "Animations\Charon\MeleeFront\CharonMeleeFront"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFront_Bink"
+      EndFrame = 62
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFront.sga"
+      NumAngles = 16
+      NumFrames = 62
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+
+        { DurationFrames = 1 }/*pre*/      
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonMeleeFront_AttackRightToLeft" /*___use CharonMeleeFront_ReturnToIdleLeft ___*/
+      FilePath = "Animations\Charon\MeleeFront\CharonMeleeFront"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFront_Bink"
+      EndFrame = 62
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFront.sga"
+      NumAngles = 16
+      NumFrames = 62
+      StartFrame = 1
+      OffsetY = -115.0
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+
+        { DurationFrames = 0 }/*pre*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 } /*Skip to line up  */
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }/*Frame 10*/ 
+
+        { DurationFrames = 3 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    
+    {
+      Name = "CharonMeleeFront_PreAttackLeft"
+      FilePath = "Animations\Charon\MeleeFront\CharonMeleeFront"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFront_Bink"
+      EndFrame = 62
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFront.sga"
+      NumAngles = 16
+      NumFrames = 62
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+
+        { DurationFrames = 0 }/*pre*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+
+    {
+      Name = "CharonMeleeFront_AttackLeftToRight"
+      FilePath = "Animations\Charon\MeleeFront\CharonMeleeFront"
+      ChainTo = "CharonMeleeFront_ReturnToIdleRight"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFront_Bink"
+      EndFrame = 62
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFront.sga"
+      NumAngles = 16
+      NumFrames = 62
+      StartFrame = 1
+      OffsetY = -115.0
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+
+        { DurationFrames = 0 }/*pre*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 3 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+
+    {
+      Name = "CharonMeleeFront_ReturnToIdleRight"
+      FilePath = "Animations\Charon\MeleeFront\CharonMeleeFront"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFront_Bink"
+      EndFrame = 62
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFront.sga"
+      NumAngles = 16
+      NumFrames = 62
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+
+        { DurationFrames = 0 }/*pre*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 50*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*60*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*_____MeleeFront_RETURN TO IDLE Left____This is connecting from the attack Right to Left*/
+    {
+      Name = "CharonMeleeFront_ReturnToIdleLeft"
+      FilePath = "Animations\Charon\MeleeFrontL_RTI\CharonMeleeFrontL_RTI"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeFrontLRTI_Bink"
+      EndFrame = 30
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeFrontL_RTI.sga"
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      Sound = "null"
+      /*StopSoundOnFinishFade = 0.65*/
+      Slides = [
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*30*/
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+ /*___AttackBackSwing___*/
+    {
+      Name = "CharonMeleeBackSwing_PreAttack"
+      FilePath = "Animations\Charon\MeleeBackSwing\CharonMeleeBackSwing"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeBackSwing_Bink"
+      EndFrame = 48
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeBackSwing.sga"
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 2 }/*preAttack*/      
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*48*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "CharonMeleeBackSwing_Attack"
+      FilePath = "Animations\Charon\MeleeBackSwing\CharonMeleeBackSwing"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeBackSwing_Bink"
+      EndFrame = 48
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeBackSwing.sga"
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -115.0
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/ 
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*48*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonMeleeBackSwing_ReturnToIdle"
+      FilePath = "Animations\Charon\MeleeBackSwing\CharonMeleeBackSwing"
+      Type = "Slide"
+      VideoTexture = "CharonMeleeBackSwing_Bink"
+      EndFrame = 48
+      FrameDataFile = "Game\Animations\FrameData\CharonMeleeBackSwing.sga"
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*48*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+ /*___Cast___*/
+    {
+      Name = "CharonCast_PreAttack"
+      FilePath = "Animations\Charon\Cast\CharonCast"
+      ChainTo = "CharonCast_Attack"
+      Type = "Slide"
+      VideoTexture = "CharonCast_Bink"
+      EndFrame = 50
+      FrameDataFile = "Game\Animations\FrameData\CharonCast.sga"
+      NumAngles = 16
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 2 }/*preAttack*/      
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/ 
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "CharonCast_Attack"
+      FilePath = "Animations\Charon\Cast\CharonCast"
+      ChainTo = "CharonCast_ReturnToIdle"
+      Type = "Slide"
+      VideoTexture = "CharonCast_Bink"
+      EndFrame = 50
+      FrameDataFile = "Game\Animations\FrameData\CharonCast.sga"
+      NumAngles = 16
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -115.0
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonCast_ReturnToIdle"
+      FilePath = "Animations\Charon\Cast\CharonCast"
+      ChainTo = "Charon_IdleBattle"
+      Type = "Slide"
+      VideoTexture = "CharonCast_Bink"
+      EndFrame = 50
+      FrameDataFile = "Game\Animations\FrameData\CharonCast.sga"
+      NumAngles = 16
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*50*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+/*___RadialPush___*/
+    {
+      Name = "CharonRadialPush_PreAttack"
+      FilePath = "Animations\Charon\RadialPush\CharonRadialPush"
+      ChainTo = "CharonRadialPush_Attack"
+      Type = "Slide"
+      VideoTexture = "CharonRadialPush_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonRadialPush.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 2 }/*preAttack*/      
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/ 
+
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "CharonRadialPush_Attack"
+      FilePath = "Animations\Charon\RadialPush\CharonRadialPush"
+      ChainTo = "CharonRadialPush_ReturnToIdle"
+      Type = "Slide"
+      VideoTexture = "CharonRadialPush_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonRadialPush.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonRadialPush_ReturnToIdle"
+      FilePath = "Animations\Charon\RadialPush\CharonRadialPush"
+      ChainTo = "Charon_IdleBattle"
+      Type = "Slide"
+      VideoTexture = "CharonRadialPush_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonRadialPush.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove =false
+      DisableOwnerRotation = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*50*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+/*___GhostCharge___*/
+    {
+      Name = "CharonGhostCharge_PreAttack"
+      FilePath = "Animations\Charon\GhostCharge\CharonGhostCharge"
+      ChainTo = "CharonGhostCharge_SpinLoop"
+      Type = "Slide"
+      VideoTexture = "CharonGhostCharge_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonGhostCharge.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = false
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Charon/CharonOarSpinWhoosh" }/*preAttack*/      
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "CharonGhostCharge_SpinLoop"
+      FilePath = "Animations\Charon\GhostCharge\CharonGhostCharge"
+      ChainTo = "CharonGhostCharge_Attack"
+      Type = "Slide"
+      VideoTexture = "CharonGhostCharge_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonGhostCharge.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      Loop = true
+      AllowRestart = false
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*spinLoopStart*/ 
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/ 
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*spinLoopEnd*/ 
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "CharonGhostCharge_Attack"
+      FilePath = "Animations\Charon\GhostCharge\CharonGhostCharge"
+      ChainTo = "CharonGhostCharge_ReturnToIdle"
+      Type = "Slide"
+      VideoTexture = "CharonGhostCharge_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonGhostCharge.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }    
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "CharonGhostCharge_ReturnToIdle"
+      FilePath = "Animations\Charon\GhostCharge\CharonGhostCharge"
+      ChainTo = "Charon_IdleBattle"
+      Type = "Slide"
+      VideoTexture = "CharonGhostCharge_Bink"
+      EndFrame = 60
+      FrameDataFile = "Game\Animations\FrameData\CharonGhostCharge.sga"
+      NumAngles = 16
+      NumFrames = 60
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      DisableOwnerRotation = true
+      SetOwnerEndAngle = true
+      Sound = "null"
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/ 
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*60*/
+       
+       
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    /* _____________________ENDINGBOATRIDE_____________________ */
+
+   {
+      Name = "CharonEndingBoatRowIdle"/* ___startRowing Pose____ */
+      FilePath = "Animations\Charon\EndingBoatRowIdle\CharonEndingBoatRowIdle"
+      Type = "Book"
+      VideoTexture = "CharonEndingBoatRowIdle_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonEndingBoatIdle.sga"
+      EndFrame = 50
+      Loop = true
+      NumAngles = 16
+      NumFrames = 50
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+/* ___________________________CharonRowBoat_______________________________ */
+    {
+      Name = "CharonEndingBoatRow"
+      FilePath = "Animations\Charon\EndingBoatRow\CharonEndingBoatRow"
+      Type = "Slide"
+      VideoTexture = "CharonEndingBoatRow_Bink"
+      FrameDataFile = "Game\Animations\FrameData\CharonEndingBoatRow.sga"
+      EndFrame = 60
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+     
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+
+      Slides = [
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/Leftovers/World Sounds/CharonBoatRowSFX" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2  VisualFx = "CharonOarRipple" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        
+      ]
+    }
+
+/* ___ CharonEndingBoatRow_Breakdown____ */
+    {
+      Name = "CharonEndingBoatRow_StartRowing" /* ___going into rowing_____ */
+      InheritFrom = "CharonEndingBoatRow"
+      ChainTo = "CharonEndingBoatRow_ToRowingLoop"
+      EndFrame = 60
+      NumFrames = 60
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "CharonEndingBoatRow_ToRowingLoop"/* ___ rowing into rowing loop cycle_____ */
+      InheritFrom = "CharonEndingBoatRow"
+      ChainTo = "CharonEndingBoatRow_RowingLoop"
+      EndFrame = 60
+      NumFrames = 60
+      StartFrame = 11
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+    {
+      Name = "CharonEndingBoatRow_RowingLoop"/* ___rowing loop cycle_____ */
+      InheritFrom = "CharonEndingBoatRow"
+      ChainTo = "CharonEndingBoatRow_StopRowing"
+      EndFrame = 60
+      Loop = true
+      NumFrames = 60
+      StartFrame = 1
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+
+  {
+      Name = "CharonEndingBoatRow_StopRowing"/* ___ getting our of rowing loop cycle, going into boat idle _____ */
+      InheritFrom = "CharonEndingBoatRow"
+      ChainTo = "CharonEndingBoatRowIdle"
+      EndFrame = 60
+      NumFrames = 60
+      StartFrame = 43
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+/* ___ The Boat ___ */
+
+
+   {
+      Name = "EndingBoatFront"
+      FilePath = "Animations\Charon\EndingBoatFront\EndingBoatFront"
+      Type = "Book"
+      VideoTexture = "EndingBoatFront_Bink"
+      EndFrame = 120
+      Loop = true
+      NumAngles = 1
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      AngleFromOwner = "Ignore"
+      OffsetY = 0
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EndingBoatBack"
+      FilePath = "Animations\Charon\EndingBoatBack\EndingBoatBack"
+      Type = "Book"
+      VideoTexture = "EndingBoatBack_Bink"
+      EndFrame = 120
+      Loop = true
+      NumAngles = 1
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      AngleFromOwner = "Ignore"
+      OffsetY = 0
+      CreateAnimation = "AsphodelBoatRipple_TartarusShip"
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EndingBoatWhole"
+      FilePath = "Animations\Charon\EndingBoatWhole\EndingBoatWhole"
+      Type = "Book"
+      VideoTexture = "EndingBoatWhole_Bink"
+      EndFrame = 120
+      Loop = true
+      NumAngles = 1
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      AngleFromOwner = "Ignore"
+      OffsetY = 0
+      CreateAnimation = "AsphodelBoatRipple_TartarusShip"
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+/* ___ test _____ */
+
+    
+  {
+      Name = "EndingBoatRideComp"
+      FilePath = "Animations\EndingBoatRide\EndingBoatComp"
+      Type = "Book"
+      VideoTexture = "EndingBoatRideComp_Bink"
+      EndFrame = 120
+      AngleFromOwner = "Ignore"
+      Loop = true
+      NumAngles = 1
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = 0
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    } 
+    
+  ]
+}

@@ -1,0 +1,1172 @@
+{
+  Obstacles = [
+
+    {
+      Name = "RiverWater"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RiverWater"
+      }
+    }
+
+    {
+      Name = "GroundFog"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = true
+        Graphic = "GroundFog"
+      }
+    }
+
+    {
+      Name = "GroundFogIso"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = true
+        Graphic = "GroundFogIso"
+      }
+    }
+
+    {
+      Name = "ArchCrumble"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ArchCrumble"
+      }
+    }
+
+    {
+      Name = "GhostParticles"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GhostParticles"
+      }
+    }
+
+    {
+      Name = "CoffeeSparkles"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CoffeeSparkles"
+      }
+    }
+
+    {
+      Name = "TorchFlame"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchFlame"
+      }
+    }
+
+    {
+      Name = "SmokeRising"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SmokeRising"
+      }
+    }
+
+    {
+      Name = "GlowPulseASlow"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseASlow"
+      }
+    }
+
+    {
+      Name = "GlowPulseAMedium"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseAMedium"
+      }
+    }
+
+    {
+      Name = "GlowPulseAFast"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseAFast"
+      }
+    }
+
+    {
+      Name = "GlowPulseBSlow"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseBSlow"
+      }
+    }
+
+    {
+      Name = "GlowPulseBMedium"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseBMedium"
+      }
+    }
+
+    {
+      Name = "GlowPulseBFast"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseBFast"
+      }
+    }
+
+    {
+      Name = "GlowPulseCSlow"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseCSlow"
+      }
+    }
+
+    {
+      Name = "GlowPulseCMedium"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseCMedium"
+      }
+    }
+
+    {
+      Name = "GlowPulseCFast"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseCFast"
+      }
+    }
+
+    {
+      Name = "GlowPulseAFlicker"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseAFlicker"
+      }
+    }
+
+    {
+      Name = "GlowPulseBFlicker"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseBFlicker"
+      }
+    }
+
+    {
+      Name = "GlowPulseCFlicker"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GlowPulseCFlicker"
+      }
+    }
+
+    {
+      Name = "DustSpawner"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DustSpawner"
+        Invisible = true
+      }
+    }
+
+    {
+      Name = "CandleFlame"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CandleFlame"
+      }
+    }
+
+    {
+      Name = "CandleWisp"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CandleWisp"
+      }
+    }
+
+    {
+      Name = "CandleFlameWithWisp"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CandleFlameWithWisp"
+      }
+    }
+
+    {
+      Name = "SoulFlowA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SoulFlowA"
+      }
+    }
+
+    {
+      Name = "SoulFlowB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SoulFlowB"
+      }
+    }
+
+    {
+      Name = "SmokeRisingHardBright"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SmokeRisingHardBright"
+      }
+    }
+
+    {
+      Name = "SmokeRisingHardDark"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SmokeRisingHardDark"
+      }
+    }
+
+    {
+      Name = "FireSmoke"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FireSmoke"
+      }
+    }
+
+    {
+      Name = "TartarusBatCluster"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BatCluster"
+        Invisible = true
+      }
+    }
+
+    {
+      Name = "SingleBat"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SingleBat"
+      }
+    }
+
+	{
+      Name = "SingleMouse"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Critter_MouseBounce"
+      }
+    }
+
+    {
+      Name = "TartarusEmbers"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusEmberSpawner"
+      }
+    }
+
+    {
+      Name = "TartarusRiverA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverA"
+      }
+    }
+
+    {
+      Name = "TartarusRiverB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverB"
+      }
+    }
+
+    {
+      Name = "TartarusRiverA_Vertical"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverA_Vertical"
+      }
+    }
+
+    {
+      Name = "TartarusRiverB_Vertical"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverB_Vertical"
+      }
+    }
+
+    {
+      Name = "TartarusRiverC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverC"
+      }
+    }
+
+    {
+      Name = "TartarusRiverD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverD"
+      }
+    }
+
+    {
+      Name = "TartarusRiverE"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRiverE"
+      }
+    }
+
+    {
+      Name = "TartarusRockRipple"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRockRipple"
+      }
+    }
+
+    {
+      Name = "TartarusFireGlow"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusFireGlow"
+      }
+    }
+
+    {
+      Name = "TartarusFlame"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusFlame"
+        Offset = { X = 0 Y = -89 }
+      }
+    }
+
+    {
+      Name = "HeatWave"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = true
+        Graphic = "DisplaceHeatWaves"
+      }
+    }
+
+    {
+      Name = "Kira"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Kira"
+      }
+    }
+
+    {
+      Name = "CameraSparkles"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CameraSparkles"
+      }
+    }
+
+    {
+      Name = "FullscreenAlertDisplace"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenAlertDisplace"
+      }
+    }
+
+    {
+      Name = "FullscreenChaosDisplace"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenChaosDisplace"
+      }
+    }
+
+    {
+      Name = "FullscreenAlertColor"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenAlertColor"
+      }
+    }
+
+    {
+      Name = "FullscreenAlertColorInvert"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenAlertColorInvert"
+      }
+    }
+
+    {
+      Name = "FullscreenAlertColorDark"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenAlertColorDark"
+      }
+    }
+
+    {
+      Name = "FullscreenAlertColorDarkOutward"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FullscreenAlertColorDarkOutward"
+      }
+    }
+
+    {
+      Name = "BoonInteractFx"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonInteractFx"
+      }
+    }
+
+    {
+      Name = "BoonInteractDisplace"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonInteractDisplace"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaBubble"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaBubbleWait"
+        Tallness = 68.0
+        Points = [
+          { X = -60 Y = 17 }
+          { X = -6 Y = 44 }
+          { X = 54 Y = 14 }
+          { X = 0 Y = -13 }
+        ]
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFallA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallA"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFallB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallB"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFallC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallC"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFallD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallD"
+      }
+    }
+
+        {
+      Name = "AsphodelLavaFallE"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallE"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFallF"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallF"
+      }
+    }
+
+        {
+      Name = "AsphodelLavaFallG"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallG"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaMoundA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaMoundA"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaMoundB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaMoundB"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaMoundD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaMoundD"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaRippleA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaRippleA"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaLavaRippleB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaRippleB"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaRippleHydra"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaRippleHydra"
+        Scale = 3.0
+      }
+    }
+
+    {
+      Name = "AsphodelLavaFire"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFire"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaSmoke"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaSmoke"
+      }
+    }
+
+    {
+      Name = "AsphodelEmbers"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelEmberSpawner"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaHeatWaves"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = true
+        Graphic = "LavaHeatWaves"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaWave"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaWaveA"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaWaveB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaWaveB"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaWaveC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaWaveC"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaWaveD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaWaveD"
+      }
+    }
+
+    {
+      Name = "AsphodelLavaEmbers"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaEmbers"
+      }
+    }
+
+    {
+      Name = "GenericSparkles"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GenericSparkleEmitter"
+      }
+    }
+
+    {
+      Name = "GenericSparklesOverlay"
+      InheritFrom = "GenericSparkles"
+      Thing =
+      {
+        Graphic = "GenericSparkleEmitterOverlay"
+      }
+    }
+
+    {
+      Name = "StyxAxeSwing"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxAxeSwing"
+      }
+    }
+
+
+    {
+      Name = "StyxLightShaft"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxLightShaftContainer"
+      }
+    }
+
+    {
+      Name = "StyxArchCrumble"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxArchCrumbleContainer"
+      }
+    }
+
+    {
+      Name = "StyxFlies"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        UseBoundsForSortDrawArea = true
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxFliesContainer"
+      }
+    }
+
+    {
+      Name = "StyxDripRipple"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxDripRippleContainer"
+      }
+    }
+
+    {
+      Name = "StyxSewageDrip"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxDripContainer"
+      }
+    }
+
+
+    {
+      Name = "ElysiumFogCloudRoll"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRoll"
+      }
+    }
+
+    {
+      Name = "ElysiumFogCloudRollB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRollB"
+      }
+    }
+
+    {
+      Name = "ElysiumFogCloudRollC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRollC"
+      }
+    }
+
+    {
+      Name = "ElysiumFogCloudRollD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRollD"
+      }
+    }
+
+    {
+      Name = "ElysiumFogCloudRollE"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRollE"
+      }
+    }
+
+    {
+      Name = "ElysiumFogCloudRollF"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumFogCloudRollF"
+      }
+    }
+
+    {
+      Name = "ElysiumGrassTuftA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumGrassTuftA"
+      }
+    }
+
+    {
+      Name = "ElysiumGrassTuftB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumGrassTuftB"
+      }
+    }
+
+    {
+      Name = "ElysiumGrassTuftC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumGrassTuftC"
+      }
+    }
+
+    {
+      Name = "ElysiumRefractLightA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRefractLightA"
+      }
+    }
+
+    {
+      Name = "ElysiumRefractLightB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRefractLightB"
+      }
+    }
+
+    {
+      Name = "ElysiumRefractLightC"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRefractLightC"
+      }
+    }
+
+    {
+      Name = "ElysiumRefractLightD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRefractLightD"
+      }
+    }
+
+    {
+      Name = "ElysiumRefractLightE"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRefractLightE"
+      }
+    }
+
+    {
+      Name = "ElysiumPetals"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumPetalSpawner"
+      }
+    }
+
+    {
+      Name = "RosePetals"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RosePetalSpawner"
+      }
+    }
+
+    {
+      Name = "ElysiumButterfly"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumButterfly"
+      }
+    }
+
+    {
+      Name = "ElysiumButterflyGroup"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/ChimesAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumButterflyGroup"
+      }
+    }
+
+    {
+      Name = "Snowflakes"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SnowflakesSpawner"
+      }
+    }
+
+    {
+      Name = "SnowflakesClean"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SnowflakesSpawnerClean"
+      }
+    }
+  ]
+}

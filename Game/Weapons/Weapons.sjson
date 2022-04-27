@@ -1,0 +1,32 @@
+{
+  Weapons = [
+    {
+      Name = "1_BaseWeapon"
+    }
+    {
+      Name = "1_BasePlayerWeapon"
+      InheritFrom = "1_BaseWeapon"
+      LockTriggerForCharge = true
+      AutoLock = true
+      AutoLockRange = 650
+      AutoLockArcDistance = 100
+      ReloadOnCreation = false
+    }
+    {
+      Name = "1_BasePlayerUtilityWeapon"
+      InheritFrom = "1_BasePlayerWeapon"
+      AutoLock = false
+    }
+    {
+      Name = "1_BasePlayerSlowWeapon"
+      InheritFrom = "1_BasePlayerWeapon"
+    }
+    {
+      Name = "1_BasePlayerMovementWeapon"
+      InheritFrom = "1_BasePlayerWeapon"
+    }
+    {
+      Name = "1_BaseEnemyWeapon"
+    }
+  ]  
+}

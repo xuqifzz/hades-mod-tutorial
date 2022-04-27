@@ -1,0 +1,2398 @@
+{
+  Animations = [
+
+    /* _____________________Theseus_____________________ */
+    
+    {
+      Name = "Theseus_Idle"
+      FilePath = "Animations\Theseus\TheseusIdle\TheseusIdle"
+      Type = "Book"
+      VideoTexture = "TheseusIdle_Bink"
+      EndFrame = 40
+      Loop = true
+      NumAngles = 64
+      NumFrames = 40
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "Theseus_Walk"
+      FilePath = "Animations\Theseus\TheseusWalk\TheseusWalk"
+      Type = "Book"
+      VideoTexture = "TheseusWalk_Bink"
+      EndFrame = 30
+      Loop = true
+      NumAngles = 64
+      NumFrames = 30
+      PlaySpeed = 36.0
+      StartFrame = 1
+      OffsetY = -90.0
+      NativeMoveSpeed = 260.0
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" Frame = 11 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" Frame = 26 }
+      ]
+    }
+
+    /* _____________________Taunt____________________ */
+    
+    {
+      Name = "TheseusTaunt"
+      FilePath = "Animations\Theseus\TheseusTaunt\TheseusTaunt"
+      Type = "Book"
+      VideoTexture = "TheseusTaunt_Bink"
+      EndFrame = 310
+      NumAngles = 8
+      NumFrames = 310
+      StartFrame = 1
+      PlaySpeed = 30.0
+      OffsetY = -90.0
+      SetOwnerEndAngle = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "TheseusTaunt_Loop"
+      InheritFrom = "TheseusTaunt"
+      ChainTo = "TheseusTaunt_VariationLoop"
+      EndFrame = 170
+      Loop = false
+      NumFrames = 310
+      StartFrame = 130
+      CancelOnOwnerMove = true
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "TheseusTaunt_VariationLoop"
+      InheritFrom = "TheseusTaunt"
+      ChainTo = "TheseusTaunt_VariationLoop2"
+      EndFrame = 129
+      Loop = false
+      NumFrames = 310
+      StartFrame = 1
+      CancelOnOwnerMove = true
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "TheseusTaunt_VariationLoop2"
+      InheritFrom = "TheseusTaunt"
+      ChainTo = "TheseusTaunt_ReturnToIdle"
+      EndFrame = 170
+      Loop = true
+      NumFrames = 310
+      StartFrame = 130
+      CancelOnOwnerMove = true
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "TheseusTaunt_ReturnToIdle"
+      InheritFrom = "TheseusTaunt"
+      ChainTo = "Theseus_Idle"
+      EndFrame = 310
+      NumFrames = 310
+      StartFrame = 171
+      DisableOwnerRotation = true
+      CancelOnOwnerMove = true
+      TimeModifierFraction = 0.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/JacketFlutter" Frame = 198 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusShieldCatch" Frame = 207 }
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 239 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/WrechPunchSwing" Frame = 267 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" Frame = 276 }
+        { DurationFrames = 1 Sound = "/SFX/SpikeTrapFireSPEARRETRACT" Frame = 282 }
+      ]
+    }
+
+
+    
+    {
+      Name = "TheseusOnHitDeath"
+      FilePath = "Animations\Theseus\TheseusOnHitDeath\TheseusOnHitDeath"
+      Type = "Book"
+      VideoTexture = "TheseusOnHitDeath_Bink"
+      AngleFromOwner = "Ignore"
+      Sound = "/SFX/Enemy Sounds/Theseus/EmoteDying"
+      EndFrame = 16
+      HoldLastFrame = true
+      NumFrames = 16
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Mirror = true
+      OffsetY = -90.0
+      OwnerHasNoCollision = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/MetalStoneClangSHIELD" Frame = 5 }
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 8 }
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 12 }
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 14 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "MinotaurTheseusThrow_ReturnToIdle"
+      ChainTo = "Theseus_Idle"
+      FilePath = "Animations\Theseus\TheseusSpearSpin\TheseusSpearSpin"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearSpin_Bink"
+      EndFrame = 87
+      NumAngles = 32
+      NumFrames = 87
+      StartFrame = 1
+      OffsetY = -90.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*thrownReturnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*60*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+     ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+    /* _____________________Wrath_____________________ */
+    
+    {
+      Name = "Theseus_WrathStart"
+      ChainTo = "Theseus_WrathAirLoop"
+      FilePath = "Animations\Theseus\TheseusWrath\TheseusWrath"
+      Type = "Slide"
+      VideoTexture = "TheseusWrath_Bink"
+      EndFrame = 32
+      NumAngles = 8
+      NumFrames = 32
+      StartFrame = 1
+      OffsetY = -90.0
+      OwnerNoInvulnerableCoverage = true
+      TimeModifierFraction = 0.15
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*start*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*AirLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        /*AirLoopEnd*/
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+     ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "Theseus_WrathAirLoop"
+      ChainTo = "Theseus_WrathReturnToIdle"
+      FilePath = "Animations\Theseus\TheseusWrath\TheseusWrath"
+      Type = "Slide"
+      VideoTexture = "TheseusWrath_Bink"
+      EndFrame = 32
+      Loop = true
+      NumAngles = 8
+      NumFrames = 32
+      StartFrame = 1
+      OffsetY = -90.0
+      OwnerNoInvulnerableCoverage = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*start*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*AirLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        /*AirLoopEnd*/
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "Theseus_WrathReturnToIdle"
+      ChainTo = "Theseus_Idle"
+      FilePath = "Animations\Theseus\TheseusWrath\TheseusWrath"
+      Type = "Slide"
+      VideoTexture = "TheseusWrath_Bink"
+      EndFrame = 32
+      NumAngles = 8
+      NumFrames = 32
+      StartFrame = 1
+      OffsetY = -90.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*start*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*AirLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        /*AirLoopEnd*/
+        { DurationFrames = 2 }
+        /*returnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+    /* _____________________spearSpin_____________________ */
+    
+    {
+      Name = "TheseusSpearSpin_PreAttack"
+      FilePath = "Animations\Theseus\TheseusSpearSpin\TheseusSpearSpin"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearSpin_Bink"
+      EndFrame = 114          
+      NumAngles = 32
+      NumFrames = 114
+      StartFrame = 1
+      OffsetY = -90.0
+      AllowRestart = true
+      OwnerNoInvulnerableCoverage = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 1 }/*preAttack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }/*20*/
+        
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*110*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "TheseusSpearSpin_Attack"
+      ChainTo = "TheseusSpearSpin_ReturnToIdle"
+      FilePath = "Animations\Theseus\TheseusSpearSpin\TheseusSpearSpin"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearSpin_Bink"
+      EndFrame = 114
+      NumAngles = 32
+      NumFrames = 114
+      StartFrame = 1
+      OffsetY = -90.0
+      OwnerNoInvulnerableCoverage = true
+      DangerDistance = 350
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*Fire*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*40*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*110*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "TheseusSpearSpin_ReturnToIdle"
+      ChainTo = "Theseus_Idle"
+      FilePath = "Animations\Theseus\TheseusSpearSpin\TheseusSpearSpin"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearSpin_Bink"
+      EndFrame = 114
+      NumAngles = 32
+      NumFrames = 114
+      StartFrame = 1
+      OffsetY = -90.0
+      AllowRestart = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 1 }/*ReturnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*60*/
+        
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*80*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*110*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+     ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+    /* _____________________spearThrow_____________________ */
+    
+    {
+      Name = "TheseusSpearThrow_Charge"
+      ChainTo = "TheseusSpearThrow_Fire"
+      FilePath = "Animations\Theseus\TheseusSpearThrow\TheseusSpearThrow"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearThrow_Bink"
+      EndFrame = 72
+      NumAngles = 32
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -90.0
+      AllowRestart = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }/*fire*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }/*catch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+      
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*catchEnd*/
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "TheseusSpearThrow_Fire"
+      ChainTo = "TheseusSpearThrow_CatchLoop"
+      FilePath = "Animations\Theseus\TheseusSpearThrow\TheseusSpearThrow"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearThrow_Bink"
+      EndFrame = 72
+      NumAngles = 32
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -90.0
+      
+      OwnerNoInvulnerableCoverage = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*throw*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" }
+        { DurationFrames = 2 }
+        /*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "TheseusSpearThrow_CatchLoop"
+      ChainTo = "TheseusSpearThrow_ReturnToIdle"
+      FilePath = "Animations\Theseus\TheseusSpearThrow\TheseusSpearThrow"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearThrow_Bink"
+      EndFrame = 72
+      Loop = false
+      NumAngles = 32
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -90.0
+      
+      OwnerNoInvulnerableCoverage = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*throw*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }/*50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "TheseusSpearThrow_ReturnToIdle"
+      ChainTo = "Theseus_Idle"
+      FilePath = "Animations\Theseus\TheseusSpearThrow\TheseusSpearThrow"
+      Type = "Slide"
+      VideoTexture = "TheseusSpearThrow_Bink"
+      EndFrame = 72
+      NumAngles = 32
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -90.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*throw*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 Sound = "/SFX/Player Sounds/ZagreusShieldCatch" }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 Sound = "/SFX/ArrowMetalStoneClang" }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+    /* _____________________Slam____________________ */
+    {
+      Name = "MinotaurTheseusSlam_TheseusHold"
+      InheritFrom = "TheseusSpearThrow_CatchLoop"
+      ChainTo = "null"
+      HoldLastFrame = true
+    }
+
+
+    /* _____________________ThrownRecovery____________________ */
+    
+    {
+      Name = "MinotaurTheseusThrow_Airborn"
+      ChainTo = "null"
+      FilePath = "Animations\Theseus\MinotaurTheseusThrow\MinotaurTheseusThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurTheseusThrow_Bink"
+      VisualFx = "TheseusThrownTrail"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      EaseIn = 0.99
+      EaseOut = 1.0
+      EndFrame = 26
+      Loop = true
+      NumAngles = 32
+      NumFrames = 26
+      StartFrame = 1
+      OffsetY = -150.0
+      VisualFxDistanceMax = 32.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 50
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*airBorn*/
+        { DurationFrames = 0 }
+        /*landing*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*useSpearSpinReturnToIdle_Frame44*/
+     ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    
+    {
+      Name = "MinotaurTheseusThrow_Landing"
+      ChainTo = "MinotaurTheseusThrow_ReturnToIdle"
+      FilePath = "Animations\Theseus\MinotaurTheseusThrow\MinotaurTheseusThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurTheseusThrow_Bink"
+      VisualFx = "CastDustBullRush"
+      EndFrame = 26
+      NumAngles = 32
+      NumFrames = 26
+      StartFrame = 1
+      OffsetY = -90.0
+      VisualFxDistanceMax = 35.0
+      VisualFxDistanceMin = 25.0
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*airBorn*/
+        { DurationFrames = 1 }
+        /*landing*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*21*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*useSpearSpinReturnToIdle_Frame44*/
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+    /* _____________________Death____________________ */
+    
+    {
+      Name = "TheseusDeathVFX"
+      CreateAnimation = "TheseusDeathLighting"
+      FilePath = "Animations\Theseus\TheseusDeathVFX\TheseusDeathVFX"
+      Type = "Book"
+      VideoTexture = "TheseusDeathVFX_Bink"
+      AngleFromOwner = "Ignore"
+      Sound = "/SFX/Enemy Sounds/TheseusMinotaurDeathSFX"
+      EndFrame = 140
+      NumFrames = 140
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -90.0
+      Material = "Unlit"
+      BlockNewOwnerAnims = true
+      OwnerHasNoCollision = true
+      OwnerNoInvulnerableCoverage = true
+      OwnerImmobile = true
+      CreateAnimations = [
+        { Name = "EnemyDeathFxBlue" }
+      ]
+    }
+    
+    {
+      Name = "TheseusDeathLighting"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      EndAlpha = 0.5
+      EndBlue = 1.0
+      EndGreen = 0.6
+      EndRed = 0.05
+      PingPongColor = true
+      StartBlue = 1.0
+      StartGreen = 0.2
+      DurationFrames = 280
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      EndScale = 1.15
+      PingPongScale = true
+      Scale = 2.0
+      ScaleX = 2.0
+      Material = "Unlit"
+    }
+
+
+    
+    {
+      Name = "TheseusChariotIdle"
+      FilePath = "Animations\Chariot\Idle\ChariotIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotIdle_Bink"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 64
+      NumFrames = 12
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = 0.0
+      ActiveVisualFxCap = 15
+      VisualFxIntervalMax = 0.18
+      VisualFxIntervalMin = 0.16
+      CancelOnOwnerMove = true
+      SortMode = "FromParent"
+      DieWithOwner = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+
+    {
+      Name = "TheseusProne"
+      InheritFrom = "MinotaurTheseusThrow_Airborn"
+      OffsetY = 0
+      VisualFx = "null"
+      AngleFromOwner = "Ignore"
+    }
+
+
+
+/*______TheseusChariot_______*/
+{
+      Name = "TheseusChariot_Ride"
+      FilePath = "Animations\Theseus\TheseusChariotRide\TheseusChariotRide"
+      Type = "Book"
+      VideoTexture = "TheseusChariotRide_Bink"
+      EndFrame = 20
+      Loop = true
+      NumAngles = 64
+      NumFrames = 20
+      PlaySpeed = 30
+      StartFrame = 1
+      OffsetY = -90.0
+      NativeMoveSpeed = 260.0
+      Sound = "/SFX/Enemy Sounds/Chariot/ChariotFastMoveLoop"
+      StopSoundOnFinishFade = 0.2
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+{
+      Name = "TheseusChariot_Idle"
+      FilePath = "Animations\Theseus\TheseusChariotRide\TheseusChariotRide"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotRide_Bink"
+      EndFrame = 20
+      Loop = true
+      NumAngles = 64
+      NumFrames = 20
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Sound = "/Leftovers/World Sounds/AirshipIdleLoop"
+      StopSoundOnFinishFade = 0.2
+      Slides = [
+
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    {
+      Name = "TheseusChariotFallClouds"
+      Type = "Random"
+      Random = [
+        { Name = "TheseusChariotFallCloudsA" }
+        { Name = "TheseusChariotFallCloudsB" }
+        { Name = "TheseusChariotFallCloudsC" }
+        { Name = "TheseusChariotFallCloudsD" }
+      ]
+    }
+
+    {
+      Name = "TheseusChariotFallCloudsA"
+      Type = "Book"
+      FilePath = "Fx\TrapActivationPuff\TrapActivationPuff"
+      NumFrames = 35
+      StartAlpha = 1
+      EndAlpha = 0.4
+      RandomPlaySpeedMin = 24
+      RandomPlaySpeedMax = 45
+      AngleFromOwner = "Ignore"
+      ScaleFromOwner = "Ignore"
+      ScaleMin = 0.4
+      ScaleMax = 0.6
+      RandomOffsetX = 160
+      RandomOffsetY = 100
+      RandomFlipHorizontal = true
+      AddColor = false
+      Value = 0.6
+      EndRed = 0.95
+      EndGreen = 0.77
+      EndBlue = 0.45
+      StartRed = 0.75
+      StartGreen = 0.65
+      StartBlue = 0.55
+      StartScale = 1
+      EndScale = 2
+      FlipVertical = true
+      OffsetZ = 50
+      StartOffsetZ = 0
+      EndOffsetZ = 60
+      EaseIn = 0.9
+      EaseOut = 1.0
+      SortMode = "FromParent"
+      OverlayVfx = true
+      AngleMin = -22
+      AngleMax = 22
+      VelocityMin = 120
+      VelocityMax = 240
+      CancelOverCap = true
+      CreateAnimations = [
+        { Name = "ChariotFragments" }
+        { Name = "ChariotFragments" }
+        { Name = "ChariotFragments" }
+        { Name = "ChariotFragments" }
+        { Name = "WallSlamDustPuffDirectionalRandom" }
+      ]
+    }
+
+    {
+      Name = "TheseusChariotFallCloudsB"
+      InheritFrom = "TheseusChariotFallCloudsA"
+      EndRed = 0.85
+      EndGreen = 0.67
+      EndBlue = 0.55
+      StartRed = 0.65
+      StartGreen = 0.55
+      StartBlue = 0.45
+    }
+
+    {
+      Name = "TheseusChariotFallCloudsC"
+      InheritFrom = "TheseusChariotFallCloudsA"
+      EndRed = 0.7
+      EndGreen = 0.6
+      EndBlue = 0.5
+      StartRed = 0.6
+      StartGreen = 0.5
+      StartBlue = 0.4
+    }
+
+    {
+      Name = "TheseusChariotFallCloudsD"
+      InheritFrom = "TheseusChariotFallCloudsA"
+      EndRed = 0.25
+      EndGreen = 0.25
+      EndBlue = 0.15
+      StartRed = 0.3
+      StartGreen = 0.28
+      StartBlue = 0.24
+      OffsetZ = 100
+      GroupName = "FX_Dark"
+    }
+
+
+    {
+      Name = "ChariotFragments"
+      Type = "Book"
+      FilePath = "Particles\particle_chariotFragment"
+      NumFrames = 8
+      RandomStartFrame = true
+      GroupName = "Standing"
+      PlaySpeed = 0.0000001
+      AngleFromOwner = "Ignore"
+      AngleMax = 180.00
+      AngleMin = 0
+      RandomDurationMax = 0.6
+      RandomDurationMin = 0.3
+      StartFrame = 1
+      RandomOffsetX = 60.0
+      RandomOffsetY = 30.0
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      DieWithOwner = false
+      SortMode = "FromParent"
+      Gravity = 1200.0
+      UpwardVelocityMin = 250
+      UpwardVelocityMax = 600
+      OffsetZ = 0
+      VelocityMax = 900.0
+      VelocityMin = 300.0
+      RandomRotationSpeedMax = 360.00
+      RandomRotationSpeedMin = -360.00
+      EndScale = 0.5
+      ScaleMax = 0.9
+      ScaleMin = 0.4
+      Ambient = 0.0
+      Scale = 3
+      RandomAccelerationMax = -500.0
+      RandomAccelerationMin = -2500.0
+      ChainTo = "ChariotFragmentsBounceRandom"
+    }
+
+    {
+      Name = "ChariotFragmentsBounceRandom"
+      Type = "Random"
+      Random = [
+        { Name = "ChariotFragmentsBounce" }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+      ]
+    }
+
+    {
+      Name = "ChariotFragmentsBounce"
+      InheritFrom = "ChariotFragments"
+      ChainTo = null
+      UpwardVelocityMin = 60
+      UpwardVelocityMax = 120
+      RandomDurationMax = 0.6
+      RandomDurationMin = 0.3
+      RandomOffsetX = 0
+      RandomOffsetY = 0
+      LocationFromOwner = "Take"
+      Scale = 0.5
+      OffsetZ = 200
+      VelocityMax = 100
+      VelocityMin = 20
+      EndScale = 0
+
+    }
+    
+    {
+      Name = "TheseusChariotFallCloudsShadow"
+      Type = "Constant"
+      FilePath = "Particles\particle_glow"
+      Duration = 2
+      Red = 0
+      Green = 0
+      Blue = 0
+      ScaleY = 0.5
+      StartAlpha = 1
+      EndAlpha = 0
+      GroupName = "Shadows"
+      StartScale = 2.5
+      EndScale = 3.5
+      Scale = 2
+      AngleFromOwner = "Ignore"
+      EaseIn = 0
+      EaseOut = 0.2
+      VisualFx = "TheseusChariotFallMiniExplosions"
+      VisualFxIntervalMin = 0.05
+      VisualFxIntervalMax = 0.06
+      VisualFxCap = 8
+    }
+
+    {
+      Name = "TheseusChariotFallMiniExplosions"
+      Type = "Book"
+      FilePath = "Fx\SmallExplosion\SmallExplosion"
+      NumFrames = 40
+      RandomPlaySpeedMin = 60
+      RandomPlaySpeedMax = 90
+      RandomFlipHorizontal = true
+      ScaleMin = 0.6
+      ScaleMax = 1.0
+      RandomOffsetX = 120
+      RandomOffsetY = 120
+      AngleFromOwner = "Ignore"
+      ScaleFromOwner = "Ignore"
+      GroupName = "FX_Dark"
+    }
+
+    {
+      Name = "TheseusChariot_Fall"
+      ChainTo = "TheseusChariot_FallHold"
+      FilePath = "Animations\Theseus\TheseusChariotFall\TheseusChariotFall"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotFall_Bink"
+      EndFrame = 42
+      NumAngles = 8
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      VisualFx = "TheseusChariotFallClouds"
+	  ActiveVisualFxCap = 200,
+      CreateAnimation = "TheseusChariotFallCloudsShadow"
+      VisualFxIntervalMin = 0.015
+      VisualFxIntervalMax = 0.02
+      SortMode = "FromParent"
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/Leftovers/SFX/MeteorStrikeShort" }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Theseus/EmoteCrashing" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 VisualFx = "DustRingFrontMinotaurLand" }
+        { DurationFrames = 2 Sound = "/Leftovers/World Sounds/JumpLanding" VisualFx = "DustRingBackMinotaurLand" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/CrusherAttackImpact" VisualFx = "RubbleFall" }
+        { DurationFrames = 2 Sound = "/Leftovers/World Sounds/PhysicalImpactPunch" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Theseus/EmoteFalling" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    {
+      Name = "TheseusChariot_FallHold"
+      ChainTo = "TheseusChariot_FallReturntoIdle"
+      FilePath = "Animations\Theseus\TheseusChariotFall\TheseusChariotFall"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotFall_Bink"
+      EndFrame = 42
+      NumAngles = 8
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 90 }/*20_facePlant Hold*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+    {
+      Name = "TheseusChariot_FallReturntoIdle"
+      FilePath = "Animations\Theseus\TheseusChariotFall\TheseusChariotFall"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotFall_Bink"
+      EndFrame = 42
+      NumAngles = 8
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Theseus/EmoteFalling" }
+        { DurationFrames = 2 Sound = "/Leftovers/SFX/RobeFlutterInScene" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+        
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WrechPunchSwing" }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/SpikeTrapFireSPEARRETRACT" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }
+
+
+ {
+      Name = "TheseusChariot_Taunt_Start"
+      FilePath = "Animations\Theseus\TheseusChariotTaunt\TheseusChariotTaunt"
+      ChainTo = "TheseusChariot_TauntLoop"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotTaunt_Bink"
+      EndFrame = 78
+      NumAngles = 32
+      NumFrames = 78
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Sound = "/Leftovers/World Sounds/AirshipIdleLoop"
+      StopSoundOnFinishFade = 0.2
+      Slides = [
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*__HoldLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+         
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*78*/        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }  
+{
+      Name = "TheseusChariot_TauntLoop"
+      FilePath = "Animations\Theseus\TheseusChariotTaunt\TheseusChariotTaunt"
+      ChainTo = "TheseusChariot_TauntReturnToIdle"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotTaunt_Bink"
+      Loop = true
+      EndFrame = 78
+      NumAngles = 32
+      NumFrames = 78
+      StartFrame = 1
+      OffsetY = -90.0
+      Sound = "/Leftovers/World Sounds/AirshipIdleLoop"
+      StopSoundOnFinishFade = 0.2   
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*HoldLoopStart*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*HoldLoopEnd*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+         
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*78*/        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }  
+{
+      Name = "TheseusChariot_TauntReturnToIdle"
+      FilePath = "Animations\Theseus\TheseusChariotTaunt\TheseusChariotTaunt"
+      Type = "Slide"
+      VideoTexture = "TheseusChariotTaunt_Bink"
+      EndFrame = 78
+      NumAngles = 32
+      NumFrames = 78
+      StartFrame = 1
+      OffsetY = -90.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*40*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Player Sounds/ZagreusGunReloading" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+         
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*78*/        
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+      }
+    }  
+  ]
+}

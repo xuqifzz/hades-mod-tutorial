@@ -1,0 +1,338 @@
+{
+  "AmbientLightColor": {
+    "X": 1.0,
+    "Y": 1.0,
+    "Z": 1.0
+  },
+  "BackdropColor": {
+    "R": 33,
+    "G": 203,
+    "B": 63,
+    "A": 255
+  },
+  "Brightness": 0.5,
+  "Imposters": [],
+  "Size": {
+    "X": 10000,
+    "Y": 10000
+  },
+  "ThingGroups": [
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410511,
+        "Name": "Terrain"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 1,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 1,
+      "NumThingsVisible": 1,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410516,
+        "Name": "Art_Standing"
+      },
+      "NumSelectedAsDraw": 18,
+      "NumSelectedAsLogic": 18,
+      "NumThings": 18,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 18,
+      "NumThingsVisible": 18,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [
+        {
+          "Id": 410518,
+          "Name": "FX_Foreground"
+        },
+        {
+          "Id": 410517,
+          "Name": "Art_Foreground"
+        },
+        {
+          "Id": 410516,
+          "Name": "Art_Standing"
+        },
+        {
+          "Id": 410515,
+          "Name": "FX_Terrain"
+        },
+        {
+          "Id": 410514,
+          "Name": "Shadows"
+        },
+        {
+          "Id": 410513,
+          "Name": "VisualTriggers"
+        },
+        {
+          "Id": 410512,
+          "Name": "Art_Stairs"
+        },
+        {
+          "Id": 410511,
+          "Name": "Terrain"
+        },
+        {
+          "Id": 410510,
+          "Name": "Art_TerrainBelow"
+        }
+      ],
+      "Id": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": -3,
+        "Name": "Default"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 2,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 2,
+      "NumThingsVisible": 2,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410520,
+        "Name": "Breakables"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 1,
+      "NumThings": 1,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 1,
+      "NumThingsVisible": 1,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410521,
+        "Name": "Traps"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 1,
+      "NumThings": 1,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 1,
+      "NumThingsVisible": 1,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410522,
+        "Name": "Scripting"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 9,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 9,
+      "NumThingsVisible": 9,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410523,
+        "Name": "RoomNumbers"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410524,
+        "Name": "Impassable"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 2,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 2,
+      "NumThingsVisible": 2,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410525,
+        "Name": "SpawnPoints"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 4,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 4,
+      "NumThingsVisible": 4,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410526,
+        "Name": "ExitDoors"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 1,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 1,
+      "NumThingsVisible": 1,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410527,
+        "Name": "Events"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [
+        {
+          "Id": 410527,
+          "Name": "Events"
+        },
+        {
+          "Id": 410526,
+          "Name": "ExitDoors"
+        },
+        {
+          "Id": 410525,
+          "Name": "SpawnPoints"
+        },
+        {
+          "Id": 410524,
+          "Name": "Impassable"
+        },
+        {
+          "Id": 410523,
+          "Name": "RoomNumbers"
+        },
+        {
+          "Id": 410522,
+          "Name": "Scripting"
+        },
+        {
+          "Id": 410521,
+          "Name": "Traps"
+        },
+        {
+          "Id": 410520,
+          "Name": "Breakables"
+        }
+      ],
+      "Id": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    }
+  ]
+}

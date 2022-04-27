@@ -1,0 +1,546 @@
+{
+  Animations = [
+
+      
+    /*Wringer*/
+
+   {
+      Name = "EnemyWringerIdle"
+      FilePath = "Animations\Wringer\Idle\WringerIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_WringerIdle_Bink"
+      PlaySpeed = 30.0
+      Loop = true
+      EndFrame = 40
+      NumAngles = 64
+      NumFrames = 40
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+{
+      Name = "EnemyWringerStart"
+      FilePath = "Animations\Wringer\Start\WringerStart"
+      ChainTo = "EnemyWringerMove"
+      Type = "Book"
+      VideoTexture = "Enemy_WringerStart_Bink"
+      PlaySpeed = 30
+      EndFrame = 9
+      Loop = false
+      NumAngles = 64
+      NumFrames = 9
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+  {
+      Name = "EnemyWringerMove"
+      FilePath = "Animations\Wringer\Move\WringerMove"
+      Type = "Book"
+      VideoTexture = "Enemy_WringerMove_Bink"
+      PlaySpeed = 30
+      EndFrame = 18
+      Loop = true
+      NumAngles = 64
+      NumFrames = 18
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+     
+{
+      Name = "EnemyWringerOnHit"
+      FilePath = "Animations\Wringer\OnHit\EnemyWringerOnHit"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "EnemyWringerOnHit1" }
+        { Name = "EnemyWringerOnHit2" }
+      ]
+    }
+
+    {
+      Name = "EnemyWringerOnHit1"
+      FilePath = "Animations\Wringer\OnHit\WringerOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Wringer_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 2 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyWringerOnHit2"
+      FilePath = "Animations\Wringer\OnHit\WringerOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Wringer_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+  
+     
+
+
+/*____Shake_____*/
+    {
+      Name = "EnemyWringerAttack_Start"
+      ChainTo = "null"
+      FilePath = "Animations\Wringer\Attack\WringerAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_WringerAttack_Bink"
+      Loop = false
+      EndFrame = 34
+      NumAngles = 16
+      NumFrames = 34
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Sound = "/SFX/Enemy Sounds/Wringer/WringerChargeUp"
+      TimeModifierFraction = 0.01
+      Slides = [
+/*collapse*/
+        { DurationFrames = 2 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 9999 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*GripStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 22*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*GripEnd*/
+        { DurationFrames = 0 }/*ReturntoIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 34*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyWringerAttack_Fire"
+      ChainTo = "EnemyWringerAttack_GripLoop"
+      FilePath = "Animations\Wringer\Attack\WringerAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_WringerAttack_Bink"
+      Loop = false
+      EndFrame = 34
+      NumAngles = 16
+      NumFrames = 34
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      TimeModifierFraction = 0.01
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*Fire*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+       
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }/*GripStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*GripEnd*/
+        { DurationFrames = 0 }/*ReturntoIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 34*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+     
+  
+   {
+      Name = "EnemyWringerAttack_GripLoop"
+      ChainTo = "null"
+      FilePath = "Animations\Wringer\Attack\WringerAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_WringerAttack_Bink"
+      Loop = true
+      EndFrame = 34
+      NumAngles = 16
+      NumFrames = 34
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Slides = [
+        /*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*GripStart*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*GripEnd*/
+        { DurationFrames = 0 }/*ReturntoIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 34*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyWringerAttack_ReturnToIdle"
+      ChainTo = "EnemyWringerIdle"
+      FilePath = "Animations\Wringer\Attack\WringerAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_WringerAttack_Bink"
+      Loop = false
+      EndFrame = 34
+      NumAngles = 16
+      NumFrames = 34
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*GripStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*GripEnd*/
+        { DurationFrames = 1 }/*ReturntoIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*Frame 34*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+{
+      Name = "EnemyWringerChain"
+      FilePath = "Animations\Wringer\WringerChain"
+      Type = "Slide"
+      VideoTexture = "null"
+      EndFrame = 1
+      NumAngles = 1
+      NumFrames = 1
+      Loop = true
+      AngleFromOwner = "Ignore"
+      StartFrame = 1
+      OffsetY = -100.0
+      OffsetX = 10.0
+      AllowRestart = true
+      ShakeDistance = 1.0
+      ShakeSpeed = 500.0
+      ChainTo = "null"
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 2 }/*start*/
+  
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyWringerDeathVFX"
+      FilePath = "Animations\Wringer\DeathVFX\WringerDeathVFX"
+      Type = "Book"
+      VideoTexture = "Enemy_WringerDeathVFX_Bink"
+      Loop = false
+      EndFrame = 30
+      PlaySpeed = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Material = "Unlit"
+    }
+
+    /* Activation VFX */
+
+    {
+      Name = "EnemyActivationFadeInDisembodiedHandContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInDisembodiedHand"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInDisembodiedHand"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationDisembodiedHandFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationDisembodiedHandFade"
+      InheritFrom = "EnemyWringerIdle"
+      ChainTo = "EnemyActivationDisembodiedHandFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      Loop = false
+      LoopFramesOnly = true
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationDisembodiedHandFlash"
+      InheritFrom = "EnemyWringerIdle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+    }
+
+  ]
+}

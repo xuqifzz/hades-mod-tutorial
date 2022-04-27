@@ -1,0 +1,1023 @@
+{
+  "AmbientLightColor": {
+    "X": 1,
+    "Y": 1,
+    "Z": 1
+  },
+  "BackdropColor": {
+    "R": 104,
+    "G": 30,
+    "B": 26,
+    "A": 255
+  },
+  "Brightness": 0.5,
+  "ThingGroups": [
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410515,
+        "Name": "FX_Terrain"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 2,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430044,
+        "Name": "Lava_Gradient"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 2,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430116,
+        "Name": "Lava_Gradient_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430115,
+        "Name": "Lava_Lighting"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 9,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430093,
+        "Name": "Lava_FX"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 9,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430094,
+        "Name": "Lava_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430095,
+        "Name": "Lava_Darkness"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430046,
+        "Name": "Terrain_base"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430047,
+        "Name": "Terrain_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 11,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430096,
+        "Name": "Terrain_Lightercolor_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430029,
+        "Name": "Terrain_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430097,
+        "Name": "Terrain_03"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430048,
+        "Name": "Terrain_Decor_04"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430049,
+        "Name": "Terrain_Decor_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430050,
+        "Name": "Terrain_Decor_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430051,
+        "Name": "Terrain_Decor_03"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430052,
+        "Name": "Terrain_Lighting_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430053,
+        "Name": "Terrain_Shading_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430054,
+        "Name": "Terrain_Lighting_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 9,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430055,
+        "Name": "Terrain_Overlay_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 2,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430194,
+        "Name": "Terrain_Additive_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410516,
+        "Name": "Standing"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 9,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430056,
+        "Name": "Overlay_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430057,
+        "Name": "Lighting_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 2,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430195,
+        "Name": "Additive_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430058,
+        "Name": "Foreground_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 2,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430075,
+        "Name": "Foreground_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430165,
+        "Name": "Foreground_Lighting_01"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430166,
+        "Name": "Foreground_03"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430167,
+        "Name": "Foreground_Lighting_02"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 12,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430059,
+        "Name": "Heatwave"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [
+        {
+          "Id": 430059,
+          "Name": "Heatwave"
+        },
+        {
+          "Id": 430167,
+          "Name": "Foreground_Lighting_02"
+        },
+        {
+          "Id": 430166,
+          "Name": "Foreground_03"
+        },
+        {
+          "Id": 430165,
+          "Name": "Foreground_Lighting_01"
+        },
+        {
+          "Id": 430075,
+          "Name": "Foreground_02"
+        },
+        {
+          "Id": 430058,
+          "Name": "Foreground_01"
+        },
+        {
+          "Id": 430195,
+          "Name": "Additive_01"
+        },
+        {
+          "Id": 430057,
+          "Name": "Lighting_01"
+        },
+        {
+          "Id": 430056,
+          "Name": "Overlay_01"
+        },
+        {
+          "Id": 410516,
+          "Name": "Standing"
+        },
+        {
+          "Id": 430194,
+          "Name": "Terrain_Additive_01"
+        },
+        {
+          "Id": 430055,
+          "Name": "Terrain_Overlay_01"
+        },
+        {
+          "Id": 430054,
+          "Name": "Terrain_Lighting_01"
+        },
+        {
+          "Id": 430053,
+          "Name": "Terrain_Shading_01"
+        },
+        {
+          "Id": 430052,
+          "Name": "Terrain_Lighting_02"
+        },
+        {
+          "Id": 430051,
+          "Name": "Terrain_Decor_03"
+        },
+        {
+          "Id": 430050,
+          "Name": "Terrain_Decor_02"
+        },
+        {
+          "Id": 430049,
+          "Name": "Terrain_Decor_01"
+        },
+        {
+          "Id": 430048,
+          "Name": "Terrain_Decor_04"
+        },
+        {
+          "Id": 430097,
+          "Name": "Terrain_03"
+        },
+        {
+          "Id": 430029,
+          "Name": "Terrain_02"
+        },
+        {
+          "Id": 430096,
+          "Name": "Terrain_Lightercolor_02"
+        },
+        {
+          "Id": 430047,
+          "Name": "Terrain_01"
+        },
+        {
+          "Id": 430046,
+          "Name": "Terrain_base"
+        },
+        {
+          "Id": 430095,
+          "Name": "Lava_Darkness"
+        },
+        {
+          "Id": 430094,
+          "Name": "Lava_02"
+        },
+        {
+          "Id": 430093,
+          "Name": "Lava_FX"
+        },
+        {
+          "Id": 430115,
+          "Name": "Lava_Lighting"
+        },
+        {
+          "Id": 430116,
+          "Name": "Lava_Gradient_02"
+        },
+        {
+          "Id": 430044,
+          "Name": "Lava_Gradient"
+        },
+        {
+          "Id": 410515,
+          "Name": "FX_Terrain"
+        }
+      ],
+      "Id": {
+        "Id": 410519,
+        "Name": "MapArt"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": -3,
+        "Name": "Default"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410520,
+        "Name": "Breakables"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430015,
+        "Name": "Hazards"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410521,
+        "Name": "Traps"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 430138,
+        "Name": "AmbienceGenerators"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410522,
+        "Name": "Scripting"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410523,
+        "Name": "RoomNumbers"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410524,
+        "Name": "Impassable"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410525,
+        "Name": "SpawnPoints"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410526,
+        "Name": "ExitDoors"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [],
+      "Id": {
+        "Id": 410527,
+        "Name": "Events"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "Visible": true
+    },
+    {
+      "BlendMode": 0,
+      "ChildGroups": [
+        {
+          "Id": 410527,
+          "Name": "Events"
+        },
+        {
+          "Id": 410526,
+          "Name": "ExitDoors"
+        },
+        {
+          "Id": 410525,
+          "Name": "SpawnPoints"
+        },
+        {
+          "Id": 410524,
+          "Name": "Impassable"
+        },
+        {
+          "Id": 410523,
+          "Name": "RoomNumbers"
+        },
+        {
+          "Id": 410522,
+          "Name": "Scripting"
+        },
+        {
+          "Id": 430138,
+          "Name": "AmbienceGenerators"
+        },
+        {
+          "Id": 410521,
+          "Name": "Traps"
+        },
+        {
+          "Id": 430015,
+          "Name": "Hazards"
+        },
+        {
+          "Id": 410520,
+          "Name": "Breakables"
+        }
+      ],
+      "Id": {
+        "Id": 410528,
+        "Name": "MapLogic"
+      },
+      "NumSelectedAsDraw": 0,
+      "NumSelectedAsLogic": 0,
+      "NumThings": 0,
+      "NumThingsFrozen": 0,
+      "NumThingsSelectable": 0,
+      "NumThingsVisible": 0,
+      "ParentGroup": {
+        "Id": 0,
+        "Name": null
+      },
+      "Visible": true
+    }
+  ],
+  "TimeLapseCameraLocation": {
+    "X": 0,
+    "Y": 0
+  },
+  "TimeLapseCameraZoom": 1
+}

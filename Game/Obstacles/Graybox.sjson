@@ -1,0 +1,1099 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "_Impassable_Oval"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Oval01"
+        Invisible = true
+        RotateGeometry = true
+        StopsProjectiles = true
+        StopsUnits = true
+        TriggerOnSpawn = false
+        Offset = { X = 0 Y = 4 }
+        Points = [
+
+          { X = 338 Y = -38 }
+          { X = 312 Y = -82 }
+          { X = 245 Y = -131 }
+          { X = 67 Y = -184 }
+          { X = -127 Y = -173 }
+          { X = -252 Y = -126 }
+          { X = -339 Y = -34 }
+          { X = -339 Y = 27 }
+          { X = -231 Y = 101 }
+          { X = -131 Y = 123 }
+
+          { X = 30 Y = 135 }
+          { X = 100 Y = 132 }
+          { X = 199 Y = 108 }
+          { X = 331 Y = 30 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_OvalUnitsOnly"
+      InheritFrom = "_Impassable_Oval"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+        Tallness = 50.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Oval_TallnessInfinite"
+      InheritFrom = "_Impassable_Oval"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 999999.0
+      }
+    }
+    
+    {
+      Name = "TestButton"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\TestButton"
+        MeshType = "Vertical"
+        Interact = 
+        {
+          Distance = 160.0
+        }
+      }
+    }
+    
+    {
+      Name = "ExitDoor"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DoorExitLightLocked"
+        Interact = 
+        {
+          Distance = 400.0
+          OffsetY = 175.0
+        }
+        Points = [
+          { X = -29 Y = 337 }
+          { X = 76 Y = 285 }
+          { X = -120 Y = 186 }
+          { X = -229 Y = 238 }
+        ]
+      }
+    }
+    
+    {
+      Name = "FinalBossExitDoor"
+      InheritFrom = "ExitDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FinalBossExitDoorLocked"
+        Interact = 
+        {
+          Distance = 300.0
+          OffsetY = 175.0
+        }
+        Points = [
+          { X = -2 Y = 2 }
+          { X = 2 Y = 2 }
+          { X = 0 Y = -2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWingDoor"
+      InheritFrom = "ExitDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrinePointDoor_Revealed"
+        Interact = 
+        {
+          Distance = 300.0
+          OffsetY = 175.0
+        }
+        Points = [
+          { X = -2 Y = 2 }
+          { X = 2 Y = 2 }
+          { X = 0 Y = -2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWarpDoor"
+      InheritFrom = "ExitDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxWarpDoor_Closed"
+        Interact = 
+        {
+          Distance = 200.0
+          OffsetY = 0.0
+        }
+        Points = [
+          { X = -2 Y = 2 }
+          { X = 2 Y = 2 }
+          { X = 0 Y = -2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SecretDoor"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        AmbientSound = "/Leftovers/SFX/AuraAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "SecretDoor_Default"
+        Light = "Lights\DiffuseSpotlight"
+        SortMode = "Secondary"
+        StopsLight = false
+        StopsProjectiles = false
+        Tallness = 1.0
+        Interact = 
+        {
+          Distance = 180.0
+        }
+        Points = [
+          { X = 106 Y = 0 }
+          { X = 83 Y = -35 }
+          { X = 0 Y = -55 }
+          { X = -68 Y = -42 }
+          { X = -105 Y = -4 }
+          { X = -83 Y = 29 }
+          { X = -23 Y = 50 }
+          { X = 58 Y = 43 }
+          { X = 93 Y = 25 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SecretExitDoor"
+      InheritFrom = "SecretDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShrinePointDoor"
+      InheritFrom = "SecretDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrinePointDoor_Default"
+      }
+    }
+    
+    {
+      Name = "ShrinePointExitDoor"
+      InheritFrom = "ShrinePointDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HealthGate"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        AmbientSound = "/Leftovers/SFX/AuraAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthGate_Closed"
+        Light = "Lights\DiffuseSpotlight"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Interact = 
+        {
+          Distance = 100.0
+          OffsetY = -50.0
+        }
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BoatGate"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        AmbientSound = "/Leftovers/SFX/AuraAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthGate_Revealed"
+        Light = "Lights\DiffuseSpotlight"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Interact = 
+        {
+          Distance = 250.0
+          OffsetY = -50.0
+        }
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NewRunDoor"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DoorExitLightNewRun"
+        Interact = 
+        {
+          Distance = 250.0
+        }
+      }
+    }
+    
+    {
+      Name = "ReviveDoor"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ExitDoorLinesSpecial"
+        Interact = 
+        {
+          Distance = 250.0
+        }
+      }
+    }
+    
+    {
+      Name = "WeaponShop"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_01"
+        Scale = 0.3
+        StopsProjectiles = true
+        StopsUnits = true
+        Interact = 
+        {
+          Distance = 150.0
+          OffsetY = 20.0
+        }
+        Offset = { X = 0 Y = -432 }
+        Points = [
+          { X = -576 Y = 199 }
+          { X = -187 Y = 364 }
+          { X = 540 Y = -20 }
+          { X = 200 Y = -179 }
+        ]
+      }
+    }
+    
+    {
+      Name = "InspectPoint"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "InspectPointLoop"
+        Interact = 
+        {
+          Distance = 190.0
+        }
+      }
+    }
+    
+    {
+      Name = "RecallPoint"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing = 
+      {
+        AttachedAnim = "LootShadowMetapoint"
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact = 
+        {
+          Distance = 190.0
+        }
+      }
+    }
+    
+    {
+      Name = "GhostInspectPoint"
+      InheritFrom = "InspectPoint"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GhostInspectPointLoop"
+      }
+    }
+    
+    {
+      Name = "CosmeticRevealPoint"
+      InheritFrom = "GhostInspectPoint"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CosmeticInspectPointLoopBedroom"
+      }
+    }
+    
+    {
+      Name = "MetaUpgradeScreen"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Menu Sounds/MirrorAmbienceLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "ProjectileLightningMirror"
+        HelpTextId = "UseMetaUpgradeScreen"
+        Interact = 
+        {
+          Distance = 200.0
+          OffsetX = 50.0
+        }
+      }
+    }
+    
+    {
+      Name = "MetaUpgradeViewer"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Menu Sounds/MirrorAmbienceLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "CosmeticInspectPointLoop"
+        Interact = 
+        {
+          Distance = 150.0
+        }
+      }
+    }
+    
+    {
+      Name = "ShrineUpgradeViewer"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Menu Sounds/MirrorAmbienceLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "CosmeticInspectPointLoop"
+        Interact = 
+        {
+          Distance = 150.0
+        }
+      }
+    }
+    
+    {
+      Name = "OnslaughtStartButton"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Menu Sounds/MirrorAmbienceLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "CosmeticInspectPointLoop"
+        Interact = 
+        {
+          Distance = 150.0
+        }
+      }
+    }
+    
+    {
+      Name = "InvisibleButton"
+      InheritFrom = "TestButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = true
+        Interact = 
+        {
+          AutoUseDistance = 120.0
+          Distance = 130.0
+        }
+      }
+    }
+    
+    {
+      Name = "InvisibleButton02"
+      InheritFrom = "InvisibleButton"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Interact = 
+        {
+          Distance = 190.0
+          UserFaceTarget = true
+        }
+      }
+    }
+    
+    {
+      Name = "3DWall45_Invincible"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Color = { Red = 0.45 Green = 0.65 Blue = 1.0 }
+        Points = [
+          { X = 0 Y = 73 }
+          { X = 66 Y = 40 }
+          { X = 0 Y = 6 }
+          { X = -66 Y = 40 }
+        ]
+      }
+    }
+    
+    {
+      Name = "3DBarrier0"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\3DBarrier0"
+        StopsProjectiles = false
+        Tallness = 50.0
+      }
+    }
+    
+    {
+      Name = "3DBarrier45"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.02
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\3DBarrier45"
+        StopsProjectiles = false
+        Tallness = 50.0
+        Points = [
+          { X = 0 Y = 44 }
+          { X = 66 Y = 12 }
+          { X = 0 Y = -20 }
+          { X = -66 Y = 12 }
+        ]
+      }
+    }
+    
+    {
+      Name = "3DWall0"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\3DWall0"
+      }
+    }
+    
+    {
+      Name = "3DWall45"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Points = [
+          { X = 0 Y = 73 }
+          { X = 66 Y = 40 }
+          { X = 0 Y = 6 }
+          { X = -66 Y = 40 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BaseImpassable"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.02
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = false
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable"
+        Grip = 999999.0
+        Invisible = true
+        Tallness = 9999999.0
+        TriggerOnSpawn = false
+      }
+    }
+    
+    {
+      Name = "_Impassable"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "_Impassable_Diamond"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Diamond"
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Giant"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Giant"
+      }
+    }
+    
+    {
+      Name = "_Impassable_Large"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Large"
+      }
+    }
+    
+    {
+      Name = "_Impassable_Long"
+      InheritFrom = "BaseImpassable"
+      CollisionVelocityRetention = 0.5
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Long"
+        RotateGeometry = true
+        Points = [
+          { X = -5 Y = 50 }
+          { X = 5 Y = 50 }
+          { X = 5 Y = -50 }
+          { X = -5 Y = -50 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Long_Tall"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Long"
+        RotateGeometry = true
+        Tallness = 99999.0
+        Points = [
+          { X = -5 Y = 50 }
+          { X = 5 Y = 50 }
+          { X = 5 Y = -50 }
+          { X = -5 Y = -50 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Tile64Iso"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFxInvulnerable = "InvincibleHitSpark"
+      }
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso"
+        MeshType = "Flat"
+        RotateGeometry = true
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Tile64IsoUnitsOnly"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso"
+        MeshType = "Flat"
+        RotateGeometry = true
+        StopsProjectiles = false
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Tile64IsoUnitsOnly_Tall"
+      InheritFrom = "_Impassable_Tile64IsoUnitsOnly"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = true
+        Tallness = 70.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Tile64IsoUnitsOnly_Short"
+      InheritFrom = "_Impassable_Tile64IsoUnitsOnly"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = true
+        Tallness = 1.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle90"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Triangle"
+        MeshType = "Flat"
+        RotateGeometry = true
+        Points = [
+          { X = -32 Y = 16 }
+          { X = 32 Y = 16 }
+          { X = -32 Y = -16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle01"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso_Half_01"
+        MeshType = "Flat"
+        RotateGeometry = true
+        Points = [
+          { X = -32 Y = 32 }
+          { X = 32 Y = 0 }
+          { X = -32 Y = -32 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle01_UnitsOnly"
+      InheritFrom = "_Impassable_Triangle01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+        Tallness = 70.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle01_UnitsOnly_Short"
+      InheritFrom = "_Impassable_Triangle01_UnitsOnly"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 1.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle02"
+      InheritFrom = "BaseImpassable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso_Half_02"
+        MeshType = "Flat"
+        RotateGeometry = true
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 64 Y = -16 }
+          { X = -64 Y = -16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle02_UnitsOnly"
+      InheritFrom = "_Impassable_Triangle02"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+        Tallness = 70.0
+      }
+    }
+    
+    {
+      Name = "_Impassable_Triangle02_UnitsOnly_Short"
+      InheritFrom = "_Impassable_Triangle02_UnitsOnly"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 1.0
+      }
+    }
+    
+    {
+      Name = "Prototype_Tile_01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Prototype_Tile_01"
+        Points = [
+          { X = -767 Y = 0 }
+          { X = -6 Y = 385 }
+          { X = 767 Y = -4 }
+          { X = 2 Y = -384 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Prototype_Triangle_01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Prototype_Tile_Half_01"
+        Points = [
+          { X = -1 Y = -385 }
+          { X = -3 Y = 388 }
+          { X = 768 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Prototype_Triangle_02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Prototype_Tile_Half_02"
+        Points = [
+          { X = -761 Y = 0 }
+          { X = 3 Y = 385 }
+          { X = 768 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Prototype_Triangle_03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Prototype_Tile_Half_03"
+        Points = [
+          { X = -761 Y = 0 }
+          { X = 3 Y = -385 }
+          { X = 768 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Test-Tile64-Iso"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Tile64-Iso"
+        MeshType = "Flat"
+        StopsProjectiles = false
+        StopsUnits = false
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Number0"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_0"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number1"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_1"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number2"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_2"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number3"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_3"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number4"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_4"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number5"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_5"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number6"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_6"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number7"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_7"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number8"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_8"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "Number9"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\Number_9"
+        Grip = 999999.0
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3966 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "AsphodelWall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_01"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+        Points = [
+          { X = -1160 Y = 11 }
+          { X = -1157 Y = 62 }
+          { X = 1149 Y = 59 }
+          { X = 1149 Y = 3 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01a"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01a"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01b"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01b"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01c"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01c"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01d"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01d"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01e"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01e"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01f"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01f"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01g"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01g"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBackground01h"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Background_01h"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -1002 }
+      }
+    }
+    
+    {
+      Name = "AsphodelAshes01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Ashes_01"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -9 }
+      }
+    }
+    
+    {
+      Name = "AsphodelRubble01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Rubble_01"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = -9 }
+      }
+    }
+    
+    {
+      Name = "AsphodelRubble01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Rubble_01a"
+        Tallness = 45.0
+        Offset = { X = 0 Y = -16 }
+        Points = [
+          { X = -57 Y = 12 }
+          { X = -5 Y = 33 }
+          { X = 43 Y = 19 }
+          { X = 58 Y = 0 }
+          { X = -5 Y = -26 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelRubble02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Rubble_02"
+        Tallness = 155.0
+        Offset = { X = 0 Y = -47 }
+        Points = [
+          { X = -89 Y = 11 }
+          { X = -44 Y = 55 }
+          { X = 56 Y = 50 }
+          { X = 99 Y = 41 }
+          { X = 3 Y = -33 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelChain01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Chain_01"
+        Tallness = 2331.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkeleton02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skeleton_02"
+        Tallness = 733.0
+        Offset = { X = 0 Y = 13 }
+        Points = [
+          { X = -476 Y = 333 }
+          { X = -138 Y = 540 }
+          { X = 424 Y = 305 }
+          { X = 101 Y = 140 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCapital01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Capital_01"
+        Tallness = 679.0
+        Offset = { X = 0 Y = -370 }
+        Points = [
+          { X = -553 Y = -37 }
+          { X = -20 Y = 230 }
+          { X = 394 Y = 2 }
+          { X = -106 Y = -253 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTree01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Tree_01"
+        Tallness = 1566.0
+        Offset = { X = 0 Y = -656 }
+        Points = [
+          { X = -218 Y = -37 }
+          { X = -100 Y = 126 }
+          { X = 180 Y = 121 }
+          { X = 321 Y = -16 }
+          { X = 35 Y = -161 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_01"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_01a"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_01b"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_01c"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_02"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelSkullpile03"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skullpile_03"
+        Tallness = 249.0
+        Offset = { X = 0 Y = -82 }
+      }
+    }
+    
+    {
+      Name = "AsphodelFoliage"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Foliage"
+        Tallness = 1566.0
+        Offset = { X = 0 Y = -147 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBoat01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "AsphodelBoatSunkRipples"
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsBone"
+        Graphic = "AsphodelBoat"
+        StopsLight = false
+        Tallness = 800.0
+        Offset = { X = 0 Y = -174 }
+        Points = [
+          { X = -478 Y = 378 }
+          { X = 374 Y = -21 }
+          { X = 0 Y = -208 }
+          { X = -823 Y = 203 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBoat01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "AsphodelBoatSunkRipples"
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelBoatSunk"
+        StopsLight = false
+        Tallness = 800.0
+        Interact = 
+        {
+          Distance = 190.0
+          OffsetX = -150.0
+          OffsetY = -50.0
+        }
+        Offset = { X = 0 Y = -174 }
+        Points = [
+          { X = -485 Y = 382 }
+          { X = 348 Y = -34 }
+          { X = -73 Y = -244 }
+          { X = -722 Y = 89 }
+          { X = -765 Y = 169 }
+          { X = -763 Y = 244 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_04"
+        Tallness = 245.0
+        Offset = { X = 0 Y = -41 }
+        Points = [
+          { X = -300 Y = 57 }
+          { X = 8 Y = 208 }
+          { X = 304 Y = 75 }
+          { X = -21 Y = -89 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_05"
+        Tallness = 245.0
+        Offset = { X = 0 Y = -133 }
+        Points = [
+          { X = -172 Y = 92 }
+          { X = 213 Y = 95 }
+          { X = 207 Y = -156 }
+          { X = -170 Y = -162 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock06"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_06"
+        Tallness = 245.0
+        Offset = { X = 0 Y = -133 }
+      }
+    }
+    
+    {
+      Name = "AsphodelVase03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Vase_03"
+        Tallness = 1159.0
+        Offset = { X = 0 Y = -456 }
+        Points = [
+          { X = -202 Y = 48 }
+          { X = 38 Y = 167 }
+          { X = 270 Y = 48 }
+          { X = 40 Y = -78 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelVase01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Vase_01b"
+        Tallness = 486.0
+        Offset = { X = 0 Y = -669 }
+        Points = [
+          { X = -180 Y = 11 }
+          { X = -41 Y = 81 }
+          { X = 114 Y = -1 }
+          { X = -42 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelVase01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Vase_01c"
+        Tallness = 632.0
+        Offset = { X = 0 Y = -669 }
+        Points = [
+          { X = -180 Y = 11 }
+          { X = -41 Y = 81 }
+          { X = 114 Y = -1 }
+          { X = -42 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelVase01d"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Vase_01d"
+        Tallness = 632.0
+        Offset = { X = 0 Y = -669 }
+        Points = [
+          { X = -180 Y = 11 }
+          { X = -41 Y = 81 }
+          { X = 114 Y = -1 }
+          { X = -42 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBust01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bust_01"
+        Tallness = 1412.0
+        Offset = { X = 0 Y = -586 }
+        Points = [
+          { X = -170 Y = 34 }
+          { X = 76 Y = 134 }
+          { X = 290 Y = 14 }
+          { X = 76 Y = -99 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelChandelier01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Chandelier_01"
+        Tallness = 679.0
+        Offset = { X = 0 Y = -370 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBrazier01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Brazier_01"
+        Tallness = 896.0
+        Offset = { X = 0 Y = -382 }
+        Points = [
+          { X = -286 Y = 46 }
+          { X = -46 Y = 135 }
+          { X = 203 Y = 98 }
+          { X = 253 Y = -30 }
+          { X = -21 Y = -132 }
+        ]
+      }
+    }
+    
+    {
+      Name = "MurderBoatGate"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MurderBoatGate"
+        Tallness = 375.0
+        Offset = { X = 0 Y = -179 }
+        Points = [
+          { X = -126 Y = -31 }
+          { X = 90 Y = 75 }
+          { X = 111 Y = 64 }
+          { X = -102 Y = -42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBrazier02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Brazier_02"
+        Tallness = 639.0
+        Offset = { X = 0 Y = -268 }
+        Points = [
+          { X = -353 Y = 30 }
+          { X = -278 Y = 136 }
+          { X = 16 Y = 204 }
+          { X = 302 Y = 136 }
+          { X = 361 Y = 11 }
+          { X = 260 Y = -114 }
+          { X = -8 Y = -184 }
+          { X = -253 Y = -121 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBrazier03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Brazier_03"
+        Tallness = 1244.0
+        Offset = { X = 0 Y = -531 }
+        Points = [
+          { X = -6 Y = -131 }
+          { X = -204 Y = -32 }
+          { X = -160 Y = 97 }
+          { X = 27 Y = 132 }
+          { X = 232 Y = 65 }
+          { X = 238 Y = -43 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelGable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Gable_01"
+        Tallness = 742.0
+        Offset = { X = 0 Y = -232 }
+        Points = [
+          { X = -664 Y = 81 }
+          { X = -401 Y = 212 }
+          { X = 679 Y = -328 }
+          { X = 417 Y = -459 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelGable01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelGable01bBob"
+        Tallness = 463.0
+        Offset = { X = 0 Y = -72 }
+        Points = [
+          { X = -403 Y = 160 }
+          { X = -190 Y = 255 }
+          { X = 397 Y = 10 }
+          { X = 140 Y = -110 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelGable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Gable_02"
+        Tallness = 367.0
+        Offset = { X = 0 Y = -198 }
+        Points = [
+          { X = -685 Y = 150 }
+          { X = -386 Y = 303 }
+          { X = 698 Y = -243 }
+          { X = 385 Y = -400 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelGable02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Gable_02a"
+        Tallness = 154.0
+        Offset = { X = 0 Y = -86 }
+        Points = [
+          { X = 324 Y = 52 }
+          { X = 327 Y = -66 }
+          { X = -321 Y = -63 }
+          { X = -321 Y = 56 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelArch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Arch_01"
+        Tallness = 639.0
+        Offset = { X = 0 Y = -249 }
+        Points = [
+          { X = -476 Y = 160 }
+          { X = -243 Y = 259 }
+          { X = 499 Y = -113 }
+          { X = 279 Y = -222 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelArch01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Arch_01b"
+        Tallness = 639.0
+        Offset = { X = 0 Y = -340 }
+        Points = [
+          { X = 459 Y = -84 }
+          { X = 271 Y = -188 }
+          { X = -421 Y = 158 }
+          { X = -215 Y = 252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_01"
+        Tallness = 806.0
+        Offset = { X = 0 Y = -370 }
+        Points = [
+          { X = -698 Y = 152 }
+          { X = -350 Y = 338 }
+          { X = 693 Y = -190 }
+          { X = 320 Y = -370 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_02"
+        Tallness = 1648.0
+        Offset = { X = 0 Y = -728 }
+        Points = [
+          { X = -525 Y = 45 }
+          { X = -155 Y = 231 }
+          { X = 488 Y = -70 }
+          { X = 88 Y = -263 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb02b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_02b"
+        Tallness = 1648.0
+        Offset = { X = 0 Y = -728 }
+        Points = [
+          { X = -525 Y = 45 }
+          { X = -155 Y = 231 }
+          { X = 488 Y = -70 }
+          { X = 88 Y = -263 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_01c"
+        Tallness = 844.0
+        Offset = { X = 0 Y = -272 }
+        Points = [
+          { X = -719 Y = 248 }
+          { X = -316 Y = 447 }
+          { X = 724 Y = -101 }
+          { X = 337 Y = -284 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_03"
+        Tallness = 910.0
+        Offset = { X = 0 Y = -267 }
+        Points = [
+          { X = 748 Y = 234 }
+          { X = 750 Y = 134 }
+          { X = -746 Y = 153 }
+          { X = -744 Y = 234 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb03b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_03b"
+        Tallness = 1627.0
+        Offset = { X = 0 Y = -701 }
+        Points = [
+          { X = -493 Y = 131 }
+          { X = 502 Y = 137 }
+          { X = 487 Y = -83 }
+          { X = -468 Y = -132 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb03c"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_03c"
+        StopsLight = true
+        Tallness = 1627.0
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb02c"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_02c"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1627.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -711 }
+        Points = [
+          { X = -545 Y = 45 }
+          { X = -118 Y = 258 }
+          { X = 427 Y = 102 }
+          { X = 610 Y = -29 }
+          { X = 74 Y = -266 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb01a"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_01a"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 882.0
+        TouchdownSound = "/EmptyCue"
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -348 }
+        Points = [
+          { X = -869 Y = 320 }
+          { X = -543 Y = 477 }
+          { X = 873 Y = -222 }
+          { X = 544 Y = -386 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelCatacomb01b"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Catacomb_01b"
+        Tallness = 274.0
+        Points = [
+          { X = -407 Y = 184 }
+          { X = -171 Y = 308 }
+          { X = 524 Y = -25 }
+          { X = 264 Y = -151 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_02"
+        Tallness = 2897.0
+        Offset = { X = 0 Y = -1245 }
+        Points = [
+          { X = -600 Y = -2 }
+          { X = 46 Y = 288 }
+          { X = 672 Y = -45 }
+          { X = 86 Y = -331 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_08"
+        Tallness = 2462.0
+        Offset = { X = 0 Y = -1017 }
+        Points = [
+          { X = -363 Y = 74 }
+          { X = -31 Y = 253 }
+          { X = 357 Y = 64 }
+          { X = 0 Y = -114 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelPillar07Bob"
+        Tallness = 311.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -120 }
+        Points = [
+          { X = -51 Y = 19 }
+          { X = 5 Y = 37 }
+          { X = 50 Y = 16 }
+          { X = 46 Y = -10 }
+          { X = 4 Y = -16 }
+          { X = -44 Y = -6 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar08b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelPillar08bBob"
+        Tallness = 983.0
+        Offset = { X = 0 Y = -422 }
+        Points = [
+          { X = -500 Y = -42 }
+          { X = -278 Y = 118 }
+          { X = 40 Y = 29 }
+          { X = -271 Y = -150 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelManhole01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Manhole_01"
+        Tallness = 96.0
+        Offset = { X = 0 Y = -144 }
+        Points = [
+          { X = 286 Y = -584 }
+          { X = -1090 Y = 78 }
+          { X = -517 Y = 291 }
+          { X = 228 Y = 158 }
+          { X = 960 Y = -244 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelManhole01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Manhole_01b"
+        Tallness = 54.0
+        Offset = { X = 0 Y = -200 }
+        Points = [
+          { X = 6 Y = -584 }
+          { X = -587 Y = -353 }
+          { X = -909 Y = 28 }
+          { X = -850 Y = 396 }
+          { X = 528 Y = -303 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_02"
+        Tallness = 2395.0
+        Offset = { X = 0 Y = -1002 }
+        Points = [
+          { X = -859 Y = -343 }
+          { X = 843 Y = 500 }
+          { X = 869 Y = 449 }
+          { X = -797 Y = -384 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_04"
+        Tallness = 921.0
+        Offset = { X = 0 Y = -280 }
+        Points = [
+          { X = -830 Y = 407 }
+          { X = -709 Y = 487 }
+          { X = 849 Y = -301 }
+          { X = 695 Y = -375 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_05"
+        Tallness = 2349.0
+        Offset = { X = 0 Y = -1473 }
+        Points = [
+          { X = -973 Y = -119 }
+          { X = -860 Y = 106 }
+          { X = 866 Y = 100 }
+          { X = 933 Y = -139 }
+          { X = 933 Y = -139 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_06"
+        Tallness = 1800.0
+        Offset = { X = 0 Y = -1145 }
+        Points = [
+          { X = -832 Y = 11 }
+          { X = 37 Y = 398 }
+          { X = 864 Y = -20 }
+          { X = 0 Y = -423 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_07"
+        Tallness = 1315.0
+        Offset = { X = 0 Y = -1170 }
+        Points = [
+          { X = 547 Y = 149 }
+          { X = 399 Y = -1128 }
+          { X = -482 Y = -1147 }
+          { X = -551 Y = 149 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "AsphodelTerrainRockCollapse"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 1000.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_01"
+        Tallness = 434.0
+        Offset = { X = 0 Y = -197 }
+        Points = [
+          { X = -156 Y = 10 }
+          { X = -14 Y = 73 }
+          { X = 164 Y = -16 }
+          { X = 30 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "AsphodelTerrainRockCollapse"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 1000.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_02"
+        Tallness = 247.0
+        Offset = { X = 0 Y = -162 }
+        Points = [
+          { X = -326 Y = -41 }
+          { X = -82 Y = 68 }
+          { X = 76 Y = 80 }
+          { X = 300 Y = -46 }
+          { X = 160 Y = -115 }
+          { X = -123 Y = -120 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainRock03"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "AsphodelTerrainRockCollapse"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 1000.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Rock_03"
+        Tallness = 800.0
+        Offset = { X = 0 Y = -329 }
+        Points = [
+          { X = -170 Y = 46 }
+          { X = 20 Y = 150 }
+          { X = 260 Y = 19 }
+          { X = 94 Y = -77 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelHydraRock01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      ReflectLobProjectiles = false
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_HydraRock_01"
+        Tallness = 600.0
+        Offset = { X = 0 Y = -329 }
+        Points = [
+          { X = 241 Y = -197 }
+          { X = -204 Y = -200 }
+          { X = -449 Y = -140 }
+          { X = -462 Y = 66 }
+          { X = -288 Y = 188 }
+          { X = 148 Y = 194 }
+          { X = 446 Y = 84 }
+          { X = 491 Y = -83 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelHydraRock02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_HydraRock_02"
+        Tallness = 457.0
+        Offset = { X = 0 Y = -187 }
+        Points = [
+          { X = 329 Y = -1 }
+          { X = 223 Y = -90 }
+          { X = -179 Y = -92 }
+          { X = -265 Y = 10 }
+          { X = -216 Y = 58 }
+          { X = 14 Y = 116 }
+          { X = 240 Y = 85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelHydraRock02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_HydraRock_02a"
+        Tallness = 759.0
+        Offset = { X = 0 Y = -334 }
+        Points = [
+          { X = 913 Y = -65 }
+          { X = 555 Y = -421 }
+          { X = -414 Y = -403 }
+          { X = -733 Y = -4 }
+          { X = -430 Y = 167 }
+          { X = 63 Y = 255 }
+          { X = 541 Y = 146 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelHydraRock03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_HydraRock_03"
+        Tallness = 956.0
+        Offset = { X = 0 Y = -642 }
+        Points = [
+          { X = 329 Y = -1 }
+          { X = 223 Y = -90 }
+          { X = -179 Y = -92 }
+          { X = -265 Y = 10 }
+          { X = -216 Y = 58 }
+          { X = 14 Y = 116 }
+          { X = 240 Y = 85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelHydraRock03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_HydraRock_03a"
+        Tallness = 1464.0
+        Offset = { X = 0 Y = -642 }
+        Points = [
+          { X = -1032 Y = -25 }
+          { X = -846 Y = 405 }
+          { X = -117 Y = 542 }
+          { X = 964 Y = 185 }
+          { X = 1302 Y = -83 }
+          { X = 122 Y = -627 }
+          { X = -954 Y = -328 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_08"
+        Offset = { X = 0 Y = -753 }
+        Points = [
+          { X = -925 Y = 28 }
+          { X = -920 Y = 214 }
+          { X = 841 Y = 214 }
+          { X = 837 Y = 65 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock08b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_08b"
+        Tallness = 1775.0
+        Offset = { X = 0 Y = -788 }
+        Points = [
+          { X = -577 Y = -8 }
+          { X = -589 Y = 64 }
+          { X = 456 Y = 64 }
+          { X = 460 Y = -12 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock09"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_09"
+        Offset = { X = 0 Y = -527 }
+        Points = [
+          { X = -291 Y = 3 }
+          { X = -297 Y = 87 }
+          { X = 311 Y = 78 }
+          { X = 304 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelVase02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Vase_02"
+        Tallness = 785.0
+        Offset = { X = 0 Y = -309 }
+        Points = [
+          { X = -44 Y = -95 }
+          { X = -255 Y = 8 }
+          { X = 22 Y = 136 }
+          { X = 236 Y = 38 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock10"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_10"
+        Tallness = 2231.0
+        Offset = { X = 0 Y = -287 }
+        Points = [
+          { X = -663 Y = -127 }
+          { X = 363 Y = 376 }
+          { X = 694 Y = 210 }
+          { X = -325 Y = -306 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock11"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_11"
+        Tallness = 527.0
+        Offset = { X = 0 Y = -142 }
+        Points = [
+          { X = -668 Y = 260 }
+          { X = -431 Y = 385 }
+          { X = 666 Y = -196 }
+          { X = 451 Y = -306 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock11a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_11a"
+        Tallness = 495.0
+        Offset = { X = 0 Y = -238 }
+        Points = [
+          { X = -760 Y = 41 }
+          { X = -770 Y = 91 }
+          { X = 737 Y = 77 }
+          { X = 739 Y = 46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallRock12"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WallRock_12"
+        Tallness = 1142.0
+        Offset = { X = 0 Y = -396 }
+        Points = [
+          { X = -765 Y = 308 }
+          { X = -567 Y = 431 }
+          { X = 754 Y = -189 }
+          { X = 540 Y = -344 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTomb03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepFxL = "FireFootstepL-Spawner"
+        FootstepFxR = "FireFootstepR-Spawner"
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Tomb_03"
+        StopsProjectiles = false
+        Points = [
+          { X = -1117 Y = -97 }
+          { X = 257 Y = 565 }
+          { X = 257 Y = 565 }
+          { X = 1084 Y = 196 }
+          { X = -308 Y = -635 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTomb04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Tomb_04"
+        StopsProjectiles = false
+        Tallness = 666.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -221 }
+        Points = [
+          { X = -1036 Y = 283 }
+          { X = -373 Y = 610 }
+          { X = 1014 Y = -80 }
+          { X = 364 Y = -420 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTombstone01Bob"
+        Tallness = 2043.0
+        Offset = { X = 0 Y = -775 }
+        Points = [
+          { X = -457 Y = 183 }
+          { X = -289 Y = 258 }
+          { X = 461 Y = -109 }
+          { X = 278 Y = -206 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTombstone01aBob"
+        Tallness = 1276.0
+        Offset = { X = 0 Y = -479 }
+        Points = [
+          { X = -222 Y = 2 }
+          { X = 298 Y = 242 }
+          { X = 474 Y = 158 }
+          { X = -27 Y = -98 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Asphodel_Tombstone_01b_Bob"
+        Tallness = 1111.0
+        Offset = { X = 0 Y = -364 }
+        Points = [
+          { X = -443 Y = 108 }
+          { X = -246 Y = 207 }
+          { X = 487 Y = -124 }
+          { X = 257 Y = -233 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTombstone02Bob"
+        Tallness = 1992.0
+        Offset = { X = 0 Y = -1076 }
+        Points = [
+          { X = -429 Y = 89 }
+          { X = 429 Y = 93 }
+          { X = 403 Y = -36 }
+          { X = -425 Y = -40 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTombstone03Bob"
+        Tallness = 44.0
+        Offset = { X = 0 Y = 60 }
+        Points = [
+          { X = -319 Y = 312 }
+          { X = -102 Y = 280 }
+          { X = 406 Y = -64 }
+          { X = 400 Y = -122 }
+          { X = -17 Y = -147 }
+          { X = -401 Y = 132 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTombstone04Bob"
+        Tallness = 43.0
+        Offset = { X = 0 Y = -20 }
+        Points = [
+          { X = -209 Y = 224 }
+          { X = -121 Y = 250 }
+          { X = -121 Y = 250 }
+          { X = 170 Y = 78 }
+          { X = 217 Y = -167 }
+          { X = -93 Y = -249 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Tombstone_05"
+        Tallness = 808.0
+        Offset = { X = 0 Y = -443 }
+        Points = [
+          { X = -398 Y = 57 }
+          { X = 374 Y = 47 }
+          { X = 408 Y = -141 }
+          { X = -425 Y = -153 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone05a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Tombstone_05a"
+        Tallness = 610.0
+        Offset = { X = 0 Y = -241 }
+        Points = [
+          { X = -136 Y = -46 }
+          { X = -117 Y = 75 }
+          { X = 150 Y = 69 }
+          { X = 146 Y = -60 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Tombstone_06"
+        Tallness = 831.0
+        Offset = { X = 0 Y = -289 }
+        Points = [
+          { X = -328 Y = -4 }
+          { X = 218 Y = 175 }
+          { X = 391 Y = 54 }
+          { X = -79 Y = -213 }
+          { X = -398 Y = -87 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTombstone06a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Tombstone_06a"
+        Tallness = 610.0
+        Offset = { X = 0 Y = -230 }
+        Points = [
+          { X = -193 Y = -12 }
+          { X = 4 Y = 77 }
+          { X = 53 Y = 49 }
+          { X = -135 Y = -42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBricksquare01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bricksquare_01"
+        Tallness = 790.0
+        Offset = { X = 0 Y = -309 }
+        Points = [
+          { X = -221 Y = 66 }
+          { X = -72 Y = 147 }
+          { X = 232 Y = -10 }
+          { X = 80 Y = -87 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBricksquare01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bricksquare_01b"
+        Tallness = 395.0
+        Offset = { X = 0 Y = -160 }
+        Points = [
+          { X = -196 Y = 42 }
+          { X = -67 Y = 112 }
+          { X = 200 Y = -20 }
+          { X = 57 Y = -89 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBricksquare02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bricksquare_02"
+        Tallness = 1059.0
+        Offset = { X = 0 Y = -378 }
+        Points = [
+          { X = -572 Y = 78 }
+          { X = 10 Y = 363 }
+          { X = 579 Y = 65 }
+          { X = -12 Y = -201 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBricksquare03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bricksquare_03"
+        Tallness = 648.0
+        Offset = { X = 0 Y = -269 }
+        Points = [
+          { X = -400 Y = 0 }
+          { X = 0 Y = 197 }
+          { X = 398 Y = 0 }
+          { X = 0 Y = -201 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBricksquare04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bricksquare_04"
+        Tallness = 118.0
+        Offset = { X = 0 Y = -4 }
+        Points = [
+          { X = -187 Y = 239 }
+          { X = -107 Y = 234 }
+          { X = 200 Y = 38 }
+          { X = 194 Y = -105 }
+          { X = -201 Y = -97 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_04"
+        Offset = { X = 0 Y = -161 }
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton04a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_04a"
+        Offset = { X = 0 Y = -17 }
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05"
+        Tallness = 861.0
+        Offset = { X = 0 Y = -327 }
+        Points = [
+          { X = -303 Y = 63 }
+          { X = -50 Y = 104 }
+          { X = 243 Y = -9 }
+          { X = -38 Y = -71 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05a"
+        Offset = { X = 0 Y = -17 }
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05b"
+        Tallness = 912.0
+        Offset = { X = 0 Y = -383 }
+        Points = [
+          { X = -91 Y = 64 }
+          { X = 126 Y = 22 }
+          { X = 46 Y = -54 }
+          { X = -154 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05c"
+        Tallness = 1148.0
+        Offset = { X = 0 Y = -435 }
+        Points = [
+          { X = -60 Y = 42 }
+          { X = 82 Y = 121 }
+          { X = 221 Y = 43 }
+          { X = 63 Y = -28 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05d"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05d"
+        Tallness = 1003.0
+        Offset = { X = 0 Y = -371 }
+        Points = [
+          { X = 115 Y = -73 }
+          { X = -124 Y = 35 }
+          { X = 13 Y = 142 }
+          { X = 217 Y = 37 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05e"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05e"
+        Tallness = 1007.0
+        Offset = { X = 0 Y = -379 }
+        Points = [
+          { X = -245 Y = 39 }
+          { X = -179 Y = 117 }
+          { X = 213 Y = 39 }
+          { X = 100 Y = -20 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton05f"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_05f"
+        Tallness = 1046.0
+        Offset = { X = 0 Y = -435 }
+        Points = [
+          { X = -110 Y = -15 }
+          { X = -114 Y = 77 }
+          { X = 117 Y = 63 }
+          { X = 114 Y = -16 }
+          { X = 114 Y = -16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton01b"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_01b"
+        Offset = { X = 0 Y = -90 }
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_01c"
+        Tallness = 456.0
+        Offset = { X = 0 Y = -193 }
+        Points = [
+          { X = -302 Y = 67 }
+          { X = -38 Y = 211 }
+          { X = 311 Y = 31 }
+          { X = 42 Y = -100 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWallSkeleton02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Wall_Skeleton_02"
+        Tallness = 403.0
+        Offset = { X = 0 Y = -656 }
+        Points = [
+          { X = -7 Y = 108 }
+          { X = 210 Y = 3 }
+          { X = 7 Y = -83 }
+          { X = 7 Y = -83 }
+          { X = -203 Y = 16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelFlower01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Flower_01"
+        Offset = { X = 0 Y = -1677 }
+        Points = [
+          { X = -230 Y = -1188 }
+          { X = 99 Y = -1048 }
+          { X = 512 Y = -1222 }
+          { X = 165 Y = -1381 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelFlower02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Flower_02"
+        Tallness = 253.0
+        Offset = { X = 0 Y = -128 }
+        Points = [
+          { X = 79 Y = 271 }
+          { X = 548 Y = -68 }
+          { X = 61 Y = -403 }
+          { X = -431 Y = -128 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_01"
+        Tallness = 1738.0
+        Offset = { X = 0 Y = -771 }
+        Points = [
+          { X = -342 Y = 48 }
+          { X = 4 Y = 220 }
+          { X = 355 Y = 58 }
+          { X = 355 Y = 58 }
+          { X = -8 Y = -114 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_03"
+        Tallness = 3223.0
+        Offset = { X = 0 Y = -1356 }
+        Points = [
+          { X = -329 Y = 140 }
+          { X = -86 Y = 232 }
+          { X = 302 Y = 118 }
+          { X = 21 Y = -21 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_05"
+        Tallness = 1241.0
+        Offset = { X = 0 Y = -969 }
+        Points = [
+          { X = -389 Y = 9 }
+          { X = -108 Y = 136 }
+          { X = 91 Y = 17 }
+          { X = -164 Y = -114 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar09"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_09"
+        Tallness = 1241.0
+        Offset = { X = 0 Y = -510 }
+        Points = [
+          { X = -207 Y = -66 }
+          { X = -212 Y = 119 }
+          { X = 13 Y = 118 }
+          { X = 11 Y = -67 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar09a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_09a"
+        Tallness = 1241.0
+        Offset = { X = 0 Y = -510 }
+        Points = [
+          { X = -144 Y = -76 }
+          { X = -149 Y = 112 }
+          { X = 80 Y = 110 }
+          { X = 78 Y = -76 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar05a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_05a"
+        Offset = { X = 0 Y = -655 }
+        Points = [
+          { X = -39 Y = 50 }
+          { X = 83 Y = 142 }
+          { X = 319 Y = 140 }
+          { X = 498 Y = 30 }
+          { X = 251 Y = -97 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      ReflectLobProjectiles = false
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        HitFx = "PillarHitFx"
+        HitSound = "/SFX/PillarBoulderImpact"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Pillar_06"
+        OcclusionBaseAnim = "Asphodel_Pillar06Footprint"
+        OcclusionOpacity = 0.25
+        Tallness = 1841.0
+        Offset = { X = 0 Y = -664 }
+        Points = [
+          { X = -493 Y = 31 }
+          { X = -307 Y = 217 }
+          { X = 83 Y = 255 }
+          { X = 397 Y = 143 }
+          { X = 480 Y = 11 }
+          { X = 480 Y = 11 }
+          { X = 275 Y = -189 }
+          { X = -214 Y = -209 }
+        ]
+        Using = [
+          { Name = "AsphodelPillar06A" }
+          { Name = "AsphodelPillar06B" }
+          { Name = "AsphodelPillar06C" }
+          { Name = "AsphodelTerrainRock01" Scale = 0.15 }
+          { Name = "AsphodelSkull" Scale = 1.0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar06A"
+      InheritFrom = "AsphodelPillar06"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteA"
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar06B"
+      InheritFrom = "AsphodelPillar06"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteA"
+      }
+    }
+    
+    {
+      Name = "AsphodelPillar06C"
+      InheritFrom = "AsphodelPillar06"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteA"
+      }
+    }
+    
+    {
+      Name = "AsphodelLavaJelly01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "LavaJellyCollapse"
+        DeathSound = "/SFX/LavaJellyCollapseBurst"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 100.0
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_LavaJelly_01"
+        Tallness = 1105.0
+        Offset = { X = 0 Y = -591 }
+        Points = [
+          { X = -278 Y = -107 }
+          { X = -278 Y = 81 }
+          { X = 198 Y = 89 }
+          { X = 194 Y = -92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelRock01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_03"
+        OccluderPoints = [
+          { X = 914 Y = -189 }
+          { X = -1242 Y = 1053 }
+          { X = -965 Y = 1137 }
+          { X = -759 Y = 945 }
+          { X = -489 Y = 810 }
+          { X = -378 Y = 712 }
+          { X = 668 Y = 216 }
+          { X = 735 Y = 128 }
+          { X = 1056 Y = -13 }
+          { X = 1265 Y = -54 }
+        ]
+        Offset = { X = 0 Y = 270 }
+        Points = [
+          { X = -1238 Y = 607 }
+          { X = -1336 Y = 1046 }
+          { X = -965 Y = 1130 }
+          { X = 1356 Y = -135 }
+          { X = 732 Y = -337 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelRock02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/Player Sounds/ClubImpactHit"
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/Player Sounds/ClubImpactHit"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+        RequiresDamageToAffect = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02"
+        Points = [
+          { X = 94 Y = 72 }
+          { X = -29 Y = 51 }
+          { X = -95 Y = 97 }
+          { X = 25 Y = 113 }
+          { X = 81 Y = 92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBoulder01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/Player Sounds/ClubImpactHit"
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/Player Sounds/ClubImpactHit"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+        RequiresDamageToAffect = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02"
+        Points = [
+          { X = 94 Y = 72 }
+          { X = -29 Y = 51 }
+          { X = -95 Y = 97 }
+          { X = 25 Y = 113 }
+          { X = 81 Y = 92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelRock03"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_10"
+        StopsProjectiles = false
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -685 Y = -200 }
+          { X = -336 Y = 70 }
+          { X = 256 Y = 258 }
+          { X = 685 Y = 65 }
+          { X = -240 Y = -400 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTorch01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Torch_01"
+        StopsProjectiles = false
+        Tallness = 810.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -352 }
+        Points = [
+          { X = -346 Y = -4 }
+          { X = -20 Y = 164 }
+          { X = 441 Y = -71 }
+          { X = 104 Y = -242 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTorch02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Torch_02"
+        StopsProjectiles = false
+        Tallness = 644.0
+        Offset = { X = 0 Y = -352 }
+        Points = [
+          { X = -615 Y = 20 }
+          { X = -20 Y = 229 }
+          { X = 527 Y = -11 }
+          { X = 0 Y = -281 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelSkull"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "AsphodelSkullDeath"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        HomingEligible = false
+        ProjectilesAlwaysPenetrate = true
+        RequiresDamageToAffect = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Skull"
+        Scale = 0.2
+        Tallness = 434.0
+        Offset = { X = 0 Y = -197 }
+        Points = [
+          { X = -219 Y = 98 }
+          { X = -52 Y = 163 }
+          { X = 149 Y = 134 }
+          { X = 184 Y = 51 }
+          { X = -44 Y = 5 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Stairs_01"
+        Color = { Red = 1.0 Green = 0.75 Blue = 1.0 }
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_03"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_04"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_05"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_06"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_07"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_08"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_09"
+        Tallness = 270.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -1926 Y = -59 }
+          { X = 1711 Y = 684 }
+          { X = 1897 Y = 470 }
+          { X = -395 Y = -259 }
+          { X = -1840 Y = -302 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_10"
+        Tallness = 2494.0
+        Offset = { X = 0 Y = -1299 }
+        Points = [
+          { X = 964 Y = -339 }
+          { X = 838 Y = -400 }
+          { X = -97 Y = 23 }
+          { X = 74 Y = 135 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelBosstile11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Bosstile_11"
+        Tallness = 1783.0
+        Offset = { X = 0 Y = -713 }
+        Points = [
+          { X = -871 Y = -322 }
+          { X = 746 Y = 502 }
+          { X = 862 Y = 436 }
+          { X = -742 Y = -368 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelWrappingTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_WrappingTile_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelIntroTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_IntroTile_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain09a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_09a"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+        Points = [
+          { X = -106 Y = 20 }
+          { X = -46 Y = 44 }
+          { X = 22 Y = 44 }
+          { X = 107 Y = 12 }
+          { X = 70 Y = -44 }
+          { X = -56 Y = -46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18c"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18a"
+        Tallness = 112.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -917 Y = 55 }
+          { X = -15 Y = 513 }
+          { X = 931 Y = 38 }
+          { X = 20 Y = -417 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18d"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18d"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain18e"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_18e"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain20"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_20"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain21"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_21"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain22"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_22"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain22a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_22a"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_03"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain03b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_03b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelStairs02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stairs_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04a"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04c"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04d"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04d"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain04e"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_04e"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_05"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_06"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_07"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelDock01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsBone"
+        Graphic = "Tilesets\Asphodel\Asphodel_Dock_01"
+        Tallness = 28.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = 473 Y = -52 }
+          { X = 130 Y = -224 }
+          { X = -486 Y = 101 }
+          { X = -167 Y = 272 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain17"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_17"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_08"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_10"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_11"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain11a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_11a"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain12"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_12"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain12a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_12a"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain12b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_12b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain13"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_13"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain14"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_14"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainCrack06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Crack_06"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain15"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_15"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain15a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_15a"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain15b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_15b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain15c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_15c"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16b"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_16b"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_16"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16a"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_16a"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16c"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTerrain16c_Anim"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16d"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTerrain16d_Anim"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain16e"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelTerrain16e_Anim"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain19"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_19"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain19b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_19b"
+        StopsProjectiles = true
+        StopsUnits = true
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelGradient01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Gradient_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTerrainLavaDarkness01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Terrain_LavaDarkness_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTerrainLavaDarkness02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Terrain_LavaDarkness_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTerrainLavaDarkness03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Terrain_LavaDarkness_03"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrain09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_09"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainGoldDecor01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_GoldDecor_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainGoldDecor02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_GoldDecor_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainGoldDecor03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_GoldDecor_03"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelFlowerBurnt01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Flower_Burnt_01"
+        Tallness = 328.0
+        Offset = { X = 0 Y = -147 }
+        Points = [
+          { X = -287 Y = -3 }
+          { X = -4 Y = 141 }
+          { X = 261 Y = 17 }
+          { X = -27 Y = -129 }
+          { X = -287 Y = -3 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainHades01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Hades_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainHydra01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Hydra_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainWitch01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Witch_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSkeleton01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Skeleton_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSkeleton02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Skeleton_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSkeleton03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Skeleton_03"
+        StopsProjectiles = false
+        Tallness = 480.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSkeleton04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Skeleton_04"
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSkeleton04a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Skeleton_04a"
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainCrack05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Crack_05"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainPetal01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_TerrainPetal_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTomb01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Tomb_01"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainTomb02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Tomb_02"
+        Tallness = 61.0
+        Offset = { X = 0 Y = 135 }
+        Points = [
+          { X = 225 Y = 631 }
+          { X = 958 Y = 233 }
+          { X = -234 Y = -351 }
+          { X = -972 Y = 10 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSpine01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Spine_01"
+        Tallness = 59.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -263 Y = 26 }
+          { X = 14 Y = 158 }
+          { X = 251 Y = 100 }
+          { X = 127 Y = -90 }
+          { X = -7 Y = -151 }
+          { X = -235 Y = -154 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSpine02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Spine_02"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelTerrainSpine03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Terrain_Spine_03"
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "AsphodelStalatite01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagtite_01"
+        Scale = 0.1
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+    
+    {
+      Name = "AsphodelDecorBones01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Decor_Bones_01"
+        Scale = 0.1
+      }
+    }
+    
+    {
+      Name = "AsphodelStalamite01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_01"
+        Scale = 0.1
+        Offset = { X = 0 Y = -1295 }
+        Points = [
+          { X = 725 Y = -525 }
+          { X = -697 Y = 94 }
+          { X = 0 Y = 304 }
+          { X = 1256 Y = -309 }
+          { X = 1256 Y = -309 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStalagmite05"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "AsphodelStalagtite05Disintegrate"
+        DeathSound = "/Leftovers/World Sounds/Caravan Interior/SteamAcidForage"
+        DieOnCollision = true
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_05"
+        Scale = 0.1
+        StopsProjectiles = false
+        Tallness = 357.0
+        Offset = { X = 0 Y = -139 }
+        Points = [
+          { X = -189 Y = 33 }
+          { X = -45 Y = 99 }
+          { X = 193 Y = -8 }
+          { X = 45 Y = -77 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStalagmite06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_06"
+        Scale = 0.1
+        Tallness = 1607.0
+        Offset = { X = 0 Y = -593 }
+        Points = [
+          { X = -210 Y = 98 }
+          { X = -3 Y = 213 }
+          { X = 237 Y = 74 }
+          { X = 21 Y = -27 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStalagmite06a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_06a"
+        Scale = 0.1
+        Tallness = 1582.0
+        Offset = { X = 0 Y = -593 }
+        Points = [
+          { X = -194 Y = 58 }
+          { X = 24 Y = 188 }
+          { X = 281 Y = 68 }
+          { X = 18 Y = -49 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStalagmite07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_07"
+        Scale = 0.1
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -212 }
+        Points = [
+          { X = -85 Y = 26 }
+          { X = -16 Y = 52 }
+          { X = 65 Y = 27 }
+          { X = -18 Y = 2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelStalagmite07b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_07b"
+        Scale = 0.1
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -167 }
+        Points = [
+          { X = -48 Y = 19 }
+          { X = 28 Y = 49 }
+          { X = 94 Y = 17 }
+          { X = 16 Y = -11 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelDestructibleStalagmite"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        HitFx = "PillarHitFx"
+        HitSound = "/SFX/PillarBoulderImpact"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Asphodel\Asphodel_Stalagmite_01"
+        OcclusionBaseAnim = "Asphodel_StalagmiteFootprint"
+        OcclusionOpacity = 0.25
+        Scale = 0.1
+        Tallness = 2926.0
+        Offset = { X = 0 Y = -1051 }
+        Points = [
+          { X = -758 Y = 144 }
+          { X = -121 Y = 421 }
+          { X = 824 Y = 183 }
+          { X = 880 Y = -120 }
+          { X = 354 Y = -403 }
+        ]
+        Using = [
+          { Name = "AsphodelDestructibleStalagmiteA" }
+          { Name = "AsphodelDestructibleStalagmiteB" }
+          { Name = "AsphodelDestructibleStalagmiteC" }
+          { Name = "AsphodelStalamite01" }
+          { Name = "AsphodelRock02" }
+        ]
+      }
+    }
+    
+    {
+      Name = "AsphodelDestructibleStalagmiteA"
+      InheritFrom = "AsphodelDestructibleStalagmite"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteA"
+        Tallness = 2420.0
+        Offset = { X = 0 Y = -1050 }
+      }
+    }
+    
+    {
+      Name = "AsphodelDestructibleStalagmiteB"
+      InheritFrom = "AsphodelDestructibleStalagmite"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteB"
+        Tallness = 1173.0
+        Offset = { X = 0 Y = -1050 }
+      }
+    }
+    
+    {
+      Name = "AsphodelDestructibleStalagmiteC"
+      InheritFrom = "AsphodelDestructibleStalagmite"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelDestructibleStalagmiteA"
+        Tallness = 2433.0
+        Offset = { X = 0 Y = -1050 }
+      }
+    }
+    
+    {
+      Name = "AsphodelGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AsphodelGhostIdle"
+        MaxScale = 1.0
+        MinScale = 0.9
+        StopsLight = false
+        Tallness = 216.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 3 Y = 22 }
+          { X = 43 Y = 0 }
+          { X = -11 Y = -28 }
+          { X = -27 Y = 4 }
+        ]
+      }
+    }
+  ]
+}

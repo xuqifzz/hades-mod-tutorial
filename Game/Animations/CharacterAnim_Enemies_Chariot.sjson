@@ -1,0 +1,966 @@
+{
+  Animations = [
+
+    /* Chariot */
+    
+    {
+      Name = "ChariotIdle"
+      FilePath = "Animations\Chariot\Idle\ChariotIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotIdle_Bink"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 64
+      NumFrames = 12
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxIntervalMax = 0.18
+      VisualFxIntervalMin = 0.16
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "ChariotSuicideIdle"
+      InheritFrom = "ChariotIdle"
+      VideoTexture = "Enemy_ChariotSmallIdle_Bink"
+      ChildAnimation = "ChariotSuicideSparks"
+    }    
+
+    {
+      Name = "ChariotMove"
+      FilePath = "Animations\Chariot\Idle\ChariotIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotIdle_Bink"
+      VisualFx = "ChariotMoveVFX"
+      Sound = "/SFX/Enemy Sounds/Chariot/ChariotSlowMoveLoop"
+      StopSoundOnFinishFade = 0.5
+      EndFrame = 12
+      Loop = true
+      NumAngles = 64
+      NumFrames = 12
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxManagerCap = 200
+      VisualFxDistanceMax = 54.0
+      VisualFxDistanceMin = 32.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "ChariotSuicideSparks"
+      Type = "Book"
+      FilePath = "Fx\ChariotSuicideSparks\ChariotSuicideSparks"
+      Material = "Unlit"
+      NumFrames = 30
+      Loop = true
+      RandomPlaySpeedMin = 50
+      RandomPlaySpeedMax = 60
+      ScaleFromOwner = "Ignore"
+      AngleFromOwner = "Ignore"
+      ColorFromOwner = "Ignore"
+      OffsetZ = 80
+      AddColor = true
+      Red = 0
+      Green = 0.2
+      Blue = 0
+      VisualFx = "ChariotSuicideSparkSingle"
+	    VisualFxManagerCap = 200
+      VisualFxIntervalMin = 0.04
+      VisualFxIntervalMax = 0.06
+    }
+
+    {
+      Name = "ChariotSuicideSparkSingle"
+      Type = "Constant"
+      FilePath = "Particles\particle_ember_02"
+      Material = "Unlit"
+      GroupName = "FX_Standing_Add"
+      RandomDurationMin = 0.6
+      RandomDurationMax = 1.0
+      LocationFromOwner = "Ignore"
+      AngleFromOwner = "Ignore"
+      AngleMin = 30
+      AngleMax = 150
+      VelocityMin = 300
+      VelocityMax = 600
+      StartScaleX = 3
+      EndScaleX = 1
+      EaseIn = 0.9
+      EaseOut = 1.0
+      ScaleMin = 0.5
+      ScaleMax = 1.0
+      Scale = 0.5
+      StartRed = 1
+      StartGreen = 0.8
+      StartBlue = 0.1
+      EndRed = 0.999
+      EndGreen = 0.2
+      EndBlue = 0
+      Gravity = 300
+      Acceleration = -600
+      RandomOffsetX = 40
+      RandomOffsetY = 20
+      StartScale = 1
+      EndScale = 0.5
+    }
+
+    {
+      Name = "ChariotSuicideMove"
+      InheritFrom = "ChariotMove"
+      VideoTexture = "Enemy_ChariotSmallIdle_Bink"
+      VisualFx = "ChariotSuicideMoveVFX"
+      VisualFxDistanceMax = 21.0
+      VisualFxDistanceMin = 20.0
+      VisualFxManagerCap = 200
+      ChildAnimation = "ChariotSuicideSparks"
+      Sound = "/SFX/Enemy Sounds/FireChariot/FireChariotSlowMoveLoop"
+      StopSoundOnFinishFade = 0.5
+    }    
+
+    {
+      Name = "ChariotStop"
+      FilePath = "Animations\Chariot\Idle\ChariotIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotIdle_Bink"
+      VisualFx = "ChariotSmokeTrail"
+      VisualFxManagerCap = 300
+      Sound = "/SFX/Enemy Sounds/Chariot/ChariotIdle"
+      EndFrame = 1
+      NumAngles = 64
+      NumFrames = 12
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxIntervalMax = 0.2
+      VisualFxIntervalMin = 0.1
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    {
+      Name = "ChariotSuicideStop"
+      InheritFrom = "ChariotStop"
+      VideoTexture = "Enemy_ChariotSmallIdle_Bink"
+      ChildAnimation = "ChariotSuicideSparks"
+      Sound = "/SFX/Enemy Sounds/FireChariot/FireChariotIdle"
+    }    
+
+    
+    {
+      Name = "ChariotOnHit"
+      ChainTo = "ChariotIdle"
+      FilePath = "Animations\Chariot\OnHit\ChariotOnHit"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotOnHit_Bink"
+      VisualFx = "ChariotSmokeTrail"
+      VisualFxManagerCap = 300
+      Duration = 1.0
+      EndFrame = 5
+      NumAngles = 64
+      NumFrames = 5
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      PingPongScale = true
+      StartScale = 0.9
+      ActiveVisualFxCap = 15
+      VisualFxIntervalMax = 0.2
+      VisualFxIntervalMin = 0.1
+      AllowRestart = true
+      ShakeDistance = 2.0
+      ShakeSpeed = 300.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "ChariotSuicideOnHit"
+      InheritFrom = "ChariotOnHit"
+      ChainTo = "ChariotSuicideIdle"      
+      VideoTexture = "Enemy_ChariotSmallOnHit_Bink"
+    }
+
+    {
+      Name = "ChariotDeathVFX"
+      FilePath = "Animations\Chariot\DeathVFX\ChariotDeathVFX"
+      Type = "Book"
+      VideoTexture = "Enemy_ChariotDeathVFX_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Material = "Emissive"
+      Sound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+    }
+    
+    {
+      Name = "ChariotSuicideDeathVFX"
+      InheritFrom = "ChariotDeathVFX"
+      VideoTexture = "Enemy_ChariotSmallDeathVFX_Bink"
+    }
+
+    {
+      Name = "ChariotAttackCharge"
+      FilePath = "Animations\Chariot\Attack\ChariotAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_ChariotAttack_Bink"
+      VisualFx = "ChariotMoveVFX"
+      Sound = "/SFX/Enemy Sounds/Chariot/ChariotFastMoveLoop"
+      StopSoundOnFinishFade = 0.9
+      EndFrame = 50
+      NumAngles = 64
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 27.0
+      VisualFxDistanceMin = 26.0
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*ChargeStart*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*ChargeEnd*/
+        { DurationFrames = 0 }
+        /*attack*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+      ]
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    {
+      Name = "SuicideChariotAttackCharge"
+      FilePath = "Animations\Chariot\Attack\ChariotAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_ChariotSmallAttack_Bink"
+      VisualFx = "ChariotMoveVFX"
+      Sound = "/SFX/Enemy Sounds/FireChariot/FireChariotFastMoveLoop"
+      StopSoundOnFinishFade = 0.9
+      EndFrame = 50
+      NumAngles = 64
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 27.0
+      VisualFxDistanceMin = 26.0
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*ChargeStart*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*ChargeEnd*/
+        { DurationFrames = 0 }
+        /*attack*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+      ]
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    {
+      Name = "ChariotAttack"
+      ChainTo = "ChariotAttackReturnToIdle"
+      FilePath = "Animations\Chariot\Attack\ChariotAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_ChariotAttack_Bink"
+      VisualFx = "ChariotMoveVFX"
+      EndFrame = 50
+      NumAngles = 64
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -50.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 27.0
+      VisualFxDistanceMin = 26.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*ChargeStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*ChargeEnd*/
+        { DurationFrames = 0 }
+        /*attack*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+      ]
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "ChariotAttackReturnToIdle"
+      ChainTo = "ChariotIdle"
+      FilePath = "Animations\Chariot\Attack\ChariotAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_ChariotAttack_Bink"
+      VisualFx = "ChariotMoveVFX"
+      EndFrame = 50
+      NumAngles = 64
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -50.0
+      VisualFxDistanceMax = 27.0
+      VisualFxDistanceMin = 26.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*ChargeStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*ChargeEnd*/
+        { DurationFrames = 0 }
+        /*attack*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+      ]
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    /* Chariot VFX */
+    
+    {
+      Name = "ChariotSmokeTrail"
+	    VisualFxManagerCap = 200
+      CreateAnimation = "ChariotDisplaceTrail"
+      FilePath = "Fx\ChariotIdleTrail\ChariotIdleTrail"
+      GroupName = "Standing"
+      Type = "Book"
+      AngleFromOwner = "Take"
+      AddColor = true
+      EndAlpha = 0.5
+      EndBlue = 0.5
+      EndGreen = 1.0
+      PingPongColor = true
+      StartBlue = 1.0
+      StartRed = 1.0
+      Duration = 1.0
+      EndFrame = 1
+      NumAngles = 64
+      NumFrames = 1
+      StartFrame = 1
+      OffsetZ = 80.0
+      LocationFromOwner = "Ignore"
+      SortMode = "FromParent"
+      Material = "Unlit"
+      UseAttachedFlasher = false
+    }
+
+    {
+      Name = "ChariotSmokeTrailSmall"
+      InheritFrom = "ChariotSmokeTrail"
+      Duration = 0.5
+    }
+    
+    {
+      Name = "ChariotDisplaceTrail"
+      InheritFrom = "ChariotSmokeTrail"
+      CreateAnimation = "null"
+      GroupName = "FX_Displacement"
+      EndAlpha = 0.06
+      EndBlue = 0.001
+      EndGreen = 0.001
+      EndRed = 0.001
+      StartBlue = 0.0
+      StartRed = 0.0
+      EndFrame = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotMoveVFX"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      Duration = 0.01
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      VisualFxManagerCap = 200
+      CreateAnimations = [
+        { Name = "ChariotSmokeTrail" }
+        { Name = "ChariotTracks" }
+      ]
+    }
+
+    
+    {
+      Name = "ChariotSuicideMoveVFX"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      Duration = 0.01
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      VisualFxManagerCap = 200
+      CreateAnimations = [
+        { Name = "ChariotSmokeTrailSmall" }
+      ]
+    }
+
+    
+    {
+      Name = "ChariotShadow"
+      FilePath = "Fx\LootShadow\ChariotShadow"
+      GroupName = "Shadows"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OriginX = 200.0
+      OriginY = 166.0
+      PostRotateScaleY = 0.5
+      Material = "Unlit"
+      DieWithOwner = true
+    }
+    
+    {
+      Name = "ChariotTracksA"
+      CreateAnimation = "ChariotTrailDirt"
+      FilePath = "Fx\ChariotTracks\ChariotTracks0001"
+      GroupName = "FX_Terrain"
+      Type = "Constant"
+      AngleFromOwner = "Take"
+      AngleMax = 5.00
+      AngleMin = -5.00
+      StartAlpha = 1.0
+      Duration = 1.5
+      EaseIn = 0.0001
+      EaseOut = 0.00011
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      RandomFlipVertical = true
+      LocationFromOwner = "Ignore"
+      PostRotateScaleY = 0.5
+      Scale = 1.5
+      ScaleMax = 1.01
+      ScaleMin = 0.99
+      ScaleX = 0.4
+      UseAttachedFlasher = false
+    }
+    
+    {
+      Name = "ChariotTracksB"
+      InheritFrom = "ChariotTracksA"
+      FilePath = "Fx\ChariotTracks\ChariotTracks0002"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTracksC"
+      InheritFrom = "ChariotTracksA"
+      FilePath = "Fx\ChariotTracks\ChariotTracks0003"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTracksD"
+      InheritFrom = "ChariotTracksA"
+      FilePath = "Fx\ChariotTracks\ChariotTracks0004"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTracksE"
+      InheritFrom = "ChariotTracksA"
+      FilePath = "Fx\ChariotTracks\ChariotTracks0005"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTracks"
+      FilePath = "Animations\ChariotTracks\ChariotTracks"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ChariotTracksA" }
+        { Name = "ChariotTracksB" }
+        { Name = "ChariotTracksC" }
+        { Name = "ChariotTracksD" }
+        { Name = "ChariotTracksE" }
+      ]
+    }
+    
+    {
+      Name = "ChariotTrailDirt"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      DurationFrames = 1
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      CreateAnimations = [
+        { Name = "ChariotTrailDirt_Left" }
+        { Name = "ChariotTrailDirt_Right" }
+      ]
+    }
+    
+    {
+      Name = "ChariotTrailDirt_Left"
+      FilePath = "Animations\ChariotTrailDirt_Left\ChariotTrailDirt_Left"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ChariotTrailDirtA_Left" }
+        { Name = "ChariotTrailDirtB_Left" }
+        { Name = "ChariotTrailDirtC_Left" }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+      ]
+    }
+    
+    {
+      Name = "ChariotTrailDirt_Right"
+      FilePath = "Animations\ChariotTrailDirt_Right\ChariotTrailDirt_Right"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ChariotTrailDirtA_Right" }
+        { Name = "ChariotTrailDirtB_Right" }
+        { Name = "ChariotTrailDirtC_Right" }
+        { Name = null }
+        { Name = null }
+        { Name = null }
+      ]
+    }
+    
+    {
+      Name = "ChariotTrailDirtA_Left"
+      FilePath = "Fx\RubbleFallImpactDebrisA\RubbleFallImpactDebrisA"
+      GroupName = "FX_Terrain"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      UseOwnAngle = false
+      EndFrame = 43
+      NumFrames = 43
+      RandomPlaySpeedMax = 90.0
+      RandomPlaySpeedMin = 80.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      RadialOffsetMax = 61.0
+      RadialOffsetMin = 60.0
+      RadialOffsetScaleY = 0.5
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      SortMode = "FromParent"
+      Scale = 0.4
+      ScaleFromOwner = "Ignore"
+      ScaleMax = 1.3
+      ScaleMin = 0.7
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "ChariotTrailDirtB_Left"
+      InheritFrom = "ChariotTrailDirtA_Left"
+      FilePath = "Fx\RubbleFallImpactDebrisB\RubbleFallImpactDebrisB"
+      EndFrame = 43
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTrailDirtC_Left"
+      InheritFrom = "ChariotTrailDirtA_Left"
+      FilePath = "Fx\RubbleFallImpactDebrisC\RubbleFallImpactDebrisC"
+      EndFrame = 43
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTrailDirtA_Right"
+      InheritFrom = "ChariotTrailDirtA_Left"
+      Angle = 180.00
+      EndFrame = 43
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTrailDirtB_Right"
+      InheritFrom = "ChariotTrailDirtA_Right"
+      FilePath = "Fx\RubbleFallImpactDebrisB\RubbleFallImpactDebrisB"
+      EndFrame = 43
+      StartFrame = 1
+    }
+    
+    {
+      Name = "ChariotTrailDirtC_Right"
+      InheritFrom = "ChariotTrailDirtA_Right"
+      FilePath = "Fx\RubbleFallImpactDebrisC\RubbleFallImpactDebrisC"
+      EndFrame = 43
+      StartFrame = 1
+    }
+
+    /* Enemy Activation Containers */
+    
+    {
+      Name = "EnemyActivationFadeInChariotContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInChariot"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "EnemyActivationFadeInChariotSuicideContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInChariotSuicide"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    /* Enemy Activation Fade-Ins */
+    
+    {
+      Name = "EnemyActivationFadeInChariot"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationChariotFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInChariotSuicide"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationChariotSuicideFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+
+    /* Enemy Activation Fades */
+    
+    {
+      Name = "EnemyActivationChariotFade"
+      InheritFrom = "ChariotIdle"
+      ChainTo = "EnemyActivationChariotFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = false
+      LoopFramesOnly = true
+      NumFrames = 1
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationChariotSuicideFade"
+      InheritFrom = "ChariotSuicideIdle"
+      ChainTo = "EnemyActivationChariotSuicideFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = false
+      LoopFramesOnly = true
+      NumFrames = 1
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    /* Enemy Activation Flashes */
+    
+    {
+      Name = "EnemyActivationChariotFlash"
+      InheritFrom = "ChariotIdle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 1
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationChariotSuicideFlash"
+      InheritFrom = "ChariotSuicideIdle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 1
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      NumFrames = 1
+      StartFrame = 1
+    }
+  ]
+}

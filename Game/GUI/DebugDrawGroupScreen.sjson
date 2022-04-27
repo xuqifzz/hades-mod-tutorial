@@ -1,0 +1,65 @@
+{
+  DebugDrawGroupScreen = {
+    Platform = "default"
+    SelectionSound = "null"
+    UseSelectionSoundWithMouse = false
+    GamepadCursorControl = true
+    ForceShowCursor = true
+    TransitionOnTime = 0.0
+    TransitionOffTime = 0.0
+    Back = {
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.5
+    }
+    VisibilityButton = {
+      Name = "VisibilityButton"
+      SelectedGraphic = "GUI\Pause\PauseMenuHighlight"
+      Scale = 0.6
+      TextJustification = "Left"
+      TextScale = 1.0
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "MonospaceTypewriterBold12"
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      MaxCursorRadius = 1
+      UseTextArea = true
+    }
+    CollapseButton = {
+      Name = "CollapseButton"
+      SelectedGraphic = "GUI\Grey_Node"
+      Scale = 0.25
+      TextJustification = "Right"
+      TextScale = 1.0
+      Justification = "Right"
+      VerticalJustification = "Center"
+      Font = "MonospaceTypewriterBold14"
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      MaxCursorRadius = 1
+      UseTextArea = true
+    }
+    CancelButton = {
+      Graphic = "GUI\\PS4Controller\\ps4ControllerCircle"
+      HelpTextId = "GuideBook_Back"
+      TextScale = 0.66
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 0.5
+      TextJustification = "Left"
+      MouseScale = 1.0
+      Font = "AlegreyaSCRegular"
+      TextRed = 0.87
+      TextGreen = 0.74
+      TextBlue = 0.59
+      X = 1700
+      Y = 1040
+    }
+  }
+}

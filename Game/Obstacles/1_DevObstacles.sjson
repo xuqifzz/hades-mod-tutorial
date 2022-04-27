@@ -1,0 +1,603 @@
+{
+  Obstacles = [
+
+    {
+      Name = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = false
+      Life =
+      {
+        HitFx = "InvincibleHitSpark"
+        HitFxCap = 6
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -2 Y = 2 }
+          { X = 2 Y = 2 }
+          { X = 0 Y = -2 }
+        ]
+      }
+    }
+
+    {
+      Name = "1_BaseDecalObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 0.0
+      }
+    }
+
+    {
+      Name = "1_BaseFlyingDecalObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+
+    {
+      Name = "1_BaseImpassableDecalObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        StopsProjectiles = false
+      }
+    }
+
+    {
+      Name = "1_BaseInvulnerableLowObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+      }
+    }
+
+    {
+      Name = "1_BaseInvulnerablePassableObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+
+    {
+      Name = "1_BaseStandingDecalObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+
+    {
+      Name = "1_BaseTerrainDecalObstacle"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+
+	{
+      Name = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+	  NeedsLife = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        TriggerOnSpawn = false
+      }
+    }
+
+    {
+      Name = "ClampWall_Left"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+	  DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = true
+        ClearPoints = true
+        Tallness = 99999.0
+        Points = [
+          { X = -1920 Y = -1080 }
+          { X = -1920 Y = 1080 }
+          { X = 0 Y = 1080 }
+          { X = 0 Y = -1080 }
+        ]
+      }
+    }
+
+    {
+      Name = "ClampWall_Right"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = true
+        ClearPoints = true
+        Tallness = 99999.0
+        Points = [
+          { X = 0 Y = -1080 }
+          { X = 0 Y = 1080 }
+          { X = 1920 Y = 1080 }
+          { X = 1920 Y = -1080 }
+        ]
+      }
+    }
+
+    {
+      Name = "ClampWall_Top"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = true
+        ClearPoints = true
+        Tallness = 99999.0
+        Points = [
+          { X = -1920 Y = -1080 }
+          { X = -1920 Y = 0 }
+          { X = 1920 Y = 0 }
+          { X = 1920 Y = -1080 }
+        ]
+      }
+    }
+
+    {
+      Name = "ClampWall_Bottom"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = true
+        ClearPoints = true
+        Tallness = 99999.0
+        Points = [
+          { X = -1920 Y = 0 }
+          { X = -1920 Y = 1080 }
+          { X = 1920 Y = 1080 }
+          { X = 1920 Y = 0 }
+        ]
+      }
+    }
+
+    {
+      Name = "1_BaseTerrainTile"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        MeshType = "Flat"
+        RotateGeometry = true
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 10.0
+        StopsLight = false
+      }
+    }
+
+    {
+      Name = "1_BaseVulnerableObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+
+    {
+      Name = "InvisibleTarget"
+      DisplayInEditor = true
+	  NeedsLife = false
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\InvisibleTarget"
+        Grip = 1E+08
+        Invisible = true
+        Material = "Unlit"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 0.0
+        TriggerOnSpawn = false
+      }
+    }
+
+    {
+      Name = "InvisibleTargetNoTimeModifier"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        TimeModifierFraction = 0.0
+      }
+    }
+
+    {
+      Name = "CameraPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\CameraPoint"
+        Scale = 0.5
+      }
+    }
+
+    {
+      Name = "WeaponPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\WeaponPoint"
+        Scale = 0.75
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.0 }
+      }
+    }
+
+    {
+      Name = "EnemyPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\EnemyPoint"
+        Scale = 0.75
+        Color = { Red = 1.0 Green = 0.0 Blue = 0.0 }
+      }
+    }
+
+    {
+      Name = "EnemyPointRanged"
+      InheritFrom = "EnemyPoint"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\EnemyPointRanged"
+      }
+    }
+
+    {
+      Name = "EnemyPointMelee"
+      InheritFrom = "EnemyPoint"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\EnemyPointMelee"
+      }
+    }
+
+    {
+      Name = "EnemyPointSupport"
+      InheritFrom = "EnemyPoint"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\EnemyPointSupport"
+      }
+    }
+
+    {
+      Name = "DiscoveryPoint"
+      InheritFrom = "EnemyPoint"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\DiscoveryPoint"
+        Color = { Red = 1.0 Green = 1.0 Blue = 0.0 }
+      }
+    }
+
+    {
+      Name = "EncounterStartPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\EnemyPoint"
+        Scale = 0.75
+        Color = { Red = 0.0 Green = 0.0 Blue = 1.0 }
+      }
+    }
+
+    {
+      Name = "HeroStart"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\HeroStart"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "HeroEnd"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\HeroEnd"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "HeroExit"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\HeroExit"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "BoatMovePoint"
+      InheritFrom = "HeroExit"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "LootPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\LootPoint"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "SecretPoint"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\SecretPoint"
+        Scale = 0.75
+        Color = { Red = 1.0 Green = 1.0 Blue = 0.0 }
+      }
+    }
+
+    {
+      Name = "CameraIntroStart"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\RoomCameraIntroStart"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "CameraIntroEnd"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\RoomCameraIntroEnd"
+        Scale = 0.75
+      }
+    }
+
+    {
+      Name = "CameraClamp"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\CameraClamp"
+      }
+    }
+
+    {
+      Name = "19x10RatioBox"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\19x10RatioBox"
+      }
+    }
+
+    {
+      Name = "InvisibleArtBox"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\WhiteBox"
+      }
+    }
+
+    {
+      Name = "VisibleTarget"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Invisible = false
+      }
+    }
+
+    {
+      Name = "BlankObstacle"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Blank"
+        Invisible = false
+      }
+    }
+
+	{
+      Name = "BlankObstacleWorldGUI"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Blank"
+        Invisible = false
+		SortMode = "Id"
+		UseScreenLocation = false
+      }
+    }
+
+	{
+      Name = "BlankObstacleScreenGUI"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Blank"
+        Invisible = false
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "BlankObstacleNoTimeModifier"
+      InheritFrom = "BlankObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        TimeModifierFraction = 0.0
+      }
+    }
+
+    {
+      Name = "BlankGeoObstacle"
+      InheritFrom = "BlankObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Points = [
+          { X = -1 Y = -1 }
+          { X = -1 Y = 1 }
+          { X = 1 Y = 1 }
+          { X = 1 Y = -1 }
+        ]
+      }
+    }
+
+    {
+      Name = "BlankInteractableObstacle"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Blank"
+        Invisible = false
+        Interact =
+        {
+          CursorOnly = true
+          UseExtents = true
+        }
+      }
+    }
+  ]
+}

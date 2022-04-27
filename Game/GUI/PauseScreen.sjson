@@ -1,0 +1,185 @@
+{
+  PauseScreen =
+  {
+    Platform = "default"
+    OpenSound = "/SFX/Menu Sounds/GeneralWhooshMENULoud"
+    CloseSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    UseSelectionSoundWithMouse = false
+    GamepadCursorControl = true
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.15
+    ShowControls = false
+    ForceShowCursor = true
+    GamepadSelectionStyle = "VerticalCycle"
+    FreeFormSelectWrapping = true
+
+	Back =
+	{
+      Width = 1920
+      Height = 1080
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.66
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "GUI\Shell\Box_Pause"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 310
+      Justification = "Center"
+      VerticalJustification = "Center"
+      HelpTextId = "PauseScreen_Title"
+      Font = "SpectralSCLightTitling"
+      NonEnglishFont = "SpectralSCLight"
+      AlwaysUpperCase = false
+      FontSize = 32
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 2
+    }
+
+    ResumeGameButton =
+	{
+      X = 960
+      Y = 390
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextOffsetX = 0
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      FontSize = 28
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.1
+      SelectedTextBlue = 0.1
+      DisabledTextRed = 0.25
+      DisabledTextGreen = 0.25
+      DisabledTextBlue = 0.25
+      AlwaysUpperCase = false
+      TextJustification = "Center"
+      SelectedTextScale = 1.0
+      NonEnglishScaleModifier = 0.85
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      HelpTextId = "PauseScreen_Resume"
+    }
+
+    SettingsButton =
+	{
+      InheritFrom = "ResumeGameButton"
+      AttachTo = "ResumeGameButton"
+      OffsetY = 60
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      HelpTextId = "PauseScreen_Settings"
+    }
+
+    KeyMappingButton =
+	{
+      InheritFrom = "ResumeGameButton"
+      AttachTo = "SettingsButton"
+      OffsetY = 60
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      HelpTextId = "PauseScreen_Controls"
+    }
+
+    DisplaySettingsButton =
+	{
+      InheritFrom = "SettingsButton"
+      AttachTo = "KeyMappingButton"
+      OffsetY = 60
+      HelpTextId = "PauseScreen_DisplaySettings"
+    }
+
+	GiveUpButton =
+	{
+      InheritFrom = "ResumeGameButton"
+      AttachTo = "DisplaySettingsButton"
+      OffsetY = 90
+      HelpTextId = "PauseScreen_Abandon"
+	  DisabledPressSound = "/SFX/Menu Sounds/CameraZoom"
+    }
+
+    ExitButton =
+	{
+      InheritFrom = "ResumeGameButton"
+      AttachTo = "GiveUpButton"
+      OffsetY = 60
+      HelpTextId = "PauseScreen_Exit"
+	  DisabledPressSound = "/SFX/Menu Sounds/CameraZoom"
+    }
+
+    LastSaveTimeHint =
+	{
+      X = 965
+      Y = 795
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 20
+      TextRed = 0.93
+      TextGreen = 0.93
+      TextBlue = 0.93
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.4
+      SelectedTextBlue = 0.4
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      AlwaysUpperCase = false
+      TextSymbolScale = 0.4
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      Width = 650
+      Height = 100
+      NonEnglishScaleModifier = 0.9
+      LangEsScaleModifier = 0.825,
+      LangDeScaleModifier = 0.725
+    }
+
+  }
+}

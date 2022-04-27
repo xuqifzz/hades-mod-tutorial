@@ -1,0 +1,417 @@
+{
+  RemoteProfileScreen =
+  {
+    Platform = "default"
+    OpenSound = "null"
+    CloseSound = "null"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    UseSelectionSoundWithMouse = false
+    ForceShowCursor = true
+	FreeFormSelectGridLock = true
+	FreeFormSelectSuccessDistance = 16
+    FreeFormSelectSuccessDistanceStep = 0
+    ShowControls = false
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.1
+
+	Back =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.0
+      Width = 1920
+      Height = 1080
+    }
+
+    NameHighlightFormat =
+	{
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      Font = "AlegreyaSansSCBold"
+      FontSize = 20
+      LangCnScaleModifier = 0.8
+      LangKoScaleModifier = 0.9
+      LangPlScaleModifier = 0.85
+      LangJaScaleModifier = 0.875
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "GUI\Shell\Box_FullScreen"
+      Scale = 1.0
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    FullScreenFade =
+	{
+      X = 960
+      Y = 540
+      Graphic = "RoomTransitionIn"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 168
+      Justification = "Center"
+      VerticalJustification = "Center"
+      DisplayNameId = "MainMenuScreen_PlayGame"
+      Font = "SpectralSCLightTitling"
+      
+      AlwaysUpperCase = false
+      LangJaUpperCase = true
+      FontSize = 40
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0.1
+      TextOutlineGreen = 0.1
+      TextOutlineBlue = 0.1
+      OutlineThickness = 1
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 0
+      ShadowBlur = 2
+    }
+
+    ContinueGameButton =
+	{
+      HelpTextId = "ProfileScreen_ContinueGame"
+      X = 960
+      Y = 190
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextOffsetX = 0
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      DisabledTextRed = 0.4
+      DisabledTextGreen = 0.4
+      DisabledTextBlue = 0.4
+      AlwaysUpperCase = false
+      TextJustification = "Center"
+      SelectedTextScale = 1.0
+      NonEnglishScaleModifier = 0.85
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 2
+      Font = "AlegreyaSansSCExtraBold"
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      FontSize = 50
+      SelectedTextRed = 0.9
+      SelectedTextGreen = 0.7
+      SelectedTextBlue = 0.2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowOffsetX = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      PressSound = "/SFX/Menu Sounds/TextReveal4"
+      FlashRed = 0.9
+      FlashGreen = 0.7
+      FlashBlue = 0.2
+      ColorChangeSpeed = 1.5
+    }
+
+    StartNewGameButton =
+	{
+      InheritFrom = "ContinueGameButton"
+      Font = "AlegreyaSansSCRegular"
+      AttachTo = "PlayGameButton"
+      OffsetY = 100
+      PressSound = "/SFX/Menu Sounds/TextReveal4"
+      HelpTextId = "ProfileScreen_StartNewGame"
+    }
+
+    SaveSpinnerHint =
+	{
+      X = 960
+      Y = 215
+      Justification = "Center"
+      VerticalJustification = "Center"
+      DisplayNameId = "ProfileScreen_InstructionHint"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 16
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.1
+      SelectedTextBlue = 0.1
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      AlwaysUpperCase = false
+      TextSymbolScale = 0.4
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 0
+      ShadowAlpha = 0
+      ShadowBlur = 0
+      Width = 900
+      Height = 100
+      NonEnglishScaleModifier = 0.9
+    }
+
+	InstructionHint =
+	{
+      X = 960
+      Y = 950
+      Justification = "Center"
+      VerticalJustification = "Center"
+      DisplayNameId = "ProfileScreen_Hint"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 16
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.1
+      SelectedTextBlue = 0.1
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      AlwaysUpperCase = false
+      TextSymbolScale = 0.4
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 0
+      ShadowAlpha = 0
+      ShadowBlur = 0
+      Width = 900
+      Height = 100
+      NonEnglishScaleModifier = 0.9
+    }
+
+    ProfileButton =
+	{
+      X = 540
+      Y = 250
+      SpacingX = 300
+      SpacingY = 0
+      Graphic = "GUI\Screens\SaveProfileSlot"
+      Scale = 1
+      ScaleX = 1
+      Justification = "Center"
+      VerticalJustification = "Top"
+      SelectedGraphic = "GUI\Screens\SaveProfileSlotHighlight"
+      Font = "AlegreyaSansSCRegular"
+      TextRed = 0.7
+      TextGreen = 0.65
+      TextBlue = 0.6
+      FontSize = 21
+      LineSpacingBottom = 20
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.6
+      SelectedTextBlue = 0.3
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      ActionSound = "/SFX/Menu Sounds/GodBoonChoiceConfirm"
+      ToggleOnSound = "/SFX/Menu Sounds/TextReveal4"
+      DisabledPressSound = "/Leftovers/SFX/OutOfAmmo2"
+      TextJustification = "Left"
+      TextOffsetX = -110
+      TextOffsetY = 110
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      NonEnglishScaleModifier = 0.85
+      LangEsScaleModifier = 0.825
+      LangCnScaleModifier = 0.725
+      LangPlScaleModifier = 0.725
+      LangKoScaleModifier = 0.725
+      LangRuScaleModifier = 0.75
+      TextSymbolScale = 1
+    }
+
+	HardModeButton =
+	{
+      X = 450
+      Y = 870
+      SpacingX = 300
+      SpacingY = 0
+      HelpTextId = "ProfileScreen_HardMode"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Graphic = "GUI\\Shell\\settings_toggle_on"
+      AlternateGraphic = "GUI\\Shell\\settings_toggle_off"
+      AddTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 22
+      NonEnglishScaleModifier = 0.8
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      SelectedTextRed = 0.85
+      SelectedTextGreen = 0.6
+      SelectedTextBlue = 0.25
+      AddColor = true
+      Red = 0
+      Green = 0
+      Blue = 0
+      SelectedRed = 0.2
+      SelectedGreen = 0.2
+      SelectedBlue = 0.2
+      AlwaysUpperCase = false
+      TextOffsetX = 40
+      TextJustification = "Left"
+      ToggleOnSound = "/Leftovers/Menu Sounds/TitanToggleLong"
+      ToggleOffSound = "/SFX/Menu Sounds/MirrorMenuStatLower"
+      PressTopAnimation = "InvincibleHitSpark"
+    }
+
+    DeleteButton =
+	{
+      X = 540
+      Y = 870
+      SpacingX = 300
+      SpacingY = 0
+      Scale = 0.8
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Graphic = "TrashButtonFlash"
+      UnderCursorOnAnimation = "TrashButtonFlashHover"
+      UnderCursorOffAnimation = "TrashButtonFlash"
+      ActionSound = "/SFX/Menu Sounds/GodBoonChoiceConfirm"
+    }
+
+    ActiveMarker =
+	{
+      OffsetX = 0
+      OffsetY = 56
+      Graphic = "GUI\Shell\Selector_Coin"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 0.66
+      MoveSpeed = 8000
+    }
+
+    CloudMarker =
+    {
+      OffsetX = 90
+      OffsetY = 56
+      Graphic = "GUI\Shell\CloudSuccess"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 0.5
+      MoveSpeed = 8000
+    }
+
+	DescriptionBox =
+	{
+		OffsetX = -40
+		OffsetY = -470
+		Justification = "Left"
+		VerticalJustification = "Top"
+		Font = "AlegreyaSansRegular"
+		FontSize = 20
+		TextRed = 0.87
+		TextGreen = 0.87
+		TextBlue = 0.87
+		TextOutlineRed = 0
+		TextOutlineGreen = 0
+		TextOutlineBlue = 0
+		OutlineThickness = 3
+		ShadowRed = 0.0
+		ShadowGreen = 0.0
+		ShadowBlue = 0.0
+		ShadowOffsetY = 3
+		ShadowAlpha = 1
+		ShadowBlur = 0
+		Width = 270
+		Height = 600
+    LangCnScaleModifier = 0.85
+    LangDeScaleModifier = 0.85,
+    LangKoScaleModifier = 0.85,
+    LangRuScaleModifier = 0.90,
+    LangFrScaleModifier = 0.90,
+    LangPtBrScaleModifier = 0.95,
+    }
+
+	/* Info Panel */
+    DimBox =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.4
+    }
+
+    InfoPanel =
+	{
+      X = 960
+      Y = 540
+      Justification = "Left"
+      VerticalJustification = "Center"
+    }
+
+    InfoText =
+	{
+      X = 960
+      Y = 540
+      Justification = "Left"
+      VerticalJustification = "Center"
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      Width = 830
+      Height = 1080
+      NonEnglishScaleModifier = 0.85
+    }
+
+    CancelButton =
+	{
+      Graphic = "CancelButtonFlash"
+      UnderCursorOnAnimation = "CancelButtonFlashHover"
+      UnderCursorOffAnimation = "CancelButtonFlash"
+      FreeFormSelectable = false
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 960
+      Y = 1030
+      FlashMin = 0.0
+      FlashMax = 0.5
+      FlashSpeed = 1.2
+      FlashRed = 0.6
+      FlashGreen = 0.4
+      FlashBlue = 0.0
+	  Scale = 0.8
+      MouseOverSound = "/SFX/Menu Sounds/DialoguePanelOut"
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    }
+
+  }
+
+}

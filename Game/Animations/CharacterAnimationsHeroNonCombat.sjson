@@ -1,0 +1,2438 @@
+{
+  Animations = [
+
+    {
+      Name = "WeaponBonusFx"
+	  ChildAnimation = "WeaponBonusGlow"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      VisualFx = "WeaponBonusSmoke"
+      Loop = true
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetZ = 60.0
+      Scale = 0.8
+      Material = "Unlit"
+      VisualFxIntervalMax = 0.45
+      VisualFxIntervalMin = 0.35
+      Color = { Red = 0.6 Green = 0.0 Blue = 1.0 }
+    }
+
+    {
+      Name = "WeaponBonusGlow"
+	  CreateAnimation = "WeaponBonusFxBack"
+      Type = "Constant"
+      FilePath = "Particles\particle_glow"
+      Red = 0.6
+      Green = 0
+      Blue = 1.0
+      GroupName = "FX_Add_Top"
+      Material = "Unlit"
+      StartScale = 1
+      EndScale = 1.5
+      StartAlpha = 0
+      EndAlpha = 0.3
+      PingPongColor = true
+      Duration = 2
+      Loop = true
+      OffsetZ = 60
+      EaseIn = 0
+      EaseOut = 1
+      ScaleFromOwner = "Ignore"
+      DieWithOwner = true
+      VisualFx = "WeaponBonusStreaks"
+      VisualFxIntervalMin = 0.5
+      VisualFxIntervalMax = 0.8
+    }
+
+    {
+      Name = "WeaponBonusStreaks"
+      Type = "Constant"
+      FilePath = "Dev\blank_invisible"
+      Duration = 0.2
+      CreateAnimations = [
+        { Name = "WeaponBonusStreakA" }
+        { Name = "WeaponBonusStreakB" }
+        { Name = "WeaponBonusStreakC" }
+        { Name = "WeaponBonusStreakD" }
+        { Name = "WeaponBonusStreakE" }
+        { Name = "WeaponBonusStreakF" }
+        { Name = "WeaponBonusDarknessShard" }
+        { Name = "WeaponBonusDarknessShard" }
+
+      ]
+    }
+
+    {
+      Name = "WeaponBonusDarknessShard"
+      Type = "Book"
+      FilePath = "Fx\DarknessShard\DarknessShard"
+      NumFrames = 45
+      Material = "Unlit"
+      AngleMin = 0
+      AngleMax = 360
+      LocationFromOwner = "Ignore"
+      AngleFromOwner = "Ignore"
+      RadialOffsetMin = 20
+      RadialOffsetMax = 30
+      StartScale = 0
+      EndScale = 1
+      ScaleMin = 0.5
+      ScaleMax = 1.0
+      PingPongScale = true
+      RandomRotation = true
+      RandomRotationSpeedMin = -180
+      RandomRotationSpeedMax = 180
+      RandomDurationMin = 1
+      RandomDurationMax = 2
+      GroupName = "Standing"
+      SortMode = "FromParent"
+      ScaleFromOwner = "Ignore"
+      VelocityMin = 40
+      VelocityMax = 120
+      Scale = 0.66
+      Acceleration = -60
+      OffsetZ = 80
+      EaseIn = 0
+      EaseOut = 1
+    }
+
+    {
+      Name = "WeaponBonusStreakA"
+      Type = "Constant"
+      FilePath = "Particles\particle_streak_boosted"
+      Material = "Unlit"
+      AddColor = true
+      Red = 0.5
+      Green = 0
+      Blue = 1
+      Angle = 90
+      Duration = 1.25
+      StartAlpha = 0
+      EndAlpha = 1
+      PingPongColor = true
+      LocationFromOwner = "Ignore"
+      EaseIn = 0
+      EaseOut = 1
+      Loop = false
+      OffsetZ = 80
+      Scale = 0.6
+      ScaleX = 1.0
+      OriginX = 80
+      OriginY = 32
+      VelocityMin = 80
+      VelocityMax = 100
+      Acceleration = -50
+      ScaleMin = 0.5
+      ScaleMax = 1.5
+      AngleChangeSpeedMin = -2
+      AngleChangeSpeedMax = 2
+      AngleFromOwner = "Ignore"
+      GroupName = "FX_Add_Top"
+      AngleMin = 0
+      AngleMax = 360
+    }
+
+    {
+      Name = "WeaponBonusStreakB"
+      InheritFrom = "WeaponBonusStreakA"
+    }
+
+    {
+      Name = "WeaponBonusStreakC"
+      InheritFrom = "WeaponBonusStreakA"
+      ScaleX = 0.6
+      Angle = 45
+      AddColor = false
+      AngleMin = 0
+      AngleMax = 0.01
+    }
+
+    {
+      Name = "WeaponBonusStreakD"
+      InheritFrom = "WeaponBonusStreakC"
+      Angle = 225
+    }
+
+    {
+      Name = "WeaponBonusStreakE"
+      InheritFrom = "WeaponBonusStreakC"
+      Angle = 135
+    }
+
+    {
+      Name = "WeaponBonusStreakF"
+      InheritFrom = "WeaponBonusStreakC"
+      Angle = 315
+    }
+
+    {
+      Name = "WeaponBonusFxBack"
+      FilePath = "Fx\ProjectileFire\ProjectileFire"
+      Type = "Book"
+      EndFrame = 60
+      Loop = true
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetZ = 60.0
+      Scale = 2.0
+      Material = "Unlit"
+      VisualFxIntervalMax = 0.3
+      VisualFxIntervalMin = 0.1
+      GroupName = "FX_Dark"
+      DieWithOwner = true
+      ScaleFromOwner = "Ignore"
+      Sound = "/Leftovers/Object Ambiences/DarkThirstAmbience"
+      StopSoundOnFinishFade = 0.2
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+	  CancelAnimation = "WeaponBonusFxBack"
+    }
+
+    {
+      Name = "WeaponBonusSmoke"
+      Type = "Book"
+      FilePath = "Fx\HydraToothSmokeBright\HydraToothSmokeBright"
+      NumFrames = 80
+      RandomPlaySpeedMin = 15
+      RandomPlaySpeedMax = 24
+      AngleMin = 0
+      AngleMax = 360
+      OriginX = 64
+      OriginY = 220
+      AngleFromOwner = "Ignore"
+      LocationFromOwner = "Ignore"
+      ScaleMin = 0.5
+      ScaleMax = 1.0
+      ScaleFromOwner = "Ignore"
+      Material = "Unlit"
+      SortMode = "FromParent"
+      Hue = -0.2
+      Red = 0.6
+      Green = 0
+      Blue = 1.0
+      ScaleX = 1.2
+      StartAlpha = 0
+      EndAlpha = 1
+      PingPongColor = true
+      GroupName = "FX_Standing_Add"
+      OffsetZ = 25
+      CreateAnimations = [
+        { Name = "WeaponBonusSmokeDark" }
+        { Name = "WeaponBonusParticle" }
+      ]
+    }
+
+    {
+      Name = "WeaponBonusSmokeDark"
+      InheritFrom = "WeaponBonusSmoke"
+      FilePath = "Fx\HydraToothSmokeDark\HydraToothSmokeDark"
+      GroupName = "Standing"
+      DrawBehindOwner = true
+      SortMode = "FromParent"
+      CreateAnimation = null
+      ClearCreateAnimations = true
+      StartAlpha = 0.999
+      OffsetZ = 60
+      ScaleY = 1.0
+      ScaleMin = 0.3
+      ScaleMax = 0.6
+      VelocityMin = 0
+      VelocityMax = 1
+      StartScaleY = 0
+      EndScaleY = 1
+      Angle = 90
+      AngleFromOwner = "Ignore"
+      Acceleration = -100
+    }
+
+    {
+      Name = "WeaponBonusParticle"
+      FilePath = "Particles\particle_darkness"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      AngleMax = 360.00
+      EndFrame = 1
+      NumFrames = 1
+      RandomDurationMax = 1.2
+      RandomDurationMin = 0.4
+      StartFrame = 1
+      OffsetZ = 40.0
+      RadialOffsetMax = 31.0
+      RadialOffsetMin = 30.0
+      LocationFromOwner = "Take"
+      Acceleration = -150.0
+      VelocityMax = 140.0
+      VelocityMin = 100.0
+      EndScale = 1.0
+      StartScale = 0
+      PingPongScale = true
+      EndScaleX = 1.5
+      ScaleMax = 1.4
+      ScaleMin = 0.4
+      ScaleY = 0.5
+      StartScaleX = 0.5
+      Material = "Unlit"
+    }
+
+    {
+      Name = "WeaponLocked"
+      FilePath = "Fx\LevelUpMirrorOrbGlow\LevelUpMirrorOrbGlow"
+      Type = "Book"
+      Alpha = 0.5
+      EndFrame = 61
+      Loop = true
+      NumFrames = 61
+      PlaySpeed = 30.0
+      RandomStartFrame = true
+      ReRandomizeOnLoop = false
+      StartFrame = 1
+      Scale = 2.0
+      Material = "Unlit"
+    }
+
+    {
+      Name = "WeaponReadyToUnlock"
+      FilePath = "Fx\LevelUpMirrorOrbGlow\LevelUpMirrorOrbGlow"
+      Type = "Book"
+      EndFrame = 61
+      Loop = true
+      NumFrames = 61
+      PlaySpeed = 30.0
+      RandomStartFrame = true
+      ReRandomizeOnLoop = false
+      StartFrame = 1
+      Scale = 1.7
+      Material = "Unlit"
+    }
+
+    {
+      Name = "WeaponBowFloatingIdle"
+      FilePath = "Animations\Weapons\Bow\Idle\BowIdle"
+      Type = "Book"
+      VideoTexture = "WeaponBowFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponBowFloatingIdleBonus"
+      InheritFrom = "WeaponBowFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponBowFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Bow\IdleOff\BowIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponBowFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 1
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OffsetZ = 13
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponBowFloatingIdleOff"
+      InheritFrom = "WeaponBowFloatingIdle"
+      ChildAnimation = "WeaponBowFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+    }
+
+
+    {
+      Name = "WeaponSpearFloatingIdle"
+      FilePath = "Animations\Weapons\Spear\Idle\SpearIdle"
+      Type = "Book"
+      VideoTexture = "WeaponSpearFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponSpearFloatingIdleBonus"
+      InheritFrom = "WeaponSpearFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponSpearFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Spear\IdleOff\SpearIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponSpearFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      OffsetZ = 10
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 0.5
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponSpearFloatingIdleOff"
+      InheritFrom = "WeaponSpearFloatingIdle"
+      ChildAnimation = "WeaponSpearFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+    }
+
+    {
+      Name = "WeaponSwordFloatingIdle"
+      FilePath = "Animations\Weapons\Sword\Idle\SwordIdle"
+      Type = "Book"
+      VideoTexture = "WeaponSwordFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponSwordFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Sword\IdleOff\SwordIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponSwordFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 0.5
+      OffsetZ = 15
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponSwordFloatingIdleOff"
+      InheritFrom = "WeaponSwordFloatingIdle"
+      ChildAnimation = "WeaponSwordFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+    }
+
+    {
+      Name = "WeaponSwordFloatingIdleBonus"
+      InheritFrom = "WeaponSwordFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponSwordFloatingIdleOff_Red"
+      FilePath = "Animations\Weapons\Sword\IdleOff\SwordIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponSwordFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      Alpha = 0.5
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponShieldFloatingIdle"
+      FilePath = "Animations\Weapons\Shield\Idle\ShieldIdle"
+      Type = "Book"
+      VideoTexture = "WeaponShieldFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponShieldFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Shield\IdleOff\ShieldIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponShieldFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      OffsetZ = 12
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 0.66
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponShieldFloatingIdleBonus"
+      InheritFrom = "WeaponShieldFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponShieldFloatingIdleOff"
+      InheritFrom = "WeaponShieldFloatingIdle"
+      ChildAnimation = "WeaponShieldFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+    }
+
+    {
+      Name = "WeaponGunFloatingIdle"
+      FilePath = "Animations\Weapons\Gun\Idle\GunIdle"
+      Type = "Book"
+      VideoTexture = "WeaponGunFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponGunFloatingIdleBonus"
+      InheritFrom = "WeaponGunFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponGunFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Gun\IdleOff\GunIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponGunFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 0.5
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OffsetZ = 12
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponGunFloatingIdleOff"
+      InheritFrom = "WeaponGunFloatingIdle"
+      ChildAnimation = "WeaponGunFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+
+    }
+
+    {
+      Name = "WeaponGunAlt01FloatingIdle"
+      InheritFrom = "WeaponGunFloatingIdle"
+      FilePath = "Animations\Weapons\Alt01Gun\Idle\GunAlt01Idle"
+      VideoTexture = "WeaponGun01FloatingIdle"
+	}
+    {
+      Name = "WeaponGunAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponGunFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt01Gun\Idle\GunAlt01Idle"
+      VideoTexture = "WeaponGun01FloatingIdle"
+    }
+    {
+      Name = "WeaponGunAlt01FloatingIdleOff"
+      InheritFrom = "WeaponGunFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt01Gun\Idle\GunAlt01Idle"
+      VideoTexture = "WeaponGun01FloatingIdle"
+	   ChildAnimation = "WeaponGunAlt01FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponGunAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponGunFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt01Gun\IdleOff\GunAlt01IdleOff"
+      VideoTexture = "WeaponGun01FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponGunAlt02FloatingIdle"
+      InheritFrom = "WeaponGunFloatingIdle"
+      FilePath = "Animations\Weapons\Alt02Gun\Idle\GunAlt02Idle"
+      VideoTexture = "WeaponGun02FloatingIdle"
+	}
+    {
+      Name = "WeaponGunAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponGunFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt02Gun\Idle\GunAlt02Idle"
+      VideoTexture = "WeaponGun02FloatingIdle"
+    }
+    {
+      Name = "WeaponGunAlt02FloatingIdleOff"
+      InheritFrom = "WeaponGunFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt02Gun\Idle\GunAlt02Idle"
+      VideoTexture = "WeaponGun02FloatingIdle"
+	  ChildAnimation = "WeaponGunAlt02FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponGunAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponGunFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt02Gun\IdleOff\GunAlt02IdleOff"
+      VideoTexture = "WeaponGun02FloatingIdleOff"
+	}
+
+      {
+      Name = "WeaponGunAlt03FloatingIdle"
+      InheritFrom = "WeaponGunFloatingIdle"
+      FilePath = "Animations\Weapons\GunLucifer\Idle\GunLuciferIdle"
+      VideoTexture = "WeaponGun03FloatingIdle"
+  }
+    {
+      Name = "WeaponGunAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponGunFloatingIdleBonus"
+      FilePath = "Animations\Weapons\GunLucifer\Idle\GunLuciferIdle"
+      VideoTexture = "WeaponGun03FloatingIdle"
+    }
+    {
+      Name = "WeaponGunAlt03FloatingIdleOff"
+      InheritFrom = "WeaponGunFloatingIdleOff"
+      FilePath = "Animations\Weapons\GunLucifer\Idle\GunLuciferIdle"
+      VideoTexture = "WeaponGun03FloatingIdle"
+	  ChildAnimation = "WeaponGunAlt03FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponGunAlt03FloatingIdleOffGlow"
+      InheritFrom = "WeaponGunFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\GunLucifer\IdleOff\GunLuciferIdleOff"
+      VideoTexture = "WeaponGun03FloatingIdleOff"
+  }
+
+    {
+      Name = "WeaponShieldAlt01FloatingIdle"
+      InheritFrom = "WeaponShieldFloatingIdle"
+      FilePath = "Animations\Weapons\Alt01Shield\Idle\ShieldAlt01Idle"
+      VideoTexture = "WeaponShield01FloatingIdle"
+      Scale = 0.75
+	}
+    {
+      Name = "WeaponShieldAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponShieldFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt01Shield\Idle\ShieldAlt01Idle"
+      VideoTexture = "WeaponShield01FloatingIdle"
+      Scale = 0.75
+    }
+    {
+      Name = "WeaponShieldAlt01FloatingIdleOff"
+      InheritFrom = "WeaponShieldFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt01Shield\Idle\ShieldAlt01Idle"
+      VideoTexture = "WeaponShield01FloatingIdle"
+	  ChildAnimation = "WeaponShieldAlt01FloatingIdleOffGlow"
+    Scale = 0.75
+    }
+    {
+      Name = "WeaponShieldAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponShieldFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt01Shield\IdleOff\ShieldAlt01IdleOff"
+      VideoTexture = "WeaponShield01FloatingIdleOff"
+      Scale = 0.75
+	}
+
+
+    {
+      Name = "WeaponShieldAlt02FloatingIdle"
+      InheritFrom = "WeaponShieldFloatingIdle"
+      FilePath = "Animations\Weapons\Alt02Shield\Idle\ShieldAlt02Idle"
+      VideoTexture = "WeaponShield02FloatingIdle"
+      Scale = 0.8
+	}
+    {
+      Name = "WeaponShieldAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponShieldFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt02Shield\Idle\ShieldAlt02Idle"
+      VideoTexture = "WeaponShield02FloatingIdle"
+      Scale = 0.8
+    }
+    {
+      Name = "WeaponShieldAlt02FloatingIdleOff"
+      InheritFrom = "WeaponShieldFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt02Shield\IdleOff\ShieldAlt02Idle"
+      VideoTexture = "WeaponShield02FloatingIdle"
+	  ChildAnimation = "WeaponShieldAlt02FloatingIdleOffGlow"
+	  Scale = 0.8
+    }
+    {
+      Name = "WeaponShieldAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponShieldFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt02Shield\IdleOff\ShieldAlt02IdleOff"
+      VideoTexture = "WeaponShield02FloatingIdleOff"
+      Scale = 0.8
+	}
+
+      {
+      Name = "WeaponShieldAlt03FloatingIdle"
+      InheritFrom = "WeaponShieldFloatingIdle"
+      FilePath = "Animations\Weapons\ShieldBeowulf\Idle\ShieldBeowulfIdle"
+      VideoTexture = "WeaponShield03FloatingIdle"
+      Scale = 0.75
+  }
+    {
+      Name = "WeaponShieldAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponShieldFloatingIdleBonus"
+      FilePath = "Animations\Weapons\ShieldBeowulf\Idle\ShieldBeowulfIdle"
+      VideoTexture = "WeaponShield03FloatingIdle"
+      Scale = 0.75
+    }
+    {
+      Name = "WeaponShieldAlt03FloatingIdleOff"
+      InheritFrom = "WeaponShieldFloatingIdleOff"
+      FilePath = "Animations\Weapons\ShieldBeowulf\Idle\ShieldBeowulfIdle"
+      VideoTexture = "WeaponShield03FloatingIdle"
+	  ChildAnimation = "WeaponShieldAlt03FloatingIdleOffGlow"
+	  Scale = 0.75
+    }
+    {
+      Name = "WeaponShieldAlt03FloatingIdleOffGlow"
+	  InheritFrom = "WeaponShieldFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\ShieldBeowulf\IdleOff\ShieldBeowulfIdleOff"
+      VideoTexture = "WeaponShield03FloatingIdleOff"
+      Scale = 0.75
+  }
+
+	{
+      Name = "WeaponFistsFloatingIdle"
+      FilePath = "Animations\Weapons\Fists\Idle\FistsIdle"
+      Type = "Book"
+      VideoTexture = "WeaponFistsFloatingIdle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      OnlyWhenVisible = true
+      TransferFrameFromThis = true
+      Scale = 0.55
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponFistsFloatingIdleBonus"
+      InheritFrom = "WeaponFistsFloatingIdle"
+      ChildAnimation = "WeaponBonusFx"
+      EndFrame = 150
+      StartFrame = 1
+    }
+
+    {
+      Name = "WeaponFistsFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Fists\IdleOff\FistsIdleOff"
+      Type = "Book"
+      VideoTexture = "WeaponFistsFloatingIdleOff"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferFrameFromThis = true
+      Scale = 0.55
+      AddColor = true
+      Red = 0.5
+      Green = 1
+      Blue = 1
+      Alpha = 0.5
+      StartAlpha = 0.5
+      EndAlpha = 1
+      PingPongColor = true
+      OffsetZ = 12
+      OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "WeaponFistsFloatingIdleOff"
+      InheritFrom = "WeaponFistsFloatingIdle"
+      ChildAnimation = "WeaponFistsFloatingIdleOffGlow"
+      Red = 0
+      Green = 0
+      Blue = 0
+
+    }
+
+    {
+      Name = "WeaponFistsAlt01FloatingIdle"
+      InheritFrom = "WeaponFistsFloatingIdle"
+      FilePath = "Animations\Weapons\FistsAlt01\Idle\FistsAlt01Idle"
+      VideoTexture = "WeaponFists01FloatingIdle"
+	}
+    {
+      Name = "WeaponFistsAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponFistsFloatingIdleBonus"
+      FilePath = "Animations\Weapons\FistsAlt01\Idle\FistsAlt01Idle"
+      VideoTexture = "WeaponFists01FloatingIdle"
+    }
+    {
+      Name = "WeaponFistsAlt01FloatingIdleOff"
+      InheritFrom = "WeaponFistsFloatingIdleOff"
+      FilePath = "Animations\Weapons\FistsAlt01\Idle\FistsAlt01Idle"
+      VideoTexture = "WeaponFists01FloatingIdle"
+	   ChildAnimation = "WeaponFistsAlt01FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponFistsAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponFistsFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\FistsAlt01\IdleOff\FistsAlt01IdleOff"
+      VideoTexture = "WeaponFists01FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponFistsAlt02FloatingIdle"
+      InheritFrom = "WeaponFistsFloatingIdle"
+      FilePath = "Animations\Weapons\FistsAlt02\Idle\FistsAlt02Idle"
+      VideoTexture = "WeaponFists02FloatingIdle"
+	}
+    {
+      Name = "WeaponFistsAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponFistsFloatingIdleBonus"
+      FilePath = "Animations\Weapons\FistsAlt02\Idle\FistsAlt02Idle"
+      VideoTexture = "WeaponFists02FloatingIdle"
+    }
+    {
+      Name = "WeaponFistsAlt02FloatingIdleOff"
+      InheritFrom = "WeaponFistsFloatingIdleOff"
+      FilePath = "Animations\Weapons\FistsAlt02\Idle\FistsAlt02Idle"
+      VideoTexture = "WeaponFists02FloatingIdle"
+	  ChildAnimation = "WeaponFistsAlt02FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponFistsAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponFistsFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\FistsAlt02\IdleOff\FistsAlt02IdleOff"
+      VideoTexture = "WeaponFists02FloatingIdleOff"
+	}    
+
+  {
+      Name = "WeaponFistsAlt03FloatingIdle"
+      InheritFrom = "WeaponFistsFloatingIdle"
+      FilePath = "Animations\Weapons\FistsGilgamesh\Idle\FistsGilgameshIdle"
+      VideoTexture = "WeaponFists03FloatingIdle"
+  }
+    {
+      Name = "WeaponFistsAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponFistsFloatingIdleBonus"
+      FilePath = "Animations\Weapons\FistsGilgamesh\Idle\FistsGilgameshIdle"
+      VideoTexture = "WeaponFists03FloatingIdle"
+    }
+    {
+      Name = "WeaponFistsAlt03FloatingIdleOff"
+      InheritFrom = "WeaponFistsFloatingIdleOff"
+      FilePath = "Animations\Weapons\FistsGilgamesh\IdleOff\FistsGilgameshIdleOff"
+      VideoTexture = "WeaponFists03FloatingIdle"
+    ChildAnimation = "WeaponFistsAlt03FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponFistsAlt03FloatingIdleOffGlow"
+    InheritFrom = "WeaponFistsFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\FistsGilgamesh\IdleOff\FistsGilgameshIdleOff"
+      VideoTexture = "WeaponFists03FloatingIdleOff"
+  }
+
+    {
+      Name = "WeaponSpearAlt01FloatingIdle"
+      InheritFrom = "WeaponSpearFloatingIdle"
+      FilePath = "Animations\Weapons\Alt01Spear\Idle\SpearAlt01Idle"
+      VideoTexture = "WeaponSpear01FloatingIdle"
+    }
+    {
+      Name = "WeaponSpearAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponSpearFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt01Spear\Idle\SpearAlt01Idle"
+      VideoTexture = "WeaponSpear01FloatingIdle"
+    }
+    {
+      Name = "WeaponSpearAlt01FloatingIdleOff"
+      InheritFrom = "WeaponSpearFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt01Spear\IdleOff\SpearAlt01IdleOff"
+      VideoTexture = "WeaponSpear01FloatingIdle"
+	  ChildAnimation = "WeaponSpearAlt01FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSpearAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSpearFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt01Spear\IdleOff\SpearAlt01IdleOff"
+      VideoTexture = "WeaponSpear01FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponSpearAlt02FloatingIdle"
+      InheritFrom = "WeaponSpearFloatingIdle"
+      FilePath = "Animations\Weapons\Alt02Spear\Idle\SpearAlt02Idle"
+      VideoTexture = "WeaponSpear02FloatingIdle"
+	}
+
+    {
+      Name = "WeaponSpearAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponSpearFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt02Spear\Idle\SpearAlt02Idle"
+      VideoTexture = "WeaponSpear02FloatingIdle"
+    }
+    {
+      Name = "WeaponSpearAlt02FloatingIdleOff"
+      InheritFrom = "WeaponSpearFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt02Spear\IdleOff\SpearAlt02IdleOff"
+      VideoTexture = "WeaponSpear02FloatingIdle"
+	  ChildAnimation = "WeaponSpearAlt02FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSpearAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSpearFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt02Spear\IdleOff\SpearAlt02IdleOff"
+      VideoTexture = "WeaponSpear02FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponSpearAlt03FloatingIdle"
+      InheritFrom = "WeaponSpearFloatingIdle"
+      FilePath = "Animations\Weapons\LunarSpear\Idle\SpearLunarIdle"
+      VideoTexture = "WeaponSpear03FloatingIdle"
+	}
+
+    {
+      Name = "WeaponSpearAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponSpearFloatingIdleBonus"
+      FilePath = "Animations\Weapons\LunarSpear\Idle\SpearLunarIdle"
+      VideoTexture = "WeaponSpear03FloatingIdle"
+    }
+    {
+      Name = "WeaponSpearAlt03FloatingIdleOff"
+      InheritFrom = "WeaponSpearFloatingIdleOff"
+      FilePath = "Animations\Weapons\LunarSpear\IdleOff\SpearLunarIdleOff"
+      VideoTexture = "WeaponSpear03FloatingIdle"
+	  ChildAnimation = "WeaponSpearAlt03FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSpearAlt03FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSpearFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\LunarSpear\IdleOff\SpearLunarIdleOff"
+      VideoTexture = "WeaponSpear03FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponSwordAlt01FloatingIdle"
+      InheritFrom = "WeaponSwordFloatingIdle"
+      FilePath = "Animations\Weapons\Alt01Sword\Idle\SwordAlt01Idle"
+      VideoTexture = "WeaponSword01FloatingIdle"
+    }
+    {
+      Name = "WeaponSwordAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponSwordFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt01Sword\Idle\SwordAlt01Idle"
+      VideoTexture = "WeaponSword01FloatingIdle"
+    }
+    {
+      Name = "WeaponSwordAlt01FloatingIdleOff"
+      InheritFrom = "WeaponSwordFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt01Sword\Idle\SwordAlt01Idle"
+      VideoTexture = "WeaponSword01FloatingIdle"
+	  ChildAnimation = "WeaponSwordAlt01FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSwordAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSwordFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt01Sword\IdleOff\SwordAlt01IdleOff"
+      VideoTexture = "WeaponSword01FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponSwordAlt02FloatingIdle"
+      InheritFrom = "WeaponSwordFloatingIdle"
+      FilePath = "Animations\Weapons\Alt02Sword\Idle\SwordAlt02Idle"
+      VideoTexture = "WeaponSword02FloatingIdle"
+	}
+    {
+      Name = "WeaponSwordAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponSwordFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt02Sword\Idle\SwordAlt02Idle"
+      VideoTexture = "WeaponSword02FloatingIdle"
+    }
+    {
+      Name = "WeaponSwordAlt02FloatingIdleOff"
+      InheritFrom = "WeaponSwordFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt02Sword\Idle\SwordAlt02Idle"
+      VideoTexture = "WeaponSword02FloatingIdle"
+	   ChildAnimation = "WeaponSwordAlt02FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSwordAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSwordFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt02Sword\IdleOff\SwordAlt02IdleOff"
+      VideoTexture = "WeaponSword02FloatingIdleOff"
+	}
+
+	{
+      Name = "WeaponSwordAlt03FloatingIdle"
+      InheritFrom = "WeaponSwordFloatingIdle"
+      FilePath = "Animations\Weapons\SwordArthur\Idle\SwordArthurIdle"
+      VideoTexture = "WeaponSword03FloatingIdle"
+      ChildAnimation = "WeaponSwordAlt03FloatingEmitter"
+	}
+
+  {
+    Name = "WeaponSwordAlt03FloatingEmitter"
+    Type = "Constant"
+    FilePath = "Particles\particle_glow"
+    Material = "Unlit"
+    UseAttachedMarkerLocation = "weapon_1_TRACKING"
+    VisualFx = "WeaponSwordAlt03FloatingFx"
+    VisualFxIntervalMin = 0.5
+    VisualFxIntervalMax = 0.51
+    Scale = 0.75
+    Alpha = 0.5
+    ColorFromOwner = "Ignore"
+    OffsetZ = 120
+	SortMode = "FromParent"
+  }
+
+  {
+    Name = "WeaponSwordAlt03FloatingFx"
+    Type = "Constant"
+    FilePath = "Particles\particle_glow"
+    Material = "Unlit"
+    UseAttachedMarkerLocation = "weapon_1_TRACKING"
+    StartAlpha = 0
+    EndAlpha = 0.33
+    PingPongColor = true
+    Duration = 2
+    EaseIn = 0
+    EaseOut = 1
+    Scale = 0.75
+    StartRed = 1
+    StartGreen = 0.4
+    StartBlue = 0
+    EndRed = 0
+    EndGreen = 0.6
+    EndBlue = 1.0
+    StartScale = 1
+    EndScale = 1.5
+    ScaleFromOwner = "Ignore"
+    ColorFromOwner = "Ignore"
+    GroupName = "FX_Standing_Add"
+    ChildAnimation = "WeaponSwordAlt03FloatingFxSpectral"
+    SortMode = "FromParent"
+  }
+
+  {
+    Name = "WeaponSwordAlt03FloatingFxSpectral"
+    Type = "Constant"
+    FilePath = "Fx\Arthur\SwordGlowSpectral"
+    Material = "Unlit"
+    AngleFromOwner = "Ignore"
+    UseOwnAngle = false
+    ScaleMin = 0.8
+    ScaleMax = 1.0
+    Scale = 1.0
+    StartScale = 1
+    EndScale = 1.5
+    Duration = 2
+    StartAlpha = 0
+    EndAlpha = 0.15
+    PingPongColor = true
+    StartOffsetZ = 0
+    EndOffsetZ = 10
+    EaseIn = 0
+    EaseOut = 0.1
+    Red = 1
+    Green = 0.75
+    Blue = 0.6
+    OffsetZ = 100
+    RandomFlipHorizontal = true
+    UseAttachedMarkerLocation = "weapon_1_TRACKING"
+    ColorFromOwner = "Ignore"
+    ScaleFromOwner = "Ignore"
+    SortMode = "Id"
+  }
+
+
+    {
+      Name = "WeaponSwordAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponSwordFloatingIdleBonus"
+      FilePath = "Animations\Weapons\SwordArthur\Idle\SwordArthurIdle"
+      VideoTexture = "WeaponSword03FloatingIdle"
+    }
+    {
+      Name = "WeaponSwordAlt03FloatingIdleOff"
+      InheritFrom = "WeaponSwordFloatingIdleOff"
+      FilePath = "Animations\Weapons\SwordArthur\Idle\SwordArthurIdle"
+      VideoTexture = "WeaponSword03FloatingIdle"
+	   ChildAnimation = "WeaponSwordAlt03FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponSwordAlt03FloatingIdleOffGlow"
+	  InheritFrom = "WeaponSwordFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\SwordArthur\IdleOff\SwordArthurIdleOff"
+      VideoTexture = "WeaponSword03FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponBowAlt01FloatingIdle"
+      InheritFrom = "WeaponBowFloatingIdle"
+      FilePath = "Animations\Weapons\Alt01Bow\Idle\BowAlt01Idle"
+      VideoTexture = "WeaponBow01FloatingIdle"
+    }
+    {
+      Name = "WeaponBowAlt01FloatingIdleBonus"
+      InheritFrom = "WeaponBowFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt01Bow\Idle\BowAlt01Idle"
+      VideoTexture = "WeaponBow01FloatingIdle"
+    }
+    {
+      Name = "WeaponBowAlt01FloatingIdleOff"
+      InheritFrom = "WeaponBowFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt01Bow\Idle\BowAlt01Idle"
+      VideoTexture = "WeaponBow01FloatingIdle"
+	  ChildAnimation = "WeaponBowAlt01FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponBowAlt01FloatingIdleOffGlow"
+	  InheritFrom = "WeaponBowFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt01Bow\IdleOff\BowAlt01IdleOff"
+      VideoTexture = "WeaponBow01FloatingIdleOff"
+	}
+
+    {
+      Name = "WeaponBowAlt02FloatingIdle"
+      InheritFrom = "WeaponBowFloatingIdle"
+      FilePath = "Animations\Weapons\Alt02Bow\Idle\BowAlt02Idle"
+      VideoTexture = "WeaponBow02FloatingIdle"
+	}
+
+    {
+      Name = "WeaponBowAlt02FloatingIdleBonus"
+      InheritFrom = "WeaponBowFloatingIdleBonus"
+      FilePath = "Animations\Weapons\Alt02Bow\Idle\BowAlt02Idle"
+      VideoTexture = "WeaponBow02FloatingIdle"
+    }
+    {
+      Name = "WeaponBowAlt02FloatingIdleOff"
+      InheritFrom = "WeaponBowFloatingIdleOff"
+      FilePath = "Animations\Weapons\Alt02Bow\Idle\BowAlt02Idle"
+      VideoTexture = "WeaponBow02FloatingIdle"
+	  ChildAnimation = "WeaponBowAlt02FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponBowAlt02FloatingIdleOffGlow"
+	  InheritFrom = "WeaponBowFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\Alt02Bow\IdleOff\BowAlt02IdleOff"
+      VideoTexture = "WeaponBow02FloatingIdleOff"
+	}
+
+      {
+      Name = "WeaponBowAlt03FloatingIdle"
+      InheritFrom = "WeaponBowFloatingIdle"
+      FilePath = "Animations\Weapons\BowRama\Idle\BowRamaIdle"
+      VideoTexture = "WeaponBow03FloatingIdle"
+    }
+    {
+      Name = "WeaponBowAlt03FloatingIdleBonus"
+      InheritFrom = "WeaponBowFloatingIdleBonus"
+      FilePath = "Animations\Weapons\BowRama\Idle\BowRamaIdle"
+      VideoTexture = "WeaponBow03FloatingIdle"
+    }
+    {
+      Name = "WeaponBowAlt03FloatingIdleOff"
+      InheritFrom = "WeaponBowFloatingIdleOff"
+      FilePath = "Animations\Weapons\BowRama\Idle\BowRamaIdle"
+      VideoTexture = "WeaponBow03FloatingIdle"
+    ChildAnimation = "WeaponBowAlt03FloatingIdleOffGlow"
+    }
+    {
+      Name = "WeaponBowAlt03FloatingIdleOffGlow"
+    InheritFrom = "WeaponBowFloatingIdleOffGlow"
+      FilePath = "Animations\Weapons\BowRama\IdleOff\BowRamaIdleOff"
+      VideoTexture = "WeaponBow03FloatingIdleOff"
+  }
+
+
+
+
+
+    {
+      Name = "WeaponBowFloatingIdleOffBonus"
+      InheritFrom = "WeaponBowFloatingIdleOff"
+      ChildAnimation = "WeaponBowFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponBowFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponBowFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponBowAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponBowAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponBowAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponBowAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponBowAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponBowAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponBowAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponBowAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponBowAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponBowAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponBowAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponBowAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponBowAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponBowAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponBowAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+
+
+    {
+      Name = "WeaponSpearFloatingIdleOffBonus"
+      InheritFrom = "WeaponSpearFloatingIdleOff"
+      ChildAnimation = "WeaponSpearFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSpearFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSpearFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSpearAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponSpearAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponSpearAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSpearAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSpearAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSpearAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponSpearAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponSpearAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSpearAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSpearAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSpearAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponSpearAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponSpearAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSpearAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSpearAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+
+
+    {
+      Name = "WeaponSwordFloatingIdleOffBonus"
+      InheritFrom = "WeaponSwordFloatingIdleOff"
+      ChildAnimation = "WeaponSwordFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSwordFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSwordFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSwordAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponSwordAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponSwordAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSwordAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSwordAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSwordAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponSwordAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponSwordAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSwordAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSwordAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponSwordAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponSwordAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponSwordAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponSwordAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponSwordAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+
+
+    {
+      Name = "WeaponShieldFloatingIdleOffBonus"
+      InheritFrom = "WeaponShieldFloatingIdleOff"
+      ChildAnimation = "WeaponShieldFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponShieldFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponShieldFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponShieldAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponShieldAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponShieldAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponShieldAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponShieldAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponShieldAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponShieldAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponShieldAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponShieldAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponShieldAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponShieldAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponShieldAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponShieldAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponShieldAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponShieldAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+    {
+      Name = "WeaponGunFloatingIdleOffBonus"
+      InheritFrom = "WeaponGunFloatingIdleOff"
+      ChildAnimation = "WeaponGunFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponGunFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponGunFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponGunAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponGunAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponGunAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponGunAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponGunAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponGunAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponGunAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponGunAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponGunAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponGunAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponGunAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponGunAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponGunAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponGunAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponGunAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+
+    {
+      Name = "WeaponFistsFloatingIdleOffBonus"
+      InheritFrom = "WeaponFistsFloatingIdleOff"
+      ChildAnimation = "WeaponFistsFloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponFistsFloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponFistsFloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponFistsAlt01FloatingIdleOffBonus"
+      InheritFrom = "WeaponFistsAlt01FloatingIdleOff"
+      ChildAnimation = "WeaponFistsAlt01FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponFistsAlt01FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponFistsAlt01FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponFistsAlt02FloatingIdleOffBonus"
+      InheritFrom = "WeaponFistsAlt02FloatingIdleOff"
+      ChildAnimation = "WeaponFistsAlt02FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponFistsAlt02FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponFistsAlt02FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+    {
+      Name = "WeaponFistsAlt03FloatingIdleOffBonus"
+      InheritFrom = "WeaponFistsAlt03FloatingIdleOff"
+      ChildAnimation = "WeaponFistsAlt03FloatingIdleOffGlowBonus"
+    }
+    {
+      Name = "WeaponFistsAlt03FloatingIdleOffGlowBonus"
+      InheritFrom = "WeaponFistsAlt03FloatingIdleOffGlow"
+      ChildAnimation = "WeaponBonusFx"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      Name = "ZagreusInteractionTalkAll"
+      FilePath = "Animations\Zagreus\InteractionTalk\ZagreusInteractionTalk"
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionTalk_Bink"
+      EndFrame = 355
+      NumAngles = 8
+      NumFrames = 355
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      Scale = 1.05
+    }
+/*___ComeHither___*/
+
+   {
+      Name = "ZagreusInteractionComeHither"
+      FilePath = "Animations\Zagreus\InteractionComeHither\ZagreusInteractionComeHither"
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionComeHither_Bink"
+      ChainTo = "ZagreusInteractionComeHither_End"
+      EndFrame = 170
+      NumAngles = 8
+      NumFrames = 170
+      StartFrame = 2
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      Scale = 1.05
+    }
+/*___ComeHitherBreakdown___*/
+    {
+      Name = "ZagreusInteractionComeHither_Start"
+      FilePath = "Animations\Zagreus\InteractionComeHither\ZagreusInteractionComeHither"/*___Step upp from Idle__*/
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionComeHither_Bink"
+      ChainTo = "ZagreusInteractionComeHither_Hold"
+      EndFrame = 80
+      NumAngles = 8
+      NumFrames = 170
+      StartFrame = 2
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+
+      Scale = 1.05
+    }
+
+    {
+      Name = "ZagreusInteractionComeHither_Hold"/*___Arms Out Hold___*/
+      InheritFrom = "ZagreusInteractionComeHither"
+      ChainTo = "ZagreusInteractionComeHither_End"
+      EndFrame = 80
+      Loop = true
+      NumFrames = 170
+      StartFrame = 80
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      Scale = 1.05
+    }
+   {
+      Name = "ZagreusInteractionComeHither_End"/*___Arms Out wider to anticipate a hug___*/
+      InheritFrom = "ZagreusInteractionComeHither"
+      EndFrame = 170
+      NumFrames = 170
+      StartFrame = 80
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      Scale = 1.05
+    }
+
+
+    {
+      Name = "ZagreusInteractionThoughtful"
+      FilePath = "Animations\Zagreus\InteractionThoughtful\ZagreusInteractionThoughtful"
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionThoughtful_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusInteractionThoughtful.sga"
+      EndFrame = 334
+      NumAngles = 8
+      NumFrames = 334
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      Scale = 1.05
+    }
+
+    {
+      Name = "ZagreusWrathBurst"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 355
+      NumFrames = 355
+      PlayBackwards = true
+      StartFrame = 221
+      CancelOnOwnerMove = true
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "ZagreusInteractionTalkStart"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusInteractionTalk_LoopHands"
+      EndFrame = 30
+      NumFrames = 355
+      StartFrame = 1
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusInteractionTalk_LoopHands"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 355
+      StartFrame = 31
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusInteractionTalk_TranstionWeightShift_Denial1"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusInteractionTalk_HandsRelax"
+      EndFrame = 160
+      NumFrames = 355
+      StartFrame = 91
+    }
+
+    {
+      Name = "ZagreusInteractionTalk_HandsRelax"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusInteractionTalk_ReturnToIdle"
+      EndFrame = 220
+      NumFrames = 355
+      StartFrame = 161
+    }
+
+    {
+      Name = "ZagreusInteractionTalk_Denial2"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 355
+      HoldLastFrame = true
+      NumFrames = 355
+      StartFrame = 221
+    }
+
+    /* Curse command animations */
+
+    {
+      Name = "ZagreusInteractionTalkStart_Curse"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusInteractionTalk_LoopHands_Curse"
+      EndFrame = 30
+      NumFrames = 355
+      StartFrame = 1
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusInteractionTalk_LoopHands_Curse"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusInteractionTalk_ReturnToIdle"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 355
+      StartFrame = 31
+      CancelOnOwnerMove = true
+    }
+
+    /* Summon Animations */
+
+
+    {
+      Name = "ZagreusSummon"
+      InheritFrom = "ZagreusInteractionTalkAll"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 180
+      HoldLastFrame = true
+      NumFrames = 355
+      StartFrame = 104
+      TimeModifierFraction = 0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+    }
+
+    /* Idle to Talk transition */
+
+    {
+      Name = "ZagreusInteractionTalkCombined_Start"
+      FilePath = "Animations\ZagreusInteractionTalkCombined_Start\ZagreusInteractionTalkCombined_Start"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ZagreusInteractionTalkStart" }
+      ]
+    }
+
+    /* OLD - Empathy Mode */
+
+    {
+      Name = "ZagreusInteractionTalkCombined_Empathy"
+      FilePath = "Animations\ZagreusInteractionTalkCombined_Empathy\ZagreusInteractionTalkCombined_Empathy"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ZagreusInteractionTalk_LoopHands" }
+      ]
+    }
+
+    /* Denial Mode */
+
+    {
+      Name = "ZagreusInteractionTalkCombined_Denial"
+      FilePath = "Animations\ZagreusInteractionTalkCombined_Denial\ZagreusInteractionTalkCombined_Denial"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ZagreusInteractionTalk_TranstionWeightShift_Denial1" }
+        { Name = "ZagreusInteractionTalk_Denial2" }
+      ]
+    }
+
+    /* New Empathy Mode */
+
+    {
+      Name = "ZagreusTalkEmpathy"
+      FilePath = "Animations\Zagreus\TalkEmpathy\ZagreusTalkEmpathy"
+      Type = "Book"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusInteractionEmpathy.sga"
+      VideoTexture = "ZagreusTalkEmpathy_Bink"
+      EndFrame = 200
+      NumAngles = 8
+      NumFrames = 200
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusTalkEmpathyStart"
+      InheritFrom = "ZagreusTalkEmpathy"
+      ChainTo = "ZagreusTalkEmpathyLoop"
+      EndFrame = 110
+      NumFrames = 200
+      StartFrame = 1
+    }
+
+    {
+      Name = "ZagreusTalkEmpathyLoop"
+      InheritFrom = "ZagreusTalkEmpathy"
+      ChainTo = "ZagreusTalkEmpathy_Return"
+      EndFrame = 160
+      Loop = true
+      NumFrames = 200
+      StartFrame = 111
+    }
+
+    {
+      Name = "ZagreusTalkEmpathy_Return"
+      InheritFrom = "ZagreusTalkEmpathy"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 200
+      NumFrames = 200
+      StartFrame = 160
+    }
+
+    {
+      Name = "ZagreusExpressiveEmpathy"
+      InheritFrom = "ZagreusTalkEmpathy"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 200
+      StartFrame = 1
+    }
+
+    /* New Denial Mode */
+
+    {
+      Name = "ZagreusTalkDenial"
+      FilePath = "Animations\Zagreus\TalkDenial\ZagreusTalkDenial"
+      Type = "Book"
+      VideoTexture = "ZagreusTalkDenial_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusInteractionTalk.sga"
+      EndFrame = 355
+      NumAngles = 8
+      NumFrames = 355
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      TransferFrameFromThis = true
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusCosmeticPurchase"
+      InheritFrom = "ZagreusTalkDenial"
+      AllowRestart = true
+    }
+
+    {
+      Name = "ZagreusTalkDenialStart"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_Loop1"
+      EndFrame = 30
+      NumFrames = 355
+      StartFrame = 1
+    }
+    {
+      Name = "ZagreusTalkDenial_Full"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_Loop_Full"
+      EndFrame = 30
+      NumFrames = 355
+      StartFrame = 1
+    }
+
+    {
+      Name = "ZagreusTalkDenial_Loop1"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_WeightShift"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 355
+      StartFrame = 31
+    }
+    {
+      Name = "ZagreusTalkDenial_Loop_Full"
+      InheritFrom = "ZagreusTalkDenial_Loop1"
+      Loop = false
+      ChainTo = "ZagreusTalkDenialReturnToIdle"
+    }
+
+    {
+      Name = "ZagreusTalkDenial_Part2"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_WeightShift"
+      EndFrame = 90
+      NumFrames = 355
+      StartFrame = 31
+    }
+
+    {
+      Name = "ZagreusTalkDenial_WeightShift"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_Loop2"
+      EndFrame = 160
+      NumFrames = 355
+      StartFrame = 91
+    }
+
+    {
+      Name = "ZagreusTalkDenial_Loop2"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusTalkDenial_WeightShift2"
+      EndFrame = 220
+      NumFrames = 355
+      StartFrame = 161
+    }
+
+    {
+      Name = "ZagreusTalkDenial_WeightShift2"
+      InheritFrom = "ZagreusTalkDenial"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 355
+      NumFrames = 355
+      StartFrame = 221
+    }
+
+    {
+      Name = "ZagreusTalkDenialReturnToIdle"
+      InheritFrom = "ZagreusTalkDenialStart"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 30
+      NumFrames = 355
+      PlayBackwards = true
+      StartFrame = 1
+    }
+
+    /* Petting Cerberus */
+
+    {
+      Name = "ZagreusPetting"
+      ChainTo = "ZagreusPetting_End"
+      FilePath = "Animations\Zagreus\Petting\ZagreusPetting"
+      Type = "Book"
+      VideoTexture = "ZagreusPetting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 220
+      NumFrames = 300
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      Scale = 1.05
+      DisableOwnerInput = true
+      Sound = "/SFX/CerberusPettingSequence"
+
+      Slides = [
+       { Frame = 27 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 86 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 161 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 171 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 191 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 207 Sound = "/Leftovers/SFX/FootstepsRug" }
+       { Frame = 216 Sound = "/Leftovers/SFX/FootstepsRug" }
+       ]
+    }
+
+    {
+      Name = "ZagreusPetting_End"
+      ChainTo = "ZagreusIdle"
+      FilePath = "Animations\Zagreus\Petting\ZagreusPetting"
+      Type = "Book"
+      VideoTexture = "ZagreusPetting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 300
+      NumFrames = 300
+      PlaySpeed = 30.0
+      StartFrame = 221
+      OffsetY = -105.0
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+
+/*_____FISHING_______*/
+   {
+      Name = "ZagreusInteractionFishing"
+      FilePath = "Animations\Zagreus\InteractionFishing\ZagreusInteractionFishingSuccess"
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionFishing_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusFishingSuccess.sga"
+      NumAngles = 8
+      EndFrame = 260
+      Loop = false
+      NumFrames = 260
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -105.0
+      Scale = 1.05
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+	  DisableOwnerInteract = true
+    }
+
+/*__FISHINGBreakDown___*/
+    {
+      Name = "ZagreusInteractionFishing_Start"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_FishingWait"
+      EndFrame = 60
+      Loop = false
+      NumFrames = 260
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+      Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh"
+    }
+/*__FISHING_Waiting___*/
+   {
+      Name = "ZagreusInteractionFishing_FishingWait"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_FishingWait2"
+      EndFrame = 87
+      NumFrames = 260
+      StartFrame = 61
+      PlaySpeed = 30
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "ZagreusInteractionFishing_FishingWait2"
+      InheritFrom = "ZagreusInteractionFishing"
+      EndFrame = 87
+      NumFrames = 260
+      StartFrame = 61
+      TimeModifierFraction = 1.0
+      Loop = true
+    }
+/*__FISHING_This can chain to either SUCCESS or FAIL animation___*/
+    {
+  	  Name = "ZagreusInteractionFishing_PullSuccess"
+  	  InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccess"
+      EndFrame = 128
+      Loop = false
+      NumFrames = 260
+      StartFrame = 88
+      TimeModifierFraction = 0.0
+      Slides = [
+        { Frame = 122 Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh" },
+      ]
+    }
+  	{
+      Name = "ZagreusInteractionFishing_PullFailure"
+  	  InheritFrom = "ZagreusInteractionFishing_PullSuccess"
+  	  ChainTo = "ZagreusInteractionFishingFail"
+      Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh"
+    }
+/*__FISHING_Success___*/
+     {
+      Name = "ZagreusInteractionFishing_CatchSuccess"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccessHold1"
+      EndFrame = 158
+      Loop = false
+      NumFrames = 260
+      StartFrame = 129
+      TimeModifierFraction = 0.0
+      Slides = [
+        { Frame = 129 Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh" },
+        { Frame = 134 Sound = "/Leftovers/World Sounds/BigSplash" },
+        { Frame = 160 Sound = "/Leftovers/World Sounds/Caravan Interior/FloatingRockInteract" },
+      ]
+    }
+/*__FISHING_Success_fish holding frames___*/
+     {
+      Name = "ZagreusInteractionFishing_CatchSuccessHold1"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccessHold2"
+      EndFrame = 184
+      Loop = false
+      NumFrames = 260
+      StartFrame = 159
+      PlaySpeed = 30
+      TimeModifierFraction = 0.0
+    }
+
+     {
+/*__*/     Name = "ZagreusInteractionFishing_CatchSuccessHold2"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccessHold3"
+      EndFrame = 184
+      Loop = false
+      NumFrames = 260
+      StartFrame = 159
+      PlaySpeed = 30
+      TimeModifierFraction = 0.0
+    }
+
+     {
+      Name = "ZagreusInteractionFishing_CatchSuccessHold3"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccessHold4"
+      EndFrame = 184
+      Loop = false
+      NumFrames = 260
+      StartFrame = 159
+      PlaySpeed = 30
+      TimeModifierFraction = 0.0
+      }
+
+      {
+      Name = "ZagreusInteractionFishing_CatchSuccessHold4"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusInteractionFishing_CatchSuccessReturnToIdle"
+      EndFrame = 184
+      Loop = false
+      NumFrames = 260
+      StartFrame = 159
+      PlaySpeed = 60
+      TimeModifierFraction = 0.0
+    }
+/*__FISHING_Success_returnToIdle___*/
+     {
+      Name = "ZagreusInteractionFishing_CatchSuccessReturnToIdle"
+      InheritFrom = "ZagreusInteractionFishing"
+      ChainTo = "ZagreusIdle"
+      EndFrame = 260
+      Loop = false
+      NumFrames = 260
+      StartFrame = 185
+      TimeModifierFraction = 0.0
+      Slides = [
+       { Frame = 198 Sound = "/SFX/Player Sounds/WeaponSwing" }
+       { Frame = 199 Sound = "/VO/ZagreusEmotes/EmoteDodgingAlt" }
+      ]
+    }
+
+/*__FISHING_FAIL___*/
+{
+      Name = "ZagreusInteractionFishingFail"
+      FilePath = "Animations\Zagreus\InteractionFishingFail\ZagreusInteractionFishingFail"
+      Type = "Book"
+      VideoTexture = "ZagreusInteractionFishingFail_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusFishingFail.sga"
+      NumAngles = 8
+      EndFrame = 98
+      Loop = false
+      NumFrames = 98
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -105.0
+      Scale = 1.05
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      Slides = [
+       { Frame = 1 Sound = "/VO/ZagreusEmotes/EmoteUnpetrified" }
+      ]
+    }
+
+/*__Zagreus_Ending___*/
+  {
+      Name = "ZagreusInjured_IdleToSick"/*__Going to injured sequence__*/
+      FilePath = "Animations\Zagreus\InteractionEnding\InjuredIdleToSick\ZagreusInjuredIdleToSick"
+      ChainTo = "ZagreusInjured_SickStanding_Loop"
+      Type = "Book"
+      VideoTexture = "ZagreusInjured_IdleToSick_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusEndingInjuredIdleToSick.sga"
+      NumAngles = 8
+      EndFrame = 50
+      Loop = false
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 2
+      OffsetY = -105.0
+      Scale = 1.05
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+    }
+    {
+      Name = "ZagreusInjured_IdleToSickKneeling"
+      InheritFrom = "ZagreusInjured_IdleToSick"
+      ChainTo = "ZagreusInjured_SickStanding_ToKneeling"
+    }
+
+/*__Sick Standing___*/
+   {
+      Name = "ZagreusInjured_SickStandingSet"/*__Injured Set from standing to kneeling___*/
+      FilePath = "Animations\Zagreus\InteractionEnding\InjuredSickToKneel\ZagreusInjuredSickToKneel"
+      Type = "Book"
+      VideoTexture = "ZagreusInjured_SickStandingSet_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusEndingInjuredSickToKneel.sga"
+      EndFrame = 280
+      NumAngles = 8
+      NumFrames = 280
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      TransferFrameFromThis = true
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+/*__Sick Standing breakdown___*/
+
+    {
+      Name = "ZagreusInjured_SickStanding_Loop" /*__can be play indefinitely if needed__*/
+      InheritFrom = "ZagreusInjured_SickStandingSet"
+      ChainTo = "ZagreusInjured_SickStanding_ToKneeling"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 280
+      StartFrame = 1
+    }
+
+    {
+      Name = "ZagreusInjured_SickStanding_ToKneeling" /*__InjureStaning to kneeling___*/
+      InheritFrom = "ZagreusInjured_SickStandingSet"
+      ChainTo = "ZagreusInjured_SickKneeling_Loop"
+      EndFrame = 189
+      NumFrames = 280
+      Loop = false
+      StartFrame = 91
+    }
+
+    {
+      Name = "ZagreusInjured_SickKneeling_Loop"
+      InheritFrom = "ZagreusInjured_SickStandingSet"
+      ChainTo = "ZagreusInjured_SickKneeling_ToReach"
+      EndFrame = 280
+      NumFrames = 280
+      StartFrame = 190
+      Loop = true
+    }
+    {
+      Name = "ZagreusInjured_SickStanding_ToDeath" /*__InjureStaning to kneeling___*/
+      InheritFrom = "ZagreusInjured_SickStandingSet"
+      ChainTo = "ZagreusInjured_SickKneelingSet_ToDeath"
+      EndFrame = 189
+      NumFrames = 280
+      Loop = false
+      StartFrame = 91
+      Slides = [
+       { Frame = 127 Sound = "/SFX/FistImpactMedium" }
+       { Frame = 128 Sound = "/Leftovers/World Sounds/ClickSplash" }
+       { Frame = 129 Sound = "/VO/ZagreusEmotes/EmoteChoking" }
+       ]
+    }
+
+
+/*__Sick Kneeling To Death___*/
+ {
+      Name = "ZagreusInjured_SickKneelingSet" 
+      FilePath = "Animations\Zagreus\InteractionEnding\InjuredKneelToDeathVFX\InjuredKneelToDeath"
+      Type = "Book"
+      VideoTexture = "ZagreusInjured_SickKneelingSet_Bink"
+      FrameDataFile = "Game\Animations\FrameData\ZagreusEndingInjureKneeToDeath.sga"
+      EndFrame = 320
+      NumAngles = 1
+      NumFrames = 320
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      TransferFrameFromThis = true
+      Scale = 0.685
+      CancelOnOwnerMove = true
+      HoldLastFrame = true
+      AngleFromOwner = "Ignore"
+      Slides = [
+       { Frame = 152 Sound = "/Leftovers/World Sounds/ClickSplash" }
+       { Frame = 156 Sound = "/Leftovers/SFX/GeyserSplash" }
+       { Frame = 182 Sound = "/SFX/BloodGeyserSplash" }
+       { Frame = 203 Sound = "/SFX/BloodGeyserSplash" }
+       ]      
+    }
+    {
+      Name = "ZagreusInjured_SickKneelingSet_ToDeath" 
+      InheritFrom = "ZagreusInjured_SickKneelingSet"
+    }
+
+   /*__Ending Boat Ride___*/ 
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop" 
+      FilePath = "Animations\Zagreus\InteractionEnding\BoatEndingIdleLoop\ZagreusEndingBoatIdleLoop"
+      Type = "Book"
+      VideoTexture = "ZagreusEndingBoatIdleLoop_Bink"
+      ChainTo = "null"
+      /*FrameDataFile = "Game\Animations\FrameData\ZagreusInteractionTalk.sga"*/
+      EndFrame = 120
+      NumAngles = 1
+      NumFrames = 120
+      Loop = true
+      AngleFromOwner = "Ignore"
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      /*SetOwnerEndAngle = true*/
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+
+
+    {
+      Name = "ZagreusEndingBoat_IdleFidget1" 
+      FilePath = "Animations\Zagreus\InteractionEnding\BoatEndingIdleFidget1\ZagreusEndingBoatIdleFidget1"
+      Type = "Book"
+      VideoTexture = "ZagreusEndingBoatIdleFidget1_Bink"
+      ChainTo = "ZagreusEndingBoat_IdleLoop"
+      EndFrame = 120
+      NumAngles = 1
+      NumFrames = 120
+      AngleFromOwner = "Ignore"
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      /*SetOwnerEndAngle = true*/
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+ 
+
+    {
+      Name = "ZagreusEndingBoat_IdleFidget2" 
+      FilePath = "Animations\Zagreus\InteractionEnding\BoatEndingIdleFidget2\ZagreusEndingBoatIdleFidget2"
+      Type = "Book"
+      VideoTexture = "ZagreusEndingBoatIdleFidget2_Bink"
+      ChainTo = "ZagreusEndingBoat_IdleLoop"
+      EndFrame = 120
+      NumAngles = 1
+      NumFrames = 120
+      AngleFromOwner = "Ignore"
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      /*SetOwnerEndAngle = true*/
+      Scale = 1.05
+      CancelOnOwnerMove = true
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop1"
+      InheritFrom = "ZagreusEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "ZagreusEndingBoat_IdleFidgetLoop1"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleFidgetLoop1"
+      InheritFrom = "ZagreusEndingBoat_IdleFidget1"
+      ChainTo = "ZagreusEndingBoat_IdleLoop2"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop2"
+      InheritFrom = "ZagreusEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "ZagreusEndingBoat_IdleLoop3"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop3"
+      InheritFrom = "ZagreusEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "ZagreusEndingBoat_IdleLoop4"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop4"
+      InheritFrom = "ZagreusEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "ZagreusEndingBoat_IdleLoop5"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleLoop5"
+      InheritFrom = "ZagreusEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "ZagreusEndingBoat_IdleFidgetLoop2"
+    }
+
+    {
+      Name = "ZagreusEndingBoat_IdleFidgetLoop2"
+      InheritFrom = "ZagreusEndingBoat_IdleFidget2"
+      ChainTo = "ZagreusEndingBoat_IdleLoop1"
+    }
+
+  ]
+}

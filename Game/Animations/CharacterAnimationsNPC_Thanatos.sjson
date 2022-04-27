@@ -1,0 +1,224 @@
+{
+  Animations = [
+    
+    /* _______________________________________________Thanatos_______________________________________________ */
+
+    {
+      Name = "ThanatosIdle"
+      FilePath = "Animations\NPCThanatos\Idle\ThanatosIdle"
+      Type = "Book"
+      VideoTexture = "ThanatosIdle_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      CancelOnOwnerMove = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "ThanatosIdleInhouse"
+      FilePath = "Animations\NPCThanatos\IdleInhouse\ThanatosIdleInhouse"
+      Type = "Book"
+      VideoTexture = "ThanatosIdleInhouse_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -66.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+{
+      Name = "ThanatosIdleInhouseFidget_HairFlick"
+      FilePath = "Animations\NPCThanatos\IdleInhouse_Fidget_HairFlick\ThanatosIdleInhouseFidget_HairFlick"
+      Type = "Book"
+      VideoTexture = "ThanatosIdleInhouseFidgetHairFlick__Bink"
+      EndFrame = 90
+      Loop = false
+      NumAngles = 16
+      NumFrames = 90
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -66.0
+      CancelOnOwnerMove = true
+      Sound = "/Leftovers/SFX/RobeFlutterInScene"
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+
+
+    {
+      Name = "ThanatosFire"
+      FilePath = "Animations\NPCThanatos\Attack\ThanatosAttack"
+      Type = "Book"
+      VideoTexture = "ThanatosAttack_Bink"
+      EndFrame = 70
+      NumAngles = 8
+      NumFrames = 70
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      AllowRestart = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 3 }
+        { DurationFrames = 1 Sound = "/SFX/QuickSnap" Frame = 4 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 9 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 12 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusSwordLunge" Frame = 12 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 21 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 52 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 56 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 63 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ThanatosAoEFire"
+      FilePath = "Animations\NPCThanatos\AttackHold\ThanatosAttackHold"
+      Type = "Book"
+      VideoTexture = "ThanatosAttackHold_Bink"
+      EndFrame = 80
+      NumAngles = 8
+      NumFrames = 80
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 5 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusSwordLunge" Frame = 11 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/PlayerJumpMedium" Frame = 15 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 12 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 21 }
+        { DurationFrames = 1 Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh" Frame = 74 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 51 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 59 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 67 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ThanatosAssist"
+      FilePath = "Animations\NPCThanatos\AttackHold\ThanatosAttackHold"
+      Type = "Book"
+      ChainTo="ThanatosTeleportAssist"
+      VideoTexture = "ThanatosAttackHold_Bink"
+	  SortMode = "Isometric"
+      GroupName = "Standing"
+      EndFrame = 80
+      NumAngles = 8
+      NumFrames = 80
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      TimeModifierFraction = 0.1
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 5 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusSwordLunge" Frame = 11 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/PlayerJumpMedium" Frame = 15 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 12 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 21 }
+        { DurationFrames = 1 Sound = "/Leftovers/World Sounds/TrainingMontageWhoosh" Frame = 74 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 51 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 59 }
+        { DurationFrames = 1 Sound = "/SFX/AresBladeSlice" Frame = 67 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "ThanatosTalkDismissal"
+      FilePath = "Animations\NPCThanatos\EmoteDismissal\ThanatosEmoteDismissal"
+      Type = "Book"
+      VideoTexture = "ThanatosEmoteDismissal_Bink"
+      EndFrame = 120
+      NumAngles = 16
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      CancelOnOwnerMove = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ThanatosTalkDismissal_Start"
+      InheritFrom = "ThanatosTalkDismissal"
+      ChainTo = "ThanatosTalkDismissal_Loop"
+      EndFrame = 34
+      NumFrames = 120
+      StartFrame = 1
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "ThanatosTalkDismissal_Loop"
+      InheritFrom = "ThanatosTalkDismissal"
+      EndFrame = 94
+      Loop = true
+      NumFrames = 120
+      StartFrame = 35
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "ThanatosTalkDismissal_Return"
+      InheritFrom = "ThanatosTalkDismissal"
+      ChainTo = "ThanatosIdle"
+      EndFrame = 120
+      NumFrames = 120
+      StartFrame = 95
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+
+  ]
+}

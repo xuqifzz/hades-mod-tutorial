@@ -1,0 +1,99 @@
+{
+  LaunchScreen = {
+    Platform = "default"
+    ShowControls = false
+    ForceHideCursor = true
+    Back = {
+      Justification = "Left"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 1.0
+    }
+    AnimatedBackground = {
+      X = 960
+      Y = 540
+      Graphic = "MainMenuBG_Static"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+    ProgressBar = {
+      X = 960
+      Y = 540
+      Graphic = "Launch\\load_bar"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+    WorkText = {
+      X = 960
+      Y = 950
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansExtraBold"
+      Scale = 0.5
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+    }
+    DebugHintText = {
+      X = 130
+      Y = 900
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "MonospaceTypewriterBold"
+      FontSize = 22
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      OutlineThickness = 1
+      SelectedTextRed = 1.0
+      SelectedTextGreen = 1.0
+      SelectedTextBlue = 0.0
+    }
+    RareFormat = {
+      Justification = "Left"
+      VerticalJustification = "Center"
+      TextRed = 0.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      Font = "MonospaceTypewriterBold"
+      FontSize = 22
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      OutlineThickness = 2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 1
+      ShadowBlur = 1
+      ShadowAlpha = 1
+    }
+    EpicFormat = {
+      Justification = "Left"
+      VerticalJustification = "Center"
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 0.0
+      Font = "MonospaceTypewriterBold"
+      FontSize = 22
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      OutlineThickness = 2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 1
+      ShadowBlur = 1
+      ShadowAlpha = 1
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  Obstacles = [
+
+    {
+      Name = "BiomeMapLocaleAsphodel"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\Locale-Asphodel"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocaleHouseOfHades"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\Locale-HouseOfHades"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocaleTartarus"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\Locale-Tartarus"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocaleElysium"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\Locale-Elysium"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocaleStyx"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\Locale-Styx"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocationPin"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LocationPinPath"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapRewardPreview"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SuperGemDropPreview"
+        ClearPoints = true
+      }
+    }
+    {
+      Name = "SuperRewardClaimed"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SuperRewardClaimed"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapRewardBacking"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\BiomePactRewardBacking"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapSwordWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Sword01_Small"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapBowWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Bow01_Small"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapSpearWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Spear01_Small"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapShieldWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Shield01_Small"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapGunWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Gun01_Small"
+        ClearPoints = true
+      }
+    }
+
+	{
+      Name = "BiomeMapFistWeapon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponEnchantment_Fist01_Small"
+        ClearPoints = true
+      }
+    }
+
+
+    {
+      Name = "BiomeMapBottom"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\MapBottom"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapTop"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\MapTop"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapFill_Tartarus"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\MapFill_Tartarus"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapFill_Asphodel"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GiftDrop"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapFill_Elysium"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\BiomeMapFill_Elysium"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapFill_Styx"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\BiomeMap\MapFill_Styx"
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapTraversal"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = null
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapFill"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = null
+        ClearPoints = true
+      }
+    }
+
+    {
+      Name = "BiomeMapLocalePin"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\blank_invisible"
+        ClearPoints = true
+      }
+    }
+
+  ]
+}

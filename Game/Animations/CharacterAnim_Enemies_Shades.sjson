@@ -1,0 +1,4847 @@
+{
+  Animations = [
+
+    /* _____________SHADE ANIMATIONS_____________ */
+
+    {
+      Name = "Shade_Move_Ghost"
+      CreateAnimation = "Shade_Displace"
+      FilePath = "Fx\ShadeTrail\ShadeTrail"
+      Type = "Book"
+      Angle = 180.00
+      AngleFromOwner = "Take"
+      AddColor = true
+      Alpha = 0.5
+      EndRed = 1.0
+      StartAlpha = 1.0
+      StartBlue = 0.6
+      StartGreen = 1.0
+      Duration = 0.3
+      EndFrame = 1
+      NumAngles = 32
+      NumFrames = 1
+      PlaySpeed = 0.01
+      StartFrame = 1
+      OffsetY = -100.0
+      LocationFromOwner = "Take"
+      SortMode = "Isometric"
+      Acceleration = -1000.0
+      OwnerVelocityFraction = 0.3
+      EndScale = 1.1
+      ScaleFromOwner = "Take"
+      Material = "Unlit"
+    }
+
+    {
+      Name = "Shade_Displace"
+      InheritFrom = "Shade_Move_Ghost"
+      CreateAnimation = "null"
+      GroupName = "FX_Displacement"
+      Alpha = 0.05
+      EndFrame = 1
+      RandomDurationMax = 0.5
+      RandomDurationMin = 0.1
+      StartFrame = 1
+      EndScale = 1.01
+    }
+
+    {
+      Name = "ShadeSword_PreAttack"
+      FilePath = "Animations\Shade\SwordAttack\ShadeSwordAttack"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttack_Bink"
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -110.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 DangerDistance = 300 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_AttackSword"
+      FilePath = "Animations\Shade\SwordAttack\ShadeSwordAttack"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttack_Bink"
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -110.0
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 2 Sound = "/SFX/Player Sounds/ZagreusSwordSwipe" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Attack2*/
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_AttackSword2"
+      ChainTo = "ShadeSword_ReturnToIdle"
+      FilePath = "Animations\Shade\SwordAttack\ShadeSwordAttack"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttack_Bink"
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -110.0
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 2 Sound = "/SFX/Player Sounds/ZagreusSwordSwipe" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*returnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSword_ReturnToIdle"
+      ChainTo = "ShadeSword_Idle"
+      FilePath = "Animations\Shade\SwordAttack\ShadeSwordAttack"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttack_Bink"
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -110.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/GeneralWhooshReverse" }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*______overHeadAttack_______*/
+     {
+      Name = "ShadeSword_AttackSwordOverHeadPreAttack"
+      ChainTo = "ShadeSword_AttackChargeLoop"
+      FilePath = "Animations\Shade\SwordAttackOverHead\ShadeSwordAttackOverHead"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttackOverHead_Bink"
+      VisualFx = "ShadeSword_Attack_Ghost"
+      EndFrame = 46
+      NumAngles = 16
+      NumFrames = 46
+      StartFrame = 1
+      OffsetY = -110.0
+      ActiveVisualFxCap = 15
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 1 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/Leftovers/SFX/PlayerJumpSmall" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Exalted/EmoteEvading" }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame30_returnToIdle*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_AttackChargeLoop"
+      FilePath = "Animations\Shade\SwordAttackOverHead\ShadeSwordAttackOverHead"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttackOverHead_Bink"
+      VisualFx = "ShadeSword_Attack_Ghost"
+      EndFrame = 46
+      Loop = true
+      NumAngles = 16
+      NumFrames = 46
+      StartFrame = 1
+      OffsetY = -110.0
+      ActiveVisualFxCap = 15
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/    
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*airLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Exalted/EmoteCharging" }
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame30_returnToIdle*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_AttackSwordOverHead"
+      FilePath = "Animations\Shade\SwordAttackOverHead\ShadeSwordAttackOverHead"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttackOverHead_Bink"
+      VisualFx = "ShadeSword_Attack_Ghost"
+      EndFrame = 46
+      NumAngles = 16
+      NumFrames = 46
+      StartFrame = 1
+      OffsetY = -110.0
+      ActiveVisualFxCap = 15
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/    
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*Attack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/Leftovers/SFX/CurLand" }
+        { DurationFrames = 2 Sound = "/SFX/ArrowMetalStoneClang" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 9999 }
+        { DurationFrames = 0 }/*Frame30_returnToIdle*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_AttackOverHeadReturnToIdle"
+      ChainTo = "ShadeSword_Idle"
+      FilePath = "Animations\Shade\SwordAttackOverHead\ShadeSwordAttackOverHead"
+      Type = "Slide"
+      VideoTexture = "ShadeSwordAttackOverHead_Bink"
+      VisualFx = "ShadeSword_Attack_Ghost"
+      EndFrame = 46
+      NumAngles = 16
+      NumFrames = 46
+      StartFrame = 1
+      OffsetY = -110.0
+      CancelOnOwnerMove = false
+      DisableOwnerRotation = false
+      ActiveVisualFxCap = 15
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/    
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1}/*Frame30_returnToIdle*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame40*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+       
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    {
+      Name = "ShadeSword_Attack_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+{
+      Name = "ShadeSword_Idle"
+      FilePath = "Animations\Shade\SwordIdle\ShadeSwordIdle"
+      Type = "Book"
+      VideoTexture = "ShadeSwordIdle_Bink"
+      EndFrame = 34
+      Loop = true
+      NumAngles = 32
+      NumFrames = 34
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -110.0
+      CancelOnOwnerMove = true
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "ShadeSword_Move"
+      FilePath = "Animations\Shade\SwordRun\ShadeSwordRun"
+      Type = "Book"
+      VideoTexture = "ShadeSwordRun_Bink"
+      VisualFx = "ShadeSword_Move_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 18
+      Loop = true
+      NumAngles = 32
+      NumFrames = 18
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 15.0
+      VisualFxDistanceMin = 15.0
+      TransferChildren = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat2Small" Frame = 10 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat2Small" Frame = 18 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_Move_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeSword_Move_SideDash_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeSword_Move_SideDash"
+      FilePath = "Animations\Shade\SwordRun\ShadeSwordRun"
+      Type = "Book"
+      VideoTexture = "ShadeSwordRun_Bink"
+      VisualFx = "ShadeSword_Move_SideDash_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 18
+      NumAngles = 32
+      NumFrames = 18
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 80.0
+      VisualFxDistanceMin = 80.0
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_OnHit"
+      FilePath = "Animations\Shade\SwordOnHit\ShadeSwordOnHit"
+      Type = "Book"
+      VideoTexture = "ShadeSwordOnHit_Bink"
+      Duration = 0.3
+      EndFrame = 16
+      NumAngles = 32
+      NumFrames = 16
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSword_Parry"
+      FilePath = "Animations\Shade\SwordOnHit\ShadeSwordOnHit"
+      Type = "Book"
+      VideoTexture = "ShadeOnHit_Bink"
+      Duration = 1.0
+      EndFrame = 16
+      NumAngles = 16
+      NumFrames = 16
+      StartFrame = 1
+      OffsetY = -50.0
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /* _____________shadeSpear_____________ */
+
+    {
+      Name = "ShadeSpear_Idle"
+      FilePath = "Animations\Shade\SpearIdle\ShadeSpearIdle"
+      Type = "Book"
+      VideoTexture = "ShadeSpearIdle_Bink"
+      EndFrame = 34
+      Loop = true
+      PlaySpeed = 30
+      NumAngles = 32
+      NumFrames = 34
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      TransferChildren = true
+    }
+
+    {
+      Name = "ShadeSpear_Move"
+      FilePath = "Animations\Shade\SpearRun\ShadeSpearRun"
+      Type = "Book"
+      VideoTexture = "ShadeSpearRun_Bink"
+      EndFrame = 24
+      Loop = true
+      NumAngles = 32
+      NumFrames = 24
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      NativeMoveSpeed = 550.0
+      TransferChildren = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat" Frame = 10 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat" Frame = 18 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeSpear_Move_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeSpear_OnHit"
+      FilePath = "Animations\Shade\SpearOnHit\ShadeSpearOnHit"
+      Type = "Book"
+      VideoTexture = "ShadeSpearOnHit_Bink"
+      Duration = 0.3
+      EndFrame = 16
+      NumAngles = 32
+      NumFrames = 16
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*_______SpearThrusts_____*/
+    {
+      Name = "ShadeSpear_PreAttack"
+      FilePath = "Animations\Shade\SpearAttack\ShadeSpearAttacks"
+      ChainTo = "ShadeSpear_Fire2"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttacks_Bink"
+      EndFrame = 48
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 DangerDistance = 300 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_Fire2"
+      FilePath = "Animations\Shade\SpearAttack\ShadeSpearAttacks"
+      ChainTo = "ShadeSpearAttacks_ReturnToIdle"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttacks_Bink"
+      EndFrame = 48
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+{
+      Name = "ShadeSpearAttacks_ReturnToIdle"
+      FilePath = "Animations\Shade\SpearAttack\ShadeSpearAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttacks_Bink"
+      EndFrame = 48
+      NumAngles = 16
+      NumFrames = 48
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+
+
+  
+
+    /* _____________shadeSpear_AttackLeap_____________ */
+
+    {
+      Name = "ShadeSpear_LeapPreAttack"
+      FilePath = "Animations\Shade\SpearAttackLeap\ShadeSpearAttackLeap"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttackLeap_Bink"
+      VisualFx = "ShadeSpear_AttackLeap_Ghost"
+      EndFrame = 53
+      FrameDataFile = "Game\Animations\FrameData\ShadeSpearAttackLeap.sga"
+      NumAngles = 16
+      NumFrames = 53
+      StartFrame = 1
+      OffsetY = -105.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 DangerDistance = 300 }
+        /*preAttackEnd*/
+        { DurationFrames = 0 }
+        /*launch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        /*attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_AttackLeapLaunch"
+      ChainTo = "ShadeSpear_AttackLeap_AirLoop"
+      FilePath = "Animations\Shade\SpearAttackLeap\ShadeSpearAttackLeap"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttackLeap_Bink"
+      VisualFx = "ShadeSpear_AttackLeap_Ghost"
+      EndFrame = 53
+      FrameDataFile = "Game\Animations\FrameData\ShadeSpearAttackLeap.sga"
+      NumAngles = 16
+      NumFrames = 53
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 15.0
+      VisualFxDistanceMin = 15.0
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*preAttackEnd*/
+        { DurationFrames = 1 }
+        /*launch*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        /*attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_AttackLeap_AirLoop"
+      FilePath = "Animations\Shade\SpearAttackLeap\ShadeSpearAttackLeap"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttackLeap_Bink"
+      VisualFx = "ShadeSpear_AttackLeap_Ghost"
+      EndFrame = 53
+      FrameDataFile = "Game\Animations\FrameData\ShadeSpearAttackLeap.sga"
+      Loop = true
+      NumAngles = 16
+      NumFrames = 53
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 15.0
+      VisualFxDistanceMin = 15.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*preAttackEnd*/
+        { DurationFrames = 0 }
+        /*launch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*airLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        /*attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_AttackLeapTouchDown"
+      ChainTo = "ShadeSpear_AttackLeap_ReturnToIdle"
+      FilePath = "Animations\Shade\SpearAttackLeap\ShadeSpearAttackLeap"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttackLeap_Bink"
+      VisualFx = "ShadeSpear_AttackLeap_Ghost"
+      EndFrame = 53
+      FrameDataFile = "Game\Animations\FrameData\ShadeSpearAttackLeap.sga"
+      NumAngles = 16
+      NumFrames = 53
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 30
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*preAttackEnd*/
+        { DurationFrames = 0 }
+        /*launch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        /*attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 6 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_AttackLeap_ReturnToIdle"
+      FilePath = "Animations\Shade\SpearAttackLeap\ShadeSpearAttackLeap"
+      Type = "Slide"
+      VideoTexture = "ShadeSpearAttackLeap_Bink"
+      VisualFx = "ShadeSpear_AttackLeap_Ghost"
+      EndFrame = 53
+      FrameDataFile = "Game\Animations\FrameData\ShadeSpearAttackLeap.sga"
+      NumAngles = 16
+      NumFrames = 53
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      CancelOnOwnerMove = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*preAttackEnd*/
+        { DurationFrames = 0 }
+        /*launch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        /*attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+      ]
+    }
+
+    {
+      Name = "ShadeSpear_AttackLeap_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+      OffsetZ = 80.0
+      LocationZFromOwner = "Take"
+      CancelOverCap = true
+    }
+
+    /* _____________shadeBow_____________ */
+
+    {
+      Name = "ShadeBow_Idle"
+      FilePath = "Animations\Shade\BowIdle\ShadeBowIdle"
+      Type = "Book"
+      VideoTexture = "ShadeBowIdle_Bink"
+      EndFrame = 28
+      Loop = true
+      NumAngles = 32
+      NumFrames = 28
+      StartFrame = 1
+      OffsetY = -105.0
+      PlaySpeed = 30
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      TransferChildren = true
+    }
+
+    {
+      Name = "ShadeBow_Move"
+      FilePath = "Animations\Shade\BowRun\ShadeBowRun"
+      Type = "Book"
+      VideoTexture = "ShadeBowRun_Bink"
+      VisualFx = "ShadeBow_Move_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 20
+      Loop = true
+      NumAngles = 32
+      NumFrames = 20
+      PlaySpeed = 36.0
+      StartFrame = 1
+      OffsetY = -105.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 15.0
+      VisualFxDistanceMin = 15.0
+      NativeMoveSpeed = 600.0
+      TransferChildren = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheatTemp" Frame = 10 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheatTemp" Frame = 18 }
+      ]
+    }
+
+    {
+      Name = "ShadeBow_Move_SideDash"
+      FilePath = "Animations\Shade\BowRun\ShadeBowRun"
+      Type = "Book"
+      VideoTexture = "ShadeBowRun_Bink"
+      VisualFx = "ShadeBow_Move_SideDash_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 18
+      NumAngles = 32
+      NumFrames = 18
+      PlaySpeed = 36.0
+      StartFrame = 1
+      OffsetY = -105.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 80.0
+      VisualFxDistanceMin = 80.0
+      NativeMoveSpeed = 600.0
+      TransferChildren = true
+    }
+
+    {
+      Name = "ShadeBow_Move_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeBow_Move_SideDash_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeBow_OnHit"
+      FilePath = "Animations\Shade\BowOnHit\ShadeBowOnHit"
+      Type = "Book"
+      VideoTexture = "ShadeBowOnHit_Bink"
+      Duration = 0.3
+      EndFrame = 16
+      NumAngles = 32
+      NumFrames = 16
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeBowStart"
+      FilePath = "Animations\Shade\BowAttacks\ShadeBowAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeBowAttacks_Bink"
+      EndFrame = 68
+      NumAngles = 64
+      NumFrames = 68
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*bowDraw*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }
+        /*holdChargeLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeBowCharge"
+      FilePath = "Animations\Shade\BowAttacks\ShadeBowAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeBowAttacks_Bink"
+      StopSoundOnFinishFade = 0.25
+      EndFrame = 68
+      Loop = true
+      NumAngles = 64
+      NumFrames = 68
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*bowDraw*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*holdChargeLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*holdChargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeBowFire"
+      ChainTo = "ShadeBowFireEndLoop"
+      FilePath = "Animations\Shade\BowAttacks\ShadeBowAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeBowAttacks_Bink"
+      EndFrame = 68
+      NumAngles = 64
+      NumFrames = 68
+      StartFrame = 1
+      OffsetY = -105.0
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*bowDraw*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoopEnd*/
+        { DurationFrames = 1 }
+        /*fire*/
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeBowFireLong"
+      FilePath = "Animations\Shade\BowAttacks\ShadeBowAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeBowAttacks_Bink"
+      EndFrame = 68
+      Loop = true
+      NumAngles = 64
+      NumFrames = 68
+      PlayBackwards = true
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*bowDraw*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*fire*/
+        { DurationFrames = 0 }
+        /*fireMulptiple*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeBowFireEndLoop"
+      FilePath = "Animations\Shade\BowAttacks\ShadeBowAttacks"
+      Type = "Slide"
+      VideoTexture = "ShadeBowAttacks_Bink"
+      EndFrame = 68
+      NumAngles = 64
+      NumFrames = 68
+      StartFrame = 1
+      OffsetY = -105.0
+      CancelOnOwnerMove = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*bowDraw*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdChargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*returnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+
+    /* _____________shadeShield_____________ */
+
+    {
+      Name = "ShadeShield_Idle"
+      FilePath = "Animations\Shade\ShieldIdle\ShadeShieldIdle"
+      Type = "Book"
+      VideoTexture = "ShadeShieldIdle_Bink"
+      EndFrame = 42
+      Loop = true
+      NumAngles = 64
+      NumFrames = 42
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -105.0
+      CancelOnOwnerMove = true
+      TransferChildren = true
+    }
+
+    {
+      Name = "ShadeShield_Walk"
+      ChainTo = "ShadeShield_Idle"
+      FilePath = "Animations\Shade\ShieldWalk\ShadeShieldWalk"
+      Type = "Book"
+      VideoTexture = "ShadeShieldWalk_Bink"
+      EndFrame = 44
+      Loop = true
+      NumAngles = 64
+      NumFrames = 44
+      StartFrame = 1
+      OffsetY = -105.0
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 20.0
+      VisualFxDistanceMin = 20.0
+      PlaySpeed = 24
+      NativeMoveSpeed = 108.0
+      TransferChildren = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat2" Frame = 15 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/FootstepsWheat2" Frame = 36 }
+      ]
+    }
+
+    {
+      Name = "ShadeShieldWalk_Move_Ghost"
+      InheritFrom = "Shade_Move_Ghost"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeShield_OnHit"
+      FilePath = "Animations\Shade\ShieldOnHit\ShadeShieldOnHit"
+      Type = "Book"
+      VideoTexture = "ShadeShieldOnHit_Bink"
+      Duration = 0.3
+      EndFrame = 16
+      NumAngles = 32
+      NumFrames = 16
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeShield_AttackCharge"
+      ChainTo = "ShadeShield_AttackChargeLoop"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      Sound = "/SFX/Enemy Sounds/Exalted/ExaltedShieldAttackCharge"
+      StopSoundOnFinishFade = 0.1
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      CancelOnOwnerMove = false
+      OwnerNoInvulnerableCoverage = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 DangerDistance = 300 }
+        { DurationFrames = 2 DangerDistance = 300 }
+        { DurationFrames = 2 DangerDistance = 300 }
+        { DurationFrames = 2 DangerDistance = 300 }
+        { DurationFrames = 2 DangerDistance = 300 }
+        { DurationFrames = 20 DangerDistance = 300 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*00*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_AttackChargeLoop"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      EndFrame = 95
+      Loop = true
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      CancelOnOwnerMove = false
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*00*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_AttackFire"
+      ChainTo = "ShadeShield_AttacksReturnToIdle"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      CancelOnOwnerMove = false
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*hold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_AttacksReturnToIdle"
+      ChainTo = "ShadeShield_Idle"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*00*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*hold*/
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 90*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_PunchPreAttack"
+      ChainTo = "ShadeShield_Punch"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      VisualFx = "Shade_Move_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 15
+      AllowRestart = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_Punch"
+      ChainTo = "ShadeShield_PunchReturnToIdle"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      VisualFx = "Shade_Move_Ghost"
+	  VisualFxManagerCap = 300
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      OffsetY = -105.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 15
+      AllowRestart = true
+      TransferChildren = true
+      DangerDistance = 300
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*95*/
+      ]
+    }
+
+    {
+      Name = "ShadeShield_PunchReturnToIdle"
+      ChainTo = "ShadeShield_Idle"
+      FilePath = "Animations\Shade\ShieldAttacks\ShadeShieldAttacks"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldAttacks_Bink"
+      EndFrame = 95
+      NumAngles = 16
+      NumFrames = 95
+      StartFrame = 1
+      SetOwnerEndAngle = true
+      OffsetY = -105.0
+      AllowRestart = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*ReturnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/ArmorIdleSFX2" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*82*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 90*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*95*/
+      ]
+    }
+
+    /* _____________shadeShield_Slam_____________ */
+
+    {
+      Name = "ShadeShield_PreSlam"
+      ChainTo = "ShadeShield_Slam"
+      FilePath = "Animations\Shade\ShieldSlam\ShadeShieldSlam"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldSlam_Bink"
+      EndFrame = 65
+      NumAngles = 16
+      NumFrames = 65
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      OwnerNoInvulnerableCoverage = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*preSlam*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 40 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdLoopEnd*/
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeShield_Slam"
+      ChainTo = "ShadeShield_SlamLoop"
+      FilePath = "Animations\Shade\ShieldSlam\ShadeShieldSlam"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldSlam_Bink"
+      EndFrame = 65
+      NumAngles = 16
+      NumFrames = 65
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      OwnerImmobile = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preSlam*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        /*Fire*/
+        { DurationFrames = 2 Sound = "/SFX/Player Sounds/ShieldObstacleHit" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*holdLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdLoopEnd*/
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeShield_SlamLoop"
+      ChainTo = "ShadeShieldSlam_ReturnToIdle"
+      FilePath = "Animations\Shade\ShieldSlam\ShadeShieldSlam"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldSlam_Bink"
+      EndFrame = 65
+      Loop = true
+      NumAngles = 16
+      NumFrames = 65
+      StartFrame = 1
+      OffsetY = -105.0
+      AllowRestart = true
+      OwnerImmobile = true
+      TransferChildren = true
+      Sound = "/SFX/Enemy Sounds/Exalted/EmoteCharging"
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preSlam*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*holdLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*holdLoopEnd*/
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeShieldSlam_ReturnToIdle"
+      FilePath = "Animations\Shade\ShieldSlam\ShadeShieldSlam"
+      MoveAnimation = "ShadeShield_Walk"
+      Type = "Slide"
+      VideoTexture = "ShadeShieldSlam_Bink"
+      EndFrame = 65
+      NumAngles = 16
+      NumFrames = 65
+      StartFrame = 1
+      OffsetY = -105.0
+      SetOwnerEndAngle = true
+      AllowRestart = true
+      TransferChildren = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preSlam*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*holdLoopEnd*/
+        { DurationFrames = 1 Sound = "/SFX/ArmorIdleSFX2" }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 Sound = "/SFX/ArmorIdleSFX" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Exalted/EmoteEvading" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*60*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+
+    {
+      Name = "ShadeShieldBunker"
+      FilePath = "Animations\Shade\ShadeShield\ShadeShield"
+      Type = "Slide"
+      Alpha = 0.75
+      EndFrame = 1
+      Loop = true
+      NumAngles = 16
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 2.0
+      TransferChildren = true
+      Slides = [
+        { DurationFrames = 1 RandomDurationFramesMax = 60 RandomDurationFramesMin = 30 }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /* _____________shadeBard_____________ 
+
+    {
+      Name = "ShadeBard_Idle"
+      FilePath = "Animations\Orpheus\Idle\OrpheusIdle"
+      Type = "Book"
+      VideoTexture = "OrpheusPlaying_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -55.0
+      CancelOnOwnerMove = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "ShadeBard_Playing"
+      FilePath = "Animations\Orpheus\Idle\OrpheusIdle"
+      Type = "Book"
+      VideoTexture = "OrpheusPlaying_Bink"
+      EndFrame = 120
+      Loop = true
+      NumAngles = 16
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 61
+      OffsetY = -55.0
+      CancelOnOwnerMove = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /* other */
+
+    {
+      Name = "ShadeNakedEye"
+      FilePath = "Animations\Shade\Naked\ShadeNaked"
+      Type = "Book"
+      Duration = 1.0
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      SmoothStep = true
+      StartFrame = 1
+      UseParentOffset = true
+      DieWithOwner = true
+      Scale = 0.8
+      Material = "Emissive"
+    }
+
+    {
+      Name = "ShadeNakedEye_Trap"
+      InheritFrom = "ShadeNakedEye"
+      AddColor = true
+      StartRed = 0.25
+      StartGreen = 0
+      StartBlue = 0
+      EndRed = 0.6
+      EndGreen = 0.15
+      EndBlue = 0.01
+      PingPongColor = true
+      Saturation = 1.0
+      Value = 0
+    }
+
+    {
+      Name = "ShadeNakedEyePickup"
+      InheritFrom = "ShadeNakedEye"
+      AngleChangeSpeed = 1000.00
+      Duration = 2.0
+      EndFrame = 1
+      Loop = false
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeNaked_Idle_Flameless"
+      InheritFrom = "ShadeNakedEye"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeNaked_Idle"
+      ChildAnimation = "ShadeNakedEye"
+      FilePath = "Fx\ShadeNakedFlame\ShadeNakedFlame"
+      GroupName = "FX_Dark"
+      Type = "Book"
+      VisualFx = "ShadeFlames"
+      AngleFromOwner = "Ignore"
+      Duration = 1.5
+      EaseOut = 1.0
+      EndFrame = 60
+      Loop = true
+      NumFrames = 60
+      RandomPlaySpeedMax = 50.0
+      RandomPlaySpeedMin = 40.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      EndOffsetY = -40.0
+      OffsetZ = 10.0
+      StartOffsetY = -20.0
+      DieWithOwner = true
+      SortMode = "Isometric"
+      Material = "Unlit"
+      ActiveVisualFxCap = 15
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 20.0
+      PingPongShiftOverDuration = true
+    }
+
+    {
+      Name = "ShadeNaked_Idle_Trap"
+      InheritFrom = "ShadeNaked_Idle"
+      ChildAnimation = "ShadeNakedEye_Trap"
+      FilePath = "Fx\ShadeNakedFlame\ShadeNakedFlame"
+      VisualFx = "ShadeFlames_Trap"
+      Hue = 0
+      AddColor = true
+      StartRed = 0
+      StartGreen = 0
+      StartBlue = 0
+      EndRed = 1
+      EndGreen = 0.1
+      EndBlue = 0.7
+      RandomPlaySpeedMax = 90.0
+      RandomPlaySpeedMin = 80.0
+      PingPongColor = true
+      CreateAnimations = [
+        { Name = "ShadeNaked_Idle_Trap_Glow" }
+        { Name = "ShadeNaked_Idle_Trap_Sparks"}
+      ]
+    }
+
+    {
+      Name = "ShadeNaked_Idle_Trap_Sparks"
+      Type = "Book"
+      FilePath = "Fx\ChariotSuicideSparks\ChariotSuicideSparks"
+      NumFrames = 30
+      Hue = -0.1
+      GroupName = "FX_Standing_Add"
+      RandomFlipHorizontal = true
+      ReRandomizeOnLoop = false
+      Material = "Unlit"
+      Loop = true
+      AngleFromOwner = "Ignore"
+      OffsetZ = 20
+      DieWithOwner = true
+      DrawBehindOwner = false
+    }
+
+    {
+      Name = "ShadeNaked_Idle_Trap_Glow"
+      Type = "Constant"
+      FilePath = "Particles\particle_quickflash"
+      Material = "Unlit"
+      Red = 1
+      Green = 0.0
+      Blue = 0.7
+      Duration = 1
+      StartScale = 0.9
+      EndScale = 1.1
+      PingPongScale = true
+      AngleFromOwner = "Ignore"
+      RandomRotation = true
+      EaseIn = 0
+      Scale = 0.4
+      EaseOut = 1.0
+      Loop = true
+      GroupName = "FX_Standing_Add"
+      DieWithOwner = true
+    }
+
+  {
+      Name = "ShadeNakedProjectile"
+    InheritFrom = "ShadeNaked_Idle"
+    ChildAnimation = "ShadeNakedEyeProjectile"
+    StartAlpha = 0.0
+    EndAlpha = 1.0
+    Duration = 0.1
+    Loop = false
+    ChainTo = "ShadeNaked_Idle"
+  }
+
+  {
+      Name = "ShadeNakedEyeProjectile"
+    InheritFrom = "ShadeNakedEye"
+    StartAlpha = 0.0
+    EndAlpha = 1.0
+    Duration = 0.1
+    Loop = false
+    ChainTo = "ShadeNakedEye"
+  }
+
+    {
+      Name = "ShadeNaked_Pickup"
+      InheritFrom = "ShadeNaked_Idle"
+      ChildAnimation = "ShadeNakedEyePickup"
+      Sound = "/SFX/Enemy Sounds/Exalted/EmoteRespawning"
+      StopSoundOnFinishFade = 0.25
+      EndFrame = 60
+      StartFrame = 1
+      OwnerImmobile = true
+    }
+
+    {
+      Name = "ShadeFlames"
+      FilePath = "Animations\ShadeFlames\ShadeFlames"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ShadeFlameA" }
+        { Name = "ShadeFlameB" }
+        { Name = "ShadeFlameC" }
+      ]
+    }
+
+    {
+      Name = "ShadeFlames_Trap"
+      FilePath = "Animations\ShadeFlames\ShadeFlames"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "ShadeFlameA_Trap" }
+        { Name = "ShadeFlameB_Trap" }
+        { Name = "ShadeFlameC_Trap" }
+      ]
+    }
+
+    {
+      Name = "ShadeFlameA"
+      FilePath = "Fx\ShadeNakedFlameSingleA\ShadeNakedFlameSingleA"
+      GroupName = "FX_Dark"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      EndFrame = 30
+      NumFrames = 30
+      RandomPlaySpeedMax = 50.0
+      RandomPlaySpeedMin = 40.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      OffsetZ = 40.0
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      Acceleration = -20.0
+      ScaleMax = 0.7
+      ScaleMin = 0.4
+      Material = "Unlit"
+    }
+
+    {
+      Name = "ShadeFlameB"
+      InheritFrom = "ShadeFlameA"
+      FilePath = "Fx\ShadeNakedFlameSingleB\ShadeNakedFlameSingleB"
+      EndFrame = 30
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeFlameC"
+      InheritFrom = "ShadeFlameA"
+      FilePath = "Fx\ShadeNakedFlameSingleC\ShadeNakedFlameSingleC"
+      EndFrame = 30
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeFlameA_Trap"
+      FilePath = "Fx\ShadeNakedFlameSingleA\ShadeNakedFlameSingleA"
+      GroupName = "FX_Standing_Add"
+      Type = "Book"
+      Hue = 0.2
+      AngleFromOwner = "Ignore"
+      EndFrame = 30
+      NumFrames = 30
+      RandomPlaySpeedMax = 50.0
+      RandomPlaySpeedMin = 40.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      OffsetZ = 40.0
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      Acceleration = -20.0
+      ScaleMax = 0.7
+      ScaleMin = 0.4
+      Material = "Unlit"
+    }
+
+    {
+      Name = "ShadeFlameB_Trap"
+      InheritFrom = "ShadeFlameA_Trap"
+      FilePath = "Fx\ShadeNakedFlameSingleB\ShadeNakedFlameSingleB"
+      EndFrame = 30
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeFlameC_Trap"
+      InheritFrom = "ShadeFlameA_Trap"
+      FilePath = "Fx\ShadeNakedFlameSingleC\ShadeNakedFlameSingleC"
+      EndFrame = 30
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeDeathLighting"
+      FilePath = "Particles\particle_glow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      EndBlue = 0.999
+      EndGreen = 0.1
+      StartAlpha = 1.0
+      StartBlue = 1.0
+      StartGreen = 0.4
+      StartRed = 0.3
+      Duration = 0.2
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 2.0
+      ScaleFromOwner = "Ignore"
+      ScaleY = 0.5
+      StartScale = 1.5
+      Material = "Unlit"
+    }
+
+    {
+      Name = "ShadeDeathVFX"
+      CreateAnimation = "ShadeDeathLighting"
+	  VisualFxManagerCap = 400
+      FilePath = "Animations\Shade\DeathVFX\ShadeDeathVFX"
+      Type = "Book"
+      VideoTexture = "ShadeDeathVFX_Bink"
+      EndFrame = 50
+      NumAngles = 16
+      NumFrames = 50
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Material = "Unlit"
+      Sound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+    }
+
+    {
+      Name = "ShadeNakedDeathVFX"
+      CreateAnimation = "ShadeDeathLighting"
+	  VisualFxManagerCap = 400
+      FilePath = "Animations\Shade\NakedDeathVFX\ShadeNakedDeathVFX"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      EndFrame = 33
+      NumFrames = 33
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Material = "Unlit"
+    }
+
+    {
+      Name = "ShadeSpawnerIdle"
+      ChildAnimation = "ShadeSpawnerTop"
+      FilePath = "Animations\ShadeSpawner\ShadeSpawner_01"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -130.0
+      Material = "Emissive"
+    }
+
+    {
+      Name = "ShadeSpawnerTop"
+      FilePath = "Animations\ShadeSpawner\ShadeSpawnerTop_01"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -130.0
+      Scale = 1.4
+      Material = "Emissive"
+    }
+
+    /* Enemy Activation Containers */
+
+    {
+      Name = "EnemyActivationFadeInShadeNakedContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeNaked"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSpearContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeSpear"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeBowContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeBow"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeShieldContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeShield"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSwordContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeSword"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSpawnerContainer"
+      InheritFrom = "EnemyActivationFadeInContainer"
+      ChildAnimation = "EnemyActivationFadeInShadeSpawner"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    /* Enemy Activation Fade-Ins */
+
+    {
+      Name = "EnemyActivationFadeInShadeNaked"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeNakedFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSpear"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeSpearFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeBow"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeBowFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeShield"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeShieldFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSword"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeSwordFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFadeInShadeSpawner"
+      InheritFrom = "EnemyActivationFadeIn"
+      ChainTo = "EnemyActivationShadeSpawnerFade"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    /* Enemy Activation Fades */
+
+    {
+      Name = "EnemyActivationShadeNakedFade"
+      InheritFrom = "ShadeNaked_Idle_Flameless"
+      ChainTo = "EnemyActivationShadeNakedFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EndFrame = 1
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationShadeSpearFade"
+      InheritFrom = "ShadeSpear_Idle"
+      ChainTo = "EnemyActivationShadeSpearFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 30
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationShadeBowFade"
+      InheritFrom = "ShadeBow_Idle"
+      ChainTo = "EnemyActivationShadeBowFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 30
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationShadeShieldFade"
+      InheritFrom = "ShadeShield_Idle"
+      ChainTo = "EnemyActivationShadeShieldFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 42
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationShadeSwordFade"
+      InheritFrom = "ShadeSword_Idle"
+      ChainTo = "EnemyActivationShadeSwordFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 30
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "EnemyActivationShadeSpawnerFade"
+      InheritFrom = "ShadeSpawnerIdle"
+      ChainTo = "EnemyActivationShadeSpawnerFlash"
+      EndAlpha = 1.0
+      DurationFrames = 24
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    /* Enemy Activation Flashes */
+
+    {
+      Name = "EnemyActivationShadeNakedFlash"
+      InheritFrom = "ShadeNaked_Idle_Flameless"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EndFrame = 1
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationShadeSpearFlash"
+      InheritFrom = "ShadeSpear_Idle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 30
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationShadeBowFlash"
+      InheritFrom = "ShadeBow_Idle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 30
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationShadeShieldFlash"
+      InheritFrom = "ShadeShield_Idle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 42
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationShadeSwordFlash"
+      InheritFrom = "ShadeSword_Idle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 30
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationShadeSpawnerFlash"
+      InheritFrom = "ShadeSpawnerIdle"
+      AddColor = true
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      DurationFrames = 8
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 1
+      HoldLastFrame = true
+      Loop = false
+      LoopFramesOnly = true
+      StartFrame = 1
+    }
+
+    {
+      Name = "ShadeNakedShadow"
+      FilePath = "Fx\LootShadow\LootShadow"
+      GroupName = "Shadows"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndAlpha = 0.3
+      PingPongColor = true
+      StartAlpha = 0.4
+      Duration = 1.5
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      LocationZFromOwner = "Ignore"
+      EndScale = 0.4
+      PingPongScale = true
+      StartScale = 0.5
+    }
+
+    {
+      Name = "ShadeSpotlight"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "FX_Terrain_Add"
+      Type = "Constant"
+      VisualFx = "ShadeSpotlightTrail"
+	  VisualFxManagerCap = 300
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      Alpha = 0.5
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      LocationZFromOwner = "Ignore"
+      ScaleY = 0.5
+  	  ChildAnimation = "ShadeGlow"
+      VisualFxDistanceMax = 40.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 30
+    }
+
+    {
+      Name = "ShadeSpotlightSword"
+      InheritFrom = "ShadeSpotlight"
+      ChildAnimation = "ShadeGlowSword"
+    }
+    {
+      Name = "ShadeSpotlightBow"
+      InheritFrom = "ShadeSpotlight"
+      ChildAnimation = "ShadeGlowBow"
+    }
+    {
+      Name = "ShadeSpotlightShield"
+      InheritFrom = "ShadeSpotlight"
+      ChildAnimation = "ShadeGlowShield"
+    }
+    {
+      Name = "ShadeSpotlightSpear"
+      InheritFrom = "ShadeSpotlight"
+      ChildAnimation = "ShadeGlowSpear"
+    }
+
+    {
+      Name = "ShadeSpotlightTrail"
+      InheritFrom = "ShadeSpotlight"
+	  ChildAnimation = "null"
+      VisualFx = "null"
+      EndBlue = 0.999
+      EndGreen = 0.6
+      StartAlpha = 1.0
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      Duration = 0.75
+      EndFrame = 1
+      StartFrame = 1
+      LocationFromOwner = "Ignore"
+      EndScale = 0.5
+    }
+
+    {
+      Name = "NakedShadeSpotlight"
+      InheritFrom = "ShadeSpotlight"
+	  ChildAnimation = "null"
+      CreateAnimation = "ShadeNakedShadow"
+      VisualFx = "NakedShadeSpotlightTrail"
+      EndFrame = 1
+      StartFrame = 1
+      Scale = 0.6
+      VisualFxDistanceMax = 25.0
+      VisualFxDistanceMin = 20.0
+    }
+
+    {
+      Name = "NakedShadeSpotlightTrail"
+      InheritFrom = "ShadeSpotlightTrail"
+      EndAlpha = 1.0
+      PingPongColor = true
+      StartAlpha = 0.0
+      Duration = 1.0
+      EndFrame = 1
+      StartFrame = 1
+      EndScale = 0.4
+      StartScale = 0.8
+    }
+
+    /* _____________SHADE WEAPONS_____________ */
+
+    {
+      Name = "EnemyShadeWeaponShadow"
+      FilePath = "Fx\LootShadow\LootShadow"
+      GroupName = "Shadows"
+      Type = "Constant"
+      EndAlpha = 0.6
+      PingPongColor = true
+      StartAlpha = 0.4
+      Duration = 2.5
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      LocationZFromOwner = "Ignore"
+      EndScale = 0.5
+      PingPongScale = true
+      StartScale = 0.4
+    }
+
+    {
+      Name = "EnemyShadeWeaponGlow"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "FX_Terrain_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      EndAlpha = 0.4
+      PingPongColor = true
+      StartAlpha = 0.1
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      RandomDurationMax = 2.5
+      RandomDurationMin = 2.0
+      StartFrame = 1
+      DieWithOwner = true
+      Scale = 0.35
+      ScaleX = 2.0
+      Color = { Red = 0.2 Green = 0.70 Blue = 1.0 }
+    }
+
+    {
+      Name = "EnemyBowIdleContainer"
+      ChildAnimation = "EnemyBowIdle"
+      CreateAnimation = "EnemyShadeWeaponGlow"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      EndAngle = 5.00
+      StartAngle = -5.00
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      StartFrame = 1
+      EndOffsetZ = 130.0
+      StartOffsetZ = 150.0
+      PingPongShiftOverDuration = true
+    }
+
+    {
+      Name = "EnemyShieldIdleContainer"
+      InheritFrom = "EnemyBowIdleContainer"
+      ChildAnimation = "EnemyShieldIdle"
+      EndFrame = 1
+      StartFrame = 1
+      EndOffsetZ = 90.0
+      StartOffsetZ = 100.0
+    }
+
+    {
+      Name = "EnemySwordIdleContainer"
+      InheritFrom = "EnemyBowIdleContainer"
+      ChildAnimation = "EnemySwordIdle"
+      EndFrame = 1
+      StartFrame = 1
+      EndOffsetZ = 90.0
+      StartOffsetZ = 110.0
+    }
+
+    {
+      Name = "EnemySpearIdleContainer"
+      InheritFrom = "EnemyBowIdleContainer"
+      ChildAnimation = "EnemySpearIdle"
+      EndFrame = 1
+      StartFrame = 1
+      EndOffsetZ = 140.0
+      StartOffsetZ = 160.0
+    }
+
+    {
+      Name = "EnemyBowPickupContainer"
+      InheritFrom = "EnemyBowIdleContainer"
+      ChildAnimation = "EnemyBowPickup"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyShieldPickupContainer"
+      InheritFrom = "EnemyBowPickupContainer"
+      ChildAnimation = "EnemyShieldPickup"
+      EndFrame = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemySwordPickupContainer"
+      InheritFrom = "EnemyBowPickupContainer"
+      ChildAnimation = "EnemySwordPickup"
+      EndFrame = 1
+      StartFrame = 1
+      EndOffsetZ = 90.0
+      StartOffsetZ = 110.0
+    }
+
+    {
+      Name = "EnemySpearPickupContainer"
+      InheritFrom = "EnemyBowPickupContainer"
+      ChildAnimation = "EnemySpearPickup"
+      EndFrame = 1
+      StartFrame = 1
+      EndOffsetZ = 160.0
+      StartOffsetZ = 180.0
+    }
+
+    {
+      Name = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\InertShield\InertShield"
+      Type = "Book"
+      AngleMax = 5.00
+      AngleMin = -5.00
+      AddColor = true
+      EndAlpha = 0.5
+      EndBlue = 1.0
+      EndGreen = 0.6
+      EndRed = 0.1
+      PingPongColor = true
+      StartAlpha = 0.3
+      StartBlue = 0.6
+      StartGreen = 1.0
+      StartRed = 0.3
+      EndFrame = 39
+      Loop = true
+      LoopFramesOnly = true
+      NumFrames = 39
+      PlaySpeed = 1E-11
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      UseParentOffset = true
+      Material = "Emissive"
+    }
+
+    {
+      Name = "EnemySwordIdle"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\InertSword\InertSword"
+      EndFrame = 39
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemySpearIdle"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\InertSpear\InertSpear"
+      EndFrame = 39
+      StartFrame = 1
+      Scale = 0.85
+    }
+
+    {
+      Name = "EnemyBowIdle"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\InertBow\InertBow"
+      EndFrame = 39
+      StartFrame = 1
+      Scale = 0.85
+    }
+
+    {
+      Name = "EnemyShieldPickup"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\PickupShieldVFX\PickupShieldVFX"
+      AddColor = false
+      EndAlpha = 1.0
+      EndBlue = 0.999
+      EndGreen = 0.999
+      EndRed = 0.999
+      StartAlpha = 0.999
+      StartBlue = 1.0
+      StartRed = 1.0
+      EndFrame = 39
+      PlaySpeed = 30.0
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemySwordPickup"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\PickupSwordVFX\PickupSwordVFX"
+      AddColor = false
+      EndAlpha = 1.0
+      EndBlue = 0.999
+      EndGreen = 0.999
+      EndRed = 0.999
+      StartAlpha = 0.999
+      StartBlue = 1.0
+      StartRed = 1.0
+      EndFrame = 39
+      PlaySpeed = 30.0
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemySpearPickup"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\PickupSpearVFX\PickupSpearVFX"
+      AddColor = false
+      EndAlpha = 1.0
+      EndBlue = 0.999
+      EndGreen = 0.999
+      EndRed = 0.999
+      StartAlpha = 0.999
+      StartBlue = 1.0
+      StartRed = 1.0
+      EndFrame = 39
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Scale = 0.85
+    }
+
+    {
+      Name = "EnemyBowPickup"
+      InheritFrom = "EnemyShieldIdle"
+      FilePath = "Animations\Shade\PickupBowVFX\PickupBowVFX"
+      AddColor = false
+      EndAlpha = 1.0
+      EndBlue = 0.999
+      EndGreen = 0.999
+      EndRed = 0.999
+      StartAlpha = 0.999
+      StartBlue = 1.0
+      StartRed = 1.0
+      EndFrame = 39
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Scale = 0.85
+    }
+
+    /* FX */
+
+    {
+      Name = "ShadeGlow"
+      Type = "Constant"
+      FilePath = "Particles\particle_glow_egg"
+      Material = "Unlit"
+      Red = 1.0
+      Green = 1.0
+      Blue = 1.0
+      ScaleFromOwner = "Take"
+      AngleFromOwner = "Ignore"
+      ScaleY = 1.2
+      OffsetZ = 90
+      Loop = false
+      DieWithOwner = true
+      Alpha = 0.6
+      Scale = 1.2
+      ScaleX = 1.0
+      DrawBehindOwner = true
+      VisualFx = "null"
+      VisualFxIntervalMin = 0.5
+      VisualFxIntervalMax = 0.51
+    }
+
+    {
+      Name = "ShadeGlowDiamond"
+      Type = "Constant"
+      FilePath = "Fx\ShadeTrail\ShadeGlowDiamond"
+      Material = "Unlit"
+      UseOwnAngle = false
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      StartAlpha = 0
+      EndAlpha = 1
+      PingPongColor = true
+      StartScale = 0.5
+      EndScale = 1.1
+      EaseIn = 0
+      EaseOut = 1.0
+      Red = 1
+      Green = 1
+      Blue = 1
+      OffsetZ = 0
+      Duration = 1
+      Scale = 0.66
+      Alpha = 1
+      GroupName = "Standing_Back_Add"
+      UseAttachedFlasher = false
+      UseAttachedAddColor = false
+      OriginX = 192
+      OriginY = 207
+      DieWithOwner = true
+      Loop = false
+    }
+
+    {
+      Name = "ShadeGlowSword"
+      InheritFrom = "ShadeGlow"
+      VisualFx = "null"
+    }
+    {
+      Name = "ShadeGlowDiamondSword"
+      InheritFrom = "ShadeGlowDiamond"
+      Red = 1
+      Green = 0
+      Blue = 0
+    }
+
+    {
+      Name = "ShadeGlowBow"
+      InheritFrom = "ShadeGlow"
+      VisualFx = "null"
+    }
+    {
+      Name = "ShadeGlowDiamondBow"
+      InheritFrom = "ShadeGlowDiamond"
+      Red = 1
+      Green = 0.8
+      Blue = 0
+    }
+
+    {
+      Name = "ShadeGlowShield"
+      InheritFrom = "ShadeGlow"
+      VisualFx = "null"
+    }
+    {
+      Name = "ShadeGlowDiamondShield"
+      InheritFrom = "ShadeGlowDiamond"
+      Red = 0
+      Green = 0.8
+      Blue = 1
+    }
+
+    {
+      Name = "ShadeGlowSpear"
+      InheritFrom = "ShadeGlow"
+      VisualFx = "null"
+    }
+    {
+      Name = "ShadeGlowDiamondSpear"
+      InheritFrom = "ShadeGlowDiamond"
+      Red = 1
+      Green = 0
+      Blue = 1
+    }
+
+   /* _____________Magic Shade_____________ */
+    {
+      Name = "MagicShadeNakedEye"
+      FilePath = "Animations\MagicShade\Naked\MagicShadeNaked"
+      InheritFrom = "ShadeNakedEye"
+    }
+
+
+  ]
+}

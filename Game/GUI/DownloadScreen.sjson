@@ -1,0 +1,45 @@
+{
+  DownloadScreen = {
+    Platform = "default"
+    ShowControls = false
+    Back = {
+      Justification = "Left"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 1.0
+    }
+    Background = {
+      X = 0.01
+      Y = 0.01
+      Graphic = "Launch\\load_bg2"
+      Justification = "Left"
+      VerticalJustification = "Top"
+    }
+    Character = {
+      X = 960
+      Y = 540
+      Graphic = "Launch\\load_bg"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+    ProgressBar = {
+      X = 960
+      Y = 900
+      FillGraphic = "Launch\\load_bar"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+    ProgressText = {
+      X = 960
+      Y = 500
+      Justification = "Center"
+      VerticalJustification = "Center"
+      HelpTextId = "WaitingForDownload"
+      Font = "AlegreyaSansExtraBold"
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+    }
+  }
+}

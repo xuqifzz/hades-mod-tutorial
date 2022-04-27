@@ -1,0 +1,65 @@
+ {
+   Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+   ActivateFx = "EnemySummonRune"
+   ActivateGraphic = "EnemyActivationFadeInLightSpawnerContainer"
+   CausesOcclusion = true
+   EditorOutlineDrawBounds = false
+   ExtentScale = 7.0
+   Graphic = "SpawnerIdleAnim"
+   ImpulsedFx = "KnockbackLines"
+   Scale = 0.23
+   SelectionHeight = 950.0
+   SelectionShiftY = 250.0
+   SelectionWidth = 1050.0
+   UseBoundsForSortDrawArea = true
+   Grip = 99999.0
+   Tallness = 200.0
+   OccluderPoints = [
+     { X = -259 Y = -42 }
+     { X = -271 Y = 21 }
+     { X = -218 Y = 92 }
+     { X = -125 Y = 124 }
+     { X = -32 Y = 129 }
+     { X = 67 Y = 91 }
+     { X = 106 Y = 38 }
+     { X = -49 Y = -38 }
+   ]
+   Offset = { X = 0 Y = 37 }
+   OffsetX = 1.0
+   Points = [
+     { X = -604 Y = 319 }
+     { X = -41 Y = 511 }
+     { X = 634 Y = 266 }
+     { X = 616 Y = -40 }
+     { X = -107 Y = -270 }
+     { X = -632 Y = 0 }
+   ]
+   Using = [
+     { Name = "BossPillarA" }
+     { Name = "BossPillarB" }
+     { Name = "BossPillarC" }
+     { Name = "BossPillarD" }
+     { Name = "SurfaceRubble02a" Scale = 0.4 }
+     { Name = "SurfaceRubble02b" Scale = 0.4 }
+   ]
+   Interact =
+   {
+     AutoActivateWithGamepad = true
+     DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+     HighlightOffAnimation = "CodexButton_Right"
+     HighlightOnAnimation = "CodexButton_Right_Highlight"
+   }
+   Light3D =
+   {  
+     Color = { X = 0.2 Y= 10.10 Blue = 4.70 }
+     LightZ = 220
+     LightRadius = 0.345
+   }
+   Metering = 
+   {
+   Entry = [
+     { Field = "MaterialAmbient" MultMin = 1.0 }
+     { Field = "None" MultMax = 0.4 }
+   ]
+   }
+ }

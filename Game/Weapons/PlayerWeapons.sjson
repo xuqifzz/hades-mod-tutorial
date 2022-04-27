@@ -1,0 +1,5715 @@
+﻿{
+  Weapons = [
+    {
+      Name = "1_BaseDamagingWeapon"
+    }
+    {
+      Name = "RushWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      Control = "Rush"
+      FireGraphic = "ZagreusDashNoCollide"
+      UnblockedBlinkFx = "DashCrack"
+      ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.21
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+      Projectile = "RushWeapon"
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ClipSize = 1
+      ClipRegenInterval = 0.74
+      FullClipRegen = true
+      Cooldown = 0.05
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      ForceReleaseAllOnFire = true
+      CanCancelDisables = true
+      BlinkDetonateAtEndpoint = false
+      BlinkDetonateAtOrigin = true
+      BlinkNumGhosts = 3
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+	  CheckDanger = true
+      CanUseKeyboardAim = true
+      FireFx = "BlinkTrailVerticalB"
+      SilentImpact = true
+      AcceptTriggerLockRequests = true
+	  AllowMultiFireRequest = true
+      CancelAttachedProjectiles = true
+	  SetTargetAngleOnRequest = false
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "RushWeaponInvulnerable"
+          Type = "INVULNERABLE"
+          Duration = 0.24
+          Modifier = 1.0
+          NoUnitCollision = true
+          Active = true
+          CanAffectInvulnerable = true
+          Cancelable = true
+        }
+        {
+          Name = "RushWeaponImmuneToForce"
+          ImmuneToForce = true
+          Duration = 0.24
+          Active = true
+          CanAffectInvulnerable = true
+          Cancelable = true
+        }
+        {
+          Name = "RushWeaponSelfSlow"
+          Type = "SPEED"
+          DurationFrames = 15
+          Modifier = 0.65
+          Cancelable = true
+        }
+        {
+          Name = "RushWeaponSpeedBoost"
+          Type = "SPEED"
+          DurationFrames = 15
+          Modifier = 0.65
+          Cancelable = true
+          Active = false
+          HaltOnEnd = true
+          BackFx = "HermesRushSpeedTrail"
+        }
+        {
+          Name = "RushWeaponDodgeBoost"
+          OnlyAffectName = "_PlayerUnit"
+          ExtendDurationOnReapply = true
+          Duration = 0.5
+          DodgeChance = 0.5
+          ClearOnAttack = true
+          Active = false
+        }
+        {
+          Name = "RushHyperArmor"
+          Type = "DAMAGE_TAKEN"
+          Duration = 5
+          Modifier = 1.0
+          FrontFx = "HyperArmorLoop"
+          ExtendDurationOnReapply = true
+          BackFx = "null"
+          Active = false
+          FlashFrontFxWhenExpiring = true
+          FlashBackFxWhenExpiring = true
+          ImmuneToForce = true
+          ClearOnAttack = false
+        }
+        {
+          Name = "RushWeaponSelfGrip"
+          Type = "GRIP"
+          DurationFrames = 1
+          Modifier = 1.0
+          HaltOnEnd = true
+          Cancelable = false
+        }
+        {
+          Name = "RushWeaponDisableRotation"
+          DurationFrames = 1
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+        }
+        {
+          Name = "RushWeaponDisableMove"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+        }
+         {
+          Name = "RushWeaponDisableRapid"
+          DurationFrames = 4
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "DashDamageIncrease"
+          Duration = 0
+          CritAddition = 0
+          Active = false
+          FrontFx = "ArtemisCritSparkles"
+          BackFx = "null"
+        }
+        {
+          Name = "DashDamageShield"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1.5
+          Modifier = 0.75
+          Active = false
+          FrontFx = "Shielded"
+        }
+        {
+          Name = "MagicShieldBlast"
+          Duration = 0.35
+          Active = false
+          BackFx = "AthenaSingleShieldRushFront"
+        }
+        {
+          Name = "AthenaDashShieldReflection"
+          Duration = 0.175
+          ReflectAddition = 1.0
+          Active = false
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          FlashFrontFxWhenExpiring = false
+          FlashBackFxWhenExpiring = false
+        }
+        {
+          Name = "AthenaDashShieldReflect"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.175
+          Range = 210
+          Deflect = true
+          Active = false
+        }
+        {
+          Name = "SlowShieldDeflect"
+          Duration = 0.25
+          ReflectAddition = 1.0
+          Active = false
+          CanAffectInvulnerable = true
+          FrontFx = "Invincibubble"
+          BackFx = "null"
+          Sound = "/Leftovers/SFX/AuraOnLoud"
+        }
+        {
+          Name = "SlowShieldInvulnerable"
+          Type = "INVULNERABLE"
+          Duration = 0.25
+          Modifier = 1.0
+          Active = false
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SlowShieldReflectRange"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.25
+          Range = 200
+          Deflect = true
+          Active = false
+        }
+         {
+          Trigger = "Charging"
+          Name = "AreaSlowWeapon"
+          Type = "WEAPON_FIRE"
+          Duration = 0.05
+          Active = false
+          CanAffectInvulnerable = true
+          TimeModifierFraction = 0
+        }
+        {
+          Trigger = "Fire"
+          Name = "RushAreaSlowWeapon"
+          Type = "WEAPON_FIRE"
+          Duration = 0.05
+          Active = false
+          CanAffectInvulnerable = true
+          TimeModifierFraction = 0
+        }
+        {
+          Trigger = "Fire"
+          Name = "RushRuptureWeapon"
+          Type = "WEAPON_FIRE"
+          Duration = 0.15
+          Active = false
+          CanAffectInvulnerable = true
+          TimeModifierFraction = 0
+        }
+      ]
+    }
+	{
+      Name = "SpearRushWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      Control = "Attack3"
+      SwapOnFire = "SpearWeaponThrow"
+      AddControlOnFire = "SpearWeapon"
+	  AddControlOnFire2 = "SpearWeaponSpin"
+      FireToObstacle = "SpearReturnPoint"
+	  DestroyTargetedObstacle = true
+      FireGraphic = "ZagreusDashNoCollide"
+      UnblockedBlinkFx = "DashCrack"
+	  ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.21
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+	  WeaponRange = 1200
+      Projectile = "SpearRushWeapon"
+      Cooldown = 0.05
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+	  Enabled = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+	  IgnoreForceCooldown = true
+      ForceReleaseAllOnFire = true
+      CanCancelDisables = true
+	  SetTargetAngleOnRequest = false
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+	  Effects =
+	  [{
+        Name = "SpearRushBonus"
+        Duration = 1000.0
+        CanAffectInvulnerable = true
+        FrontFx = "GrenadeSelfDamageOutputFx"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+      },
+	  {
+          Name = "SpearRushWeaponDisable"
+          Duration = 0.21
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }]
+    }
+    {
+      Name = "RamWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "RAM"
+      SelfVelocity = 2000
+      SelfVelocityCap = 2000
+      RamTotalDistance = 0
+      RamDistanceInterval = 50
+      RamReappliesVelocity = true
+      Control = "Rush"
+      FireEndGraphic = "ZagreusDash"
+      FireGraphic = "ZagreusDash"
+      FireFx = "null"
+      ChargeTime = 0
+      Projectile = "RamWeapon"
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ClipSize = 1
+      Cooldown = 0.05
+      ReloadTime = 0.74
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = false
+      BlockMoveInput = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkDetonateAtEndpoint = true
+      BlinkNumGhosts = 3
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+      Effects = [
+        {
+          Trigger = "FireEnd"
+          Name = "RushWeaponDisableCancelable"
+          DurationFrames = 45
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+        }
+        {
+          Name = "DashDamageIncrease"
+          Duration = 0
+          Active = false
+          FrontFx = "StunnedFrontArtemis"
+          BackFx = "StunnedBackArtemis"
+        }
+        {
+          Name = "DashDamageShield"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1.5
+          Modifier = 0.75
+          Active = false
+          FrontFx = "Shielded"
+        }
+        {
+          Name = "MagicShieldBlast"
+          Duration = 0.35
+          Active = false
+          BackFx = "AthenaSingleShieldRushFront"
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresRotation"
+
+          Duration = 0.6
+          RotationMultiplier = 0.005
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresSpeed"
+          Type = "SPEED"
+          Duration = 0.6
+          Modifier = 1.8
+          Active = false
+          ScaleFxToProjectileRadius = true
+          BackFx = "AresBladeSpin"
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresBubble"
+          Type = "INVULNERABLE"
+          Duration = 0.2
+          Modifier = 1.0
+          CanAffectInvulnerable = true
+          Active = false
+          FrontFx = "Invincibubble_Zag"
+        }
+        {
+          Trigger = "Fire"
+          Name = "AphroditeSpeed"
+          Type = "SPEED"
+          Duration = 2.8
+          Modifier = 0.5
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "PoseidonRotation"
+
+          Duration = 0.6
+          RotationMultiplier = 0.01
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "PoseidonBubble"
+          Type = "INVULNERABLE"
+          Duration = 0.2
+          Modifier = 1.0
+          CanAffectInvulnerable = true
+          Active = false
+          FrontFx = "Invincibubble_Zag"
+        }
+        {
+          Trigger = "Fire"
+          Name = "AphroditeSlowRushSpeed"
+          Type = "SPEED"
+          Duration = 1.0
+          Modifier = 0.25
+          Active = false
+        }
+        {
+          Trigger = "FireEnd"
+          Name = "AphroditeSlowRushSpeedDisable"
+          DurationFrames = 30
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "AphroditeFastRushSpeed"
+          Type = "SPEED"
+          Duration = 0.1
+          Modifier = 2.0
+          Active = false
+        }
+        {
+          Trigger = "FireEnd"
+          Name = "AphroditeFastRushSpeedDisable"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "RangedWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack1"
+      Type = "GUN"
+      Projectile = "RangedWeapon"
+      ChargeSoundFadeTime = 0.25
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 32
+      AutoLock = true
+      AutoLockRange = 1000
+      AutoLockArcDistance = 75
+      AutoLockWithMouse = false
+      FireFx = "CastDust"
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLineNoMovement"
+      ChargeStartAnimation = "ZagreusRangedWeapon_Charge"
+      FireGraphic = "ZagreusRangedWeapon_Fire"
+      LockTriggerForCharge = true
+	  AllowExternalForceRelease = false
+      FireOnRelease = false
+      ChargeRangeMultiplier = 1.0
+      ChargeSpeedMultiplier = 1.0
+      ChargeCancelGraphic = "null"
+      ChargeFinishFx = "null"
+      Cooldown = 0.2
+      ChargeTimeFrames = 13
+      BelowMinChargeCooldown = 0
+      SwapOnFire = "null"
+      MaxAmmo = 1
+      NumProjectiles = 1
+      ProjectileSpacing = 0
+      SelfVelocity = -320
+      CanCancelDisables = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "RangedDisable"
+          DurationFrames = 6
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "RangedDisableCancelable"
+          DurationFrames = 24
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "RangedDisableCancelableFast"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "BowWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      DisallowedControl = "null"
+      Type = "GUN"
+      Projectile = "BowWeapon"
+      ClipSize = 1
+      ChargeSoundFadeTime = 0.25
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = true
+      BarrelLength = 50
+      AutoLock = true
+      AutoLockRange = 900
+      AutoLockWithMouse = false
+      AutoLockArcDistance = 90
+      FireFx = "null"
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLineNoMovement"
+      ChargeStartAnimation = "ZagreusBowDashStart"
+      FireGraphic = "ZagreusBowDashFire"
+      LockTriggerForCharge = false
+      FireOnRelease = true
+      ChargeCancelGraphic = "ZagreusBowDashStartCancel"
+      MinChargeStartFx = "BowCharge"
+      ChargeFinishFx = "null"
+      SelfVelocity = 0
+      ReloadTime = 0.3
+      MinChargeToFire = 0.2
+      ChargeTime = 0.6
+      ChargeRumbleRight = 0.0
+      BelowMinChargeCooldown = 0.02
+      DisableOwnerForDuration = 0.0
+      ChargeDamageMultiplier = 6.0
+      ChargeRangeMultiplier = 20
+      ChargeSpeedMultiplier = 0.0
+      ChargeVelocityMultiplier = 1.0
+      PerfectChargeWindowDuration = 0.15
+      PerfectChargeDamageMultiplier = 1.167
+      PerfectChargeRangeMultiplier = 1.0
+      PerfectChargeSpeedMultiplier = 1.3
+      PerfectChargeVelocityMultiplier = 1.3
+      NumProjectiles = 1
+      ProjectileSpacing = 36
+      CanCancelDisables = false
+      AcceptTriggerLockRequests = false
+	  ForceReleaseWeaponOnFire = "BowWeaponDash"
+	  ClearFireRequestOnSwap = true
+      ForceReleaseOnFire = true
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = false
+      Effects = [
+        {
+          Trigger = "Charging"
+          Name = "BowSelfSpeed"
+          Type = "SPEED"
+          Duration = 0.02
+          Modifier = 0.1
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "BowSelfHalt"
+          Type = "GRIP"
+          Duration = 0.02
+          Modifier = 1.4
+          HaltOnEnd = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "BowWeaponDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = true
+        }
+        {
+          Name = "BowWeaponDisableCancelable"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "BowDoubleShotDisable"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "BowDoubleShotDisableCancelable"
+          DurationFrames = 35
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "BowWeaponExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 999.0
+          Active = false
+        }
+
+        {
+          Name = "BowBeamDisable"
+          DurationFrames = 8
+          RotationMultiplier = 0.01
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = false
+          RequestTriggerLock = false
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "BowWeapon2"
+      InheritFrom = "BowWeapon"
+      Projectile = "BowWeapon2"
+      ControlWindow = 0.425
+  	  SwapOnFire = "BowWeapon2"
+  	  LockTriggerForCharge = true
+  	  FireOnRelease = false
+  	  FullyAutomatic = true
+  	  ForceReleaseOnFire = false
+  	  AllowExternalForceRelease = false
+  	  ForceReleaseWeaponOnFire = null
+      AcceptTriggerLockRequests = true
+  	  ShowFreeAimLine = false
+  	  MinChargeToFire = 1.0
+  	  ChargeTime = 0.04
+  	  ReloadTime = 0.5
+  	  ClipSize = 1
+  	  ChargeDamageMultiplier = 1
+  	  PerfectChargeWindowDuration = 0
+    }
+    {
+      Name = "BowWeaponDash"
+      InheritFrom = "BowWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "BowWeaponDash"
+      SelfVelocity = 0
+      ChargeStartFx = "BowChargeFast"
+      Cooldown = 0.02
+      MinChargeToFire = 0.3
+      ChargeTime = 0.4
+      ChargeRumbleRight = 0.0
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      SwapOnFire = "BowWeapon"
+      ControlWindow = 0.45
+      PerfectChargeWindowDuration = 0.15
+      ChargeDamageMultiplier = 4.0
+      PerfectChargeDamageMultiplier = 1.25
+      ChargeStartAnimation = "ZagreusBowStart"
+      ChargeCancelGraphic = "ZagreusBowStartCancel"
+      FireGraphic = "ZagreusBowFire"
+	  AllowExternalForceRelease = false
+	  AllowExternalForceReleaseIfAnyCharged = true
+      Effects = [
+        {
+          Trigger = "Charging"
+          Name = "BowSelfSpeed"
+          Type = "SPEED"
+          Duration = 0.02
+          Modifier = 0.5
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "BowWeaponDashHalt"
+          Type = "GRIP"
+          Duration = 0.02
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = true
+        }
+         {
+          Name = "BowWeaponDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = true
+        }
+        {
+          Name = "BowWeaponDisableCancelable"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "BowWeaponExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 999.0
+          Active = false
+          ClearOnAttack = true
+        }
+      ]
+    }
+    {
+      Name = "BowSplitShot"
+      InheritFrom = "BowWeapon"
+      Projectile = "BowSplitShot"
+      Control = "Attack3"
+      DisallowedControl = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      NumProjectiles = 9
+      ProjectileSpacing = 0
+      ProjectileAngleOffset = 12
+      ProjectileOffsetStart = "LEFT"
+      ProjectileInterval = 0.03
+      Enabled = true
+      AutoLock = false
+      ReloadTime = 0.85
+
+      ChargeStartAnimation = "ZagreusBowRapidFire_Start"
+      FireGraphic = "ZagreusBowRapidFire_Fire"
+      ShowFreeAimLine = false
+      AimLineAnimation = "AuraAimLine"
+      ChargeStartFx = "null"
+      FullyAutomatic = false
+      LockTriggerForCharge = true
+      FireOnRelease = false
+      ChargeCancelGraphic = "null"
+      SelfVelocity = 0
+      MinChargeToFire = 1.0
+      ChargeTime = 0.1
+      DisableOwnerForDuration = 0
+      ChargeDamageMultiplier = 1.0
+      ChargeRangeMultiplier = 1
+      ChargeSpeedMultiplier = 1.0
+      ChargeVelocityMultiplier = 1.0
+      PerfectChargeWindowDuration = 0
+      CanCancelDisables = true
+	  AllowExternalForceRelease = false
+    AcceptTriggerLockRequests = true
+      Effects = [
+        {
+          Name = "SplitShotDisable"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SplitShotDisableCancelable"
+          DurationFrames = 42
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SplitShotDisableFast"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SplitShotDisableFastCancelable"
+          DurationFrames = 26
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+
+        {
+          Name = "SplitShotDisableLong"
+          DurationFrames = 42
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "ShieldWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "ShieldWeapon"
+	  TreatProjectilesAsUniqueVolleys = true
+      ChargeSoundFadeTime = 0.25
+      CancelMovement = false
+      ChargeCancelMovement = false
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      FullyAutomatic = true
+      BarrelLength = 150
+      AutoLock = false
+      AutoLockRange = 1000
+      FireFx = "null"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "null"
+      FireGraphic = "ZagreusShieldPunch"
+      LockTriggerForCharge = false
+      RequestTriggerLockDuringReload = true
+      FireOnRelease = false
+      ChargeCancelGraphic = "null"
+      ChargeStartFx = "null"
+      ChargeFinishFx = "null"
+      ReloadOnRelease = true
+      ReloadTime = 0.4
+      NumProjectiles = 1
+      MinChargeToFire = 0
+      ChargeTime = 0
+      DisableOwnerForDurationFrames = 0
+      SwapOnFire = "ShieldWeaponRush"
+      CanCancelDisables = false
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "ShieldAttackReflect"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.19
+          Range = 180
+          Deflect = false
+          AngleCoverage = 90
+          Active = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldDisableAttack"
+          DurationFrames = 10
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldDisableAttackFast"
+          DurationFrames = 7
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldSelfSlowFire"
+          Type = "SPEED"
+          DurationFrames = 25
+          Modifier = 0.1
+          Active = true
+          CanAffectInvulnerable = true
+        }
+      ]
+    }
+    {
+      Name = "ShieldWeaponDash"
+      InheritFrom = "ShieldWeapon"
+      Projectile = "ShieldWeaponDash"
+      Control = "Attack2"
+      Cooldown = 0.02
+      DisableOwnerForDurationFrames = 0
+      ControlWindow = 0.45
+      AutoLockArcDistance = 90
+      SelfVelocity = 400
+      FireGraphic = "ZagreusShieldPunchFast"
+      ChargeTimeFrames = 0
+      ChargeStartAnimation = "null"
+      Enabled = true
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+	  LockTriggerTransferFromOnSwap = false
+	  AllowExternalForceRelease = false
+      MinChargeToFire = 0
+      ChargeTime = 0
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "ShieldDashReflect"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.22
+          Range = 180
+          Deflect = false
+          AngleCoverage = 60
+          Active = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldDisableAttack"
+          DurationFrames = 12
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldSelfSlowFire"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.1
+          Active = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Trigger = "Charging"
+          Name = "ShieldSelfSlowFireBeowulf"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.15
+          Active = false
+          DisableRotate = true
+          CanAffectInvulnerable = true
+          ClearOnAttack = false
+        }
+      ]
+    }
+    {
+      Name = "ShieldWeaponRush"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "ShieldWeaponRush"
+      ClipSize = 1
+      ChargeSoundFadeTime = 0.25
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      ChargeStartAnimation = "ZagreusShieldAttackCharge"
+      ChargeCancelGraphic = "ZagreusShieldAttackChargeCancel"
+      ChargeStartFx = "ShieldCharge"
+      FireGraphic = "ZagreusShieldAttackFire"
+      FireOnRelease = true
+      Cooldown = 0
+      MinChargeToFire = 0.2
+      ChargeTime = 0.8
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLineShield"
+      SelfVelocity = 600
+      SelfVelocityCap = 3000
+      ChargeRangeMultiplier = 5.0
+      ChargeVelocityMultiplier = 5.0
+      ChargeDamageMultiplier = 10.0
+      ControlWindow = 0.22
+	  CanCancelDisables = true
+      LoseControlOnRelease = true
+	  AllowExternalForceRelease = false
+      TriggersStoredAmmoVulnerability = true
+      Effects = [
+        {
+          Trigger = "Charging"
+          Name = "ShieldSelfSpeed"
+          Type = "SPEED"
+          HaltOnStart = true
+          Duration = 0.02
+          Modifier = 0.2
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Charging"
+          ClearOnAttack = true
+          Name = "ShieldSelfInvulnerableRush"
+          Type = "INVULNERABLE"
+          Duration = 9999
+          Modifier = 1.0
+          Active = true
+          AngleCoverage = 125
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Charging"
+          ClearOnAttack = true
+          Name = "ShieldSelfReflectRush"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 9999
+          Range = 75
+          Deflect = false
+          AngleCoverage = 125
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldSelfSpeed"
+          DisableMove = true
+          Duration = 0.3
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldWeaponHalt"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireSelfReflection"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.3
+          Modifier = 1.0
+          Active = true
+          CanAffectInvulnerable = true
+          Range = 125
+          Deflect = false
+          AngleCoverage = 105
+          Cancelable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireSelfInvulnerable"
+          Type = "INVULNERABLE"
+          Duration = 0.3
+          Modifier = 1.0
+          Active = true
+          CanAffectInvulnerable = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireDisableAttack"
+          DurationFrames = 18
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireDisableMove"
+          DurationFrames = 18
+          DisableMove = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireRequestTriggerLock"
+          DurationFrames = 25
+          RequestTriggerLock = true
+          TimeModifierFraction = 0
+        }
+
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireDisableAttackPunch"
+          DurationFrames = 20
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "ShieldFireDisableMovePunch"
+          DurationFrames = 20
+          DisableMove = true
+          Cancelable = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "SpearWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "SpearWeapon"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      AutoLockRange = 595
+      AutoLockArcDistance = 90
+      ChargeStartAnimation = "ZagreusSpearCharge1"
+      FireGraphic = "ZagreusSpearAttack1"
+      LockTrigger = true
+      DisableOwnerForDurationFrames = 0
+      SwapOnFire = "SpearWeapon2"
+      AddOnFire = "SpearWeaponSpin"
+      ChargeTimeFrames = 7
+      ChargeFx = "null"
+      FireFx = "null"
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      FireOnRelease = false
+      NumProjectiles = 1
+      CanCancelDisables = false
+      TriggersStoredAmmoVulnerability = true
+      Effects = [
+        {
+          Name = "SpearDisable"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockTrigger"
+          DurationFrames = 19
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockRotation"
+          DurationFrames = 22
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+        }
+        {
+          Name = "SpearDisableFast"
+          DurationFrames = 2
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Active = false
+        }
+        {
+          Name = "SpearDisableCancelableAndLockTriggerFast"
+          DurationFrames = 3
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "SpearDisableCancelableAndLockRotationFast"
+          DurationFrames = 4
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Trigger = "Charging"
+          Name = "SpearSelfSlow"
+          Type = "SPEED"
+          DurationFrames = 7
+          Modifier = 0.1
+          Active = true
+          CanAffectInvulnerable = true
+        }
+      ]
+    }
+    {
+      Name = "SpearWeaponDash"
+      InheritFrom = "SpearWeapon"
+      Projectile = "SpearWeaponDash"
+      Control = "Attack2"
+      ChargeStartAnimation = "ZagreusSpearDashAttack_Charge"
+      FireGraphic = "ZagreusSpearDashAttack"
+      LockTrigger = true
+      DisableOwnerForDurationFrames = 0
+      SwapOnFire = "SpearWeapon2"
+      AddOnFire = "SpearWeaponSpin"
+      ChargeTimeFrames = 1
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+	  LockTriggerTransferFromOnSwap = false
+	  AllowExternalForceRelease = false
+      Cooldown = 0.02
+      ControlWindow = 0.45
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "SpearDisable"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockTrigger"
+          DurationFrames = 19
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockRotation"
+          DurationFrames = 22
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+        }
+
+        {
+          Name = "SpearDashDisableLong"
+          DurationFrames = 22
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "SpearWeapon2"
+      InheritFrom = "SpearWeapon"
+      SwapOnFire = "SpearWeapon3"
+      Projectile = "SpearWeaponTwoThree"
+      ControlWindow = 0.5
+      ChargeStartAnimation = "ZagreusSpearCharge2"
+      FireGraphic = "ZagreusSpearAttack2"
+      ChargeTimeFrames = 5
+      CanCancelDisables = false
+      Effects = [
+        {
+          Name = "SpearDisable2"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockTrigger2"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SpearDisableCancelableAndLockRotation"
+          DurationFrames = 15
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+        }
+
+        {
+          Name = "SpearLunarAerialSlow2"
+          Duration = 0.2
+          Trigger = "Charging"
+          Type = "SPEED"
+          Modifier = 0.90
+          Active = false
+          Cancelable = true
+        }
+      ]
+    }
+    {
+      Name = "SpearWeapon3"
+      InheritFrom = "SpearWeapon"
+      SwapOnFire = "null"
+      Projectile = "SpearWeaponTwoThree"
+      ControlWindow = 0.5
+      RemoveControlOnFire = "SpearWeapon3"
+      AddControlOnFire = "SpearWeapon"
+      ChargeStartAnimation = "ZagreusSpearCharge3"
+      FireGraphic = "ZagreusSpearAttack3"
+      ChargeTimeFrames = 3
+      CanCancelDisables = false
+      Effects = [
+        {
+          Name = "SpearDisable3"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SpearDisableCancelable3"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+
+        {
+          Name = "SpearLunarAerialSlow3"
+          Duration = 0.5
+          Trigger = "Charging"
+          Type = "SPEED"
+          Modifier = 0.82
+          Active = false
+          Cancelable = true
+        }
+      ]
+    }
+    {
+      Name = "SpearWeaponSpin"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Type = "GUN"
+      Control = "Attack2"
+      DisallowedControl = "null"
+      Projectile = "SpearWeaponSpin"
+      ClipSize = 1
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = true
+      ForceReleaseOnSwap = false
+      BarrelLength = 100
+      AutoLock = false
+      AutoLockRange = 100
+      AutoLockArcDistance = 90
+      ChargeStartAnimation = "ZagreusSpearSpinStart"
+      ChargeCancelGraphic = "ZagreusSpearSpinStartChargeCancel"
+      FireGraphic = "ZagreusSpearSpinAttack"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      MinChargeToFire = 1.0
+      ChargeTime = 0.26
+      ChargeRumbleRight = 0.06
+      ChargeFx = "null"
+      FireFx = "null"
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      FireOnRelease = true
+      ControlWindow = 0.34
+      LoseControlOnRelease = true
+	  LoseControlIfNotCharging = false
+      CanCancelDisables = false
+      AcceptTriggerLockRequests = false
+	  AllowExternalForceRelease = false
+	  AllowExternalForceReleaseIfAnyCharged = true
+	  RemoveControlOnCharge = "SpearWeaponThrow"
+	  AddControlOnFire = "SpearWeaponThrow"
+	  AddControlOnChargeCancel = "SpearWeaponThrow"
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "SwordReflection2"
+          Duration = 0.5
+          ReflectAddition = 1.0
+          Active = false
+          FrontFx = "null"
+          BackFx = "null"
+        }
+        {
+          Name = "SpearSpinDisable"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = true
+          Active = true
+        }
+        {
+          Name = "SpearSpinDisableCancelable"
+          DurationFrames = 80
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = true
+        }
+        {
+          Name = "SpearSpinDisableFast"
+          DurationFrames = 10
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SpearSpinDisableCancelableFast"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = false
+        }
+
+         {
+          Name = "SpearWeaponSpinExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 999.0
+          Active = false
+          ClearOnAttack = true
+        }
+        {
+          Name = "SpearWeaponSpinDefenseWeapon"
+          Type = "DAMAGE_TAKEN"
+          Trigger = "Charging"
+          Duration = 0.3
+          Modifier = 1.0
+          FrontFx = "HyperArmorLoop"
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+          ExtendDurationOnReapply = true
+        }
+      ]
+    }
+    {
+      Name = "SpearWeaponSpin2"
+      InheritFrom = "SpearWeaponSpin"
+      Projectile = "SpearWeaponSpin2"
+      ChargeTime = 0.0
+      FireOnRelease = false
+    }
+    {
+      Name = "SpearWeaponSpin3"
+      InheritFrom = "SpearWeaponSpin2"
+      Projectile = "SpearWeaponSpin3"
+    }
+    {
+      Name = "SpearWeaponThrow"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack3"
+      Type = "GUN"
+      Projectile = "SpearWeaponThrow"
+      ClipSize = 1
+      ChargeSoundFadeTime = 0.25
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      AutoLockRange = 850
+      AutoLockArcDistance = 90
+      ChargeTime = 0.16
+      ChargeStartAnimation = "ZagreusSpearThrowCharge"
+      ChargeCancelGraphic = "ZagreusSpearThrowFireReturnToIdle"
+      ChargeFx = "null"
+      FireGraphic = "ZagreusSpearThrowFire"
+      FireOnRelease = false
+      LockTriggerForCharge = true
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLine"
+      SelfVelocity = 0.0
+      NumProjectiles = 1
+      ProjectileSpacing = 40
+      SwapOnFire = "SpearWeaponThrowReturn"
+      RemoveControlOnFire = "SpearWeapon"
+      RemoveControlOnFire2 = "SpearWeapon2"
+      RemoveControlOnFire3 = "SpearWeapon3"
+	  RemoveControlOnFire4 = "SpearWeaponDash"
+      CanCancelDisables = true
+      TriggersStoredAmmoVulnerability = true
+      ReloadTime = 0.8
+      RequestTriggerLockDuringReload = true
+	  AllowExternalForceRelease = false
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "SpearThrowDisable"
+          DurationFrames = 6
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SpearThrowDisableCancelable"
+          DurationFrames = 16
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SpearThrowDisableFast"
+          DurationFrames = 6
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SpearThrowDisableFastCancelable"
+          DurationFrames = 16
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+		  RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SpearWeaponThrowReturn"
+          Type = "WEAPON_FIRE"
+          Duration = 1.3
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "SpearWeaponThrowReturn"
+      InheritFrom = "SpearWeaponThrow"
+      AlternateControl = "Attack2"
+      SwapOnFire = "SpearWeaponThrow"
+      FireFromObstacle = "SpearReturnPoint"
+	  DestroyTargetedObstacle = true
+      FireGraphic = "ZagreusSpearThrowFireReturn"
+      Projectile = "SpearWeaponThrowReturn"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      AddControlOnFire = "SpearWeapon"
+	  AddControlOnFire2 = "SpearWeaponSpin"
+      RemoveControlOnFire = "null"
+      SelfVelocity = 0.0
+      ChargeTimeFrames = 0
+      ChargeStartAnimation = "null"
+	  LockTriggerTransferFromOnSwap = false
+	  SetCompleteAngleOnFire = false
+      OwnerFaceProjectile = true
+      Effects = [
+        {
+          Name = "SpearThrowReturnDisable"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SpearThrowReturnDisableFast"
+          DurationFrames = 10
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "SwordWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "SwordWeapon"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      AutoLockRange = 100
+      AutoLockArcDistance = 90
+      ChargeStartAnimation = "ZagreusSwordCharge1"
+      FireGraphic = "ZagreusSwordAttack1"
+      FireFx = "SwordSwipeAFlipped"
+      LockTrigger = true
+      CancelChargeOnRelease = false
+      SwapOnFire = "SwordWeapon2"
+      ForceReleaseOnSwap = true
+      NumProjectiles = 1
+      ChargeTimeFrames = 4
+      FireOnRelease = false
+      ChargeFx = "null"
+      SelfVelocity = 0
+      BarrelLength = 0
+      CanCancelDisables = false
+	  CanCancelRotateDisables = true
+      TriggersStoredAmmoVulnerability = true
+      Effects = [
+        {
+          Name = "SwordDisable"
+          DurationFrames = 5
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisableCancelableAndLockTrigger"
+          DurationFrames = 11
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SwordDisableHeavy"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Active = false
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "SwordSelfSlowCharge"
+          Type = "SPEED"
+          DurationFrames = 15
+          Modifier = 0.35
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "SwordSelfSlowFire"
+          Type = "SPEED"
+          DurationFrames = 12
+          Modifier = 0.35
+          Active = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Name = "SwordWeaponSpinExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 1.0
+          Active = false
+        }
+        {
+          Trigger = "Charging"
+          ClearOnAttack = true
+          Name = "DefensiveThrustEffect"
+          Type = "DAMAGE_TAKEN"
+          Duration = 9999
+          Modifier = 0.1
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "DefensivePostFireEffect"
+          Type = "DAMAGE_TAKEN"
+          DurationFrames = 16
+          Modifier = 0.1
+          FrontFx = "Invincibubble_Zag_Loop"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "SwordDisableArthur"
+          DurationFrames = 16
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SwordDisableArthurCancellable"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "SwordWeaponDash"
+      InheritFrom = "SwordWeapon"
+      Control = "Attack2"
+      Projectile = "SwordWeaponDash"
+      BarrelLength = 0
+      ChargeTimeFrames = 0
+      Cooldown = 0.02
+      ChargeStartAnimation = "null"
+      FireGraphic = "ZagreusSwordDashAttack"
+      FireFx = "SwordSwipeC"
+      Enabled = true
+      SwapOnFire = "SwordWeapon"
+      ForceReleaseOnSwap = false
+      ControlWindow = 0.45
+      AutoLockArcDistance = 150
+      AutoLockRange = 250
+      SelfVelocity = 400
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+	  LockTriggerTransferFromOnSwap = false
+	  AllowExternalForceRelease = false
+	  LockTrigger = false
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "SwordDisable"
+          DurationFrames = 6
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisable2"
+          DurationFrames = 10
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisable3"
+          DurationFrames = 22
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisableDoubleDashAttack"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Active = false
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisableDoubleDashAttackCancelable"
+          DurationFrames = 24
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "SwordWeaponSelfGrip"
+          Type = "GRIP"
+          DurationFrames = 14
+          Modifier = 1.5
+          HaltOnEnd = true
+          Cancelable = false
+        }
+      ]
+    }
+    {
+      Name = "SwordWeapon2"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Type = "GUN"
+      Control = "Attack2"
+      Projectile = "SwordWeapon2"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      ForceReleaseOnSwap = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      AutoLockRange = 100
+      AutoLockArcDistance = 90
+      ChargeStartAnimation = "ZagreusSwordCharge2"
+      FireGraphic = "ZagreusSwordAttack2"
+      LockTriggerForCharge = true
+      CancelChargeOnRelease = true
+      SwapOnFire = "SwordWeapon3"
+      ControlWindow = 0.425
+      NumProjectiles = 1
+      ChargeTimeFrames = 10
+      ChargeFx = "null"
+      FireFx = "SwordSwipeB"
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      FireOnRelease = false
+      BarrelLength = 170
+      TriggersStoredAmmoVulnerability = true
+	  CancelChargeOnControlRemoved = true
+      Effects = [
+        {
+          Trigger = "Charging"
+          ClearOnAttack = true
+          Name = "DefensiveThrustEffect"
+          Type = "DAMAGE_TAKEN"
+          Duration = 9999
+          Modifier = 0.1
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "DefensivePostFireEffect"
+          Type = "DAMAGE_TAKEN"
+          DurationFrames = 115
+          Modifier = 0.1
+          FrontFx = "Invincibubble_Zag_Loop"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "SwordDisable2"
+          DurationFrames = 3
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisableCancelableAndLockTrigger2"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "SwordHalt2"
+          Type = "GRIP"
+          Duration = 0.12
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SwordDisableCancelableAndLockTriggerChargeAttack"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = false
+          Active = false
+        }
+
+        {
+          Name = "SwordWeaponSpinExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 1.0
+          Active = false
+        }
+         {
+          Name = "SwordDisableArthur2"
+          DurationFrames = 15
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+      RequestTriggerLock = true
+      Active = false
+        }
+        {
+          Name = "SwordDisableArthurCancellable2"
+          DurationFrames = 28
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+
+      ]
+    }
+    {
+      Name = "SwordWeapon3"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "SwordWeapon3"
+      TreatProjectilesAsUniqueVolleys = true
+      ClipSize = 1
+      ChargeSoundFadeTime = 0.25
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      ForceReleaseOnSwap = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      AutoLock = true
+      AutoLockRange = 400
+      AutoLockArcDistance = 135
+      FireFx = "SwordSwipeC"
+      ChargeStartAnimation = "ZagreusSwordCharge3"
+      ChargeFx = "ChargeAttack"
+      FireGraphic = "ZagreusSwordAttack3"
+      FireOnRelease = false
+      LockTriggerForCharge = true
+      CancelChargeOnRelease = true
+      ChargeTime = 0.3
+      SelfVelocity = 600.0
+      SelfVelocityCap = 600
+      ControlWindow = 0.35
+      BarrelLength = 120
+	  TriggersStoredAmmoVulnerability = true
+	  CancelChargeOnControlRemoved = true
+      Effects = [
+        {
+          Name = "SwordWeaponHalt"
+          Type = "GRIP"
+          Duration = 0.4
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = false
+        }
+        {
+          Name = "SwordDisable3"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		    RequestTriggerLock = true
+        }
+        {
+          Name = "SwordDisableAttackCancelable3"
+          DurationFrames = 25
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Trigger = "Charging"
+          ClearOnAttack = true
+          Name = "DefensiveThrustEffect"
+          Type = "DAMAGE_TAKEN"
+          Duration = 9999
+          Modifier = 0.1
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "DefensivePostFireEffect"
+          Type = "DAMAGE_TAKEN"
+          DurationFrames = 18
+          Modifier = 0.1
+          FrontFx = "Invincibubble_Zag_Loop"
+          Active = false
+          ImmuneToForce = true
+        }
+        {
+          Name = "SwordDisableCancelable3"
+          DurationFrames = 33
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+		      RequestTriggerLock = true
+        }
+        {
+          Name = "ArthurSwordDisable3"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+        RequestTriggerLock = true
+        Active = false
+        }
+         {
+          Name = "ArthurSwordDisableCancelable3"
+          DurationFrames = 26
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SwordWeaponSpinExplosiveChargeWeapon"
+          Type = "WEAPON_FIRE"
+          Trigger = "Charging"
+          Duration = 1.0
+          Active = false
+        }
+
+      ]
+    }
+    {
+      Name = "SwordParry"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack3"
+      Cooldown = 0.5
+      UseTargetAngle = true
+      Type = "GUN"
+      Projectile = "SwordParry"
+      ChargeSoundFadeTime = 0.25
+      CancelMovement = false
+      CanCancelDisables = true
+      ChargeCancelMovement = false
+      RootOwnerWhileFiring = false
+      FullyAutomatic = false
+      BarrelLength = 80
+      AutoLock = false
+      AutoLockRange = 1000
+      FireFx = "null"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "ZagreusSwordParryCharge"
+      FireGraphic = "ZagreusSwordParryFire"
+      LockTriggerForCharge = true
+      FireOnRelease = false
+      ChargeCancelGraphic = "null"
+      ChargeStartFx = "null"
+      ChargeFinishFx = "null"
+      ReloadOnRelease = true
+      NumProjectiles = 1
+      MinChargeToFire = 1
+      ChargeTime = 0.3
+	  AllowExternalForceRelease = false
+	  IgnoreTriggerLockDuringCooldown = true
+      TriggersStoredAmmoVulnerability = true
+	  AddControlOnFire = "SwordWeapon"
+	  RemoveControlOnFire = "SwordWeapon2"
+	  RemoveControlOnFire2 = "SwordWeapon3"
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "SwordParrySelfReflection"
+          Duration = 0.2
+          ReflectAddition = 1.0
+          Active = false
+          CanAffectInvulnerable = true
+          FrontFx = "AthenaInvincibleFront"
+          BackFx = "AthenaInvincibleBack"
+          Sound = "null"
+        }
+        {
+          Trigger = "Fire"
+          Name = "SwordParrySelfInvulnerable"
+          Type = "INVULNERABLE"
+          Duration = 0.2
+          Modifier = 1.0
+          Active = false
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SwordParrySelfReflectRange"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.4
+          Range = 350
+          Deflect = true
+          Active = false
+        }
+        {
+          Name = "SwordParryDisable"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = false
+        }
+        {
+          Name = "SwordParryDisableCancelable"
+          DurationFrames = 25
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Name = "SwordParryDisableBlink"
+          DurationFrames = 8
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = false
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "SwordParryDisableBlinkCancelable"
+          DurationFrames = 16
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "SwordParryDisableFast"
+          DurationFrames = 10
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+          Active = false
+        }
+        {
+          Name = "SwordParryDisableFastCancelable"
+          DurationFrames = 20
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "SwordPostParryCritical"
+          Duration = 2.0
+          Active = false
+          FrontFx = "ArtemisCritSparkles-SwordPostParryCritical"
+          BackFx = "null"
+        }
+        {
+          Trigger = "Charging"
+          Name = "SwordParryInstantStop"
+          Type = "SPEED"
+          Modifier = 0.6
+          Duration = 0.1
+          Active = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "SwordParryInstantHalt"
+          Type = "GRIP"
+          Modifier = 9999
+          Duration = 0.02
+          HaltOnEnd = false
+          Active = false
+        }
+
+        {
+          Name = "SwordBlinkTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1.3
+          Modifier = 1.0
+          Active = false
+          ImmuneToForce = true
+          ExtendDurationOnReapply = true
+          FrontFx = "HyperArmorLoop"
+          BackFx = "null"
+          FlashFrontFxWhenExpiring = true
+          FlashBackFxWhenExpiring = true
+          ClearOnAttack = false
+        }
+      ]
+    }
+
+{
+      Name = "FistWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "FistWeapon"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+	  AllowExternalForceRelease = false
+      AutoLock = true
+      AutoLockRange = 360
+      AutoLockArcDistance = 220
+      ChargeStartAnimation = "ZagreusFistFlurryPunch_Start"
+      FireGraphic = "ZagreusFistFlurryPunch_Fire1"
+      FireFx = "null"
+      LockTrigger = true
+      CancelChargeOnRelease = false
+      SwapOnFire = "FistWeapon2"
+      ForceReleaseOnSwap = false
+      NumProjectiles = 1
+      ChargeTime = 0.16
+      FireOnRelease = false
+      ChargeFx = "null"
+      SelfVelocity = 0
+      BarrelLength = 0
+      CanCancelDisables = false
+	   CanCancelRotateDisables = true
+      TriggersStoredAmmoVulnerability = true
+	  IgnoreTriggerLockDuringCooldown = true
+      Effects = [
+        {
+          Name = "FistDisable"
+          DurationFrames = 3
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "FistDisableAndLockTrigger"
+          DurationFrames = 5
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSelfSlowCharge"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSelfSelfSlowFire"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.002
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+         {
+          Trigger = "Charging"
+          Name = "FistFlurrySelfSlowCharge"
+          Type = "SPEED"
+          DurationFrames = 1
+          Modifier = 0.0001
+          RotationMultiplier = 0.01
+          Active = false
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+         {
+          Name = "FistFlurryHalt"
+          Trigger = "Fire"
+          DurationFrames = 28
+          HaltOnEnd = true
+          Active = false
+        }
+        {
+          Name = "FistFlurryDisable"
+          DurationFrames = 30
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "FistFlurryDisableAndLockTrigger"
+          DurationFrames = 32
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+
+        {
+          Name = "FistChargeDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "FistChargeDisableAndLockTrigger"
+          DurationFrames = 9
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 1.0
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+
+        {
+          Name = "FistDetonateMoveDisable"
+          DurationFrames = 18
+          DisableMove = true
+          Cancelable = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "FistWeapon2"
+      InheritFrom = "FistWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "FistWeapon"
+      ClipSize = 1
+      ChargeStartAnimation = "ZagreusFistFlurryPunch_Charge2"
+      FireGraphic = "ZagreusFistFlurryPunch_Fire2"
+      LockTrigger = true
+      LockTriggerForCharge = true
+      CancelChargeOnRelease = false
+      FullyAutomatic = true
+      FireFx = "null"
+      SwapOnFire = "FistWeapon3"
+      NumProjectiles = 1
+      ChargeTime = 0.08
+      FireOnRelease = false
+      ChargeFx = "null"
+      SelfVelocity = 0
+      BarrelLength = 0
+      ControlWindow = 0.3
+      CanCancelDisables = false
+      CanCancelRotateDisables = true
+      TriggersStoredAmmoVulnerability = true
+      Effects = [
+        {
+          Name = "FistDisable2"
+          DurationFrames = 3
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "FistDisableAndLockTrigger2"
+          DurationFrames = 5
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSelfSlowCharge2"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSwordSelfSlowFire2"
+          Type = "SPEED"
+          DurationFrames = 10
+          RotationMultiplier = 0.002
+          Modifier = 0.4
+          Active = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Name = "FistChargeDisable2"
+          DurationFrames = 4
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "FistChargeDisableAndLockTrigger2"
+          DurationFrames = 9
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 0.5
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+        {
+          Name = "FistDetonateMoveDisable"
+          DurationFrames = 18
+          DisableMove = true
+          Cancelable = true
+          Active = false
+          ClearOnAttack = false
+        }
+      ]
+    }
+
+  {
+      Name = "FistWeapon3"
+      InheritFrom = "FistWeapon2"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "FistWeapon"
+      ChargeStartAnimation = "ZagreusFistFlurryPunch_Charge3"
+      FireGraphic = "ZagreusFistFlurryPunch_Fire3"
+      FireFx = "null"
+      ChargeTime = 0.08
+      ControlWindow = 0.3
+      SwapOnFire = "FistWeapon4"
+      Effects = [
+        {
+          Name = "FistDisable3"
+          DurationFrames = 3
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "FistDisableAndLockTrigger3"
+          DurationFrames = 5
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSelfSlowCharge3"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSwordSelfSlowFire3"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.002
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 0.5
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+
+        {
+          Name = "FistChargeDisable3"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "FistChargeDisableAndLockTrigger3"
+          DurationFrames = 9
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "FistDetonateMoveDisable"
+          DurationFrames = 18
+          DisableMove = true
+          Cancelable = true
+          Active = false
+          ClearOnAttack = false
+        }
+      ]
+    }
+
+    {
+      Name = "FistWeapon4"
+      InheritFrom = "FistWeapon2"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "FistWeapon"
+      ChargeStartAnimation = "ZagreusFistFlurryPunch_Charge4"
+      FireGraphic = "ZagreusFistFlurryPunch_Fire4"
+      FireFx = "null"
+      ChargeTime = 0.08
+      ControlWindow = 0.3
+      SwapOnFire = "FistWeapon5"
+      Effects = [
+        {
+          Name = "FistDisable4"
+          DurationFrames = 3
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "FistDisableAndLockTrigger4"
+          DurationFrames = 5
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSelfSlowCharge4"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSwordSelfSlowFire4"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.002
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 0.5
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+        {
+          Name = "FistDetonateMoveDisable"
+          DurationFrames = 18
+          DisableMove = true
+          Cancelable = true
+          Active = false
+          ClearOnAttack = false
+        }
+      ]
+    }
+
+    {
+      Name = "FistWeapon5"
+      InheritFrom = "FistWeapon2"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "FistWeapon"
+      ChargeStartAnimation = "ZagreusFistFlurryPunch_Charge5"
+      FireGraphic = "ZagreusFistFlurryPunch_Fire5"
+      FireFx = "null"
+      ChargeTime = 0.08
+      ControlWindow = 0.3
+      SwapOnFire = "FistWeapon"
+	  CooldownWeaponSlotThree = 0.5
+      Effects = [
+        {
+          Name = "FistDisable5"
+          DurationFrames = 6
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSelfSlowCharge5"
+          Type = "SPEED"
+          DurationFrames = 10
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSwordSelfSlowFire5"
+          Type = "SPEED"
+          DurationFrames = 15
+          Modifier = 0.4
+          RotationMultiplier = 0.01
+          Active = true
+          Cancelable = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 0.5
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+        {
+          Name = "FistDetonateMoveDisable"
+          DurationFrames = 25
+          DisableMove = true
+          Cancelable = true
+          Active = false
+          ClearOnAttack = false
+        }
+      ]
+    }
+
+    {
+      Name = "FistWeaponDash"
+      InheritFrom = "FistWeapon"
+      Control = "Attack2"
+      Projectile = "FistWeaponDash"
+      BarrelLength = 0
+      ChargeTime = 0.08
+      LockTriggerForCharge = true
+      ChargeStartAnimation = "ZagreusFistDashHayMaker_Charge"
+      FireGraphic = "ZagreusFistDashHayMaker_Fire"
+      FireFx = "null"
+      Enabled = true
+      SwapOnFire = "FistWeapon"
+      ForceReleaseOnSwap = false
+      ControlWindow = 0.3
+      AutoLockArcDistance = 360
+      AutoLockRange = 200
+      SelfVelocity = 0
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+  	  LockTriggerTransferFromOnSwap = false
+  	  AllowExternalForceRelease = false
+  	  LockTrigger = false
+  	  SetCompleteAngleOnFire = false
+  	  SetCompleteAngleOnCharge = false
+	  TriggerTapIgnoresCooldown = true
+	  IgnoreTriggerLockDuringCooldown = false
+      Effects = [
+        {
+          Name = "FistDashDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+		      RequestTriggerLock = true
+        }
+        {
+          Name = "FistDashDisable3"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+        }
+        {
+          Name = "FistDashSelfSlow"
+          Type = "SPEED"
+          Trigger = "Charging"
+          DurationFrames = 11
+          Modifier = 0.25
+          Cancelable = true
+        }
+        {
+          Name = "FistWeaponSelfGrip"
+          Type = "GRIP"
+          DurationFrames = 11
+          Modifier = 1.5
+          HaltOnEnd = true
+          Cancelable = false
+        }
+      ]
+    }
+
+	{
+      Name = "FistWeaponSpecial"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack3"
+      UseTargetAngle = true
+      Type = "GUN"
+      Projectile = "FistWeaponSpecial"
+      ChargeSoundFadeTime = 0.25
+      CancelMovement = false
+      CanCancelDisables = true
+      CanCancelOwnDisables = false
+      ChargeCancelMovement = false
+      RootOwnerWhileFiring = false
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = false
+      AutoLockRange = 1000
+      FireFx = "FistFxUppercutDirectional"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "ZagreusFistAerialUpperCut_Start"
+      FireGraphic = "ZagreusFistAerialUpperCut_Fire"
+      LockTriggerForCharge = true
+      FireOnRelease = false
+      ChargeCancelGraphic = "null"
+      ChargeStartFx = "null"
+      ChargeFinishFx = "null"
+      ReloadOnRelease = true
+      NumProjectiles = 2
+      ProjectileInterval = 0.13
+      MinChargeToFire = 1
+      ChargeTime = 0.18
+      Cooldown = 0.5
+	  AllowExternalForceRelease = false
+	  PriorityFireRequest = true
+	  IgnoreTriggerLockDuringCooldown = true
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = false
+	  SetCompleteAngleOnCharge = false
+      Effects = [
+       {
+          Name = "FistSpecialInvulnerable"
+          Type = "INVULNERABLE"
+          DurationFrames = 27
+          Modifier = 1.0
+          Active = false
+          CanAffectInvulnerable = true
+          FrontFx = "HermesRushSpeedTrailZ"
+          BackFx = "null"
+        }
+        {
+          Name = "FistSpecialDisable"
+          DurationFrames = 26
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = false
+        }
+        {
+          Name = "FistSpecialDisableCancelable"
+          DurationFrames = 33
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "FistSpecialChargeSelfSlow"
+          Type = "SPEED"
+          Modifier = 0.01
+          Duration = 0.18
+          Active = true
+          HaltOnEnd = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSpecialFireSelfSlow"
+          Type = "SPEED"
+          Modifier = 0.5
+          Duration = 0.1
+          RotationMultiplier = 0.01
+          Active = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "FistSpecialFireHalt"
+          Type = "SPEED"
+          Modifier = 1.0
+          DurationFrames = 26
+          Active = false
+          HaltOnEnd = true
+        }
+        {
+          Name = "FistSpecialFireDisable"
+          DurationFrames = 8
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = false
+          Active = false
+        }
+        {
+          Name = "FistSpecialFireMoveCancel"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = true
+          Active = false
+        }
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 1.0
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+      ]
+    }
+
+	{
+      Name = "FistWeaponSpecialDash"
+      InheritFrom = "FistWeapon"
+      Control = "Attack3"
+      Projectile = "FistWeaponSpecialDash"
+      BarrelLength = 0
+      ChargeTime = 0.11
+      NumProjectiles = 1
+      LockTriggerForCharge = true
+      FullyAutomatic = false
+      ChargeStartAnimation = "ZagreusFistDashUpperCut_Start"
+      FireGraphic = "ZagreusFistDashUpperCut_Fire"
+      FireFx = "FistFxUppercutDirectional"
+      Enabled = true
+      SwapOnFire = "FistWeaponSpecial"
+      ForceReleaseOnSwap = true
+      ControlWindow = 0.3
+      AutoLockArcDistance = 360
+      AutoLockRange = 200
+      SelfVelocity = 0
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+  	  LockTriggerTransferFromOnSwap = false
+  	  AllowExternalForceRelease = false
+  	  LockTrigger = false
+  	  SetCompleteAngleOnFire = true
+  	  SetCompleteAngleOnCharge = true
+      Effects = [
+        {
+          Name = "FistSpecialDashDisable"
+          DurationFrames = 8
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+		      RequestTriggerLock = true
+        }
+        {
+          Name = "FistSpecialDashDisable2"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = false
+		      RequestTriggerLock = true
+        }
+        {
+          Name = "FistSpecialDashDisable3"
+          DurationFrames = 18
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Name = "FistDashSelfSlow"
+          Type = "SPEED"
+          Trigger = "Charging"
+          DurationFrames = 14
+          Modifier = 0.25
+          Cancelable = true
+        }
+        {
+          Name = "FistWeaponSelfGrip"
+          Type = "GRIP"
+          DurationFrames = 14
+          Modifier = 1.5
+          HaltOnEnd = true
+          Cancelable = false
+        }
+        {
+          Name = "FistHeavyAttackTraitDefense"
+          Type = "DAMAGE_TAKEN"
+          Duration = 0.3
+          Modifier = 1.0
+          Active = false
+          ImmuneToForce = true
+          ClearOnAttack = false
+		  ExtendDurationOnReapply = true
+        }
+      ]
+    }
+
+    {
+      Name = "GunWeapon"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Control = "Attack2"
+      DisallowedControl = "null"
+      Type = "GUN"
+      Projectile = "GunWeapon"
+      ChargeSoundFadeTime = 0.25
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireSound = "null"
+      AutoLock = true
+      AutoLockRange = 710
+      AutoLockArcDistance = 360
+      FireFx = "GunFire"
+      ChargeTimeFrames = 4
+      ChargeStartAnimation = "null"
+      LockTriggerForCharge = true
+      FireGraphic = "ZagreusGunFire"
+	  LockTriggerTransferFromOnSwap = false
+      FailedToFireCooldownAnimation = "ZagreusGunFireEmpty"
+	  FailedToFireCooldownDuration = 0.15
+      TriggerReleaseGraphic = "null"
+      FireOnRelease = false
+      NumProjectiles = 1
+      Cooldown = 0.1
+      Spread = 0
+      Scatter = 35
+      ScatterSubside = 170
+      ScatterCap = 35
+      TriggerTapIgnoresCooldown = false
+      MaxAmmo = 12
+      CanCancelDisables = false
+      AllowExternalForceRelease = false
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = false
+	  ClearFireRequestOnChargeCancel = false
+      Effects = [
+        {
+          Name = "GunDisable"
+          DurationFrames = 4
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = false
+          RequestTriggerLock = true
+        }
+        {
+          Name = "GunDisableCancellable"
+          DurationFrames = 8
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "GunSelfSpeed"
+          Duration = 0.02
+          DisableMove = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "GunSelfHalt"
+          Type = "GRIP"
+          Duration = 0.02
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+
+        {
+          Name = "GunDisableLucifer"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = false
+          RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "GunDisableCancellableLucifer"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = true
+          Active = false
+        }
+      ]
+    }
+    {
+      Name = "GunWeaponDash"
+      InheritFrom = "GunWeapon"
+      Control = "Attack2"
+      TriggerTapIgnoresCooldown = true
+      TriggersStoredAmmoVulnerability = true
+      SwapOnFire = "GunWeapon"
+      ControlWindow = 0.45
+      SelfVelocity = 0
+      CanCancelDisables = true
+      CanCancelOwnDisables = false
+	  FailedToFireCooldownAnimation = "null"
+	  LockTriggerTransferFromOnSwap = false
+	  AllowExternalForceRelease = false
+	  ClearFireRequestOnChargeCancel = false
+      PreFireAnimation = null
+      FireGraphic = null
+      ShareAmmoWeapon = "GunWeapon"
+      NumProjectiles = 1
+      ProjectileAngleOffset = 0
+      Scatter = 0
+      ScatterCap = 0
+      ProjectileInterval = 0.0
+	  AutoLockArcDistance = 360
+    }
+    {
+      Name = "SniperGunWeapon"
+      InheritFrom = "GunWeapon"
+      Control = "Attack2"
+	  DefaultControl = false
+      TriggerTapIgnoresCooldown = true
+      TriggersStoredAmmoVulnerability = true
+      FireSound = "/Leftovers/SFX/AuraPerfectThrow"
+	  Projectile = "SniperGunWeapon"
+      SwapOnFire = "null"
+      AutoLockRange = 1050
+      ChargeTimeFrames = 0
+      SelfVelocity = 0
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      PreFireAnimation = null
+      FireGraphic = null
+	  FailedToFireCooldownAnimation = "null"
+	  LockTriggerTransferFromOnSwap = false
+	  ForceReleaseOnFire = true
+	  LockTriggerForCharge = false
+	  MinChargeToFire = 0
+	  ChargeCancelMovement = false
+	  AllowExternalForceRelease = false
+	  ClearFireRequestOnChargeCancel = false
+      ShareAmmoWeapon = "GunWeapon"
+	  Enabled = false
+	  Effects = [
+        {
+          Name = "SniperGunDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = true
+          Cancelable = false
+          RequestTriggerLock = false
+        }
+        {
+          Name = "SniperGunDisableCancellable"
+          DurationFrames = 9
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = true
+          Cancelable = true
+          RequestTriggerLock = false
+        }
+        {
+          Name = "SniperGunDisableMoveCancellable"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = false
+          DisableAttack = false
+          Cancelable = true
+          RequestTriggerLock = false
+        }
+        {
+          Trigger = "Charging"
+          Name = "SniperGunSelfSpeed"
+          Type = "SPEED"
+          Duration = 0.02
+          Modifier = 0
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Trigger = "Charging"
+          Name = "SniperGunSelfHalt"
+          Type = "GRIP"
+          Duration = 0.02
+          Modifier = 1.0
+          HaltOnEnd = true
+          Active = true
+          CanAffectInvulnerable = true
+        }
+      ]
+    }
+    {
+      Name = "SniperGunWeaponDash"
+      InheritFrom = "SniperGunWeapon"
+      Control = "Attack2"
+      TriggerTapIgnoresCooldown = true
+      TriggersStoredAmmoVulnerability = true
+      SwapOnFire = "null"
+      ControlWindow = 0.45
+      SelfVelocity = 0
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+	  FailedToFireCooldownAnimation = "null"
+	  LockTriggerTransferFromOnSwap = false
+	  AllowExternalForceRelease = false
+	  ClearFireRequestOnChargeCancel = false
+      ShareAmmoWeapon = "GunWeapon"
+      NumProjectiles = 1
+	  Enabled = false
+    }
+    {
+      Name = "GunGrenadeToss"
+      Projectile = "GunGrenadeToss"
+      Control = "Attack3"
+      DisallowedControl = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      ClipSize = 1
+      ReloadTime = 1.5
+      ReloadOnCreation = false
+      ChargeStartAnimation = "ZagreusGunGrenadeTossCharge"
+      FireGraphic = "ZagreusGunGrenadeTossFire"
+      ShowFreeAimLine = true
+      AimLineAnimation = "null"
+      ManualAiming = true
+      ManualAimingInitialOffset = 420
+      AutoLockRange = 1200
+      AutoLock = false
+      FullyAutomatic = true
+      ChargeTime = 0.1
+      MinChargeToFire = 0
+      LockTriggerForCharge = false
+	  LockTriggerTransferFromOnSwap = false
+      FireOnRelease = true
+      TargetReticleAnimation = "GunGrenadeWarningDecal_Static"
+      CanCancelDisables = true
+      TriggersStoredAmmoVulnerability = true
+	  AcceptTriggerLockRequests = false
+	  AllowExternalForceRelease = true
+	  PriorityFireRequest = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+	  FireFx = "GunGrenadeFireFx"
+	  DestroySpawnsOnUnequip = false
+	  AutoLockIgnore = "GunBombUnit"
+      Effects =
+	  [
+        {
+          Name = "GrenadeDisable"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "GrenadeDisableCancelable"
+          DurationFrames = 23
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+		  RequestTriggerLock = true
+        }
+        {
+          Name = "GrenadeDisableFast"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+		  RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "GrenadeDisableCancelableFast"
+          DurationFrames = 5
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          Cancelable = true
+		  RequestTriggerLock = true
+          Active = false
+        }
+        {
+          Name = "GrenadeClusterDisable"
+          DurationFrames = 14
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+      RequestTriggerLock = true
+      Active = false
+        }
+      ]
+    }
+    {
+      Name = "ShoutSelfSlow"
+      InheritFrom = "1_BasePlayerMovementWeapon"
+      Type = "GUN"
+      FullyAutomatic = true
+      Effect = {
+        Name = "ShoutSelfSlow"
+        Type = "SPEED"
+        Duration = 0.4
+        Modifier = 0.3
+        Active = true
+        DisableRotate = true
+        CanAffectInvulnerable = true
+      }
+    }
+    {
+      Name = "HeroTouchdown"
+      InheritFrom = "1_BasePlayerUtilityWeapon"
+      Type = "GUN"
+      Projectile = "HeroTouchdown"
+      ChargeTime = 0
+      DisableOwnerForDuration = 0.4
+      IgnoreForceCooldown = true
+      FireGraphic = "null"
+    }
+    {
+      Name = "1_BaseMagicWeapon"
+      InheritFrom = "1_BaseWeapon"
+      LockTriggerForCharge = true
+      AutoLock = true
+      AutoLockRange = 650
+      AutoLockArcDistance = 90
+      ReloadOnCreation = false
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      IgnoreForceCooldown = true
+	  AllowMultiFireRequest = true
+    }
+    {
+      Name = "ShieldThrow"
+      InheritFrom = "1_BaseMagicWeapon"
+      Control = "Attack3"
+      Type = "GUN"
+      Projectile = "ShieldThrow"
+      ForceReleaseAllOnFire = true
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 80
+      BarrelRequiresLoS = true
+      AutoLock = true
+      AutoLockRange = 900
+      AutoLockArcDistance = 90
+      UseTargetAngle = true
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLine"
+      ChargeStartAnimation = "null"
+      FireGraphic = "ZagreusShieldThrow"
+      LockTriggerForCharge = false
+      FireOnRelease = false
+      ChargeRangeMultiplier = 1.0
+      ChargeSpeedMultiplier = 1
+      ChargeCancelGraphic = "null"
+      ChargeFinishFx = "null"
+      DisableOwnerForDuration = 0.3
+      NumProjectiles = 1
+      MinChargeToFire = 0
+      ChargeTime = 0.0
+      BelowMinChargeCooldown = 0
+      ClipSize = 1
+      ReloadTime = 0.55
+      UseReloadGraphic = false
+      ReloadGraphic = "null"
+      ReloadGraphicFinish = "null"
+      RemoveControlOnFire = "ShieldWeapon"
+      RemoveControlOnFire2 = "ShieldThrow"
+      RemoveControlOnFire3 = "ShieldWeaponDash"
+	  RemoveControlOnFire4 = "ShieldThrowDash"
+	  RemoveAllControlSwaps = "ShieldWeapon"
+      TriggersStoredAmmoVulnerability = true
+	  SetCompleteAngleOnFire = true
+	  SetCompleteAngleOnCharge = true
+	  IgnoreOwnerAttackDisabled = false
+	  AllowMultiFireRequest = false
+    Effects = [
+       {
+          Trigger = "Fire"
+          Name = "ShieldThrowDisable"
+          DurationFrames = 13
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+    ]
+    }
+    {
+      Name = "ShieldThrowDash"
+      InheritFrom = "ShieldThrow"
+      Control = "Attack3"
+	  ControlWindow = 0.45
+      Type = "GUN"
+      Projectile = "ShieldThrowDash"
+	  AllowMultiFireRequest = false
+    Effects = [
+       {
+          Trigger = "Fire"
+          Name = "ShieldThrowDisable"
+          DurationFrames = 13
+          DisableMove = false
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Active = false
+        }
+    ]
+    }
+    {
+      Name = "ShieldCatchBlast"
+      InheritFrom = "1_BaseDamagingWeapon"
+      Type = "GUN"
+      Projectile = "ShieldCatchBlast"
+      AutoLock = false
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.3
+    }
+    {
+      Name = "ArmorBreakAttack"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      Effect = {
+        Name = "ArmorBreakStun"
+        Duration = 1.0
+        DisableMove = true
+        DisableRotate = true
+        DisableAttack = true
+        Active = true
+        CanAffectInvulnerable = true
+        Cancelable = false
+      }
+    }
+    {
+      Name = "ChainLightning"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ChainLightning"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "/SFX/Player Sounds/ElectricZapLarge"
+      Cooldown = 0.167
+    }
+    {
+      Name = "ChaosShieldThrow"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ChaosShieldThrow"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+	  ProjectileAngleStartOffset = 10
+	  ProjectileAngleOffset = 20
+		ProjectileOffsetStart = "CENTER"
+		BarrelLength = 30
+		DefaultControl = false
+      
+    }
+    {
+      Name = "GodComboWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GodComboWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "/SFX/Player Sounds/ZeusLightningImpact"
+    }
+    {
+      Name = "ZeusReflectChainLightning"
+      InheritFrom = "ChainLightning"
+      Type = "GUN"
+      Projectile = "ZeusReflectChainLightning"
+      BarrelLength = 0
+    }
+    {
+      Name = "RubbleFall"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "RubbleFall"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "RubbleFallLarge"
+      InheritFrom = "RubbleFall"
+      Projectile = "RubbleFallLarge"
+    }
+    {
+      Name = "RubbleFallElysium"
+      InheritFrom = "RubbleFall"
+      Projectile = "RubbleFallElysium"
+    }
+    {
+      Name = "ArtemisLegendary"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ArtemisLegendary"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+      ProjectileAngleOffset = 60
+      ProjectileAngleStartOffset = 180
+      Cooldown = 0.167
+    }
+    {
+      Name = "ArtemisAmmoWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      FireSound = "/SFX/Player Sounds/ArtemisLeavesImpactDetonate"
+      Projectile = "ArtemisAmmoWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CritVulnerabilityWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "CritVulnerabilityWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HeartsickCritWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "HeartsickCritWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DionysusPlagueWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DionysusPlagueWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+      Cooldown = 4
+	  ActiveProjectileCap = 4
+    }
+    {
+      Name = "AphroditeSuperCharm"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AphroditeSuperCharm"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+	{
+      Name = "AphroditeMaxSuperCharm"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AphroditeMaxSuperCharm"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+    {
+      Name = "DemeterAmmoWind"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DemeterAmmoWind"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+      ProjectileAngleOffset = 60
+      ProjectileAngleStartOffset = 180
+    }
+    {
+      Name = "StoredAmmoSlowApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "StoredAmmoSlowApplicator"
+    }
+    {
+      Name = "RushRuptureWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "RushRuptureProjectile"
+    }
+	
+    {
+      Name = "MarkRuptureApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  Effects = [
+
+		{
+			Name = "MarkRuptureTarget"
+			Duration = 10.0
+            Type = "DAMAGE_OVER_TIME"
+			Modifier = 0
+			Active = true
+			TimeModifierFraction = 0
+			FrontFx = "null"
+			BackFx = "null"
+            Stacks = true
+			MaxStacks = 100
+            ExtendDurationOnReapply = false
+		}
+	  ]
+	}	
+    {
+      Name = "FistDetonationWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      FireSound = "/SFX/StabSplatterSmall"
+      Projectile = "FistDetonationProjectile"
+    }
+    {
+      Name = "DemeterMaxChill"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DemeterMaxChill"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+	{
+      Name = "ChillRetaliate"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ChillRetaliate"
+      ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SetCompleteAngleOnFire = true,
+    }
+    {
+      Name = "DemeterChillKill"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DemeterChillKill"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+    {
+      Name = "DemeterWorldChill"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      Effect = {
+        Name = "DemeterWorldChill"
+        Duration = 100
+        Active = true
+        TimeModifierFraction = 0
+        ExpiringRapidFlashThreshold = 1.5
+        ElapsedTimeMultiplier = 1.0
+
+          IgnoreName = "_PlayerUnit"
+          Type = "DAMAGE_OVER_TIME"
+          Amount = 0.0
+          Cooldown = 0.5
+      }
+    }
+    {
+      Name = "DemeterSuper"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DemeterSuper"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+	{
+      Name = "DemeterMaxSuper"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DemeterMaxSuper"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+	{
+      Name = "GuanYuFireworks"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GuanYuFireworksSpawner"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      NumProjectiles = 1
+    }
+    {
+      Name = "ZeusLegendaryWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningSpark"
+      ClipSize = 2
+      ClipRegenInterval = 0.5
+      FullClipRegen = false
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "PoseidonSurfWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "RAM"
+      SelfVelocity = 1200
+      SelfVelocityCap = 1200
+      RamTotalDistance = 0
+      RamDistanceInterval = 50
+      RamReappliesVelocity = true
+      Duration = 0
+      FireEndGraphic = "ZagreusDash"
+      FireGraphic = "ZagreusWaterSuper"
+      FireFx = "null"
+      ChargeTime = 0
+      Projectile = "WaterBlastRam"
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      UseTargetAngle = false
+      BlockMoveInput = true
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkDetonateAtEndpoint = true
+      BlinkNumGhosts = 3
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+	  ClearWeaponFireRequestOnFire = "RushWeapon"
+	  PriorityFireRequest = true
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "PoseidonStun"
+          Duration = 100
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          Cancelable = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "PoseidonBubble"
+          Type = "INVULNERABLE"
+          Duration = 100
+          Modifier = 1.0
+          CanAffectInvulnerable = true
+          Active = true
+          FrontFx = "Invincibubble_Zag_Loop"
+        }
+      ]
+    }
+    {
+      Name = "AresSurgeWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "RAM"
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      RamTotalDistance = 0
+      RamDistanceInterval = 0
+      RamReappliesVelocity = false
+      FireEndGraphic = "ZagreusDash"
+      FireGraphic = "AresBladeSpinInSuper"
+      FireFx = "null"
+      ChargeTime = 0
+      Projectile = "AresInvisibleAoE"
+      ProjectileInterval = 0.1
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      UseTargetAngle = false
+      BlockMoveInput = true
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkDetonateAtEndpoint = true
+      BlinkNumGhosts = 3
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "AresStun"
+          Duration = 100
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          Cancelable = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresRotation"
+
+          Duration = 100
+          RotationMultiplier = 0.005
+          Active = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresSpeed"
+          Type = "SPEED"
+          Duration = 100
+          Modifier = 1.5
+          Active = true
+          ScaleFxToProjectileRadius = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresBubble"
+          Type = "INVULNERABLE"
+          Duration = 100
+          Modifier = 1.0
+          CanAffectInvulnerable = true
+          Active = true
+        }
+        {
+          Trigger = "Fire"
+          Name = "AresForce"
+          ImmuneToForce = true
+          Duration = 100
+          CanAffectInvulnerable = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "SwordParryBlink"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      Duration = 0.3
+      FireEndGraphic = "null"
+      FireGraphic = "null"
+      FireFx = "null"
+      ChargeTime = 0
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      UseTargetAngle = false
+      BlockMoveInput = true
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkDetonateAtEndpoint = true
+      BlinkNumGhosts = 3
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+    ClearWeaponFireRequestOnFire = "RushWeapon"
+      Effects = [
+        {
+          Trigger = "Fire"
+          Name = "PoseidonStun"
+          Duration = 100
+          DisableMove = false
+          DisableRotate = false
+          DisableAttack = true
+          Cancelable = false
+        }
+        {
+          Trigger = "Fire"
+          Name = "PoseidonBubble"
+          Type = "INVULNERABLE"
+          Duration = 100
+          Modifier = 1.0
+          CanAffectInvulnerable = true
+          Active = true
+          FrontFx = "Invincibubble_Zag_Loop"
+        }
+      ]
+    }
+    {
+      Name = "AresRetaliate"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AresRetaliate"
+      FireSound = "/SFX/BurnDamageSizzle"
+  	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "GunSlowWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GunSlowWeapon"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  SilentImpact = true
+    }
+    {
+      Name = "GunVulnerabilityWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GunVulnerabilityWeapon"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  SilentImpact = true
+    }
+    {
+      Name = "GunBombWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GunBombWeapon"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "GunBombImmolation"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "GunBombImmolation"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "SpearThrowImmolation"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "SpearThrowImmolation"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "EmptyClipBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "EmptyClipBlast"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CriticalStunApplier"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "CriticalStunApplier"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "PoseidonCollisionBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "PoseidonCollisionBlast"
+	  ClipSize = 2
+	  ClipRegenInterval = 0.2
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "GunReloadSelf"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "ZagreusSelfReload"
+        Duration = 0.4
+        DisableMove = true
+        DisableRotate = true
+        DisableAttack = false
+        Active = true
+        CanAffectInvulnerable = true
+        FrontFx = "null"
+        Cancelable = true
+      }
+    }
+    {
+      Name = "ManualReloadEffectApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "ManualReloadBonus"
+        Duration = 1000.0
+        CanAffectInvulnerable = true
+        FrontFx = "GunManualReloadTraitFx"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+	{
+      Name = "AmmoWaveEffectApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "AmmoWaveActive"
+        Duration = 3.0
+        CanAffectInvulnerable = true
+        FrontFx = "GrenadeSelfDamageOutputFx"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+	{
+      Name = "SwordWeaponWave"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "PlayerWaveWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 85
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      SelfVelocity = -100
+      NumProjectiles = 1
+    }
+	{
+      Name = "SwordThrustWave"
+      InheritFrom = "1_BaseMagicWeapon"
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      Type = "GUN"
+      Projectile = "SwordThrustWave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 85
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      SelfVelocity = 0
+      NumProjectiles = 1
+    }
+    {
+      Name = "SwordNovaWave"
+      InheritFrom = "1_BaseMagicWeapon"
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      Type = "GUN"
+      Projectile = "SwordNovaWave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 85
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = true
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      SelfVelocity = 0
+      NumProjectiles = 4
+      ProjectileAngleOffset = 90
+      ChargeTime = 0.2
+    }
+    {
+      Name = "FistNovaWave"
+      InheritFrom = "1_BaseMagicWeapon"
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      Type = "GUN"
+      Projectile = "FistNovaWave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = true
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      SelfVelocity = 0
+      NumProjectiles = 4
+      ProjectileAngleStartOffset = 0
+      ProjectileAngleOffset = 90
+      ProjectileInterval = 0.02
+      ChargeTime = 0.42
+    }
+    {
+      Name = "MaxChargeBowWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "MaxChargeBowWeapon"
+      BarrelLength = 0
+    }
+    {
+      Name = "ChargeBowWeapon1"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ChargeBowWeapon1"
+      BarrelLength = 0
+    }
+    {
+      Name = "FistWeaponLandAreaAttack"
+      InheritFrom = "1_BaseMagicWeapon"
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      Type = "GUN"
+      Projectile = "FistWeaponLandAreaAttack"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = true
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      SelfVelocity = 0
+      ChargeTime = 0.42
+
+      Effects = [
+        {
+          Name = "LandDisable"
+          DurationFrames = 2
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+        }
+      ]
+    }
+	{
+      Name = "LoadAmmoApplicator"
+      InheritFrom = "RangedWeapon"
+      FireFx = "BowLoadAmmoFx"
+	  Projectile = "null"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "null"
+      FireGraphic = "null"
+	  SelfVelocity = 0
+      ChargeRangeMultiplier = 1.0
+      ChargeSpeedMultiplier = 1.0
+      ChargeCancelGraphic = "null"
+      ChargeFinishFx = "null"
+      Cooldown = 0.1
+      ChargeTimeFrames = 0
+	   ShareAmmoWeapon = "RangedWeapon"
+      IgnoreOwnerAttackDisabled = true
+	  AllowMultiFireRequest = true
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      LockTriggerForCharge = false
+      AllowExternalForceRelease = false
+      FireOnRelease = false
+      CanCancelDisables = false
+      SetCompleteAngleOnFire = false
+	  Effects = []
+    }
+	{
+      Name = "SelfLoadAmmoApplicator"
+      InheritFrom = "LoadAmmoApplicator"
+	     Projectile = "null"
+      Effects =
+	  [
+	    {
+          Name = "AspectHyperArmor"
+          Type = "DAMAGE_TAKEN"
+          Duration = 5
+          Modifier = 1.0
+          FrontFx = "HyperArmorLoop"
+          BackFx = "null"
+          Active = false
+          FlashFrontFxWhenExpiring = true
+          FlashBackFxWhenExpiring = true
+          ImmuneToForce = true
+          ClearOnAttack = false
+        }
+	  ]
+	}
+	{
+      Name = "SwordParryRecall"
+      InheritFrom = "1_BaseMagicWeapon"
+      Control = "Attack3"
+	  SwapOnFire = "SwordParry"
+	  FireFx = "null"
+	  Projectile = "null"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "null"
+      FireEndGraphic = "null"
+      FireGraphic = "ZagreusLanding"
+	  SelfVelocity = 0
+	  ControlWindow = 0.68
+      ChargeRangeMultiplier = 1.0
+      ChargeSpeedMultiplier = 1.0
+      ChargeCancelGraphic = "null"
+      ChargeFinishFx = "null"
+      Cooldown = 0.1
+      ChargeTimeFrames = 0
+      IgnoreOwnerAttackDisabled = true
+	  CanCancelDisables = false
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      LockTriggerForCharge = false
+      AllowExternalForceRelease = false
+      FireOnRelease = false
+      SetCompleteAngleOnFire = false
+	  AcceptTriggerLockRequests = true
+	  LockTriggerTransferFromOnSwap = true
+	  Effects = [
+        {
+          Name = "SwordParryRecallDisable"
+          DurationFrames = 12
+          DisableMove = true
+          DisableRotate = true
+          DisableAttack = true
+          RequestTriggerLock = true
+          Cancelable = false
+        }
+
+    ]
+    }
+    {
+      Name = "ConsecrationDefense"
+      InheritFrom = "1_BaseMagicWeapon"
+	  Projectile = "null"
+      ShowFreeAimLine = false
+      AimLineAnimation = "null"
+      ChargeStartAnimation = "null"
+      FireGraphic = "null"
+	  SelfVelocity = 0
+      ChargeRangeMultiplier = 1.0
+      ChargeSpeedMultiplier = 1.0
+      ChargeCancelGraphic = "null"
+      ChargeFinishFx = "null"
+      Cooldown = 0.1
+      ChargeTimeFrames = 0
+      IgnoreOwnerAttackDisabled = true
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      LockTriggerForCharge = false
+      AllowExternalForceRelease = false
+      FireOnRelease = false
+      CanCancelDisables = false
+      SetCompleteAngleOnFire = false
+      Effects = [
+        {
+          Name = "MagicShieldRetaliateInvincible"
+          Type = "INVULNERABLE"
+          Duration = 1.0
+          Modifier = 1.0
+          FrontFx = "AthenaInvincibleFront"
+          BackFx = "AthenaInvincibleBack"
+          Active = true
+        }
+      ]
+    }
+	{
+	  Name = "ConsecrationField"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ConsecrationField"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  ActiveProjectileCap = 1
+	}
+  {
+    Name = "BowSlowField"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ConsecrationField"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    ActiveProjectileCap = 1
+  }
+    {
+      Name = "BlockEmpowerApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+		Effect = [
+		{
+		Name = "BlockDamageBonus"
+		Type = "DAMAGE_OUTPUT"
+		Modifier = 1.0
+		CanAffectInvulnerable = true
+		FrontFx = "ShieldEmpowerFrontB"
+    BackFx = "ShieldEmpowerBackB"
+		FlashFrontFxWhenExpiring = true
+		OnlyAffectName = "_PlayerUnit"
+		}
+		{
+			Name = "BlockMoveSpeed"
+			Type = "SPEED"
+			Modifier = 1.0
+			Active = true
+			CanAffectInvulnerable = true
+		}
+		]
+    }
+    {
+      Name = "ShieldThrowEmpowerApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  Effect = {
+        Name = "ShieldThrowDamageBonus"
+		    Modifier = 0
+        CanAffectInvulnerable = true
+        FrontFx = "ShieldEmpowerFront"
+        BackFx = "ShieldEmpowerBack"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+    {
+      Name = "PerfectDashEmpowerApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+	     Effects =
+       [
+        {
+        Name = "PerfectDashDamageBonus"
+        Type = "DAMAGE_OUTPUT"
+		Modifier = 1
+		Duration = 2.0
+        CanAffectInvulnerable = true
+        FrontFx = "RuthlessDashFx"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+        ExtendDurationOnReapply = true
+          Active = true
+        }
+
+        {
+          Name = "PerfectDashDodgeBonus"
+          OnlyAffectName = "_PlayerUnit"
+          ExtendDurationOnReapply = true
+          Duration = 2.0
+          DodgeChance = 0.5
+          Active = true
+        }
+      ]
+    }
+
+	{
+      Name = "ShieldThrowProjectileBonusApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  Effect = {
+        Name = "ShieldThrowProjectileBonus"
+		Modifier = 0
+		Duration = 5
+        CanAffectInvulnerable = true
+        FrontFx = "ChaosShieldBonusFx"
+        FlashFrontFxWhenExpiring = true
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+    {
+      Name = "EurydiceDefenseApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  Effect = {
+        Name = "EurydiceDefenseEffect"
+		Modifier = 1.0
+		Duration = 1000
+        CanAffectInvulnerable = true
+        FrontFx = "EurydiceDefenseFront"
+		BackFx = null
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+    {
+      Name = "AthenaDefenseApplicator"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  Effect = {
+        Name = "AthenaDefenseEffect"
+		Modifier = 1.0
+		Duration = 1000
+        CanAffectInvulnerable = true
+          FrontFx = "AthenaProtectionFront-ShieldHitTrait"
+          BackFx = "AthenaProtectionBack-ShieldHitTrait"
+        OnlyAffectName = "_PlayerUnit"
+      }
+    }
+    {
+      Name = "SpawnDelayDamage"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "SpawnDelayDamage"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DionysusOnHit"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DionysusOnHit"
+      NumProjectiles = 6
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.1
+    }
+    {
+      Name = "ArtemisMaxShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ArtemisSuperProjectile"
+      FullyAutomatic = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 32
+      AutoLock = true
+      AutoLockRange = 1000
+      AutoLockArcDistance = 75
+      AutoLockWithMouse = false
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLineNoMovement"
+      ChargeStartAnimation = "ZagreusRangedWeapon_Charge"
+      FireGraphic = "ZagreusRangedWeapon_Fire"
+      LockTriggerForCharge = true
+      NumProjectiles = 10
+      ProjectileAngleOffset = 40
+      ProjectileOffsetStart = "LEFT"
+      ProjectileInterval = 0.03
+    }
+    {
+      Name = "ArtemisShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ArtemisSuperProjectile"
+      FullyAutomatic = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      BarrelLength = 32
+      AutoLock = true
+      AutoLockRange = 1000
+      AutoLockArcDistance = 75
+      AutoLockWithMouse = false
+      ShowFreeAimLine = true
+      AimLineAnimation = "AuraAimLineNoMovement"
+      ChargeStartAnimation = "ZagreusRangedWeapon_Charge"
+      FireGraphic = "ZagreusRangedWeapon_Fire"
+      LockTriggerForCharge = true
+      NumProjectiles = 1
+      ProjectileAngleOffset = 40
+      ProjectileOffsetStart = "LEFT"
+      ProjectileInterval = 0.03
+    }
+    {
+      Name = "ThanatosWeapon2"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ThanatosWeapon2"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "WrathBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.0
+      Projectile = "WrathBlast"
+    }
+    {
+      Name = "AphroditeShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.0
+      Projectile = "AphroditeShoutWeapon"
+      ProjectileAngleOffset = 10
+      NumProjectiles = 36
+      ProjectileSpacing = 0
+      ProjectileInterval = 0.03
+      ProjectileOffsetStart = "LEFT"
+      BarrelLength = 0
+    }
+    {
+      Name = "SuperMoveRadialStun"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.0
+      Projectile = "SuperMoveRadialStun"
+    }
+    {
+      Name = "WaterBlastDash"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.2
+      Projectile = "WaterBlastDash"
+      NumProjectiles = 5
+      ProjectileSpacing = 32
+      FireFx = "PoseidonDashTrail"
+      UseTargetAngle = false
+      Spread = 6
+      ProjectileAngleOffset = 1
+    }
+    {
+      Name = "PoseidonShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.0
+      Projectile = "PoseidonShoutWeapon"
+      NumProjectiles = 20
+      FireFx = "PoseidonDashTrail"
+      UseTargetAngle = true
+      Spread = 6
+      ProjectileAngleOffset = 0
+      ProjectileSpacing = 100
+      BarrelLength = 0
+    }
+    {
+      Name = "AreaWeaken"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.0
+      Projectile = "AreaWeaken"
+    }
+    {
+      Name = "AreaWeakenAphrodite"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AreaWeakenAphrodite"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.4
+    }
+    {
+      Name = "AphroditeWalkingRetaliate"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AphroditeWalkingRetaliate"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.1
+    }
+    {
+      Name = "DeathAreaWeakenAphrodite"
+      InheritFrom = "AreaWeakenAphrodite"
+      Projectile = "DeathAreaWeakenAphrodite"
+    }
+    {
+      Name = "AphroditeDash"
+      InheritFrom = "AreaWeaken"
+      Projectile = "AphroditeDashProjectile"
+    }
+    {
+      Name = "FistSpecialMiniDash"
+      InheritFrom = "AreaWeaken"
+      Type = "BLINK"
+      Projectile = "FistSpecialMiniDash"
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkNumGhosts = 3
+      BlinkCameraLerpTime = 0
+      FireGraphic = "null"
+      UnblockedBlinkFx = "null"
+      ChargeTime = 0
+      WeaponRange = 800
+      BlinkMaxRange = 0
+	  BlinkDuration = 0.2
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      BlinkDetonateAtEndpoint = true
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+	  SetCompleteAngleOnFire = true
+	  AllowMultiFireRequest = true
+    }
+    {
+      Name = "SwordSpecialMiniDash"
+      InheritFrom = "AreaWeaken"
+      Type = "BLINK"
+      Projectile = "SwordSpecialMiniDash"
+      CanCancelDisables = true
+      CanCancelOwnDisables = true
+      BlinkNumGhosts = 3
+      BlinkCameraLerpTime = 0
+      FireGraphic = "null"
+      UnblockedBlinkFx = "null"
+      ChargeTime = 0
+      WeaponRange = 800
+      BlinkMaxRange = 0
+	  BlinkDuration = 0.2
+      ChargeFx = "null"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      BlinkDetonateAtEndpoint = true
+      BlinkGhostAnimation = "null"
+      CheckMovementReactionDistance = 150
+	  SetCompleteAngleOnFire = true
+	  AllowMultiFireRequest = false
+      FireSound = "/SFX/Player Sounds/HermesWhooshUpgradeSFX"
+      Effect =
+	  [
+
+         {
+          Name = "RushWeaponInvulnerable"
+          Type = "INVULNERABLE"
+          Duration = 0.2
+          Modifier = 1.0
+          NoUnitCollision = true
+          Active = true
+          CanAffectInvulnerable = true
+          Cancelable = true
+        }
+        {
+          Name = "RushWeaponImmuneToForce"
+          ImmuneToForce = true
+          Duration = 0.2
+          Active = true
+          CanAffectInvulnerable = true
+          Cancelable = true
+        }
+	  ]
+    }
+    {
+      Name = "AphroditeBackDash"
+      InheritFrom = "AreaWeaken"
+      Projectile = "AphroditeDashProjectile"
+      SelfVelocity = -900
+    }
+
+    {
+      Name = "FistKillNova"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "FistKillNova"
+      ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.3
+    }
+
+	{
+      Name = "FistSpecialVacuum"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "FistSpecialVacuum"
+      ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SetCompleteAngleOnFire = true,
+    }
+
+    {
+      Name = "LightningStrikeX"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningStrikeX"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "/SFX/Player Sounds/ZeusLightningWrathImpact"
+    }
+    {
+      Name = "LightningStrikeSecondary"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningStrikeSecondary"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "/SFX/Player Sounds/ZeusLightningWrathImpact"
+    }
+    {
+      Name = "LightningStrikeCrit"
+      InheritFrom = "LightningStrikeSecondary"
+      Type = "GUN"
+      Projectile = "LightningStrikeCrit"
+      BarrelLength = 0
+    }
+    {
+      Name = "LightningStrikeImpact"
+      InheritFrom = "LightningStrikeSecondary"
+      Type = "GUN"
+      Projectile = "LightningStrikeImpact"
+      BarrelLength = 0
+      Cooldown = 0.167
+    }
+    {
+      Name = "AresShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AresShoutWeapon"
+      BarrelLength = 0
+    }
+    {
+      Name = "DionysusShoutWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DionysusShoutProjectile"
+      BarrelLength = 0
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "DionysusAmmoWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DionysusAmmoProjectile"
+      BarrelLength = 0
+      Spread = 0
+	  FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "null"
+    }
+    {
+      Name = "CollisionTouchWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "CollisionTouchWeapon"
+      BarrelLength = 0
+      FireSound = "null"
+      NumProjectiles = 1
+      Cooldown = 0.05
+      SilentImpact = true
+    }
+     {
+      Name = "AreaSlowWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AreaSlowWeapon"
+      BarrelLength = 0
+      FireSound = "null"
+      NumProjectiles = 1
+      Cooldown = 0.05
+      SilentImpact = true
+    }
+     {
+      Name = "RushAreaSlowWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "RushAreaSlowWeapon"
+      BarrelLength = 0
+      FireSound = "null"
+      NumProjectiles = 1
+      Cooldown = 0.05
+      SilentImpact = true
+    }
+    {
+      Name = "PoseidonAphroditeTouchWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "PoseidonAphroditeTouchWeapon"
+      BarrelLength = 0
+      FireSound = "null"
+      NumProjectiles = 1
+      CooldownMin = 0.1
+      SilentImpact = true
+    }
+    {
+      Name = "DionysusDeathWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "DionysusDeathField"
+      BarrelLength = 0
+      Spread = 0
+      FireSound = "null"
+      ProjectileAngleOffset = 0
+      NumProjectiles = 8
+      ProjectileSpacing = 0
+    }
+    {
+      Name = "LightningDash"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningDash"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "ZeusShieldLoadAmmoStrike"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "ZeusShieldLoadAmmoStrike"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "LightningPerfectDash"
+      InheritFrom = "LightningDash"
+      Type = "GUN"
+      Projectile = "LightningPerfectDash"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "LightningStrikeRetaliate"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningStrikeRetaliate"
+	  ClearFireRequestOnChargeCancel = false
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  AllowMultiFireRequest = true
+      FireSound = "/SFX/Player Sounds/ZeusLightningImpact"
+    }
+    {
+      Name = "ZeusAttackBolt"
+      InheritFrom = "LightningStrikeRetaliate"
+      Type = "GUN"
+      Projectile = "ZeusAttackBolt"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "ZeusAmmoWeapon"
+      InheritFrom = "LightningStrikeX"
+      Type = "GUN"
+      Projectile = "ZeusAmmoProjectile"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "ZeusDionysusCloudStrike"
+      InheritFrom = "LightningStrikeX"
+      Type = "GUN"
+      Projectile = "ZeusDionysusCloudStrike"
+      BarrelLength = 0
+      UseTargetAngle = false
+      Spread = 0
+      FireSound = "null"
+    }
+    {
+      Name = "AphroditeCharmWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AphroditeCharmWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+	  AcceptTriggerLockRequests = false
+	  IgnoreTriggerLockDuringCooldown = true
+	  Cooldown = 4.0
+    }
+    {
+      Name = "MagicDashShield"
+    }
+    {
+      Name = "MagicShield"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "MagicShield"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      Effects = [
+        {
+          Name = "MagicShieldReflection"
+          Duration = 3.15
+          ReflectAddition = 1.0
+          Active = true
+          FrontFx = "SpeedFront"
+        }
+        {
+          Name = "MagicShieldInvincible"
+          Type = "INVULNERABLE"
+          Duration = 3.15
+          Modifier = 1.0
+          FrontFx = "Invincibubble"
+          BackFx = "StatusIconInvincible"
+          Active = true
+          FlashFrontFxWhenExpiring = true
+          FlashBackFxWhenExpiring = true
+        }
+        {
+          Name = "MagicShieldDamage"
+          Type = "DAMAGE_OUTPUT"
+          Duration = 3.15
+          Modifier = 1.5
+          Active = false
+          FrontFx = "null"
+        }
+        {
+          Name = "AthenaShieldBlast"
+          Type = "WEAPON_FIRE"
+          Duration = 3.15
+          Active = true
+          FrontFx = "StatusIconInvincible"
+          FlashFrontFxWhenExpiring = true
+        }
+      ]
+    }
+    {
+      Name = "BasicSuperMove"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      BarrelLength = 0
+      Spread = 0
+      FireSound = "null"
+      Effects = [
+        {
+          Name = "SuperMoveSpeed"
+          Type = "SPEED"
+          Duration = 0.2
+          Modifier = 1.0
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "ArtemisSuperMoveDamage"
+          Type = "DAMAGE_OUTPUT"
+          Duration = 0.2
+          Modifier = 1.0
+          Active = true
+          FrontFx = "null"
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SuperMoveReflection"
+          Duration = 0.2
+          ReflectAddition = 1.0
+          Active = true
+          FrontFx = "null"
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SuperMoveInvulnerability"
+          Type = "INVULNERABLE"
+          Duration = 0.2
+          Modifier = 1.0
+          FrontFx = "Invincibubble"
+          BackFx = "StatusIconInvincible"
+          Active = true
+          CanAffectInvulnerable = true
+          FlashFrontFxWhenExpiring = true
+          FlashBackFxWhenExpiring = true
+        }
+      ]
+    }
+    {
+      Name = "SelfSuperMove"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      BarrelLength = 0
+      Spread = 0
+      FireSound = "null"
+      Effects = [
+        {
+          Name = "SuperMoveSpeed"
+          Type = "SPEED"
+          Duration = 7
+          Modifier = 1.0
+          Active = true
+          CanAffectInvulnerable = true
+        }
+        {
+          Name = "SuperMoveReflection"
+          Duration = 7
+          ReflectAddition = 1.0
+          Active = true
+          FrontFx = "null"
+          CanAffectInvulnerable = true
+        }
+      ]
+    }
+    {
+      Name = "MagicShieldThanatos"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "MagicShieldInvincible"
+        Type = "INVULNERABLE"
+        Duration = 10.0
+        Modifier = 1.0
+        FrontFx = "Invincibubble"
+        BackFx = "StatusIconInvincible"
+        Active = true
+        FlashFrontFxWhenExpiring = true
+        FlashBackFxWhenExpiring = true
+      }
+    }
+    {
+      Name = "MagicShieldDash"
+      InheritFrom = "MagicShield"
+      Projectile = "MagicShieldDash"
+      Effects = []
+    }
+    {
+      Name = "MagicShieldAttack"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "MagicShieldAttack"
+      FullyAutomatic = true
+      AutoLock = true
+	  FireOnRelease = false
+      IgnoreOwnerAttackDisabled = true
+	  IgnoreTriggerLockDuringCooldown = true
+      Effect = {
+        Name = "MagicShieldReflect"
+        Type = "PROJECTILE_DEFENSE"
+        Duration = 0.2
+        Range = 150
+        Deflect = true
+        Active = true
+        AngleCoverage = 80
+      }
+    }
+
+    {
+      Name = "ShieldBarrier"
+      InheritFrom = "MagicShieldAttack"
+      Projectile = "null"
+      Cooldown = 7.0
+	  ClearFireRequestOnChargeCancel = false
+      Effect = {
+        Name = "MagicShieldWeaponInvincible"
+        Type = "INVULNERABLE"
+		CanAffectInvulnerable = true
+        Duration = 1.0
+        Modifier = 1.0
+        FrontFx = "Invincibubble_Zag_Loop_ShieldBarrier"
+        BackFx = "RadialNovaRepulsion"
+        Active = true
+      }
+    }
+    {
+      Name = "ShieldRevengeEmpower"
+      InheritFrom = "MagicShieldAttack"
+      Projectile = "null"
+      Cooldown = 0.65
+      Effect = {
+        Name = "ShieldRevengeEmpower"
+        Type = "DAMAGE_OUTPUT"
+        CanAffectInvulnerable = true
+        Duration = 3.0
+        Modifier = 2.0
+        FrontFx = "Invincibubble_Zag_Loop"
+        BackFx = "RadialNovaRepulsion"
+        Active = true
+      }
+    }
+    {
+      Name = "MagicShieldRetaliate"
+      InheritFrom = "MagicShieldAttack"
+      Projectile = "MagicShieldRetaliate"
+	  ClearFireRequestOnChargeCancel = false
+      Cooldown = 1.0
+      Effects = [
+        {
+          Name = "MagicShieldRetaliateReflection"
+          Duration = 0.5
+          ReflectAddition = 1.0
+          Active = true
+        }
+        {
+          Name = "MagicShieldRetaliateInvincible"
+          Type = "INVULNERABLE"
+          Duration = 0.5
+          Modifier = 1.0
+          FrontFx = "AthenaInvincibleFront"
+          BackFx = "AthenaInvincibleBack"
+          Active = true
+        }
+        {
+          Name = "MagicShieldRetaliateReflect"
+          Type = "PROJECTILE_DEFENSE"
+          Duration = 0.5
+          Range = 200
+          Deflect = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "LastStandShield"
+      InheritFrom = "MagicShield"
+      Projectile = "LastStandShield"
+      Effects = [
+        {
+          Name = "MagicShieldLastStandReflection"
+          Duration = 7
+          ReflectAddition = 1.0
+          Active = true
+          FrontFx = "null"
+        }
+        {
+          Name = "MagicShieldLastStand"
+          Type = "DAMAGE_TAKEN"
+          Duration = 7
+          Modifier = 0.01
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          Active = true
+        }
+        {
+          Name = "MagicShieldLastStandInvincible"
+          Type = "INVULNERABLE"
+          Duration = 7
+          Modifier = 1.0
+          FrontFx = "AthenaInvincibleFront"
+          BackFx = "AthenaInvincibleBack"
+          Active = true
+        }
+        {
+          Name = "AthenaShieldBlast"
+          Type = "WEAPON_FIRE"
+          Duration = 7
+          Active = true
+          FrontFx = "StatusIconInvincible"
+          FlashFrontFxWhenExpiring = true
+        }
+      ]
+    }
+    {
+      Name = "LastStandMetaUpgradeShield"
+      InheritFrom = "MagicShield"
+      Projectile = "LastStandMetaUpgradeShield"
+      Effects = [
+        {
+          Name = "MagicShield"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1.5
+          Modifier = 0.01
+          FrontFx = "null"
+          BackFx = "null"
+          Active = true
+        }
+        {
+          Name = "MagicShieldInvincible"
+          Type = "INVULNERABLE"
+          Duration = 1.5
+          Modifier = 1.0
+          Active = true
+        }
+		{
+			Name = "LastStandDamageBonus"
+			Type = "DAMAGE_OUTPUT"
+			Duration = 3600
+			Modifier = 1
+			Active = false
+			FrontFx = "StunnedFrontAres"
+			BackFx = "StunnedBackAres"
+		}
+      ]
+    }
+    {
+      Name = "LastStandMetaUpgradeWrath"
+      InheritFrom = "LastStandMetaUpgradeShield"
+    }
+    {
+      Name = "LastStandReincarnateShield"
+      InheritFrom = "MagicShield"
+      Projectile = "LastStandReincarnateShield"
+      Effects = [
+        {
+          Name = "MagicShield"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1.5
+          Modifier = 0.01
+          FrontFx = "null"
+          BackFx = "null"
+          Active = true
+        }
+        {
+          Name = "MagicShieldInvincible"
+          Type = "INVULNERABLE"
+          Duration = 1.5
+          Modifier = 1.0
+          Active = true
+        }
+		{
+			Name = "LastStandDamageBonus"
+			Type = "DAMAGE_OUTPUT"
+			Duration = 3600
+			Modifier = 1
+			Active = false
+			FrontFx = "StunnedFrontAres"
+			BackFx = "StunnedBackAres"
+		}
+      ]
+    }
+    {
+      Name = "AthenaShoutWeapon"
+      InheritFrom = "MagicShield"
+      Projectile = "MagicShieldDash"
+      Effects = [
+        {
+          Name = "MagicShieldShoutReflection"
+          Duration = 1000
+          ReflectAddition = 1.0
+          Active = true
+          FrontFx = "null"
+        }
+        {
+          Name = "MagicShieldShout"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1000
+          Modifier = 0.01
+          FrontFx = "AthenaProtectionFront"
+          BackFx = "AthenaProtectionBack"
+          Active = true
+        }
+        {
+          Name = "MagicShieldShoutInvincible"
+          Type = "INVULNERABLE"
+          Duration = 1000
+          Modifier = 1.0
+          FrontFx = "AthenaInvincibleFrontSuper"
+          BackFx = "AthenaInvincibleBack"
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HadesShoutWeapon"
+      InheritFrom = "MagicShield"
+      Projectile = "null"
+      Effects = [
+        {
+          Name = "HadesShieldShout"
+          Type = "DAMAGE_TAKEN"
+          Duration = 1000
+          Modifier = 0.01
+          BackFx = "HadesInvisibilityStatus"
+          Active = true
+        }
+        {
+          Name = "HadesShieldShoutSpeed"
+		  Type = "SPEED"
+          Duration = 1000
+          Modifier = 1
+          Active = true
+        }
+        {
+          Name = "HadesShieldShoutInvincible"
+          Type = "INVULNERABLE"
+          Duration = 1000
+          Modifier = 1.0
+          Active = true
+        }
+	  ]
+    }
+    {
+      Name = "ArtemisShoutBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "ArtemisShoutBuff"
+      Effect = {
+        Name = "ShoutCritChance"
+        Duration = 0
+        CritAddition = 1
+        Active = true
+        FrontFx = "ArtemisCritSparkles"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "ArtemisReflectBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "ArtemisReflectBuff"
+      Effect = {
+        Name = "ReflectCritChance"
+        Duration = 0
+        CritAddition = 1
+        Active = true
+        FrontFx = "ArtemisCritSparkles"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "AresShoutBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "AresShoutBuff"
+      Effect = {
+        Name = "ShoutDamageBonus"
+        Type = "DAMAGE_OUTPUT"
+        Duration = 0
+        Modifier = 1
+        Active = true
+        FrontFx = "ZeusShoutBuffFrontFx"
+        BackFx = "ZeusShoutBuffBackFx"
+      }
+    }
+    {
+      Name = "AresKillBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "AresKillBuff"
+      Effect = {
+        Name = "KillDamageBonus"
+        Duration = 100
+        Modifier = 1.5
+        Active = true
+        FrontFx = "AresKillDamageBuffFx"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "EncounterStartBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "EncounterStartBuff"
+      Effect = {
+        Name = "EncounterStartBuff"
+        Duration = 100
+        Modifier = 0
+        Active = true
+        FrontFx = "PoseidonEncounterStartBuff"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "HadesBreakStealthBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "null"
+      Effect = {
+        Name = "HadesBreakStealthBuff"
+        Type = "DAMAGE_OUTPUT"
+		Duration = 100
+        Modifier = 1
+        Active = true
+        FrontFx = "HadesBreakStealthBuffFx"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "FistKillBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "null"
+      Effect = {
+        Name = "FistKillBonus"
+        Duration = 0.1
+        Modifier = 1.0
+        Active = true
+        FrontFx = "null"
+        BackFx = "null"
+      }
+    }
+    {
+      Name = "PoseidonKillBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "PoseidonKillBuff"
+      Effect = {
+        Name = "KillDefenseBonus"
+        Type = "DAMAGE_TAKEN"
+        Duration = 0
+        Modifier = 0.7
+        Active = true
+        FrontFx = "StunnedFrontPoseidon"
+        BackFx = "StunnedFrontPoseidon"
+      }
+    }
+    {
+      Name = "HermesWrathBuff"
+      InheritFrom = "MagicShield"
+      Projectile = "null"
+      Effects =
+	  [
+		{
+			Name = "SpeedBonus"
+			Type = "SPEED"
+			Duration = 0
+			Modifier = 1
+			Active = true
+		}
+		{
+			Name = "DodgeBonus"
+			Duration = 0
+			DodgeChance = 0
+			Active = true
+			HaltOnEnd = true
+			BackFx = "HermesRushSpeedTrail"
+		}
+	  ]
+	}
+	{
+      Name = "SpearWeaponThrowInvisibleReturn"
+	  InheritFrom = "1_BaseMagicWeapon"
+      FireFromObstacle = "SpearReturnPoint"
+	  DestroyTargetedObstacle = true
+	  SwapOnFire = "SpearWeaponThrow"
+      AddControlOnFire = "SpearWeapon"
+	  AddControlOnFire2 = "SpearWeaponSpin"
+    }
+    {
+      Name = "SpearWeaponSpinExplosiveChargeWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.95
+      Projectile = "SpearWeaponSpinExplosiveChargeWeapon"
+    }
+    {
+      Name = "SwordWeaponSpinExplosiveChargeWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.25
+      Projectile = "SwordWeaponSpinExplosiveChargeWeapon"
+    }
+    {
+      Name = "BowWeaponExplosiveChargeWeapon"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 2.0
+      Projectile = "BowWeaponExplosiveChargeWeapon"
+    }
+    {
+      Name = "BowAreaRepulse"
+      InheritFrom = "1_BaseMagicWeapon"
+      FireSound = "/Leftovers/SFX/PlayerProjectileDeflect"      
+      Type = "GUN"
+      Cooldown = 0.1
+      ChargeTime = 0.05
+      Projectile = "BowAreaRepulse"
+    }
+    {
+      Name = "AthenaShieldBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.4
+      Projectile = "AthenaShieldBlast"
+    }
+    {
+      Name = "AthenaShieldAuraBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "AthenaShieldAuraBlast"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 999.0
+      Effect = {
+        Name = "MagicShieldInvincible"
+        Duration = 7
+        FrontFx = "AthenaInvincibleFront"
+        BackFx = "AthenaInvincibleBack"
+      }
+    }
+    {
+      Name = "MagicShieldBlast"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Cooldown = 0.4
+      Projectile = "MagicShieldBlast"
+    }
+
+    {
+      Name = "NPC_FurySister_01_Assist"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "NPC_FurySister_01_Assist"
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      FireFx = "null"
+      NumProjectiles = 7
+      ProjectileInterval = 0.1
+	   ProjectileSpacing = 350
+	  ProjectileOffsetStart = "CENTER"
+    ProjectileAngleOffset = 0
+    ProjectileAngleOffsetScaleY = 0.75,
+    }
+    {
+      Name = "NPC_Achilles_01_Assist"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      FireGraphic = "null"
+      Projectile = "NPC_Achilles_01_Assist"
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      FireFx = "null"
+      NumProjectiles = 1
+      ProjectileInterval = 0.1
+	   ProjectileSpacing = 350
+	  ProjectileOffsetStart = "CENTER"
+    ProjectileAngleOffset = 0
+    ProjectileAngleOffsetScaleY = 0.75,
+    }
+    {
+      Name = "NPC_Patroclus_01_Assist"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "NPC_Patroclus_01_Assist"
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      FireGraphic = "null"
+      FireFx = "null"
+      NumProjectiles = 1
+      ProjectileInterval = 0.1
+	   ProjectileSpacing = 350
+	  ProjectileOffsetStart = "CENTER"
+    ProjectileAngleOffset = 0
+    ProjectileAngleOffsetScaleY = 0.75,
+    }
+    {
+      Name = "NPC_Thanatos_01_Assist"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      Projectile = "NPC_Thanatos_01_Assist"
+      FireSound = "/SFX/ThanatosAOERift"
+	  FireFx = "null"
+    }
+    {
+      Name = "NPC_Sisyphus_01_Assist"
+      InheritFrom = "1_BaseMagicWeapon"
+      Type = "GUN"
+      FireSound = "/Leftovers/SFX/MeteorStrikeQuiet"
+      Projectile = "NPC_Sisyphus_01_Assist"
+	  FireFx = "null"
+    }
+  ]
+}

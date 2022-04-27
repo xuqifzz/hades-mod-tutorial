@@ -1,0 +1,622 @@
+{
+  Units = [
+    
+    {
+      Name = "BaseNPC"
+      AutoLockable = false
+      DisplayInEditor = false
+      Life = 
+      {
+        HitFx = "HitSparkB"
+        HomingEligible = false
+        Invulnerable = true
+        JumpTargetEligible = false
+      }
+      Thing = 
+      {
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "NPCFemaleThinking"
+        Grip = 99999.0
+        SelectionHeight = 240.0
+        SelectionShiftY = -30.0
+        SelectionWidth = 180.0
+        SpeechCapable = true
+        UseBoundsForSortDrawArea = true
+		HighPrioritySfx = true
+        Interact = 
+        {
+          Cooldown = 2.0
+          Distance = 250.0
+          OffsetY = -50.0
+        }
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_3DGhostAlt"
+      InheritFrom = "BaseNPC"
+      CollideWithUnits = false
+      CosmeticRotationSpeed = 360.0
+      DisplayInEditor = true
+      MoveGraphic = "3DGhostAltMove"
+      RotationSpeed = 216000.0
+      Speed = 120.0
+      StartGraphic = "3DGhostAltStart"
+      StopGraphic = "3DGhostAltStop"
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        ProjectilesAlwaysPenetrate = true
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 100.0
+        SuccessDistance = 10.0
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "3DGhostAltIdle"
+        Grip = 0.0
+        SpeechCapable = false
+        Tallness = 135.0
+        Interact = 
+        {
+          Distance = 1.0
+        }
+        Points = [
+          { X = 4 Y = 5 }
+          { X = 21 Y = -4 }
+          { X = 4 Y = -12 }
+          { X = -13 Y = -4 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Achilles_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "AchillesIdle"
+        OffsetZ = 20.0
+        Tallness = 221.0
+        Points = [
+          { X = 4 Y = 26 }
+          { X = 68 Y = -6 }
+          { X = -8 Y = -44 }
+          { X = -72 Y = -12 }
+        ]
+        SubtitleColor = { Red = 0.67 Green = 0.84 Blue = 0.34 }
+      }
+    }
+    
+    {
+      Name = "NPC_Achilles_Story_01"
+      InheritFrom = "NPC_Achilles_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "NPC_Patroclus_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "PatroclusIdle"
+        Tallness = 165.0
+        Points = [
+          { X = 4 Y = 26 }
+          { X = 68 Y = -6 }
+          { X = -8 Y = -44 }
+          { X = -72 Y = -12 }
+        ]
+        SubtitleColor = { Red = 0.43 Green = 0.58 Blue = 0.59 }
+      }
+    }
+    
+    {
+      Name = "NPC_Hypnos_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "HypnosAwakeLoop"
+        OffsetZ = 30.0
+        Tallness = 150.0
+        Points = [
+          { X = 4 Y = 26 }
+          { X = 68 Y = -6 }
+          { X = -8 Y = -44 }
+          { X = -72 Y = -12 }
+        ]
+        SubtitleColor = { Red = 0.44 Green = 0.50 Blue = 0.83 }
+        Using = [
+          { Name = "HypnosIdle" }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Thanatos_01"
+      InheritFrom = "BaseNPC"
+      CosmeticRotationSpeed = 300.0
+      DisplayInEditor = true
+      NoAllegiance = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ThanatosIdleInhouse"
+        Tallness = 170.0
+        Interact = 
+        {
+          Distance = 200.0
+        }
+        Points = [
+          { X = 9 Y = 20 }
+          { X = 41 Y = 3 }
+          { X = 10 Y = -12 }
+          { X = -22 Y = 4 }
+        ]
+        SubtitleColor = { Red = 0.77 Green = 0.64 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "NPC_Thanatos_Story_01"
+      InheritFrom = "NPC_Thanatos_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "NPC_Thanatos_Field_01"
+      InheritFrom = "NPC_Thanatos_01"
+      Acceleration = 250.0
+      Deceleration = 250.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      RotationSpeed = 900.0
+      Speed = 450.0
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 1024.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        Interact = 
+        {
+          Distance = 200.0
+        }
+        EditorOutlineDrawBounds = false
+        Graphic = "ThanatosIdle"
+        Grip = 5000.0
+        ImmuneToForce = true
+        OffsetZ = 10.0
+        Tallness = 215.0
+      }
+    }
+    
+    {
+      Name = "NPC_FurySister_01"
+      InheritFrom = "BaseNPC"
+      CosmeticRotationSpeed = 280.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "FuryIdleInHouse"
+        Grip = 5000.0
+        Tallness = 175.0
+        SubtitleColor = { Red = 0.14 Green = 0.48 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "NPC_FurySister_Story_01"
+      InheritFrom = "NPC_FurySister_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "NPC_Nyx_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "NyxIdle"
+        OffsetZ = 50.0
+        Tallness = 225.0
+        Interact = 
+        {
+          OffsetX = -50.0
+          OffsetY = -40.0
+        }
+        Points = [
+          { X = -87 Y = -54 }
+          { X = -17 Y = 14 }
+          { X = 55 Y = -2 }
+          { X = 93 Y = -59 }
+          { X = 66 Y = -126 }
+          { X = -34 Y = -129 }
+        ]
+        SubtitleColor = { Red = 0.38 Green = 0.24 Blue = 0.85 }
+      }
+    }
+    
+    {
+      Name = "NPC_Nyx_Story_01"
+      InheritFrom = "NPC_Nyx_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Points = [
+          { X = -43 Y = 3 }
+          { X = -8 Y = 24 }
+          { X = 43 Y = 4 }
+          { X = 36 Y = -30 }
+          { X = -2 Y = -41 }
+          { X = -39 Y = -30 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Hades_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Hades_HouseWritingLoop_IdleLoop"
+        Interact = 
+        {
+          Distance = 220.0
+          OffsetX = -130.0
+          OffsetY = 200.0
+        }
+        Points = [
+          { X = -23 Y = 129 }
+          { X = 157 Y = 33 }
+          { X = -5 Y = -43 }
+          { X = -197 Y = 48 }
+        ]
+        SubtitleColor = { Red = 0.83 Green = 0.15 Blue = 0.15 }
+      }
+    }
+    
+    {
+      Name = "NPC_Hades_Story_01"
+      InheritFrom = "NPC_Hades_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HadesHouseStandingIntroIdle"
+        Interact = 
+        {
+          OffsetX = 0.0
+          OffsetY = 100.0
+        }
+        Tallness = 300.0
+        Offset = { X = -40 Y = 0 }
+        Points = [
+          { X = -43 Y = 73 }
+          { X = 73 Y = 13 }
+          { X = -29 Y = -29 }
+          { X = -138 Y = 25 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Hades_Story_02"
+      InheritFrom = "NPC_Hades_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HadesBattleIntroIdle"
+        Tallness = 350.0
+        Interact = 
+        {
+          OffsetX = 0.0
+          OffsetY = 100.0
+        }
+        Points = [
+          { X = -10 Y = 75 }
+          { X = 110 Y = 0 }
+          { X = 0 Y = -75 }
+          { X = -110 Y = 10 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Persephone_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Acceleration = 250.0
+      Deceleration = 250.0
+      RotationSpeed = 900.00
+      MoveGraphic = "PersephoneGarden_Walk"
+      StopGraphic = "PersephoneGarden_WalkStop"
+      Speed = 250
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 100.0
+        SuccessDistance = 10.0
+      }      
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PersephoneGardenIdle"
+        Grip = 5000.0
+        ImmuneToForce = true
+        /*OffsetZ = 50.0*/
+        Tallness = 225.0
+        Points = [
+          { X = -6 Y = 27 }
+          { X = 44 Y = 0 }
+          { X = -2 Y = -23 }
+          { X = -54 Y = 3 }
+        ]
+        /*Color = { Red = 1.00 Green = 1.00 Blue = 0.00 }*/
+        SubtitleColor = { Red = 0.88 Green = 0.84 Blue = 0.25 }
+      }
+    }
+    {
+      Name = "NPC_Persephone_Home_01"
+      InheritFrom = "NPC_Persephone_01"
+      Thing = 
+      {
+        Graphic = "PersephoneUnderworldIdle"
+      }
+    }
+
+    {
+      Name = "NPC_Cerberus_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/NPCLoops/CerberusGrowlLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "Cerberus_HouseIdle"
+        Interact = 
+        {
+          Distance = 180.0
+          OffsetX = -125.0
+          OffsetY = 50.0
+        }
+        Offset = { X = 0 Y = -111 }
+        Points = [
+          { X = 273 Y = -128 }
+          { X = 269 Y = -181 }
+          { X = 73 Y = -250 }
+          { X = -282 Y = -77 }
+          { X = -289 Y = 23 }
+          { X = -160 Y = 78 }
+          { X = -48 Y = 76 }
+          { X = 106 Y = 7 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Cerberus_Field_01"
+      InheritFrom = "NPC_Cerberus_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Cerberus_HubIdle"
+        Interact = 
+        {
+          Distance = 320.0
+          OffsetX = -110.0
+          OffsetY = 0.0
+        }
+        Points = [
+          { X = 195 Y = -81 }
+          { X = 122 Y = -114 }
+          { X = -17 Y = -126 }
+          { X = -271 Y = -36 }
+          { X = -289 Y = 23 }
+          { X = -160 Y = 78 }
+          { X = -48 Y = 76 }
+          { X = 106 Y = 7 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Skelly_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "NPCSkeletonIdle"
+        SubtitleColor = { Red = 0.87 Green = 0.82 Blue = 0.53 }
+      }
+    }
+    
+    {
+      Name = "NPC_Dusa_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      RotationSpeed = 800.0
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "NPCDusaIdle"
+        OffsetZ = 80.0
+		AllowDrawableCache = false
+        SubtitleColor = { Red = 0.57 Green = 1.0 Blue = 0.36 }
+      }
+    }
+    
+    {
+      Name = "NPC_Charon_01"
+      InheritFrom = "BaseNPC"
+      CosmeticRotationSpeed = 360.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/NPCLoops/Charon_0008Loop"
+        AttachedAnim = "null"
+        EditorOutlineDrawBounds = false
+        Graphic = "Charon_IdleShop"
+        Tallness = 240.0
+        Points = [
+          { X = 69 Y = -16 }
+          { X = 37 Y = -62 }
+          { X = -33 Y = -61 }
+          { X = -61 Y = -16 }
+          { X = -26 Y = 11 }
+          { X = 30 Y = 9 }
+        ]
+        SubtitleColor = { Red = 0.46 Green = 0.47 Blue = 0.52 }
+      }
+    }
+    
+    {
+      Name = "NPC_Orpheus_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "OrpheusIdle"
+        Tallness = 180.0
+        Points = [
+          { X = 4 Y = 12 }
+          { X = 43 Y = -7 }
+          { X = -13 Y = -35 }
+          { X = -52 Y = -16 }
+        ]
+        SubtitleColor = { Red = 0.42 Green = 0.44 Blue = 0.62 }
+      }
+    }
+    
+    {
+      Name = "NPC_Orpheus_Story_01"
+      InheritFrom = "NPC_Orpheus_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 85.0
+        Points = [
+          { X = -4 Y = 8 }
+          { X = 25 Y = -6 }
+          { X = -21 Y = -28 }
+          { X = -49 Y = -15 }
+        ]
+      }
+    }
+    
+    {
+      Name = "NPC_Eurydice_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EurydiceIdle"
+        Tallness = 149.0
+        Points = [
+          { X = -2 Y = 14 }
+          { X = 29 Y = -1 }
+          { X = -4 Y = -18 }
+          { X = -35 Y = -2 }
+        ]
+        SubtitleColor = { Red = 0.93 Green = 1.0 Blue = 0.39 }
+      }
+    }
+    
+    {
+      Name = "NPC_Sisyphus_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow_Sisyphus"
+        EditorOutlineDrawBounds = false
+        Graphic = "SisyphusIdle"
+        Tallness = 195.0
+        Interact = 
+        {
+          Distance = 120.0
+          OffsetX = -50.0
+          OffsetY = 40.0
+        }
+        SubtitleColor = { Red = 0.42 Green = 0.72 Blue = 0.45 }
+      }
+    }
+    
+    {
+      Name = "NPC_Bouldy_01"
+      InheritFrom = "BaseNPC"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BouldyIdle"
+        Tallness = 1150.0
+        Interact = 
+        {
+          Distance = 210.0
+          OffsetX = -15.0
+          OffsetY = 130.0
+        }
+        Offset = { X = 0 Y = -445 }
+        Points = [
+          { X = -716 Y = 51 }
+          { X = 12 Y = 404 }
+          { X = 728 Y = 42 }
+          { X = 6 Y = -328 }
+        ]
+      }
+    }
+  ]
+}

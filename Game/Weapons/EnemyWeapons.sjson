@@ -1,0 +1,5805 @@
+{
+/* Base Weapons */
+
+  Weapons = [
+    {
+      Name = "1_BaseEnemyMagicWeapon"
+      InheritFrom = "1_BaseWeapon"
+      LockTriggerForCharge = true
+      AutoLock = true
+      AutoLockRange = 650
+      AutoLockArcDistance = 100
+      ReloadOnCreation = false
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+      IgnoreForceCooldown = true
+    }
+    {
+      Name = "1_BaseTrapWeapon"
+    }
+    {
+      Name = "SmallEnemyMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Control = "Attack2"
+      Type = "GUN"
+      Projectile = "LightMelee"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/HowlerImpAttack"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 180
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.3
+      NumProjectiles = 1
+      SelfVelocity = 1000
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.01
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+   
+    {
+      Name = "SwarmerMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SwarmerMelee"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 1800.0
+      FireSound = "/SFX/Enemy Sounds/Swarmer/EmoteAttacking"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "SwarmerMeleeElite"
+      InheritFrom = "SwarmerMelee"
+    }
+    {
+      Name = "SwarmerMeleeSuperElite"
+      InheritFrom = "SwarmerMelee"
+      Projectile = "SwarmerMeleeSuperElite"
+      SelfVelocity = 3200.0
+    }
+    {
+      Name = "SwarmerHelmetedMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SwarmerHelmetedMelee"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 1800.0
+      FireSound = "/SFX/Enemy Sounds/Swarmer/EmoteAttacking"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "SwarmerToss"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SwarmerToss"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "BloodlessGrenadierPotDropDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 30
+    }
+    {
+      Name = "HeavySwarmerMeleeWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HeavySwarmerMeleeWeapon"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 1800.0
+      FireSound = "/SFX/Enemy Sounds/Swarmer/EmoteAttacking"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HeavySwarmerRangedWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HeavySwarmerRangedWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "WretchAssassinStab"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "WretchAssassinStab"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/WretchedShadeAssassin/EmoteAttacking"
+      FireFx = "EnemyHeavySlashWretchAssassin"
+      FireFxOffset = 0
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 1
+      SelfVelocity = 400.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.6
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "WretchAssassinRanged"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "WretchAssassinRanged"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 3
+      ProjectileInterval = 0.2
+      Spread = 0
+    }
+    {
+      Name = "HeavyMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HeavyMelee"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteAttacking"
+      FireFx = "EnemyHeavySlash"
+      FireFxOffset = 300
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 1
+      SelfVelocity = 1000.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.6
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HeavyMeleeElite"
+      InheritFrom = "HeavyMelee"
+      SelfVelocity = 1200.0
+    }
+    {
+      Name = "HeavyMeleeEliteShockwave"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BasicEliteShockwave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 300
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      NumProjectiles = 3
+      ProjectileAngleOffset = 180
+      ProjectileInterval = 0.0
+      ProjectileAngleStartOffset = 90
+      SelfVelocity = 1200.0
+    }
+    {
+      Name = "PunchingBagUnitWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "PunchingBagUnitWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/PunchingBag/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 4000
+    }
+    {
+      Name = "PunchingBagUnitWeaponElite"
+      InheritFrom = "PunchingBagUnitWeapon"
+    }
+    {
+      Name = "PunchingBagUnitWeaponEliteShockwave"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BasicEliteShockwave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      NumProjectiles = 5
+      ProjectileAngleOffset = 72
+      ProjectileInterval = 0.0
+      SelfVelocity = 0.0
+    }
+
+    {
+      Name = "ChariotRam"
+      Type = "GUN"
+      Projectile = "ChariotRam"
+      FireSound = "/Leftovers/SFX/HarpDash"
+      Cooldown = 0.5
+      Effect = {
+        Name = "RamBerserk"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 99.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 1200
+        Modifier = 600
+        Active = false
+      }
+    }
+     {
+      Name = "TheseusChariotRam"
+      Type = "GUN"
+      Projectile = "TheseusChariotRam"
+      FireSound = "/Leftovers/SFX/HarpDash"
+      Cooldown = 0.2
+      Effect = {
+        Name = "RamBerserk"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 99.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 1200
+        Modifier = 600
+        Active = false
+      }
+    }
+    {
+      Name = "ChariotRamElite"
+      InheritFrom = "ChariotRam"
+      Effect = {
+        Name = "RamBerserk"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 99.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 2400
+        Modifier = 800
+        Active = false
+      }
+    }
+    {
+      Name = "ChariotRamSelfDestruct"
+      InheritFrom = "ChariotRam"
+      Projectile = "ChariotRamSelfDestruct"
+      Effect = {
+        Name = "RamBerserk"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 99.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 1200
+        Modifier = 450
+        Active = false
+      }
+    }
+    {
+      Name = "ChariotRamDeathWeapon"
+      InheritFrom = "ChariotRam"
+      Projectile = "ChariotRamDeathWeapon"
+	  Effects = []
+    }
+    {
+      Name = "TheseusChariotExteriorPatrol"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusChariotMortar"
+      FireFx = "TheseusChariotMortarFire"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = -50
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      Spread = 5
+      CancelMovement = true
+      Effect = {
+        Name = "ChariotBoosters"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 99.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 1200
+        Modifier = 300
+        Active = true
+      }
+    }
+    {
+      Name = "CrawlerRush"
+      Type = "GUN"
+      FireSound = "/Leftovers/SFX/HarpDash"
+      Effect = {
+          Name = "RamBerserk"
+          Type = "SPEED"
+          ChangeType = "ADD"
+          Duration = 2.5
+          Modifier = 300
+          ClearOnCollision = false
+          Active = false
+          EnableWeaponForDuration = "CrawlerRam"
+        }
+    }
+    {
+      Name = "CrawlerRam"
+      Type = "GUN"
+      Projectile = "CrawlerRam"
+      FireSound = "null"
+      Cooldown = 0.5
+    }
+    {
+      Name = "CrawlerRushMiniBoss"
+      Type = "GUN"
+      FireSound = "/SFX/Enemy Sounds/RatThug/EmoteAttacking"
+      SelfVelocity = 3000
+      Effect = {
+          Name = "RamBerserk"
+          Type = "SPEED"
+          ChangeType = "ADD"
+          Duration = 1.0
+          Modifier = 1300
+          ClearOnCollision = true
+          Active = false
+          EnableWeaponForDuration = "CrawlerRamMiniBoss"
+        }
+    }
+    {
+      Name = "CrawlerRamMiniBoss"
+      InheritFrom = "CrawlerRam"
+      Projectile = "CrawlerRamMiniBoss"
+      SelfVelocity = 300
+      Enabled = false
+    }
+    {
+      Name = "OnHitSpeedUp"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "OnHitSpeed"
+        Type = "SPEED"
+        Duration = 5
+        Modifier = 1.2
+        Active = true
+        Stacks = true
+        MaxStacks = 3
+        FrontFx = "null"
+      }
+    }
+    
+    {
+      Name = "BerserkMeleeWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BerserkMeleeWeapon"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 280
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      SelfVelocity = 550.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.01
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "DamageOnTouchWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "DamageOnTouchWeapon"
+      FullyAutomatic = true
+      FireSound = "/Leftovers/SFX/WyrmCastAttack"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ChainChompCollision"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "ChainChompCollision"
+      FireSound = "/Leftovers/SFX/WyrmCastAttack"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+    }
+    {
+      Name = "CrusherUnitSlam"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "/Leftovers/SFX/FastMoveWhoosh"
+    }
+    {
+      Name = "CrusherUnitSlamUpgraded"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireSound = "/Leftovers/Menu Sounds/TextReveal3Distance"
+      Projectile = "CrusherUnitSlamUpgraded"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "CrusherUnitTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CrusherUnitTouchdown"
+      FireSound = "/SFX/Enemy Sounds/CrusherAttackImpact"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "CrusherTouchdownFx"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "CrusherUnitTouchdownElite"
+      InheritFrom = "CrusherUnitTouchdown"
+      Projectile = "CrusherUnitTouchdownElite"
+    }
+    {
+      Name = "HydraSnap"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraSnap"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 30
+      AutoLock = false
+      FireFx = "null"
+      SelfVelocity = 6000.0
+      FireSound = "/SFX/Enemy Sounds/HydraHead/EmoteAttackingWithBones"
+    }
+    {
+      Name = "HydraBite"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FullyAutomatic = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 30
+      AutoLock = false
+      FireFx = "null"
+      SelfVelocity = -1800.0
+    }
+    {
+      Name = "HydraLunge"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraLunge"
+      FullyAutomatic = true
+      ChargeCancelMovement = false
+      CancelMovement = false
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      AutoLock = false
+      FireFx = "null"
+      FireSound = "/SFX/Enemy Sounds/WrechPunchSwing"
+      SelfVelocity = 8000.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.5
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.5
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HydraLungeUntethered"
+      InheritFrom = "HydraLunge"
+      SelfVelocity = 4000.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.1
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.5
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HydraSlam"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraSlam"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 1300.0
+      SelfUpwardVelocity = 2250
+      FireSound = "/SFX/Enemy Sounds/HydraHead/EmoteAttacking"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.1
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.1
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HydraSlamFrenzy"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamUntethered"
+      InheritFrom = "HydraSlam"
+      SelfVelocity = 500.0
+    }
+    {
+      Name = "HydraSlamScattered"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamScattered2"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamScatteredFrenzy"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamExpandingRadial"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamExpandingLine"
+      InheritFrom = "HydraSlam"
+    }
+    {
+      Name = "HydraSlamExpandingLineFrenzy"
+      InheritFrom = "HydraSlamExpandingLine"
+    }
+    {
+      Name = "HydraSlamRockFallScattered"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HydraSlamRockFall"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraSlamRockFallScattered2"
+      InheritFrom = "HydraSlamRockFallScattered"
+    }
+    {
+      Name = "HydraSlamRockFallScatteredFrenzy"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HydraSlamRockFall"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraSlamRockFallRadial"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HydraSlamRockFall"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraSlamRockFallLine"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HydraSlamRockFall"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraSlamRockFallLineFrenzy"
+      InheritFrom = "HydraSlamRockFallLine"
+    }
+    {
+      Name = "HydraPull"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HydraPull"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "RadialNova-VacuumHydraPull"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraTouchdown"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "HydraCrusher"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraCrusher"
+      FireSound = "/SFX/Enemy Sounds/CrusherAttackImpact"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "HydraCrusher2"
+      InheritFrom = "HydraCrusher"
+    }
+    {
+      Name = "HydraCrusher3"
+      InheritFrom = "HydraCrusher"
+    }
+    {
+      Name = "HydraDart"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HydraDart"
+      FireSound = "/SFX/Player Sounds/DartFireFwip"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 150
+      SelfVelocity = 0
+      NumProjectiles = 1
+      Spread = 45
+    }
+    {
+      Name = "HydraDartVolley"
+      InheritFrom = "HydraDart"
+      Projectile = "HydraDartVolley"
+    }
+    {
+      Name = "HydraDartVolleyLeft"
+      InheritFrom = "HydraDart"
+      Projectile = "HydraDartVolley"
+    }
+    {
+      Name = "HydraDartVolleyRight"
+      InheritFrom = "HydraDart"
+      Projectile = "HydraDartVolley"
+    }
+    {
+      Name = "HydraDartUntethered"
+      InheritFrom = "HydraDartVolley"
+    }
+    {
+      Name = "HydraLavaSpit"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraLavaSpit"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/EmoteRangedAttacking"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = 20
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      Spread = 50
+      CancelMovement = true
+    }
+    {
+      Name = "HydraLavaSpit2"
+      InheritFrom = "HydraLavaSpit"
+      Spread = 75
+    }
+    {
+      Name = "HydraLavaSpit3"
+      InheritFrom = "HydraLavaSpit2"
+    }
+    {
+      Name = "HydraLavaSpitFrenzy"
+      InheritFrom = "HydraLavaSpit"
+    }
+    {
+      Name = "HydraLavaSpitExterior"
+      InheritFrom = "HydraLavaSpit"
+      Projectile = "HydraLavaSpitAccurate"
+      Spread = 30
+    }
+    {
+      Name = "HydraLavaSpitInterior"
+      InheritFrom = "HydraLavaSpitExterior"
+      Spread = 0
+    }
+    {
+      Name = "HydraRoar"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireSound = "/SFX/HellFireShoot"
+      Projectile = "HydraRoar"
+      NumProjectiles = 3
+      ProjectileSpacing = 0
+      Spread = 0
+      ProjectileAngleOffset = 10
+      ProjectileAngleOffsetScaleY = 0.65
+      SelfVelocity = -1200
+    }
+    {
+      Name = "HydraRoar2"
+      InheritFrom = "HydraRoar"
+      SelfVelocity = -600
+      NumProjectiles = 5
+    }
+    {
+      Name = "HydraRoar3"
+      InheritFrom = "HydraRoar2"
+      NumProjectiles = 12
+    }
+    {
+      Name = "HydraRoar2Frenzy"
+      InheritFrom = "HydraRoar2"
+    }
+    {
+      Name = "HydraRoarVolleyLeft"
+      InheritFrom = "HydraRoar"
+      SelfVelocity = -100
+      NumProjectiles = 1
+    }
+    {
+      Name = "HydraRoarVolleyRight"
+      InheritFrom = "HydraRoarVolleyLeft"
+    }
+    {
+      Name = "HydraRoarVolleyInsideOut"
+      InheritFrom = "HydraRoarVolleyLeft"
+    }
+    {
+      Name = "HydraSummon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraSummon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/HydraEggSpit"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 60
+      DestroySpawnsOnUnequip = false
+    }
+    {
+      Name = "HydraSummon2"
+      InheritFrom = "HydraSummon"
+      Projectile = "HydraSummon2"
+    }
+    {
+      Name = "HydraSummonSpread"
+      InheritFrom = "HydraSummon"
+      Projectile = "HydraSummonSpread"
+      Spread = 10
+    }
+    {
+      Name = "HydraSummonSpread2"
+      InheritFrom = "HydraSummonSpread"
+      Projectile = "HydraSummonSpread"
+      Spread = 10
+    }
+    {
+      Name = "HydraSummonSpread3"
+      InheritFrom = "HydraSummonSpread"
+      Projectile = "HydraSummonSpread"
+      Spread = 10
+    }
+    {
+      Name = "HydraSpawns"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/HydraEggHatch"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraSpawns2"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/HydraEggHatch"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HydraHeal"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HydraHeal"
+      ClipSize = 1
+      Cooldown = 0.0
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/BeaconTeleportSFX"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 30
+      AutoLock = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+    }
+    {
+      Name = "RangedBurrowerWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "RangedBurrowerWeapon"
+      FireSound = "/SFX/Player Sounds/DartFireFwip"
+      AutoLock = true
+      FireFx = "QuickFlashEnemy"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 85
+      SelfVelocity = 0
+      Spread = 0
+    }
+    {
+      Name = "RangedBurrowerWeaponElite"
+      InheritFrom = "RangedBurrowerWeapon"
+      Spread = 0
+    }
+    {
+      Name = "SpawnSplitterFragment"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SpawnSplitterFragment"
+      ClipSize = 1
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      BarrelLength = 55
+      AutoLock = true
+      Spread = 60
+      Cooldown = 1.0
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "SpawnSplitterFragmentSuperElite"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Projectile = "SpawnSplitterFragmentSuperElite"
+    }
+    {
+      Name = "ShadeDeathSpawn"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeDeathSpawn"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 60
+    }
+    {
+      Name = "ShadeDeathSpawnElite"
+      InheritFrom = "ShadeDeathSpawn"
+      Projectile = "ShadeDeathSpawnElite"
+    }
+    {
+      Name = "EliteDeathMultiEgg"
+      InheritFrom = "ShadeDeathSpawnElite"
+      Projectile = "EliteDeathMultiEgg"
+      NumProjectiles = 3
+      ProjectileInterval = 0.15
+      ProjectileAngleOffset = 72
+    }
+    {
+      Name = "ShadeDeathSpawnSuperElite"
+      InheritFrom = "ShadeDeathSpawn"
+      Projectile = "ShadeDeathSpawnSuperElite"
+    }
+    {
+      Name = "IllusionistSplit"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "IllusionistSplitElite"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CloneIllusionist"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CloneIllusionist"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 0
+      FireFx = "IllusionistPuff"
+    }
+    {
+      Name = "IllusionistWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "IllusionistWeapon"
+      FireSound = "/SFX/Player Sounds/DartFireFwip"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 10
+      SelfVelocity = 0
+      NumProjectiles = 1
+      ReloadTime = 2.0
+      ReloadOnCreation = true
+    }
+    {
+      Name = "ReflectiveMirrorWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "ReflectiveMirrorWeapon"
+      FireSound = "/SFX/Player Sounds/DartFireFwip"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 50
+      SelfVelocity = 0
+      NumProjectiles = 1
+    }
+    {
+      Name = "BaseCollisionWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "BaseCollisionWeapon"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+    }
+    {
+      Name = "HarpyCollisionWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HarpyCollisionWeapon"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+      FireGraphic = "null"
+    }
+    {
+      Name = "HarpyCollisionWeaponObstacle"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HarpyCollisionWeaponObstacle"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+      FireGraphic = "null"
+      Effect = {
+        Name = "HarpyOnHitStun"
+        Duration = 150.0
+        DisableMove = true
+        DisableRotate = true
+        DisableAttack = true
+        Active = true
+        CanAffectInvulnerable = true
+        Cancelable = false
+        FrontFx = "null"
+      }
+    }
+    {
+      Name = "BloodlessHeavyStun"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+      FireGraphic = "null"
+      Effect = {
+        Name = "OnHitStun"
+        Duration = 1.0
+        DisableMove = true
+        DisableRotate = true
+        DisableAttack = true
+        Active = true
+        CanAffectInvulnerable = true
+        Cancelable = false
+        FrontFx = "null"
+      }
+    }
+    {
+      Name = "GluttonObstacleStun"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "GluttonObstacleStun"
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.5
+      FireGraphic = "EnemyWretchGluttonOnHit"
+      Effect = {
+        Name = "GluttonObstacleStun"
+        Duration = 2.1
+        DisableMove = true
+        DisableRotate = true
+        DisableAttack = true
+        Active = true
+        CanAffectInvulnerable = true
+        FrontFx = "StatusIconStunnedCombat"
+        Cancelable = false
+      }
+    }
+    {
+      Name = "HealBeam"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HealBeam"
+      ClipSize = 1
+      Cooldown = 0.0
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/BeaconTeleportSFX"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 30
+      AutoLock = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+    }
+    {
+      Name = "ShieldBeam"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShieldBeam"
+      ClipSize = 1
+      Cooldown = 0.0
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/BeaconTeleportSFX"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 30
+      AutoLock = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+      SilentImpact = true
+    }
+    {
+      Name = "EliteDeathAllyHitShields"
+      InheritFrom = "1_BaseWeapon"
+      Type = "GUN"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      FullyAutomatic = false
+      FireSound = "/Leftovers/SFX/BallTossSmall"
+      Projectile = "EliteDeathAllyHitShields"
+      BarrelLength = 0
+      SilentImpact = true
+    }
+    {
+      Name = "ShieldAlliesAoE"
+      InheritFrom = "1_BaseWeapon"
+      Type = "GUN"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      FullyAutomatic = false
+      FireSound = "/Leftovers/SFX/ShieldAlliesSFX"
+      Projectile = "ShieldAlliesAoE"
+      BarrelLength = 0
+      SilentImpact = true
+    }
+    {
+      Name = "ShieldAlliesAoELarge"
+      InheritFrom = "ShieldAlliesAoE"
+      Projectile = "ShieldAlliesAoELarge"
+    }
+    {
+      Name = "ShieldHealAlliesAoE"
+      InheritFrom = "ShieldAlliesAoE"
+      Projectile = "ShieldHealAlliesAoE"
+    }
+    {
+      Name = "ShieldRangedSelfDestruct"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShieldRangedSelfDestruct"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "LightRangedWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "LightRangedWeapon"
+      FireFx = "EnemyProjectileFireFx"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "LightRangedWeaponElite"
+      InheritFrom = "LightRangedWeapon"
+      Spread = 20
+    }
+    {
+      Name = "LightRangedWeaponSuperElite"
+      InheritFrom = "LightRangedWeapon"
+      Spread = 0
+      NumProjectiles = 3
+      ProjectileOffsetStart = "LEFT"
+      ProjectileAngleOffset = 90
+      ProjectileInterval = 0.02
+      ProjectileOffset = 10
+      InitialCooldown = 1
+      ProjectileAngleOffsetScaleY = 0.5
+      Projectile = "SplitShotWeapon"
+    }
+    {
+      Name = "SeekingShotWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SeekingShotWeapon"
+      FireFx = "null"
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/Sidearm"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 70
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      SelfVelocity = -300
+      NumProjectiles = 1
+      Spread = 60
+    }
+    {
+      Name = "SpreadShotWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SpreadShotWeapon"
+      FireFx = "EnemyProjectileFireFx"
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 70
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      SelfVelocity = -300
+      NumProjectiles = 5
+      ProjectileAngleOffset = 25
+    }
+    {
+      Name = "SpreadShotMinibossRadial"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SpreadShotWeapon"
+      FireFx = "null"
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/Sidearm"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      SelfVelocity = 0
+      NumProjectiles = 18
+      ProjectileAngleOffset = 20
+      ProjectileInterval = 0.075
+      ProjectileOffsetStart = "LEFT"
+    }
+    {
+      Name = "SpreadShotMinibossCone"
+      InheritFrom = "SpreadShotMinibossRadial"
+      NumProjectiles = 5
+      ProjectileAngleOffset = 20
+      ProjectileInterval = 0.075
+    }
+    {
+      Name = "SpreadShotMinibossCross"
+      InheritFrom = "SpreadShotMinibossRadial"
+      NumProjectiles = 4
+      ProjectileOffsetStart = "CENTER"
+      ProjectileAngleOffset = 90
+      ProjectileInterval = 0.075
+      Spread = 40
+    }
+    {
+      Name = "SpreadShotMinibossInvulnerableLine"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SpreadShotWeaponInvulnerable"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.0
+      NumProjectiles = 1
+      Spread = 20
+    }
+    {
+      Name = "SpreadShotMinibossInvulnerableCone"
+      InheritFrom = "SpreadShotMinibossInvulnerableLine"
+      NumProjectiles = 3
+      ProjectileAngleOffset = 30
+      Spread = 5
+      ProjectileInterval = 0.075
+    }
+    {
+      Name = "SpreadShotMinibossInvulnerableCross"
+      InheritFrom = "SpreadShotMinibossInvulnerableLine"
+      NumProjectiles = 4
+      ProjectileAngleOffset = 90
+      Spread = 10
+    }
+    {
+      Name = "SplitShotWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SplitShotWeapon"
+      FireFx = "EnemyProjectileFireFx"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "SplitShotWeaponElite"
+      InheritFrom = "SplitShotWeapon"
+      Projectile = "SplitShotWeapon"
+      NumProjectiles = 3
+      ProjectileAngleOffset = 30
+    }
+    {
+      Name = "FreezeShotWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "FreezeShotWeapon"
+      FireFx = "null"
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/FreezeShotWeaponFire"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 70
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      SelfVelocity = -300
+      NumProjectiles = 1
+    }
+    {
+      Name = "FreezeShotSpray"
+      InheritFrom = "FreezeShotWeapon"
+      Type = "GUN"
+      Projectile = "FreezeShotNonHoming"
+      ProjectileInterval = 0.1
+      NumProjectiles = 1
+      Spread = 45
+    }
+    {
+      Name = "FreezeShotSpread"
+      InheritFrom = "FreezeShotWeapon"
+      Type = "GUN"
+      Projectile = "FreezeShotNonHoming"
+      NumProjectiles = 6
+      ProjectileAngleOffset = 20
+    }
+    {
+      Name = "DusaFreezeShotSpray"
+      InheritFrom = "FreezeShotWeapon"
+      Type = "GUN"
+      Projectile = "DusaFreezeShotNonHoming"
+      ProjectileInterval = 0.1
+      NumProjectiles = 1
+      Spread = 45
+      SelfVelocity = -800
+      BarrelLength = -20
+    }
+    {
+      Name = "DusaFreezeShotSpread"
+      InheritFrom = "FreezeShotWeapon"
+      Type = "GUN"
+      Projectile = "DusaFreezeShotNonHoming"
+      NumProjectiles = 6
+      ProjectileAngleOffset = 20
+      BarrelLength = -100
+    }
+    {
+      Name = "FreezeShot360"
+      InheritFrom = "FreezeShotWeapon"
+      Type = "GUN"
+      Projectile = "FreezeShotNonHoming"
+      NumProjectiles = 18
+      ProjectileAngleOffset = 20
+      BarrelLength = 0
+    }
+    {
+      Name = "HitAndRunMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HitAndRunMelee"
+      ClipSize = 1
+      ChargeSound = "/Leftovers/SFX/BallTossLarge"
+      FireSound = "/Leftovers/SFX/HowlerImpAttackLOW"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.6
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.01
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HitAndRunLob"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HitAndRunLob"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/EmoteRangedAttacking"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = 20
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      Spread = 50
+      CancelMovement = true
+    }
+    {
+      Name = "GrenadierWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "GrenadierWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 0
+    }
+    {
+      Name = "GrenadierWeaponMiniboss"
+      InheritFrom = "GrenadierWeapon"
+      NumProjectiles = 6
+      Spread = 100
+      ProjectileAngleOffset = 60
+    }
+    {
+      Name = "LavaSplash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "LavaSplash"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = false
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 30
+      SilentImpact = true
+    }
+    {
+      Name = "EliteLavaSplash"
+      InheritFrom = "LavaSplash"
+      Spread = 10
+      NumProjectiles = 3,
+      ProjectileAngleOffset = 120
+    }
+    {
+      Name = "BloodlessTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessTouchdown"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "BloodlessReposition"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessJavelin"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessJavelin"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteRangedAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      NumProjectiles = 1
+      RemoveControlOnFire = "BloodlessJavelin"
+    }
+    {
+      Name = "BloodlessMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessMelee"
+      ClipSize = 1
+      ChargeSound = "/SFX/Enemy Sounds/Bloodless01/EmoteCharging"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 1800
+    }
+    {
+      Name = "BloodlessMeleeBerserker1"
+      InheritFrom = "BloodlessMelee"
+      Projectile = "BloodlessMeleeBerserker"
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/BloodlessBerserker/EmoteAttacking"
+      FireFx = "BloodlessBerserkerSwipe"
+      SelfVelocity = 1500
+      Effects = [
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.75
+          RotationMultiplier = 0.5
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "BloodlessMeleeBerserker2"
+      InheritFrom = "BloodlessMeleeBerserker1"
+      Projectile = "BloodlessMeleeBerserker2"
+      FireFx = "BloodlessBerserkerSwipeFlipped"
+      SelfVelocity = 1250
+    }
+    {
+      Name = "BloodlessMeleeBerserkerCombo1"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessMeleeBerserkerCombo2"
+      InheritFrom = "BloodlessMeleeBerserkerCombo1"
+    }
+    {
+      Name = "BloodlessMeleeBerserkerAttackEnd"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessDagger"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessDagger"
+      ClipSize = 1
+      ChargeSound = "/Leftovers/SFX/BallTossLarge"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 40
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.6
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 0.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.5
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "BloodlessShieldBash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessShieldBash"
+      ClipSize = 1
+      ChargeSound = "/SFX/Enemy Sounds/Bloodless02/EmoteCharging"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteThrustAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 40
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.6
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 2500.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.05
+        Modifier = 0.5
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "BloodlessGrenadierRanged"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessGrenadierRanged"
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteRangedAttacking"
+      RootOwnerWhileFiring = true
+      CancelMovement = true
+      FullyAutomatic = true
+      BarrelLength = 150
+      AutoLock = true
+      FireGraphic = "null"
+      Spread = 30
+    }
+    {
+      Name = "BloodlessGrenadierRangedElite"
+      InheritFrom = "BloodlessGrenadierRanged"
+    }
+    {
+      Name = "BloodlessGrenadierCluster"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessGrenadierCluster"
+      ClipSize = 1
+      ChargeSound = "/SFX/Enemy Sounds/Bloodless02/EmoteCharging"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteAttackingMultiMortars"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      ChargeStartAnimation = "Enemy_BloodlessGrenadierAttack_Charge"
+      FireGraphic = "Enemy_BloodlessGrenadierJump"
+      SelfVelocity = 0.0
+      NumProjectiles = 3
+      ProjectileAngleOffset = 120
+      ProjectileAngleOffsetScaleY = 0.75
+      ProjectileInterval = 0.075
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.01
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "BloodlessGrenadierDeathDrop"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessGrenadierDrop"
+      ClipSize = 1
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      NumProjectiles = 1
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessSkullToss"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessSkullToss"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Bloodless02/EmoteRangedAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 1.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "BloodlessPitch"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessPitch"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/BloodlessPitcher/EmoteFastBall"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 65
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+    }
+    {
+      Name = "BloodlessPitchCurve"
+      InheritFrom = "BloodlessPitch"
+      Projectile = "BloodlessPitchCurve"
+      FireSound = "/SFX/Enemy Sounds/BloodlessPitcher/EmoteCurveBall"
+    }
+    {
+      Name = "BloodlessPitchCurveVolley"
+      InheritFrom = "BloodlessPitch"
+      Projectile = "BloodlessPitchCurve"
+      Spread = 15
+    }
+    {
+      Name = "BloodlessPitcherDeathLob"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessPitcherDeathLob"
+      ClipSize = 1
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      NumProjectiles = 1
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessSelfDestructDeathLob"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessSelfDestructDeathLob"
+      ClipSize = 1
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      NumProjectiles = 1
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BloodlessWaveFistWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessWaveFistWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 85
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      SelfVelocity = -1200
+      NumProjectiles = 1
+      Effect = {
+        Name = "WaveFistRotateLock"
+        Duration = 1.0
+        DisableRotate = true
+        Active = true
+        CanAffectInvulnerable = true
+        FrontFx = "null"
+      }
+    }
+    {
+      Name = "BloodlessWaveFistWeaponElite"
+      InheritFrom = "BloodlessWaveFistWeapon"
+    }
+    {
+      Name = "BloodlessWaveFistWeaponElite2"
+      InheritFrom = "BloodlessWaveFistWeapon"
+    }
+    {
+      Name = "BloodlessWaveFistWeaponEliteV"
+      InheritFrom = "BloodlessWaveFistWeaponElite"
+      NumProjectiles = 2
+      ProjectileAngleOffset = 90
+      ProjectileAngleOffsetScaleY = 0.5
+      ProjectileAngleStartOffset = 45
+    }
+    {
+      Name = "ShadeMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeMelee"
+      ClipSize = 1
+      ChargeSound = "/SFX/Enemy Sounds/Bloodless01/EmoteCharging"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      SelfVelocity = 500
+    }
+    {
+      Name = "ShadeShieldMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeShieldMelee"
+      ClipSize = 1
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmoteEvading"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 2100
+      Effect = {
+        Name = "MeleeAttackRotation"
+        Duration = 0.5
+        RotationMultiplier = 1E-06
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeShieldMeleeElite"
+      InheritFrom = "ShadeShieldMelee"
+    }
+    {
+      Name = "ShadeShieldCharge"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeShieldCharge"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/PunchingBag/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 4000
+    }
+    {
+      Name = "ShadeShieldMarch"
+      InheritFrom = "ShadeShieldCharge"
+      Projectile = "ShadeShieldMarch"
+      SelfVelocity = 700
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.2
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.2
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "ShadeSwordWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeSwordWeapon"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingSword"
+      FireGraphic = "null"
+      FireFx = "ShadeSwordSwipeFlipped"
+      NumProjectiles = 1
+      ChargeFx = "null"
+      SelfVelocity = 1000
+      BarrelLength = 0
+    }
+    {
+      Name = "ShadeSwordWeapon2"
+      InheritFrom = "ShadeSwordWeapon"
+      Projectile = "ShadeSwordWeapon2"
+      FireFx = "ShadeSwordSwipe"
+    }
+    {
+      Name = "ShadeShieldSpin"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeShieldSpin"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingShield"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      LockTriggerForCharge = false
+    }
+    {
+      Name = "TheseusSpearSpin"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusSpearSpin"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteAttacking"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      LockTriggerForCharge = false
+      SelfVelocity = 1350.0
+      ChargeSound = "/SFX/Enemy Sounds/Theseus/EmoteCharging"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "TheseusSpearSpinAphrodite"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinAphrodite"
+    }
+    {
+      Name = "TheseusSpearSpinAres"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinAres"
+    }
+    {
+      Name = "TheseusSpearSpinArtemis"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinArtemis"
+    }
+    {
+      Name = "TheseusSpearSpinAthena"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinAthena"
+      Effect = {
+        Name = "MagicShieldInvincible"
+        Type = "INVULNERABLE"
+        Duration = 0.5
+        Modifier = 1.0
+        FrontFx = "AthenaProtectionFront"
+        BackFx = "AthenaProtectionBack"
+        Active = true
+        FlashFrontFxWhenExpiring = true
+      }
+    }
+    {
+      Name = "TheseusSpearSpinDemeter"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinDemeter"
+    }
+    {
+      Name = "TheseusSpearSpinDionysus"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinDionysus"
+    }
+    {
+      Name = "TheseusSpearSpinPoseidon"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinPoseidon"
+    }
+    {
+      Name = "TheseusSpearSpinZeus"
+      InheritFrom = "TheseusSpearSpin"
+      Projectile = "TheseusSpearSpinZeus"
+    }
+    {
+      Name = "TheseusSpearSpinAresBlades"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusAresBlades"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+      Spread = 360
+    }
+    {
+      Name = "TheseusSpearSpinArtemisHomingBolts"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusArtemisHomingBolt"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+      Spread = 360
+    }
+    {
+      Name = "TheseusSpearSpinDemeterNova"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusSpearSpinDemeterNova"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "TheseusSpearSpinDionysusPuddles"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusDionysusPuddle"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "TheseusSpearThrowZeusBolt"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusZeusStormBolt"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "TheseusSpearSpinZeusBolt"
+      InheritFrom = "TheseusSpearThrowZeusBolt"
+    }
+    {
+      Name = "ShadeSwordOverhead"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeSwordOverhead"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingSword"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 115
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "ShadeSwordSwipeOverhead"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 300
+    }
+    {
+      Name = "ShadeSwordOverheadElite"
+      InheritFrom = "ShadeSwordOverhead"
+      NumProjectiles = 2
+      ProjectileAngleOffset = 180
+      ProjectileInterval = 0.04
+    }
+     {
+      Name = "ShadeSwordOverheadSuperElite"
+      InheritFrom = "ShadeSwordOverhead"
+      NumProjectiles = 4
+      ProjectileAngleOffset = 90
+      ProjectileInterval = 0.04
+    }
+    {
+      Name = "FlurrySpawnerDash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.2
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+      Projectile = "null"
+      WeaponRange = 800
+      BlinkMaxRange = 800
+      ClipSize = 1
+      Cooldown = 0.05
+      ChargeFx = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CheckMovementReactionDistance = 150
+      FireFx = "null"
+      SilentImpact = true
+      AcceptTriggerLockRequests = true
+      CancelAttachedProjectiles = true
+    }
+    {
+      Name = "ShadeSideDash"
+      Type = "GUN"
+      CancelMovement = true
+      FireFx = "ShadeTeleportFlare"
+      FireGraphic = "ShadeSword_Move_SideDash"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmoteEvading"
+      SelfVelocity = 2000
+      RandomFireAngle = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ShadeBowSideDash"
+      Type = "GUN"
+      CancelMovement = true
+      FireFx = "ShadeTeleportFlare"
+      FireGraphic = "ShadeBow_Move_SideDash"
+      FireSound = "/SFX/Enemy Sounds/Exalted/ExaltedDash"
+      SelfVelocity = 2000
+      RandomFireAngle = false
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "DashStop"
+        Duration = 0.1
+        HaltOnEnd = true
+        Active = true
+        CanAffectInvulnerable = true
+      }
+    }
+    {
+      Name = "ShadeMagicSideDash"
+      Type = "GUN"
+      CancelMovement = true
+      FireFx = "ShadeTeleportFlare"
+      FireGraphic = "ShadeBow_Move_SideDash"
+      FireSound = "/SFX/Enemy Sounds/Exalted/ExaltedDash"
+      SelfVelocity = 2000
+      RandomFireAngle = false
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "DashStop"
+        Duration = 0.3
+        HaltOnEnd = true
+        Active = true
+        CanAffectInvulnerable = true
+      }
+    }
+    {
+      Name = "ShadeSpearForwardDash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      FireFx = "ShadeTeleportFlare"
+      SelfVelocity = 2000.0
+      FireSound = "/SFX/Enemy Sounds/Exalted/ExaltedDash"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.2
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.2
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "ShadeDisengage"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      FireFx = "ShadeTeleportFlare"
+      SelfVelocity = -2250.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.2
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.2
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "TheseusZeusUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusLightningBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusZeusUpgradePassive"
+      InheritFrom = "TheseusZeusUpgradeWrath"
+    }
+    {
+      Name = "TheseusPoseidonUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusPoseidonBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusPoseidonUpgradePassive"
+      InheritFrom = "TheseusPoseidonUpgradeWrath"
+      Projectile = "TheseusPoseidonBoltPassive"
+    }
+    {
+      Name = "TheseusAphroditeUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusAphroditeBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusAphroditeUpgradePassive"
+      InheritFrom = "TheseusAphroditeUpgradeWrath"
+      Projectile = "TheseusAphroditeBoltPassive"
+    }
+    {
+      Name = "TheseusAthenaUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusAthenaBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusAthenaUpgradePassive"
+      InheritFrom = "TheseusAthenaUpgradeWrath"
+    }
+    {
+      Name = "TheseusArtemisUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusArtemisBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusArtemisUpgradePassive"
+      InheritFrom = "TheseusArtemisUpgradeWrath"
+      Projectile = "TheseusArtemisBolt"
+    }
+    {
+      Name = "TheseusAresUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusAresBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusAresUpgradePassive"
+      InheritFrom = "TheseusAresUpgradeWrath"
+      Projectile = "TheseusAresBoltPassive"
+    }
+    {
+      Name = "TheseusDionysusUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusDionysusBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusDionysusUpgradePassive"
+      InheritFrom = "TheseusDionysusUpgradeWrath"
+    }
+    {
+      Name = "TheseusDemeterUpgradeWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusDemeterBolt"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusDemeterUpgradePassive"
+      InheritFrom = "TheseusDemeterUpgradeWrath"
+    }
+    {
+      Name = "ShadeBowRanged"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeBowRanged"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmoteAttackingBow"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      Effect = {
+        Name = "BowFireRotation"
+        Duration = 1.0
+        RotationMultiplier = 1E-06
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeBowRangedRapidFire"
+      InheritFrom = "ShadeBowRanged"
+      Effect = {
+        Name = "BowAttackRotation"
+        Duration = 0.3
+        RotationMultiplier = 1E-07
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeBowRangedRapidSalvo"
+      InheritFrom = "ShadeBowRanged"
+      Effect = {
+        Name = "BowAttackRotation"
+        Duration = 0.3
+        RotationMultiplier = 1E-07
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeBowRangedSplitFire"
+      InheritFrom = "ShadeBowRanged"
+      Projectile = "ShadeBowRangedSplitFire"
+      NumProjectiles = 7
+      ProjectileSpacing = 0
+      ProjectileAngleOffset = 12
+      ProjectileOffsetStart = "LEFT"
+      ProjectileInterval = 0.2
+      Effect = {
+        Name = "BowAttackRotation"
+        Duration = 0.3
+        RotationMultiplier = 1E-07
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeMagicMinigun"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeMagic"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/FreezeShotWeaponFire"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      Spread = 30
+      Effect = {
+        Name = "BowFireRotation"
+        Duration = 2.0
+        RotationMultiplier = 0.05
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeMagicMinigunFast"
+      InheritFrom = "ShadeMagicMinigun"
+      Spread = 10
+      Effect = {
+        Name = "BowFireRotation"
+        Duration = 0.3
+        RotationMultiplier = 0.05
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeMagicRadialPush"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeMagicRadialPush"
+      Cooldown = 0.0
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      AutoLock = true
+      FireGraphic = "null"
+    }
+    {
+      Name = "ShadeMagicSkyVolley"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      FullyAutomatic = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ShadeMagicSkyVolleyFire"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "ShadeMagicSkyVolley"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ShadeDisengageShot"
+      InheritFrom = "ShadeBowRanged"
+    }
+    {
+      Name = "ShadeBowMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeBowMelee"
+      ClipSize = 1
+      ChargeSound = "/SFX/Enemy Sounds/Bloodless01/EmoteCharging"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      FireFx = "EnemyLightSlash"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      NumProjectiles = 1
+      SelfVelocity = 0
+    }
+    {
+      Name = "ShadeSpearThrust"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeSpearThrust"
+      ClipSize = 1
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmoteAttackingSpear"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 10
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      SelfVelocity = 0.0
+      Effect = {
+        Name = "MeleeAttackRotation"
+        Duration = 0.2
+        RotationMultiplier = 1E-06
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "ShadeSpearThrustSingle"
+      InheritFrom = "ShadeSpearThrust"
+    }
+    {
+      Name = "ShadeSpearThrust2"
+      InheritFrom = "ShadeSpearThrust"
+      Projectile = "ShadeSpearThrust"
+    }
+    {
+      Name = "ShadeSpearThrust3"
+      InheritFrom = "ShadeSpearThrust"
+      Projectile = "ShadeSpearThrust"
+    }
+    {
+      Name = "ShadeSpearLeap"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingSpear"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+      SelfUpwardVelocity = 900
+      SelfVelocity = 1950
+    }
+    {
+      Name = "ShadeSpearLeapSuper"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingSpear"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+      SelfUpwardVelocity = 900
+      SelfVelocity = 1950
+    }
+    {
+      Name = "FlurrySpawnerWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "FlurrySpawnerWeapon"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 18
+      ProjectileInterval = 0.25
+      ProjectileAngleOffset = 10
+      Scatter = 85
+      Spread = 0
+      BarrelLength = 0
+    }
+    {
+      Name = "FlurrySpawnerWeaponElite"
+      InheritFrom = "FlurrySpawnerWeapon"
+      Projectile = "FlurrySpawnerWeaponElite"
+      BarrelLength = 0
+      ProjectileOffsetStart = "LEFT"
+      ProjectileAngleOffset = 15
+      ProjectileInterval = 0.1
+    }
+    {
+      Name = "FlurrySpawnerDashTrail"
+      InheritFrom = "FlurrySpawnerWeapon"
+      NumProjectiles = 1
+    }
+    {
+      Name = "UnstableGeneratorWeapon"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "UnstableGeneratorWeapon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusSpearThrow"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusSpearThrow"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteRangedAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "TheseusSpearThrowAphrodite"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowAphrodite"
+    }
+    {
+      Name = "TheseusSpearThrowAres"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowAres"
+    }
+    {
+      Name = "TheseusSpearThrowArtemis"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowArtemis"
+    }
+    {
+      Name = "TheseusSpearThrowAthena"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowAthena"
+      Effect = {
+        Name = "MagicShieldInvincible"
+        Type = "INVULNERABLE"
+        Duration = 0.5
+        Modifier = 1.0
+        FrontFx = "AthenaProtectionFront"
+        BackFx = "AthenaProtectionBack"
+        Active = true
+        FlashFrontFxWhenExpiring = true
+      }
+    }
+    {
+      Name = "TheseusSpearThrowDemeter"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowDemeter"
+    }
+    {
+      Name = "TheseusSpearThrowDemeterNova"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireFromObstacle = "TheseusSpearReturnPoint"
+      Projectile = "TheseusSpearThrowDemeterNova"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "TheseusSpearThrowDionysus"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowDionysus"
+    }
+    {
+      Name = "TheseusSpearThrowPoseidon"
+      InheritFrom = "TheseusSpearThrow"
+      NumProjectiles = 1
+      Projectile = "TheseusSpearThrowPoseidon"
+    }
+    {
+      Name = "TheseusSpearThrowZeus"
+      InheritFrom = "TheseusSpearThrow"
+      Projectile = "TheseusSpearThrowZeus"
+    }
+    {
+      Name = "TheseusSpearThrowReturn"
+      InheritFrom = "TheseusSpearThrow"
+      FireFromObstacle = "TheseusSpearReturnPoint"
+	    DestroyTargetedObstacle = true
+      Projectile = "TheseusSpearThrowReturn"
+      SelfVelocity = 0.0
+	    SetCompleteAngleOnFire = false
+      OwnerFaceProjectile = true
+      Effects = []
+    }
+    {
+      Name = "TheseusSpearThrowReturnAphrodite"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnAphrodite"
+    }
+    {
+      Name = "TheseusSpearThrowReturnAres"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnAres"
+    }
+    {
+      Name = "TheseusSpearThrowReturnArtemis"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnArtemis"
+    }
+    {
+      Name = "TheseusSpearThrowReturnAthena"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnAthena"
+    }
+    {
+      Name = "TheseusSpearThrowReturnDemeter"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnDemeter"
+    }
+    {
+      Name = "TheseusSpearThrowReturnDionysus"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnDionysus"
+    }
+    {
+      Name = "TheseusSpearThrowReturnPoseidon"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnPoseidon"
+    }
+    {
+      Name = "TheseusSpearThrowReturnZeus"
+      InheritFrom = "TheseusSpearThrowReturn"
+      Projectile = "TheseusSpearThrowReturnZeus"
+    }
+    {
+      Name = "ShadeSpearTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeSpearTouchdown"
+      FireSound = "/SFX/Enemy Sounds/CrusherAttackImpact"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      FireGraphic = "ShadeSpear_AttackLeapTouchDown"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "TheseusSpearTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusSpearTouchdown"
+      FireSound = "/SFX/Enemy Sounds/CrusherAttackImpact"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      FireGraphic = "ShadeSpear_AttackLeapTouchDown"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "RangedBlink"
+      InheritFrom = "1_BaseWeapon"
+      Type = "BLINK"
+      FireFx = "null"
+      FireSound = "null"
+      CooldownMin = 0.01
+      CooldownMax = 0.01
+      MinRange = 0.0
+      ReloadOnCreation = false
+      Projectile = "RangedBlink"
+      BarrelLength = 0
+      BlinkDetonateAtEndpoint = true
+    }
+    {
+      Name = "RangedBlinkSlow"
+      InheritFrom = "1_BaseWeapon"
+      Type = "BLINK"
+      FireFx = "null"
+      FireSound = "null"
+      CooldownMin = 3
+      CooldownMax = 10
+      MinRange = 0.0
+      ReloadOnCreation = false
+      Projectile = "RangedBlinkSlow"
+      BarrelLength = 0
+      BlinkDetonateAtEndpoint = true
+    }
+    {
+      Name = "HeavyRangedOnHit"
+      InheritFrom = "1_BaseWeapon"
+      Type = "GUN"
+      FireFx = "null"
+      FireSound = "null"
+      CooldownMin = 0.01
+      CooldownMax = 0.01
+      MinRange = 0.0
+      ReloadOnCreation = false
+      Projectile = "null"
+      BarrelLength = 0
+      CanFireWhileDisarmed = true
+      IgnoreOwnerAttackDisabled = true
+      FireGraphic = "null"
+      Effect = {
+        Name = "CasterOnHitStun"
+        Active = true
+        CanAffectInvulnerable = true
+        DestroyProjectileOnStart = true
+      }
+    }
+    {
+      Name = "HeavyRangedWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HeavyRangedWeapon"
+      ClipSize = 1
+      Cooldown = 0.0
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 30
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 3.0
+      NumProjectiles = 1
+      SilentImpactAfterFirst = true
+      ObstacleDamageMultiplier = 1
+    }
+    {
+      Name = "HeavyRangedWeaponFork"
+      InheritFrom = "HeavyRangedWeapon"
+      ReloadTime = 3.0
+      NumProjectiles = 3
+      ProjectileSpacing = 360
+      Spread = 0
+      ProjectileAngleOffset = 0
+      ProjectileOffset = 0
+      Projectile = "HeavyRangedWeaponFork"
+    }
+    {
+      Name = "HeavyRangedWeaponForkElite"
+      InheritFrom = "HeavyRangedWeaponFork"
+      NumProjectiles = 5
+    }
+    {
+      Name = "HeavyRangedWeaponForkMiniboss"
+      InheritFrom = "HeavyRangedWeaponFork"
+      Projectile = "HeavyRangedWeaponForkMiniboss"
+      ReloadTime = 1.0
+      NumProjectiles = 12
+      ProjectileAngleOffset = 30
+      SilentImpactAfterFirst = true
+      ObstacleDamageMultiplier = 1
+      BarrelLength = 80
+      Effect = {
+        Name = "BeamRotation"
+
+        Duration = 3.0
+        RotationMultiplier = 0.015
+        Active = true
+      }
+    }
+    {
+      Name = "HeavyRangedWeaponSplitter"
+      InheritFrom = "HeavyRangedWeapon"
+      Projectile = "HeavyRangedWeaponSplitter"
+      NumProjectiles = 8
+      ProjectileAngleOffset = 45
+      ProjectileInterval = 0.25
+    }
+    {
+      Name = "EliteBeams"
+      InheritFrom = "HeavyRangedWeapon"
+      Projectile = "EliteBeams"
+      BarrelLength = 0
+    }
+    {
+      Name = "HeavyRangedSplitterFragment"
+      InheritFrom = "EliteBeams"
+      Projectile = "HeavyRangedSplitterFragment"
+    }
+    /* Boss Weapons */
+    {
+      Name = "HarpyLunge"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyLunge"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 3000.0
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HarpyLungeAlecto"
+      InheritFrom = "HarpyLunge"
+      Projectile = "HarpyLungeAlecto"
+      ChargeSound = "/SFX/Enemy Sounds/Alecto/EmoteCharging"
+    }
+    {
+      Name = "HarpyLassoLunge"
+      InheritFrom = "HarpyLunge"
+      Projectile = "HarpyLassoLunge"
+      SelfVelocity = 4000.0
+      ChargeSound = "/SFX/Enemy Sounds/Tisiphone/EmoteCharging"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.35
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.35
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HarpyWhipRage"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyWhipRage"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      FireFx = "EnemyHeavySlashWhip1"
+      FireFxOffset = 300
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 1
+      SelfVelocity = 1500.0
+      Spread = 0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.6
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HarpyWhipArc"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyWhipArc"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireGraphic = "null"
+      FireFx = "AlectoWhipArc"
+      NumProjectiles = 1
+      ChargeFx = "null"
+      SelfVelocity = 0
+      BarrelLength = 0
+    }
+    {
+      Name = "HarpyWhipCombo1"
+      InheritFrom = "HarpyWhipRage"
+      Type = "GUN"
+      Projectile = "HarpyWhipCombo1"
+      SelfVelocity = 2500.0
+      CancelMovement = true
+      FireFx = "EnemyHeavySlashWhip1"
+      FireFxOffset = 600
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.6
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HarpyWhipCombo2"
+      InheritFrom = "HarpyWhipCombo1"
+    }
+    {
+      Name = "HarpyWhipLasso"
+      InheritFrom = "HarpyWhipRage"
+      Type = "GUN"
+      Projectile = "HarpyWhipLasso"
+      FireFx = "EnemyHeavySlashLasso"
+      SelfVelocity = 0.0
+      Effect = {
+        Name = "MeleeAttackGrip"
+        Type = "GRIP"
+        Duration = 0.3
+        Modifier = 0.6
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HarpyWhipShot"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyWhipShot"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Caster/EmoteAttacking"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 1
+    }
+    {
+      Name = "HarpyWhipShotRage"
+      InheritFrom = "HarpyWhipShot"
+      Projectile = "HarpyWhipShotRage"
+    }
+    {
+      Name = "SummonAlectoWhipShot"
+      InheritFrom = "HarpyWhipShot"
+      Projectile = "HarpyWhipShotSky"
+    }
+    {
+      Name = "HarpyWhipWhirl"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyWhipWhirl"
+      Cooldown = 0.0
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      AutoLock = true
+      FireGraphic = "null"
+    }
+    {
+      Name = "SummonMegaeraWhipWhirl"
+      InheritFrom = "HarpyWhipWhirl"
+      Projectile = "SummonMegaeraWhipWhirl"
+      FireAtAttackTarget = true
+    }
+
+    {
+      Name = "HarpyWhipCombo3"
+      InheritFrom = "HarpyWhipWhirl"
+      Type = "GUN"
+      Projectile = "HarpyWhipCombo3"
+    }
+    {
+      Name = "TheseusChariotCenterDive"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireFx = "ThesusChariotTurretMuzzleFlash"
+      Projectile = "TheseusChariotTurrets"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 30
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      NumProjectiles = 2
+      ProjectileSpacing = 50
+      ProjectileOffsetStart = "RIGHT"
+      ProjectileOffset = -200
+      Spread = 60
+      Effect = {
+        Name = "ChariotBoosters"
+        Type = "SPEED"
+        ChangeType = "ADD"
+        Duration = 1.0
+        ExpiringTimeThreshold = 0.5
+        ExpiringModifierFalloff = 1200
+        Modifier = 600
+        Active = true
+      }
+    }
+    {
+      Name = "TheseusChariotCenterDive2"
+      InheritFrom = "TheseusChariotCenterDive"
+    }
+    {
+      Name = "TheseusChariotClusterBomb"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      ChargeSound = "null"
+      Projectile = "TheseusChariotMortar"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = -50
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 360
+    }
+    {
+      Name = "HarpyBeam"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HarpyBeam"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 90
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      NumProjectiles = 5
+      ProjectileAngleOffset = 35
+      Spread = 5
+    }
+    {
+      Name = "HarpySlowBeam360"
+      InheritFrom = "HarpyBeam"
+      Projectile = "HarpySlowBeam"
+      NumProjectiles = 36
+      ProjectileInterval = 0.025
+      ProjectileAngleOffset = 10
+      Spread = 0
+      BarrelLength = 0
+    }
+    {
+      Name = "HarpyLungeSurgeBeam"
+      InheritFrom = "HarpyBeam"
+      NumProjectiles = 2
+      ProjectileAngleOffset = 180
+      ProjectileAngleStartOffset = 90
+      Spread = 0
+      BarrelLength = 0
+      Projectile = "HarpyBeamTisiphone"
+    }
+    {
+      Name = "HarpyWhipRageBeam"
+      InheritFrom = "HarpyBeam"
+      Projectile = "HarpyBeamAlecto"
+      NumProjectiles = 5
+      ProjectileAngleOffset = 30
+      Spread = 0
+      BarrelLength = 150
+    }
+    {
+      Name = "HarpyBuildRageBlast"
+      InheritFrom = "HarpyBeam"
+      Projectile = "HarpyBeamAlecto"
+      NumProjectiles = 10
+      ProjectileAngleOffset = 36
+      Spread = 0
+      BarrelLength = 20
+    }
+    {
+      Name = "HarpyLungeRageBeam"
+      InheritFrom = "HarpyWhipRageBeam"
+    }
+    {
+      Name = "HarpyLungeRageBeamAlecto"
+      InheritFrom = "HarpyWhipRageBeam"
+      Projectile = "HarpyBeamAlecto"
+    }
+    {
+      Name = "HarpyLightning"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HarpyLightning"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HarpyLightningCone"
+      InheritFrom = "HarpyLightning"
+    }
+    {
+      Name = "HarpyLightningConeRage"
+      InheritFrom = "HarpyLightning"
+    }
+    {
+      Name = "HarpyLightningChase"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningAlecto"
+    }
+    {
+      Name = "HarpyLightningChaseRage"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningAlecto"
+    }
+    {
+      Name = "SummonAlectoLightningChase"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningAlecto"
+    }
+    {
+      Name = "HarpyLightningLine"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningTisiphone"
+    }
+    {
+      Name = "HarpyLightningCardinal"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningTisiphone"
+    }
+    {
+      Name = "SummonTisiphoneBombingRun"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyLightningTisiphone"
+    }
+    {
+      Name = "SummonMegaeraHarpyBeam"
+      InheritFrom = "HarpyLightning"
+      Projectile = "HarpyBeamSky"
+      NumProjectiles = 8
+      ProjectileInterval = 0.3
+    }
+    {
+      Name = "SummonTisiphoneFog"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "TisiphoneFog"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "HarpySpawns"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CharonSpawns"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "EliteClones"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HarpyBuildRage"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TheseusChariotWait"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ShadeHunkerDown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ShadeHunkerDown"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmotePowerAttackingShield"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 115
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 1
+      SelfVelocity = 0
+      FireFx = "ShadeSpikeVertical"
+    }
+    {
+      Name = "ShadeHunkerDownElite"
+      InheritFrom = "ShadeHunkerDown"
+      Type = "GUN"
+      DisableOwnerForDuration = 0
+      ReloadTime = 0
+      NumProjectiles = 3
+      ProjectileAngleOffset = 17
+      ProjectileAngleOffsetScaleY = 0.5
+    }
+    {
+      Name = "MinotaurTheseusThrow_Minotaur"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      FireSound = "/SFX/Enemy Sounds/Hades/HadesSkullExplode"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "MinotaurTheseusThrow_Theseus"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurTheseusThrow_Theseus"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 3000.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.35
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.35
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurTheseusSlam_Theseus"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "MinotaurTheseusXStrike_Minotaur"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurTheseusXStrike"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 4000.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.4
+          Modifier = 0.005
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.4
+          RotationMultiplier = 0.005
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurTheseusSlamNova"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireSound = "/Leftovers/Menu Sounds/TextReveal3Distance"
+      Projectile = "MinotaurTheseusSlamNova"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 90
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "MinotaurTheseusXStrike_Theseus"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurTheseusXStrike"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 4500.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.4
+          Modifier = 0.005
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.4
+          RotationMultiplier = 0.005
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurArmoredAxeSpin"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurArmoredAxeSpin"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      LockTriggerForCharge = false
+      SelfVelocity = 400.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurBullRush"
+      Type = "GUN"
+      FireSound = "/Leftovers/SFX/HarpDash"
+      Effects = [
+        {
+          Name = "BullRushSpeed"
+          Type = "SPEED"
+          ChangeType = "ADD"
+          Duration = 9.0
+          Modifier = 625
+          ClearOnCollision = true
+          ClearAnimation = "MinotaurBullRush_PreStrike"
+          Active = true
+          ExpiringTimeThreshold = 8.5
+          ExpiringModifierFalloff = 50
+		      EnableWeaponForDuration = "MinotaurBullRushRam"
+        }
+        {
+          Name = "BullRushRotation"
+
+          Duration = 9.0
+          RotationMultiplier = 0.8
+          ClearOnCollision = true
+          ClearAnimation = "MinotaurBullRush_PreStrike"
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurBullRush2"
+      InheritFrom = "MinotaurBullRush"
+    }
+    {
+      Name = "MinotaurTheseusSlam_Minotaur"
+      InheritFrom = "MinotaurBullRush"
+    }
+    {
+      Name = "MinotaurArmoredBullRush"
+      Type = "GUN"
+      FireSound = "/Leftovers/SFX/MeteorStrikeShort"
+      FireFx = "MinotaurRocketBooster"
+      Effects = [
+        {
+          Name = "ArmoredBullRushSpeed"
+          Type = "SPEED"
+          ChangeType = "ADD"
+          Duration = 9.0
+          Modifier = 725
+          ClearOnCollision = true
+          ClearAnimation = "MinotaurArmoredBullRush_PreStrike"
+          Active = true
+          ExpiringTimeThreshold = 8.5
+          ExpiringModifierFalloff = 50
+          EnableWeaponForDuration = "MinotaurArmoredBullRushRam"
+        }
+        {
+          Name = "ArmoredBullRushRotation"
+
+          Duration = 9.0
+          RotationMultiplier = 0.8
+          ClearOnCollision = true
+          ClearAnimation = "MinotaurArmoredBullRush_PreStrike"
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MinotaurArmoredBullRush2"
+      InheritFrom = "MinotaurArmoredBullRush"
+    }
+    {
+      Name = "MinotaurBullRushRam"
+      Type = "GUN"
+      Projectile = "MinotaurBullRushRam"
+      FireSound = "/Leftovers/SFX/HarpDash"
+      Cooldown = 0.1
+	    Enabled = false
+    }
+    {
+      Name = "MinotaurArmoredBullRushRam"
+      InheritFrom = "MinotaurBullRushRam"
+      Projectile = "MinotaurArmoredBullRushRam"
+    }
+    {
+      Name = "MinotaurAxeCrescentStrike"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurAxeCrescentStrike"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireGraphic = "null"
+      FireFx = "null"
+      NumProjectiles = 3
+      ProjectileAngleOffset = 45
+      ProjectileInterval = 0.0
+      ChargeFx = "null"
+      ProjectileAngleStartOffset = 190
+      SelfVelocity = -300.0
+      BarrelLength = 0
+    }
+    {
+      Name = "MinotaurArmoredAxeCrescentStrike"
+      InheritFrom = "MinotaurAxeCrescentStrike"
+    }
+    {
+      Name = "Minotaur5AxeCombo1"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "Minotaur5AxeCombo1"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+      ChargeFx = "null"
+      FireFx = "MinotaurAxeArcLeft"
+      FireSound = "null"
+      SelfVelocity = 1450
+      BarrelLength = 0
+    }
+    {
+      Name = "MinotaurArmored5AxeCombo1"
+      InheritFrom = "Minotaur5AxeCombo1"
+    }
+    {
+      Name = "Minotaur5AxeCombo2"
+      InheritFrom = "Minotaur5AxeCombo1"
+      Projectile = "Minotaur5AxeCombo2"
+      FireFx = "MinotaurAxeArcRight"
+    }
+    {
+      Name = "MinotaurArmored5AxeCombo2"
+      InheritFrom = "Minotaur5AxeCombo2"
+    }
+    {
+      Name = "Minotaur5AxeCombo3"
+      InheritFrom = "Minotaur5AxeCombo1"
+      Projectile = "null"
+      SelfVelocity = 2250
+      SelfVelocityCap = 2250
+      SelfUpwardVelocity = 1100
+      FireFx = "null"
+    }
+    {
+      Name = "MinotaurArmored5AxeCombo3"
+      InheritFrom = "Minotaur5AxeCombo3"
+    }
+    {
+      Name = "MinotaurOverheadTouchdown"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      NumProjectiles = 1
+      ChargeFx = "null"
+      FireSound = "null"
+      BarrelLength = 0
+      Projectile = "MinotaurOverheadTouchdown"
+      FireFx = "EnemyHeavySlashSuperStretch"
+      FireGraphic = "MinotaurAttackSwings_AttackLeap"
+    }
+    {
+      Name = "MinotaurArmoredOverheadTouchdown"
+      InheritFrom = "MinotaurOverheadTouchdown"
+      Projectile = "MinotaurArmoredOverheadTouchdown"
+      FireGraphic = "MinotaurArmoredAttackSwings_AttackLeap"
+    }
+    {
+      Name = "Minotaur5AxeCombo4"
+      InheritFrom = "Minotaur5AxeCombo1"
+    }
+    {
+      Name = "MinotaurArmored5AxeCombo4"
+      InheritFrom = "Minotaur5AxeCombo4"
+    }
+    {
+      Name = "Minotaur5AxeCombo5"
+      InheritFrom = "Minotaur5AxeCombo2"
+    }
+    {
+      Name = "MinotaurArmored5AxeCombo5"
+      InheritFrom = "Minotaur5AxeCombo5"
+    }
+    {
+      Name = "MinotaurLeapCombo1"
+      InheritFrom = "Minotaur5AxeCombo1"
+    }
+    {
+      Name = "MinotaurArmoredLeapCombo1"
+      InheritFrom = "MinotaurLeapCombo1"
+    }
+    {
+      Name = "MinotaurLeapCombo2"
+      InheritFrom = "Minotaur5AxeCombo2"
+    }
+    {
+      Name = "MinotaurArmoredLeapCombo2"
+      InheritFrom = "MinotaurLeapCombo2"
+    }
+    {
+      Name = "MinotaurLeapCombo3"
+      InheritFrom = "Minotaur5AxeCombo3"
+    }
+    {
+      Name = "MinotaurArmoredLeapCombo3"
+      InheritFrom = "MinotaurLeapCombo3"
+    }
+    {
+      Name = "MinotaurLeapCombo4"
+      InheritFrom = "MinotaurLeapCombo3"
+    }
+    {
+      Name = "MinotaurArmoredLeapCombo4"
+      InheritFrom = "MinotaurLeapCombo4"
+    }
+    {
+      Name = "MinotaurLeapCombo5"
+      InheritFrom = "MinotaurLeapCombo3"
+    }
+    {
+      Name = "MinotaurArmoredLeapCombo5"
+      InheritFrom = "MinotaurLeapCombo5"
+    }
+    {
+      Name = "MinotaurCrescentCombo1"
+      InheritFrom = "Minotaur5AxeCombo1"
+    }
+    {
+      Name = "MinotaurArmoredCrescentCombo1"
+      InheritFrom = "MinotaurCrescentCombo1"
+    }
+    {
+      Name = "MinotaurCrescentCombo2"
+      InheritFrom = "Minotaur5AxeCombo2"
+    }
+    {
+      Name = "MinotaurArmoredCrescentCombo2"
+      InheritFrom = "MinotaurCrescentCombo2"
+    }
+    {
+      Name = "MinotaurCrescentCombo3"
+      InheritFrom = "MinotaurAxeCrescentStrike"
+    }
+    {
+      Name = "MinotaurArmoredCrescentCombo3"
+      InheritFrom = "MinotaurCrescentCombo3"
+    }
+    {
+      Name = "MinotaurAxeOverhead"
+      InheritFrom = "Minotaur5AxeCombo3"
+    }
+    {
+      Name = "MinotaurArmoredAxeOverhead"
+      InheritFrom = "MinotaurAxeOverhead"
+    }
+    {
+      Name = "MinotaurOverheadShockwave"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MinotaurOverheadShockwave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 400
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "MinotaurSwordSwipeOverhead"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      NumProjectiles = 3
+      ProjectileAngleOffset = 180
+      ProjectileInterval = 0.0
+      ProjectileAngleStartOffset = 90
+      SelfVelocity = 0
+    }
+    {
+      Name = "SpikeTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "SpikeTrapWeapon"
+      FullyAutomatic = true
+      FireSound = "/SFX/SpikeTrapFire"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 0
+    }
+    {
+      Name = "SpikeWallWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "SpikeWallWeapon"
+      FullyAutomatic = true
+      FireSound = "/Leftovers/SFX/WyrmCastAttack"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "PhalanxTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "PhalanxTrapWeapon"
+      FullyAutomatic = true
+      FireSound = "/SFX/PhalanxTrapFire"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 50
+    }
+    {
+      Name = "ArcherTrapWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ArcherTrapWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/ArcherTrapProjectileFireShoot"
+      RootOwnerWhileFiring = true
+      FullyAutomatic = true
+      BarrelLength = 180
+      AutoLock = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+    }
+    {
+      Name = "SawTrapWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SawTrapWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/SawTrapFireSound"
+      RootOwnerWhileFiring = true
+      FullyAutomatic = true
+      BarrelLength = 180
+      AutoLock = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+    }
+    {
+      Name = "AxeTrapWeapon"
+      InheritFrom = "SpikeTrapWeapon"
+      Projectile = "AxeTrapWeapon"
+    }
+    {
+      Name = "FreezeTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "FreezeTrapWeapon"
+      FullyAutomatic = true
+      FireSound = "/Leftovers/SFX/SpellFireAttackLarge"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "SmokeTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "SmokeTrapWeapon"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "EliteSmoke"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "EliteSmoke"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "PoisonTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "PoisonTrapWeapon"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "DartTrapWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "DartTrapWeapon"
+      FireSound = "/SFX/Player Sounds/DartFireFwip"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      BarrelLength = 90
+    }
+    {
+      Name = "ExplosiveBlast"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "ExplosiveBlast"
+      AutoLock = false
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "BlastCubeExplosion"
+      InheritFrom = "ExplosiveBlast"
+      Projectile = "BlastCubeExplosion"
+    }
+    {
+      Name = "BlastCubeExplosionElysium"
+      InheritFrom = "ExplosiveBlast"
+      Projectile = "BlastCubeExplosionElysium"
+      FireGraphic = "BlastCubeFusedRegeneratingExplode"
+    }
+    {
+      Name = "ShadeNakedEliteTrapDeath"
+      InheritFrom = "BlastCubeExplosionElysium"
+      Projectile = "ShadeNakedEliteTrapDeath"
+      FireGraphic = "BlastCubeFusedRegeneratingExplode"
+    }
+    {
+      Name = "BloodlessGrenadierDive"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "BloodlessGrenadierDive"
+      FireSound = "/SFX/Enemy Sounds/Bloodless01/EmoteAttacking"
+      BarrelLength = 150
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      OnlyChargeOnce = true
+      CancelChargeOnRelease = false
+      FullyAutomatic = false
+      ClipSize = 1
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.12
+          Modifier = 0.01
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.12
+          RotationMultiplier = 1E-05
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "MineToss"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MineToss"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/EnemyGrenadeMortarLaunch"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "BloodlessGrenadierPotDropDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 30
+    }
+    {
+      Name = "ImpulseMineToss"
+      InheritFrom = "MineToss"
+      Projectile = "ImpulseMineToss"
+      NumProjectiles = 1
+      ProjectileInterval = 0
+    }
+    {
+      Name = "BloodMineBlast"
+      InheritFrom = "ExplosiveBlast"
+      Projectile = "BloodMineBlast"
+      Effects = []
+    }
+    {
+      Name = "ImpulseMineBlast"
+      InheritFrom = "ExplosiveBlast"
+      Projectile = "ImpulseMineBlast"
+      Effects = []
+    }
+    {
+      Name = "ImpulseMineDrag"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ImpulseMineDrag"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.3
+    }
+    {
+      Name = "EliteVacuum"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "EliteVacuum"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Cooldown = 0.3
+    }
+    {
+      Name = "LavaTileWeapon"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "LavaTileWeapon"
+      FullyAutomatic = true
+      FireSound = "null"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "LavaTileTriangle01Weapon"
+      InheritFrom = "LavaTileWeapon"
+      Projectile = "LavaTileTriangle01Weapon"
+    }
+    {
+      Name = "LavaTileTriangle02Weapon"
+      InheritFrom = "LavaTileWeapon"
+      Projectile = "LavaTileTriangle02Weapon"
+    }
+    {
+      Name = "EnemyDeathWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireGraphic = "null"
+      FireSound = "null"
+      Projectile = "EnemyBombs"
+      MaxFireZ = 99999
+      ReloadTime = 0.35
+      ClipSize = 9999999
+      DisableOwnerForDuration = 0
+      Cooldown = 1.0
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ShieldAlliesGun"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/Leftovers/SFX/BallTossSmall"
+      Projectile = "ShieldAlliesProjectile"
+      CooldownMin = 0.01
+      CooldownMax = 0.01
+      BarrelLength = 1
+      Spread = 0
+    }
+    {
+      Name = "SelfSacrificeWeapon"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "SelfSacrificeWeapon"
+      BarrelLength = 0
+      Spread = 0
+    }
+    {
+      Name = "LightningAura"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "LightningAura"
+      CooldownMin = 0.3
+      CooldownMax = 1.0
+      LockTriggerForCharge = false
+      Spread = 30
+    }
+     {
+      Name = "DevotionPoseidon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionPoseidon"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Spread = 360
+    }
+    {
+      Name = "DevotionArtemis"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionArtemis"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      Spread = 360
+    }
+    {
+      Name = "DevotionDionysus"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionDionysus"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DevotionDionysus_ALT"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionDionysus"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DevotionDemeter"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionDemeter"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DevotionAthena"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionAthena"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DevotionAphrodite"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionAphrodite"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "DevotionZeus"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusLightningBolt"
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      IgnoreForceCooldown = true
+      FireSound = "null"
+    }
+    {
+      Name = "EnemyAthenaWeapon"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      FireSound = "null"
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      Projectile = "EnemyAthenaWeapon"
+      MaxFireZ = 99999
+      ChargeTime = 2.0
+      CooldownMin = 9.5
+      CooldownMax = 11.5
+      Effect = {
+        Name = "MagicShieldInvincible"
+        Type = "INVULNERABLE"
+        Duration = 1.5
+        Modifier = 1.0
+        FrontFx = "AthenaProtectionFront"
+        BackFx = "AthenaProtectionBack"
+        Active = true
+        FlashFrontFxWhenExpiring = true
+      }
+    }
+
+    {
+      Name = "EnemyPoseidonWeapon"
+      Type = "RAM"
+      SelfVelocity = 1200
+      SelfVelocityCap = 1200
+      RamTotalDistance = 2800
+      RamDistanceInterval = 50
+      RamReappliesVelocity = true
+      Projectile = "EnemyPoseidonWeapon"
+      CooldownMin = 4
+      CooldownMax = 9
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = false
+      ChargeTime = 0.35
+      ChargeFx = "PoseidonProjectileImpact"
+      LockTriggerForCharge = true
+    }
+    {
+      Name = "LightningRetaliateBall"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "LightningRetaliateBall"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      CooldownMin = 0.6
+      CooldownMax = 1.2
+    }
+    {
+      Name = "HitBlink"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "BLINK"
+      Cooldown = 2
+      DisableOwnerForDuration = 0
+      ArsenalCooldown = 0.0
+      Projectile = "HitBlink"
+      ChargeSound = "null"
+      FireSound = "null"
+      BarrelLength = 0
+      CancelMovement = false
+      FullyAutomatic = true
+      FireFx = "IllusionistPuff"
+      BlinkDetonateAtEndpoint = true
+      Effect = {
+        Name = "IllusionistDisarm"
+        Duration = 0.5
+        DisableMove = false
+        DisableRotate = true
+        DisableAttack = true
+        Active = true
+        CanAffectInvulnerable = true
+        FrontFx = "null"
+      }
+    }
+    {
+      Name = "MoveSpeedAoE"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "MoveSpeedAoE"
+      ChargeSound = "null"
+      SilentImpact = true
+    }
+    {
+      Name = "HealAoE"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HealAoE"
+      ChargeSound = "null"
+      SilentImpact = true
+      FireSound = "/Leftovers/World Sounds/Caravan Interior/WagonBoneXylophone"
+      FireFx = "MusicNotes"
+    }
+    {
+      Name = "Terrify"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "Terrify"
+      ChargeSound = "null"
+      FireSound = "/Leftovers/Vocalizations/Demon_M_02/EmotePowerAttacking"
+      CooldownMin = 9.0
+      CooldownMax = 10.0
+    }
+    {
+      Name = "EnemyArtemisWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionArtemis"
+      FireSound = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+    }
+    {
+      Name = "EnemyDionysusWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "TheseusDionysusBolt"
+      ClipSize = 5
+      CooldownMin = 1.0
+      CooldownMax = 1.2
+      ReloadTime = 7
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+      IgnoreForceCooldown = true
+      FireSound = "null"
+    }
+    {
+      Name = "DevotionAres"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionAres"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = false
+      BarrelLength = 0
+      FireGraphic = "null"
+      DisableOwnerForDuration = 0
+      Spread = 360
+    }
+    {
+      Name = "EnemyAresWeapon2"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DevotionAres"
+      CooldownMin = 5
+      CooldownMax = 5
+      FireSound = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      NumProjectiles = 5
+      ProjectileSpacing = 100
+      ProjectileInterval = 0.2
+    }
+    {
+      Name = "EnemyAphroditeWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      Projectile = "EnemyAphroditeWeapon"
+      WeaponRange = 300
+      BlinkMaxRange = 400
+      ReloadTime = 3.0
+      ReloadOnCreation = true
+      CooldownMin = 4
+      CooldownMax = 8
+      ArsenalCooldown = 0.0
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      BlockMoveInput = true
+      IgnoreForceCooldown = true
+      BlinkDetonateAtEndpoint = true
+      FireSound = "/SFX/Player Sounds/ZagreusDash"
+    }
+    {
+      Name = "ThanatosDeathCurse"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "ThanatosDeathCurse"
+      FireSound = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "ThanatosDeathCurseAoE"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "ThanatosDeathCurseAoE"
+      FireSound = "/SFX/ThanatosAOERift"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "TimeCrystalDash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.3
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+      Projectile = "null"
+      WeaponRange = 390
+      BlinkMaxRange = 390
+      ClipSize = 1
+      Cooldown = 0.05
+      ChargeFx = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CheckMovementReactionDistance = 150
+      FireFx = "null"
+      SilentImpact = true
+      AcceptTriggerLockRequests = true
+      CancelAttachedProjectiles = true
+    }
+    {
+      Name = "RatSpawnWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatSpawnWeapon"
+      FireSound = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "QuickFlashEnemy"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "RatSpawnWeaponSmall"
+      InheritFrom = "RatSpawnWeapon"
+      Projectile = "RatSpawnWeaponSmall"
+    }
+    {
+      Name = "RatThugMelee"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatThugMelee"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 120
+      AutoLock = false
+      SelfVelocity = 200.0
+      FireSound = "/SFX/Enemy Sounds/RatThug/EmoteAttacking"
+      Effects = [
+      ]
+    }
+    {
+      Name = "RatThugMeleeMiniboss"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatThugMeleeMiniboss"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 120
+      AutoLock = false
+      SelfVelocity = 3000.0
+      FireSound = "/SFX/Enemy Sounds/RatThug/EmoteAttacking"
+      Effects = [
+      ]
+    }
+    {
+      Name = "RatDeathPuddle"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatDeathPuddle"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/HydraHead/EmoteRangedAttacking"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = 0
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      CancelMovement = true
+    }
+    {
+      Name = "RatPoisonShake"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatPoisonShake"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/RatThug/PoisonShake"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = 20
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      CancelMovement = true
+      Spread = 360
+    }
+    {
+      Name = "RatPoisonShakeMiniboss"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "RatPoisonShakeMiniboss"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/RatThug/PoisonShake"
+      RootOwnerWhileFiring = false
+      FullyAutomatic = true
+      BarrelLength = 20
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      CancelMovement = true
+      Spread = 360
+    }
+    {
+      Name = "RatSummon"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "SatyrRangedWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "StaggeredSatyrRangedWeapon"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 3
+      ProjectileAngleOffset = 5
+      ProjectileInterval = 0.1
+      Effect = {
+        Name = "BowFireRotation"
+
+        Duration = 1.0
+        RotationMultiplier = 1E-06
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "SatyrMinigun"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "SatyrMinigun"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 110
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      Spread = 15
+    }
+    {
+      Name = "SatyrDash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      FireGraphic = "SatyrMinibossMove"
+      ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.3
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+      Projectile = "null"
+      WeaponRange = 350
+      BlinkMaxRange = 350
+      ClipSize = 1
+      Cooldown = 0.05
+      ChargeFx = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CheckMovementReactionDistance = 150
+      FireFx = "null"
+      SilentImpact = true
+      AcceptTriggerLockRequests = true
+      CancelAttachedProjectiles = true
+    }
+    {
+      Name = "SatyrSplitShot"
+      InheritFrom = "SatyrRangedWeapon"
+      Projectile = "StaggeredSatyrRangedWeapon"
+      NumProjectiles = 3
+      ProjectileSpacing = 0
+      ProjectileAngleOffset = 30
+
+      ProjectileOffsetStart = "CENTER"
+      ProjectileInterval = 0.1
+      Effect = {
+        Name = "BowAttackRotation"
+
+        Duration = 0.3
+        RotationMultiplier = 1E-07
+        Active = true
+      }
+    }
+    {
+      Name = "SatyrSingleShot"
+      InheritFrom = "SatyrRangedWeapon"
+      Projectile = "SatyrRangedWeapon"
+      NumProjectiles = 1
+      ProjectileSpacing = 0
+      ProjectileAngleOffset = 0
+      ProjectileOffsetStart = "LEFT"
+      ProjectileInterval = 0.0
+      Effect = {
+        Name = "BowAttackRotation"
+
+        Duration = 0.3
+        RotationMultiplier = 1E-07
+        Active = true
+      }
+    }
+    {
+      Name = "HadesSpawns"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesBidentRangedChain"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesSpawns2"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+    }
+    {
+      Name = "HadesInvisibility"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesAmmoWeaponSlowPools"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HadesSlowPool"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "HadesDashSlowPools"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HadesSlowPool"
+      FireSound = "/SFX/GasBomb"
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      SilentImpact = true
+    }
+    {
+      Name = "HadesRadialPush"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesRadialPush"
+      Cooldown = 0.0
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      AutoLock = true
+      FireGraphic = "null"
+    }
+    {
+      Name = "HadesBidentStrike"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesBidentStrike"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 1500.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HadesBidentFlurry"
+      InheritFrom = "HadesBidentStrike"
+      Projectile = "HadesBidentFlurry"
+      SelfVelocity = 0.0
+    }
+    {
+      Name = "HadesBidentSpin"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesBidentSpin"
+      FireSound = "/SFX/Enemy Sounds/Hades/Hades360Swipe"
+      RootOwnerWhileFiring = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = false
+      AutoLock = true
+      LockTriggerForCharge = false
+      SelfVelocity = 1350.0
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "HadesBidentSpin2"
+      InheritFrom = "HadesBidentSpin"
+    }
+    {
+      Name = "HadesBidentSpin2Reverse"
+      InheritFrom = "HadesBidentSpin"
+    }
+    {
+      Name = "HadesBidentThrow"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesBidentThrow"
+      ClipSize = 1
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = -55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.0
+      NumProjectiles = 1
+    }
+    {
+      Name = "HadesBidentThrowBlast"
+      InheritFrom = "1_BaseTrapWeapon"
+      Type = "GUN"
+      Projectile = "HadesBidentThrowBlast"
+      AutoLock = false
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesCerberusAssistRockFall"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "HadesCerberusAssistBombard"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesCerberusAssistMovement"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      ClipSize = 1
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.0
+      NumProjectiles = 2
+      ProjectileAngleOffset = 180
+      ProjectileAngleStartOffset = 90
+      Spread = 30
+    }
+    {
+      Name = "HadesBidentArcCombo1"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesBidentArcCombo1"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+      ChargeFx = "null"
+      FireFx = "HadesBidentArcRight"
+      FireSound = "null"
+      SelfVelocity = 1450
+      BarrelLength = 0
+    }
+    {
+      Name = "HadesBidentArcCombo2"
+      InheritFrom = "HadesBidentArcCombo1"
+      Projectile = "HadesBidentArcCombo2"
+      FireFx = "HadesBidentArcLeft"
+    }
+    {
+      Name = "HadesBidentArcCombo3"
+      InheritFrom = "HadesBidentSpin"
+    }
+
+    {
+      Name = "HadesBidentArcCombo1_2"
+      InheritFrom = "HadesBidentArcCombo1"
+    }
+    {
+      Name = "HadesBidentArcCombo2_2"
+      InheritFrom = "HadesBidentArcCombo2"
+    }
+    {
+      Name = "HadesBidentArcCombo3_2"
+      InheritFrom = "HadesBidentSpin2"
+    }
+    
+    {
+      Name = "HadesBidentThrowCombo1"
+      InheritFrom = "HadesBidentArcCombo1"
+    }
+    {
+      Name = "HadesBidentThrowCombo2"
+      InheritFrom = "HadesBidentArcCombo2"
+    }
+    {
+      Name = "HadesBidentThrowCombo3"
+      InheritFrom = "HadesBidentThrow"
+    }
+    {
+      Name = "HadesCast"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesCast"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      Effect = {
+        Name = "BowFireRotation"
+
+        Duration = 1.0
+        RotationMultiplier = 1E-06
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+
+    {
+      Name = "HadesBidentStrikeCombo1"
+      InheritFrom = "HadesCast"
+      FireFx = "ShadeTeleportFlare"
+      FireSound = "/SFX/Enemy Sounds/Exalted/EmoteEvading"
+      SelfVelocity = -500
+      IgnoreOwnerAttackDisabled = true
+      Effect = {
+        Name = "DashStop"
+        Duration = 0.1
+        HaltOnEnd = true
+        Active = true
+        CanAffectInvulnerable = true
+      }
+    }
+    {
+      Name = "HadesBidentStrikeCombo2"
+      InheritFrom = "HadesBidentStrikeCombo1"
+    }
+    {
+      Name = "HadesBidentStrikeCombo3"
+      InheritFrom = "HadesBidentStrike"
+    }
+    {
+      Name = "HadesRubbleClear"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesRubbleClear"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      NumProjectiles = 1
+      Effect = {
+        Name = "BowFireRotation"
+
+        Duration = 1.0
+        RotationMultiplier = 1E-06
+        HaltOnEnd = true
+        Active = true
+      }
+    }
+    {
+      Name = "HadesCastBeam"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesCastBeam"
+      ClipSize = 1
+      Cooldown = 0.0
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 175
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 3.0
+      NumProjectiles = 3
+      ProjectileAngleOffset = 30
+      SilentImpactAfterFirst = true
+      ObstacleDamageMultiplier = 1
+      Effect = {
+        Name = "BeamRotation"
+
+        Duration = 3.05
+        RotationMultiplier = 0.02
+        Active = true
+      }
+    }
+    {
+      Name = "HadesCastBeam2"
+      InheritFrom = "HadesCastBeam"
+    }
+    {
+      Name = "HadesCastBeam360"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesCastBeam"
+      ClipSize = 1
+      Cooldown = 0.0
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 175
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 3.0
+      NumProjectiles = 18
+      ProjectileAngleOffset = 20
+      SilentImpactAfterFirst = true
+      ObstacleDamageMultiplier = 1
+      FireFx = "HadesCastBeam360Vignette"
+      Effect = {
+        Name = "BeamRotation"
+
+        Duration = 3.05
+        RotationMultiplier = 0.015
+        Active = true
+      }
+    }
+    {
+      Name = "HadesCastBeam2360"
+      InheritFrom = "HadesCastBeam360"
+    }
+    {
+      Name = "HadesReverseDarkness"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesTombstoneSpawn"
+      FullyAutomatic = true
+      AutoLock = true
+      IgnoreOwnerAttackDisabled = true
+      FireFx = "null"
+    }
+    {
+      Name = "HadesWrath"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesTombstoneSpawn"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesWrathPassive"
+      InheritFrom = "HadesWrath"
+    }
+    {
+      Name = "HadesGraspingHands"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesGraspingHands"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesConsumeHeal"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "null"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "HadesAmmoDrop"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "HadesAmmoDrop"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Hades/HadesAmmoExitPoof"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      Spread = 60
+    }
+    {
+      Name = "HadesAmmoWeapon"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireSound = "/Leftovers/Menu Sounds/TextReveal3Distance"
+      Projectile = "HadesAmmoWeapon"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 90
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "HadesCerberusAssist"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      FireSound = "/Leftovers/Menu Sounds/TextReveal3"
+      Projectile = "HadesCerberusAssist"
+      ChargeSound = "null"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = false
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 90
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+    }
+    {
+      Name = "HadesDash"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "BLINK"
+      FireGraphic = "HadesBattleDash_Start"
+      UnblockedBlinkFx = "DashCrackSnowHades"
+      ChargeTime = 0
+      SelfVelocity = 0
+      SelfVelocityCap = 0
+      BlinkDuration = 0.3
+      BlinkEaseIn = 0
+      BlinkEaseOut = 0.8
+      Projectile = "null"
+      WeaponRange = 500
+      BlinkMaxRange = 500
+      ClipSize = 1
+      Cooldown = 0.05
+      ChargeFx = "null"
+      CancelMovement = false
+      FullyAutomatic = false
+      AutoLock = false
+      UseTargetAngle = true
+      ControlHelpTextId = "Rush"
+      IgnoreForceCooldown = true
+      CanCancelDisables = true
+      CheckMovementReactionDistance = 150
+      FireFx = "null"
+      SilentImpact = true
+      AcceptTriggerLockRequests = true
+      CancelAttachedProjectiles = true
+	    BlinkDetonateAtEndpoint = false
+    }
+    {
+      Name = "HadesSideDash"
+      InheritFrom = "HadesDash"
+    }
+    {
+      Name = "HadesBidentRecoveryDash"
+      InheritFrom = "HadesDash"
+      FireGraphic = "HadesBattleBidentDash_Loop"
+      WeaponRange = 1400
+      FireToObstacle = "HadesBidentReturnPoint"
+      Enabled = true
+      DestroyTargetedObstacle = true
+    }
+    {
+      Name = "HadesMobilityCombo1"
+      InheritFrom = "HadesSideDash"
+    }
+    {
+      Name = "HadesMobilityCombo2"
+      InheritFrom = "HadesSideDash"
+    }
+    {
+      Name = "HadesMobilityCombo3"
+      InheritFrom = "HadesSideDash"
+    }
+    {
+      Name = "HadesMobilityCombo4"
+      InheritFrom = "HadesBidentSpin"
+    }
+
+    {
+      Name = "CrawlerSpawns"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "CrawlerSpawnsHowlFx"
+      IgnoreOwnerAttackDisabled = true
+    }
+
+    {
+      Name = "CrawlerReburrow"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+
+    {
+      Name = "RangedBurrowerBurrow"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+      FireSound = "/SFX/Enemy Sounds/RangedBurrower/EmoteBurrow"
+    }
+
+    {
+      Name = "CrawlerReburrowShockwave"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CrusherUnitTouchdown"
+      FireSound = "/SFX/Enemy Sounds/CrusherAttackImpact"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "CrawlerMinibossShockwave"
+      IgnoreOwnerAttackDisabled = true
+      ObstacleDamageMultiplier = 0.0
+    }
+    {
+      Name = "DisembodiedHandGrab"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "DisembodiedHandGrab"
+      FullyAutomatic = true
+      ChargeCancelMovement = true
+      CancelMovement = true
+      RootOwnerWhileFiring = true
+      BarrelLength = 0
+      AutoLock = false
+      SelfVelocity = 350.0
+      FireSound = "/SFX/Enemy Sounds/Wringer/WringerAttack"
+      FireFx = "EnemyWringerChainGrabFireFx"
+      Effects = [
+        {
+          Name = "MeleeAttackGrip"
+          Type = "GRIP"
+          Duration = 0.3
+          Modifier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+        {
+          Name = "MeleeAttackRotation"
+          Duration = 0.3
+          RotationMultiplier = 0.001
+          HaltOnEnd = true
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "DisembodiedHandGrabElite"
+      InheritFrom = "DisembodiedHandGrab"
+    }
+
+    {
+      Name = "CharonRadialPush"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CharonRadialPush"
+      Cooldown = 0.0
+      ChargeSound = "/SFX/Enemy Sounds/Megaera/EmoteCharging"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      AutoLock = true
+      FireGraphic = "null"
+    }
+
+    {
+      Name = "CharonGhostCharge"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CharonGhostCharge"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/Enemy Sounds/Charon/CharonGhostAttackStart"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 55
+      AutoLock = true
+      FireGraphic = "null"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0
+      ReloadTime = 0.0
+      NumProjectiles = 1
+    }
+
+    {
+      Name = "CharonGhostChargeLeft"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CharonGhostChargeRight"
+      InheritFrom = "CharonGhostChargeLeft"
+    }
+    {
+      Name = "CharonGhostCharge360"
+      InheritFrom = "CharonGhostChargeLeft"
+    }
+    {
+      Name = "CharonMeleeLeft"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CharonMeleeArcLeft"
+      ClipSize = 1
+      RootOwnerWhileFiring = false
+      BlockMoveInput = false
+      CancelMovement = false
+      ChargeCancelMovement = false
+      FullyAutomatic = true
+      FireGraphic = "null"
+      NumProjectiles = 1
+      ChargeFx = "null"
+      FireFx = "CharonArcLeft"
+      FireSound = "null"
+      SelfVelocity = 1400
+      BarrelLength = 0
+      Effects = [
+        {
+          Name = "MeleeAttackRotationIncrease"
+          Duration = 0.65
+          RotationMultiplier = 10.0
+          Active = true
+        }
+      ]
+    }
+    {
+      Name = "CharonMeleeRight"
+      InheritFrom = "CharonMeleeLeft"
+      Projectile = "CharonMeleeArcRight"
+      FireFx = "CharonArcRight"
+    }
+    {
+      Name = "CharonMeleeBack"
+      InheritFrom = "CharonMeleeLeft"
+      Projectile = "CharonMeleeArcBack"
+      FireFx = "CharonArcBack"
+      SelfVelocity = 0
+    }
+    {
+      Name = "CharonMeleeStraight"
+      InheritFrom = "CharonMeleeLeft"
+      Projectile = "null"
+      SelfVelocity = -1000
+      FireFx = "null"
+    }
+    {
+      Name = "CharonWaveStraight"
+      InheritFrom = "1_BasePlayerSlowWeapon"
+      Type = "GUN"
+      Projectile = "CharonWave"
+      ClipSize = 1
+      ChargeSound = "null"
+      FireSound = "/SFX/HellFireShoot"
+      RootOwnerWhileFiring = true
+      BlockMoveInput = true
+      CancelMovement = true
+      ChargeCancelMovement = true
+      FullyAutomatic = false
+      BarrelLength = 50
+      AutoLock = true
+      FireGraphic = "null"
+      FireFx = "CastDust"
+      LockTriggerForCharge = false
+      DisableOwnerForDuration = 0.3
+      ReloadTime = 0.1
+      NumProjectiles = 1
+      ProjectileAngleStartOffset = 0
+    }
+    {
+      Name = "CharonMeleeCombo1"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CharonMeleeCombo2"
+      InheritFrom = "CharonMeleeCombo1"
+    }
+    {
+      Name = "CharonGhostChargeTopAndBot"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+    {
+      Name = "CharonGhostChargeLeftAndRight"
+      InheritFrom = "1_BaseEnemyMagicWeapon"
+      Type = "GUN"
+      Projectile = "nil"
+      FullyAutomatic = true
+      AutoLock = true
+      FireFx = "null"
+      IgnoreOwnerAttackDisabled = true
+    }
+  ]
+}

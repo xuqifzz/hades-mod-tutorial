@@ -1,0 +1,3907 @@
+{
+  Animations = [
+
+    /* ________HYDRA________ */
+
+    
+
+    {
+      Name = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\Idle\HydraIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_Hydra_Idle_Bink"
+      EndFrame = 118
+      FrameDataFile = "Game\Animations\FrameData\HydraIdle.sga"
+      Loop = true
+      NumAngles = 16
+      NumFrames = 118
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+      Slides = [
+        { Frame = 45 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 78 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle3" }
+        ]
+    }
+
+    {
+      Name = "EnemyHydraMove"
+      InheritFrom = "EnemyHydraIdle"
+      EndFrame = 118
+      StartFrame = 1
+      Slides = [
+        { Frame = 109 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 118 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2" }
+        ]
+    }
+
+{
+      Name = "EnemyHydraSleep_Loop"
+      ChainTo = "EnemyHydraSleep_Wake"
+      FilePath = "Animations\Hydra\Sleep\HydraSleep"
+      FrameDataFile = "Game\Animations\FrameData\HydraSleep.sga"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Sleep_Bink"
+      EndFrame = 60
+      NumAngles = 1
+      NumFrames = 60
+      AngleFromOwner = "Ignore"
+      StartFrame = 1
+      Loop = true
+      OffsetY = 10.0
+      Slides = [
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 10*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 } /*Frame 20*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 60*/
+        
+      
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraSleep_Wake"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\Sleep\HydraSleep"
+      FrameDataFile = "Game\Animations\FrameData\HydraSleep.sga"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Sleep_Bink"
+      EndFrame = 60
+      NumAngles = 1
+      NumFrames = 60
+      AngleFromOwner = "Ignore"
+      StartFrame = 1
+      OffsetY = 10.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 10*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 } /*Frame 20*/
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 50*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 60*/
+        
+      
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "EnemyHydraRoarPreAttack"
+      ChainTo = "EnemyHydraRoarFire"
+      FilePath = "Animations\Hydra\Roar\HydraRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Roar_Bink"
+      EndFrame = 54
+      FrameDataFile = "Game\Animations\FrameData\HydraRoar.sga"
+      NumAngles = 32
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle3" }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/HydraHead/HydraSpawnRattle" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        { DurationFrames = 0 DangerDistance = 350 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraRoarFire"
+      ChainTo = "EnemyHydraRoarFire_Loop"
+      FilePath = "Animations\Hydra\Roar\HydraRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Roar_Bink"
+      EndFrame = 54
+      FrameDataFile = "Game\Animations\FrameData\HydraRoar.sga"
+      Loop = false
+      NumAngles = 32
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = 10.0
+      Sound = "/SFX/Enemy Sounds/HydraHead/HydraIntroHissRattle"
+      StopSoundOnFinishFade = 0.3
+      DangerDistance = 350
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyHydraRoarFire_Loop"
+      ChainTo = "EnemyHydraRoarReturnToIdle"
+      FilePath = "Animations\Hydra\Roar\HydraRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Roar_Bink"
+      EndFrame = 54
+      FrameDataFile = "Game\Animations\FrameData\HydraRoar.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = 10.0
+      Sound = "/SFX/Enemy Sounds/HydraHead/HydraIntroHissRattle"
+      StopSoundOnFinishFade = 0.3
+      DangerDistance = 350
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+       }
+    }
+
+    {
+      Name = "EnemyHydraRoarReturnToIdle"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\Roar\HydraRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Roar_Bink"
+      EndFrame = 54
+      FrameDataFile = "Game\Animations\FrameData\HydraRoar.sga"
+      NumAngles = 32
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/HydraHead/HydraBoneClack1" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+    
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraTaunt"
+      InheritFrom = "EnemyHydraRoarFire"
+      FrameDataFile = "Game\Animations\FrameData\HydraRoar.sga"
+      ChainTo = "null"
+      Type = "Book"
+      PlaySpeed = 30
+    }
+
+    {
+      Name = "EnemyHydraOnHit"
+      FilePath = "Animations\EnemyHydraOnHit\EnemyHydraOnHit"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "EnemyHydraOnHit_1" }  
+        { Name = "EnemyHydraOnHit_2" }
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraOnHit_1"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      AllowRestart = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*Frame 1*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraOnHit_2"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      AllowRestart = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 1 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraBite_Charge"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      AllowRestart = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 4 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 DangerDistance = 350 }
+        { DurationFrames = 4 DangerDistance = 350 }
+        { DurationFrames = 4 DangerDistance = 350 }
+        { DurationFrames = 9999 DangerDistance = 350 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraBite_Charge2"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      AllowRestart = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 9999 DangerDistance = 350 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraBite_Attack"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      AllowRestart = true
+      DangerDistance = 350
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 80*/		
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraDeath"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      StartAlpha = 1.0
+      Duration = 1.2
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      StartFrame = 1
+      OffsetY = 10.0
+      TimeModifierFraction = 0.0
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 4 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraMouthOpening_Start"
+      ChainTo = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\MouthOpening\HydraMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_Hydra_MouthOpening_Bink"
+      Sound = "/SFX/Enemy Sounds/HydraHead/EmoteAlerted"
+      EndFrame = 20
+      FrameDataFile = "Game\Animations\FrameData\HydraMouthOpening.sga"
+      NumAngles = 32
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\MouthOpening\HydraMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_Hydra_MouthOpening_Bink"
+      EndFrame = 40
+      FrameDataFile = "Game\Animations\FrameData\HydraMouthOpening.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 21
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraMouthOpening_End"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\MouthOpening\HydraMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_Hydra_MouthOpening_Bink"
+      EndFrame = 50
+      FrameDataFile = "Game\Animations\FrameData\HydraMouthOpening.sga"
+      NumAngles = 32
+      NumFrames = 50
+      PlaySpeed = 60.0
+      StartFrame = 41
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraHealing"
+      InheritFrom = "EnemyHydraMouthOpening_Start"
+      EndFrame = 9
+      NumFrames = 50
+      StartFrame = 6
+    }
+
+    {
+      Name = "EnemyHydraSlamCharge"
+      ChainTo = "EnemyHydraSlamFire"
+      FilePath = "Animations\Hydra\Slam\HydraSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Slam_Bink"
+      EndFrame = 30
+      FrameDataFile = "Game\Animations\FrameData\HydraSlam.sga"
+      NumAngles = 32
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 2*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraSlamFire"
+      ChainTo = "EnemyHydraRecover"
+      FilePath = "Animations\Hydra\Slam\HydraSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Slam_Bink"
+      EndFrame = 30
+      FrameDataFile = "Game\Animations\FrameData\HydraSlam.sga"
+      NumAngles = 32
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = 10.0
+      DangerDistance = 500
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/HydraHead/HydraGroundPound"}
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraRecover"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\OnHit\HydraOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_OnHit_Bink"
+      EndFrame = 80
+      FrameDataFile = "Game\Animations\FrameData\HydraOnHit.sga"
+      NumAngles = 16
+      NumFrames = 80
+      PingPong = true
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*Frame 1*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle3" }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        /*Frame 20*/
+
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        /*Frame 30*/
+
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        { DurationFrames = 4 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        /*Second ON HIT Animation*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*____RANGED_____*/
+     {
+      Name = "EnemyHydraRangedPreAttack"
+      ChainTo = "EnemyHydraRangedFire"
+      FilePath = "Animations\Hydra\Ranged\HydraRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Ranged_Bink"
+      EndFrame = 120
+      FrameDataFile = "Game\Animations\FrameData\HydraRanged.sga"
+      NumAngles = 32
+      NumFrames = 120
+      StartFrame = 1
+      OffsetY = 10.0
+      Sound = "/SFX/Enemy Sounds/HydraHead/HydraPreAttackRattle"
+      StopSoundOnFinishFade = 0.3
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*frm 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraRangedFire"
+      ChainTo = "EnemyHydraRangedPostAttack"
+      FilePath = "Animations\Hydra\Ranged\HydraRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Ranged_Bink"
+      EndFrame = 120
+      FrameDataFile = "Game\Animations\FrameData\HydraRanged.sga"
+      NumAngles = 32
+      NumFrames = 120
+      StartFrame = 1
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*frm 60*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraRangedFireLoop"
+      ChainTo = "EnemyHydraRangedPostAttack"
+      FilePath = "Animations\Hydra\Ranged\HydraRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Ranged_Bink"
+      EndFrame = 120
+      FrameDataFile = "Game\Animations\FrameData\HydraRanged.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 120
+      StartFrame = 1
+      OffsetY = 10.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*frm 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraRangedPostAttack"
+      ChainTo = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\Ranged\HydraRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Ranged_Bink"
+      EndFrame = 120
+      FrameDataFile = "Game\Animations\FrameData\HydraRanged.sga"
+      NumAngles = 32
+      NumFrames = 120
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*frm 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 90*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2"}
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frm 100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 110*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 120*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "EnemyHydraDeathVFX"
+      CreateAnimation = "HydraHeadDeathLight"
+      FilePath = "Animations\Hydra\DeathVFX\HydraDeathVFX"
+      Type = "Book"
+      VideoTexture = "Enemy_Hydra_DeathVFX_Bink"
+      Sound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+      ColorFromOwner = "Ignore"
+      EndFrame = 60
+      HoldLastFrame = true
+      NumAngles = 4
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Scale = 1.1
+      BlockNewOwnerAnims = true
+      OwnerHasNoCollision = true
+	  OwnerImmobile = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+      Slides = [
+        { Frame = 2 Sound = "/SFX/HellFireShoot" }
+        ]
+    }
+
+    {
+        Name = "HydraNeckDeath"
+        Type = "Book"
+        FilePath = "Animations\Hydra\HydraNeckDeath\HydraNeckDeath"
+        NumFrames = 33
+        RandomPlaySpeedMin = 28
+        RandomPlaySpeedMax = 35
+        Material = "Unlit"
+        RandomFlipHorizontal= true
+        AngleFromOwner = "Ignore"
+        ScaleMin = 0.9
+        ScaleMax = 1.1
+        CreateAnimation = "HydraNeckDeathLight"
+        VisualFx = "HydraNeckDeathFragments"
+        VisualFxIntervalMin = 0.05
+        VisualFxIntervalMax = 0.1
+        VisualFxCap = 5
+        Sound = "/SFX/LavaEmerge"
+    }
+
+    {
+        Name = "HydraNeckDeathFragmentBase"
+        Type = "Constant"
+        FilePath = "Particles\particle_hydra_01"
+        Material = "Unlit"
+        ScaleMin = 0.7
+        ScaleMax = 1.1
+        AngleMin = 0
+        AngleMax = 360
+        VelocityMin = 300
+        VelocityMax = 800
+        Acceleration = -500
+        RandomDurationMin = 0.3
+        RandomDurationMax = 1
+        Gravity = 500
+        RandomRotation = true
+        RotateWithGravity = false
+        StartScale = 1
+        EndScale = 0
+        RandomRotationSpeedMin = -1080
+        RandomRotationSpeedMax = 1080
+        AngleFromOwner = "Ignore"
+        UseOwnAngle = true
+        RadialOffsetMin = 50
+        RadialOffsetMax = 100
+    }
+
+    {
+        Name = "HydraNeckDeathFragmentA"
+        InheritFrom = "HydraNeckDeathFragmentBase"
+        FilePath = "Particles\particle_hydra_01"
+    }
+    {
+        Name = "HydraNeckDeathFragmentB"
+        InheritFrom = "HydraNeckDeathFragmentBase"
+        FilePath = "Particles\particle_hydra_02"
+    }
+    {
+        Name = "HydraNeckDeathFragmentC"
+        InheritFrom = "HydraNeckDeathFragmentBase"
+        FilePath = "Particles\particle_hydra_03"
+    }
+    {
+        Name = "HydraNeckDeathFragmentD"
+        InheritFrom = "HydraNeckDeathFragmentBase"
+        FilePath = "Particles\particle_hydra_04"
+    }
+    {
+        Name = "HydraNeckDeathFragmentE"
+        InheritFrom = "HydraNeckDeathFragmentBase"
+        FilePath = "Particles\particle_hydra_05"
+    }
+
+    {
+        Name = "HydraNeckDeathFragments"
+        Type = "Random"
+        Random = [
+            { Name = "HydraNeckDeathFragmentA" }
+            { Name = "HydraNeckDeathFragmentB" }
+            { Name = "HydraNeckDeathFragmentC" }
+            { Name = "HydraNeckDeathFragmentD" }
+            { Name = "HydraNeckDeathFragmentE" }
+        ]
+    }
+
+    {
+      Name = "HydraHeadDeathLight"
+      FilePath = "Fx\BasicGlow\BasicGlow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndRed = 0.999
+      StartAlpha = 1.0
+      StartBlue = 0.1
+      StartGreen = 0.5
+      StartRed = 1.0
+      Duration = 1.2
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      PostRotateScaleY = 0.5
+      Scale = 3.0
+      Material = "Unlit"
+    }
+
+    {
+        Name = "HydraNeckDeathLight"
+        InheritFrom = "HydraHeadDeathLight"
+        Scale = 1
+    }
+
+    /* ___________HydraLunge___________ */
+
+    {
+      Name = "EnemyHydraLungePreAttack"
+      ChainTo = "EnemyHydraLungeChargeLoop"
+      FilePath = "Animations\Hydra\Lunge\HydraLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Lunge_Bink"
+      EndFrame = 42
+      FrameDataFile = "Game\Animations\FrameData\HydraLunge.sga"
+      NumAngles = 32
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*preAttackToCharge*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        /*chargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*chargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*42*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraLungeChargeLoop"
+      ChainTo = "EnemyHydraLungeFire"
+      FilePath = "Animations\Hydra\Lunge\HydraLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Lunge_Bink"
+      EndFrame = 42
+      FrameDataFile = "Game\Animations\FrameData\HydraLunge.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = 10.0
+      Sound = "/SFX/Enemy Sounds/HydraHead/HydraPreAttackRattle"
+      StopSoundOnFinishFade = 0.3
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttackToCharge*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*chargeLoopStart*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*chargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*42*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraLungeFire"
+      ChainTo = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\Lunge\HydraLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Lunge_Bink"
+      EndFrame = 42
+      FrameDataFile = "Game\Animations\FrameData\HydraLunge.sga"
+      NumAngles = 32
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = 10.0
+      DangerDistance = 350
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttackToCharge*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*chargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*chargeLoopEnd*/
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/HydraHead/HydraBoneCrunch" }
+        /*Attack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*42*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\Lunge\HydraLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_Hydra_Lunge_Bink"
+      EndFrame = 42
+      FrameDataFile = "Game\Animations\FrameData\HydraLunge.sga"
+      NumAngles = 32
+      NumFrames = 42
+      StartFrame = 1
+      OffsetY = 10.0
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttackToCharge*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*chargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*chargeLoopEnd*/
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*returnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*42*/
+      ]
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /* ___________HydraVariant_Blue___________ */
+
+     {
+      Name = "EnemyHydraBlueIdle"
+      InheritFrom = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Idle\HydraBlueIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraBlue_Idle_Bink"
+     }
+      
+
+    {
+      Name = "EnemyHydraBlueMove"
+      InheritFrom = "EnemyHydraBlueIdle"
+      EndFrame = 118
+      StartFrame = 1
+      Slides = [
+        { Frame = 109 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 118 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2" }
+        ]
+    }
+
+    {
+      Name = "EnemyHydraBlueRoarPreAttack"
+      InheritFrom = "EnemyHydraRoarPreAttack"
+      ChainTo = "EnemyHydraBlueRoarFire"
+      FilePath = "Animations\Hydra\VariantBlue\Roar\HydraBlueRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRoarFire"
+      InheritFrom = "EnemyHydraRoarFire"
+      ChainTo = "EnemyHydraBlueRoarFire_Loop"
+      FilePath = "Animations\Hydra\VariantBlue\Roar\HydraBlueRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Roar_Bink"
+    }
+
+     {
+      Name = "EnemyHydraBlueRoarFire_Loop"
+      InheritFrom = "EnemyHydraRoarFire_Loop"
+      ChainTo = "EnemyHydraBlueRoarReturnToIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Roar\HydraBlueRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRoarReturnToIdle"
+      InheritFrom = "EnemyHydraRoarReturnToIdle"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Roar\HydraBlueRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueTaunt"
+      InheritFrom = "EnemyHydraTaunt"
+      FilePath = "Animations\Hydra\VariantBlue\Roar\HydraRoar"
+      Type = "Book"
+      PlaySpeed = 30
+      VideoTexture = "Enemy_HydraBlue_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueOnHit_1"
+      InheritFrom = "EnemyHydraOnHit_1"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueOnHit_2"
+      InheritFrom = "EnemyHydraOnHit_2"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueBite_Charge"
+      InheritFrom = "EnemyHydraBite_Charge"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueBite_Charge2"
+      InheritFrom = "EnemyHydraBite_Charge2"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueBite_Attack"
+      InheritFrom = "EnemyHydraBite_Attack"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueDeath"
+      InheritFrom = "EnemyHydraDeath"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueMouthOpening_Start"
+      InheritFrom = "EnemyHydraMouthOpening_Start"
+      ChainTo = "EnemyHydraBlueMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantBlue\MouthOpening\HydraBlueMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraBlue_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueMouthOpening_Loop"
+      InheritFrom = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantBlue\MouthOpening\HydraBlueMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraBlue_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueMouthOpening_End"
+      InheritFrom = "EnemyHydraMouthOpening_End"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\MouthOpening\HydraBlueMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraBlue_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueHealing"
+      InheritFrom = "EnemyHydraBlueMouthOpening_Start"
+      EndFrame = 9
+      NumFrames = 50
+      StartFrame = 6
+    }
+
+    {
+      Name = "EnemyHydraBlueSlamCharge"
+      InheritFrom = "EnemyHydraSlamCharge"
+      ChainTo = "EnemyHydraBlueSlamFire"
+      FilePath = "Animations\Hydra\VariantBlue\Slam\HydraBlueSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueSlamFire"
+      InheritFrom = "EnemyHydraSlamFire"
+      ChainTo = "EnemyHydraBlueRecover"
+      FilePath = "Animations\Hydra\VariantBlue\Slam\HydraBlueSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRecover"
+      InheritFrom = "EnemyHydraRecover"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\OnHit\HydraBlueOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_OnHit_Bink"
+    }
+
+/*____RANGED_____*/
+
+     {
+      Name = "EnemyHydraBlueRangedPreAttack"
+      InheritFrom = "EnemyHydraRangedPreAttack"
+      ChainTo = "EnemyHydraBlueRangedFire"
+      FilePath = "Animations\Hydra\VariantBlue\Ranged\HydraBlueRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRangedFire"
+      InheritFrom = "EnemyHydraRangedFire"
+      ChainTo = "EnemyHydraBlueRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantBlue\Ranged\HydraBlueRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRangedFireLoop"
+      InheritFrom = "EnemyHydraRangedFireLoop"
+      ChainTo = "EnemyHydraBlueRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantBlue\Ranged\HydraBlueRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueRangedPostAttack"
+      InheritFrom = "EnemyHydraRangedPostAttack"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Ranged\HydraBlueRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Ranged_Bink"
+    }
+
+    /* ___________HydraLunge___________ */
+
+    {
+      Name = "EnemyHydraBlueLungePreAttack"
+      InheritFrom = "EnemyHydraLungePreAttack"
+      ChainTo = "EnemyHydraBlueLungeChargeLoop"
+      FilePath = "Animations\Hydra\VariantBlue\Lunge\HydraBlueLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueLungeChargeLoop"
+      InheritFrom = "EnemyHydraLungeChargeLoop"
+      ChainTo = "EnemyHydraBlueLungeFire"
+      FilePath = "Animations\Hydra\VariantBlue\Lunge\HydraBlueLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueLungeFire"
+      InheritFrom = "EnemyHydraLungeFire"
+      ChainTo = "EnemyHydraBlueLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Lunge\HydraBlueLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueLungeReturnToIdle"
+      InheritFrom = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Lunge\HydraBlueLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueSleep_Loop"
+      InheritFrom = "EnemyHydraSleep_Loop"
+      ChainTo = "EnemyHydraBlueSleep_Wake"
+      FilePath = "Animations\Hydra\VariantBlue\Sleep\HydraBlueSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Sleep_Bink"
+    }
+
+    {
+      Name = "EnemyHydraBlueSleep_Wake"
+      InheritFrom = "EnemyHydraSleep_Wake"
+      ChainTo = "EnemyHydraBlueIdle"
+      FilePath = "Animations\Hydra\VariantBlue\Sleep\HydraBlueSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraBlue_Sleep_Bink"
+    }
+
+
+/* ___________HydraVariant_Green___________ */
+
+     {
+      Name = "EnemyHydraGreenIdle"
+      InheritFrom = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Idle\HydraGreenIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraGreen_Idle_Bink"
+     }
+      
+
+    {
+      Name = "EnemyHydraGreenMove"
+      InheritFrom = "EnemyHydraGreenIdle"
+      EndFrame = 118
+      StartFrame = 1
+      Slides = [
+        { Frame = 109 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 118 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2" }
+        ]
+    }
+
+    {
+      Name = "EnemyHydraGreenRoarPreAttack"
+      InheritFrom = "EnemyHydraRoarPreAttack"
+      ChainTo = "EnemyHydraGreenRoarFire"
+      FilePath = "Animations\Hydra\VariantGreen\Roar\HydraGreenRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRoarFire"
+      InheritFrom = "EnemyHydraRoarFire"
+      ChainTo = "EnemyHydraGreenRoarFire_Loop"
+      FilePath = "Animations\Hydra\VariantGreen\Roar\HydraGreenRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Roar_Bink"
+    }
+
+     {
+      Name = "EnemyHydraGreenRoarFire_Loop"
+      InheritFrom = "EnemyHydraRoarFire_Loop"
+      ChainTo = "EnemyHydraGreenRoarReturnToIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Roar\HydraGreenRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRoarReturnToIdle"
+      InheritFrom = "EnemyHydraRoarReturnToIdle"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Roar\HydraGreenRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenTaunt"
+      InheritFrom = "EnemyHydraTaunt"
+      FilePath = "Animations\Hydra\VariantGreen\Roar\HydraRoar"
+      Type = "Book"
+      PlaySpeed = 30
+      VideoTexture = "Enemy_HydraGreen_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenOnHit_1"
+      InheritFrom = "EnemyHydraOnHit_1"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenOnHit_2"
+      InheritFrom = "EnemyHydraOnHit_2"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenBite_Charge"
+      InheritFrom = "EnemyHydraBite_Charge"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenBite_Charge2"
+      InheritFrom = "EnemyHydraBite_Charge2"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenBite_Attack"
+      InheritFrom = "EnemyHydraBite_Attack"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenDeath"
+      InheritFrom = "EnemyHydraDeath"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenMouthOpening_Start"
+      InheritFrom = "EnemyHydraMouthOpening_Start"
+      ChainTo = "EnemyHydraGreenMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantGreen\MouthOpening\HydraGreenMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraGreen_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenMouthOpening_Loop"
+      InheritFrom = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantGreen\MouthOpening\HydraGreenMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraGreen_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenMouthOpening_End"
+      InheritFrom = "EnemyHydraMouthOpening_End"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\MouthOpening\HydraGreenMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraGreen_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenHealing"
+      InheritFrom = "EnemyHydraGreenMouthOpening_Start"
+      EndFrame = 9
+      NumFrames = 50
+      StartFrame = 6
+    }
+
+    {
+      Name = "EnemyHydraGreenSlamCharge"
+      InheritFrom = "EnemyHydraSlamCharge"
+      ChainTo = "EnemyHydraGreenSlamFire"
+      FilePath = "Animations\Hydra\VariantGreen\Slam\HydraGreenSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenSlamFire"
+      InheritFrom = "EnemyHydraSlamFire"
+      ChainTo = "EnemyHydraGreenRecover"
+      FilePath = "Animations\Hydra\VariantGreen\Slam\HydraGreenSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRecover"
+      InheritFrom = "EnemyHydraRecover"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\OnHit\HydraGreenOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_OnHit_Bink"
+    }
+
+/*____RANGED_____*/
+
+     {
+      Name = "EnemyHydraGreenRangedPreAttack"
+      InheritFrom = "EnemyHydraRangedPreAttack"
+      ChainTo = "EnemyHydraGreenRangedFire"
+      FilePath = "Animations\Hydra\VariantGreen\Ranged\HydraGreenRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRangedFire"
+      InheritFrom = "EnemyHydraRangedFire"
+      ChainTo = "EnemyHydraGreenRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantGreen\Ranged\HydraGreenRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRangedFireLoop"
+      InheritFrom = "EnemyHydraRangedFireLoop"
+      ChainTo = "EnemyHydraGreenRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantGreen\Ranged\HydraGreenRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenRangedPostAttack"
+      InheritFrom = "EnemyHydraRangedPostAttack"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Ranged\HydraGreenRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Ranged_Bink"
+    }
+
+    /* ___________HydraLunge___________ */
+
+    {
+      Name = "EnemyHydraGreenLungePreAttack"
+      InheritFrom = "EnemyHydraLungePreAttack"
+      ChainTo = "EnemyHydraGreenLungeChargeLoop"
+      FilePath = "Animations\Hydra\VariantGreen\Lunge\HydraGreenLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenLungeChargeLoop"
+      InheritFrom = "EnemyHydraLungeChargeLoop"
+      ChainTo = "EnemyHydraGreenLungeFire"
+      FilePath = "Animations\Hydra\VariantGreen\Lunge\HydraGreenLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenLungeFire"
+      InheritFrom = "EnemyHydraLungeFire"
+      ChainTo = "EnemyHydraGreenLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Lunge\HydraGreenLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenLungeReturnToIdle"
+      InheritFrom = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Lunge\HydraGreenLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenSleep_Loop"
+      InheritFrom = "EnemyHydraSleep_Loop"
+      ChainTo = "EnemyHydraGreenSleep_Wake"
+      FilePath = "Animations\Hydra\VariantGreen\Sleep\HydraGreenSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Sleep_Bink"
+    }
+
+    {
+      Name = "EnemyHydraGreenSleep_Wake"
+      InheritFrom = "EnemyHydraSleep_Wake"
+      ChainTo = "EnemyHydraGreenIdle"
+      FilePath = "Animations\Hydra\VariantGreen\Sleep\HydraGreenSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraGreen_Sleep_Bink"
+    }
+    
+
+/* ___________HydraVariant_Orange___________ */
+
+     {
+      Name = "EnemyHydraOrangeIdle"
+      InheritFrom = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Idle\HydraOrangeIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraOrange_Idle_Bink"
+     }
+      
+
+    {
+      Name = "EnemyHydraOrangeMove"
+      InheritFrom = "EnemyHydraOrangeIdle"
+      EndFrame = 118
+      StartFrame = 1
+      Slides = [
+        { Frame = 109 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 118 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2" }
+        ]
+    }
+
+    {
+      Name = "EnemyHydraOrangeRoarPreAttack"
+      InheritFrom = "EnemyHydraRoarPreAttack"
+      ChainTo = "EnemyHydraOrangeRoarFire"
+      FilePath = "Animations\Hydra\VariantOrange\Roar\HydraOrangeRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRoarFire"
+      InheritFrom = "EnemyHydraRoarFire"
+      ChainTo = "EnemyHydraOrangeRoarFire_Loop"
+      FilePath = "Animations\Hydra\VariantOrange\Roar\HydraOrangeRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Roar_Bink"
+    }
+
+     {
+      Name = "EnemyHydraOrangeRoarFire_Loop"
+      InheritFrom = "EnemyHydraRoarFire_Loop"
+      ChainTo = "EnemyHydraOrangeRoarReturnToIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Roar\HydraOrangeRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRoarReturnToIdle"
+      InheritFrom = "EnemyHydraRoarReturnToIdle"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Roar\HydraOrangeRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeTaunt"
+      InheritFrom = "EnemyHydraTaunt"
+      FilePath = "Animations\Hydra\VariantOrange\Roar\HydraRoar"
+      Type = "Book"
+      PlaySpeed = 30
+      VideoTexture = "Enemy_HydraOrange_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeOnHit_1"
+      InheritFrom = "EnemyHydraOnHit_1"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeOnHit_2"
+      InheritFrom = "EnemyHydraOnHit_2"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeBite_Charge"
+      InheritFrom = "EnemyHydraBite_Charge"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeBite_Charge2"
+      InheritFrom = "EnemyHydraBite_Charge2"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeBite_Attack"
+      InheritFrom = "EnemyHydraBite_Attack"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeDeath"
+      InheritFrom = "EnemyHydraDeath"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeMouthOpening_Start"
+      InheritFrom = "EnemyHydraMouthOpening_Start"
+      ChainTo = "EnemyHydraOrangeMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantOrange\MouthOpening\HydraOrangeMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraOrange_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeMouthOpening_Loop"
+      InheritFrom = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantOrange\MouthOpening\HydraOrangeMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraOrange_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeMouthOpening_End"
+      InheritFrom = "EnemyHydraMouthOpening_End"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\MouthOpening\HydraOrangeMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraOrange_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeHealing"
+      InheritFrom = "EnemyHydraOrangeMouthOpening_Start"
+      EndFrame = 9
+      NumFrames = 50
+      StartFrame = 6
+    }
+
+    {
+      Name = "EnemyHydraOrangeSlamCharge"
+      InheritFrom = "EnemyHydraSlamCharge"
+      ChainTo = "EnemyHydraOrangeSlamFire"
+      FilePath = "Animations\Hydra\VariantOrange\Slam\HydraOrangeSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeSlamFire"
+      InheritFrom = "EnemyHydraSlamFire"
+      ChainTo = "EnemyHydraOrangeRecover"
+      FilePath = "Animations\Hydra\VariantOrange\Slam\HydraOrangeSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRecover"
+      InheritFrom = "EnemyHydraRecover"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\OnHit\HydraOrangeOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_OnHit_Bink"
+    }
+
+/*____RANGED_____*/
+
+     {
+      Name = "EnemyHydraOrangeRangedPreAttack"
+      InheritFrom = "EnemyHydraRangedPreAttack"
+      ChainTo = "EnemyHydraOrangeRangedFire"
+      FilePath = "Animations\Hydra\VariantOrange\Ranged\HydraOrangeRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRangedFire"
+      InheritFrom = "EnemyHydraRangedFire"
+      ChainTo = "EnemyHydraOrangeRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantOrange\Ranged\HydraOrangeRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRangedFireLoop"
+      InheritFrom = "EnemyHydraRangedFireLoop"
+      ChainTo = "EnemyHydraOrangeRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantOrange\Ranged\HydraOrangeRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeRangedPostAttack"
+      InheritFrom = "EnemyHydraRangedPostAttack"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Ranged\HydraOrangeRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Ranged_Bink"
+    }
+
+    /* ___________HydraLunge___________ */
+
+    {
+      Name = "EnemyHydraOrangeLungePreAttack"
+      InheritFrom = "EnemyHydraLungePreAttack"
+      ChainTo = "EnemyHydraOrangeLungeChargeLoop"
+      FilePath = "Animations\Hydra\VariantOrange\Lunge\HydraOrangeLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeLungeChargeLoop"
+      InheritFrom = "EnemyHydraLungeChargeLoop"
+      ChainTo = "EnemyHydraOrangeLungeFire"
+      FilePath = "Animations\Hydra\VariantOrange\Lunge\HydraOrangeLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeLungeFire"
+      InheritFrom = "EnemyHydraLungeFire"
+      ChainTo = "EnemyHydraOrangeLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Lunge\HydraOrangeLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeLungeReturnToIdle"
+      InheritFrom = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Lunge\HydraOrangeLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeSleep_Loop"
+      InheritFrom = "EnemyHydraSleep_Loop"
+      ChainTo = "EnemyHydraOrangeSleep_Wake"
+      FilePath = "Animations\Hydra\VariantOrange\Sleep\HydraOrangeSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Sleep_Bink"
+    }
+
+    {
+      Name = "EnemyHydraOrangeSleep_Wake"
+      InheritFrom = "EnemyHydraSleep_Wake"
+      ChainTo = "EnemyHydraOrangeIdle"
+      FilePath = "Animations\Hydra\VariantOrange\Sleep\HydraOrangeSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraOrange_Sleep_Bink"
+    }
+    
+
+/* ___________HydraVariant_Purple___________ */
+
+     {
+      Name = "EnemyHydraPurpleIdle"
+      InheritFrom = "EnemyHydraIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Idle\HydraPurpleIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraPurple_Idle_Bink"
+     }
+      
+
+    {
+      Name = "EnemyHydraPurpleMove"
+      InheritFrom = "EnemyHydraPurpleIdle"
+      EndFrame = 118
+      StartFrame = 1
+      Slides = [
+        { Frame = 109 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle1" }
+        { Frame = 118 Sound = "/SFX/Enemy Sounds/HydraHead/HydraMiscBoneRattle2" }
+        ]
+    }
+
+    {
+      Name = "EnemyHydraPurpleRoarPreAttack"
+      InheritFrom = "EnemyHydraRoarPreAttack"
+      ChainTo = "EnemyHydraPurpleRoarFire"
+      FilePath = "Animations\Hydra\VariantPurple\Roar\HydraPurpleRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRoarFire"
+      InheritFrom = "EnemyHydraRoarFire"
+      ChainTo = "EnemyHydraPurpleRoarFire_Loop"
+      FilePath = "Animations\Hydra\VariantPurple\Roar\HydraPurpleRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Roar_Bink"
+    }
+
+     {
+      Name = "EnemyHydraPurpleRoarFire_Loop"
+      InheritFrom = "EnemyHydraRoarFire_Loop"
+      ChainTo = "EnemyHydraPurpleRoarReturnToIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Roar\HydraPurpleRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRoarReturnToIdle"
+      InheritFrom = "EnemyHydraRoarReturnToIdle"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Roar\HydraPurpleRoar"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleTaunt"
+      InheritFrom = "EnemyHydraTaunt"
+      FilePath = "Animations\Hydra\VariantPurple\Roar\HydraRoar"
+      Type = "Book"
+      PlaySpeed = 30
+      VideoTexture = "Enemy_HydraPurple_Roar_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleOnHit_1"
+      InheritFrom = "EnemyHydraOnHit_1"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleOnHit_2"
+      InheritFrom = "EnemyHydraOnHit_2"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleBite_Charge"
+      InheritFrom = "EnemyHydraBite_Charge"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleBite_Charge2"
+      InheritFrom = "EnemyHydraBite_Charge2"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleBite_Attack"
+      InheritFrom = "EnemyHydraBite_Attack"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleDeath"
+      InheritFrom = "EnemyHydraDeath"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleMouthOpening_Start"
+      InheritFrom = "EnemyHydraMouthOpening_Start"
+      ChainTo = "EnemyHydraPurpleMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantPurple\MouthOpening\HydraPurpleMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraPurple_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleMouthOpening_Loop"
+      InheritFrom = "EnemyHydraMouthOpening_Loop"
+      FilePath = "Animations\Hydra\VariantPurple\MouthOpening\HydraPurpleMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraPurple_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleMouthOpening_End"
+      InheritFrom = "EnemyHydraMouthOpening_End"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\MouthOpening\HydraPurpleMouthOpening"
+      Type = "Book"
+      VideoTexture = "Enemy_HydraPurple_MouthOpening_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleHealing"
+      InheritFrom = "EnemyHydraPurpleMouthOpening_Start"
+      EndFrame = 9
+      NumFrames = 50
+      StartFrame = 6
+    }
+
+    {
+      Name = "EnemyHydraPurpleSlamCharge"
+      InheritFrom = "EnemyHydraSlamCharge"
+      ChainTo = "EnemyHydraPurpleSlamFire"
+      FilePath = "Animations\Hydra\VariantPurple\Slam\HydraPurpleSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleSlamFire"
+      InheritFrom = "EnemyHydraSlamFire"
+      ChainTo = "EnemyHydraPurpleRecover"
+      FilePath = "Animations\Hydra\VariantPurple\Slam\HydraPurpleSlam"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Slam_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRecover"
+      InheritFrom = "EnemyHydraRecover"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\OnHit\HydraPurpleOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_OnHit_Bink"
+    }
+
+/*____RANGED_____*/
+
+     {
+      Name = "EnemyHydraPurpleRangedPreAttack"
+      InheritFrom = "EnemyHydraRangedPreAttack"
+      ChainTo = "EnemyHydraPurpleRangedFire"
+      FilePath = "Animations\Hydra\VariantPurple\Ranged\HydraPurpleRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRangedFire"
+      InheritFrom = "EnemyHydraRangedFire"
+      ChainTo = "EnemyHydraPurpleRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantPurple\Ranged\HydraPurpleRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRangedFireLoop"
+      InheritFrom = "EnemyHydraRangedFireLoop"
+      ChainTo = "EnemyHydraPurpleRangedPostAttack"
+      FilePath = "Animations\Hydra\VariantPurple\Ranged\HydraPurpleRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Ranged_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleRangedPostAttack"
+      InheritFrom = "EnemyHydraRangedPostAttack"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Ranged\HydraPurpleRanged"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Ranged_Bink"
+    }
+
+    /* ___________HydraLunge___________ */
+
+    {
+      Name = "EnemyHydraPurpleLungePreAttack"
+      InheritFrom = "EnemyHydraLungePreAttack"
+      ChainTo = "EnemyHydraPurpleLungeChargeLoop"
+      FilePath = "Animations\Hydra\VariantPurple\Lunge\HydraPurpleLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleLungeChargeLoop"
+      InheritFrom = "EnemyHydraLungeChargeLoop"
+      ChainTo = "EnemyHydraPurpleLungeFire"
+      FilePath = "Animations\Hydra\VariantPurple\Lunge\HydraPurpleLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleLungeFire"
+      InheritFrom = "EnemyHydraLungeFire"
+      ChainTo = "EnemyHydraPurpleLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Lunge\HydraPurpleLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleLungeReturnToIdle"
+      InheritFrom = "EnemyHydraLungeReturnToIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Lunge\HydraPurpleLunge"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Lunge_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleSleep_Loop"
+      InheritFrom = "EnemyHydraSleep_Loop"
+      ChainTo = "EnemyHydraPurpleSleep_Wake"
+      FilePath = "Animations\Hydra\VariantPurple\Sleep\HydraPurpleSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Sleep_Bink"
+    }
+
+    {
+      Name = "EnemyHydraPurpleSleep_Wake"
+      InheritFrom = "EnemyHydraSleep_Wake"
+      ChainTo = "EnemyHydraPurpleIdle"
+      FilePath = "Animations\Hydra\VariantPurple\Sleep\HydraPurpleSleep"
+      Type = "Slide"
+      VideoTexture = "Enemy_HydraPurple_Sleep_Bink"
+    }
+  ]
+}
+

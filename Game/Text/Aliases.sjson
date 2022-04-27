@@ -1,0 +1,2655 @@
+{
+  HelpTexts = [
+    {
+      lang = "de"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "en"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "es"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "fr"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "it"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "ja"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "pl"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "pt-BR"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "ru"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "ko"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+    {
+      lang = "zh-CN"
+      Texts = [
+        {
+          Id = "Health_Small_Tooltip"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthUp"
+          InheritFrom = "Health"
+        }
+        {
+          Id = "HealthRestore_Small_Tooltip"
+          InheritFrom = "HealthRestore"
+        }
+        {
+          Id = "Currency_Small"
+          InheritFrom = "Currency"
+        }
+        {
+          Id = "MetaPoint_Small"
+          InheritFrom = "MetaPoint"
+        }
+        {
+          Id = "GemSmall"
+          InheritFrom = "Gem"
+        }
+        {
+          Id = "ShieldHitTrait_Inactive"
+          InheritFrom = "ShieldHitTrait"
+        }
+        {
+          Id = "UseLockedGiftRack"
+          InheritFrom = "UseLockedDoor"
+        }
+        {
+          Id = "HitAndRunUnitElite"
+          InheritFrom = "HitAndRunUnit"
+        }
+        {
+          Id = "Theseus2"
+          InheritFrom = "Theseus"
+        }
+        {
+          Id = "Minotaur2"
+          InheritFrom = "Minotaur"
+        }
+        {
+          Id = "CharProtag"
+          InheritFrom = "PlayerUnit"
+        }
+        {
+          Id = "CharAntag"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "CharDog"
+          InheritFrom = "NPC_Cerberus_01"
+        }
+        {
+          Id = "CharMaleGhost"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "NPC_FurySister_Story_01"
+          InheritFrom = "NPC_FurySister_01"
+        }
+        {
+          Id = "NPC_Thanatos_Story_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "NPC_Thanatos_Field_01"
+          InheritFrom = "NPC_Thanatos_01"
+        }
+        {
+          Id = "MiscSettingsScreen_EasyModeLabel_InGame"
+          InheritFrom = "MiscSettingsScreen_EasyModeLabel"
+        }
+        {
+          Id = "CurrentRunDepth_Plural"
+          InheritFrom = "CurrentRunDepth"
+        }
+        {
+          Id = "Hades"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "UI_AmmoText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_GunText"
+          InheritFrom = "UI_SuperText"
+        }
+        {
+          Id = "UI_LockKey"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "UI_PlayerMetaPoint"
+          InheritFrom = "UI_GiftPoint"
+        }
+        {
+          Id = "HealthHome_Small"
+          InheritFrom = "HealthHome"
+        }
+        {
+          Id = "ReRollAlt_Small"
+          InheritFrom = "ReRollAlt"
+        }
+        {
+          Id = "ReRollPanelAlt_Small"
+          InheritFrom = "ReRollPanelAlt"
+        }
+        {
+          Id = "NPC_Hades_Story_01"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Nyx_Story_01"
+          InheritFrom = "NPC_Nyx_01"
+        }
+        {
+          Id = "NPC_Orpheus_Story_01"
+          InheritFrom = "NPC_Orpheus_01"
+        }
+        {
+          Id = "NPC_Achilles_Story_01"
+          InheritFrom = "NPC_Achilles_01"
+        }
+        {
+          Id = "AchillesPatroclusReunion_B"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "AchillesPatroclusReunion_C"
+          InheritFrom = "AchillesPatroclusReunion_A"
+        }
+        {
+          Id = "NPC_Hades_Story_02"
+          InheritFrom = "NPC_Hades_01"
+        }
+        {
+          Id = "NPC_Patroclus_Standing_01"
+          InheritFrom = "NPC_Patroclus_01"
+        }
+        {
+          Id = "SkellyTrueDeath_B"
+          InheritFrom = "SkellyTrueDeath"
+        }
+        {
+          Id = "Charon"
+          InheritFrom = "NPC_Charon_01"
+        }
+        {
+          Id = "PauseScreen_GiveUp_InvalidCheckpoint"
+          InheritFrom = "PauseScreen_GiveUp_ValidCheckpoint"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Tray"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Tray"
+        }
+        {
+          Id = "BowLoadAmmo_DionysusRangedTrait_Initial"
+          InheritFrom = "ShieldLoadAmmo_DionysusRangedTrait_Initial"
+        }
+        {
+          Id = "HarvestBoonTrait_CombatText"
+          InheritFrom = "AmbrosiaDelight_CombatText"
+        }
+        {
+          Id = "ClearedCerberus_Alt1_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "ClearedCerberus_Alt2_Title"
+          InheritFrom = "ClearedCerberus_Title"
+        }
+        {
+          Id = "CharonFirstMeeting_Alt"
+          InheritFrom = "CharonFirstMeeting"
+        }
+        {
+          Id = "MainMenuScreen_BootAnnouncement_Loc"
+          InheritFrom = "MainMenuScreen_BootAnnouncement"
+        }
+        {
+          Id = "SeasonalCosmetic"
+          InheritFrom = "SeasonalItem"
+        }
+        {
+          Id = "VOZagreusField_3231"
+          InheritFrom = "LordHadesHasGuanYuAspect01"
+        }
+        {
+          Id = "VOZagreusField_3250"
+          InheritFrom = "LordHadesHasArthurAspect01"
+        }
+        {
+          Id = "VOZagreusField_3251"
+          InheritFrom = "LordHadesHasRamaAspect01"
+        }
+        {
+          Id = "VOZagreusField_3691"
+          InheritFrom = "LordHadesHasBeowulfAspect01"
+        }
+        {
+          Id = "VOZagreusField_4656"
+          InheritFrom = "LordHadesHasGilgameshAspect01"
+        }
+        {
+          Id = "VOZagreusField_3690"
+          InheritFrom = "LordHadesHasLuciferAspect01"
+        }
+        {
+          Id = "AtSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_1"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_2"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+        {
+          Id = "AboveSoftShrineCapThreshold_3"
+          InheritFrom = "BelowSoftShrineCapThreshold"
+        }
+      ]
+    }
+  ]
+}

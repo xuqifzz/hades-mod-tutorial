@@ -1,0 +1,3655 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "ElysiumHelmet01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Helmet_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+        Points = [
+          { X = -406 Y = 73 }
+          { X = -45 Y = 262 }
+          { X = 380 Y = 50 }
+          { X = 5 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPatroclusSpear01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Patroclus_Spear_01"
+        Tallness = 242.0
+        Offset = { X = 0 Y = -105 }
+        Points = [
+          { X = 1 Y = -9 }
+          { X = -19 Y = 1 }
+          { X = 3 Y = 10 }
+          { X = 19 Y = 2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBackground01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Background_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumBackground02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Background_02"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumBackground03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Background_03"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumBackground04"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Background_04"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumBackground05"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Background_05"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "E_Story01Background05"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Cottage_Background_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumBridge01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Bridge_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = 82 }
+      }
+    }
+    
+    {
+      Name = "ElysiumStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Stairs_01"
+        Tallness = 292.0
+        Offset = { X = 0 Y = -38 }
+      }
+    }
+    
+    {
+      Name = "ElysiumFountain01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fountain_01a"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+        Points = [
+          { X = -515 Y = 68 }
+          { X = -25 Y = 300 }
+          { X = 498 Y = 82 }
+          { X = -52 Y = -187 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFountain01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fountain_01b"
+        Tallness = 266.0
+        Offset = { X = 0 Y = 40 }
+        Points = [
+          { X = -560 Y = 40 }
+          { X = -560 Y = 154 }
+          { X = -127 Y = 401 }
+          { X = 79 Y = 484 }
+          { X = 519 Y = 230 }
+          { X = -222 Y = -142 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFountain01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fountain_01c"
+        Tallness = 266.0
+        Offset = { X = 0 Y = 40 }
+        Points = [
+          { X = -561 Y = 27 }
+          { X = -560 Y = 154 }
+          { X = -127 Y = 401 }
+          { X = 77 Y = 482 }
+          { X = 526 Y = 216 }
+          { X = -222 Y = -142 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumButterfly01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Butterfly_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = 15 }
+      }
+    }
+    
+    {
+      Name = "ElysiumCandle01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Candle_01"
+        Tallness = 769.0
+        Offset = { X = 0 Y = -345 }
+        Points = [
+          { X = -186 Y = 25 }
+          { X = 6 Y = 110 }
+          { X = 204 Y = 15 }
+          { X = 10 Y = -66 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumUrn01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Urn_01"
+        Tallness = 1357.0
+        Offset = { X = 0 Y = -597 }
+        Points = [
+          { X = -323 Y = 58 }
+          { X = -107 Y = 197 }
+          { X = 254 Y = 146 }
+          { X = 323 Y = 27 }
+          { X = 11 Y = -130 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumUrn02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Urn_02"
+        Tallness = 1448.0
+        Offset = { X = 0 Y = -596 }
+        Points = [
+          { X = -180 Y = 26 }
+          { X = -75 Y = 97 }
+          { X = 107 Y = 85 }
+          { X = 192 Y = 14 }
+          { X = 4 Y = -72 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumUrn03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Urn_03"
+        Tallness = 768.0
+        Offset = { X = 0 Y = -296 }
+        Points = [
+          { X = -217 Y = 22 }
+          { X = -63 Y = 131 }
+          { X = 194 Y = 132 }
+          { X = 350 Y = 14 }
+          { X = 71 Y = -111 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumUrn04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Urn_04"
+        Tallness = 975.0
+        Offset = { X = 0 Y = -366 }
+        Points = [
+          { X = -360 Y = 112 }
+          { X = -167 Y = 214 }
+          { X = 351 Y = -40 }
+          { X = 156 Y = -142 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Table_01"
+        StopsProjectiles = false
+        Tallness = 232.0
+        Offset = { X = 0 Y = -98 }
+        Points = [
+          { X = -431 Y = 12 }
+          { X = 36 Y = 236 }
+          { X = 474 Y = 22 }
+          { X = 17 Y = -214 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Table_02"
+        StopsProjectiles = false
+        Tallness = 120.0
+        Offset = { X = 0 Y = -98 }
+        Points = [
+          { X = -467 Y = 31 }
+          { X = -127 Y = 211 }
+          { X = 471 Y = -99 }
+          { X = 130 Y = -269 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCart01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Cart_01"
+        Tallness = 1202.0
+        Offset = { X = 0 Y = -632 }
+        Points = [
+          { X = -612 Y = -150 }
+          { X = 81 Y = 189 }
+          { X = 453 Y = 18 }
+          { X = -253 Y = -338 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCart02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Cart_02"
+        Tallness = 1202.0
+        Offset = { X = 0 Y = -557 }
+        Points = [
+          { X = -612 Y = -150 }
+          { X = 81 Y = 189 }
+          { X = 453 Y = 18 }
+          { X = -253 Y = -338 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPlatform01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Platform_01"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 10.0
+        Offset = { X = 0 Y = 53 }
+        Points = [
+          { X = -948 Y = 148 }
+          { X = -129 Y = 562 }
+          { X = 34 Y = 562 }
+          { X = 948 Y = 118 }
+          { X = 29 Y = -338 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPlatform02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Platform_02"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 10.0
+        Offset = { X = 0 Y = 5 }
+        Points = [
+          { X = 103 Y = -17 }
+          { X = 53 Y = -43 }
+          { X = -52 Y = -45 }
+          { X = -102 Y = -22 }
+          { X = -107 Y = 24 }
+          { X = -57 Y = 50 }
+          { X = 46 Y = 53 }
+          { X = 101 Y = 24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumVine01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vine_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumFogCloud01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_FogCloud_01"
+        Tallness = 460.0
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = -1040 Y = -273 }
+          { X = 720 Y = 568 }
+          { X = 1088 Y = 387 }
+          { X = -644 Y = -490 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFogCloud02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_FogCloud_02"
+        Tallness = 781.0
+        Offset = { X = 0 Y = -181 }
+        Points = [
+          { X = -903 Y = 139 }
+          { X = -208 Y = 489 }
+          { X = 1106 Y = -150 }
+          { X = 401 Y = -498 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFogCloud03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_FogCloud_03"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumFogCloud04"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_FogCloud_04"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -66 }
+      }
+    }
+    
+    {
+      Name = "ElysiumIvy01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Ivy_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumVine02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vine_02"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumVine03"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vine_03"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+      }
+    }
+    
+    {
+      Name = "ElysiumVine04"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vine_04"
+        Tallness = 352.0
+        Offset = { X = 0 Y = -486 }
+        Points = [
+          { X = -976 Y = -42 }
+          { X = -464 Y = 255 }
+          { X = 962 Y = -761 }
+          { X = 412 Y = -1121 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumVine05"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vine_05"
+        Tallness = 129.0
+        Offset = { X = 0 Y = -173 }
+        Points = [
+          { X = 73 Y = 172 }
+          { X = 520 Y = -150 }
+          { X = -352 Y = -446 }
+          { X = -567 Y = -350 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+        Points = [
+          { X = -406 Y = 73 }
+          { X = -45 Y = 262 }
+          { X = 380 Y = 50 }
+          { X = 5 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_02"
+        SortBoundsScale = 4.0
+        Tallness = 1.0
+        Offset = { X = 0 Y = -66 }
+        Points = [
+          { X = 64 Y = 0 }
+          { X = -10 Y = -27 }
+          { X = -30 Y = 26 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower02a"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_02a"
+        Tallness = 7.0
+        Offset = { X = 0 Y = -41 }
+        Points = [
+          { X = -184 Y = -191 }
+          { X = -378 Y = -79 }
+          { X = -274 Y = 25 }
+          { X = 180 Y = 147 }
+          { X = 341 Y = 105 }
+          { X = 319 Y = -172 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower03"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_03"
+        Tallness = 814.0
+        Offset = { X = 0 Y = -344 }
+        Points = [
+          { X = -100 Y = 12 }
+          { X = 10 Y = 72 }
+          { X = 137 Y = 6 }
+          { X = 17 Y = -49 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower04"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_04"
+        Tallness = 478.0
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = 29 Y = 139 }
+          { X = 240 Y = 4 }
+          { X = -7 Y = -160 }
+          { X = -238 Y = -24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower05"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_05"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -195 }
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_06"
+        Tallness = 1081.0
+        Offset = { X = 0 Y = -445 }
+        Points = [
+          { X = -88 Y = 52 }
+          { X = 63 Y = 114 }
+          { X = 405 Y = 4 }
+          { X = 222 Y = -93 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFlower07"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Flower_07"
+        Tallness = 339.0
+        Offset = { X = 0 Y = -144 }
+        Points = [
+          { X = -166 Y = 24 }
+          { X = -98 Y = 68 }
+          { X = 194 Y = -23 }
+          { X = 139 Y = -49 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumMushroom01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Mushroom_01"
+        Tallness = 641.0
+        Offset = { X = 0 Y = -273 }
+        Points = [
+          { X = -353 Y = 47 }
+          { X = -164 Y = 186 }
+          { X = 298 Y = 78 }
+          { X = 88 Y = -84 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPlanter01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ElysiumBushLeavesAndPetals"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Planter_01"
+        Tallness = 650.0
+        Offset = { X = 0 Y = -177 }
+        Points = [
+          { X = -514 Y = 104 }
+          { X = -29 Y = 343 }
+          { X = 576 Y = 51 }
+          { X = 89 Y = -197 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPlanter02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Planter_02"
+        Tallness = 350.0
+        Offset = { X = 0 Y = -177 }
+        Points = [
+          { X = -484 Y = -86 }
+          { X = 124 Y = 198 }
+          { X = 484 Y = 33 }
+          { X = -122 Y = -271 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFencePost01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_Post_01"
+        Tallness = 1492.0
+        Offset = { X = 0 Y = -569 }
+        Points = [
+          { X = -304 Y = 92 }
+          { X = -40 Y = 217 }
+          { X = 302 Y = 65 }
+          { X = 21 Y = -76 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFencePost02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_Post_02"
+        Tallness = 401.0
+        Offset = { X = 0 Y = -149 }
+        Points = [
+          { X = -194 Y = 26 }
+          { X = 0 Y = 121 }
+          { X = 206 Y = 14 }
+          { X = 19 Y = -79 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_01"
+        Tallness = 626.0
+        Offset = { X = 0 Y = -267 }
+        Points = [
+          { X = -456 Y = -162 }
+          { X = 323 Y = 231 }
+          { X = 458 Y = 166 }
+          { X = -332 Y = -230 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_01b"
+        Tallness = 627.0
+        Offset = { X = 0 Y = -267 }
+        Points = [
+          { X = 488 Y = 46 }
+          { X = 484 Y = -38 }
+          { X = -492 Y = -32 }
+          { X = -494 Y = 37 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_01"
+        Tallness = 619.0
+        Offset = { X = 0 Y = -290 }
+        Points = [
+          { X = -473 Y = 41 }
+          { X = -153 Y = 200 }
+          { X = 444 Y = -103 }
+          { X = 139 Y = -258 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_01a"
+        Tallness = 597.0
+        Offset = { X = 0 Y = -308 }
+        Points = [
+          { X = -343 Y = -91 }
+          { X = -352 Y = 68 }
+          { X = 395 Y = 68 }
+          { X = 387 Y = -106 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_01b"
+        Tallness = 597.0
+        Offset = { X = 0 Y = -180 }
+        Points = [
+          { X = -1485 Y = 85 }
+          { X = 1495 Y = 80 }
+          { X = 1480 Y = -85 }
+          { X = -1475 Y = -65 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_03"
+        Tallness = 706.0
+        Offset = { X = 0 Y = -332 }
+        Points = [
+          { X = -534 Y = -28 }
+          { X = 3 Y = 238 }
+          { X = 538 Y = -40 }
+          { X = 11 Y = -302 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_02"
+        Tallness = 706.0
+        Offset = { X = 0 Y = -332 }
+        Points = [
+          { X = -381 Y = 53 }
+          { X = -189 Y = 147 }
+          { X = 332 Y = -113 }
+          { X = 140 Y = -213 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_02a"
+        Tallness = 706.0
+        Offset = { X = 0 Y = -332 }
+        Points = [
+          { X = -305 Y = 125 }
+          { X = -175 Y = 227 }
+          { X = 331 Y = -50 }
+          { X = 177 Y = -143 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_03"
+        Tallness = 257.0
+        Offset = { X = 0 Y = -143 }
+        Points = [
+          { X = -582 Y = 205 }
+          { X = -456 Y = 275 }
+          { X = 584 Y = -254 }
+          { X = 462 Y = -325 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_03a"
+        Tallness = 281.0
+        Offset = { X = 0 Y = -143 }
+        Points = [
+          { X = -389 Y = 45 }
+          { X = -119 Y = 181 }
+          { X = 389 Y = -70 }
+          { X = 131 Y = -197 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence03b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_03b"
+        Tallness = 281.0
+        Offset = { X = 0 Y = -143 }
+        Points = [
+          { X = -123 Y = 194 }
+          { X = 392 Y = -65 }
+          { X = 94 Y = -213 }
+          { X = -382 Y = 36 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_04"
+        Tallness = 366.0
+        Offset = { X = 0 Y = -143 }
+        Points = [
+          { X = -284 Y = 122 }
+          { X = -181 Y = 175 }
+          { X = 312 Y = -71 }
+          { X = 188 Y = -134 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_05"
+        Tallness = 410.0
+        Offset = { X = 0 Y = -263 }
+        Points = [
+          { X = -509 Y = -110 }
+          { X = -341 Y = 106 }
+          { X = 135 Y = 187 }
+          { X = 490 Y = 61 }
+          { X = -296 Y = -341 }
+          { X = -452 Y = -278 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumFence06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Fence_06"
+        Tallness = 502.0
+        Offset = { X = 0 Y = -196 }
+        Points = [
+          { X = -335 Y = -91 }
+          { X = 222 Y = 182 }
+          { X = 327 Y = 124 }
+          { X = -222 Y = -151 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_01"
+        Tallness = 1950.0
+        Offset = { X = 0 Y = -565 }
+        Points = [
+          { X = -417 Y = 303 }
+          { X = -14 Y = 213 }
+          { X = 246 Y = 76 }
+          { X = -31 Y = -69 }
+          { X = -295 Y = 69 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_03"
+        Tallness = 2441.0
+        Offset = { X = 0 Y = -1011 }
+        Points = [
+          { X = 147 Y = 203 }
+          { X = 324 Y = 101 }
+          { X = -65 Y = -116 }
+          { X = -263 Y = -9 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_05"
+        Tallness = 3291.0
+        Offset = { X = 0 Y = -1328 }
+        Points = [
+          { X = -758 Y = 16 }
+          { X = 16 Y = 385 }
+          { X = 457 Y = 161 }
+          { X = -318 Y = -200 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_06"
+        Tallness = 2814.0
+        Offset = { X = 0 Y = -1202 }
+        Points = [
+          { X = -159 Y = 33 }
+          { X = -32 Y = 99 }
+          { X = 154 Y = -8 }
+          { X = 4 Y = -70 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_01"
+        Tallness = 1902.0
+        Offset = { X = 0 Y = -744 }
+        Points = [
+          { X = -286 Y = 110 }
+          { X = -55 Y = 210 }
+          { X = 113 Y = 200 }
+          { X = 275 Y = 107 }
+          { X = 10 Y = -44 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_01a"
+        Tallness = 1902.0
+        Offset = { X = 0 Y = -744 }
+        Points = [
+          { X = -286 Y = 110 }
+          { X = -55 Y = 210 }
+          { X = 113 Y = 200 }
+          { X = 275 Y = 107 }
+          { X = 10 Y = -44 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBrazier01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Brazier_01"
+        Tallness = 1122.0
+        Offset = { X = 0 Y = -524 }
+        Points = [
+          { X = 6 Y = -132 }
+          { X = -287 Y = 18 }
+          { X = 10 Y = 163 }
+          { X = 302 Y = 10 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBrazier02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Brazier_02"
+        Tallness = 1528.0
+        Offset = { X = 0 Y = -574 }
+        Points = [
+          { X = -553 Y = 119 }
+          { X = -381 Y = 207 }
+          { X = 381 Y = 207 }
+          { X = 550 Y = 129 }
+          { X = -6 Y = -113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue11"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_11"
+        Tallness = 1685.0
+        Offset = { X = 0 Y = -697 }
+        Points = [
+          { X = -388 Y = 41 }
+          { X = -55 Y = 191 }
+          { X = 683 Y = -201 }
+          { X = 361 Y = -343 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumGate01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Gate_01"
+        Tallness = 1605.0
+        Offset = { X = 0 Y = -703 }
+        Points = [
+          { X = -1023 Y = -341 }
+          { X = 804 Y = 573 }
+          { X = 1066 Y = 435 }
+          { X = -728 Y = -493 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_03a"
+        Tallness = 2589.0
+        Offset = { X = 0 Y = -996 }
+        Points = [
+          { X = -523 Y = 12 }
+          { X = 14 Y = 271 }
+          { X = 526 Y = -1 }
+          { X = 14 Y = -260 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_04"
+        Tallness = 1688.0
+        Offset = { X = 0 Y = -648 }
+        Points = [
+          { X = -252 Y = 99 }
+          { X = 34 Y = 212 }
+          { X = 228 Y = 82 }
+          { X = 28 Y = -33 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_05"
+        Tallness = 801.0
+        Offset = { X = 0 Y = -213 }
+        Points = [
+          { X = -409 Y = 86 }
+          { X = -306 Y = 224 }
+          { X = 28 Y = 286 }
+          { X = 337 Y = 193 }
+          { X = 407 Y = 81 }
+          { X = 257 Y = -104 }
+          { X = -3 Y = -163 }
+          { X = -269 Y = -93 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar05a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_05a"
+        Tallness = 27.0
+        Offset = { X = 0 Y = 10 }
+        Points = [
+          { X = -354 Y = -135 }
+          { X = -365 Y = 14 }
+          { X = -101 Y = 147 }
+          { X = 279 Y = 127 }
+          { X = 383 Y = 21 }
+          { X = 387 Y = -109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumPillar06A"
+        Tallness = 1473.0
+        Offset = { X = 0 Y = -623 }
+        Points = [
+          { X = -306 Y = -16 }
+          { X = -172 Y = 94 }
+          { X = 27 Y = 120 }
+          { X = 234 Y = 65 }
+          { X = 302 Y = -13 }
+          { X = 302 Y = -13 }
+          { X = 187 Y = -135 }
+          { X = -14 Y = -168 }
+          { X = -194 Y = -115 }
+        ]
+        Using = [
+          { Name = "ElysiumPillar06A" }
+          { Name = "ElysiumPillar06B" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar06B"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumPillar06B"
+        Tallness = 30.0
+        Offset = { X = 0 Y = -623 }
+        Points = [
+          { X = -306 Y = -16 }
+          { X = -172 Y = 94 }
+          { X = 27 Y = 120 }
+          { X = 234 Y = 65 }
+          { X = 302 Y = -13 }
+          { X = 302 Y = -13 }
+          { X = 187 Y = -135 }
+          { X = -14 Y = -168 }
+          { X = -194 Y = -115 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBush01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ElysiumBushLeaves"
+        HitSound = "/Leftovers/World Sounds/LeavesRustle"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Bush_01"
+        Tallness = 442.0
+        Offset = { X = 0 Y = -182 }
+        Points = [
+          { X = -389 Y = 23 }
+          { X = 45 Y = 192 }
+          { X = 390 Y = -1 }
+          { X = 25 Y = -188 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_08"
+        Tallness = 772.0
+        Offset = { X = 0 Y = -299 }
+        Points = [
+          { X = -661 Y = -66 }
+          { X = 293 Y = 299 }
+          { X = 498 Y = 149 }
+          { X = -295 Y = -254 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue10"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_10"
+        Tallness = 1275.0
+        Offset = { X = 0 Y = -532 }
+        Points = [
+          { X = -620 Y = -221 }
+          { X = 373 Y = 261 }
+          { X = 683 Y = 124 }
+          { X = -307 Y = -359 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_04"
+        Tallness = 2261.0
+        Offset = { X = 0 Y = -917 }
+        Points = [
+          { X = -860 Y = 88 }
+          { X = -109 Y = 470 }
+          { X = 847 Y = -3 }
+          { X = 43 Y = -394 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue12"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_12"
+        Tallness = 778.0
+        Offset = { X = 0 Y = -224 }
+        Points = [
+          { X = -2 Y = 138 }
+          { X = 243 Y = 267 }
+          { X = 490 Y = 134 }
+          { X = 250 Y = 7 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue14"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_14"
+        Tallness = 1105.0
+        Offset = { X = 0 Y = -224 }
+        Points = [
+          { X = -569 Y = 233 }
+          { X = -90 Y = 485 }
+          { X = 514 Y = 183 }
+          { X = 41 Y = -63 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue15"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_15"
+        Tallness = 1105.0
+        Offset = { X = 0 Y = -224 }
+        Points = [
+          { X = -569 Y = 233 }
+          { X = -90 Y = 485 }
+          { X = 514 Y = 183 }
+          { X = 41 Y = -63 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumStatue16"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Statue_16"
+        Tallness = 510.0
+        Offset = { X = 0 Y = -224 }
+        Points = [
+          { X = -207 Y = 38 }
+          { X = -58 Y = 126 }
+          { X = 160 Y = 31 }
+          { X = -16 Y = -59 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumPillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_02"
+        Tallness = 1361.0
+        Offset = { X = 0 Y = -580 }
+        Points = [
+          { X = -97 Y = 37 }
+          { X = -55 Y = 70 }
+          { X = 102 Y = -17 }
+          { X = 67 Y = -40 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCapital01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Capital_01"
+        Tallness = 1057.0
+        Offset = { X = 0 Y = -426 }
+        Points = [
+          { X = -484 Y = 98 }
+          { X = 61 Y = 365 }
+          { X = 638 Y = 89 }
+          { X = 100 Y = -181 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumSword01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Sword_01"
+        Tallness = 2305.0
+        Offset = { X = 0 Y = -908 }
+        Points = [
+          { X = -127 Y = -69 }
+          { X = -207 Y = -27 }
+          { X = 147 Y = 122 }
+          { X = 222 Y = 87 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumSword03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Sword_03"
+        Tallness = 1792.0
+        Offset = { X = 0 Y = -733 }
+        Points = [
+          { X = -129 Y = 83 }
+          { X = 2 Y = 135 }
+          { X = 244 Y = 23 }
+          { X = 129 Y = -28 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumSword04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Sword_04"
+        Tallness = 1366.0
+        Offset = { X = 0 Y = -471 }
+        Points = [
+          { X = 196 Y = 104 }
+          { X = 237 Y = 129 }
+          { X = 378 Y = -21 }
+          { X = 328 Y = -46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumShield01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Shield_01a"
+        Tallness = 530.0
+        Offset = { X = 0 Y = -80 }
+        Points = [
+          { X = -416 Y = 237 }
+          { X = -374 Y = 261 }
+          { X = 404 Y = -116 }
+          { X = 351 Y = -147 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumExitDoor"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumDoorLocked"
+        StopsLight = false
+        Tallness = 530.0
+        Interact = 
+        {
+          Distance = 215.0
+          OffsetX = -20.0
+          OffsetY = -30.0
+        }
+        Offset = { X = 0 Y = -367 }
+        Points = [
+          { X = -186 Y = -75 }
+          { X = 77 Y = 62 }
+          { X = 139 Y = 30 }
+          { X = -128 Y = -103 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeShieldBunker"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeShieldBunker"
+        RotateGeometry = true
+        Scale = 0.6
+        StopsUnits = false
+        Tallness = 530.0
+        Offset = { X = 0 Y = -176 }
+        Points = [
+          { X = -78 Y = 160 }
+          { X = 29 Y = 157 }
+          { X = 24 Y = -214 }
+          { X = -76 Y = -214 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumShield01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Shield_01b"
+        Tallness = 789.0
+        Offset = { X = 0 Y = -206 }
+        Points = [
+          { X = -587 Y = 285 }
+          { X = -546 Y = 313 }
+          { X = 585 Y = -237 }
+          { X = 519 Y = -270 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallbrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wallbrick_01"
+        Tallness = 1979.0
+        Offset = { X = 0 Y = -818 }
+        Points = [
+          { X = -387 Y = 139 }
+          { X = -185 Y = 224 }
+          { X = 398 Y = -56 }
+          { X = 192 Y = -159 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallStatue01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Statue_01"
+        Tallness = 1490.0
+        Offset = { X = 0 Y = -441 }
+        Points = [
+          { X = -545 Y = 163 }
+          { X = 101 Y = 460 }
+          { X = 542 Y = 227 }
+          { X = -67 Y = -85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_01"
+        Tallness = 1471.0
+        Offset = { X = 0 Y = -660 }
+        Points = [
+          { X = -421 Y = 272 }
+          { X = 382 Y = -120 }
+          { X = 282 Y = -177 }
+          { X = -528 Y = 222 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_02"
+        Tallness = 1305.0
+        Offset = { X = 0 Y = -557 }
+        Points = [
+          { X = -503 Y = 55 }
+          { X = -94 Y = 290 }
+          { X = 644 Y = -71 }
+          { X = 210 Y = -307 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_02a"
+        Tallness = 1471.0
+        Offset = { X = 0 Y = -765 }
+        Points = [
+          { X = -549 Y = 157 }
+          { X = -172 Y = 311 }
+          { X = 794 Y = -146 }
+          { X = 402 Y = -332 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_03"
+        Tallness = 1471.0
+        Offset = { X = 0 Y = -660 }
+        Points = [
+          { X = -858 Y = -81 }
+          { X = -838 Y = 61 }
+          { X = 827 Y = 109 }
+          { X = 834 Y = -85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_03a"
+        Tallness = 1471.0
+        Offset = { X = 0 Y = -660 }
+        Points = [
+          { X = -858 Y = -81 }
+          { X = -838 Y = 61 }
+          { X = 827 Y = 109 }
+          { X = 834 Y = -85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss03b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_03b"
+        Tallness = 1471.0
+        Offset = { X = 0 Y = -660 }
+        Points = [
+          { X = -858 Y = -81 }
+          { X = -838 Y = 61 }
+          { X = 827 Y = 109 }
+          { X = 834 Y = -85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_04"
+        Tallness = 762.0
+        Offset = { X = 0 Y = -298 }
+        Points = [
+          { X = -574 Y = 211 }
+          { X = -312 Y = 310 }
+          { X = 1007 Y = -288 }
+          { X = 740 Y = -439 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_05"
+        Tallness = 1994.0
+        Offset = { X = 0 Y = -899 }
+        Points = [
+          { X = -456 Y = 317 }
+          { X = 447 Y = 294 }
+          { X = 497 Y = -175 }
+          { X = -325 Y = -279 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitSound = "/Leftovers/World Sounds/LeavesRustle"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_01"
+        Tallness = 450.0
+        Offset = { X = 0 Y = -133 }
+        Points = [
+          { X = -662 Y = 113 }
+          { X = -175 Y = 365 }
+          { X = 669 Y = -74 }
+          { X = 194 Y = -311 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_02"
+        Tallness = 199.0
+        Offset = { X = 0 Y = -279 }
+        Points = [
+          { X = -1113 Y = -109 }
+          { X = -1119 Y = 108 }
+          { X = 32 Y = 236 }
+          { X = 1149 Y = 117 }
+          { X = 1155 Y = -174 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_03"
+        Tallness = 345.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = 460 Y = 471 }
+          { X = 1049 Y = 213 }
+          { X = -306 Y = -363 }
+          { X = -852 Y = -148 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill04"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_04"
+        Tallness = 201.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -968 Y = 194 }
+          { X = -445 Y = 433 }
+          { X = 739 Y = 78 }
+          { X = 279 Y = -112 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_05"
+        Tallness = 373.0
+        Offset = { X = 0 Y = -134 }
+        Points = [
+          { X = -340 Y = 45 }
+          { X = -8 Y = 167 }
+          { X = 327 Y = 13 }
+          { X = 17 Y = -136 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRubble01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rubble_01"
+        StopsProjectiles = false
+        Tallness = 219.0
+        Offset = { X = 0 Y = -116 }
+        Points = [
+          { X = -342 Y = -22 }
+          { X = -139 Y = 82 }
+          { X = 380 Y = -112 }
+          { X = 104 Y = -245 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRubble02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rubble_02"
+        Tallness = 1664.0
+        Offset = { X = 0 Y = -764 }
+        Points = [
+          { X = -815 Y = -6 }
+          { X = -351 Y = 250 }
+          { X = 223 Y = 64 }
+          { X = -392 Y = -226 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRubble03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rubble_03"
+        Tallness = 263.0
+        Offset = { X = 0 Y = -149 }
+        Points = [
+          { X = -539 Y = -84 }
+          { X = 69 Y = 156 }
+          { X = 464 Y = 87 }
+          { X = -54 Y = -219 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallHill01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Hill_01"
+        Tallness = 356.0
+        Offset = { X = 0 Y = -279 }
+        Points = [
+          { X = -1285 Y = -374 }
+          { X = 195 Y = 615 }
+          { X = 955 Y = 195 }
+          { X = -358 Y = -694 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMossCover01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_MossCover_01"
+        Tallness = 837.0
+        Offset = { X = 0 Y = -279 }
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_06"
+        Tallness = 1979.0
+        Offset = { X = 0 Y = -1070 }
+        Points = [
+          { X = -875 Y = -45 }
+          { X = -875 Y = 125 }
+          { X = 890 Y = 120 }
+          { X = 875 Y = -70 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_07"
+        Tallness = 1823.0
+        Offset = { X = 0 Y = -703 }
+        Points = [
+          { X = -696 Y = 189 }
+          { X = 700 Y = 205 }
+          { X = 681 Y = 21 }
+          { X = -681 Y = -55 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallMoss07a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Moss_07a"
+        Tallness = 1416.0
+        Offset = { X = 0 Y = -553 }
+        Points = [
+          { X = -426 Y = 43 }
+          { X = -421 Y = 120 }
+          { X = 400 Y = 146 }
+          { X = 400 Y = 64 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_02"
+        Tallness = 33.0
+        Offset = { X = 0 Y = 7 }
+        Points = [
+          { X = -439 Y = -163 }
+          { X = -399 Y = 89 }
+          { X = 103 Y = 232 }
+          { X = 488 Y = 103 }
+          { X = -270 Y = -253 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_02"
+        Tallness = 701.0
+        Offset = { X = 0 Y = -281 }
+        Points = [
+          { X = -833 Y = 258 }
+          { X = -463 Y = 431 }
+          { X = 836 Y = -210 }
+          { X = 466 Y = -395 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumCubeBrick05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_CubeBrick_05"
+        Tallness = 588.0
+        Offset = { X = 0 Y = -265 }
+        Points = [
+          { X = -527 Y = 109 }
+          { X = -218 Y = 260 }
+          { X = 531 Y = -120 }
+          { X = 219 Y = -284 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Brick_01"
+        Tallness = 256.0
+        Offset = { X = 0 Y = -120 }
+        Points = [
+          { X = -444 Y = 51 }
+          { X = -136 Y = 214 }
+          { X = 446 Y = -74 }
+          { X = 128 Y = -233 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumBanner01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Banner_01"
+        Tallness = 2097.0
+        Offset = { X = 0 Y = -1124 }
+        Points = [
+          { X = -151 Y = 0 }
+          { X = 13 Y = 85 }
+          { X = 156 Y = 12 }
+          { X = -16 Y = -75 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumDrapery01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Drapery_01"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumDrapery02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumDrapery02Anim"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumDrapery02a"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumDrapery02aAnim"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumRug01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rug_01"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumRug02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rug_02"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumRug03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Rug_03"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumDrapery03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Drapery_03"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumDrapery04"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Drapery_04"
+        Tallness = 2759.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumArrows01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Arrows_01"
+        Tallness = 487.0
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = -351 Y = -49 }
+          { X = -174 Y = 82 }
+          { X = -27 Y = -3 }
+          { X = -221 Y = -115 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumSpear01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Spear_01"
+        Tallness = 2471.0
+        Offset = { X = 0 Y = -975 }
+        Points = [
+          { X = -348 Y = 131 }
+          { X = -300 Y = 96 }
+          { X = -370 Y = 50 }
+          { X = -428 Y = 87 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumSword02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Sword_02"
+        Tallness = 1042.0
+        Offset = { X = 0 Y = -442 }
+        Points = [
+          { X = -102 Y = -29 }
+          { X = 70 Y = 52 }
+          { X = 100 Y = 37 }
+          { X = -67 Y = -48 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_01"
+        Tallness = 1073.0
+        Offset = { X = 0 Y = -491 }
+        Points = [
+          { X = -1278 Y = 156 }
+          { X = -534 Y = 548 }
+          { X = 1136 Y = -437 }
+          { X = 330 Y = -756 }
+          { X = -1278 Y = 156 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_02"
+        Tallness = 1073.0
+        Offset = { X = 0 Y = -424 }
+        Points = [
+          { X = -632 Y = 215 }
+          { X = 4 Y = 175 }
+          { X = 618 Y = -195 }
+          { X = 618 Y = -195 }
+          { X = 371 Y = -311 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_03"
+        Tallness = 1073.0
+        Offset = { X = 0 Y = -537 }
+        Points = [
+          { X = -607 Y = -156 }
+          { X = 328 Y = 303 }
+          { X = 706 Y = 128 }
+          { X = -235 Y = -339 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_04"
+        Tallness = 478.0
+        Offset = { X = 0 Y = -100 }
+        Points = [
+          { X = -641 Y = -19 }
+          { X = -424 Y = 377 }
+          { X = 626 Y = -105 }
+          { X = 132 Y = -401 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_05"
+        Tallness = 300.0
+        Offset = { X = 0 Y = -100 }
+        Points = [
+          { X = -365 Y = 143 }
+          { X = -155 Y = 259 }
+          { X = 382 Y = -19 }
+          { X = 180 Y = -134 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRoofgroup06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Roofgroup_06"
+        Tallness = 1025.0
+        Offset = { X = 0 Y = -351 }
+        Points = [
+          { X = -542 Y = 107 }
+          { X = -192 Y = 293 }
+          { X = 521 Y = -81 }
+          { X = 156 Y = -271 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallbrick02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wallbrick_02"
+        Tallness = 2032.0
+        Offset = { X = 0 Y = -732 }
+        Points = [
+          { X = -609 Y = 148 }
+          { X = -294 Y = 343 }
+          { X = 685 Y = -150 }
+          { X = 310 Y = -317 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumWallGroup01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Wall_Group_01"
+        Tallness = 2003.0
+        Offset = { X = 0 Y = -863 }
+        Points = [
+          { X = -891 Y = 297 }
+          { X = -571 Y = 462 }
+          { X = 964 Y = -310 }
+          { X = 630 Y = -483 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumGable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Gable_01"
+        Tallness = 1194.0
+        Offset = { X = 0 Y = -270 }
+        Points = [
+          { X = -1586 Y = 407 }
+          { X = -962 Y = 753 }
+          { X = 1365 Y = -414 }
+          { X = 738 Y = -745 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumGable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Gable_02"
+        Tallness = 463.0
+        Offset = { X = 0 Y = -192 }
+        Points = [
+          { X = -936 Y = 313 }
+          { X = -578 Y = 483 }
+          { X = 934 Y = -274 }
+          { X = 567 Y = -448 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumVase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vase_01"
+        Tallness = 879.0
+        Offset = { X = 0 Y = -357 }
+        Points = [
+          { X = -143 Y = 15 }
+          { X = -13 Y = 102 }
+          { X = 155 Y = 26 }
+          { X = 6 Y = -48 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumVase02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Vase_02"
+        Tallness = 1584.0
+        Offset = { X = 0 Y = -635 }
+        Points = [
+          { X = -180 Y = 46 }
+          { X = 25 Y = 118 }
+          { X = 205 Y = 36 }
+          { X = 25 Y = -66 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_06"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossHill07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Hill_07"
+        Tallness = 390.0
+        Offset = { X = 0 Y = -31 }
+        Points = [
+          { X = 599 Y = 13 }
+          { X = -567 Y = -263 }
+          { X = -527 Y = 536 }
+          { X = 604 Y = 655 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_02"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_04"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_05"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_06"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_07"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_08"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_09"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCombined01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Combined_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCombined02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Combined_02"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCombined03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Combined_03"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCombined04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Combined_04"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCombined05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Combined_05"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainCrater01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainCrater_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainPetals01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Petals_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_03"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_04"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_05"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_06"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_08"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_09"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_10"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_11"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish12"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_12"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainFlourish13"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Flourish_13"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -24 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossDirt01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Dirt_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMoss03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_03"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_01"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+        Points = [
+          { X = -1093 Y = -25 }
+          { X = 26 Y = 551 }
+          { X = 1088 Y = -15 }
+          { X = -23 Y = -566 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_02"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+        Points = [
+          { X = -1093 Y = -25 }
+          { X = 26 Y = 551 }
+          { X = 1088 Y = -15 }
+          { X = -23 Y = -566 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_04"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick04a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_04a"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_05"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_07"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_08"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_09"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_10"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_11"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick12"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_12"
+        Tallness = 39.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -451 Y = 17 }
+          { X = 3 Y = 236 }
+          { X = 444 Y = 12 }
+          { X = 2 Y = -209 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick13"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_13"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick14"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_14"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick15"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_15"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+        Points = [
+          { X = -714 Y = -21 }
+          { X = 9 Y = 339 }
+          { X = 720 Y = -29 }
+          { X = -1 Y = -395 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainBrick16"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_TerrainBrick_16"
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumPetals01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Petals_01"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+        Tallness = 58.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge01b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_01b"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Tile_01"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossTile01b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Tile_01b"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_02"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_03"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge03a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_03a"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge03b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_03b"
+        Tallness = 1524.0
+        Offset = { X = 0 Y = -31 }
+      }
+    }
+    
+    {
+      Name = "ElysiumTerrainMossEdge04b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Terrain_Moss_Edge_04b"
+        Tallness = 762.0
+        Offset = { X = 0 Y = -313 }
+        Points = [
+          { X = -346 Y = -22 }
+          { X = -54 Y = 139 }
+          { X = 385 Y = -73 }
+          { X = 105 Y = -231 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ArcherTrapBow"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      CollisionDamagePerVelocity = 0.0
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedCrystal1Shatter"
+        DeathSound = "/SFX/PillarBoulderDestroyedSmall"
+        DieOnCollision = true
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowStatic"
+        DieOnTouchdown = true
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponBowFloatingIdle"
+        Grip = 3000.0
+        OffsetZ = 84.0
+        Tallness = 50.0
+        TouchdownSound = "/Leftovers/SFX/BallImpact"
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumDestructiblePillar"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "PillarHitFx"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_03a"
+        OcclusionBaseAnim = "ElysiumPillarFootprint"
+        OcclusionOpacity = 0.25
+        Tallness = 2546.0
+        Offset = { X = 0 Y = -993 }
+        Points = [
+          { X = 160 Y = 220 }
+          { X = 480 Y = 60 }
+          { X = 480 Y = -100 }
+          { X = 160 Y = -260 }
+          { X = -160 Y = -260 }
+          { X = -480 Y = -100 }
+          { X = -480 Y = 60 }
+          { X = -160 Y = 220 }
+        ]
+        Using = [
+          { Name = "ElysiumDestructiblePillarA" }
+          { Name = "ElysiumDestructiblePillarB" }
+          { Name = "ElysiumDestructiblePillarC" }
+          { Name = "ElysiumPillarRegenerate-Fx" }
+          { Name = "ElysiumRubble04" Scale = 0.4 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumDestructiblePillarA"
+      InheritFrom = "ElysiumDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_03b"
+        Tallness = 1954.0
+        Points = [
+          { X = -368 Y = 44 }
+          { X = 181 Y = 308 }
+          { X = 696 Y = 44 }
+          { X = 696 Y = 44 }
+          { X = 163 Y = -219 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumDestructiblePillarB"
+      InheritFrom = "ElysiumDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_03c"
+        Tallness = 1722.0
+        Points = [
+          { X = -359 Y = 39 }
+          { X = 172 Y = 321 }
+          { X = 700 Y = 53 }
+          { X = 154 Y = -224 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumDestructiblePillarC"
+      InheritFrom = "ElysiumDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Elysium\Elysium_Pillar_03d"
+        Tallness = 520.0
+        Points = [
+          { X = -368 Y = 44 }
+          { X = 186 Y = 330 }
+          { X = 696 Y = 67 }
+          { X = 136 Y = -205 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumRubble04"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumRubble04"
+        Tallness = 202.0
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = 96 Y = -23 }
+          { X = -8 Y = -76 }
+          { X = -111 Y = -24 }
+          { X = -6 Y = 28 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ElysiumGhostIdle"
+        MaxScale = 1.0
+        MinScale = 0.9
+        StopsLight = false
+        Tallness = 159.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = -9 Y = 14 }
+          { X = 17 Y = -2 }
+          { X = -16 Y = -23 }
+          { X = -41 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ElysiumGhost01Shadowed"
+      InheritFrom = "ElysiumGhost01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "NPCShadow"
+        EditorOutlineDrawBounds = false
+      }
+    }
+  ]
+}

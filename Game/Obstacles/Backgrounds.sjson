@@ -1,0 +1,56 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "rectangle01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+	  NeedsLife = false
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Backgrounds\rectangle_01"
+        TriggerOnSpawn = false
+      }
+    }
+    
+    {
+      Name = "Background_Labyrinth_01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Backgrounds\mood_02"
+      }
+    }
+    
+    {
+      Name = "Background_Labyrinth_01_Blurred"
+      InheritFrom = "Background_Labyrinth_01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Backgrounds\mood_02_blurred"
+      }
+    }
+    
+    {
+      Name = "Letterbox01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Letterbox01"
+        Grip = 3.402823E+38
+        MeshType = "Vertical"
+      }
+    }
+  ]
+}

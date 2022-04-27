@@ -1,0 +1,3675 @@
+{
+  Animations = [
+    
+    {
+      Name = "NPCKidCrouched"
+      FilePath = "Animations\NPCKid\Crouched\NPCKidCrouched"
+      Type = "Slide"
+      VideoTexture = "NPCKidCrouched"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.5
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*frm60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 80*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 90*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 110*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*frm120*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 130*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 140*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*frm150*/
+      ]
+    }
+
+    /* {
+      Name = "HypnosIdle"
+      FilePath = "Animations\Hypnos\Idle\HypnosIdle"
+      Type = "Book"
+      EndFrame = 250
+      Loop = true
+      NumFrames = 250
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    } */
+    
+    {
+      Name = "HypnosIdleSleeping"
+      FilePath = "Animations\NPCHypnos\IdleSleeping\HypnosIdleSleeping"
+      Type = "Book"
+      VideoTexture = "HypnosIdleSleeping_Bink"
+      EndFrame = 74
+      Loop = true
+      NumAngles = 8
+      NumFrames = 74
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "HypnosSleepWakingSurprise"
+      ChainTo = "HypnosIdleSitting"
+      FilePath = "Animations\NPCHypnos\SleepWakingSurprise\HypnosSleepWakingSurprise"
+      Type = "Book"
+      VideoTexture = "HypnosSleepWakingSurprise_Bink"
+      EndFrame = 104
+      NumAngles = 8
+      NumFrames = 104
+      PlaySpeed = 30.0
+      StartFrame = 2
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "HypnosIdleSitting"
+      ChainTo = "HypnosSittingToSleep"
+      FilePath = "Animations\NPCHypnos\IdleSitting\HypnosIdleSitting"
+      Type = "Book"
+      VideoTexture = "HypnosIdleSitting_Bink"
+      EndFrame = 74
+      Loop = true
+      NumAngles = 8
+      NumFrames = 74
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "HypnosIdleGreeting"
+      ChainTo = "HypnosIdleSitting"
+      FilePath = "Animations\NPCHypnos\IdleGreeting\HypnosIdleGreeting"
+      Type = "Book"
+      VideoTexture = "HypnosIdleGreeting_Bink"
+      EndFrame = 74
+      NumAngles = 8
+      NumFrames = 74
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "HypnosSittingToSleep"
+      ChainTo = "HypnosIdleSleeping"
+      FilePath = "Animations\NPCHypnos\SittingToSleep\HypnosSittingToSleep"
+      Type = "Book"
+      VideoTexture = "HypnosSittingToSleep_Bink"
+      EndFrame = 109
+      NumAngles = 8
+      NumFrames = 109
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "HypnosSleepingLoop"
+      InheritFrom = "HypnosIdleSleeping"
+      Sound = "/SFX/NPCLoops/Hypnos_0006"
+      StopSoundOnFinishFade = 0.2
+      DisableOwnerRotation = true
+      SoundAllowedAfterFrame = -1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "HypnosWakeUp"
+      InheritFrom = "HypnosSleepWakingSurprise"
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperFinish" Frame = 25 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperFinish" Frame = 30 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperPlace" Frame = 41 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperFinish" Frame = 50 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperLift" Frame = 86 }
+      ]
+    }
+    
+    {
+      Name = "HypnosAwakeLoop"
+      InheritFrom = "HypnosIdleSitting"
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "HypnosReturnToSleeping"
+      InheritFrom = "HypnosSittingToSleep"
+      ChainTo = "HypnosSleepingLoop"
+      DisableOwnerRotation = true
+      TimeModifierFraction = 0.0
+    }
+
+    /* ____Charon____ */
+    
+    {
+      Name = "NPCBoatManIdle"
+      FilePath = "Animations\NPCCthonic\Idle\CthonicIdle"
+      Type = "Book"
+      VideoTexture = "CthonicIdle_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Saturation = -1.0
+      Value = -0.5
+    }
+
+    /* ___________________Nyx_____________ */
+    
+    {
+      Name = "NyxIdle"
+      ChainTo = "NyxIdleGreeting_Start"
+      FilePath = "Animations\NPCNyx\Idle\NyxIdle"
+      Type = "Book"
+      VideoTexture = "NPC_NyxIdle_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "NyxIdleGreeting"
+      FilePath = "Animations\NPCNyx\IdleGreeting\NyxIdleGreeting"
+      Type = "Book"
+      VideoTexture = "NPC_NyxIdleGreeting_Bink"
+      EndFrame = 240
+      NumAngles = 16
+      NumFrames = 240
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+
+    /* ___________________IdleGreeting_breakdown_____________ */
+    
+    {
+      Name = "NyxIdleGreeting_Start"
+      InheritFrom = "NyxIdleGreeting"
+      ChainTo = "NyxIdleGreeting_IdleGreetingLoop"
+      EndFrame = 34
+      NumFrames = 240
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "NyxIdleGreeting_IdleGreetingLoop"
+      InheritFrom = "NyxIdleGreeting"
+      ChainTo = "NyxIdleGreeting_IdleGreetingLoop_End"
+      EndFrame = 155
+      Loop = true
+      NumFrames = 240
+      StartFrame = 35
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "NyxIdleGreeting_IdleGreetingLoop_End"
+      InheritFrom = "NyxIdleGreeting"
+      ChainTo = "NyxIdle"
+      EndFrame = 240
+      NumFrames = 240
+      StartFrame = 156
+      TimeModifierFraction = 0.0
+    }
+
+    /* ___________________Achilles_breakdown_____________ */
+    
+    {
+      Name = "AchillesIdle"
+      FilePath = "Animations\NPCAchilles\Idle\AchillesIdle"
+      Type = "Book"
+      VideoTexture = "NPC_AchillesIdle_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -55.0
+      Scale = 0.9
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "AchillesIdleGreeting"
+      FilePath = "Animations\NPCAchilles\IdleGreeting\AchillesIdleGreeting"
+      Type = "Book"
+      VideoTexture = "NPC_AchillesIdleGreeting_Bink"
+      EndFrame = 120
+      NumAngles = 16
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -55.0
+      Scale = 0.9
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 23 }
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/RobeFlutter" Frame = 98 }
+        { DurationFrames = 1 Sound = "/SFX/ChainRattleQuiet" Frame = 111 }
+      ]
+    }
+
+    /* ___________________Achilles_Keepsake_____________ */
+    
+    {
+      Name = "AchillesKeepSake_Start"
+      ChainTo = "AchillesKeepSake_Fire"
+      FilePath = "Animations\NPCAchilles\KeepsakeVFX\AchillesKeepSakeVFX"
+      Type = "Slide"
+      VideoTexture = "NPC_AchillesKeepSake_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 50
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -55.0
+      Scale = 0.9
+      Ambient = 0.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 Sound = "/SFX/Achilles_EmotePowerAttacking" }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrLand" }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+      ]
+    }
+    
+    {
+      Name = "AchillesKeepsakeStreak"
+      FilePath = "Fx\KnockbackLines\KnockbackLines"
+      GroupName = "Standing"
+      Type = "Book"
+      ColorFromOwner = "Ignore"
+      EndFrame = 19
+      NumFrames = 19
+      PlaySpeed = 60.0
+      StartFrame = 1
+      RandomFlipVertical = true
+      OffsetZ = 20.0
+      OriginX = 20.0
+      OriginY = 138.0
+      Angle = 70
+      AngleFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      SortMode = "FromParent"
+      EndScaleX = 2.0
+      ScaleFromOwner = "Ignore"
+      ScaleY = 0.4
+      StartScaleX = 6.0
+      Ambient = 0.0
+      UseVelocityAngleFromOwner = true
+      Color = { Red = 0.65 Green = 1.0 Blue = 0.64 }
+    }
+
+    {
+      Name = "PatroclusKeepsakeStreak"
+      InheritFrom = "AchillesKeepsakeStreak"
+      Angle = 110
+      Color = { Red = 0.35 Green = 1.0 Blue = 0.90 }
+    }
+
+    {
+      Name = "AchillesKeepSake_Fire"
+      ChainTo = "AchillesKeepSake_End"
+      FilePath = "Animations\NPCAchilles\KeepsakeVFX\AchillesKeepSakeVFX"
+      Type = "Slide"
+      VideoTexture = "NPC_AchillesKeepSake_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 50
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -55.0
+      SortMode = "Isometric"
+      Scale = 0.9
+      Ambient = 0.0
+      CreateAnimation = "AchillesKeepsakeStreak"
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusSpearSwipe" VisualFx = "QuickFlashGreen" }
+        /*Fire*/
+        { DurationFrames = 2 Sound = "/SFX/MetalStoneClang" VisualFx = "AchillesPatroclusKeepsakeLand" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 15 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/SpikeTrapFireSPEARRETRACT" }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Player Sounds/ZagreusSpearReturn" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 30 }
+        /*Hold_Pose_*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+      ]
+    }
+    
+    {
+      Name = "AchillesKeepSake_End"
+      FilePath = "Animations\NPCAchilles\KeepsakeVFX\AchillesKeepSakeVFX"
+      Type = "Slide"
+      VideoTexture = "NPC_AchillesKeepSake_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 50
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -55.0
+      SortMode = "Isometric"
+      Scale = 0.9
+      Ambient = 0.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*take off*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Achilles_EmoteAttacking" }
+        /*Frame 40*/
+
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/PlayerJump" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+      ]
+    }
+    
+    {
+      Name = "AchillesAssist"
+      InheritFrom = "AchillesKeepSake_Start"
+      GroupName = "Standing"
+      SortMode = "Isometric"
+      TimeModifierFraction = 0.1
+    }
+
+    {
+      Name = "AchillesAssistFire"
+      InheritFrom = "AchillesKeepSake_Fire"
+      ChainTo = "AchillesAssistOut"
+      GroupName = "Standing"
+      TimeModifierFraction = 0.1
+    }
+    
+    {
+      Name = "AchillesAssistOut"
+      InheritFrom = "AchillesKeepSake_End"
+      GroupName = "Standing"
+      TimeModifierFraction = 0.1
+    }
+    
+    {
+      Name = "PatroclusKeepSake_Start"
+      InheritFrom = "AchillesKeepSake_Start"
+      ChainTo = "PatroclusKeepSake_Fire"
+      FilePath = "Animations\NPCPatroclus\KeepsakeVFX\PatroclusKeepSakeVFX"
+      VideoTexture = "NPC_PatroclusKeepSake_Bink"
+      FlipHorizontal = true
+    }
+    
+    {
+      Name = "PatroclusKeepSake_Fire"
+      InheritFrom = "AchillesKeepSake_Fire"
+      ChainTo = "PatroclusKeepSake_End"
+      FilePath = "Animations\NPCPatroclus\KeepsakeVFX\PatroclusKeepSakeVFX"
+      VideoTexture = "NPC_PatroclusKeepSake_Bink"
+      FlipHorizontal = true
+      CreateAnimation = "PatroclusKeepsakeStreak"
+    }
+    
+    {
+      Name = "PatroclusKeepSake_End"
+      InheritFrom = "AchillesKeepSake_End"
+      FilePath = "Animations\NPCPatroclus\KeepsakeVFX\PatroclusKeepSakeVFX"
+      VideoTexture = "NPC_PatroclusKeepSake_Bink"
+      FlipHorizontal = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*take off*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Patroclus_EmoteAttacking" }
+        /*Frame 40*/
+
+        { DurationFrames = 1 Sound = "/Leftovers/SFX/PlayerJump" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+      ]
+    }
+    
+    {
+      Name = "PatroclusAssist"
+      InheritFrom = "PatroclusKeepSake_Start"
+      GroupName = "Standing"
+      SortMode = "Isometric"
+      TimeModifierFraction = 0.1
+    }
+    
+    {
+      Name = "PatroclusAssistFire"
+      InheritFrom = "PatroclusKeepSake_Fire"
+      ChainTo = "PatroclusAssistOut"
+      GroupName = "Standing"
+      TimeModifierFraction = 0.1
+    }
+    
+    {
+      Name = "PatroclusAssistOut"
+      InheritFrom = "PatroclusKeepSake_End"
+      GroupName = "Standing"
+      TimeModifierFraction = 0.1
+    }
+
+    /* ___________________Patroclus_____________ */
+    
+    {
+      Name = "PatroclusIdle"
+      FilePath = "Animations\NPCPatroclus\IdleSitting\PatroclusIdleSitting"
+      Type = "Book"
+      VideoTexture = "NPC_PatroclusIdleSitting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 60
+      Loop = true
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -65.0
+      Scale = 0.9
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "PatroclusIdleStanding"
+      FilePath = "Animations\NPCPatroclus\IdleStanding\PatroclusIdleStanding"
+      Type = "Book"
+      VideoTexture = "NPC_PatroclusIdleStanding_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 60
+      Loop = true
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -65.0
+      Scale = 0.9
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+
+    /* _______________________________________________Eurydice_______________________________________________ */
+    
+    {
+      Name = "EurydiceIdle"
+      ChainTo = "EurydiceIdleSinging_Start"
+      FilePath = "Animations\NPCEurydice\Idle\EurydiceIdle"
+      Type = "Book"
+      VideoTexture = "NPC_EurydiceIdle_Bink"
+      EndFrame = 54
+      Loop = true
+      NumAngles = 8
+      NumFrames = 54
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Scale = 0.95
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "EurydiceIdleSinging"
+      FilePath = "Animations\NPCEurydice\IdleSinging\EurydiceIdleSinging"
+      Type = "Book"
+      VideoTexture = "NPC_EurydiceIdleSinging_Bink"
+      EndFrame = 250
+      NumAngles = 8
+      NumFrames = 250
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -50.0
+      Scale = 0.95
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+
+    /* ___________________IdleSinging_breakdown_____________ */
+    
+    {
+      Name = "EurydiceIdleSinging_Start"
+      InheritFrom = "EurydiceIdleSinging"
+      ChainTo = "EurydiceIdleSinging_SingingLoop"
+      EndFrame = 12
+      NumFrames = 250
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "EurydiceIdleSinging_SingingLoop"
+      InheritFrom = "EurydiceIdleSinging"
+      EndFrame = 241
+      Loop = true
+      NumFrames = 250
+      StartFrame = 13
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "EurydiceIdleSinging_SingingLoop_End"
+      InheritFrom = "EurydiceIdleSinging"
+      ChainTo = "EurydiceIdle"
+      EndFrame = 250
+      NumFrames = 250
+      StartFrame = 242
+      TimeModifierFraction = 0.0
+    }
+
+    /* _______________________________________________Orpheus_______________________________________________ */
+    
+    {
+      Name = "OrpheusIdle"
+      ChainTo = "OrpheusPlaying_Start"
+      FilePath = "Animations\NPCOrpheus\Idle\OrpheusIdle"
+      Type = "Book"
+      VideoTexture = "NPC_OrpheusIdle_Bink"
+      EndFrame = 54
+      Loop = true
+      NumAngles = 8
+      NumFrames = 54
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -55.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "OrpheusPlaying"
+      FilePath = "Animations\NPCOrpheus\IdlePlaying\OrpheusIdlePlaying"
+      Type = "Book"
+      VideoTexture = "NPC_OrpheusIdlePlaying_Bink"
+      EndFrame = 295
+      Loop = true
+      NumAngles = 8
+      NumFrames = 295
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -55.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+
+    /* ___________________IdlePlaying_breakdown_____________ */
+    
+    {
+      Name = "OrpheusPlaying_Start"
+      InheritFrom = "OrpheusPlaying"
+      ChainTo = "OrpheusPlaying_PlayingLoop"
+      EndFrame = 12
+      Loop = false
+      NumFrames = 295
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "OrpheusPlaying_PlayingLoop"
+      InheritFrom = "OrpheusPlaying"
+      EndFrame = 285
+      NumFrames = 295
+      StartFrame = 13
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "OrpheusPlaying_PlayingLoop_End"
+      InheritFrom = "OrpheusPlaying"
+      ChainTo = "OrpheusIdle"
+      EndFrame = 295
+      Loop = false
+      NumFrames = 295
+      StartFrame = 285
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "OrpheusFidget"
+      InheritFrom = "OrpheusPlaying_Start"
+      ChainTo = "OrpheusPlaying_PlayingLoop_End"
+    }
+
+    /* _______________________________________________SisyphusIdle_______________________________________________ */
+    
+    {
+      Name = "SisyphusIdle"
+      FilePath = "Animations\Sisyphus\Idle\SisyphusIdle"
+      Type = "Book"
+      VideoTexture = "NPC_SisyphusIdle_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 75
+      Loop = true
+      NumFrames = 75
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -60.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "SisyphusIdleGreeting"
+      ChainTo = "SisyphusIdle"
+      FilePath = "Animations\Sisyphus\IdleGreeting\SisyphusIdleGreeting"
+      Type = "Book"
+      VideoTexture = "NPC_SisyphusIdleGreeting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 75
+      NumFrames = 75
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -60.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "SisyphusElbowing"
+      ChainTo = "SisyphusIdle"
+      FilePath = "Animations\Sisyphus\Elbowing\SisyphusElbowing"
+      Type = "Book"
+      VideoTexture = "NPC_SisyphusElbowing_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 75
+      NumFrames = 75
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -60.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "SisyphusExplaining"
+      ChainTo = "SisyphusIdle"
+      FilePath = "Animations\Sisyphus\Explaining\SisyphusExplaining"
+      Type = "Book"
+      VideoTexture = "NPC_SisyphusExplaining_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 75
+      NumFrames = 75
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -60.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+    
+    {
+      Name = "BouldyIdle"
+      FilePath = "Tilesets\Tartarus\Tartarus_Rubble_03"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    /* _______________________________________________3DGhost_______________________________________________ */
+    
+    {
+      Name = "3DGhostIdleRandomHeadTurn"
+      ChainTo = "3dGhostIdle"
+      FilePath = "Animations\3DGhost\Idle\GhostIdle"
+      Type = "Slide"
+      EndFrame = 5
+      NumAngles = 32
+      NumFrames = 5
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetFromParentZ = true
+      OffsetY = -55.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+      Slides = [
+        { DurationFrames = 1 RandomDurationFramesMax = 1000 RandomDurationFramesMin = 500 }
+        { DurationFrames = 3 }
+        { DurationFrames = 3 }
+        { DurationFrames = 3 }
+        { DurationFrames = 1 RandomDurationFramesMax = 150 RandomDurationFramesMin = 30 }
+      ]
+    }
+    
+    {
+      Name = "3dGhostIdle"
+      InheritFrom = "3DGhostIdleRandomHeadTurn"
+      ChainTo = "3DGhostIdleRandomHeadTurn"
+      PlayBackwards = true
+	  OnlyWhenVisible = true
+      Slides = [
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+    
+    {
+      Name = "3DGhostFidget"
+      FilePath = "Animations\3DGhostFidget\3DGhostFidget"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+	  OnlyWhenVisible = true
+      Random = [
+        { Name = "3DGhostFidget1" }
+        { Name = "3DGhostFidget2" }
+        { Name = "3DGhostFidget3" }
+        { Name = "3DGhostFidget4" }
+      ]
+    }
+    
+    {
+      Name = "3DGhostFidget1"
+      ChainTo = "3DGhostFidget2"
+      FilePath = "Animations\3DGhost\Fidget\GhostFidget"
+      Type = "Slide"
+      AngleFromOwner = "Ignore"
+      EndFrame = 180
+      NumFrames = 180
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+      ShiftSpeedMax = 0.4
+      ShiftSpeedMin = 0.2
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 1 RandomDurationFramesMax = 60 RandomDurationFramesMin = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 36 END of First Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        /*Frm 81 END of Second Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 130*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 140*/
+
+        { DurationFrames = 0 }
+        /*Frm 141 END of Third Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 150*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 160*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 170*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 180 END of Fourth Fidget*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostFidget2"
+      ChainTo = "3DGhostFidget3"
+      FilePath = "Animations\3DGhost\Fidget\GhostFidget"
+      Type = "Slide"
+      AngleFromOwner = "Ignore"
+      EndFrame = 180
+      NumFrames = 180
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+      ShiftSpeedMax = 0.4
+      ShiftSpeedMin = 0.2
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 36 END of First Fidget*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 80*/
+
+        { DurationFrames = 2 }
+        /*Frm 81 END of Second Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 130*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 140*/
+
+        { DurationFrames = 0 }
+        /*Frm 141 END of Third Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 150*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 160*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 170*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 180 END of Fourth Fidget*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostFidget3"
+      ChainTo = "3DGhostFidget4"
+      FilePath = "Animations\3DGhost\Fidget\GhostFidget"
+      Type = "Slide"
+      AngleFromOwner = "Ignore"
+      EndFrame = 180
+      NumFrames = 180
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+      ShiftSpeedMax = 0.4
+      ShiftSpeedMin = 0.2
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 36 END of First Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        /*Frm 81 END of Second Fidget*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 90*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 110*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 120*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 130*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 140*/
+
+        { DurationFrames = 2 }
+        /*Frm 141 END of Third Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 150*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 160*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 170*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 180 END of Fourth Fidget*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostFidget4"
+      ChainTo = "3DGhostFidget1"
+      FilePath = "Animations\3DGhost\Fidget\GhostFidget"
+      Type = "Slide"
+      AngleFromOwner = "Ignore"
+      EndFrame = 180
+      NumFrames = 180
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+      ShiftSpeedMax = 0.4
+      ShiftSpeedMin = 0.2
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 36 END of First Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 80*/
+
+        { DurationFrames = 0 }
+        /*Frm 81 END of Second Fidget*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 110*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 130*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 140*/
+
+        { DurationFrames = 0 }
+        /*Frm 141 END of Third Fidget*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 150*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 160*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 170*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 180 END of Fourth Fidget*/
+      ]
+    }
+
+    /* GHOST ALT */
+    
+    {
+      Name = "3DGhostAltIdle"
+      FilePath = "Animations\3DGhostAlt\Idle\GhostAltIdle"
+      Type = "Slide"
+      VideoTexture = "NPC_3DGhostAltIdle_Bink"
+      EndFrame = 40
+      Loop = true
+      NumAngles = 32
+      NumFrames = 40
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetY = -55.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 40*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostAltMove"
+      FilePath = "Animations\3DGhostAlt\Move\GhostAltMove"
+      Type = "Slide"
+      VideoTexture = "NPC_3DGhostAltMove_Bink"
+      EndFrame = 40
+      Loop = true
+      NumAngles = 32
+      NumFrames = 40
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetY = -55.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 40*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostAltStart"
+      ChainTo = "3DGhostAltMove"
+      FilePath = "Animations\3DGhostAlt\StartStop\GhostAltStartStop"
+      Type = "Slide"
+      VideoTexture = "NPC_3DGhostAltStartStop_Bink"
+      EndFrame = 40
+      NumAngles = 32
+      NumFrames = 40
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetY = -55.0
+      Ambient = 0.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*Frame 1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frm 40*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostAltStop"
+      ChainTo = "3DGhostAltIdle"
+      FilePath = "Animations\3DGhostAlt\StartStop\GhostAltStartStop"
+      Type = "Slide"
+      VideoTexture = "NPC_3DGhostAltStartStop_Bink"
+      EndFrame = 40
+      NumAngles = 32
+      NumFrames = 40
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetY = -55.0
+      Ambient = 0.0
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frm 40*/
+      ]
+    }
+    
+    {
+      Name = "3DGhostAltFidget"
+      ChainTo = "3DGhostAltIdle"
+      FilePath = "Animations\3DGhostAlt\Fidget\GhostAltFidget"
+      Type = "Book"
+      VideoTexture = "NPC_3DGhostAltFidget_Bink"
+      EndFrame = 280
+      NumAngles = 8
+      NumFrames = 280
+      PlaySpeed = 30.0
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      OffsetY = -55.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+    }
+
+    /* _______________________________________________GhostVariants_______________________________________________ */
+    
+    {
+      Name = "AsphodelGhostIdle"
+      FilePath = "Animations\GhostVariants\Asphodel\IdleVFX\AsphodelGhostIdleVFX"
+      Type = "Book"
+      EndFrame = 20
+      Loop = true
+      NumAngles = 16
+      NumFrames = 20
+      RandomPlaySpeedMax = 12.0
+      RandomPlaySpeedMin = 10.0
+      RandomStartFrame = true
+      ReRandomizeOnLoop = false
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -70.0
+      StartOffsetZ = 10.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "BartenderGhostIdle"
+      FilePath = "Animations\GhostVariants\Bartender\Idle\BartenderGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "AdminGhostIdle"
+      InheritFrom = "BartenderGhostIdle"
+      FilePath = "Animations\GhostVariants\ContractorTall\Idle\ContractorTallGhostIdle"
+    }
+    
+    {
+      Name = "WorkerGhostIdle"
+      InheritFrom = "BartenderGhostIdle"
+      FilePath = "Animations\GhostVariants\ContractorSmall\Idle\ContractorSmallGhostIdle"
+    }
+    
+    {
+      Name = "BigGhostIdle"
+      FilePath = "Animations\GhostVariants\Big\Idle\BigGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "BrokerGhostIdle"
+      FilePath = "Animations\GhostVariants\Broker\Idle\BrokerGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+
+    /* ___GhostChef___ */
+    
+    {
+      Name = "ChefGhostIdle"
+      ChainTo = "ChefGhostIdle2"
+      FilePath = "Animations\GhostVariants\Chef\ChopOnion\ghostChefChopOnion"
+      Type = "Book"
+      VideoTexture = "GhostChefChopOnion_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 120
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -135.0
+      OffsetZ = -20.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostFourChops" Frame = 18 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostFoodScrape" Frame = 85 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostOnionLand" Frame = 115 }
+      ]
+    }
+    
+    {
+      Name = "ChefGhostIdle2"
+      InheritFrom = "ChefGhostIdle"
+      ChainTo = "ChefGhostChopOnion2_Chopping_End"
+      EndFrame = 107
+      NumFrames = 120
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+
+    /* {
+      Name = "ChefGhostIdle_Start"
+      InheritFrom = "ChefGhostIdle"
+      ChainTo = "ChefGhostIdle_Chopping_End"/* ________Link to chopOnion2_Start_____________
+      EndFrame = 107
+      Loop = false
+      NumFrames = 120
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+      }
+
+       {
+      Name = "ChefGhostIdle_Chopping_End"
+      InheritFrom = "ChefGhostIdle"
+      ChainTo = "ChefGhostIdle"
+      EndFrame = 120
+      Loop = false
+      NumFrames = 120
+      StartFrame = 108
+      TimeModifierFraction = 0.0*
+      }
+   /* ___________________chopOnion2_________ */
+    
+    {
+      Name = "ChefGhostChopOnion2"
+      ChainTo = "ChefGhostIdle"
+      FilePath = "Animations\GhostVariants\Chef\ChopOnion2\ghostChefChopOnion2"
+      Type = "Book"
+      VideoTexture = "GhostChefChopOnion2_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 120
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -135.0
+      OffsetZ = -20.0
+      Ambient = 0.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostSwipeUp" Frame = 20 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostSwipeDown" Frame = 30 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostOnionLand" Frame = 43 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostKnifeTwirl" Frame = 56 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostFoodScrape" Frame = 81 }
+        { DurationFrames = 1 Sound = "/SFX/ChefGhostOnionLand" Frame = 115 }
+      ]
+    }
+
+    /* ___________________chopOnion2_breakdown_____________ */
+    
+    {
+      Name = "ChefGhostChopOnion2_Start"
+      InheritFrom = "ChefGhostChopOnion2"
+      ChainTo = "ChefGhostChopOnion2_Chopping_End"
+      EndFrame = 107
+      NumFrames = 120
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "ChefGhostChopOnion2_Chopping_End"
+      InheritFrom = "ChefGhostChopOnion2"
+      ChainTo = "ChefGhostChopOnion2_Start2"
+      EndFrame = 120
+      NumFrames = 120
+      StartFrame = 108
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "ChefGhostChopOnion2_Start2"
+      InheritFrom = "ChefGhostChopOnion2"
+      ChainTo = "ChefGhostIdle_Chopping_End2"
+      EndFrame = 107
+      NumFrames = 120
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "ChefGhostIdle_Chopping_End2"
+      InheritFrom = "ChefGhostIdle"
+      ChainTo = "ChefGhostIdle"
+      EndFrame = 120
+      NumFrames = 120
+      StartFrame = 108
+      TimeModifierFraction = 0.0
+    }
+
+    /* ___________________ElysiumGhost_____________ */
+    
+    {
+      Name = "ElysiumGhostIdle"
+      FilePath = "Animations\GhostVariants\Elysium\Idle\ElysiumGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      NumAngles = 16
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+    }
+    
+    {
+      Name = "SmallGhostIdle"
+      FilePath = "Animations\GhostVariants\Small\Idle\SmallGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "TallGhostIdle"
+      FilePath = "Animations\GhostVariants\Tall\Idle\TallGhostIdle"
+      Type = "Book"
+      EndFrame = 1
+      NumAngles = 32
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 2.0
+      SmoothStep = true
+      StartFrame = 1
+      UseAttachedSpriteEffects = false
+      EndOffsetZ = 15.0
+      OffsetY = -55.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+	  OnlyWhenVisible = true
+    }
+
+    /* ______DUSA_______
+
+    {
+      Name = "NPCDusaIdle"
+      FilePath = "Animations\Dusa\Idle\DusaIdle"
+      Type = "Book"
+      EaseOut = 1.0
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      RandomDurationMax = 3.0
+      RandomDurationMin = 1.75
+      StartFrame = 1
+      EndOffsetY = -7.0
+      OffsetY = -25.0
+      StartOffsetY = 7.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      PingPongShiftOverDuration = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    } */
+    
+    {
+      Name = "NPCDusaIdle"
+      FilePath = "Animations\Dusa\Idle\DusaIdle"
+      Type = "Book"
+      VideoTexture = "NPC_DusaIdle_Bink"
+      EndFrame = 80
+      Loop = true
+      NumAngles = 32
+      NumFrames = 80
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -25.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "NPCDusaIdleWorking"
+      FilePath = "Animations\Dusa\IdleWorking\DusaIdleWorking"
+      Type = "Book"
+      VideoTexture = "NPC_DusaIdleWorking_Bink"
+      EndFrame = 80
+      Loop = true
+      NumAngles = 32
+      NumFrames = 80
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -25.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "NPCMedusaInteractSurprise"
+      FilePath = "Animations\Dusa\InteractSurprise\DusaInteractSurprise"
+      Type = "Book"
+      VideoTexture = "NPC_DusaInteractSurprise_Bink"
+      EndFrame = 18
+      NumAngles = 32
+      NumFrames = 18
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -25.0
+      Ambient = 0.0
+    }
+    
+    {
+      Name = "NPCDusaPreAttack"
+      FilePath = "Animations\Dusa\Attack\DusaAttack"
+      Type = "Book"
+      EaseOut = 1.0
+      EndFrame = 1
+      HoldLastFrame = true
+      NumAngles = 32
+      NumFrames = 2
+      StartFrame = 1
+      EndOffsetY = -7.0
+      OffsetY = -25.0
+      StartOffsetY = 7.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+    }
+    
+    {
+      Name = "NPCDusaAttack"
+      FilePath = "Animations\Dusa\Attack\DusaAttack"
+      Type = "Book"
+      EaseOut = 1.0
+      EndFrame = 2
+      HoldLastFrame = true
+      NumAngles = 32
+      NumFrames = 2
+      StartFrame = 2
+      EndOffsetY = -7.0
+      OffsetY = -25.0
+      StartOffsetY = 7.0
+      Ambient = 0.0
+      PingPongShiftOverDuration = true
+    }
+    
+    {
+      Name = "NPCDusaMove"
+      InheritFrom = "NPCDusaIdleWorking"
+      EndFrame = 1
+      NumFrames = 1
+      RandomDurationMax = 1.0
+      RandomDurationMin = 0.6
+      StartFrame = 1
+    }
+    
+    {
+      Name = "NPCDusaStun"
+      InheritFrom = "NPCDusaIdle"
+    }
+    
+    {
+      Name = "NPCMedusaIdle_Humming"
+      InheritFrom = "NPCDusaIdleWorking"
+      VisualFx = "MusicNotes"
+      Sound = "/SFX/NPCLoops/Dusa_0062"
+      StopSoundOnFinishFade = 0.25
+      VisualFxIntervalMax = 0.3
+      VisualFxIntervalMin = 0.5
+      VisualFxOffsetX = 25.0
+      SoundAllowedAfterFrame = -1
+      VisualFxOffsetY = -80.0
+    }
+    {
+      Name = "NPCMedusaIdle_Humming_B"
+      InheritFrom = "NPCMedusaIdle_Humming"
+      Sound = "/SFX/NPCLoops/Dusa_0429"
+    }
+    {
+      Name = "NPCMedusaIdle_Humming_C"
+      InheritFrom = "NPCMedusaIdle_Humming"
+      Sound = "/SFX/NPCLoops/Dusa_0429"
+    }
+
+    {
+      Name = "NPCMedusaIdle_Humming_D"
+      InheritFrom = "NPCMedusaIdle_Humming"
+      Sound = "/SFX/NPCLoops/Dusa_0063"
+    }
+
+    {
+      Name = "NPCMedusaIdle_Crying"
+      InheritFrom = "NPCDusaIdle"
+      VisualFx = "PortraitEmoteNervousSweatSmall"
+      Sound = "/SFX/NPCLoops/Dusa_0430"
+      StopSoundOnFinishFade = 0.25
+      VisualFxIntervalMax = 0.3
+      VisualFxIntervalMin = 0.5
+      VisualFxOffsetX = 25.0
+      SoundAllowedAfterFrame = -1
+      VisualFxOffsetY = -80.0
+    }
+    
+    {
+      Name = "NPCMedusaEmbarrassed"
+      InheritFrom = "NPCMedusaInteractSurprise"
+      ChainTo = "NPCDusaIdle"
+      ChildAnimation = "StatusIconNPCCharmedSpawner"
+      Sound = "/Leftovers/Menu Sounds/EmoteAffection"
+      Loop = false
+      ShakeDistance = 2.0
+      ShakeDuration = 1.0
+      ShakeFalloffSpeed = 100.0
+      ShakeSpeed = 200.0
+    }
+    
+    {
+      Name = "NPCMedusaEmbarrassed_Sad"
+      InheritFrom = "NPCMedusaEmbarrassed"
+      ChildAnimation = "null"
+      Sound = "/EmptyCue"
+    }
+    
+    {
+      Name = "NPCMedusaGreeting"
+      InheritFrom = "NPCDusaIdle"
+      ChildAnimation = "StatusIconNPCPleasedSpawner"
+      Sound = "/Leftovers/Menu Sounds/EmoteExcitement"
+      Loop = false
+      ShakeDistance = 1.0
+      ShakeDuration = 0.3
+      ShakeFalloffSpeed = 100.0
+      ShakeSpeed = 100.0
+      ChainTo = "NPCDusaIdle"
+    }
+    
+    {
+      Name = "NPCMedusaHiding"
+      InheritFrom = "NPCDusaIdle"
+      CancelAnimation = "MedusaShadow"
+      ChainTo = "NPCMedusaHidden"
+      ChildAnimation = "BoneDust"
+      CreateAnimation = "MedusaShadowOut"
+      Sound = "/SFX/DusaRattleIntense"
+      StopSoundOnFinishFade = 0.25
+      Duration = 2.0
+      Loop = false
+      LoopFramesOnly = true
+      EndOffsetZ = 2160.0
+      TransferFrameToThis = true
+      OwnerHasNoCollision = true
+      ShakeDistance = 2.0
+      ShakeDuration = 1.0
+      ShakeFalloffSpeed = 100.0
+      ShakeSpeed = 200.0
+	  OnlyWhenVisible = false
+    }
+    
+    {
+      Name = "NPCMedusaHidden"
+      InheritFrom = "NPCMedusaHiding"
+      ChildAnimation = "null"
+      CreateAnimation = "null"
+      Sound = "/EmptyCue"
+      Alpha = 0.0
+      EndFrame = 1
+      HoldLastFrame = true
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    /* ________HADES__NPC______  
+    
+    /* {
+      Name = "Hades_HouseIdle"  _____OLD_____
+      FilePath = "Animations\Hades\HouseIdleWritingLoop\HadesWritingLoop"
+      Type = "Book"
+      VideoTexture = "HadesWritingLoop_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 259
+      Loop = true
+      NumFrames = 259
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperGrab" Frame = 41 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperPlace" Frame = 62 }
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingA" Frame = 110 }
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingB" Frame = 141 }
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingC" Frame = 170 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperLift" Frame = 195 }
+        { DurationFrames = 1 Sound = "/SFX/HadesPaperFinish" Frame = 225 }
+      ]
+    }
+
+    /* ________HADES_WritingLoopBreakDown_______ 
+    
+    {
+      Name = "Hades_HouseWritingLoop_Start"
+      InheritFrom = "Hades_HouseIdle"
+      ChainTo = "Hades_HouseWritingLoop_IdleLoop"
+      EndFrame = 109
+      Loop = false
+      NumFrames = 259
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseWritingLoop_IdleLoop"
+      InheritFrom = "Hades_HouseIdle"
+      ChainTo = "Hades_HouseWritingLoop_IdleLoop_End"
+      EndFrame = 183
+      NumFrames = 259
+      StartFrame = 110
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseWritingLoop_IdleLoop_End"
+      InheritFrom = "Hades_HouseIdle"
+      EndFrame = 259
+      Loop = false
+      NumFrames = 259
+      StartFrame = 184
+      TimeModifierFraction = 0.0
+    }*/
+
+/* ________HADES_WritingLoop2_______ */
+     {
+      Name = "Hades_HouseIdle"
+      FilePath = "Animations\Hades\HouseIdleWritingLoop2\HadesHouseIdleWritingLoop2"
+      Type = "Book"
+      VideoTexture = "HadesWritingLoop2_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 150
+      Loop = true
+      NumFrames = 150
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    OnlyWhenVisible = true
+      Slides = [
+        
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingA" Frame = 20 }
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingB" Frame = 76 }
+        { DurationFrames = 1 Sound = "/SFX/HadesWritingC" Frame = 118 }
+        
+      ]
+    }
+
+    /* ________HADES_WritingLoop2_BreakDown_______ */
+    
+    {
+      Name = "Hades_HouseWritingLoop_IdleLoop_Start" /*___Getting into WritingLoop from sitting up position (IdleSitting). ---*/
+      InheritFrom = "Hades_HouseIdle"
+      ChainTo = "Hades_HouseWritingLoop_IdleLoop"
+      EndFrame = 19
+      Loop = false
+      NumFrames = 150
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseWritingLoop_IdleLoop"
+      InheritFrom = "Hades_HouseIdle"
+      ChainTo = "null"
+      EndFrame = 128
+      NumFrames = 150
+      StartFrame = 20
+      Loop = true
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseWritingLoop_IdleLoop_End"/*___Getting out of writing pose into sitting up position (IdleSitting)---*/
+      InheritFrom = "Hades_HouseIdle"
+      ChainTo = "Hades_HouseIdleSitting"
+      EndFrame = 150
+      Loop = false
+      NumFrames = 150
+      StartFrame = 129
+      TimeModifierFraction = 0.0
+    }
+
+ /* ________HADES_IdleSitting_______ */
+    
+    {
+      Name = "Hades_HouseIdleSitting" /* __this was "Hades_HouseWritingInterrupted_IdleLoop"__*/
+      FilePath = "Animations\Hades\HouseIdleSitting\HadesHouseIdleSitting"
+      Type = "Book"
+      VideoTexture = "HadesIdleSitting_Bink"
+      AngleFromOwner = "Ignore"
+      Loop = true
+      EndFrame = 60
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    }
+    {
+      Name = "Hades_HouseIdleSitting_2"
+      InheritFrom = "Hades_HouseIdleSitting"
+      StartFrame = 1
+      EndFrame = 6
+      Loop = false
+      ChainTo = "Hades_HouseWritingLoop_IdleLoop_Start"
+    }
+
+    /* ________HADES_FistSlam_______ */
+    
+    {
+      Name = "Hades_HouseFistSlam"
+      FilePath = "Animations\Hades\HouseIdleFistSlam\HadesHouseFistSlam"
+      Type = "Book"
+      VideoTexture = "HadesHouseFistSlam_Bink"
+      ChainTo = "Hades_HouseIdleSitting"
+      AngleFromOwner = "Ignore"
+      EndFrame = 124
+      NumFrames = 124
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/FistImpactBig" Frame = 18 }
+      ]
+    }
+
+    /* ________HADES_FistSlam_BreakDown______ */
+    
+    {
+      Name = "Hades_HouseFistSlam_Start"
+      InheritFrom = "Hades_HouseFistSlam"
+      ChainTo = "Hades_HouseFistSlam_IdleLoop"
+      EndFrame = 64
+      NumFrames = 124
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseFistSlam_IdleLoop"
+      InheritFrom = "Hades_HouseFistSlam"
+      ChainTo = "Hades_HouseFistSlam_IdleLoop_End"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 124
+      StartFrame = 65
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseFistSlam_IdleLoop_End"
+      InheritFrom = "Hades_HouseFistSlam"
+      ChainTo = "Hades_HouseIdleSitting"
+      EndFrame = 124
+      NumFrames = 124
+      StartFrame = 91
+      TimeModifierFraction = 0.0
+    }
+
+    /* ________HADES_WryLaugh_______ */
+    
+    {
+      Name = "Hades_HouseWryLaugh"
+      FilePath = "Animations\Hades\HouseIdleWryLaugh\HadesHouseWryLaugh"
+      Type = "Book"
+      VideoTexture = "HadesHouseWryLaugh_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 136
+      NumFrames = 136
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    }
+    {
+      Name = "Hades_HouseWryLaughToGlaring"
+      InheritFrom = "Hades_HouseWryLaugh",
+      DisableOwnerInteract = true
+      ChainTo = "Hades_HouseIdleSitting"
+    }
+    {
+      Name = "Hades_HouseWryLaughToGlaringToWriting"
+      InheritFrom = "Hades_HouseWryLaugh",
+      DisableOwnerInteract = true
+      ChainTo = "Hades_HouseIdleSitting_2"
+    }
+
+    /* ________HADES_StandingIntroIdle_______ */
+    
+    {
+      Name = "HadesHouseStandingIntroIdle"
+      FilePath = "Animations\Hades\HouseStandingIntroIdle\HadesHouseStandingIntroIdle"
+      Type = "Book"
+      VideoTexture = "HadesHouseStandingIntroIdle_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 30
+      FrameDataFile = "Game\Animations\FrameData\HadesBattleIntroIdle.sga"
+      Loop = true
+      NumFrames = 30
+      PlaySpeed = 12.0
+      StartFrame = 1
+      OffsetY = -105.0
+      Ambient = 0.0
+      CancelOnOwnerMove = true
+    }
+
+    /* ________HADES_Procession_______ */
+    
+    {
+      Name = "Hades_HouseProcession"
+      FilePath = "Animations\Hades\HouseProcession\HadesHouseProcession"
+      Type = "Book"
+      VideoTexture = "HadesHouseProcession_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 245
+      NumFrames = 245
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    }
+
+    /*_ _______HADES_Procession_BreakDown______ */
+    
+    {
+      Name = "Hades_HouseProcession_WritingLoopBlend"  /*_ _______I don't know how these blend work to change it______ */
+      InheritFrom = "Hades_HouseWritingLoop_IdleLoop_End"
+      ChainTo = "Hades_HouseProcession_Start"
+    }
+    
+    {
+      Name = "Hades_HouseProcession_Start"
+      InheritFrom = "Hades_HouseProcession"
+      ChainTo = "Hades_HouseProcession_IdleLoop"
+      EndFrame = 35
+      NumFrames = 245
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseProcession_IdleLoop"
+      InheritFrom = "Hades_HouseProcession"
+      EndFrame = 88
+      Loop = true
+      NumFrames = 245
+      StartFrame = 35
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_HouseProcession_IdleLoop_JudgmentWave"
+      InheritFrom = "Hades_HouseProcession"
+      ChainTo = "Hades_HouseProcession_IdleLoop"
+      EndFrame = 180
+      NumFrames = 245
+      StartFrame = 89
+      TimeModifierFraction = 0.0
+    }
+    {
+      Name = "Hades_HouseProcession_IdleLoop_JudgmentWave_2"
+      InheritFrom = "Hades_HouseProcession_IdleLoop_JudgmentWave"
+      ChainTo = "Hades_HouseProcession_IdleLoop_End"
+    }
+    
+    {
+      Name = "Hades_HouseProcession_IdleLoop_End"
+      InheritFrom = "Hades_HouseProcession"
+      ChainTo = "Hades_HouseWritingLoop_IdleLoop_Start"
+      EndFrame = 245
+      NumFrames = 245
+      StartFrame = 181
+      TimeModifierFraction = 0.0
+    }
+
+    /* ________HADES_Procession-ComeForth_______ */
+    
+    {
+      Name = "Hades_HouseProcessionComeForth"
+      ChainTo = "Hades_HouseProcession_IdleLoop"
+      FilePath = "Animations\Hades\HouseProcessionComeForth\HadesHouseProcessionComeForth"
+      Type = "Book"
+      VideoTexture = "HadesHouseProcessionComeForth_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 92
+      NumFrames = 92
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    }
+
+    /* ________HADES_HADES_EndingStandingIdleSet______ */
+    
+    {
+      Name = "HadesEndingStandingIdleSet"
+      ChainTo = "null"
+      FilePath = "Animations\Hades\HadesEndingStandingIdle\HadesEndingStandingIdle"
+      Type = "Book"
+      VideoTexture = "HadesEndingStandingIdle_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 192
+      NumFrames = 192
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -100.0
+      Ambient = 0.0
+    }
+
+    /* ________HADES_EndingStandingIdleLoopSet_ breakdown______ */
+    
+    {
+      Name = "Hades_StandingIdle_ShameLoop"  /* standing with straight arms loop*/
+      InheritFrom = "HadesEndingStandingIdleSet"
+      ChainTo = "Hades_StandingIdle_ToArmCross"
+      EndFrame = 64
+      Loop = true
+      NumFrames = 192
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_StandingIdle_ToArmCross" /* transition to arm cross */
+      InheritFrom = "HadesEndingStandingIdleSet"
+      ChainTo = "Hades_StandingIdle_ArmCrossLoop"
+      EndFrame = 94
+      NumFrames = 192
+      StartFrame = 65
+      TimeModifierFraction = 0.0
+    }
+    
+    {
+      Name = "Hades_StandingIdle_ArmCrossLoop" /* armcross loop */
+      InheritFrom = "HadesEndingStandingIdleSet"
+      ChainTo = "Hades_StandingIdle_ToShame"
+      EndFrame = 159
+      Loop = true
+      NumFrames = 192
+      StartFrame = 95
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "Hades_StandingIdle_ToShame" /* transition back to straight arm */
+      InheritFrom = "HadesEndingStandingIdleSet"
+      ChainTo = "Hades_StandingIdle_ShameLoop"
+      EndFrame = 192
+      Loop = false
+      NumFrames = 192
+      StartFrame = 160
+      TimeModifierFraction = 0.0
+    }
+
+
+    /* ________Cerberus_______ */
+    
+    {
+      Name = "Cerberus_HouseIdle"
+      FilePath = "Animations\Cerberus\HouseIdle\CerberusHouseIdle"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      EndFrame = 120
+      Loop = true
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -64.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+    }
+    
+    {
+      Name = "Cerberus_HubIdle"
+      FilePath = "Animations\Cerberus\HubIdle\CerberusHubIdle"
+      ChainTo = "null"
+      Type = "Book"
+      VideoTexture = "Cerberus_HubIdle_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 120
+      Loop = false
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -64.0
+      Ambient = 0.0
+	  OnlyWhenVisible = true
+    }
+    
+{
+      Name = "CerberusHappyGreeting"
+      FilePath = "Animations\Cerberus\HappyGreeting\CerberusHappyGreeting"
+      Type = "Book"
+      VideoTexture = "Cerberus_HappyGreeting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 300
+      Loop = false
+      NumFrames = 300
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -64.0
+      Ambient = 0.0
+      OnlyWhenVisible = true
+
+      Slides = [
+        { Frame = 21 Sound = "/Leftovers/SFX/FootstepsHuge" }
+        { Frame = 37 Sound = "/Leftovers/SFX/FootstepsHuge" }
+        { Frame = 51 Sound = "/VO/CerberusWhine_7" }
+        { Frame = 261 Sound = "/Leftovers/SFX/FootstepsHuge" }
+        { Frame = 279 Sound = "/Leftovers/SFX/FootstepsHuge" }
+        { Frame = 288 Sound = "/Leftovers/SFX/FootstepsHuge" }
+      ]
+    }
+
+    /*___CerberusGreetingBreakdown___*/
+    {
+      Name = "CerberusHappyGreeting_Start"/*___LayingDownFromSitting__*/
+      InheritFrom = "CerberusHappyGreeting"
+      ChainTo = "CerberusHappyGreeting_LayingLoop_Looping"
+      EndFrame = 120
+      NumAngles = 8
+      NumFrames = 300
+      StartFrame = 1
+      
+      
+    }
+
+    {
+      Name = "CerberusHappyGreeting_LayingLoop"/*___Laying Breathing loop_*/
+      InheritFrom = "CerberusHappyGreeting"
+      ChainTo = "CerberusHappyGreeting_ReturnToIdle"
+      EndFrame = 240
+      Loop = false
+      NumFrames = 300
+      StartFrame = 121  
+    }
+   {
+      Name = "CerberusHappyGreeting_LayingLoop_Looping"/*___Laying Breathing loop_*/
+      InheritFrom = "CerberusHappyGreeting"
+      ChainTo = "CerberusHappyGreeting_ReturnToIdle"
+      EndFrame = 240
+      Loop = true
+      NumFrames = 300
+      StartFrame = 121  
+    }
+
+   {
+      Name = "CerberusHappyGreeting_ReturnToIdle"/*___From Laying to sitting___*/
+      InheritFrom = "CerberusHappyGreeting"
+      ChainTo = "Cerberus_HubIdle"
+      EndFrame = 300
+      NumFrames = 300
+      StartFrame = 241
+    
+    }
+
+    
+
+    {
+      Name = "Cerberus_HousePetting"
+      ChainTo = "Cerberus_HouseIdle"
+      FilePath = "Animations\Cerberus\HousePetting\CerberusHousePetting"
+      Type = "Book"
+      VideoTexture = "Cerberus_HousePetting_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 300
+      NumFrames = 300
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -64.0
+      Ambient = 0.0
+    }
+    
+    {
+      Name = "Critter_MouseBounce"
+      ChainTo = "Critter_MouseScurry"
+      FilePath = "Animations\CritterMouse\Bounce\MouseBounce"
+      Type = "Book"
+      EndFrame = 6
+      NumAngles = 16
+      NumFrames = 6
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Ambient = 0.0
+    }
+    
+    {
+      Name = "Critter_MouseScurry"
+      FilePath = "Animations\CritterMouse\Scurry\MouseScurry"
+      Type = "Book"
+      EndFrame = 4
+      Loop = true
+      NumAngles = 16
+      NumFrames = 4
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Ambient = 0.0
+    }
+    
+    {
+      Name = "MouseScurrySpawner"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      VisualFx = "MouseScurryRandom"
+      Duration = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      VisualFxCap = 2
+      VisualFxIntervalMax = 0.3
+      VisualFxIntervalMin = 0.1
+    }
+    
+    {
+      Name = "MouseScurryRandom"
+      FilePath = "Animations\MouseScurryRandom\MouseScurryRandom"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "MouseScurryA" }
+        { Name = "MouseScurryB" }
+        { Name = "MouseScurryC" }
+        { Name = "MouseScurryD" }
+        { Name = "MouseScurryA_Dark" }
+        { Name = "MouseScurryB_Dark" }
+        { Name = "MouseScurryC_Dark" }
+        { Name = "MouseScurryD_Dark" }
+      ]
+    }
+    
+    {
+      Name = "MouseScurryA"
+      FilePath = "Fx\MouseScurryA\MouseScurryA"
+      GroupName = "FX_Terrain"
+      Type = "Slide"
+      AngleFromOwner = "Ignore"
+      UseOwnAngle = false
+      EndFrame = 64
+      NumFrames = 64
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      ScaleFromOwner = "Ignore"
+      ScaleMax = 1.1
+      ScaleMin = 0.8
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 1 RandomDurationFramesMax = 30 RandomDurationFramesMin = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 30*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+    
+    {
+      Name = "MouseScurryB"
+      InheritFrom = "MouseScurryA"
+      FilePath = "Fx\MouseScurryB\MouseScurryB"
+    }
+    
+    {
+      Name = "MouseScurryC"
+      InheritFrom = "MouseScurryA"
+      FilePath = "Fx\MouseScurryC\MouseScurryC"
+    }
+    
+    {
+      Name = "MouseScurryD"
+      InheritFrom = "MouseScurryA"
+      FilePath = "Fx\MouseScurryD\MouseScurryD"
+    }
+    
+    {
+      Name = "MouseScurryA_Dark"
+      InheritFrom = "MouseScurryA"
+      FilePath = "Fx\MouseScurryB\MouseScurryB"
+      Hue = -0.05
+      Saturation = -0.2
+      Value = -0.1
+    }
+    
+    {
+      Name = "MouseScurryB_Dark"
+      InheritFrom = "MouseScurryA_Dark"
+    }
+    
+    {
+      Name = "MouseScurryC_Dark"
+      InheritFrom = "MouseScurryA_Dark"
+      FilePath = "Fx\MouseScurryC\MouseScurryC"
+    }
+    
+    {
+      Name = "MouseScurryD_Dark"
+      InheritFrom = "MouseScurryA_Dark"
+      FilePath = "Fx\MouseScurryD\MouseScurryD"
+    }
+  ]
+}

@@ -1,0 +1,5193 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "TartarusCapital01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Capital_01"
+        OccluderPoints = [
+          { X = -259 Y = -42 }
+          { X = -271 Y = 21 }
+          { X = -218 Y = 92 }
+          { X = -125 Y = 124 }
+          { X = -32 Y = 129 }
+          { X = 67 Y = 91 }
+          { X = 106 Y = 38 }
+          { X = -49 Y = -38 }
+        ]
+        Offset = { X = 0 Y = -241 }
+        Points = [
+          { X = -588 Y = -93 }
+          { X = -18 Y = 190 }
+          { X = 588 Y = -134 }
+          { X = 0 Y = -422 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusArch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Arch_01"
+        Tallness = 1109.0
+        Offset = { X = 0 Y = -470 }
+        Points = [
+          { X = -530 Y = 398 }
+          { X = 751 Y = -251 }
+          { X = 506 Y = -377 }
+          { X = -787 Y = 275 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBarrel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Barrel_01"
+        Tallness = 1446.0
+        Offset = { X = 0 Y = -692 }
+        Points = [
+          { X = -521 Y = -54 }
+          { X = -377 Y = 69 }
+          { X = 109 Y = 115 }
+          { X = 464 Y = 23 }
+          { X = 144 Y = -230 }
+          { X = -173 Y = -250 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCapital02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Capital_02"
+        Tallness = 2074.0
+        OccluderPoints = [
+          { X = -259 Y = -42 }
+          { X = -271 Y = 21 }
+          { X = -218 Y = 92 }
+          { X = -125 Y = 124 }
+          { X = -32 Y = 129 }
+          { X = 67 Y = 91 }
+          { X = 106 Y = 38 }
+          { X = -49 Y = -38 }
+        ]
+        Offset = { X = 0 Y = -1184 }
+        Points = [
+          { X = -888 Y = -155 }
+          { X = -501 Y = 200 }
+          { X = 95 Y = 270 }
+          { X = 581 Y = 180 }
+          { X = 888 Y = -50 }
+          { X = 857 Y = -215 }
+          { X = 587 Y = -561 }
+          { X = -75 Y = -682 }
+          { X = -652 Y = -556 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCapital03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Capital_03"
+        OcclusionWidth = 3200.0
+        Tallness = 2077.0
+        Offset = { X = 0 Y = -1138 }
+        Points = [
+          { X = -1001 Y = -90 }
+          { X = -824 Y = 137 }
+          { X = -369 Y = 293 }
+          { X = 156 Y = 369 }
+          { X = 799 Y = 132 }
+          { X = 915 Y = -186 }
+          { X = 55 Y = -616 }
+          { X = -925 Y = -379 }
+          { X = -925 Y = -379 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCapital03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Capital_03a"
+        Tallness = 1364.0
+        Offset = { X = 0 Y = -759 }
+        Points = [
+          { X = -616 Y = -21 }
+          { X = -481 Y = 138 }
+          { X = -83 Y = 227 }
+          { X = -83 Y = 227 }
+          { X = 259 Y = 195 }
+          { X = 510 Y = 43 }
+          { X = 570 Y = -29 }
+          { X = 162 Y = -250 }
+          { X = -232 Y = -229 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusArchitrave01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Architrave_01"
+        OccluderPoints = [
+          { X = -259 Y = -42 }
+          { X = -271 Y = 21 }
+          { X = -218 Y = 92 }
+          { X = -125 Y = 124 }
+          { X = -32 Y = 129 }
+          { X = 67 Y = 91 }
+          { X = 106 Y = 38 }
+          { X = -49 Y = -38 }
+        ]
+        Offset = { X = 0 Y = 37 }
+        Points = [
+          { X = -604 Y = 319 }
+          { X = -41 Y = 511 }
+          { X = 634 Y = 266 }
+          { X = 616 Y = -40 }
+          { X = -107 Y = -270 }
+          { X = -632 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusEyeball02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Eyeball_02"
+        Tallness = 1077.0
+        Offset = { X = 0 Y = -491 }
+        Points = [
+          { X = -494 Y = 181 }
+          { X = -34 Y = 423 }
+          { X = 612 Y = 125 }
+          { X = 59 Y = -117 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMechanism01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mechanism_01"
+        Tallness = 667.0
+        Offset = { X = 0 Y = -221 }
+        Points = [
+          { X = -250 Y = 47 }
+          { X = 39 Y = 204 }
+          { X = 366 Y = 31 }
+          { X = 78 Y = -121 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusHelmet01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Helmet_01"
+        Tallness = 1338.0
+        Offset = { X = 0 Y = -486 }
+        Points = [
+          { X = -406 Y = 73 }
+          { X = -45 Y = 262 }
+          { X = 380 Y = 50 }
+          { X = 5 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_03"
+        Offset = { X = 0 Y = -722 }
+        Points = [
+          { X = 155 Y = -58 }
+          { X = 13 Y = -109 }
+          { X = -138 Y = -89 }
+          { X = -230 Y = 5 }
+          { X = -44 Y = 100 }
+          { X = 71 Y = 83 }
+          { X = 159 Y = 19 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      ReflectLobProjectiles = false
+      Life = 
+      {
+        HitFx = "PillarHitFx"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_04"
+        OcclusionBaseAnim = "TartarusPillarBase04Footprint"
+        OcclusionOpacity = 0.25
+        Tallness = 2242.0
+        Offset = { X = 0 Y = -993 }
+        Points = [
+          { X = 160 Y = 220 }
+          { X = 480 Y = 60 }
+          { X = 480 Y = -100 }
+          { X = 160 Y = -260 }
+          { X = -160 Y = -260 }
+          { X = -480 Y = -100 }
+          { X = -480 Y = 60 }
+          { X = -160 Y = 220 }
+        ]
+        Using = [
+          { Name = "TartarusPillarBase04A" }
+          { Name = "TartarusPillarBase04B" }
+          { Name = "TartarusPillarBase04C" }
+          { Name = "TartarusRubble01" Scale = 0.4 }
+          { Name = "TartarusRubble02" Scale = 0.4 }
+          { Name = "TartarusRubble02b" Scale = 0.4 }
+          { Name = "TartarusRubble02c" Scale = 0.4 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase04A"
+      InheritFrom = "TartarusPillarBase04"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_04A"
+        Tallness = 2274.0
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase04B"
+      InheritFrom = "TartarusPillarBase04"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_04B"
+        Tallness = 864.0
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase04C"
+      InheritFrom = "TartarusPillarBase04"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_04C"
+        Tallness = 370.0
+      }
+    }
+    
+    {
+      Name = "TartarusShopPad01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_ShopPad_01"
+        OcclusionOpacity = 0.25
+        Tallness = 70.0
+        Offset = { X = 0 Y = -71 }
+        Points = [
+          { X = -878 Y = -88 }
+          { X = 56 Y = 405 }
+          { X = 870 Y = -14 }
+          { X = -117 Y = -482 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStoreSign01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_StoreSign_01"
+        OcclusionOpacity = 0.25
+        Tallness = 1543.0
+        Offset = { X = 0 Y = -853 }
+        Points = [
+          { X = -1067 Y = -428 }
+          { X = 211 Y = 191 }
+          { X = 220 Y = 148 }
+          { X = -1018 Y = -456 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusShip01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tartarus_Ship_01"
+        Tallness = 1195.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -1323 }
+        Points = [
+          { X = -1790 Y = -488 }
+          { X = 350 Y = 582 }
+          { X = 983 Y = 271 }
+          { X = -1140 Y = -795 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ReturnShip01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndingBoatBack"
+        Tallness = 424.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -102 }
+        Points = [
+          { X = -234 Y = 223 }
+          { X = 460 Y = -122 }
+          { X = 288 Y = -207 }
+          { X = -397 Y = 135 }
+          { X = -397 Y = 135 }
+        ]
+        Using = [
+          { Name = "EndingBoatBack" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ReturnShip01Front"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndingBoatFront"
+        Tallness = 424.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -102 }
+        Points = [
+          { X = -234 Y = 223 }
+          { X = 460 Y = -122 }
+          { X = 432 Y = -135 }
+          { X = -257 Y = 209 }
+        ]
+        Using = [
+          { Name = "EndingBoatFront" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ReturnShipEmpty"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndingBoatWhole"
+        Tallness = 424.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -102 }
+        Points = [
+          { X = -234 Y = 223 }
+          { X = 460 Y = -122 }
+          { X = 288 Y = -207 }
+          { X = -397 Y = 135 }
+          { X = -397 Y = 135 }
+        ]
+        Using = [
+          { Name = "EndingBoatWhole" }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_06"
+        Tallness = 2400.0
+        Offset = { X = 0 Y = -993 }
+        Points = [
+          { X = -1183 Y = 325 }
+          { X = -818 Y = 707 }
+          { X = 54 Y = 870 }
+          { X = 945 Y = 652 }
+          { X = 1272 Y = 152 }
+          { X = 815 Y = -477 }
+          { X = -429 Y = -576 }
+          { X = -981 Y = -287 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_07"
+        StopsProjectiles = false
+        Tallness = 1981.0
+        Offset = { X = 0 Y = -1051 }
+        Points = [
+          { X = -1431 Y = 24 }
+          { X = -219 Y = 666 }
+          { X = 225 Y = 666 }
+          { X = 1229 Y = 125 }
+          { X = 1378 Y = 6 }
+          { X = -11 Y = -682 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_08"
+        Tallness = 2946.0
+        Offset = { X = 0 Y = -1459 }
+        Points = [
+          { X = -623 Y = -108 }
+          { X = -480 Y = 114 }
+          { X = -125 Y = 200 }
+          { X = 205 Y = 177 }
+          { X = 503 Y = 62 }
+          { X = 635 Y = -143 }
+          { X = 480 Y = -394 }
+          { X = -28 Y = -492 }
+          { X = -526 Y = -383 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase08b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_08b"
+        Tallness = 696.0
+        Offset = { X = 0 Y = -293 }
+        Points = [
+
+          { X = -598 Y = -120 }
+          { X = -560 Y = 118 }
+          { X = -366 Y = 252 }
+          { X = -366 Y = 252 }
+          { X = -109 Y = 305 }
+          { X = 139 Y = 299 }
+          { X = 345 Y = 276 }
+          { X = 543 Y = 137 }
+          { X = 619 Y = -33 }
+          { X = 423 Y = -200 }
+
+          { X = 46 Y = -316 }
+          { X = -423 Y = -276 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase09"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_09"
+        Tallness = 2473.0
+        Offset = { X = 0 Y = -1051 }
+        Points = [
+          { X = -1273 Y = 62 }
+          { X = -17 Y = 681 }
+          { X = 1276 Y = 31 }
+          { X = 32 Y = -590 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase10"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_10"
+        Tallness = 508.0
+        Offset = { X = 0 Y = -355 }
+        Points = [
+          { X = -1349 Y = -123 }
+          { X = -10 Y = 561 }
+          { X = 1386 Y = -143 }
+          { X = 50 Y = -828 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase12"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_12"
+        SortBoundsScale = 1.1
+        Tallness = 1820.0
+        Offset = { X = 0 Y = -793 }
+        Points = [
+          { X = -521 Y = 24 }
+          { X = -1 Y = 283 }
+          { X = 514 Y = 26 }
+          { X = -5 Y = -233 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase13"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_13"
+        Tallness = 2433.0
+        Offset = { X = 0 Y = -1029 }
+        Points = [
+          { X = -233 Y = 57 }
+          { X = -32 Y = 145 }
+          { X = 229 Y = 16 }
+          { X = 24 Y = -91 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarBase13a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarBase_13a"
+        Tallness = 774.0
+        Offset = { X = 0 Y = -303 }
+        Points = [
+          { X = -222 Y = 24 }
+          { X = -108 Y = 110 }
+          { X = 52 Y = 128 }
+          { X = 188 Y = 68 }
+          { X = 158 Y = -32 }
+          { X = -9 Y = -108 }
+          { X = -152 Y = -44 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFencePicket01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FencePicket_01"
+        Tallness = 2051.0
+        Offset = { X = 0 Y = -783 }
+        Points = [
+          { X = -1187 Y = -269 }
+          { X = 668 Y = 664 }
+          { X = 1182 Y = 404 }
+          { X = -673 Y = -503 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFencePicket02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FencePicket_02"
+        SortBoundsScale = 0.9
+        Tallness = 1729.0
+        Offset = { X = 0 Y = -749 }
+        Points = [
+          { X = -1066 Y = -312 }
+          { X = 621 Y = 537 }
+          { X = 1092 Y = 290 }
+          { X = -612 Y = -577 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFenceGate01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FenceGate_01"
+        Tallness = 2311.0
+        Offset = { X = 0 Y = -720 }
+        Points = [
+          { X = -809 Y = -463 }
+          { X = -1050 Y = -332 }
+          { X = 795 Y = 578 }
+          { X = 1032 Y = 464 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFencePost01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FencePost_01"
+        Tallness = 1394.0
+        Offset = { X = 0 Y = -525 }
+        Points = [
+          { X = -496 Y = 53 }
+          { X = -22 Y = 292 }
+          { X = 493 Y = 31 }
+          { X = -17 Y = -187 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFencePost02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FencePost_02"
+        Tallness = 2923.0
+        Offset = { X = 0 Y = -1343 }
+        Points = [
+          { X = -796 Y = -96 }
+          { X = 11 Y = 312 }
+          { X = 802 Y = -91 }
+          { X = -22 Y = -495 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFencePost03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FencePost_03"
+        Scale = 2.4
+        Tallness = 813.0
+        Offset = { X = 0 Y = -815 }
+        Points = [
+          { X = -168 Y = 10 }
+          { X = 2 Y = 89 }
+          { X = 137 Y = 18 }
+          { X = -25 Y = -65 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFenceTopper01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FenceTopper_01"
+        Tallness = 803.0
+        Offset = { X = 0 Y = -343 }
+        Points = [
+          { X = -219 Y = 17 }
+          { X = -18 Y = 112 }
+          { X = 219 Y = 3 }
+          { X = -3 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_01"
+        Tallness = 3200.0
+        Offset = { X = 0 Y = -1461 }
+        Points = [
+          { X = -192 Y = 10 }
+          { X = 38 Y = 131 }
+          { X = 198 Y = 49 }
+          { X = -33 Y = -83 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_02"
+        Tallness = 3520.0
+        Offset = { X = 0 Y = -1461 }
+        Points = [
+          { X = -301 Y = 106 }
+          { X = -181 Y = 191 }
+          { X = 141 Y = 38 }
+          { X = -5 Y = -46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative02b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_02b"
+        Tallness = 1766.0
+        Offset = { X = 0 Y = -742 }
+        Points = [
+          { X = -158 Y = 51 }
+          { X = -93 Y = 77 }
+          { X = 82 Y = 0 }
+          { X = 0 Y = -30 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_03"
+        Tallness = 1685.0
+        Offset = { X = 0 Y = -742 }
+        Points = [
+          { X = -591 Y = -14 }
+          { X = -34 Y = 265 }
+          { X = 591 Y = -31 }
+          { X = 6 Y = -318 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_04"
+        Tallness = 1999.0
+        Offset = { X = 0 Y = -837 }
+        Points = [
+          { X = -295 Y = 60 }
+          { X = -80 Y = 155 }
+          { X = 204 Y = 22 }
+          { X = -10 Y = -90 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPillarDecorative05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PillarDecorative_05"
+        Tallness = 2851.0
+        Offset = { X = 0 Y = -1195 }
+        Points = [
+          { X = -365 Y = 23 }
+          { X = 65 Y = 164 }
+          { X = 351 Y = 33 }
+          { X = -4 Y = -182 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueKneeling01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Kneeling_01"
+        Tallness = 1659.0
+        Offset = { X = 0 Y = -707 }
+        Points = [
+          { X = 691 Y = -49 }
+          { X = -3 Y = -296 }
+          { X = -520 Y = -110 }
+          { X = -589 Y = 102 }
+          { X = -155 Y = 345 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueSnake01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Snake_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -71 }
+        Points = [
+          { X = 229 Y = -206 }
+          { X = -512 Y = 133 }
+          { X = -173 Y = 318 }
+          { X = 580 Y = -73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueMan01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Man_01"
+        Tallness = 2272.0
+        Offset = { X = 0 Y = -956 }
+        Points = [
+          { X = -49 Y = 65 }
+          { X = 322 Y = 245 }
+          { X = 567 Y = 122 }
+          { X = 200 Y = -61 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueMan02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Man_02"
+        Tallness = 2526.0
+        Offset = { X = 0 Y = -956 }
+        Points = [
+          { X = -986 Y = 241 }
+          { X = -348 Y = 568 }
+          { X = 991 Y = -85 }
+          { X = 342 Y = -386 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCorbel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Corbel_01"
+        Tallness = 2714.0
+        Offset = { X = 0 Y = -1067 }
+        Points = [
+          { X = 427 Y = 28 }
+          { X = 1156 Y = 357 }
+          { X = 1504 Y = 150 }
+          { X = 926 Y = -187 }
+          { X = 926 Y = -187 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueHand01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Hand_01"
+        Tallness = 1542.0
+        Offset = { X = 0 Y = -557 }
+        Points = [
+          { X = 250 Y = 32 }
+          { X = 242 Y = 160 }
+          { X = 496 Y = 218 }
+          { X = 735 Y = 114 }
+          { X = 660 Y = -17 }
+          { X = 660 Y = -17 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueHand01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Hand_01a"
+        Tallness = 3444.0
+        Offset = { X = 0 Y = -1497 }
+        Points = [
+          { X = -286 Y = 54 }
+          { X = -168 Y = 127 }
+          { X = 5 Y = 144 }
+          { X = 291 Y = 14 }
+          { X = 20 Y = -165 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueHand02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Hand_02"
+        Tallness = 2267.0
+        Offset = { X = 0 Y = -932 }
+        Points = [
+          { X = -304 Y = 70 }
+          { X = -207 Y = 122 }
+          { X = -33 Y = 152 }
+          { X = 189 Y = 29 }
+          { X = -55 Y = -92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueFury02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Fury_02"
+        OcclusionOpacity = 0.25
+        Tallness = 1999.0
+        Offset = { X = 0 Y = -771 }
+        Points = [
+          { X = 735 Y = 17 }
+          { X = 457 Y = -210 }
+          { X = -188 Y = -233 }
+          { X = -609 Y = 4 }
+          { X = -268 Y = 336 }
+          { X = 210 Y = 520 }
+          { X = 676 Y = 237 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueFury03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Fury_03"
+        OcclusionOpacity = 0.25
+        Tallness = 2282.0
+        Offset = { X = 0 Y = -1083 }
+        Points = [
+          { X = 198 Y = 13 }
+          { X = 116 Y = -82 }
+          { X = -176 Y = -90 }
+          { X = -237 Y = 30 }
+          { X = -120 Y = 107 }
+          { X = 112 Y = 106 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueFury03B"
+      InheritFrom = "TartarusStatueFury03"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Fury_03B"
+      }
+    }
+    
+    {
+      Name = "TartarusStatueFury03A"
+      InheritFrom = "TartarusStatueFury03"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Fury_03A"
+      }
+    }
+    
+    {
+      Name = "TartarusStatueWoman3"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Woman_3"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2081.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -895 }
+        Points = [
+          { X = -519 Y = 8 }
+          { X = -3 Y = 262 }
+          { X = 531 Y = -7 }
+          { X = -7 Y = -237 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueWoman4"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Woman_4"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2717.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1180 }
+        Points = [
+          { X = -519 Y = 8 }
+          { X = -3 Y = 262 }
+          { X = 531 Y = -7 }
+          { X = -7 Y = -237 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueWoman4a"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Woman_4a"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2799.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1180 }
+        Points = [
+          { X = -559 Y = 0 }
+          { X = -34 Y = 264 }
+          { X = 449 Y = 24 }
+          { X = -79 Y = -235 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueWoman5"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Woman_5"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1600.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -783 }
+        Points = [
+          { X = -550 Y = 69 }
+          { X = -414 Y = 209 }
+          { X = 60 Y = 157 }
+          { X = 507 Y = -183 }
+          { X = 296 Y = -333 }
+          { X = -382 Y = -163 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStatueCyclops01"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_Cyclops_01"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2585.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -976 }
+        Points = [
+          { X = -1400 Y = -426 }
+          { X = 738 Y = 762 }
+          { X = 1309 Y = 375 }
+          { X = -829 Y = -696 }
+          { X = -829 Y = -696 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusFountain01"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthFountainFull"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1822.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -461 }
+        Points = [
+          { X = 99 Y = 784 }
+          { X = 899 Y = 357 }
+          { X = -342 Y = -264 }
+          { X = -1160 Y = 150 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTripod01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Tripod_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -222 }
+        Points = [
+          { X = 58 Y = -131 }
+          { X = -107 Y = -97 }
+          { X = -193 Y = 41 }
+          { X = 3 Y = 100 }
+          { X = 194 Y = 92 }
+          { X = 213 Y = -20 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusSack01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Sack_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -222 }
+        Points = [
+          { X = -631 Y = 256 }
+          { X = -631 Y = 256 }
+          { X = -258 Y = 387 }
+          { X = 189 Y = 432 }
+          { X = 675 Y = 370 }
+          { X = 836 Y = 165 }
+          { X = 547 Y = -85 }
+          { X = -14 Y = -288 }
+          { X = -563 Y = -268 }
+          { X = -825 Y = -38 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBars01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBars_01"
+        Tallness = 1580.0
+        Offset = { X = 0 Y = -689 }
+        Points = [
+          { X = 448 Y = 169 }
+          { X = -343 Y = -212 }
+          { X = -420 Y = -179 }
+          { X = 341 Y = 215 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusUrn01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Urn_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -823 }
+        Points = [
+          { X = 219 Y = 1 }
+          { X = 184 Y = -90 }
+          { X = -49 Y = -111 }
+          { X = -180 Y = 12 }
+          { X = 84 Y = 83 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBlankIsoTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_BlankIsoTile_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "3DGhostIdle"
+        MaxScale = 1.0
+        MinScale = 0.9
+        StopsLight = false
+        Tallness = 135.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = -1 Y = 9 }
+          { X = 23 Y = -3 }
+          { X = 8 Y = -10 }
+          { X = -15 Y = 1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusGhostHands01"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusGhostHands"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -200 }
+        Points = [
+          { X = 0 Y = 64 }
+          { X = 128 Y = 0 }
+          { X = 0 Y = -64 }
+          { X = -128 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusGhostHands02"
+      InheritFrom = "TartarusGhostHands01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusGhostHandsBob"
+      }
+    }
+    
+    {
+      Name = "TartarusGhostHands03"
+      InheritFrom = "TartarusGhostHands01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusGhostHandsBobReverse"
+      }
+    }
+    
+    {
+      Name = "TartarusGhostHandsMulti01"
+      InheritFrom = "TartarusGhostHands01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusGhostHandsMulti"
+      }
+    }
+    
+    {
+      Name = "TartarusGazebo01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Gazebo_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -223 }
+        Points = [
+          { X = 781 Y = -54 }
+          { X = 107 Y = -336 }
+          { X = -797 Y = 146 }
+          { X = -144 Y = 447 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_03"
+        Tallness = 700.0
+        Offset = { X = 0 Y = -809 }
+        Points = [
+          { X = -2090 Y = -406 }
+          { X = -5 Y = 633 }
+          { X = 2090 Y = -432 }
+          { X = -55 Y = -1502 }
+        ]
+        Using = [
+          { Name = "TartarusCubeBrick03a" }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_04"
+        Tallness = 548.0
+        Offset = { X = 0 Y = -271 }
+        Points = [
+          { X = -1200 Y = -33 }
+          { X = -117 Y = 520 }
+          { X = 1180 Y = -122 }
+          { X = 71 Y = -659 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick04b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_04b"
+        Tallness = 588.0
+        Offset = { X = 0 Y = -271 }
+        Points = [
+          { X = -1200 Y = -33 }
+          { X = -117 Y = 520 }
+          { X = 1180 Y = -122 }
+          { X = 71 Y = -659 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_05"
+        Tallness = 1464.0
+        Offset = { X = 0 Y = -583 }
+        Points = [
+          { X = -768 Y = 77 }
+          { X = 27 Y = 442 }
+          { X = 841 Y = 46 }
+          { X = 13 Y = -346 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_06"
+        Tallness = 749.0
+        Offset = { X = 0 Y = -314 }
+        Points = [
+          { X = -785 Y = -131 }
+          { X = 294 Y = 402 }
+          { X = 827 Y = 145 }
+          { X = -239 Y = -395 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_07"
+        Tallness = 1015.0
+        Offset = { X = 0 Y = -444 }
+        Points = [
+          { X = -450 Y = -15 }
+          { X = 20 Y = 217 }
+          { X = 475 Y = -10 }
+          { X = 8 Y = -244 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCubeBrick08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_CubeBrick_08"
+        Tallness = 995.0
+        Offset = { X = 0 Y = -330 }
+        Points = [
+          { X = -272 Y = 99 }
+          { X = -27 Y = 229 }
+          { X = 168 Y = 182 }
+          { X = 276 Y = 130 }
+          { X = -36 Y = -30 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick13"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_13"
+        Tallness = 354.0
+        Offset = { X = 0 Y = -89 }
+        Points = [
+          { X = -1812 Y = 310 }
+          { X = -456 Y = 986 }
+          { X = 1812 Y = -124 }
+          { X = 487 Y = -834 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainSkull01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Skull_01"
+        Tallness = 25.0
+        Offset = { X = 0 Y = -37 }
+        Points = [
+          { X = -782 Y = -31 }
+          { X = -28 Y = 374 }
+          { X = 797 Y = -42 }
+          { X = 16 Y = -429 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick14"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_14"
+        Tallness = 443.0
+        Offset = { X = 0 Y = -89 }
+        Points = [
+          { X = -113 Y = 781 }
+          { X = 1358 Y = 31 }
+          { X = 127 Y = -560 }
+          { X = -1395 Y = 178 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick15"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_15"
+        Tallness = 197.0
+        Points = [
+          { X = -2355 Y = -450 }
+          { X = 1066 Y = 1243 }
+          { X = 2383 Y = 627 }
+          { X = -1077 Y = -1089 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick16"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_16"
+        Tallness = 50.0
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick16b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_16b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick17"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_17"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick17b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_17b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick18"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_18"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+        Points = [
+          { X = 1352 Y = -218 }
+          { X = 515 Y = -618 }
+          { X = -1326 Y = 306 }
+          { X = -486 Y = 740 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick18b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_18b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick19"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_19"
+        Tallness = 50.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick20"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_20"
+        Tallness = 46.0
+        Offset = { X = 0 Y = 232 }
+        Points = [
+          { X = 256 Y = 950 }
+          { X = 2087 Y = 38 }
+          { X = 395 Y = -823 }
+          { X = -1455 Y = 97 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick20a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_20a"
+        Tallness = 46.0
+        Offset = { X = 0 Y = 232 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick20b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_20b"
+        Tallness = 60.0
+        Offset = { X = 0 Y = -8 }
+      }
+    }
+    
+    {
+      Name = "TartarusWindow02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Window_02"
+        Tallness = 2115.0
+        Offset = { X = 0 Y = -819 }
+        Points = [
+          { X = 204 Y = 281 }
+          { X = 472 Y = 153 }
+          { X = -104 Y = -132 }
+          { X = -363 Y = -5 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWindow03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Window_03"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -819 }
+        Points = [
+          { X = -334 Y = -82 }
+          { X = 316 Y = 244 }
+          { X = 366 Y = 194 }
+          { X = -258 Y = -125 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMaze01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Maze_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusGable03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Gable_03"
+        Tallness = 1221.0
+        Offset = { X = 0 Y = -253 }
+        Points = [
+          { X = -1599 Y = 489 }
+          { X = -942 Y = 800 }
+          { X = 1588 Y = -476 }
+          { X = 949 Y = -806 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusGable04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Gable_04"
+        Scale = 2.7
+        Tallness = 313.0
+        Offset = { X = 0 Y = -341 }
+        Points = [
+          { X = -554 Y = 191 }
+          { X = -349 Y = 297 }
+          { X = 581 Y = -167 }
+          { X = 370 Y = -273 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPedimentLeft02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Pediment_Left_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -921 }
+        Points = [
+          { X = -1171 Y = 136 }
+          { X = -581 Y = 409 }
+          { X = 40 Y = 86 }
+          { X = -571 Y = -212 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -53 }
+        Points = [
+          { X = 757 Y = -383 }
+          { X = 711 Y = -390 }
+          { X = -758 Y = 379 }
+          { X = -724 Y = 392 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_03"
+        Tallness = 443.0
+        Offset = { X = 0 Y = -298 }
+        Points = [
+          { X = -1568 Y = 465 }
+          { X = -962 Y = 783 }
+          { X = 1583 Y = -462 }
+          { X = 973 Y = -765 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_04"
+        Tallness = 173.0
+        Offset = { X = 0 Y = -52 }
+        Points = [
+          { X = -675 Y = -274 }
+          { X = 781 Y = 486 }
+          { X = 878 Y = 419 }
+          { X = -570 Y = -337 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice04b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_04b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -52 }
+        Points = [
+          { X = -216 Y = 13 }
+          { X = -23 Y = 106 }
+          { X = 266 Y = -30 }
+          { X = 83 Y = -119 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Stairs_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusStairs02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Stairs_02"
+        Tallness = 1134.0
+        Offset = { X = 0 Y = -482 }
+        Points = [
+          { X = -1661 Y = -89 }
+          { X = 165 Y = 813 }
+          { X = 1625 Y = 94 }
+          { X = -232 Y = -816 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStairs03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Stairs_03"
+        Tallness = 1182.0
+        Offset = { X = 0 Y = -473 }
+        Points = [
+          { X = -1679 Y = -62 }
+          { X = 171 Y = 858 }
+          { X = 1661 Y = 145 }
+          { X = -329 Y = -820 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusPedestal01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Pedestal_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -99 }
+        Points = [
+          { X = 551 Y = -63 }
+          { X = 174 Y = -219 }
+          { X = -518 Y = 124 }
+          { X = -182 Y = 301 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainMosaicCurl01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Mosaic_Curl_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainMosaicCurl02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Mosaic_Curl_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainLines01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Lines_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_04"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_05"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_07"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_08"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_09"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_10"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_08"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_09"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_10"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_11"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick12"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_12"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare01A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_01A"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03c"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03d"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03d"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03e"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03e"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare03f"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_03f"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_04"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_06"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_07"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare07b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_07b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare07c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_07c"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_08"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare08b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_08b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_09"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_10"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare11"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_11"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick21"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_21"
+        Tallness = 83.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -755 Y = 277 }
+          { X = -483 Y = 422 }
+          { X = 765 Y = -224 }
+          { X = 505 Y = -353 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick22"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_22"
+        Tallness = 46.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -612 Y = 14 }
+          { X = 0 Y = 313 }
+          { X = 604 Y = 15 }
+          { X = -8 Y = -289 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick22a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_22a"
+        Tallness = 65.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -493 Y = 47 }
+          { X = -18 Y = 292 }
+          { X = 513 Y = 16 }
+          { X = 50 Y = -225 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick22b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_22b"
+        Tallness = 114.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -1156 Y = 60 }
+          { X = -34 Y = 638 }
+          { X = 1140 Y = 29 }
+          { X = 18 Y = -527 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrickSquare06test"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_BrickSquare_06"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainMedusa01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Medusa_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+
+          { X = -69 Y = -521 }
+          { X = -603 Y = -421 }
+          { X = -900 Y = -278 }
+          { X = -1065 Y = -40 }
+          { X = -1000 Y = 240 }
+          { X = -700 Y = 440 }
+          { X = -357 Y = 555 }
+          { X = -7 Y = 582 }
+          { X = 384 Y = 532 }
+          { X = 800 Y = 390 }
+
+          { X = 1030 Y = 163 }
+          { X = 1030 Y = -128 }
+          { X = 773 Y = -332 }
+          { X = 353 Y = -475 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainPointyFlourish01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_PointyFlourish_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFury01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Fury_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFury02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Fury_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_06"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainFlourishCurl011"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_FlourishCurl_011"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBat01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Bat_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusStatueHadesWall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Statue_HadesWall_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2024 }
+        Points = [
+          { X = 1250 Y = 226 }
+          { X = -416 Y = -540 }
+          { X = -1000 Y = -107 }
+          { X = 714 Y = 590 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Table_02"
+        Tallness = 1617.0
+        Offset = { X = 0 Y = -701 }
+        Points = [
+          { X = -1873 Y = 177 }
+          { X = -550 Y = 850 }
+          { X = 1745 Y = -339 }
+          { X = 483 Y = -962 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_04"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = 2038 Y = -525 }
+          { X = 1081 Y = -1003 }
+          { X = -2073 Y = 606 }
+          { X = -1106 Y = 1084 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainCrack01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_TerrainCrack_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -112 }
+      }
+    }
+    
+    {
+      Name = "TartarusFlyingButtress01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_FlyingButtress_01"
+        OcclusionHeight = 1400.0
+        OcclusionWidth = 1200.0
+        Tallness = 674.0
+        Offset = { X = 0 Y = -923 }
+        Points = [
+          { X = 253 Y = 181 }
+          { X = 622 Y = 357 }
+          { X = 816 Y = 245 }
+          { X = 455 Y = 73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallDecorative01"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallDecorative_01"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2621.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1019 }
+        Points = [
+          { X = -650 Y = -518 }
+          { X = -1262 Y = -243 }
+          { X = 831 Y = 806 }
+          { X = 1237 Y = 450 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallDecorative02"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallDecorative_02"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1866.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -821 }
+        Points = [
+          { X = -478 Y = 193 }
+          { X = -350 Y = 255 }
+          { X = 489 Y = -167 }
+          { X = 354 Y = -247 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick03A"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_03A"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 3442.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1468 }
+        Points = [
+          { X = 773 Y = -17 }
+          { X = 41 Y = -359 }
+          { X = -737 Y = 48 }
+          { X = 11 Y = 396 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick05"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_05"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 3662.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1576 }
+        Points = [
+          { X = -1738 Y = -408 }
+          { X = 912 Y = 878 }
+          { X = 1525 Y = 572 }
+          { X = -1091 Y = -757 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick05a"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_05a"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 3662.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1576 }
+        Points = [
+          { X = -1738 Y = -408 }
+          { X = 912 Y = 878 }
+          { X = 1525 Y = 572 }
+          { X = -1091 Y = -757 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick05b"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_05b"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 3662.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1576 }
+        Points = [
+          { X = -1738 Y = -408 }
+          { X = 912 Y = 878 }
+          { X = 1525 Y = 572 }
+          { X = -1091 Y = -757 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick08"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_08"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2307.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1177 }
+        Points = [
+          { X = 214 Y = -695 }
+          { X = -1030 Y = -73 }
+          { X = -180 Y = 352 }
+          { X = 1065 Y = -270 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick09"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_09"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2324.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1177 }
+        Points = [
+          { X = -1268 Y = -53 }
+          { X = -392 Y = 440 }
+          { X = 1230 Y = -322 }
+          { X = 349 Y = -800 }
+          { X = 349 Y = -800 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick10"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_10"
+        Tallness = 3947.0
+        Offset = { X = 0 Y = -1524 }
+        Points = [
+          { X = -612 Y = 6 }
+          { X = 382 Y = 500 }
+          { X = 660 Y = 361 }
+          { X = -326 Y = -125 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick10a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_10a"
+        Tallness = 3947.0
+        Offset = { X = 0 Y = -1524 }
+        Points = [
+          { X = -612 Y = 6 }
+          { X = 382 Y = 500 }
+          { X = 660 Y = 361 }
+          { X = -326 Y = -125 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick11"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_11"
+        Tallness = 2995.0
+        Offset = { X = 0 Y = -1338 }
+        Points = [
+          { X = -1715 Y = -569 }
+          { X = 953 Y = 761 }
+          { X = 1672 Y = 391 }
+          { X = -1032 Y = -889 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick12"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_12"
+        Tallness = 2054.0
+        Offset = { X = 0 Y = -856 }
+        Points = [
+          { X = -370 Y = 127 }
+          { X = -181 Y = 207 }
+          { X = 402 Y = -90 }
+          { X = 195 Y = -155 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick12b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_12b"
+        Tallness = 2043.0
+        Offset = { X = 0 Y = -962 }
+        Points = [
+          { X = -691 Y = -146 }
+          { X = 191 Y = 257 }
+          { X = 861 Y = -96 }
+          { X = 41 Y = -495 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick13"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_13"
+        Tallness = 2299.0
+        Offset = { X = 0 Y = -962 }
+        Points = [
+          { X = -1225 Y = -338 }
+          { X = 738 Y = 645 }
+          { X = 1236 Y = 405 }
+          { X = -738 Y = -584 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallBrick13a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallBrick_13a"
+        Tallness = 2299.0
+        Offset = { X = 0 Y = -962 }
+        Points = [
+          { X = -1225 Y = -338 }
+          { X = 738 Y = 645 }
+          { X = 1236 Y = 405 }
+          { X = -738 Y = -584 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallPlain01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallPlain_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -1677 }
+        Points = [
+          { X = 1577 Y = -689 }
+          { X = 1427 Y = -751 }
+          { X = -1674 Y = 825 }
+          { X = -1586 Y = 896 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusChains01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+        Points = [
+          { X = 300 Y = -217 }
+          { X = -422 Y = 143 }
+          { X = -296 Y = 195 }
+          { X = 428 Y = -172 }
+          { X = 423 Y = -219 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusChains02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -1144 }
+      }
+    }
+    
+    {
+      Name = "TartarusChains04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_04"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "TartarusChains05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_05"
+        StopsLight = false
+        StopsProjectiles = false
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+        Points = [
+          { X = 62 Y = -1337 }
+          { X = -66 Y = -1328 }
+          { X = -66 Y = 1232 }
+          { X = 66 Y = 1236 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusChains06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_06"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "TartarusChains07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Chains_07"
+        StopsUnits = false
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "TartarusAxe01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Axe_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "TartarusRubble02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02"
+        Tallness = 202.0
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = 96 Y = -23 }
+          { X = -8 Y = -76 }
+          { X = -111 Y = -24 }
+          { X = -6 Y = 28 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble02b"
+      InheritFrom = "TartarusRubble02"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02b"
+        Points = [
+          { X = -106 Y = -20 }
+          { X = -69 Y = 20 }
+          { X = 60 Y = 40 }
+          { X = 111 Y = -12 }
+          { X = -3 Y = -59 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble02c"
+      InheritFrom = "TartarusRubble02"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02c"
+        Points = [
+          { X = -123 Y = -49 }
+          { X = -51 Y = -12 }
+          { X = 31 Y = -18 }
+          { X = 134 Y = -70 }
+          { X = 49 Y = -114 }
+          { X = -94 Y = -90 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCandles01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Candles_01"
+        SortBoundsScale = 1.25
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 717.0
+        Offset = { X = 0 Y = -429 }
+        Points = [
+          { X = -273 Y = 338 }
+          { X = 154 Y = 314 }
+          { X = 661 Y = -126 }
+          { X = -189 Y = -565 }
+          { X = -665 Y = -244 }
+          { X = -680 Y = 81 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCandles01b"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Candles_01b"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 532.0
+        Offset = { X = 0 Y = -316 }
+        Points = [
+          { X = -4 Y = 16 }
+          { X = 214 Y = -95 }
+          { X = 50 Y = -181 }
+          { X = -168 Y = -72 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble04"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_04"
+        Tallness = 1066.0
+        Offset = { X = 0 Y = -440 }
+        Points = [
+          { X = 1336 Y = -185 }
+          { X = 303 Y = -599 }
+          { X = -1359 Y = 213 }
+          { X = -379 Y = 684 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble03"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_03"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -445 }
+        Points = [
+          { X = -569 Y = 119 }
+          { X = -10 Y = 388 }
+          { X = 602 Y = 95 }
+          { X = 62 Y = -183 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble05"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_05"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 50.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -5 }
+        Points = [
+          { X = 1124 Y = 16 }
+          { X = -353 Y = -394 }
+          { X = -1082 Y = 107 }
+          { X = -1135 Y = 329 }
+          { X = -430 Y = 532 }
+          { X = 729 Y = 568 }
+          { X = 1025 Y = 296 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble06"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_06"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 50.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -5 }
+        Points = [
+          { X = 106 Y = -119 }
+          { X = -240 Y = -36 }
+          { X = 48 Y = 98 }
+          { X = 315 Y = -70 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble07"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_07"
+        Tallness = 2344.0
+        Offset = { X = 0 Y = -1127 }
+        Points = [
+          { X = -1506 Y = -46 }
+          { X = -164 Y = 603 }
+          { X = 392 Y = 448 }
+          { X = 1456 Y = -109 }
+          { X = 103 Y = -810 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble08"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_08"
+        StopsProjectiles = false
+        Tallness = 458.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -663 Y = -71 }
+          { X = -269 Y = 203 }
+          { X = 30 Y = 267 }
+          { X = 591 Y = 25 }
+          { X = 659 Y = -39 }
+          { X = -32 Y = -399 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble09"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_09"
+        Tallness = 849.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -727 Y = 167 }
+          { X = 128 Y = 456 }
+          { X = 675 Y = 112 }
+          { X = -9 Y = -206 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble10"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_10"
+        StopsProjectiles = false
+        Tallness = 433.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -687 Y = -174 }
+          { X = -336 Y = 70 }
+          { X = 256 Y = 258 }
+          { X = 687 Y = 54 }
+          { X = -260 Y = -400 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble11"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_11"
+        StopsProjectiles = false
+        Tallness = 442.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -403 Y = 340 }
+          { X = -194 Y = 394 }
+          { X = 455 Y = 399 }
+          { X = 787 Y = 349 }
+          { X = 916 Y = 247 }
+          { X = 690 Y = -40 }
+          { X = -433 Y = -433 }
+          { X = -914 Y = -201 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble12"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_12"
+        StopsProjectiles = false
+        Tallness = 831.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = 280 Y = -394 }
+          { X = -1085 Y = 341 }
+          { X = -80 Y = 806 }
+          { X = 1214 Y = 59 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusRubble12a"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Rubble_12a"
+        StopsProjectiles = false
+        Tallness = 666.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -556 Y = 67 }
+          { X = 13 Y = 294 }
+          { X = 675 Y = -95 }
+          { X = 214 Y = -325 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMushrooms01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusMushroom01Death"
+        DieOnCollision = true
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mushrooms_01"
+        StopsProjectiles = false
+        Tallness = 461.0
+        Offset = { X = 0 Y = -202 }
+        Points = [
+          { X = -371 Y = 62 }
+          { X = -79 Y = 154 }
+          { X = 120 Y = 146 }
+          { X = 368 Y = 85 }
+          { X = 391 Y = -3 }
+          { X = 41 Y = -139 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMushrooms01b"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mushrooms_01b"
+        StopsProjectiles = false
+        Tallness = 14.0
+        Offset = { X = 0 Y = -202 }
+        Points = [
+          { X = -466 Y = -7 }
+          { X = -88 Y = 183 }
+          { X = 120 Y = 146 }
+          { X = 430 Y = 23 }
+          { X = 424 Y = -150 }
+          { X = 200 Y = -286 }
+          { X = -328 Y = -178 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMushrooms02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusMushroom02Death"
+        DieOnCollision = true
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mushrooms_02"
+        StopsProjectiles = false
+        Tallness = 502.0
+        Offset = { X = 0 Y = -200 }
+        Points = [
+          { X = -107 Y = 27 }
+          { X = -21 Y = 67 }
+          { X = 75 Y = 19 }
+          { X = -10 Y = -22 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMushrooms02b"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mushrooms_02b"
+        StopsProjectiles = false
+        Tallness = 128.0
+        Offset = { X = 0 Y = -200 }
+        Points = [
+          { X = -151 Y = 33 }
+          { X = 19 Y = 88 }
+          { X = 165 Y = 17 }
+          { X = 21 Y = -44 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusLichen01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Lichen_01"
+        MeshType = "Vertical"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -5 }
+      }
+    }
+    
+    {
+      Name = "TartarusSpiderWeb01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusSpiderwebFade"
+        DieOnCollision = true
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_SpiderWeb_01"
+        StopsLight = false
+        Tallness = 874.0
+        Offset = { X = 0 Y = -5 }
+        Points = [
+          { X = -728 Y = 455 }
+          { X = -394 Y = 805 }
+          { X = 668 Y = 389 }
+          { X = 26 Y = 92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusUrnExpensive01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_UrnExpensive_01"
+        Tallness = 844.0
+        OccluderPoints = [
+          { X = 94 Y = 45 }
+          { X = 38 Y = 13 }
+          { X = -17 Y = 2 }
+          { X = -83 Y = 38 }
+          { X = -65 Y = 91 }
+          { X = 64 Y = 87 }
+        ]
+        Offset = { X = 0 Y = -369 }
+        Points = [
+          { X = -75 Y = -102 }
+          { X = -203 Y = -36 }
+          { X = -207 Y = 58 }
+          { X = -120 Y = 129 }
+          { X = 127 Y = 131 }
+          { X = 227 Y = 64 }
+          { X = 228 Y = -40 }
+          { X = 115 Y = -95 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusSlopedEdge02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_SlopedEdge_02"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        Tallness = 50.0
+        Offset = { X = 0 Y = -30 }
+        Points = [
+          { X = -1053 Y = 490 }
+          { X = -847 Y = 614 }
+          { X = 1066 Y = -372 }
+          { X = 857 Y = -494 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallRock02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallRock_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -1675 }
+        Points = [
+          { X = 1946 Y = -752 }
+          { X = 1373 Y = -988 }
+          { X = -1885 Y = 661 }
+          { X = -1383 Y = 927 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMosaic01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mosaic_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -15 }
+        Points = [
+          { X = 88 Y = 229 }
+          { X = 17 Y = 270 }
+          { X = 89 Y = 274 }
+          { X = 153 Y = 236 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMural01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mural_01"
+        Tallness = 2496.0
+        Offset = { X = 0 Y = -978 }
+        Points = [
+          { X = 1367 Y = -519 }
+          { X = 1149 Y = -607 }
+          { X = -1505 Y = 803 }
+          { X = -1316 Y = 854 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusMural02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Mural_02"
+        Tallness = 2142.0
+        Offset = { X = 0 Y = -925 }
+        Points = [
+          { X = -1213 Y = 588 }
+          { X = -1126 Y = 631 }
+          { X = 1197 Y = -538 }
+          { X = 1077 Y = -582 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStringShortOnlyCertaintyDeath01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_StringShort_OnlyCertaintyDeath_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -38 }
+        Points = [
+          { X = 1440 Y = -648 }
+          { X = 1380 Y = -676 }
+          { X = -1383 Y = 727 }
+          { X = -1327 Y = 756 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStringLongGloryHadesImmortal01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_StringLong_GloryHadesImmortal_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -139 }
+        Points = [
+          { X = 701 Y = 1153 }
+          { X = -849 Y = 340 }
+          { X = -970 Y = 483 }
+          { X = 696 Y = 1269 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusStringLongTogetherZeusHera01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_StringLong_TogetherZeusHera_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -960 }
+        Points = [
+          { X = 1278 Y = -553 }
+          { X = 1205 Y = -632 }
+          { X = -1205 Y = 586 }
+          { X = -1120 Y = 658 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallFlourish01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFlourish_01A"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -273 }
+        Points = [
+          { X = 543 Y = -200 }
+          { X = 497 Y = -231 }
+          { X = -556 Y = 312 }
+          { X = -519 Y = 334 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallFlourish01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFlourish_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -321 }
+        Points = [
+          { X = 128 Y = -44 }
+          { X = 84 Y = -66 }
+          { X = -153 Y = 54 }
+          { X = -99 Y = 65 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallFlourish02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFlourish_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -171 }
+      }
+    }
+    
+    {
+      Name = "TartarusWallFlourish03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFlourish_03"
+        Tallness = 563.0
+        Offset = { X = 0 Y = -279 }
+        Points = [
+          { X = -242 Y = 73 }
+          { X = -151 Y = 116 }
+          { X = 252 Y = -83 }
+          { X = 166 Y = -123 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_01A"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -53 }
+        Points = [
+          { X = 155 Y = -73 }
+          { X = 125 Y = -81 }
+          { X = -169 Y = 73 }
+          { X = -139 Y = 85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusCornice05"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Cornice_05"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -53 }
+      }
+    }
+    
+    {
+      Name = "TartarusSconce01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Sconce_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -932 }
+        Points = [
+          { X = 45 Y = 244 }
+          { X = 650 Y = 24 }
+          { X = -100 Y = -291 }
+          { X = -718 Y = -62 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusSconce02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Sconce_02"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -1135 }
+        Points = [
+          { X = -1343 Y = 560 }
+          { X = -703 Y = 847 }
+          { X = 854 Y = 43 }
+          { X = 201 Y = -265 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallFireplace01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFireplace_01"
+        Tallness = 1203.0
+        Offset = { X = 0 Y = -394 }
+        Points = [
+          { X = -660 Y = -240 }
+          { X = 579 Y = 385 }
+          { X = 679 Y = 328 }
+          { X = -536 Y = -302 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusWallFireplace01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_WallFireplace_01b"
+        Tallness = 650.0
+        Offset = { X = 0 Y = -110 }
+        Points = [
+          { X = -11 Y = -149 }
+          { X = -376 Y = 19 }
+          { X = 346 Y = 384 }
+          { X = 704 Y = 204 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_07"
+        Tallness = 95.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -87 Y = -535 }
+          { X = -1123 Y = -21 }
+          { X = 57 Y = 604 }
+          { X = 1123 Y = 79 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_06"
+        Tallness = 109.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -123 Y = -851 }
+          { X = -1810 Y = -27 }
+          { X = 102 Y = 963 }
+          { X = 1750 Y = 109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick06c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_06c"
+        Tallness = 109.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -123 Y = -851 }
+          { X = -1810 Y = -27 }
+          { X = 102 Y = 963 }
+          { X = 1750 Y = 109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick06b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_06b"
+        Tallness = 109.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -1780 Y = -31 }
+          { X = -977 Y = 356 }
+          { X = 315 Y = 587 }
+          { X = 939 Y = 501 }
+          { X = 1742 Y = 104 }
+          { X = -170 Y = -838 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainBrick06a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Brick_06a"
+        Tallness = 128.0
+        Offset = { X = 0 Y = -2 }
+        Points = [
+          { X = -1772 Y = -23 }
+          { X = 85 Y = 933 }
+          { X = 1746 Y = 104 }
+          { X = 691 Y = -420 }
+          { X = -187 Y = -475 }
+          { X = -1007 Y = -335 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainSewer01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_TerrainSewer_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainPit01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_TerrainPit_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusROOM17color2"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_ROOM17color2"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01a"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01b"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01c"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01d"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01d"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01e"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01e"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusPrerunBG01f"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_PrerunBG_01f"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainHadesSymbol01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_HadesSymbol_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusTerrainHades01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Terrain_Hades_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -2 }
+      }
+    }
+    
+    {
+      Name = "TartarusStandingHadesSymbol01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Standing_HadesSymbol_01"
+        Tallness = 50.0
+        Offset = { X = 0 Y = -53 }
+      }
+    }
+    
+    {
+      Name = "TartarusDoor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Door_01"
+        Tallness = 3323.0
+        Offset = { X = 0 Y = -1353 }
+        Points = [
+          { X = 697 Y = 237 }
+          { X = -431 Y = -342 }
+          { X = -691 Y = -188 }
+          { X = 437 Y = 390 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusDoor02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Door_02"
+        Tallness = 2723.0
+        Offset = { X = 0 Y = -1205 }
+        Points = [
+          { X = 591 Y = 486 }
+          { X = 1014 Y = 265 }
+          { X = -681 Y = -472 }
+          { X = -1042 Y = -303 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusDoor03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        DrawEmbeddedBehind = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Door_03"
+        Tallness = 2663.0
+        Offset = { X = 0 Y = -1205 }
+        Points = [
+          { X = -802 Y = -337 }
+          { X = 652 Y = 390 }
+          { X = 808 Y = 287 }
+          { X = -652 Y = -418 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusDoor03b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DoorLocked"
+        Scale = 4.0
+        StopsLight = false
+        Tallness = 514.0
+        Interact = 
+        {
+          Distance = 170.0
+        }
+        Offset = { X = 0 Y = -214 }
+        Points = [
+          { X = -96 Y = -25 }
+          { X = 68 Y = 57 }
+          { X = 97 Y = 38 }
+          { X = -63 Y = -42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBrazier01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Brazier_01"
+        SortBoundsScale = 0.9
+        StopsProjectiles = false
+        Tallness = 2162.0
+        Offset = { X = 0 Y = -841 }
+        Points = [
+          { X = -498 Y = 63 }
+          { X = -15 Y = 299 }
+          { X = 518 Y = 32 }
+          { X = 31 Y = -207 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBrazier03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Brazier_03"
+        StopsProjectiles = false
+        Tallness = 2162.0
+        Offset = { X = 0 Y = -86 }
+        Points = [
+          { X = 312 Y = 111 }
+          { X = 344 Y = -92 }
+          { X = -6 Y = -197 }
+          { X = -369 Y = -54 }
+          { X = -341 Y = 143 }
+          { X = 10 Y = 188 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBrazier02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Brazier_02a"
+        StopsProjectiles = false
+        Tallness = 1189.0
+        Offset = { X = 0 Y = -485 }
+        Points = [
+          { X = -838 Y = -72 }
+          { X = -641 Y = 183 }
+          { X = -641 Y = 183 }
+          { X = -65 Y = 296 }
+          { X = 456 Y = 246 }
+          { X = 775 Y = 11 }
+          { X = 837 Y = -172 }
+          { X = 506 Y = -347 }
+          { X = -137 Y = -366 }
+          { X = -628 Y = -313 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TartarusBrazier02b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Tartarus\Tartarus_Brazier_02b"
+        StopsProjectiles = false
+        Tallness = 656.0
+        Offset = { X = 0 Y = -411 }
+        Points = [
+          { X = -873 Y = -27 }
+          { X = -641 Y = 183 }
+          { X = -641 Y = 183 }
+          { X = -65 Y = 296 }
+          { X = 456 Y = 246 }
+          { X = 810 Y = 31 }
+          { X = 826 Y = -186 }
+          { X = 471 Y = -363 }
+          { X = -136 Y = -417 }
+          { X = -628 Y = -313 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChainChompLink"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnergyLink"
+        Grip = 5000.0
+        Scale = 0.5
+        Tallness = 50.0
+      }
+    }
+    
+    {
+      Name = "HeavyRangedCrystal1"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      CollidesWithObstacles = false
+      CollisionDamagePerVelocity = 0.0
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedCrystal1Shatter"
+        DeathSound = "/SFX/PillarBoulderDestroyedSmall"
+        DieOnCollision = true
+        Invulnerable = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowStatic"
+        DieOnTouchdown = true
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal1"
+        Grip = 1000.0
+        OffsetZ = 84.0
+        Tallness = 50.0
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedCrystal2"
+      InheritFrom = "HeavyRangedCrystal1"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedCrystal2Shatter"
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowStaticSmall"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal2"
+        Points = [
+          { X = 0 Y = 8 }
+          { X = 16 Y = 0 }
+          { X = 0 Y = -8 }
+          { X = -16 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedCrystal3"
+      InheritFrom = "HeavyRangedCrystal2"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedCrystal3Shatter"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal3"
+      }
+    }
+    
+    {
+      Name = "HeavyRangedCrystal4"
+      InheritFrom = "HeavyRangedCrystal2"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedCrystal4Shatter"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal4Dormant"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal1"
+      InheritFrom = "HeavyRangedCrystal1"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HealRangedCrystal1Shatter"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal1"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal1SuperElite"
+      InheritFrom = "HealRangedCrystal1"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal1Miniboss"
+      InheritFrom = "HealRangedCrystal1"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal1Miniboss"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal2"
+      InheritFrom = "HeavyRangedCrystal2"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HealRangedCrystal2Shatter"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal2"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal2SuperElite"
+      InheritFrom = "HealRangedCrystal2"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal2Miniboss"
+      InheritFrom = "HealRangedCrystal2"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal2Miniboss"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal3"
+      InheritFrom = "HeavyRangedCrystal3"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HealRangedCrystal3Shatter"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal3"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal3Miniboss"
+      InheritFrom = "HealRangedCrystal3"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal3Miniboss"
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal3SuperElite"
+      InheritFrom = "HealRangedCrystal3"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "HealRangedCrystal4"
+      InheritFrom = "HeavyRangedCrystal4"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HealRangedDeath"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal4Dormant"
+      }
+    }
+    
+    {
+      Name = "HydraNeck"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HydraNeckDeath"
+      }
+      Thing = 
+      {
+        AttachedAnim = "HydraNeckShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "HydraNeck3D"
+        Grip = 5000.0
+        OffsetZ = 95.0
+        Tallness = 45.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = 0 }
+        Points = [
+          { X = 57 Y = 5 }
+          { X = 1 Y = -23 }
+          { X = -56 Y = 5 }
+          { X = 0 Y = 34 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HydraNeckMelee"
+      InheritFrom = "HydraNeck"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HydraBase"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = {
+        DeathFx = "HydraBaseDeath"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HydraBase3D"
+        ImmuneToForce = true
+        StopsProjectiles = false
+        Offset = { X = 0 Y = -80 }
+        Points = [
+          { X = -101 Y = 7 }
+          { X = -32 Y = 40 }
+          { X = 43 Y = 42 }
+          { X = 89 Y = 7 }
+          { X = 96 Y = -25 }
+          { X = 36 Y = -67 }
+          { X = -69 Y = -58 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HydraBaseMelee"
+      InheritFrom = "HydraBase"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 30.0
+        Offset = { X = 0 Y = -50 }
+        Points = [
+          { X = -101 Y = 7 }
+          { X = -32 Y = 40 }
+          { X = 43 Y = 42 }
+          { X = 89 Y = 7 }
+          { X = 96 Y = -25 }
+          { X = 36 Y = -67 }
+          { X = -69 Y = -58 }
+        ]
+      }
+    }
+    
+    {
+      Name = "MultiFuryMegaeraIntro"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "FuryIdle"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 254.0
+        Points = [
+          { X = 0 Y = 8 }
+          { X = 51 Y = -17 }
+          { X = -1 Y = -44 }
+          { X = -52 Y = -18 }
+        ]
+      }
+    }
+    
+    {
+      Name = "MultiFuryAlectoIntro"
+      InheritFrom = "MultiFuryMegaeraIntro"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AlectoTaunt_StartIdle"
+      }
+    }
+    
+    {
+      Name = "MultiFuryTisiphoneIntro"
+      InheritFrom = "MultiFuryMegaeraIntro"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TisiphoneTaunt_Loop_2"
+      }
+    }
+  ]
+}

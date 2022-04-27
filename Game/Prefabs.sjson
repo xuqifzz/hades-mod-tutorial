@@ -1,0 +1,86 @@
+{
+  Prefabs = [
+    {
+      Name = "NightSky"
+      Map = "NightSky"
+      KeepIds = true
+      IncludeIdPrefixes = "Campaign Swath Wagon DifficultyStars MatchSite"
+    }
+    {
+      Name = "DifficultyStars"
+      Map = "DifficultyStars"
+      KeepIds = true
+      IncludeIdPrefixes = "Campaign Swath Wagon NightSky MatchSite"
+    }
+    {
+      Name = "Wagon"
+      Map = "Wagon"
+      KeepIds = true
+      Embed = true
+      IncludeIdPrefixes = "Campaign Swath DifficultyStars NightSky"
+    }
+    {
+      Name = "Swath_01"
+      Map = "Swath_01"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_02"
+      Map = "Swath_02"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_03"
+      Map = "Swath_03"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_04"
+      Map = "Swath_04"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_05"
+      Map = "Swath_05"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_06"
+      Map = "Swath_06"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_07"
+      Map = "Swath_07"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_08"
+      Map = "Swath_08"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+    {
+      Name = "Swath_09"
+      Map = "Swath_09"
+      IncludeIdPrefixes = "Campaign Swath NightSky DifficultyStars Wagon"
+      KeepIds = true
+      Embed = true
+    }
+  ]
+}

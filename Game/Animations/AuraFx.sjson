@@ -1,0 +1,79 @@
+{
+  Animations = [
+
+    /* Aura Cast */
+    
+    {
+      Name = "AuraExplosion"
+      FilePath = "Fx\AuraExplosionOptimized\AuraExplosionOptimized"
+      GroupName = "FX_Standing_Top"
+      Type = "Slide"
+      VisualFx = "AuraExplosionDissipation"
+      AddColor = true
+      EndFrame = 17
+      NumFrames = 17
+      PlaySpeed = 30.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      OffsetY = -15.0
+      ScaleRadius = 420.0
+      Material = "Emissive"
+      VisualFxCap = 1
+      VisualFxIntervalMax = 0.0002
+      VisualFxIntervalMin = 0.001
+      TimeModifierFraction = 0.0
+      AngleFromOwner = "Ignore"
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*Frame 1*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+    
+    {
+      Name = "AuraExplosionDissipation"
+      FilePath = "Fx\AuraExplosionOptimized\AuraExplosionDissipation"
+      GroupName = "FX_Auras"
+      Type = "Constant"
+      AddColor = true
+      StartAlpha = 1.0
+      Duration = 3.0
+      EaseIn = 0.6
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      EndScale = 1.15
+      ScaleRadius = 420.0
+      StartScale = 0.9
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "AuraExplosionEnemy"
+      InheritFrom = "AuraExplosion"
+      EndFrame = 17
+      StartFrame = 1
+      Color = { Red = 0.41 Green = 0.17 Blue = 0.76 }
+    }
+
+  ]
+}

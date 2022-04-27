@@ -1,0 +1,1658 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "TravelPillarBase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase01"
+        Tallness = 2113.0
+        Offset = { X = 0 Y = -1000 }
+        Points = [
+          { X = -787 Y = -63 }
+          { X = 12 Y = 342 }
+          { X = 812 Y = -72 }
+          { X = 21 Y = -467 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelCharonPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TravelCharonPillar01"
+        Tallness = 2583.0
+        Offset = { X = 0 Y = -1031 }
+        Points = [
+          { X = -613 Y = -62 }
+          { X = 9 Y = 246 }
+          { X = 659 Y = -81 }
+          { X = 36 Y = -385 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelHook01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Hook_01"
+        Tallness = 363.0
+        Offset = { X = 0 Y = -136 }
+        Points = [
+          { X = -133 Y = 18 }
+          { X = -26 Y = 74 }
+          { X = 140 Y = -9 }
+          { X = 26 Y = -66 }
+          { X = 26 Y = -66 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelGear01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Gear_01"
+        Tallness = 468.0
+        Offset = { X = 0 Y = -38 }
+        Points = [
+          { X = -982 Y = -298 }
+          { X = 724 Y = 570 }
+          { X = 943 Y = 407 }
+          { X = -704 Y = -419 }
+          { X = -704 Y = -419 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelGear02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Travel_Gear_02_Anim"
+        Tallness = 271.0
+        Offset = { X = 0 Y = -93 }
+      }
+    }
+    
+    {
+      Name = "TravelGear04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Gear_04"
+        Tallness = 251.0
+        Offset = { X = 0 Y = -83 }
+        Points = [
+          { X = -576 Y = 83 }
+          { X = -158 Y = 287 }
+          { X = 576 Y = -80 }
+          { X = 150 Y = -281 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelChain01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Chain_01"
+        Tallness = 363.0
+        Offset = { X = 0 Y = -20 }
+      }
+    }
+    
+    {
+      Name = "TravelChain01Anim"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Travel_Chain_01_Anim"
+        Tallness = 363.0
+        Offset = { X = 0 Y = -20 }
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase05"
+        Tallness = 390.0
+        Offset = { X = 0 Y = -147 }
+        Points = [
+          { X = -248 Y = 10 }
+          { X = -15 Y = 119 }
+          { X = 250 Y = -6 }
+          { X = 15 Y = -123 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase05b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase05b"
+        Tallness = 259.0
+        Offset = { X = 0 Y = -79 }
+        Points = [
+          { X = -245 Y = 38 }
+          { X = -14 Y = 150 }
+          { X = 249 Y = 21 }
+          { X = 20 Y = -93 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase06"
+        Tallness = 1266.0
+        Offset = { X = 0 Y = -523 }
+        Points = [
+          { X = -528 Y = 36 }
+          { X = 0 Y = 292 }
+          { X = 512 Y = 39 }
+          { X = -3 Y = -229 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelFence01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Fence_01"
+        Tallness = 395.0
+        Offset = { X = 0 Y = -141 }
+        Points = [
+          { X = -288 Y = 66 }
+          { X = -53 Y = 183 }
+          { X = 310 Y = 1 }
+          { X = 67 Y = -120 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelArch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Arch_01"
+        Tallness = 756.0
+        Offset = { X = 0 Y = -299 }
+        Points = [
+          { X = -796 Y = 269 }
+          { X = -473 Y = 419 }
+          { X = 853 Y = -286 }
+          { X = 628 Y = -423 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelArch02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Arch_02"
+        Tallness = 756.0
+        Offset = { X = 0 Y = -299 }
+        Points = [
+          { X = -796 Y = 269 }
+          { X = -473 Y = 419 }
+          { X = 853 Y = -286 }
+          { X = 628 Y = -423 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelArch03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Arch_03"
+        Tallness = 756.0
+        Offset = { X = 0 Y = -465 }
+        Points = [
+          { X = -1020 Y = -147 }
+          { X = -1044 Y = 90 }
+          { X = 1051 Y = 76 }
+          { X = 1013 Y = -120 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelArch02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Arch_02a"
+        Tallness = 428.0
+        Offset = { X = 0 Y = -160 }
+        Points = [
+          { X = -282 Y = 90 }
+          { X = -133 Y = 168 }
+          { X = 330 Y = -67 }
+          { X = 169 Y = -153 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelArch02b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Arch_02b"
+        Tallness = 428.0
+        Offset = { X = 0 Y = -251 }
+        Points = [
+          { X = -282 Y = 90 }
+          { X = -127 Y = 173 }
+          { X = 382 Y = -90 }
+          { X = 227 Y = -176 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Table_01"
+        Tallness = 483.0
+        Offset = { X = 0 Y = -194 }
+        Points = [
+          { X = -808 Y = -49 }
+          { X = 132 Y = 367 }
+          { X = 770 Y = 111 }
+          { X = -197 Y = -373 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelBalcony01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Balcony_01"
+        Tallness = 1006.0
+        Offset = { X = 0 Y = -480 }
+        Points = [
+          { X = -317 Y = -17 }
+          { X = -60 Y = 79 }
+          { X = 156 Y = 41 }
+          { X = 245 Y = -57 }
+          { X = 2 Y = -180 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelVase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Vase_01"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = -602 }
+        Points = [
+          { X = -232 Y = -7 }
+          { X = -10 Y = 123 }
+          { X = 235 Y = -9 }
+          { X = -5 Y = -104 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelVase02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Vase_02"
+        Tallness = 1647.0
+        Offset = { X = 0 Y = -671 }
+        Points = [
+          { X = -301 Y = 59 }
+          { X = 2 Y = 138 }
+          { X = 327 Y = 56 }
+          { X = 14 Y = -112 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelDoor02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Door_02"
+        Tallness = 2451.0
+        Offset = { X = 0 Y = -854 }
+        Points = [
+          { X = -654 Y = 290 }
+          { X = -467 Y = 419 }
+          { X = 645 Y = -159 }
+          { X = 467 Y = -248 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelCandle03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Candle_03"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = -508 }
+        Points = [
+          { X = -202 Y = 27 }
+          { X = -40 Y = 111 }
+          { X = 197 Y = 19 }
+          { X = 5 Y = -75 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelOrnament01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Ornament_01"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = 62 }
+      }
+    }
+    
+    {
+      Name = "TravelOrnament01a"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Ornament_01a"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = 62 }
+      }
+    }
+    
+    {
+      Name = "TravelOrnament01B"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Ornament_01B"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = 62 }
+      }
+    }
+    
+    {
+      Name = "TravelGable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Gable02"
+        Tallness = 148.0
+        Offset = { X = 0 Y = -277 }
+        Points = [
+          { X = -840 Y = -101 }
+          { X = -831 Y = 101 }
+          { X = 840 Y = 97 }
+          { X = 842 Y = -103 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelGable03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Gable03"
+        Tallness = 727.0
+        Offset = { X = 0 Y = -277 }
+        Points = [
+          { X = -794 Y = 80 }
+          { X = -265 Y = 341 }
+          { X = 742 Y = -174 }
+          { X = 223 Y = -448 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPedestal01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pedestal_01"
+        Tallness = 1707.0
+        Offset = { X = 0 Y = -650 }
+        Points = [
+          { X = -108 Y = 366 }
+          { X = -108 Y = 366 }
+          { X = 495 Y = 62 }
+          { X = 25 Y = -158 }
+          { X = -570 Y = 137 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelWall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Wall01"
+        Tallness = 3271.0
+        Offset = { X = 0 Y = -1295 }
+        Points = [
+          { X = -1135 Y = -390 }
+          { X = 833 Y = 622 }
+          { X = 1096 Y = 488 }
+          { X = -904 Y = -531 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelWall04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Wall04"
+        Tallness = 1468.0
+        Offset = { X = 0 Y = -630 }
+        Points = [
+          { X = -714 Y = 133 }
+          { X = -285 Y = 344 }
+          { X = 674 Y = -152 }
+          { X = 266 Y = -354 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelCubeBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_CubeBrick_01"
+        Tallness = 628.0
+        Offset = { X = 0 Y = -220 }
+        Points = [
+          { X = -363 Y = 105 }
+          { X = -83 Y = 252 }
+          { X = 382 Y = 0 }
+          { X = 119 Y = -136 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelLever01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Lever_01"
+        Tallness = 3271.0
+        Offset = { X = 0 Y = -26 }
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase02"
+        Tallness = 1831.0
+        Offset = { X = 0 Y = -1000 }
+        Points = [
+          { X = -1512 Y = 225 }
+          { X = -842 Y = 549 }
+          { X = 1512 Y = -611 }
+          { X = 810 Y = -956 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase03"
+        Tallness = 1569.0
+        Offset = { X = 0 Y = -673 }
+        Points = [
+          { X = -1300 Y = -220 }
+          { X = -1326 Y = 305 }
+          { X = 1308 Y = 300 }
+          { X = 1295 Y = -186 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillarBase04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_PillarBase04"
+        Tallness = 1834.0
+        Offset = { X = 0 Y = -1074 }
+        Points = [
+          { X = -301 Y = -776 }
+          { X = -313 Y = 156 }
+          { X = 292 Y = 143 }
+          { X = 313 Y = -781 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelGable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Gable01"
+        Tallness = 957.0
+        Offset = { X = 0 Y = -495 }
+        Points = [
+          { X = -887 Y = -199 }
+          { X = 379 Y = 430 }
+          { X = 1008 Y = 113 }
+          { X = -262 Y = -532 }
+          { X = -262 Y = -532 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelDoor03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Door_03"
+        Tallness = 1660.0
+        Interact = 
+        {
+          Distance = 170.0
+          OffsetY = -50.0
+        }
+        Offset = { X = 0 Y = -738 }
+        Points = [
+          { X = -513 Y = -167 }
+          { X = 388 Y = 297 }
+          { X = 513 Y = 230 }
+          { X = -381 Y = -221 }
+        ]
+        Using = [
+          { Name = "TravelDoor03Open" }
+          { Name = "TravelDoor03Close" }
+          { Name = "TravelDoor03Unlocked" }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelDrapery01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Drapery_01"
+        Tallness = 957.0
+        Offset = { X = 0 Y = -10 }
+      }
+    }
+    
+    {
+      Name = "TravelRoofgroup01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Roofgroup_01"
+        Tallness = 2090.0
+        Offset = { X = 0 Y = -535 }
+        Points = [
+          { X = -1473 Y = -248 }
+          { X = 683 Y = 823 }
+          { X = 1446 Y = 472 }
+          { X = -725 Y = -622 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelWall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Wall02"
+        Tallness = 2357.0
+        Offset = { X = 0 Y = -1007 }
+        Points = [
+          { X = -1118 Y = -56 }
+          { X = -1118 Y = 169 }
+          { X = 1118 Y = 148 }
+          { X = 1098 Y = -77 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelWall03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Wall03"
+        Tallness = 2529.0
+        Offset = { X = 0 Y = -1088 }
+        Points = [
+          { X = 386 Y = 263 }
+          { X = 530 Y = 188 }
+          { X = -330 Y = -236 }
+          { X = -490 Y = -160 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPediment01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pediment01"
+        Tallness = 619.0
+        Offset = { X = 0 Y = -270 }
+        Points = [
+          { X = 282 Y = 24 }
+          { X = -48 Y = -142 }
+          { X = -239 Y = -45 }
+          { X = 86 Y = 119 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPediment01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pediment01b"
+        Tallness = 606.0
+        Offset = { X = 0 Y = -346 }
+        Points = [
+          { X = -257 Y = -56 }
+          { X = 68 Y = 105 }
+          { X = 262 Y = 5 }
+          { X = -60 Y = -152 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPediment02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pediment02"
+        Tallness = 953.0
+        Offset = { X = 0 Y = -489 }
+        Points = [
+          { X = -573 Y = -76 }
+          { X = 239 Y = 372 }
+          { X = 625 Y = 176 }
+          { X = -224 Y = -252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelCandle01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Candle_01"
+        Tallness = 1774.0
+        Offset = { X = 0 Y = -784 }
+        Points = [
+          { X = -242 Y = 0 }
+          { X = 152 Y = 179 }
+          { X = 568 Y = -10 }
+          { X = 168 Y = -215 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelStatue01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Statue_01"
+        Tallness = 2164.0
+        Offset = { X = 0 Y = -758 }
+        Points = [
+          { X = -797 Y = 208 }
+          { X = -181 Y = 523 }
+          { X = 1081 Y = -132 }
+          { X = 465 Y = -434 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelStatue02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Statue_02"
+        Tallness = 570.0
+        Offset = { X = 0 Y = -225 }
+        Points = [
+          { X = -176 Y = 63 }
+          { X = 9 Y = 140 }
+          { X = 328 Y = 92 }
+          { X = 343 Y = -15 }
+          { X = 54 Y = -125 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelDoor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Door_01"
+        Tallness = 2164.0
+        UseBoundsForSortDrawArea = true
+        Interact = 
+        {
+          Distance = 250.0
+        }
+        Offset = { X = 0 Y = -828 }
+        Points = [
+          { X = -607 Y = -224 }
+          { X = 653 Y = 403 }
+          { X = 730 Y = 352 }
+          { X = -513 Y = -267 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelWingDoor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Door_02"
+        Tallness = 2539.0
+        Interact = 
+        {
+          Distance = 170.0
+          OffsetY = -50.0
+        }
+        Offset = { X = 0 Y = -933 }
+        Points = [
+          { X = -580 Y = -132 }
+          { X = 471 Y = 447 }
+          { X = 619 Y = 376 }
+          { X = -480 Y = -213 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelStatueFury01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Statue_Fury_01"
+        Tallness = 2164.0
+        Offset = { X = 0 Y = -93 }
+      }
+    }
+    
+    {
+      Name = "TravelStatueFury02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Statue_Fury_02"
+        Tallness = 2164.0
+        Offset = { X = 0 Y = 103 }
+      }
+    }
+    
+    {
+      Name = "TravelStatueFury03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Statue_Fury_03"
+        Tallness = 2164.0
+        Offset = { X = 0 Y = 103 }
+      }
+    }
+    
+    {
+      Name = "TravelCandle02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Candle_02"
+        Tallness = 2032.0
+        Offset = { X = 0 Y = -1000 }
+        Points = [
+          { X = -106 Y = -113 }
+          { X = 3 Y = -62 }
+          { X = 102 Y = -119 }
+          { X = 3 Y = -171 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pillar01"
+        Tallness = 4007.0
+        Offset = { X = 0 Y = -1725 }
+        Points = [
+          { X = -351 Y = 13 }
+          { X = -38 Y = 147 }
+          { X = 236 Y = 13 }
+          { X = -70 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pillar02"
+        Tallness = 2659.0
+        Offset = { X = 0 Y = -1110 }
+        Points = [
+          { X = -356 Y = 28 }
+          { X = 77 Y = 266 }
+          { X = 393 Y = 124 }
+          { X = -77 Y = -104 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillar03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pillar_03"
+        Tallness = 1887.0
+        Offset = { X = 0 Y = -763 }
+        Points = [
+          { X = -251 Y = 57 }
+          { X = -9 Y = 169 }
+          { X = 244 Y = 45 }
+          { X = 3 Y = -78 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillar04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pillar_04"
+        Tallness = 1887.0
+        Offset = { X = 0 Y = -763 }
+        Points = [
+          { X = -251 Y = 57 }
+          { X = -9 Y = 169 }
+          { X = 244 Y = 45 }
+          { X = 3 Y = -78 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPillar05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pillar05"
+        Tallness = 1996.0
+        Offset = { X = 0 Y = -802 }
+        Points = [
+          { X = -282 Y = 56 }
+          { X = 2 Y = 212 }
+          { X = 300 Y = 59 }
+          { X = 6 Y = -87 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPole01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pole_01"
+        Tallness = 1225.0
+        Offset = { X = 0 Y = -488 }
+        Points = [
+          { X = 42 Y = 90 }
+          { X = 69 Y = 57 }
+          { X = 28 Y = -9 }
+          { X = -73 Y = 38 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelPole01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Pole_01a"
+        Tallness = 301.0
+        Offset = { X = 0 Y = -219 }
+      }
+    }
+    
+    {
+      Name = "TravelStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Stairs01"
+        Tallness = 460.0
+        Offset = { X = 0 Y = -206 }
+        Points = [
+          { X = -1560 Y = -320 }
+          { X = 699 Y = 784 }
+          { X = 1591 Y = 321 }
+          { X = -638 Y = -795 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainBrick_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -478 }
+        Points = [
+          { X = -1491 Y = 8 }
+          { X = -319 Y = 594 }
+          { X = 1495 Y = -314 }
+          { X = 315 Y = -897 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_02"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish03"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_03"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish07"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_07"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish07a"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_07a"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish06"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        HitFxCap = 6
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_06"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 231.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -59 }
+        Points = [
+          { X = -173 Y = 72 }
+          { X = -117 Y = 94 }
+          { X = 190 Y = -53 }
+          { X = 131 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTile01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Tile_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTile01b"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Tile_01b"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTile01c"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Tile_01c"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTile02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Tile_02"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTile03"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Tile_03"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish04"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_04"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelTerrainFlourish05"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainFlourish_05"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelCharonTerrainTile01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_CharonTerrain_Tile_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelCharonGoldPile01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsCoin"
+        Graphic = "Tilesets\Travel\Travel_CharonGoldPile_01"
+        Tallness = 298.0
+        Offset = { X = 0 Y = 39 }
+        Points = [
+          { X = -482 Y = 162 }
+          { X = -95 Y = 314 }
+          { X = 319 Y = 240 }
+          { X = 503 Y = 50 }
+          { X = 101 Y = -86 }
+          { X = -454 Y = 13 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelCharonGoldPile02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsCoin"
+        Graphic = "Tilesets\Travel\Travel_CharonGoldPile_02"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+    
+    {
+      Name = "TravelFur01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Fur_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -42 }
+        Points = [
+          { X = 68 Y = -23 }
+          { X = 28 Y = -49 }
+          { X = -64 Y = -41 }
+          { X = -63 Y = 14 }
+          { X = -22 Y = 31 }
+          { X = 54 Y = 20 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelFur02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Fur_02"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -15 }
+        Points = [
+          { X = 33 Y = -17 }
+          { X = -41 Y = -9 }
+          { X = 14 Y = 17 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_02"
+        Tallness = 818.0
+        Points = [
+          { X = 88 Y = -49 }
+          { X = 11 Y = -71 }
+          { X = -116 Y = -6 }
+          { X = -149 Y = 64 }
+          { X = -116 Y = 83 }
+          { X = -22 Y = 73 }
+          { X = 148 Y = -2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -3 }
+        Points = [
+          { X = 201 Y = -37 }
+          { X = 151 Y = -85 }
+          { X = 50 Y = -82 }
+          { X = -192 Y = 56 }
+          { X = -69 Y = 85 }
+          { X = 69 Y = 57 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainText01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainText_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 2 }
+        Points = [
+          { X = 49 Y = -26 }
+          { X = -51 Y = -9 }
+          { X = 9 Y = 40 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone01A"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_01A"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 9 }
+        Points = [
+          { X = 182 Y = -37 }
+          { X = 58 Y = -84 }
+          { X = -142 Y = 5 }
+          { X = -169 Y = 76 }
+          { X = -142 Y = 101 }
+          { X = -65 Y = 79 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone03"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_03"
+        Tallness = 818.0
+        Points = [
+          { X = -196 Y = 72 }
+          { X = -156 Y = 122 }
+          { X = 194 Y = 28 }
+          { X = 198 Y = -35 }
+          { X = 55 Y = -101 }
+          { X = -45 Y = -89 }
+          { X = -123 Y = -29 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone04"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_04"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -3 }
+        Points = [
+          { X = 36 Y = -96 }
+          { X = -72 Y = -19 }
+          { X = -25 Y = 1 }
+          { X = 84 Y = -77 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone04A"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_04A"
+        Tallness = 818.0
+        Offset = { X = 0 Y = -3 }
+        Points = [
+          { X = 13 Y = -13 }
+          { X = -36 Y = 10 }
+          { X = -30 Y = 36 }
+          { X = 55 Y = -19 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainTrimBone03A"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainTrimBone_03A"
+        Tallness = 29.0
+        Points = [
+          { X = -208 Y = 81 }
+          { X = -105 Y = 132 }
+          { X = 222 Y = -31 }
+          { X = 123 Y = -81 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainMosaicRibCage01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainMosaicRibCage_01"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainMosaicSkull01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainMosaicSkull_01"
+        Tallness = 818.0
+        Points = [
+          { X = 72 Y = -31 }
+          { X = -76 Y = -22 }
+          { X = -66 Y = 45 }
+          { X = 83 Y = 10 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TravelTerrainMosaicNeck01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainMosaicNeck_01"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainMosaicNeck02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_TerrainMosaicNeck_02"
+        Tallness = 818.0
+      }
+    }
+    
+    {
+      Name = "TravelTerrainBridge01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_Terrain_Bridge_01"
+        Tallness = 818.0
+        Offset = { X = 0 Y = 39 }
+      }
+    }
+  ]
+}

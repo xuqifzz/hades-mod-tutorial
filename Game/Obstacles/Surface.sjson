@@ -1,0 +1,2132 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "SurfaceDestructiblePillar"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      ReflectLobProjectiles = false
+      Life = 
+      {
+        HitFx = "PillarHitFx"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pillar_01a"
+        OcclusionBaseAnim = "TartarusPillarBase04Footprint"
+        OcclusionOpacity = 0.25
+        Tallness = 2242.0
+        Offset = { X = 0 Y = -1250 }
+        Points = [
+          { X = 160 Y = 220 }
+          { X = 480 Y = 60 }
+          { X = 480 Y = -100 }
+          { X = 160 Y = -260 }
+          { X = -160 Y = -260 }
+          { X = -480 Y = -100 }
+          { X = -480 Y = 60 }
+          { X = -160 Y = 220 }
+        ]
+        Using = [
+          { Name = "BossPillarA" }
+          { Name = "BossPillarB" }
+          { Name = "BossPillarC" }
+          { Name = "BossPillarD" }
+          { Name = "SurfaceRubble02a" Scale = 0.4 }
+          { Name = "SurfaceRubble02b" Scale = 0.4 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceDestructiblePillarA"
+      InheritFrom = "SurfaceDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 2274.0
+      }
+    }
+    
+    {
+      Name = "SurfaceDestructiblePillarB"
+      InheritFrom = "SurfaceDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pillar_01b"
+        Tallness = 864.0
+      }
+    }
+    
+    {
+      Name = "SurfaceDestructiblePillarC"
+      InheritFrom = "SurfaceDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pillar_01c"
+        Tallness = 370.0
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_01"
+        Tallness = 500.0
+        Offset = { X = 0 Y = -214 }
+        Points = [
+          { X = 40 Y = 44 }
+          { X = 118 Y = 2 }
+          { X = 116 Y = -37 }
+          { X = 0 Y = -75 }
+          { X = -121 Y = -54 }
+          { X = -128 Y = -12 }
+          { X = -75 Y = 28 }
+          { X = -4 Y = 39 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker04"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_04"
+        Tallness = 400.0
+        Offset = { X = 0 Y = -209 }
+        Points = [
+          { X = 50 Y = 32 }
+          { X = 93 Y = 15 }
+          { X = 96 Y = -37 }
+          { X = 27 Y = -61 }
+          { X = -54 Y = -52 }
+          { X = -84 Y = -13 }
+          { X = -48 Y = 28 }
+          { X = -4 Y = 39 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker01a"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_01a"
+        Tallness = 202.0
+        Offset = { X = 0 Y = -214 }
+        Points = [
+          { X = 40 Y = 44 }
+          { X = 118 Y = 2 }
+          { X = 116 Y = -37 }
+          { X = 0 Y = -75 }
+          { X = -121 Y = -54 }
+          { X = -128 Y = -12 }
+          { X = -75 Y = 28 }
+          { X = -4 Y = 39 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_03"
+        Tallness = 261.0
+        Offset = { X = 0 Y = -112 }
+        Points = [
+          { X = -97 Y = -67 }
+          { X = -154 Y = 1 }
+          { X = 0 Y = 76 }
+          { X = 152 Y = 1 }
+          { X = 83 Y = -69 }
+          { X = -10 Y = -97 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker05"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_05"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -32 }
+        Points = [
+          { X = -18 Y = -75 }
+          { X = -175 Y = -2 }
+          { X = -7 Y = 68 }
+          { X = 154 Y = -12 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker06"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_06"
+        Tallness = 400.0
+        Offset = { X = 0 Y = -203 }
+        Points = [
+          { X = 117 Y = -40 }
+          { X = 43 Y = -53 }
+          { X = -75 Y = -42 }
+          { X = -132 Y = -8 }
+          { X = -62 Y = 42 }
+          { X = 60 Y = 34 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker07a"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_07a"
+        Tallness = 621.0
+        Offset = { X = 0 Y = -203 }
+        Points = [
+          { X = -428 Y = 53 }
+          { X = -173 Y = 286 }
+          { X = 210 Y = 257 }
+          { X = 439 Y = 83 }
+          { X = 208 Y = -144 }
+          { X = -228 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_07a"
+        Tallness = 801.0
+        Offset = { X = 0 Y = -213 }
+        Points = [
+          { X = -409 Y = 86 }
+          { X = -306 Y = 224 }
+          { X = 28 Y = 286 }
+          { X = 337 Y = 193 }
+          { X = 407 Y = 81 }
+          { X = 322 Y = -193 }
+          { X = 108 Y = -304 }
+          { X = -122 Y = -304 }
+          { X = -320 Y = -193 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRubble02a"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "RubbleFall"
+        DeathSound = "/SFX/PillarBoulderDestroyed"
+        DieOnCollision = true
+        DieOnCollisionRequiredVelocity = 700.0
+        HitFx = "RubbleFall"
+        HitSound = "/SFX/PillarBoulderImpact"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "DefaultShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02b"
+        Tallness = 202.0
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = -106 Y = -20 }
+          { X = -69 Y = 20 }
+          { X = 60 Y = 40 }
+          { X = 111 Y = -12 }
+          { X = -3 Y = -59 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRubble02b"
+      InheritFrom = "SurfaceRubble02a"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TartarusRubble02c"
+        Tallness = 80.0
+        Points = [
+          { X = -123 Y = -49 }
+          { X = -51 Y = -12 }
+          { X = 31 Y = -18 }
+          { X = 134 Y = -70 }
+          { X = 49 Y = -114 }
+          { X = -94 Y = -90 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGravemarker02"
+      InheritFrom = "SurfaceRubble02a"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gravemarker_02"
+        Tallness = 150.0
+        Offset = { X = 0 Y = -86 }
+        Points = [
+          { X = -117 Y = -6 }
+          { X = -58 Y = 27 }
+          { X = 34 Y = 34 }
+          { X = 127 Y = -11 }
+          { X = 55 Y = -55 }
+          { X = -87 Y = -43 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_01"
+        Tallness = 600.0
+        Offset = { X = 0 Y = -328 }
+        Points = [
+          { X = -117 Y = -6 }
+          { X = -58 Y = 27 }
+          { X = 34 Y = 34 }
+          { X = 125 Y = 0 }
+          { X = 55 Y = -55 }
+          { X = -87 Y = -43 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_03"
+        Tallness = 600.0
+        Offset = { X = 0 Y = -228 }
+        Points = [
+          { X = -255 Y = 28 }
+          { X = -145 Y = 110 }
+          { X = 255 Y = 60 }
+          { X = 216 Y = -44 }
+          { X = -41 Y = -116 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_04"
+        Tallness = 522.0
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = -187 Y = 4 }
+          { X = -114 Y = 78 }
+          { X = 183 Y = 54 }
+          { X = 161 Y = -56 }
+          { X = -37 Y = -110 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTravelBag01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_TravelBag_01"
+        Tallness = 432.0
+        Offset = { X = 0 Y = -179 }
+        Points = [
+          { X = -284 Y = -35 }
+          { X = -16 Y = 123 }
+          { X = 206 Y = 131 }
+          { X = 287 Y = 39 }
+          { X = -124 Y = -168 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfacePillar03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pillar_03"
+        Tallness = 1272.0
+        Offset = { X = 0 Y = -531 }
+        Points = [
+          { X = -188 Y = -6 }
+          { X = -6 Y = 93 }
+          { X = 173 Y = 8 }
+          { X = -10 Y = -99 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTreelight01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Treelight_01"
+        Tallness = 1272.0
+        Offset = { X = 0 Y = 34 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBarrel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Barrel_01"
+        Tallness = 529.0
+        Offset = { X = 0 Y = -198 }
+        Points = [
+          { X = -215 Y = 18 }
+          { X = -76 Y = 121 }
+          { X = 105 Y = 127 }
+          { X = 245 Y = 26 }
+          { X = 128 Y = -92 }
+          { X = -114 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceSign01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Sign_01"
+        Tallness = 1203.0
+        Offset = { X = 0 Y = -531 }
+        Points = [
+          { X = -282 Y = -117 }
+          { X = 200 Y = 117 }
+          { X = 272 Y = 86 }
+          { X = -213 Y = -154 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBroom01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Broom_01"
+        Tallness = 1197.0
+        Offset = { X = 0 Y = -433 }
+        Points = [
+          { X = -157 Y = 51 }
+          { X = 28 Y = 169 }
+          { X = 237 Y = 44 }
+          { X = 77 Y = -61 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfacePlanks01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Planks_01"
+        Tallness = 1002.0
+        Offset = { X = 0 Y = -327 }
+        Points = [
+          { X = -234 Y = 100 }
+          { X = -197 Y = 137 }
+          { X = 250 Y = -32 }
+          { X = 172 Y = -89 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTrellis01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Trellis_01a"
+        Tallness = 391.0
+        Offset = { X = 0 Y = -266 }
+        Points = [
+          { X = -353 Y = -7 }
+          { X = 53 Y = 208 }
+          { X = 361 Y = 72 }
+          { X = -75 Y = -146 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceWheat01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceWheat01Sway"
+        Tallness = 851.0
+        Offset = { X = 0 Y = -113 }
+        Points = [
+          { X = -171 Y = -32 }
+          { X = -167 Y = 31 }
+          { X = -6 Y = 31 }
+          { X = -11 Y = -27 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceWheat01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceWheat01aSway"
+        Tallness = 813.0
+        Offset = { X = 0 Y = -121 }
+        Points = [
+          { X = -167 Y = -17 }
+          { X = -163 Y = 44 }
+          { X = -19 Y = 34 }
+          { X = -19 Y = 34 }
+          { X = -28 Y = -17 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceWheatClusterSway"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceWheatClusterSway"
+      }
+    }
+    
+    {
+      Name = "SurfaceTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Table_01"
+        Tallness = 473.0
+        Offset = { X = 0 Y = -273 }
+        Points = [
+          { X = -325 Y = -50 }
+          { X = 15 Y = 137 }
+          { X = 351 Y = -59 }
+          { X = 32 Y = -214 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Gable_01"
+        Tallness = 191.0
+        Offset = { X = 0 Y = -54 }
+        Points = [
+          { X = -429 Y = 153 }
+          { X = -309 Y = 230 }
+          { X = 413 Y = -136 }
+          { X = 281 Y = -200 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBush01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Bush_01"
+        Tallness = 490.0
+        Offset = { X = 0 Y = -277 }
+        Points = [
+          { X = -134 Y = -78 }
+          { X = -324 Y = -5 }
+          { X = -65 Y = 77 }
+          { X = 231 Y = 35 }
+          { X = 281 Y = -69 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrop01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceCrop01Sway"
+        Tallness = 182.0
+        Offset = { X = 0 Y = -42 }
+        Points = [
+          { X = -267 Y = 81 }
+          { X = -66 Y = 190 }
+          { X = 239 Y = 143 }
+          { X = 281 Y = -45 }
+          { X = 9 Y = -111 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBush03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Bush_03"
+        Tallness = 245.0
+        Offset = { X = 0 Y = -117 }
+        Points = [
+          { X = -332 Y = -95 }
+          { X = -367 Y = 146 }
+          { X = -5 Y = 227 }
+          { X = 408 Y = 121 }
+          { X = 382 Y = -96 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBush03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Bush_03a"
+        Tallness = 245.0
+        Offset = { X = 0 Y = -117 }
+        Points = [
+          { X = -296 Y = -157 }
+          { X = -365 Y = 85 }
+          { X = -5 Y = 227 }
+          { X = 407 Y = 63 }
+          { X = 181 Y = -162 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBush04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Bush_04"
+        Tallness = 565.0
+        Offset = { X = 0 Y = -254 }
+        Points = [
+          { X = -296 Y = -157 }
+          { X = -365 Y = 85 }
+          { X = -5 Y = 227 }
+          { X = 407 Y = 63 }
+          { X = 181 Y = -162 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceWell01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Well_01"
+        Tallness = 913.0
+        Offset = { X = 0 Y = -407 }
+        Points = [
+          { X = -397 Y = 53 }
+          { X = -176 Y = 237 }
+          { X = 255 Y = 232 }
+          { X = 534 Y = 37 }
+          { X = 355 Y = -230 }
+          { X = -188 Y = -239 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_06"
+        Tallness = 1649.0
+        Offset = { X = 0 Y = -736 }
+        Points = [
+          { X = -272 Y = -8 }
+          { X = -88 Y = 132 }
+          { X = 128 Y = 128 }
+          { X = 256 Y = 8 }
+          { X = 220 Y = -128 }
+          { X = -108 Y = -136 }
+          { X = -108 Y = -136 }
+          { X = -272 Y = -8 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_07"
+        Tallness = 1487.0
+        Offset = { X = 0 Y = -660 }
+        Points = [
+          { X = -121 Y = -44 }
+          { X = -130 Y = 37 }
+          { X = -5 Y = 95 }
+          { X = 115 Y = 50 }
+          { X = 120 Y = -52 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceArch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Arch_01"
+        Tallness = 331.0
+        Offset = { X = 0 Y = -75 }
+        Points = [
+          { X = -426 Y = -148 }
+          { X = 311 Y = 223 }
+          { X = 453 Y = 152 }
+          { X = -282 Y = -221 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceLemonTree01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_LemonTree_01"
+        Tallness = 1094.0
+        Offset = { X = 0 Y = -396 }
+        Points = [
+          { X = -143 Y = 63 }
+          { X = -75 Y = 122 }
+          { X = 114 Y = 113 }
+          { X = 165 Y = 32 }
+          { X = 109 Y = -14 }
+          { X = -90 Y = -13 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrop02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crop_02"
+        Tallness = 324.0
+        Offset = { X = 0 Y = -42 }
+        Points = [
+          { X = -309 Y = 48 }
+          { X = -50 Y = 220 }
+          { X = 325 Y = 202 }
+          { X = 382 Y = -40 }
+          { X = 77 Y = -181 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrop03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crop_03"
+        Tallness = 324.0
+        Offset = { X = 0 Y = -42 }
+        Points = [
+          { X = -309 Y = 48 }
+          { X = -50 Y = 220 }
+          { X = 225 Y = 156 }
+          { X = 242 Y = -61 }
+          { X = -73 Y = -132 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrop05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crop_05"
+        Tallness = 546.0
+        Offset = { X = 0 Y = -213 }
+        Points = [
+          { X = -107 Y = 60 }
+          { X = -5 Y = 97 }
+          { X = 142 Y = 74 }
+          { X = 155 Y = -64 }
+          { X = -12 Y = -96 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrop06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crop_06"
+        Tallness = 1070.0
+        Offset = { X = 0 Y = -490 }
+        Points = [
+          { X = -55 Y = 17 }
+          { X = 23 Y = 50 }
+          { X = 105 Y = 41 }
+          { X = 113 Y = -37 }
+          { X = -18 Y = -52 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceShovel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Shovel_01"
+        Tallness = 946.0
+        Offset = { X = 0 Y = -385 }
+        Points = [
+          { X = -67 Y = 20 }
+          { X = -21 Y = 50 }
+          { X = 175 Y = -48 }
+          { X = 125 Y = -78 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrate01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crate_01"
+        Tallness = 316.0
+        Offset = { X = 0 Y = -115 }
+        Points = [
+          { X = -316 Y = -25 }
+          { X = 61 Y = 155 }
+          { X = 296 Y = 40 }
+          { X = -108 Y = -148 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceCrate01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Crate_01a"
+        Tallness = 316.0
+        Offset = { X = 0 Y = -115 }
+        Points = [
+          { X = -316 Y = -25 }
+          { X = 61 Y = 155 }
+          { X = 296 Y = 40 }
+          { X = -108 Y = -148 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBasket01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Basket_01"
+        Tallness = 475.0
+        Offset = { X = 0 Y = -200 }
+        Points = [
+          { X = -103 Y = -85 }
+          { X = -188 Y = -21 }
+          { X = -132 Y = 62 }
+          { X = 43 Y = 90 }
+          { X = 192 Y = 23 }
+          { X = 123 Y = -86 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBasket01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Basket_01a"
+        Tallness = 450.0
+        Offset = { X = 0 Y = -193 }
+        Points = [
+          { X = -198 Y = 14 }
+          { X = -116 Y = 89 }
+          { X = 124 Y = 89 }
+          { X = 215 Y = 9 }
+          { X = 125 Y = -91 }
+          { X = -112 Y = -88 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceChair01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Chair_01"
+        Tallness = 726.0
+        Offset = { X = 0 Y = -275 }
+        Points = [
+          { X = -131 Y = 22 }
+          { X = 41 Y = 108 }
+          { X = 253 Y = 2 }
+          { X = 85 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfacePitchfork01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pitchfork_01"
+        Tallness = 931.0
+        Offset = { X = 0 Y = -352 }
+        Points = [
+          { X = -123 Y = 17 }
+          { X = 15 Y = 95 }
+          { X = 223 Y = -17 }
+          { X = 82 Y = -86 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceScarecrow01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Scarecrow_01"
+        Tallness = 1298.0
+        Offset = { X = 0 Y = -531 }
+        Points = [
+          { X = -302 Y = 104 }
+          { X = -160 Y = 173 }
+          { X = 335 Y = -62 }
+          { X = 204 Y = -117 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceFlowers01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceFlowers01Sway"
+        Tallness = 164.0
+        Offset = { X = 0 Y = 64 }
+        Points = [
+          { X = -97 Y = 6 }
+          { X = -44 Y = 59 }
+          { X = 32 Y = 75 }
+          { X = 106 Y = 29 }
+          { X = 66 Y = -26 }
+          { X = -44 Y = -45 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01a"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01a"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01b"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01b"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01c"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01c"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01d"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01d"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01e"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01e"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01f"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01f"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundOcean"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_Ocean"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundOceana"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBackgroundOceanA"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundOceanb"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBackgroundOceanB"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundOceanc"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_Oceanc"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundOceanc_Ripple"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBackgroundOceanCRipple"
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundReflection"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBackgroundReflection"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundSky"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_Sky"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackgroundClouds"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_Clouds"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01aSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01a_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01bSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01b_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01cSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01c_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01dSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01d_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01eSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01e_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBackground01fSunrise"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Background_01f_Sunrise"
+        Tallness = 600.0
+        Offset = { X = 0 Y = 79 }
+      }
+    }
+    
+    {
+      Name = "SurfaceRock01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_01"
+        Tallness = 187.0
+        Offset = { X = 0 Y = -91 }
+        Points = [
+          { X = -171 Y = -41 }
+          { X = -87 Y = 22 }
+          { X = 69 Y = 39 }
+          { X = 162 Y = 1 }
+          { X = 77 Y = -68 }
+          { X = -90 Y = -73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceSnowpile01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsSnow"
+        Graphic = "Tilesets\Surface\Surface_Snowpile_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -91 }
+        Points = [
+          { X = 90 Y = -129 }
+          { X = 30 Y = -126 }
+          { X = -33 Y = -118 }
+          { X = -143 Y = -65 }
+          { X = -100 Y = -13 }
+          { X = 56 Y = -35 }
+          { X = 135 Y = -101 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBaseTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_BaseTile_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -91 }
+      }
+    }
+    
+    {
+      Name = "SurfaceDirt01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Dirt_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -91 }
+      }
+    }
+    
+    {
+      Name = "SurfaceIcicle01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Icicle_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -240 }
+        Points = [
+          { X = 259 Y = -68 }
+          { X = 154 Y = -107 }
+          { X = -182 Y = 45 }
+          { X = -57 Y = 94 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRock02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_02"
+        Tallness = 247.0
+        Offset = { X = 0 Y = -100 }
+        Points = [
+          { X = -29 Y = -63 }
+          { X = -152 Y = -13 }
+          { X = -74 Y = 42 }
+          { X = 80 Y = 33 }
+          { X = 142 Y = -5 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceHouse01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_House_01"
+        Tallness = 1453.0
+        Offset = { X = 0 Y = -519 }
+        Points = [
+          { X = 518 Y = 535 }
+          { X = 950 Y = 301 }
+          { X = -521 Y = -429 }
+          { X = -1058 Y = -162 }
+          { X = -359 Y = 388 }
+          { X = -21 Y = 549 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfacePillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Pillar_02"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -120 }
+        Points = [
+          { X = 137 Y = -74 }
+          { X = 25 Y = -86 }
+          { X = -187 Y = -10 }
+          { X = -113 Y = 58 }
+          { X = 104 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceBranch01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBranch01Sway"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -120 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBranch01a"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBranch01aSway"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -120 }
+      }
+    }
+    
+    {
+      Name = "SurfaceBranch02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceBranch02Sway"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -120 }
+      }
+    }
+    
+    {
+      Name = "SurfaceShrub01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Shrub_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -101 }
+        Points = [
+          { X = 194 Y = -95 }
+          { X = -79 Y = -96 }
+          { X = -275 Y = 33 }
+          { X = -168 Y = 107 }
+          { X = 158 Y = 75 }
+          { X = 250 Y = -23 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfacePlanter01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Planter_01"
+        Tallness = 789.0
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = -307 Y = 0 }
+          { X = 93 Y = 204 }
+          { X = 328 Y = 97 }
+          { X = -89 Y = -113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRock06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_06"
+        Tallness = 221.0
+        Offset = { X = 0 Y = -101 }
+        Points = [
+          { X = 194 Y = -95 }
+          { X = -79 Y = -96 }
+          { X = -215 Y = -20 }
+          { X = -106 Y = 84 }
+          { X = 71 Y = 88 }
+          { X = 250 Y = -23 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "SurfaceGrasses01Sway"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 80.0
+        OccluderPoints = [
+          { X = 17 Y = -10 }
+          { X = -32 Y = -17 }
+          { X = -104 Y = 2 }
+          { X = -141 Y = 43 }
+          { X = -121 Y = 64 }
+          { X = -51 Y = 63 }
+          { X = 21 Y = 38 }
+          { X = 40 Y = 7 }
+        ]
+        Offset = { X = 0 Y = -59 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_02"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 80.0
+        OccluderPoints = [
+          { X = 17 Y = -10 }
+          { X = -32 Y = -17 }
+          { X = -104 Y = 2 }
+          { X = -141 Y = 43 }
+          { X = -121 Y = 64 }
+          { X = -51 Y = 63 }
+          { X = 21 Y = 38 }
+          { X = 40 Y = 7 }
+        ]
+        Offset = { X = 0 Y = -59 }
+        Points = [
+          { X = 293 Y = 275 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses03"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_03"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -59 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_04"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 565.0
+        Offset = { X = 0 Y = -185 }
+        Points = [
+          { X = -307 Y = -9 }
+          { X = -168 Y = 125 }
+          { X = 197 Y = 152 }
+          { X = 345 Y = -25 }
+          { X = 115 Y = -162 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_05"
+        Tallness = 565.0
+        Offset = { X = 0 Y = -185 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses05a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_05a"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -91 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_08"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -91 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_06"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 252.0
+        Offset = { X = 0 Y = -48 }
+      }
+    }
+    
+    {
+      Name = "SurfaceGrasses07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheat"
+        Graphic = "Tilesets\Surface\Surface_Grasses_07"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 252.0
+        Offset = { X = 0 Y = -185 }
+        Points = [
+          { X = -299 Y = -90 }
+          { X = -51 Y = 88 }
+          { X = 226 Y = 41 }
+          { X = 361 Y = -155 }
+          { X = 13 Y = -251 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceFlowers02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Flowers_02"
+        Tallness = 441.0
+        Offset = { X = 0 Y = -204 }
+        Points = [
+          { X = -40 Y = -92 }
+          { X = -192 Y = -24 }
+          { X = -103 Y = 56 }
+          { X = 88 Y = 51 }
+          { X = 151 Y = -27 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainSnowLumps03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsSnow"
+        Graphic = "Tilesets\Surface\Surface_Terrain_SnowLumps_03"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+        Points = [
+          { X = 109 Y = -100 }
+          { X = -25 Y = -78 }
+          { X = -223 Y = 53 }
+          { X = -83 Y = 109 }
+          { X = 121 Y = 22 }
+          { X = 200 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainBrick01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_TerrainBrick_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainCombined01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_TerrainCombined_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainCombined02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_TerrainCombined_02"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "SurfaceAboveCombined01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_AboveCombined_01"
+        Tallness = 222.0
+        Offset = { X = 0 Y = -12 }
+        Points = [
+          { X = -1644 Y = 278 }
+          { X = -1541 Y = 728 }
+          { X = -1068 Y = 986 }
+          { X = 641 Y = 447 }
+          { X = 1888 Y = -410 }
+          { X = 1424 Y = -817 }
+          { X = -1316 Y = -340 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRock03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_03"
+        Tallness = 328.0
+        Offset = { X = 0 Y = -116 }
+        Points = [
+          { X = 96 Y = -208 }
+          { X = -471 Y = 63 }
+          { X = -144 Y = 265 }
+          { X = 467 Y = -24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRock04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_04"
+        Tallness = 602.0
+        Offset = { X = 0 Y = -231 }
+        Points = [
+          { X = -215 Y = -191 }
+          { X = -474 Y = -3 }
+          { X = -256 Y = 202 }
+          { X = 107 Y = 190 }
+          { X = 479 Y = 52 }
+          { X = 402 Y = -118 }
+          { X = 157 Y = -222 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceRock05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Rock_05"
+        Tallness = 1306.0
+        Offset = { X = 0 Y = -302 }
+        Points = [
+          { X = 1089 Y = -135 }
+          { X = 373 Y = -420 }
+          { X = -991 Y = 241 }
+          { X = -298 Y = 611 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceTree02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Tree_02"
+        Tallness = 756.0
+        Offset = { X = 0 Y = -354 }
+        Points = [
+          { X = -258 Y = -34 }
+          { X = -32 Y = 18 }
+          { X = 43 Y = 18 }
+          { X = 489 Y = -34 }
+          { X = -7 Y = -36 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceWall01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Wall_01a"
+        Tallness = 756.0
+        Offset = { X = 0 Y = -429 }
+        Points = [
+          { X = 142 Y = -188 }
+          { X = -236 Y = -14 }
+          { X = -236 Y = 60 }
+          { X = -125 Y = 71 }
+          { X = -14 Y = 32 }
+          { X = 229 Y = -92 }
+          { X = 231 Y = -180 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SurfaceMoon01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Moon_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "SurfaceStars01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Stars_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "SurfaceStars02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SurfaceStarCluster"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainSnowLumps01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsSnow"
+        Graphic = "Tilesets\Surface\Surface_Terrain_SnowLumps_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainSnowLumps02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsSnow"
+        Graphic = "Tilesets\Surface\Surface_Terrain_SnowLumps_02"
+        Tallness = 80.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainSnowEdge01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsSnow"
+        Graphic = "Tilesets\Surface\Surface_Terrain_SnowEdge_01"
+        Tallness = 80.0
+        Offset = { X = 0 Y = -12 }
+      }
+    }
+    
+    {
+      Name = "SurfaceTerrainHadesTombDecal"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Surface\Surface_Terrain_SnowLumps_02"
+        Tallness = 80.0
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+  ]
+}

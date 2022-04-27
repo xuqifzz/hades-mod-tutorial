@@ -1,0 +1,186 @@
+{
+  Animations = [
+
+    /* Crawler */
+    
+    {
+      Name = "EnemyCrawlerIdle"
+      FilePath = "Animations\Crawler\CrawlerIdle\CrawlerIdle"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "EnemyCrawlerBurrow"
+      FilePath = "Animations\Crawler\CrawlerBurrow\CrawlerBurrow"
+      ChainTo = "EnemyCrawlerIdle"
+      Type = "Book"
+      LoopFramesOnly = true
+      Duration = 1.9
+      Loop = false
+      ZWobbleDistance = 2
+      ZWobbleSpeed = 60
+      EndFrame = 1
+      NumAngles = 32
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      CancelOnOwnerMove = true
+      StartRed = 0.5
+      StartGreen = 0.5
+      StartBlue = 0.5
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      StartOffsetZ = -10
+      EndOffsetZ = 6
+      StartScale = 0.4
+      EndScale = 1.5
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+      Sound = "/SFX/Enemy Sounds/Crawler/CrawlerClawLoop"
+      StopSoundOnFinishFade = 0.2,
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "EnemyCrawlerBurrowFast"
+      InheritFrom = "EnemyCrawlerBurrow"
+      Duration = 0.75
+    }
+    
+    {
+      Name = "EnemyCrawlerReburrow"
+      FilePath = "Animations\Crawler\CrawlerDigging\CrawlerDigging"
+      ChainTo = "EnemyCrawlerIdle"
+      Type = "Book"
+      LoopFramesOnly = true
+      Duration = 1.0
+      Loop = false
+      ZWobbleDistance = 2
+      ZWobbleSpeed = 60
+      EndFrame = 1
+      NumAngles = 32
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -20.0
+      CancelOnOwnerMove = true
+      StartRed = 0.5
+      StartGreen = 0.5
+      StartBlue = 0.5
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      StartScale = 1.1
+      EndScale = 0.75
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+      HoldLastFrame = true
+      LocationFromOwner = "Take"
+      Sound = "/SFX/Enemy Sounds/RatThug/RatThugSpawnLoop"
+      StopSoundOnFinishFade = 0.2
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyCrawlerRun"
+      FilePath = "Animations\Crawler\CrawlerRun\CrawlerRun"
+      Type = "Slide"
+      EndFrame = 10
+      Loop = true
+      NumAngles = 32
+      NumFrames = 10
+      StartFrame = 1
+      OffsetY = -40.0
+      CancelOnOwnerMove = true
+      NativeMoveSpeed = 600.0
+      Sound = "/SFX/Enemy Sounds/Crawler/CrawlerClawLoop"
+      StopSoundOnFinishFade = 0.5
+      Slides = [
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+      ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+       {
+      Name = "EnemyCrawlerHowling"
+      FilePath = "Animations\Crawler\CrawlerHowling\CrawlerHowling"
+      Type = "Book"
+      EndFrame = 1
+      Loop = true
+      NumAngles = 32
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      CancelOnOwnerMove = false
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+    {
+      Name = "EnemyCrawlerMiniBossDeath"
+      InheritFrom = "EnemyCrawlerHowling"
+      AngleFromOwner = "Ignore"
+      NumFrames = 2
+      NumAngles = 1
+      StartScale = 1
+      EndScale = 1.1
+      EaseIn = 0
+      EaseOut = 1
+      StartFrame = 20
+      EndFrame = 21
+      PlaySpeed = 30
+      Loop = false
+      LoopFramesOnly = true
+      Duration = 0.6
+      ColorFromOwner = "Ignore"
+      CreateAnimation = "HitSparkEnemyDamagedPhysicalRapid"
+      ChainTo = "EnemyCrawlerMiniBossDeathGib"
+      OwnerImmobile = true
+    }
+  ]
+}

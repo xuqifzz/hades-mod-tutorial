@@ -1,0 +1,691 @@
+{
+  Animations = [
+
+      
+    /*WretchAssassin*/
+
+   {
+      Name = "EnemyWretchAssassin_Idle"
+      FilePath = "Animations\WretchAssassin\Idle\wretchAssassinIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_WretchAssassin_Idle_Bink"
+      MoveAnimation = "EnemyWretchAssassin_Move"
+      PlaySpeed = 30.0
+      Loop = true
+      EndFrame = 40
+      NumAngles = 16
+      NumFrames = 40
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+  /*{
+      Name = "EnemyWretchAssassin_Move"
+      FilePath = "Animations\WretchAssassin\Move\wretchAssassinMove"
+      Type = "Book"
+      VideoTexture = "Enemy_WretchAssassin_Move_Bink"
+      PlaySpeed = 30
+      EndFrame = 20
+      Loop = true
+      NumAngles = 16
+      NumFrames = 20
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }*/
+    
+
+
+       {
+      Name = "EnemyWretchAssassin_Teleport"
+      FilePath = "Animations\WretchAssassin\Teleport\wretchAssassinTeleport"
+      Type = "Book"
+      VideoTexture = "Enemy_WretchAssassin_Teleport_Bink"
+      PlaySpeed = 30.0
+      EndFrame = 14
+      NumAngles = 16
+      NumFrames = 14
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Sound = "/SFX/Enemy Sounds/Hades/HadesDash"
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "EnemyWretchAssassinOnHit"
+      FilePath = "Animations\WretchAssassin\OnHit\wretchAssassinOnHit"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "EnemyWretchAssassinOnHit1" }
+        { Name = "EnemyWretchAssassinOnHit2" }
+      ]
+    }
+
+    {
+      Name = "EnemyWretchAssassinOnHit1"
+      FilePath = "Animations\WretchAssassin\OnHit\wretchAssassinOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassin_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 2 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyWretchAssassinOnHit2"
+      FilePath = "Animations\WretchAssassin\OnHit\wretchAssassinOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassin_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "EnemyWretchAssassinDeath"
+      InheritFrom = "EnemyWretchAssassin_Idle"
+      FilePath = "Animations\WretchAssassin\DeathVFX\WretchAssassinDeathVFX"
+      Type = "Book"
+      VideoTexture = "Enemy_WretchAssassin_DeathVFX_Bink"
+      Sound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+      EndFrame = 30
+      Loop = false
+      NumFrames = 30
+      PlaySpeed = 30.0
+      StartFrame = 1
+    }
+
+/*___Range___*/
+
+      {
+      Name = "EnemyWretchAssassinRange_Start"
+      ChainTo = "EnemyWretchAssassinRange_Fire"
+      FilePath = "Animations\WretchAssassin\Range\wretchAssassinRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinRange_Bink"
+      Loop = false
+      EndFrame = 22
+      NumAngles = 16
+      NumFrames = 22
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 2 }/*preRange*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+          
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyWretchAssassinRange_Fire"
+      ChainTo = "EnemyWretchAssassinRange_ReturnToIdle"
+      FilePath = "Animations\WretchAssassin\Range\wretchAssassinRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinRange_Bink"
+      Loop = false
+      EndFrame = 22
+      NumAngles = 16
+      NumFrames = 22
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preRange*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WretchedShadeAssassin/EmoteRangedAttacking" }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WretchedShadeAssassin/AssassinKnifeThrow" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WretchedShadeAssassin/AssassinKnifeThrow" }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WretchedShadeAssassin/EmoteRangedAttacking" }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/WretchedShadeAssassin/AssassinKnifeThrow" }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+     
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+     
+  
+
+    {
+      Name = "EnemyWretchAssassinRange_ReturnToIdle"
+      ChainTo = "EnemyWretchAssassin_Idle"
+      FilePath = "Animations\WretchAssassin\Range\wretchAssassinRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinRange_Bink"
+      Loop = false
+      EndFrame = 22
+      NumAngles = 16
+      NumFrames = 22
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    /*___Stab___*/
+
+      {
+      Name = "EnemyWretchAssassinStab_Start"
+      ChainTo = "EnemyWretchAssassinStab_Fire"
+      FilePath = "Animations\WretchAssassin\Stab\wretchAssassinStab"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinStab_Bink"
+      Loop = false
+      EndFrame = 72
+      NumAngles = 16
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 2 }/*preStab*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 99 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIDle*/
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 72*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyWretchAssassinStab_Fire"
+      ChainTo = "EnemyWretchAssassinStab_ReturnToIdle"
+      FilePath = "Animations\WretchAssassin\Stab\wretchAssassinStab"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinStab_Bink"
+      Loop = false
+      EndFrame = 72
+      NumAngles = 16
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preStab*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 72*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+     
+  
+
+    {
+      Name = "EnemyWretchAssassinStab_ReturnToIdle"
+      ChainTo = "EnemyWretchAssassin_Idle"
+      FilePath = "Animations\WretchAssassin\Stab\wretchAssassinStab"
+      Type = "Slide"
+      VideoTexture = "Enemy_WretchAssassinStab_Bink"
+      Loop = false
+      EndFrame = 72
+      NumAngles = 16
+      NumFrames = 72
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 72*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     
+
+
+
+
+
+
+
+
+  ]
+}

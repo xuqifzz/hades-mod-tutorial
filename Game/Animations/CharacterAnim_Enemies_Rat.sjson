@@ -1,0 +1,606 @@
+{
+  Animations = [
+
+      
+    /*Rat Thug*/
+
+   {
+      Name = "EnemyRatThugIdle"
+      FilePath = "Animations\RatThug\RatThugIdle\RatThugIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_RatThugIdle_Bink"
+      PlaySpeed = 30.0
+      Loop = true
+      EndFrame = 30
+      NumAngles = 64
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyRatThugBurrow"
+      FilePath = "Animations\RatThug\RatThugBurrow\RatThugBurrow"
+      ChainTo = "EnemyRatThugIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_RatThugBurrow_Bink"
+      PlaySpeed = 24.0
+      LoopFramesOnly = true
+      Duration = 1.9
+      EndFrame = 4
+      NumAngles = 32
+      NumFrames = 4
+      StartFrame = 1
+      OffsetY = -80.0
+      CancelOnOwnerMove = true
+      StartScale = 0.5
+      EndScale = 1.1
+      StartOffsetY = 30
+      EndOffsetY = 0
+      StartRed = 0
+      StartGreen = 0
+      StartBlue = 0
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      EaseIn = 0.5
+      EaseOut = 1
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+  {
+      Name = "EnemyRatThugMove"
+      FilePath = "Animations\RatThug\RatThugMove\RatThugMove"
+      Type = "Book"
+      VideoTexture = "Enemy_RatThugMove_Bink"
+      PlaySpeed = 30
+      NativeMoveSpeed = 280.0
+      EndFrame = 24
+      Loop = true
+      NumAngles = 64
+      NumFrames = 24
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/RatThug/RatFootsteps" Frame = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/RatThug/RatFootsteps" Frame = 5 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/RatThug/RatFootsteps" Frame = 14 }
+      ]
+    }
+    
+     {
+      Name = "EnemyRatThugOnHit"
+      FilePath = "Animations\RatThug\RatThugOnHit\RatThugOnHit"
+      Type = "Book"
+      VideoTexture = "Enemy_RatThugOnHit_Bink"
+      EndFrame = 18
+      Loop = false
+      PlaySpeed = 30
+      NumAngles = 32
+      NumFrames = 18
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      AllowRestart = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*____Shake_____*/
+    {
+      Name = "EnemyRatThugShake_Start"
+      ChainTo = "EnemyRatThugShake_Loop"
+      FilePath = "Animations\RatThug\RatThugShake\RatThugShake"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugShake_Bink"
+      Loop = false
+      EndFrame = 35
+      NumAngles = 32
+      NumFrames = 35
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      ShakeDistance = 10.0
+      ShakeSpeed = 1000.0
+      Sound = "/SFX/Enemy Sounds/RatThug/EmoteCharging"
+      Slides = [
+/*collapse*/
+        { DurationFrames = 2 }/*preShake*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 8 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*ShakeLoopStart*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ShakeLoopEnd*/
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 35*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyRatThugShake_Loop"
+      ChainTo = "EnemyRatThugShake_ReturnToIdle"
+      FilePath = "Animations\RatThug\RatThugShake\RatThugShake"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugShake_Bink"
+      Loop = true
+      EndFrame = 35
+      NumAngles = 32
+      NumFrames = 35
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      ShakeDistance = 10.0
+      /*ShakeSpeed = 1000.0*/
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preShake*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*ShakeLoopStart*/
+       
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*Frame 20*/
+        
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*ShakeLoopEnd*/
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 35*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyRatThugShake_ReturnToIdle"
+      ChainTo = "null"
+      FilePath = "Animations\RatThug\RatThugShake\RatThugShake"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugShake_Bink"
+      Loop = false
+      EndFrame = 35
+      NumAngles = 32
+      NumFrames = 35
+      StartFrame = 1
+      OffsetY = -60.0
+      CancelOnOwnerMove = true
+      ShakeDistance = 10.0
+      /*ShakeSpeed = 1000.0*/
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preShake*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ShakeLoopStart*/
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ShakeLoopEnd*/
+        { DurationFrames = 2 }/*returnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 35*/
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+/*_____Bite_____*/
+    {
+      Name = "EnemyRatThugAttackBite_Start"
+      ChainTo = "EnemyRatThugAttackBite_ChargeLoop"
+      FilePath = "Animations\RatThug\RatThugAttackBite\RatThugAttackBite"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugAttackBite_Bink"
+      EndFrame = 45
+      NumAngles = 32
+      NumFrames = 45
+      StartFrame = 1
+      OffsetY = -60.0
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 2 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*ChargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 45*/
+        
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyRatThugAttackBite_ChargeLoop"
+      ChainTo = "EnemyRatThugAttackBite_Fire"
+      FilePath = "Animations\RatThug\RatThugAttackBite\RatThugAttackBite"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugAttackBite_Bink"
+      EndFrame = 45
+      NumAngles = 32
+      NumFrames = 45
+      StartFrame = 1
+      OffsetY = -60.0
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*ChargeLoopStart*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 45*/
+        
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyRatThugAttackBite_Fire"
+      ChainTo = "EnemyRatThugAttackBite_ReturnToIdle"
+      FilePath = "Animations\RatThug\RatThugAttackBite\RatThugAttackBite"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugAttackBite_Bink"
+      EndFrame = 45
+      NumAngles = 32
+      NumFrames = 45
+      StartFrame = 1
+      OffsetY = -60.0
+      OwnerNoInvulnerableCoverage = true
+      DangerDistance = 350
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopEnd*/
+        { DurationFrames = 1 }/*Attack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        { DurationFrames = 6 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 45*/
+       
+      ]
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyRatThugAttackBite_ReturnToIdle"
+      ChainTo = "null"
+      FilePath = "Animations\RatThug\RatThugAttackBite\RatThugAttackBite"
+      Type = "Slide"
+      VideoTexture = "Enemy_RatThugAttackBite_Bink"
+      EndFrame = 45
+      NumAngles = 32
+      NumFrames = 45
+      StartFrame = 1
+      OffsetY = -60.0
+      OwnerNoInvulnerableCoverage = true
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopStart*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 45*/
+       
+      ]
+    Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  ]
+}

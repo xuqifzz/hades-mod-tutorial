@@ -1,0 +1,6691 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "HouseBloodPool01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_BloodPool_01"
+        Offset = { X = 0 Y = -38 }
+      }
+    }
+    
+    {
+      Name = "HouseChair01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chair_01"
+        Offset = { X = 0 Y = -174 }
+        Points = [
+          { X = -19 Y = -66 }
+          { X = -149 Y = -6 }
+          { X = 38 Y = 89 }
+          { X = 157 Y = 24 }
+        ]
+        Using = [
+          { Name = "HouseChair03" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseChair02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chair_02"
+        Tallness = 1090.0
+        Offset = { X = 0 Y = -429 }
+        Points = [
+          { X = -327 Y = -194 }
+          { X = -143 Y = 227 }
+          { X = 263 Y = 125 }
+          { X = 76 Y = -257 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseChair03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chair_03"
+        Tallness = 169.0
+        Offset = { X = 0 Y = -173 }
+        Points = [
+          { X = -137 Y = -1 }
+          { X = 15 Y = 73 }
+          { X = 165 Y = 3 }
+          { X = 8 Y = -73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseAquarium01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/FishTankBubblesLoop"
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseAquarium"
+        Tallness = 1326.0
+        Offset = { X = 0 Y = -303 }
+        Points = [
+          { X = -597 Y = -2 }
+          { X = 144 Y = 345 }
+          { X = 863 Y = 1 }
+          { X = 164 Y = -377 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCouch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Couch_01"
+        Offset = { X = 0 Y = -80 }
+        Points = [
+          { X = 39 Y = 295 }
+          { X = 393 Y = 102 }
+          { X = 377 Y = -60 }
+          { X = -129 Y = -293 }
+          { X = -413 Y = -70 }
+          { X = -397 Y = 118 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMirror03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Mirror_03"
+        Tallness = 1136.0
+        Offset = { X = 0 Y = -483 }
+        Points = [
+          { X = -368 Y = -159 }
+          { X = -186 Y = 46 }
+          { X = 201 Y = 99 }
+          { X = 374 Y = 5 }
+          { X = -276 Y = -296 }
+          { X = -370 Y = -256 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCouch02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Couch_02"
+        Offset = { X = 0 Y = -84 }
+        Points = [
+          { X = 153 Y = -254 }
+          { X = -407 Y = 14 }
+          { X = -447 Y = 130 }
+          { X = -434 Y = 171 }
+          { X = -141 Y = 290 }
+          { X = 382 Y = 8 }
+          { X = 405 Y = -231 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCouch02A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Couch_02A"
+        Offset = { X = 0 Y = -84 }
+        Points = [
+          { X = 153 Y = -254 }
+          { X = -407 Y = 14 }
+          { X = -447 Y = 130 }
+          { X = -434 Y = 171 }
+          { X = -141 Y = 290 }
+          { X = 382 Y = 8 }
+          { X = 405 Y = -231 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCouch03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Couch_03"
+        Tallness = 790.0
+        Offset = { X = 0 Y = -392 }
+        Points = [
+          { X = -678 Y = 71 }
+          { X = -210 Y = 305 }
+          { X = 382 Y = 142 }
+          { X = 694 Y = -169 }
+          { X = 245 Y = -385 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePedestal01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pedestal_01"
+        Tallness = 420.0
+        Offset = { X = 0 Y = -154 }
+        Points = [
+          { X = 373 Y = 19 }
+          { X = 3 Y = -161 }
+          { X = -369 Y = 14 }
+          { X = 7 Y = 214 }
+        ]
+        Using = [
+          { Name = "HousePedestal02" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePedestal02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pedestal_02"
+        Tallness = 420.0
+        Offset = { X = 0 Y = -154 }
+        Points = [
+          { X = 397 Y = 27 }
+          { X = 2 Y = -163 }
+          { X = -394 Y = 25 }
+          { X = 9 Y = 221 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWatercooler01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Watercooler_01"
+        Tallness = 1379.0
+        Offset = { X = 0 Y = -613 }
+        Points = [
+          { X = 321 Y = -7 }
+          { X = -11 Y = -149 }
+          { X = -322 Y = 4 }
+          { X = 14 Y = 165 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFileCabinet01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_FileCabinet_01"
+        Tallness = 1379.0
+        Offset = { X = 0 Y = -420 }
+        Points = [
+          { X = 684 Y = 57 }
+          { X = -143 Y = -352 }
+          { X = -668 Y = -95 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFileCabinet02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_FileCabinet_02"
+        Tallness = 1379.0
+        Offset = { X = 0 Y = -707 }
+        Points = [
+          { X = 681 Y = 65 }
+          { X = -188 Y = -318 }
+          { X = -668 Y = -95 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFileCabinet03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_FileCabinet_03"
+        Tallness = 1379.0
+        Offset = { X = 0 Y = -1135 }
+        Points = [
+          { X = 681 Y = 65 }
+          { X = -188 Y = -318 }
+          { X = -668 Y = -95 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+          { X = 188 Y = 319 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHangingFood01"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_HangingFood_01"
+        Tallness = 1379.0
+        Offset = { X = 0 Y = -19 }
+      }
+    }
+    
+    {
+      Name = "HouseWeaponDisplay01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WeaponDisplay_01"
+        Offset = { X = 0 Y = -882 }
+        Points = [
+          { X = -882 Y = 444 }
+          { X = 191 Y = 379 }
+          { X = 453 Y = 187 }
+          { X = 990 Y = -456 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWeaponDisplay01D"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WeaponDisplay_01D"
+        Offset = { X = 0 Y = -882 }
+        Points = [
+          { X = -882 Y = 444 }
+          { X = 191 Y = 379 }
+          { X = 453 Y = 187 }
+          { X = 990 Y = -456 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDecorativePanel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DecorativePanel_01"
+        Offset = { X = 0 Y = -492 }
+      }
+    }
+    
+    {
+      Name = "HouseDesk01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Desk_01"
+        Offset = { X = 0 Y = -154 }
+        Points = [
+          { X = 116 Y = 339 }
+          { X = 458 Y = 156 }
+          { X = -64 Y = -118 }
+          { X = -432 Y = 68 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseSundial01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Sundial_01"
+        Tallness = 978.0
+        Offset = { X = 0 Y = -404 }
+        Points = [
+          { X = 509 Y = -32 }
+          { X = 360 Y = -228 }
+          { X = -269 Y = -258 }
+          { X = -520 Y = -41 }
+          { X = -401 Y = 150 }
+          { X = -6 Y = 253 }
+          { X = 416 Y = 137 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseInkwell01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Inkwell_01"
+        Offset = { X = 0 Y = -174 }
+        Points = [
+          { X = -61 Y = 25 }
+          { X = -34 Y = 41 }
+          { X = -2 Y = 27 }
+          { X = -29 Y = 9 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePapers02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "InfernalContractBedroom"
+        Tallness = 309.0
+        Offset = { X = 0 Y = -196 }
+        Points = [
+          { X = 80 Y = -204 }
+          { X = -301 Y = -19 }
+          { X = -105 Y = 90 }
+          { X = 280 Y = -106 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFlourish01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Flourish_01"
+        Offset = { X = 0 Y = -631 }
+        Points = [
+          { X = 207 Y = 101 }
+          { X = 5 Y = -9 }
+          { X = -195 Y = 104 }
+          { X = -8 Y = 227 }
+        ]
+        Using = [
+          { Name = "HouseFlourish01a" }
+          { Name = "HouseFlourish01b" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFlourish01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Flourish_01b"
+        Offset = { X = 0 Y = -631 }
+        Points = [
+          { X = 207 Y = 101 }
+          { X = 5 Y = -9 }
+          { X = -195 Y = 104 }
+          { X = -8 Y = 227 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFlourish01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Flourish_01a"
+        Offset = { X = 0 Y = -631 }
+        Points = [
+          { X = 207 Y = 101 }
+          { X = 5 Y = -9 }
+          { X = -195 Y = 104 }
+          { X = -8 Y = 227 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDogBowl01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DogBowl_01"
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = 270 Y = 7 }
+          { X = 86 Y = -114 }
+          { X = -87 Y = -129 }
+          { X = -242 Y = -32 }
+          { X = -262 Y = 95 }
+          { X = -79 Y = 196 }
+          { X = 94 Y = 190 }
+          { X = 246 Y = 110 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCauldron01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cauldron_01"
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = 227 Y = 43 }
+          { X = 188 Y = -50 }
+          { X = -38 Y = -90 }
+          { X = -235 Y = -55 }
+          { X = -256 Y = 56 }
+          { X = 3 Y = 117 }
+          { X = 157 Y = 103 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseKitchenOven01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/FireAmbientLoopTORCHES"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_KitchenOven_01"
+        Offset = { X = 0 Y = -270 }
+        Points = [
+          { X = 321 Y = 12 }
+          { X = 271 Y = -213 }
+          { X = 85 Y = -335 }
+          { X = -303 Y = -209 }
+          { X = -308 Y = 35 }
+          { X = -63 Y = 188 }
+          { X = 157 Y = 103 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFountain01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseFountain01"
+        Tallness = 2479.0
+        Offset = { X = 0 Y = -957 }
+        Points = [
+          { X = 785 Y = -389 }
+          { X = 526 Y = -541 }
+          { X = -571 Y = -14 }
+          { X = -710 Y = 223 }
+          { X = -254 Y = 391 }
+          { X = 343 Y = 342 }
+          { X = 607 Y = 239 }
+          { X = 741 Y = 87 }
+          { X = 785 Y = -41 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseClawmarks01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Clawmarks_01"
+        Offset = { X = 0 Y = -100 }
+      }
+    }
+    
+    {
+      Name = "HouseKitchenFlame01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_KitchenFlame_01"
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = 309 Y = -104 }
+          { X = 145 Y = -168 }
+          { X = -104 Y = -173 }
+          { X = -309 Y = -99 }
+          { X = -352 Y = 51 }
+          { X = -167 Y = 140 }
+          { X = 188 Y = 148 }
+          { X = 366 Y = 52 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLiquorShelf01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_LiquorShelf_01"
+        Tallness = 1935.0
+        Offset = { X = 0 Y = -823 }
+        Points = [
+          { X = 212 Y = -103 }
+          { X = -354 Y = 164 }
+          { X = -164 Y = 265 }
+          { X = 205 Y = 265 }
+          { X = 402 Y = 161 }
+          { X = 380 Y = -58 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_01"
+        Tallness = 1639.0
+        Offset = { X = 0 Y = -659 }
+        Points = [
+          { X = -357 Y = 299 }
+          { X = 422 Y = -129 }
+          { X = 231 Y = -153 }
+          { X = -360 Y = 146 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoor01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_01a"
+        Tallness = 1815.0
+        Offset = { X = 0 Y = -724 }
+        Points = [
+          { X = -259 Y = 243 }
+          { X = 344 Y = -66 }
+          { X = 261 Y = -102 }
+          { X = -344 Y = 204 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseOfficeDoor"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_01a"
+        Tallness = 2218.0
+        Interact = 
+        {
+          Distance = 170.0
+        }
+        Offset = { X = 0 Y = -718 }
+        Points = [
+          { X = -291 Y = 243 }
+          { X = 347 Y = -76 }
+          { X = 284 Y = -108 }
+          { X = -353 Y = 212 }
+        ]
+        Using = [
+          { Name = "HouseDoor01a_Open" }
+          { Name = "HouseDoor01a_Close" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseOfficeDoorLocked"
+      InheritFrom = "HouseOfficeDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HouseHadesDoor"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_03"
+        Tallness = 2035.0
+        Interact = 
+        {
+          Distance = 175.0
+          OffsetX = 150.0
+        }
+        Offset = { X = 0 Y = -831 }
+        Points = [
+          { X = -292 Y = 254 }
+          { X = 392 Y = -82 }
+          { X = 250 Y = -150 }
+          { X = -411 Y = 180 }
+        ]
+        Using = [
+          { Name = "HouseDoor03_Open" }
+          { Name = "HouseDoor03_Close" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHadesDoorLocked"
+      InheritFrom = "HouseHadesDoor"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 2047.0
+        Offset = { X = 0 Y = -813 }
+        Points = [
+          { X = -289 Y = 278 }
+          { X = 409 Y = -71 }
+          { X = 251 Y = -142 }
+          { X = -408 Y = 203 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoorLounge01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DoorLounge_01"
+        Tallness = 2190.0
+        Offset = { X = 0 Y = -885 }
+        Points = [
+          { X = -292 Y = 282 }
+          { X = 392 Y = -82 }
+          { X = 364 Y = -210 }
+          { X = -430 Y = 189 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoorLounge01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DoorLounge_01A"
+        Tallness = 2301.0
+        Offset = { X = 0 Y = -893 }
+        Points = [
+          { X = -292 Y = 282 }
+          { X = 392 Y = -82 }
+          { X = 364 Y = -210 }
+          { X = -430 Y = 189 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoorBathroom01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DoorBathroom_01"
+        Tallness = 1639.0
+        Offset = { X = 0 Y = -789 }
+        Points = [
+          { X = 412 Y = 174 }
+          { X = -305 Y = -191 }
+          { X = -401 Y = -152 }
+          { X = 334 Y = 234 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseThroneBack01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ThroneBack_01"
+        Tallness = 1036.0
+        Offset = { X = 0 Y = -390 }
+        Points = [
+          { X = 265 Y = 108 }
+          { X = -106 Y = -75 }
+          { X = -189 Y = -33 }
+          { X = 174 Y = 155 }
+        ]
+        Using = [
+          { Name = "HouseThroneBack02" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseThroneBack02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ThroneBack_02"
+        Tallness = 1036.0
+        Offset = { X = 0 Y = -390 }
+        Points = [
+          { X = 265 Y = 108 }
+          { X = -106 Y = -75 }
+          { X = -189 Y = -33 }
+          { X = 174 Y = 155 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseThroneSeat01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ThroneSeat_01"
+        Tallness = 285.0
+        Offset = { X = 0 Y = -67 }
+        Points = [
+          { X = 331 Y = 77 }
+          { X = -24 Y = -99 }
+          { X = -286 Y = 27 }
+          { X = 114 Y = 206 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCapitalCone01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CapitalCone_01"
+        Offset = { X = 0 Y = -443 }
+        Points = [
+          { X = 197 Y = -7 }
+          { X = 40 Y = -104 }
+          { X = -145 Y = -106 }
+          { X = -220 Y = 2 }
+          { X = -119 Y = 83 }
+          { X = 100 Y = 89 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCorniceRound01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CorniceRound_01"
+        Tallness = 543.0
+        Offset = { X = 0 Y = -260 }
+        Points = [
+          { X = 1139 Y = 482 }
+          { X = -839 Y = -692 }
+          { X = -1128 Y = -319 }
+          { X = -1002 Y = 282 }
+          { X = -648 Y = 479 }
+          { X = 346 Y = 657 }
+          { X = 714 Y = 647 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCornice03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cornice_03"
+        Offset = { X = 0 Y = 83 }
+        Points = [
+          { X = 1034 Y = -272 }
+          { X = 863 Y = -347 }
+          { X = -1013 Y = 572 }
+          { X = -837 Y = 679 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoor02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_02"
+        Scale = 1.84
+        Tallness = 1368.0
+        Offset = { X = 0 Y = -1169 }
+        Points = [
+          { X = 400 Y = 113 }
+          { X = -239 Y = -205 }
+          { X = -391 Y = -126 }
+          { X = -328 Y = -11 }
+          { X = 78 Y = 188 }
+          { X = 260 Y = 175 }
+        ]
+        Using = [
+          { Name = "HouseDoor02Open" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDoor03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Door_03"
+        Scale = 1.84
+        Tallness = 2035.0
+        Offset = { X = 0 Y = -831 }
+        Points = [
+          { X = -292 Y = 254 }
+          { X = 392 Y = -82 }
+          { X = 250 Y = -150 }
+          { X = -411 Y = 180 }
+        ]
+        Using = [
+          { Name = "HouseDoor02Open" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCage01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cage_01"
+        Offset = { X = 0 Y = -44 }
+        Points = [
+          { X = 59 Y = -3 }
+          { X = 32 Y = -19 }
+          { X = -21 Y = -20 }
+          { X = -56 Y = 2 }
+          { X = -18 Y = 22 }
+          { X = 42 Y = 16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCage02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cage_02"
+        Tallness = 1356.0
+        Offset = { X = 0 Y = -579 }
+        Points = [
+          { X = -177 Y = 0 }
+          { X = -100 Y = 84 }
+          { X = 93 Y = 90 }
+          { X = 187 Y = 14 }
+          { X = -14 Y = -95 }
+        ]
+      }
+    }
+    
+    {
+      Name = "null"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cage_02"
+        Tallness = 1331.0
+        Offset = { X = 0 Y = -529 }
+        Points = [
+          { X = -132 Y = -35 }
+          { X = -175 Y = 49 }
+          { X = -91 Y = 135 }
+          { X = 79 Y = 142 }
+          { X = 181 Y = 80 }
+          { X = 150 Y = -32 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFiles01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Files_01"
+        Tallness = 488.0
+        Offset = { X = 0 Y = -204 }
+        Points = [
+          { X = 5 Y = 91 }
+          { X = 196 Y = 9 }
+          { X = 14 Y = -71 }
+          { X = -162 Y = -3 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseKnives01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Knives_01"
+        Tallness = 488.0
+        Offset = { X = 0 Y = -204 }
+      }
+    }
+    
+    {
+      Name = "HouseSpiceRack01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_SpiceRack_01"
+        Tallness = 488.0
+        Offset = { X = 0 Y = -108 }
+      }
+    }
+    
+    {
+      Name = "HouseFiles02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Files_02"
+        Tallness = 152.0
+        Offset = { X = 0 Y = -93 }
+        Points = [
+          { X = 17 Y = 99 }
+          { X = 245 Y = -14 }
+          { X = -33 Y = -136 }
+          { X = -246 Y = -42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCushion01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cushion_01"
+        Tallness = 152.0
+        Offset = { X = 0 Y = 15 }
+        Points = [
+          { X = 264 Y = 61 }
+          { X = 281 Y = -49 }
+          { X = 7 Y = -140 }
+          { X = -218 Y = -105 }
+          { X = -310 Y = 36 }
+          { X = -165 Y = 163 }
+          { X = 122 Y = 169 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseEmployeeOfMonth01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_EmployeeOfMonth_01"
+        Tallness = 152.0
+        Offset = { X = 0 Y = -680 }
+        Using = [
+          { Name = "HouseEmployeeOfMonthThanatos01" }
+          { Name = "HouseEmployeeOfMonthMegaera01" }
+          { Name = "HouseEmployeeOfMonthContractor01" }
+          { Name = "HouseEmployeeOfMonthHypnos01" }
+          { Name = "HouseEmployeeOfMonthZag01" }
+          { Name = "HouseEmployeeOfMonthAchilles01" }
+          { Name = "HouseEmployeeOfMonthBroker01" }
+          { Name = "HouseEmployeeOfMonthChef01" }
+          { Name = "HouseEmployeeOfMonthOrpheus01" }
+          { Name = "HouseEmployeeOfMonthCerberus01" }
+          { Name = "HouseEmployeeOfMonthDusa01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseEmployeeOfMonth02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_EmployeeOfMonth_02"
+        Tallness = 152.0
+        Offset = { X = 0 Y = -680 }
+        Using = [
+          { Name = "HouseEmployeeOfMonthThanatos01" }
+          { Name = "HouseEmployeeOfMonthMegaera01" }
+          { Name = "HouseEmployeeOfMonthContractor01" }
+          { Name = "HouseEmployeeOfMonthHypnos01" }
+          { Name = "HouseEmployeeOfMonthZag01" }
+          { Name = "HouseEmployeeOfMonthAchilles01" }
+          { Name = "HouseEmployeeOfMonthBroker01" }
+          { Name = "HouseEmployeeOfMonthChef01" }
+          { Name = "HouseEmployeeOfMonthOrpheus01" }
+          { Name = "HouseEmployeeOfMonthCerberus01" }
+          { Name = "HouseEmployeeOfMonthDusa01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseEmployeeOfMonthThanatos01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseEmployeeOfMonthThanatos01"
+        Tallness = 152.0
+        Offset = { X = 0 Y = -56 }
+      }
+    }
+    
+    {
+      Name = "HouseFiles03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Files_03"
+        Tallness = 1077.0
+        Offset = { X = 0 Y = -533 }
+        Points = [
+          { X = 154 Y = -84 }
+          { X = 54 Y = -124 }
+          { X = -79 Y = -136 }
+          { X = -188 Y = -96 }
+          { X = -192 Y = -19 }
+          { X = -99 Y = 39 }
+          { X = 58 Y = 45 }
+          { X = 148 Y = 2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePapers01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Papers_01"
+        Tallness = 945.0
+        Offset = { X = 0 Y = -474 }
+        Points = [
+          { X = 434 Y = -158 }
+          { X = -346 Y = -245 }
+          { X = -409 Y = -17 }
+          { X = -76 Y = 163 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHades01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Hades_01"
+        Offset = { X = 0 Y = -256 }
+        Points = [
+          { X = 50 Y = -40 }
+          { X = -327 Y = 129 }
+          { X = 3 Y = 320 }
+          { X = 394 Y = 107 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStyx01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Styx_01"
+        Offset = { X = 0 Y = -878 }
+        Points = [
+          { X = 360 Y = -173 }
+          { X = -690 Y = 62 }
+          { X = -797 Y = 255 }
+          { X = -439 Y = 395 }
+          { X = -105 Y = 412 }
+          { X = 300 Y = 292 }
+          { X = 600 Y = 97 }
+          { X = 620 Y = -208 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHecaton01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Hecaton_01"
+        Scale = 2.1
+        Tallness = 1965.0
+        Offset = { X = 0 Y = -1480 }
+        Points = [
+          { X = 414 Y = 89 }
+          { X = -20 Y = -141 }
+          { X = -266 Y = 10 }
+          { X = 170 Y = 229 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCornice01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cornice_01"
+        StopsLight = false
+        Offset = { X = 0 Y = -77 }
+        Points = [
+          { X = 1287 Y = 551 }
+          { X = -1039 Y = -627 }
+          { X = -1251 Y = -542 }
+          { X = 1082 Y = 666 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCornice02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cornice_02"
+        StopsLight = false
+        Offset = { X = 0 Y = -202 }
+        Points = [
+          { X = 759 Y = -377 }
+          { X = -825 Y = 360 }
+          { X = -778 Y = 376 }
+          { X = 450 Y = 163 }
+          { X = 796 Y = -339 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWindow01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Window_01"
+        Offset = { X = 0 Y = -894 }
+        Points = [
+          { X = 560 Y = 168 }
+          { X = -173 Y = -189 }
+          { X = -432 Y = -65 }
+          { X = 317 Y = 284 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBident01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bident_01"
+        Offset = { X = 0 Y = -480 }
+        Using = [
+          { Name = "HouseSword01" }
+          { Name = "HouseAxe01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseSword01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Sword_01"
+        Offset = { X = 0 Y = -480 }
+      }
+    }
+    
+    {
+      Name = "HouseAxe01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Axe_01"
+        Offset = { X = 0 Y = -480 }
+      }
+    }
+    
+    {
+      Name = "HouseRug01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+        Points = [
+          { X = 323 Y = -561 }
+          { X = -1194 Y = 202 }
+          { X = -362 Y = 641 }
+          { X = 1179 Y = -139 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTorch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Torch_01"
+        StopsLight = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -1139 }
+        Points = [
+          { X = 173 Y = -143 }
+          { X = -220 Y = 42 }
+          { X = 42 Y = 124 }
+          { X = 352 Y = -54 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTorch02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Torch_02"
+        StopsLight = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -329 }
+        Points = [
+          { X = 385 Y = -27 }
+          { X = 134 Y = -188 }
+          { X = -297 Y = -174 }
+          { X = -398 Y = 71 }
+          { X = -176 Y = 185 }
+          { X = 67 Y = 204 }
+          { X = 347 Y = 153 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseContractorTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ContractorTable_01"
+        Offset = { X = 0 Y = -126 }
+        Points = [
+          { X = 551 Y = 55 }
+          { X = -28 Y = -223 }
+          { X = -537 Y = 20 }
+          { X = 78 Y = 337 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseContractorTable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ContractorTable_02"
+        Offset = { X = 0 Y = -126 }
+        Points = [
+          { X = 550 Y = 11 }
+          { X = -28 Y = -223 }
+          { X = -565 Y = 26 }
+          { X = -33 Y = 296 }
+        ]
+        Using = [
+          { Name = "HouseContractorTable01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseConstructionStuff01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ConstructionStuff_01"
+        Offset = { X = 0 Y = -135 }
+        Points = [
+          { X = 13 Y = -103 }
+          { X = -305 Y = 86 }
+          { X = -223 Y = 130 }
+          { X = 337 Y = 81 }
+          { X = 335 Y = -2 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseConstructionStuff02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_ConstructionStuff_02"
+        StopsUnits = false
+        Offset = { X = 0 Y = -65 }
+        Points = [
+          { X = 170 Y = -31 }
+          { X = 31 Y = -72 }
+          { X = -180 Y = 28 }
+          { X = -42 Y = 106 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTreeTop01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TreeTop_01"
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -43 }
+      }
+    }
+    
+    {
+      Name = "HouseBarrel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Barrel_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -214 }
+        Points = [
+          { X = 438 Y = 89 }
+          { X = -98 Y = -181 }
+          { X = -470 Y = -30 }
+          { X = 40 Y = 279 }
+          { X = 298 Y = 224 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDiscoBall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DiscoBall_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -462 }
+        Points = [
+          { X = 368 Y = -120 }
+          { X = 117 Y = -275 }
+          { X = -222 Y = -253 }
+          { X = -331 Y = -118 }
+          { X = -147 Y = 45 }
+          { X = 237 Y = 32 }
+        ]
+        Using = [
+          { Name = "HouseDiscoBall02" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDiscoBall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DiscoBall_02"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -462 }
+        Points = [
+          { X = 368 Y = -120 }
+          { X = 117 Y = -275 }
+          { X = -222 Y = -253 }
+          { X = -331 Y = -118 }
+          { X = -147 Y = 45 }
+          { X = 237 Y = 32 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWallBracket01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallBracket_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -291 }
+      }
+    }
+    
+    {
+      Name = "HouseStringLights01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StringLights_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -153 }
+      }
+    }
+    
+    {
+      Name = "HouseWeights01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Weights_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -81 }
+        Points = [
+          { X = 453 Y = -461 }
+          { X = -267 Y = -441 }
+          { X = -663 Y = -179 }
+          { X = -663 Y = 4 }
+          { X = -498 Y = 427 }
+          { X = 128 Y = 460 }
+          { X = 713 Y = 237 }
+          { X = 630 Y = -189 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLyre01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Lyre_01"
+        Tallness = 635.0
+        Interact = 
+        {
+          Distance = 160.0
+        }
+        Offset = { X = 0 Y = -396 }
+        Points = [
+          { X = -33 Y = -153 }
+          { X = -162 Y = -73 }
+          { X = -194 Y = 26 }
+          { X = -55 Y = 100 }
+          { X = 149 Y = 83 }
+          { X = 227 Y = -4 }
+          { X = 152 Y = -123 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseGamingTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_GamingTable_01"
+        Tallness = 635.0
+        Offset = { X = 0 Y = -81 }
+        Points = [
+          { X = 655 Y = -28 }
+          { X = -18 Y = -355 }
+          { X = -695 Y = -44 }
+          { X = -666 Y = 235 }
+          { X = -26 Y = 569 }
+          { X = 645 Y = 274 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBrazier01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Brazier_01"
+        Tallness = 288.0
+        Offset = { X = 0 Y = -134 }
+        Points = [
+          { X = 296 Y = -13 }
+          { X = 203 Y = -101 }
+          { X = 28 Y = -137 }
+          { X = -178 Y = -105 }
+          { X = -281 Y = -18 }
+          { X = -44 Y = 88 }
+          { X = 89 Y = 83 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePortrait01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Portrait_01"
+        Offset = { X = 0 Y = -361 }
+        Points = [
+          { X = 152 Y = -124 }
+          { X = -252 Y = 93 }
+          { X = -153 Y = 128 }
+          { X = 243 Y = -77 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePortrait02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Portrait_02"
+        Tallness = 852.0
+        Offset = { X = 0 Y = -268 }
+        Points = [
+          { X = -187 Y = 65 }
+          { X = -184 Y = 137 }
+          { X = 180 Y = 133 }
+          { X = 161 Y = 75 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePortraitSkelly01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PortraitSkelly_01"
+        Offset = { X = 0 Y = -248 }
+        Points = [
+          { X = 311 Y = -107 }
+          { X = 248 Y = -136 }
+          { X = -344 Y = 165 }
+          { X = -255 Y = 194 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePaintingMood01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingMood_01"
+        Using = [
+          { Name = "HousePaintingHades01" }
+          { Name = "HousePaintingFury01" }
+          { Name = "HousePaintingMysteryWoman01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePaintingTheseus01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingTheseus_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingTots01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingTots_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingHades01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingHades_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingFury01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingFury_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingPersephone01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingPersephone_01"
+        Offset = { X = 0 Y = -244 }
+        Points = [
+          { X = 233 Y = -30 }
+          { X = -119 Y = -100 }
+          { X = -245 Y = -6 }
+          { X = 132 Y = 56 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePaintingAriadne01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingMysteryGirl_01"
+        Using = [
+          { Name = "HousePaintingTots01" }
+          { Name = "HousePaintingTheseus01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePaintingAsphodel01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingAsphodel_01"
+        Using = [
+          { Name = "HousePaintingTartarus01" }
+          { Name = "HousePaintingElysium01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePaintingTartarus01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingTartarus_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingElysium01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingElysium_01"
+      }
+    }
+    
+    {
+      Name = "HousePaintingFamily01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PaintingFamily_01"
+        Hue = 1.0
+        Interact = 
+        {
+          Distance = 250.0
+          OffsetY = 100.0
+        }
+      }
+    }
+    
+    {
+      Name = "HouseHadesMural01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_HadesMural_01"
+        Offset = { X = 0 Y = -248 }
+        Points = [
+          { X = 1057 Y = 1159 }
+          { X = -1042 Y = 82 }
+          { X = -1082 Y = 167 }
+          { X = 1052 Y = 1245 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTableRound01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TableRound_01"
+        Tallness = 460.0
+        Offset = { X = 0 Y = -248 }
+        Points = [
+          { X = -147 Y = -469 }
+          { X = -429 Y = -349 }
+          { X = -413 Y = 36 }
+          { X = -272 Y = 142 }
+          { X = 17 Y = 202 }
+          { X = 254 Y = 128 }
+          { X = 429 Y = 42 }
+          { X = 427 Y = -308 }
+          { X = 180 Y = -467 }
+        ]
+        Using = [
+          { Name = "HouseTableRound01a" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTableRound01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TableRound_01a"
+        Tallness = 460.0
+        Offset = { X = 0 Y = -248 }
+        Points = [
+          { X = -147 Y = -469 }
+          { X = -429 Y = -349 }
+          { X = -413 Y = 36 }
+          { X = -272 Y = 142 }
+          { X = 17 Y = 202 }
+          { X = 254 Y = 128 }
+          { X = 429 Y = 42 }
+          { X = 427 Y = -308 }
+          { X = 180 Y = -467 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTableRound02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TableRound_02"
+        Tallness = 163.0
+        Offset = { X = 0 Y = -248 }
+        Points = [
+          { X = -332 Y = -214 }
+          { X = -333 Y = -115 }
+          { X = -38 Y = 9 }
+          { X = 64 Y = 9 }
+          { X = 347 Y = -162 }
+          { X = 319 Y = -253 }
+          { X = 13 Y = -383 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTableRound03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TableRound_03"
+        Tallness = 1246.0
+        Offset = { X = 0 Y = -659 }
+        Points = [
+          { X = -431 Y = -271 }
+          { X = -434 Y = -127 }
+          { X = -150 Y = -80 }
+          { X = 165 Y = -74 }
+          { X = 468 Y = -152 }
+          { X = 409 Y = -312 }
+          { X = 13 Y = -383 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDogBall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DogBall_01"
+        Tallness = 158.0
+        Offset = { X = 0 Y = -75 }
+        Points = [
+          { X = -25 Y = -49 }
+          { X = -101 Y = -29 }
+          { X = -101 Y = 12 }
+          { X = -21 Y = 38 }
+          { X = 94 Y = 22 }
+          { X = 94 Y = -22 }
+          { X = 46 Y = -45 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDogToy01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_DogToy_01"
+        Tallness = 432.0
+        Offset = { X = 0 Y = -166 }
+        Points = [
+          { X = 442 Y = -95 }
+          { X = -35 Y = -311 }
+          { X = -457 Y = -101 }
+          { X = -475 Y = 42 }
+          { X = -219 Y = 162 }
+          { X = 180 Y = 276 }
+          { X = 482 Y = 52 }
+          { X = 482 Y = 52 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+        Points = [
+          { X = -113 Y = -423 }
+          { X = -909 Y = -34 }
+          { X = 82 Y = 470 }
+          { X = 925 Y = 74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = 25 Y = 658 }
+          { X = 1237 Y = -3 }
+          { X = 14 Y = -641 }
+          { X = -1179 Y = 5 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug03A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_03A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "HouseRug03B"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_03B"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+      }
+    }
+    
+    {
+      Name = "HouseRug04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -691 Y = 789 }
+          { X = 1487 Y = -373 }
+          { X = 733 Y = -754 }
+          { X = -1456 Y = 380 }
+        ]
+        Using = [
+          { Name = "HouseRug04A" }
+          { Name = "HouseRug04B" }
+          { Name = "HouseRug04C" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug04A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "HouseRug04A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -693 Y = 771 }
+          { X = 1489 Y = -345 }
+          { X = 725 Y = -743 }
+          { X = -1479 Y = 359 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug04B"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_04B"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -744 Y = 765 }
+          { X = 1495 Y = -365 }
+          { X = 786 Y = -744 }
+          { X = -1470 Y = 375 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug04C"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_04C"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -691 Y = 796 }
+          { X = 1483 Y = -373 }
+          { X = 736 Y = -754 }
+          { X = -1459 Y = 387 }
+        ]
+        Using = [
+          { Name = "HouseRug04" }
+          { Name = "HouseRug04A" }
+          { Name = "HouseRug04B" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCerberusTreats01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CerberusTreats_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -641 }
+        Points = [
+          { X = 378 Y = 32 }
+          { X = 372 Y = -133 }
+          { X = -17 Y = -225 }
+          { X = -297 Y = -122 }
+          { X = -349 Y = 46 }
+          { X = -88 Y = 175 }
+          { X = 177 Y = 169 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCakeDisplay01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CakeDisplay_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -113 }
+        Points = [
+          { X = 174 Y = 19 }
+          { X = 141 Y = -44 }
+          { X = -57 Y = -76 }
+          { X = -174 Y = 3 }
+          { X = -154 Y = 72 }
+          { X = -21 Y = 105 }
+          { X = 121 Y = 93 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Rug_05"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -468 Y = 32 }
+          { X = -203 Y = 215 }
+          { X = 229 Y = 205 }
+          { X = 465 Y = 76 }
+          { X = 455 Y = -107 }
+          { X = 144 Y = -242 }
+          { X = -339 Y = -183 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Rug_06"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = 48 Y = 343 }
+          { X = 672 Y = 20 }
+          { X = -99 Y = -358 }
+          { X = -686 Y = -39 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_08"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = -506 Y = 346 }
+          { X = -13 Y = 375 }
+          { X = 480 Y = 264 }
+          { X = 755 Y = 51 }
+          { X = 704 Y = -220 }
+          { X = 440 Y = -375 }
+          { X = 440 Y = -375 }
+          { X = -755 Y = 228 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseRug07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsRug2"
+        Graphic = "Tilesets\House\House_Rug_07"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Points = [
+          { X = 337 Y = 420 }
+          { X = 792 Y = 177 }
+          { X = -273 Y = -406 }
+          { X = -759 Y = -146 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDogBed01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseDogBed01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 56 }
+        Using = [
+          { Name = "HouseDogBed01A" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLionSkin01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_LionSkin_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 68 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainFlourish01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainFlourish_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainPlatform01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainPlatform_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainEntrance01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainEntrance_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTransporter"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTransporter"
+        Tallness = 9999.0
+        Offset = { X = 0 Y = -9 }
+        Points = [
+          { X = 644 Y = -32 }
+          { X = 380 Y = -279 }
+          { X = 5 Y = -337 }
+          { X = -365 Y = -263 }
+          { X = -617 Y = -19 }
+          { X = -376 Y = 157 }
+          { X = -148 Y = 223 }
+          { X = 203 Y = 221 }
+          { X = 423 Y = 174 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTransporterBlood"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaFallD"
+        Tallness = 525.0
+        Offset = { X = 0 Y = -250 }
+        Points = [
+          { X = 18 Y = -21 }
+          { X = -21 Y = -12 }
+          { X = -17 Y = 18 }
+          { X = 19 Y = 15 }
+          { X = 19 Y = 15 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainShag01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainShag_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainShag02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainShag_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim02b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_02b"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -37 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainSquares01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainSquares_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 4 }
+      }
+    }
+    
+    {
+      Name = "HousePoster01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+        Points = [
+          { X = -113 Y = -423 }
+          { X = -909 Y = -34 }
+          { X = 82 Y = 470 }
+          { X = 925 Y = 74 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePosterRunCounter"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_Blank"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+        Points = [
+          { X = -113 Y = -423 }
+          { X = -909 Y = -34 }
+          { X = 82 Y = 470 }
+          { X = 925 Y = 74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePoster02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 21 }
+        Points = [
+          { X = -113 Y = -423 }
+          { X = -909 Y = -34 }
+          { X = 82 Y = 470 }
+          { X = 925 Y = 74 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePoster03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -4 }
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePoster04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 2531.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -4 }
+        Points = [
+          { X = -716 Y = 1472 }
+          { X = 718 Y = 745 }
+          { X = 713 Y = 737 }
+          { X = -722 Y = 1465 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePoster05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Poster_05"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1654.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -640 }
+        Points = [
+          { X = -544 Y = -265 }
+          { X = 507 Y = 260 }
+          { X = 523 Y = 254 }
+          { X = -523 Y = -273 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBed01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bed_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 263.0
+        TouchdownSound = "/EmptyCue"
+        Interact = 
+        {
+          Distance = 250.0
+          OffsetX = -100.0
+          OffsetY = -25.0
+        }
+        Offset = { X = 0 Y = -310 }
+        Points = [
+          { X = 796 Y = -74 }
+          { X = 91 Y = -422 }
+          { X = -784 Y = 31 }
+          { X = -56 Y = 361 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBed01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bed_01a"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 456.0
+        TouchdownSound = "/EmptyCue"
+        Interact = 
+        {
+          Distance = 250.0
+          OffsetX = -100.0
+          OffsetY = -25.0
+        }
+        Offset = { X = 0 Y = -310 }
+        Points = [
+          { X = 849 Y = -98 }
+          { X = 165 Y = -451 }
+          { X = -784 Y = 31 }
+          { X = -56 Y = 361 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -276 }
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -256 }
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_03"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -256 }
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_05"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -256 }
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_06"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -256 }
+      }
+    }
+    
+    {
+      Name = "HouseWeaponDisplay02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WeaponDisplay_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -256 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_03"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -27 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_04"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -27 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_05"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -27 }
+      }
+    }
+    
+    {
+      Name = "HouseCanopy01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Canopy_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -431 }
+        Points = [
+          { X = 113 Y = -411 }
+          { X = -903 Y = 44 }
+          { X = 64 Y = 469 }
+          { X = 900 Y = -19 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -974 }
+        Points = [
+          { X = 917 Y = 338 }
+          { X = -533 Y = -399 }
+          { X = -912 Y = -225 }
+          { X = 533 Y = 512 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -684 }
+        Points = [
+          { X = 1005 Y = 381 }
+          { X = -391 Y = -374 }
+          { X = -782 Y = -205 }
+          { X = 706 Y = 582 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 2225.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -932 }
+        Points = [
+          { X = 898 Y = 299 }
+          { X = -541 Y = -419 }
+          { X = -912 Y = -265 }
+          { X = 574 Y = 468 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1060 }
+        Points = [
+          { X = 579 Y = 205 }
+          { X = -359 Y = -275 }
+          { X = -579 Y = -163 }
+          { X = 387 Y = 303 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_01"
+        Tallness = 1349.0
+        Offset = { X = 0 Y = -595 }
+        Points = [
+          { X = -50 Y = 106 }
+          { X = 152 Y = 87 }
+          { X = 222 Y = -9 }
+          { X = 106 Y = -77 }
+          { X = -174 Y = 48 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar02"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_02"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1749.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -778 }
+        Points = [
+          { X = 230 Y = -41 }
+          { X = 58 Y = -108 }
+          { X = -115 Y = -58 }
+          { X = -171 Y = 31 }
+          { X = -11 Y = 88 }
+          { X = 179 Y = 54 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_03"
+        Tallness = 3499.0
+        Offset = { X = 0 Y = -1494 }
+        Points = [
+          { X = 153 Y = 21 }
+          { X = 98 Y = -54 }
+          { X = -76 Y = -49 }
+          { X = -147 Y = 21 }
+          { X = -54 Y = 87 }
+          { X = 109 Y = 82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseContract01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseContractClosed"
+        Tallness = 365.0
+        Offset = { X = 0 Y = -230 }
+        Points = [
+          { X = 182 Y = -45 }
+          { X = 91 Y = -97 }
+          { X = -178 Y = 51 }
+          { X = -98 Y = 103 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBrazier02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Brazier_02"
+        Tallness = 365.0
+        Offset = { X = 0 Y = -39 }
+        Points = [
+          { X = 102 Y = 2 }
+          { X = 51 Y = -36 }
+          { X = -62 Y = -37 }
+          { X = -103 Y = 5 }
+          { X = -43 Y = 42 }
+          { X = 52 Y = 42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBrazier03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Brazier_03"
+        Tallness = 2052.0
+        Offset = { X = 0 Y = -933 }
+        Points = [
+          { X = -120 Y = -11 }
+          { X = 24 Y = 59 }
+          { X = 179 Y = -12 }
+          { X = 26 Y = -90 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseContract01A"
+      InheritFrom = "HouseContract01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 3499.0
+        Offset = { X = 0 Y = -68 }
+        Using = [
+          { Name = "HouseContractOpen" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_04"
+        SortBoundsScale = 1.1
+        Tallness = 2894.0
+        Offset = { X = 0 Y = -1244 }
+        Points = [
+          { X = 270 Y = -39 }
+          { X = 140 Y = -147 }
+          { X = -140 Y = -147 }
+          { X = -280 Y = -35 }
+          { X = -121 Y = 90 }
+          { X = 177 Y = 90 }
+        ]
+        Using = [
+          { Name = "HousePillar04A" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFireplace01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseFireplace"
+        Tallness = 1663.0
+        Offset = { X = 0 Y = -760 }
+        Points = [
+          { X = 325 Y = -276 }
+          { X = -479 Y = 120 }
+          { X = -328 Y = 199 }
+          { X = 473 Y = -211 }
+        ]
+        Using = [
+          { Name = "HousePillar04A" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFireplace02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseFireplace2"
+        Tallness = 2022.0
+        Offset = { X = 0 Y = -745 }
+        Points = [
+          { X = -1266 Y = 581 }
+          { X = -1110 Y = 651 }
+          { X = -470 Y = 518 }
+          { X = 973 Y = -228 }
+          { X = 1290 Y = -551 }
+          { X = 1120 Y = -621 }
+        ]
+        Using = [
+          { Name = "HousePillar04A" }
+          { Name = "HouseFireplace2" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFireplace03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseFireplace3"
+        Tallness = 1699.0
+        Offset = { X = 0 Y = -745 }
+        Points = [
+          { X = -1100 Y = 355 }
+          { X = -670 Y = 561 }
+          { X = 1185 Y = -364 }
+          { X = 751 Y = -579 }
+        ]
+        Using = [
+          { Name = "HousePillar04A" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HousePillar05"
+        SortBoundsScale = 1.2
+        Tallness = 2856.0
+        Offset = { X = 0 Y = -1244 }
+        Points = [
+          { X = 155 Y = -118 }
+          { X = -88 Y = -121 }
+          { X = -280 Y = -33 }
+          { X = -112 Y = 95 }
+          { X = 164 Y = 82 }
+          { X = 291 Y = -42 }
+        ]
+        Using = [
+          { Name = "HousePillar04" }
+          { Name = "HousePillar04A" }
+          { Name = "HousePillar04B" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseUnderConstruction01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_UnderConstruction_01"
+        Tallness = 3499.0
+        Offset = { X = 0 Y = -150 }
+        Points = [
+          { X = 155 Y = 12 }
+          { X = -27 Y = -78 }
+          { X = -164 Y = -12 }
+          { X = 14 Y = 92 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar04A"
+      InheritFrom = "HousePillar04"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HousePillar04A"
+        Tallness = 2753.0
+      }
+    }
+    
+    {
+      Name = "HousePillar04B"
+      InheritFrom = "HousePillar04"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_04B"
+        Tallness = 2753.0
+      }
+    }
+    
+    {
+      Name = "HousePillar06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_06"
+        Tallness = 559.0
+        Offset = { X = 0 Y = -230 }
+        Points = [
+          { X = 117 Y = -11 }
+          { X = 1 Y = -63 }
+          { X = -131 Y = 11 }
+          { X = 1 Y = 68 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePillar07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Pillar_07"
+        Tallness = 473.0
+        Offset = { X = 0 Y = -348 }
+        Points = [
+          { X = 339 Y = 61 }
+          { X = 360 Y = -63 }
+          { X = 253 Y = -173 }
+          { X = -186 Y = -176 }
+          { X = -363 Y = -57 }
+          { X = -318 Y = 80 }
+          { X = -3 Y = 181 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFence01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Fence_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 584.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -232 }
+        Points = [
+          { X = 311 Y = 219 }
+          { X = 424 Y = 158 }
+          { X = -340 Y = -230 }
+          { X = -462 Y = -178 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFence01A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Fence_01A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 628.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -232 }
+        Points = [
+          { X = 358 Y = 151 }
+          { X = -342 Y = -206 }
+          { X = -458 Y = -162 }
+          { X = 259 Y = 200 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFence02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Fence_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 660.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -282 }
+        Points = [
+          { X = -380 Y = -305 }
+          { X = -496 Y = -98 }
+          { X = -473 Y = 70 }
+          { X = -190 Y = 222 }
+          { X = 239 Y = 215 }
+          { X = 477 Y = 130 }
+          { X = -380 Y = -305 }
+          { X = -380 Y = -305 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDrapes01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Drapes_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -975 }
+        Points = [
+          { X = 787 Y = 310 }
+          { X = -492 Y = -428 }
+          { X = -822 Y = -265 }
+          { X = 551 Y = 428 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDrapes01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseDrapes01A"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Tallness = 2317.0
+        Offset = { X = 0 Y = -900 }
+        Points = [
+          { X = 217 Y = 207 }
+          { X = -145 Y = 26 }
+          { X = -221 Y = 64 }
+          { X = 142 Y = 242 }
+        ]
+        Using = [
+          { Name = "HouseDrapes01B" }
+          { Name = "HouseDrapes01C" }
+          { Name = "HouseDrapes01D" }
+          { Name = "HouseDrapes01E" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDrapes01B"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Drapes_01B"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Tallness = 2254.0
+        Offset = { X = 0 Y = -975 }
+        Points = [
+          { X = 237 Y = 46 }
+          { X = -89 Y = -171 }
+          { X = -202 Y = -78 }
+          { X = 105 Y = 186 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDrapes01D"
+      InheritFrom = "HouseDrapes01B"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Drapes_01D"
+      }
+    }
+    
+    {
+      Name = "HouseDrapes01C"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Drapes_01C"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -331 }
+        Points = [
+          { X = 700 Y = -92 }
+          { X = -764 Y = -660 }
+          { X = -429 Y = 39 }
+          { X = -206 Y = 320 }
+          { X = 59 Y = 332 }
+          { X = 59 Y = 332 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWaterFall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WaterFall_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -523 }
+        Points = [
+          { X = 55 Y = -50 }
+          { X = -70 Y = 15 }
+          { X = -36 Y = 23 }
+          { X = 72 Y = -33 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWaterFall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WaterFall_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -820 }
+        Points = [
+          { X = 137 Y = -51 }
+          { X = 76 Y = -69 }
+          { X = -112 Y = 55 }
+          { X = -85 Y = 79 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseChucks01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chucks_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -12 }
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDagger01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Dagger_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -210 }
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseShield01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shield_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -192 }
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDais01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Dais_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = 39 }
+        Points = [
+          { X = 1318 Y = 190 }
+          { X = -187 Y = -552 }
+          { X = -1321 Y = 65 }
+          { X = 187 Y = 810 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseDais02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Dais_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -424 }
+        Points = [
+          { X = 1346 Y = -24 }
+          { X = -28 Y = -742 }
+          { X = -1219 Y = -144 }
+          { X = 190 Y = 611 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTile01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTile_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTile05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTile_05"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainDecorativeMosaic01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainDecorativeMosaic_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainDecorativeMosaic01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainDecorativeMosaic_01a"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainDecorativeMosaic02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainDecorativeMosaic_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_06"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_07"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim07A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_07A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Stairs_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainMosaicInk01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainMosaicInk_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -43 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainSemiCircle01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainSemiCircle_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 65 }
+      }
+    }
+    
+    {
+      Name = "HouseWall05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_05"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        Tallness = 945.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -459 }
+        Points = [
+          { X = -296 Y = -391 }
+          { X = -296 Y = -391 }
+          { X = -672 Y = -199 }
+          { X = 293 Y = 289 }
+          { X = 677 Y = 96 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_06"
+        Tallness = 2058.0
+        Offset = { X = 0 Y = -896 }
+        Points = [
+          { X = 981 Y = 310 }
+          { X = -517 Y = -446 }
+          { X = -971 Y = -246 }
+          { X = 556 Y = 530 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_07"
+        Tallness = 2285.0
+        Offset = { X = 0 Y = -998 }
+        Points = [
+          { X = 372 Y = 92 }
+          { X = -204 Y = -192 }
+          { X = -368 Y = -112 }
+          { X = 196 Y = 172 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall08"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_08"
+        Tallness = 1298.0
+        Offset = { X = 0 Y = -553 }
+        Points = [
+          { X = -393 Y = 211 }
+          { X = -376 Y = 231 }
+          { X = 398 Y = -151 }
+          { X = 363 Y = -173 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall09"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_09"
+        Tallness = 1481.0
+        Offset = { X = 0 Y = -650 }
+        Points = [
+          { X = -250 Y = 21 }
+          { X = -253 Y = 53 }
+          { X = 284 Y = 50 }
+          { X = 278 Y = 25 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWall06A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Wall_06A"
+        Tallness = 1845.0
+        Offset = { X = 0 Y = -911 }
+        Points = [
+          { X = -40 Y = -204 }
+          { X = -461 Y = 4 }
+          { X = 44 Y = 265 }
+          { X = 473 Y = 37 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWallGrated01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallGrated_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        Tallness = 426.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -177 }
+        Points = [
+          { X = 149 Y = 75 }
+          { X = -136 Y = -74 }
+          { X = -160 Y = -60 }
+          { X = 124 Y = 84 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLaundry01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheatHeavyTemp"
+        Graphic = "Tilesets\House\House_Laundry_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        Tallness = 140.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 32 }
+        Points = [
+          { X = -455 Y = 43 }
+          { X = -419 Y = 194 }
+          { X = -1 Y = 238 }
+          { X = 375 Y = 141 }
+          { X = 489 Y = 49 }
+          { X = -53 Y = -159 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLaundry02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/Leftovers/SFX/FootstepsWheatHeavyTemp"
+        Graphic = "Tilesets\House\House_Laundry_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -30 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTile02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTile_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 13 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTile03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTile_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        Tallness = 68.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 13 }
+        Points = [
+          { X = 905 Y = 182 }
+          { X = -297 Y = -414 }
+          { X = -913 Y = -99 }
+          { X = 297 Y = 510 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTile04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTile_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        Tallness = 31.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 13 }
+        Points = [
+          { X = 2 Y = 225 }
+          { X = 402 Y = 23 }
+          { X = -1 Y = -174 }
+          { X = -400 Y = 22 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainInset01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainInset_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsUnits = true
+        Tallness = 1.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = 682 Y = -111 }
+          { X = 7 Y = -464 }
+          { X = -664 Y = -129 }
+          { X = 28 Y = 221 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTerrainMosaic01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainMosaic_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainMosaic03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainMosaic_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainMosaic04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainMosaic_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseStairsRound01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StairsRound_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -167 }
+      }
+    }
+    
+    {
+      Name = "HouseStairsRound02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StairsRound_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -167 }
+      }
+    }
+    
+    {
+      Name = "HouseStairs02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Stairs_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HousePlatformCircle01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PlatformCircle_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_09"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_08"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainTrim08A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainTrim_08A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseTerrainMosaic02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TerrainMosaic_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 55 }
+      }
+    }
+    
+    {
+      Name = "HouseShelf01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -432 }
+        Points = [
+          { X = -576 Y = 199 }
+          { X = -187 Y = 364 }
+          { X = 540 Y = -20 }
+          { X = 200 Y = -179 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMusicStand01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseMusicStand"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1500.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -474 }
+        Points = [
+          { X = -512 Y = 142 }
+          { X = 232 Y = 222 }
+          { X = 587 Y = -93 }
+          { X = 41 Y = -212 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseShelf02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1223.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -542 }
+        Points = [
+          { X = 550 Y = -137 }
+          { X = 221 Y = -280 }
+          { X = -542 Y = 107 }
+          { X = -239 Y = 250 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseShelf03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1345.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -702 }
+        Points = [
+          { X = -616 Y = 86 }
+          { X = -172 Y = 299 }
+          { X = 657 Y = -110 }
+          { X = 220 Y = -333 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseShelf04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 344.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -228 }
+        Points = [
+          { X = 506 Y = 66 }
+          { X = -245 Y = -299 }
+          { X = -498 Y = -177 }
+          { X = 241 Y = 204 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseShelf04A"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_04A"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1223.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -168 }
+        Points = [
+          { X = 155 Y = -39 }
+          { X = 107 Y = -72 }
+          { X = -150 Y = 62 }
+          { X = -107 Y = 96 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMirror01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Mirror_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -927 }
+        Points = [
+          { X = 700 Y = -19 }
+          { X = -597 Y = -617 }
+          { X = -808 Y = -365 }
+          { X = 691 Y = 263 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMirror02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseMirror02Start"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 1000.0
+        TouchdownSound = "/EmptyCue"
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -438 }
+        Points = [
+          { X = 338 Y = -110 }
+          { X = 243 Y = -152 }
+          { X = -329 Y = 132 }
+          { X = -254 Y = 188 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBooks01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Books_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 874.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -291 }
+        Points = [
+          { X = 837 Y = 154 }
+          { X = -124 Y = -240 }
+          { X = -871 Y = 29 }
+          { X = -198 Y = 424 }
+          { X = 768 Y = 389 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseAlcove01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Alcove_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 2994.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -1153 }
+        Points = [
+          { X = 640 Y = 536 }
+          { X = 629 Y = 88 }
+          { X = -139 Y = -284 }
+          { X = -629 Y = -109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseChest01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chest_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -230 }
+        Points = [
+          { X = 810 Y = 186 }
+          { X = -76 Y = -239 }
+          { X = -561 Y = -37 }
+          { X = 366 Y = 415 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseChest02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Chest_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Tallness = 619.0
+        Offset = { X = 0 Y = -230 }
+        Points = [
+          { X = -380 Y = 104 }
+          { X = -132 Y = 203 }
+          { X = 364 Y = -18 }
+          { X = 116 Y = -141 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHelmet01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Helmet_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -112 }
+        Points = [
+          { X = 95 Y = 17 }
+          { X = -15 Y = -34 }
+          { X = -106 Y = 1 }
+          { X = -78 Y = 49 }
+          { X = 98 Y = 49 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePottedPlant01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PottedPlant_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -769 }
+        Points = [
+          { X = 190 Y = -13 }
+          { X = 97 Y = -88 }
+          { X = -115 Y = -60 }
+          { X = -118 Y = 26 }
+          { X = 86 Y = 72 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseUrnDarkness01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_UrnDarkness_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -195 }
+        Points = [
+          { X = 150 Y = -20 }
+          { X = 119 Y = -86 }
+          { X = -119 Y = -86 }
+          { X = -155 Y = -17 }
+          { X = -67 Y = 82 }
+          { X = 82 Y = 80 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseUrnDarkness02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_UrnDarkness_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -106 }
+        Points = [
+          { X = 325 Y = 135 }
+          { X = 43 Y = -26 }
+          { X = -36 Y = -26 }
+          { X = -321 Y = 133 }
+          { X = -41 Y = 286 }
+          { X = 43 Y = 281 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCrateAmbrosia01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CrateAmbrosia_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -36 }
+        Points = [
+          { X = -26 Y = -81 }
+          { X = -233 Y = 16 }
+          { X = 21 Y = 141 }
+          { X = 239 Y = 36 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseKeys01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Keys_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Tallness = 214.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = 72 Y = 0 }
+          { X = 7 Y = -26 }
+          { X = -55 Y = 5 }
+          { X = 13 Y = 35 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTrimIron01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TrimIron_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -30 }
+        Points = [
+          { X = 55 Y = -35 }
+          { X = -88 Y = 34 }
+          { X = -71 Y = 51 }
+          { X = 85 Y = -25 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseTrimIron02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_TrimIron_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        StopsLight = false
+        Offset = { X = 0 Y = -40 }
+        Points = [
+          { X = 55 Y = -35 }
+          { X = -88 Y = 34 }
+          { X = -71 Y = 51 }
+          { X = 85 Y = -25 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWaterBowl01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/ScryingPoolAmbience"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WaterBowl_01"
+        Interact = 
+        {
+          Distance = 160.0
+        }
+        Offset = { X = 0 Y = -172 }
+        Points = [
+          { X = -18 Y = -179 }
+          { X = -238 Y = -127 }
+          { X = -478 Y = 88 }
+          { X = -259 Y = 188 }
+          { X = 212 Y = 189 }
+          { X = 435 Y = 128 }
+          { X = 270 Y = -107 }
+        ]
+        Using = [
+          { Name = "GenericSparkles" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseSkullChimera01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_SkullChimera_01"
+        Offset = { X = 0 Y = -291 }
+        Points = [
+          { X = 167 Y = 0 }
+          { X = -25 Y = -67 }
+          { X = -211 Y = 35 }
+          { X = 25 Y = 118 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseSkullCyclops01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_SkullCyclops_01"
+        Offset = { X = 0 Y = -291 }
+        Points = [
+          { X = 167 Y = 0 }
+          { X = -25 Y = -67 }
+          { X = -211 Y = 35 }
+          { X = 25 Y = 118 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseSkullMedusa01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_SkullMedusa_01"
+        Offset = { X = 0 Y = -238 }
+        Points = [
+          { X = 167 Y = 0 }
+          { X = -25 Y = -67 }
+          { X = -211 Y = 35 }
+          { X = 25 Y = 118 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCounter01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Counter_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        Tallness = 50.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -6 }
+        Points = [
+          { X = 879 Y = 306 }
+          { X = -601 Y = -441 }
+          { X = -883 Y = -294 }
+          { X = 607 Y = 459 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCounter02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Counter_02"
+        Tallness = 583.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -202 }
+        Points = [
+          { X = 309 Y = 409 }
+          { X = 805 Y = 162 }
+          { X = -333 Y = -407 }
+          { X = -829 Y = -160 }
+        ]
+        Using = [
+          { Name = "HouseAquarium01" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBasket01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Basket_01"
+        Offset = { X = 0 Y = -182 }
+        Points = [
+          { X = -23 Y = -102 }
+          { X = -214 Y = -11 }
+          { X = 41 Y = 104 }
+          { X = 220 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBread01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bread_01"
+        Tallness = 551.0
+        Offset = { X = 0 Y = -247 }
+        Points = [
+          { X = -447 Y = 23 }
+          { X = -57 Y = 197 }
+          { X = 442 Y = -53 }
+          { X = 69 Y = -233 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCup01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Cup_01"
+        Offset = { X = 0 Y = -78 }
+        Points = [
+          { X = -6 Y = -28 }
+          { X = -77 Y = -6 }
+          { X = -59 Y = 23 }
+          { X = 43 Y = 29 }
+          { X = 71 Y = 3 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_01"
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = 130 Y = -64 }
+          { X = -33 Y = -95 }
+          { X = -161 Y = -42 }
+          { X = -99 Y = 21 }
+          { X = 53 Y = 39 }
+          { X = 124 Y = -11 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase02"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_02"
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = 130 Y = -64 }
+          { X = -33 Y = -95 }
+          { X = -161 Y = -42 }
+          { X = -99 Y = 21 }
+          { X = 53 Y = 39 }
+          { X = 124 Y = -11 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBasketLettuce01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_BasketLettuce_01"
+        Tallness = 561.0
+        Offset = { X = 0 Y = -343 }
+        Points = [
+          { X = 168 Y = -82 }
+          { X = -82 Y = -112 }
+          { X = -192 Y = -43 }
+          { X = -99 Y = 21 }
+          { X = 53 Y = 39 }
+          { X = 178 Y = -19 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBasketFish01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_BasketFish_01"
+        Tallness = 542.0
+        Offset = { X = 0 Y = -289 }
+        Points = [
+          { X = -370 Y = -92 }
+          { X = -272 Y = 63 }
+          { X = 1 Y = 114 }
+          { X = 307 Y = 41 }
+          { X = 369 Y = -109 }
+          { X = 204 Y = -241 }
+          { X = -138 Y = -233 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseOnions01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Onions_01"
+        Tallness = 561.0
+        Offset = { X = 0 Y = -85 }
+      }
+    }
+    
+    {
+      Name = "HousePlate01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Plate_01"
+        Offset = { X = 0 Y = -62 }
+        Points = [
+          { X = 130 Y = -64 }
+          { X = -33 Y = -95 }
+          { X = -161 Y = -42 }
+          { X = -99 Y = 21 }
+          { X = 53 Y = 39 }
+          { X = 124 Y = -11 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePlates01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Plates_01"
+        Offset = { X = 0 Y = -185 }
+        Points = [
+          { X = 212 Y = -33 }
+          { X = 174 Y = -71 }
+          { X = -105 Y = -72 }
+          { X = -139 Y = -16 }
+          { X = -49 Y = 41 }
+          { X = 128 Y = 39 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseKitchenIsland01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_KitchenIsland_01"
+        Offset = { X = 0 Y = -185 }
+        Points = [
+          { X = 1038 Y = 151 }
+          { X = 1015 Y = -124 }
+          { X = -190 Y = -761 }
+          { X = -594 Y = -789 }
+          { X = -923 Y = -639 }
+          { X = -935 Y = -64 }
+          { X = 263 Y = 542 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseKitchenIsland01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_KitchenIsland_01A"
+        Offset = { X = 0 Y = -185 }
+        Points = [
+          { X = 1038 Y = 151 }
+          { X = 1015 Y = -124 }
+          { X = -190 Y = -703 }
+          { X = -975 Y = -306 }
+          { X = -968 Y = -81 }
+          { X = 243 Y = 552 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase06"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_06"
+        Offset = { X = 0 Y = -233 }
+        Points = [
+          { X = 151 Y = -7 }
+          { X = 50 Y = -47 }
+          { X = -73 Y = -47 }
+          { X = -142 Y = 3 }
+          { X = -59 Y = 45 }
+          { X = 82 Y = 41 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase05"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_05"
+        Offset = { X = 0 Y = -140 }
+        Points = [
+          { X = 108 Y = -6 }
+          { X = 37 Y = -44 }
+          { X = -66 Y = -43 }
+          { X = -117 Y = 0 }
+          { X = -49 Y = 41 }
+          { X = 64 Y = 36 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_04"
+        Offset = { X = 0 Y = -78 }
+        Points = [
+          { X = 169 Y = -12 }
+          { X = 57 Y = -113 }
+          { X = -106 Y = -103 }
+          { X = -186 Y = -2 }
+          { X = -79 Y = 75 }
+          { X = 88 Y = 75 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HouseVase07"
+        Tallness = 1318.0
+        Offset = { X = 0 Y = -552 }
+        Points = [
+          { X = -250 Y = -11 }
+          { X = -167 Y = 121 }
+          { X = 182 Y = 130 }
+          { X = 284 Y = -19 }
+          { X = 134 Y = -128 }
+          { X = -86 Y = -140 }
+        ]
+        Using = [
+          { Name = "HouseVase07A" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseVase07a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Vase_07a"
+        Tallness = 1318.0
+        Offset = { X = 0 Y = -552 }
+        Points = [
+          { X = -250 Y = -11 }
+          { X = -167 Y = 121 }
+          { X = 182 Y = 130 }
+          { X = 284 Y = -19 }
+          { X = 134 Y = -128 }
+          { X = -86 Y = -140 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLamp01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Lamp_01"
+        Offset = { X = 0 Y = -322 }
+        Points = [
+          { X = 364 Y = 11 }
+          { X = 326 Y = -107 }
+          { X = 125 Y = -173 }
+          { X = -43 Y = -178 }
+          { X = -276 Y = -143 }
+          { X = -383 Y = -6 }
+          { X = -230 Y = 143 }
+          { X = 291 Y = 136 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBed02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bed_02"
+        Tallness = 215.0
+        Offset = { X = 0 Y = 26 }
+        Points = [
+          { X = 828 Y = 45 }
+          { X = 832 Y = -43 }
+          { X = 226 Y = -392 }
+          { X = -748 Y = 87 }
+          { X = -772 Y = 191 }
+          { X = -780 Y = 252 }
+          { X = -77 Y = 527 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBed02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Bed_02a"
+        Tallness = 215.0
+        Offset = { X = 0 Y = 26 }
+        Points = [
+          { X = 828 Y = 45 }
+          { X = 832 Y = -43 }
+          { X = 226 Y = -392 }
+          { X = -748 Y = 87 }
+          { X = -772 Y = 191 }
+          { X = -780 Y = 252 }
+          { X = -77 Y = 527 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHeadBoard01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_HeadBoard_01"
+        Tallness = 215.0
+        Offset = { X = 0 Y = -455 }
+        Points = [
+          { X = 362 Y = 127 }
+          { X = -263 Y = -221 }
+          { X = -339 Y = -182 }
+          { X = 295 Y = 169 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCapestack01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Capestack_01"
+        Offset = { X = 0 Y = -187 }
+        Points = [
+          { X = 198 Y = 13 }
+          { X = 13 Y = -60 }
+          { X = -168 Y = 28 }
+          { X = 19 Y = 111 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseCloset01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Closet_01"
+        Offset = { X = 0 Y = -634 }
+        Points = [
+          { X = 534 Y = 109 }
+          { X = -261 Y = -266 }
+          { X = -497 Y = -193 }
+          { X = -525 Y = -11 }
+          { X = 282 Y = 222 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLamp02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Lamp_02"
+        Offset = { X = 0 Y = -142 }
+        Points = [
+          { X = 414 Y = -258 }
+          { X = -571 Y = 274 }
+          { X = -460 Y = 374 }
+          { X = 529 Y = -203 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseLamp03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Lamp_03"
+        Offset = { X = 0 Y = -639 }
+        Points = [
+          { X = 275 Y = -79 }
+          { X = -38 Y = -165 }
+          { X = -306 Y = -71 }
+          { X = -303 Y = 109 }
+          { X = 0 Y = 179 }
+          { X = 264 Y = 109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWindow02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Window_02"
+        Offset = { X = 0 Y = -723 }
+        Points = [
+          { X = 289 Y = -171 }
+          { X = -447 Y = 255 }
+          { X = -352 Y = 303 }
+          { X = 403 Y = -126 }
+          { X = 403 Y = -126 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseWallFlourish04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_WallFlourish_04"
+        Offset = { X = 0 Y = -189 }
+      }
+    }
+    
+    {
+      Name = "HouseCuttinBoard01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_CuttinBoard_01"
+        Offset = { X = 0 Y = -1 }
+      }
+    }
+    
+    {
+      Name = "HouseKitchenIslandShelf01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_KitchenIsland_Shelf_01"
+        Offset = { X = 0 Y = -371 }
+        Points = [
+          { X = 843 Y = 206 }
+          { X = -546 Y = -427 }
+          { X = -840 Y = -270 }
+          { X = 510 Y = 382 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueSkelly01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueSkelly_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -574 }
+        Points = [
+          { X = 221 Y = 0 }
+          { X = -5 Y = -98 }
+          { X = -208 Y = 0 }
+          { X = 0 Y = 113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HousePoetBust01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_PoetBust_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -261 }
+        Points = [
+          { X = 183 Y = -47 }
+          { X = 73 Y = -122 }
+          { X = -137 Y = -111 }
+          { X = -200 Y = -27 }
+          { X = -160 Y = 63 }
+          { X = 26 Y = 99 }
+          { X = 176 Y = 46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseBustFates01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_BustFates_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 611.0
+        Offset = { X = 0 Y = -261 }
+        Points = [
+          { X = 191 Y = 3 }
+          { X = 95 Y = -55 }
+          { X = -142 Y = -55 }
+          { X = -189 Y = 13 }
+          { X = -117 Y = 74 }
+          { X = 31 Y = 80 }
+          { X = 132 Y = 73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseArtifact01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Artifact_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -519 }
+        Points = [
+          { X = 183 Y = -47 }
+          { X = 73 Y = -122 }
+          { X = -137 Y = -111 }
+          { X = -200 Y = -27 }
+          { X = -160 Y = 63 }
+          { X = 26 Y = 99 }
+          { X = 176 Y = 46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStarSphere01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StarSphere_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -183 }
+        Points = [
+          { X = 183 Y = -47 }
+          { X = 73 Y = -122 }
+          { X = -137 Y = -111 }
+          { X = -200 Y = -27 }
+          { X = -160 Y = 63 }
+          { X = 26 Y = 99 }
+          { X = 176 Y = 46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseHammer01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Hammer_01"
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -377 }
+        Points = [
+          { X = 230 Y = -19 }
+          { X = -52 Y = -112 }
+          { X = -224 Y = -1 }
+          { X = 48 Y = 174 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueSkelly04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueSkelly_04"
+		AllowDrawableCache = false
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -568 }
+        Points = [
+          { X = 221 Y = 0 }
+          { X = -5 Y = -98 }
+          { X = -208 Y = 0 }
+          { X = 0 Y = 113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueSkelly03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueSkelly_03"
+		AllowDrawableCache = false
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -449 }
+        Points = [
+          { X = 221 Y = 0 }
+          { X = -5 Y = -98 }
+          { X = -208 Y = 0 }
+          { X = 0 Y = 113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueSkelly02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueSkelly_02"
+		AllowDrawableCache = false
+        Gravity = 0.0
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1035.0
+        Offset = { X = 0 Y = -571 }
+        Points = [
+          { X = 221 Y = 0 }
+          { X = -5 Y = -98 }
+          { X = -208 Y = 0 }
+          { X = 0 Y = 113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueDraped01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueDraped_01"
+		AllowDrawableCache = false
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1072.0
+        Offset = { X = 0 Y = -566 }
+        Points = [
+          { X = 221 Y = 0 }
+          { X = -5 Y = -98 }
+          { X = -208 Y = 0 }
+          { X = 0 Y = 113 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseStatueMtOlympus01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/CommonwealthAmbience"
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_StatueMtOlympus_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1226.0
+        Interact = 
+        {
+          Distance = 350.0
+          OffsetX = -100.0
+        }
+        Offset = { X = 0 Y = -530 }
+        Points = [
+          { X = 369 Y = -23 }
+          { X = 89 Y = -136 }
+          { X = -264 Y = -40 }
+          { X = -69 Y = 140 }
+          { X = 260 Y = 99 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMosaicWall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_MosaicWall_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 904.0
+        Offset = { X = 0 Y = -384 }
+        Points = [
+          { X = 514 Y = 307 }
+          { X = 589 Y = 264 }
+          { X = -502 Y = -280 }
+          { X = -568 Y = -242 }
+        ]
+        Using = [
+          { Name = "HouseMosaicWall02" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseMosaicWall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_MosaicWall_02"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 904.0
+        Offset = { X = 0 Y = -384 }
+        Points = [
+          { X = 514 Y = 307 }
+          { X = 589 Y = 264 }
+          { X = -502 Y = -280 }
+          { X = -568 Y = -242 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HouseFirecrackers01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      CollisionBounce = 0.0
+      CollisionBounceRequiredVelocity = 0.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionReactionFx = "null"
+      CollisionReactionRequiredVelocity = 0.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Firecrackers_01"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        RotateGeometry = true
+        StopsLight = false
+        Tallness = 1072.0
+        Offset = { X = 0 Y = -447 }
+        Points = [
+          { X = 200 Y = -35 }
+          { X = 25 Y = -93 }
+          { X = -159 Y = -9 }
+          { X = -112 Y = 137 }
+          { X = 102 Y = 152 }
+          { X = 196 Y = 90 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BartenderGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "BartenderGhostIdle"
+        StopsLight = false
+        Tallness = 187.0
+        Points = [
+          { X = 16 Y = -15 }
+          { X = -10 Y = -21 }
+          { X = -28 Y = -8 }
+          { X = -25 Y = 13 }
+          { X = -2 Y = 18 }
+          { X = 22 Y = 12 }
+          { X = 29 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BadgeSellerGhost01"
+      InheritFrom = "BartenderGhost01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "AdminGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "AdminGhostIdle"
+        StopsLight = false
+        Tallness = 187.0
+        Points = [
+          { X = 16 Y = -15 }
+          { X = -10 Y = -21 }
+          { X = -28 Y = -8 }
+          { X = -25 Y = 13 }
+          { X = -2 Y = 18 }
+          { X = 22 Y = 12 }
+          { X = 29 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "WorkerGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "WorkerGhostIdle"
+        StopsLight = false
+        Tallness = 187.0
+        Points = [
+          { X = 16 Y = -15 }
+          { X = -10 Y = -21 }
+          { X = -28 Y = -8 }
+          { X = -25 Y = 13 }
+          { X = -2 Y = 18 }
+          { X = 22 Y = 12 }
+          { X = 29 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BigGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow_Big"
+        EditorOutlineDrawBounds = false
+        Graphic = "BigGhostIdle"
+        StopsLight = false
+        Tallness = 163.0
+        Points = [
+          { X = 110 Y = 2 }
+          { X = 9 Y = -44 }
+          { X = -113 Y = -41 }
+          { X = -159 Y = -3 }
+          { X = -151 Y = 45 }
+          { X = -53 Y = 66 }
+          { X = 59 Y = 57 }
+        ]
+      }
+    }
+    
+    {
+      Name = "MediumGhost01"
+      InheritFrom = "BigGhost01"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow"
+        EditorOutlineDrawBounds = false
+        Scale = 0.5
+      }
+    }
+    
+    {
+      Name = "BrokerGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionSound = "/SFX/Enemy Sounds/PunchingBag/EmoteDizzy"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "BrokerGhostIdle"
+        StopsLight = false
+        Points = [
+          { X = 98 Y = -2 }
+          { X = 56 Y = -44 }
+          { X = -52 Y = -67 }
+          { X = -100 Y = -43 }
+          { X = -140 Y = 8 }
+          { X = -80 Y = 69 }
+          { X = 14 Y = 63 }
+          { X = 94 Y = 46 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChefGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ChefGhostIdle"
+        StopsLight = false
+        Tallness = 224.0
+        Interact = 
+        {
+          Distance = 160.0
+        }
+        OccluderPoints = [
+          { X = 34 Y = 1 }
+        ]
+        Points = [
+          { X = 17 Y = -25 }
+          { X = -6 Y = -28 }
+          { X = -34 Y = -15 }
+          { X = -40 Y = -3 }
+          { X = -28 Y = 14 }
+          { X = 2 Y = 20 }
+          { X = 29 Y = 9 }
+          { X = 32 Y = -8 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SmallGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow_Small"
+        EditorOutlineDrawBounds = false
+        Graphic = "SmallGhostIdle"
+        StopsLight = false
+        Points = [
+          { X = 30 Y = 3 }
+          { X = 17 Y = -11 }
+          { X = -15 Y = -11 }
+          { X = -28 Y = 5 }
+          { X = -6 Y = 20 }
+          { X = 11 Y = 20 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TallGhost01"
+      InheritFrom = "1_BaseVulnerableObstacle"
+      CollisionAlphaOutDuration = 0.1
+      CollisionEndedAlphaInDuration = 3.0
+      DisplayInEditor = true
+      UseCollisionShift = false
+      Life = 
+      {
+        DeathFx = "TartarusGhost01Dissipate"
+        DeathSound = "/SFX/GhostEvaporate"
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "GhostShadow_Small"
+        EditorOutlineDrawBounds = false
+        Graphic = "TallGhostIdle"
+        StopsLight = false
+        Tallness = 190
+        Points = [
+          { X = 23 Y = -20 }
+          { X = -7 Y = -31 }
+          { X = -26 Y = -34 }
+          { X = -41 Y = -16 }
+          { X = -23 Y = 4 }
+          { X = 22 Y = 6 }
+        ]
+      }
+    }
+  ]
+}

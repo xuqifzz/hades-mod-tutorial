@@ -1,0 +1,8 @@
+{
+	/* Times in UTC */
+	NextUpdateDate = "NextUpdateCountdownCustom"
+	LastUpdateDate = "07-03-2020"
+	UpdateWarningDate = "11-01-2020"
+	SaveCollectionBeginDate = "10-05-2020"
+	SaveCollectionEndDate = "10-09-2020"
+}

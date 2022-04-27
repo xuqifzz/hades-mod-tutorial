@@ -1,0 +1,1342 @@
+{
+  Animations = [
+
+    {
+      Name = "VaseShine"
+      Type = "Book"
+      FilePath = "Fx\Asphodel_Vase_01d_Shine\Asphodel_Vase_01d_Shine"
+      NumFrames = 10
+      PlaySpeed = 24
+      Scale = 5
+      ChainTo = "VaseShineWait"
+      Material = "Unlit"
+      StartAlpha = 0
+      EndAlpha = 1
+      PingPongColor = true
+    }
+
+    {
+      Name = "VaseShineWait"
+      Type = "Constant"
+      FilePath = "Dev\blank_invisible"
+      RandomDurationMin = 1
+      RandomDurationMax = 3
+      ChainTo = "VaseShine"
+    }
+
+    {
+      Name = "FxDebugArrow"
+      FilePath = "Particles\particle_arrow"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.5
+      Ambient = 0.0
+    }
+
+    {
+      Name = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\SpikeTrapUnpressed"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.25
+      Ambient = 0.0
+    }
+
+    {
+      Name = "SpikeTrapPressed"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\SpikeTrapPressed"
+    }
+
+    {
+      Name = "SpikeTrapPreFire"
+      InheritFrom = "SpikeTrapIdle"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Traps\SpikeTrapPressed_AboutToFire"
+    }
+
+    {
+      Name = "SpikeTrapDeactivated"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\SpikeTrapPressed_Deactivated"
+    }
+
+    {
+      Name = "AxeTrapIdle"
+      FilePath = "Tilesets\Traps\Tartarus_Axe_01"
+      Type = "Constant"
+      Alpha = 0.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.15
+      Ambient = 0.0
+      OwnerHasNoCollision = true
+    }
+
+    {
+      Name = "AxeTrapActivated"
+      ChainTo = "AxeTrapEmbedded"
+      ChildAnimation = "AxeTrapBlur"
+      FilePath = "Tilesets\Traps\Tartarus_Axe_01"
+      Type = "Constant"
+      EndAlpha = 1.0
+      StartAlpha = 0.5
+      Duration = 0.4
+      EaseIn = 0.001
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      EndOffsetY = -225.0
+      StartOffsetY = -600.0
+      Scale = 0.15
+      Ambient = 0.0
+      OwnerHasNoCollision = true
+    }
+
+    {
+      Name = "AxeTrapBlur"
+      FilePath = "Tilesets\Traps\Tartarus_Axe_01_Blur"
+      Type = "Constant"
+      EndAlpha = 1.0
+      Duration = 0.4
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      UseParentOffset = true
+      Scale = 0.6
+    }
+
+    {
+      Name = "AxeTrapEmbedded"
+      FilePath = "Tilesets\Traps\Tartarus_Axe_01"
+      Type = "Constant"
+      EndFrame = 1
+      HoldLastFrame = true
+      NumFrames = 1
+      RandomDurationMax = 0.15
+      RandomDurationMin = 0.07
+      StartFrame = 1
+      OffsetY = -225.0
+      StartOffsetY = 20.0
+      Scale = 0.15
+      Ambient = 0.0
+      CreateAnimations = [
+        { Name = "DustRingFrontCrusher" }
+        { Name = "DustRingBackCrusher" }
+        { Name = "AxeTrapFallLighting" }
+        { Name = "AxeTrapHitSpark" }
+      ]
+    }
+
+    {
+      Name = "AxeTrapHitSpark"
+      ChildAnimation = "QuickFlashSmall"
+      FilePath = "Fx\HitSparkA\HitSparkA"
+      GroupName = "FX_Standing_Add"
+      Type = "Book"
+      VisualFx = "AxeTrapHitSparkDynamic"
+      AddColor = true
+      ColorFromOwner = "Ignore"
+      EndBlue = 0.8
+      StartBlue = 1.0
+      StartGreen = 0.8
+      StartRed = 0.5
+      EndFrame = 11
+      NumFrames = 11
+      RandomPlaySpeedMax = 80.0
+      RandomPlaySpeedMin = 40.0
+      StartFrame = 1
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      SortMode = "Id"
+      ScaleFromOwner = "Ignore"
+      ScaleMax = 0.75
+      ScaleMin = 0.5
+      VisualFxCap = 12
+      VisualFxIntervalMax = 0.01
+      VisualFxIntervalMin = 0.001
+      TimeModifierFraction = 0.75
+    }
+
+    {
+      Name = "AxeTrapHitSparkDynamic"
+      FilePath = "Particles\particle_addFlake"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Take"
+      AngleMax = 180.00
+      ColorFromOwner = "Ignore"
+      EndBlue = 0.999
+      EndGreen = 0.3
+      StartAlpha = 1.0
+      StartBlue = 1.0
+      StartGreen = 1.0
+      StartRed = 1.0
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      RandomDurationMax = 1.1
+      RandomDurationMin = 0.5
+      StartFrame = 1
+      OffsetZ = -50.0
+      RandomOffsetX = 50.0
+      RandomOffsetY = 10.0
+      LocationFromOwner = "Ignore"
+      Acceleration = -1200.0
+      VelocityMax = 900.0
+      VelocityMin = 200.0
+      EndScale = 0.0
+      ScaleFromOwner = "Ignore"
+      ScaleMax = 0.3
+      ScaleMin = 0.02
+      StartScaleX = 7.0
+      TimeModifierFraction = 0.75
+    }
+
+    {
+      Name = "AxeTrapFallLighting"
+      FilePath = "Fx\BasicGlow\BasicGlow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndBlue = 0.7
+      EndGreen = 0.9
+      EndRed = 1.0
+      StartAlpha = 1.0
+      StartBlue = 0.8
+      StartGreen = 0.999
+      StartRed = 0.999
+      Duration = 0.125
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.5
+      ScaleY = 0.5
+      Ambient = 0.0
+    }
+
+    {
+      Name = "AxeTrapReset"
+      ChainTo = "AxeTrapIdle"
+      FilePath = "Tilesets\Traps\Tartarus_Axe_01"
+      Type = "Constant"
+      StartAlpha = 1.0
+      EaseIn = 0.001
+      EndFrame = 1
+      HoldLastFrame = true
+      NumFrames = 1
+      RandomDurationMax = 0.55
+      RandomDurationMin = 0.3
+      StartFrame = 1
+      EndOffsetY = -600.0
+      StartOffsetY = -225.0
+      Scale = 0.15
+      Ambient = 0.0
+      OwnerHasNoCollision = true
+    }
+
+    {
+      Name = "SpikeCubeIdle"
+      FilePath = "Tilesets\Temple\Temple_Pillar_Section_01"
+      Type = "Constant"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      RandomDurationMax = 1.0
+      RandomDurationMin = 0.75
+      StartFrame = 1
+      OffsetY = -40.0
+      EndScale = 0.17
+      PingPongScale = true
+      StartScale = 0.16
+      Ambient = 0.0
+    }
+
+    {
+      Name = "PhalanxTrapActivated"
+      InheritFrom = "PhalanxTrapIdle"
+      ShakeDistance = 3.0
+      ShakeSpeed = 400.0
+    }
+
+    {
+      Name = "BannerSupportIdle"
+      ChildAnimation = "RadialEnemySupportZone"
+      FilePath = "Tilesets\Traps\BannerSupportIdle"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.2
+      Ambient = 0.0
+    }
+
+    {
+      Name = "SpikeCubeActivated"
+      InheritFrom = "SpikeCubeIdle"
+      Duration = 0.5
+      Loop = false
+      EndScale = 0.16
+      StartScale = 0.18
+      ShakeDistance = 3.0
+      ShakeSpeed = 400.0
+    }
+
+    {
+      Name = "BlastCubeOnSpawn"
+      ChildAnimation = "BallDropPuff"
+      FilePath = "Tilesets\Traps\Traps_BlastUrn_01"
+      Type = "Constant"
+      Sound = "/Leftovers/SFX/PlayerRespawnNEW"
+      EndAlpha = 1.0
+      Duration = 0.35
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OriginX = 157.0
+      OriginY = 337.0
+      StartScale = 1.3
+      Ambient = 0.0
+    }
+
+    {
+      Name = "BlastCubeIdle"
+      FilePath = "Tilesets\Traps\Traps_BlastUrn_01"
+      Type = "Constant"
+      Duration = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OriginX = 157.0
+      OriginY = 337.0
+      Ambient = 0.0
+    }
+
+    {
+      Name = "BlastCubeLit"
+      InheritFrom = "BlastCubeIdle"
+      Sound = "/SFX/BombFusePreExplode"
+      StopSoundOnFinishFade = 0.2
+      Duration = 3.0
+      ShakeDistance = 1.0
+      ShakeSpeed = 150.0
+    }
+
+    {
+      Name = "BlastCubeFusedRegeneratingExplode"
+      InheritFrom = "Blank"
+      OwnerHasNoCollision = true
+    }
+
+    {
+      Name = "BreakableIdle1"
+      FilePath = "Tilesets\Temple\Temple_Urn_01"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -50.0
+      Scale = 0.2
+    }
+
+    {
+      Name = "BreakableIdle2"
+      InheritFrom = "BreakableIdle1"
+      FilePath = "Tilesets\Temple\Temple_Urn_02"
+      Scale = 0.13
+    }
+
+    {
+      Name = "BreakableIdle3"
+      InheritFrom = "BreakableIdle1"
+      FilePath = "Tilesets\Temple\Temple_Urn_03"
+      OffsetY = -33.0
+      Scale = 0.15
+    }
+
+    {
+      Name = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_Vase_01"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -100.0
+      Scale = 0.2
+    }
+
+    {
+      Name = "BreakableAsphodelIdle2"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_Vase_01b"
+    }
+
+    {
+      Name = "BreakableAsphodelIdle3"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_Vase_01c"
+    }
+
+    {
+      Name = "AsphodelSkullDeath"
+      CreateAnimation = "AsphodelSkullDeathFx"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "AsphodelSkullDeathFx"
+      FilePath = "Fx\AsphodelSkullDeath\AsphodelSkullDeath"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      EndFrame = 33
+      NumFrames = 33
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OriginX = 110.0
+      OriginY = 210.0
+      SortMode = "FromParent"
+      Scale = 1.05
+      ScaleFromOwner = "Ignore"
+      Ambient = 0.0
+    }
+
+    {
+      Name = "BreakableAsphodelHeal"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_Vase_02"
+      VisualFx = "HealthSparkleOutwardBreakable"
+      OffsetY = -50.0
+      VisualFxIntervalMax = 0.1
+      VisualFxIntervalMin = 0.2
+    }
+
+    {
+      Name = "BreakableElysiumIdle1"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Elysium\Elysium_Urn_01"
+      OffsetY = -75.0
+    }
+
+    {
+      Name = "BreakableElysiumIdle2"
+      InheritFrom = "BreakableElysiumIdle1"
+      FilePath = "Tilesets\Elysium\Elysium_Urn_02"
+      OffsetY = -60.0
+    }
+
+    {
+      Name = "BreakableElysiumIdle3"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Elysium\Elysium_Urn_03"
+      OffsetY = 5.0
+    }
+
+    {
+      Name = "BreakableStyxIdle1"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Styx\Styx_Vase_01"
+      OffsetY = -75.0
+    }
+
+    {
+      Name = "BreakableStyxIdle2"
+      InheritFrom = "BreakableElysiumIdle1"
+      FilePath = "Tilesets\Styx\Styx_Vase_02"
+      OffsetY = -60.0
+    }
+
+    {
+      Name = "BreakableStyxIdle3"
+      InheritFrom = "BreakableAsphodelIdle"
+      FilePath = "Tilesets\Styx\Styx_Vase_03"
+      OffsetY = -50.0
+    }
+
+    {
+      Name = "BreakableHighValueIdle"
+      FilePath = "Tilesets\Tartarus\Tartarus_UrnExpensive_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -50.0
+      Scale = 0.12
+      ChildAnimation = "Tartarus_UrnExpensive_01_Shine_Wait"
+    }
+
+    {
+      Name = "Tartarus_UrnExpensive_01_Shine"
+      InheritFrom = "VaseShine"
+      FilePath = "Fx\Tartarus_UrnExpensive_01_Shine\Tartarus_UrnExpensive_01_Shine"
+      Scale = 0.6
+      OffsetY = -50
+      ChainTo = "Tartarus_UrnExpensive_01_Shine_Wait"
+    }
+    {
+      Name = "Tartarus_UrnExpensive_01_Shine_Wait"
+      InheritFrom = "VaseShineWait"
+      ChainTo = "Tartarus_UrnExpensive_01_Shine"
+    }
+
+    {
+      Name = "BreakableHighValueIdleSuper"
+      InheritFrom = "BreakableHighValueIdle"
+      VisualFx = "MoneySparkleUrn"
+	  VisualFxManagerCap = 300
+      VisualFxIntervalMax = 0.1
+      VisualFxIntervalMin = 0.05
+    }
+
+    {
+      Name = "BreakableAsphodelHighValueIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_Vase_01d"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -100.0
+      Scale = 0.2
+      ChildAnimation = "Asphodel_Vase_01d_Shine_Wait"
+    }
+
+    {
+      Name = "Asphodel_Vase_01d_Shine"
+      InheritFrom = "VaseShine"
+      FilePath = "Fx\Asphodel_Vase_01d_Shine\Asphodel_Vase_01d_Shine"
+      Scale = 1
+      OffsetY = -130
+      ChainTo = "Asphodel_Vase_01d_Shine_Wait"
+    }
+    {
+      Name = "Asphodel_Vase_01d_Shine_Wait"
+      InheritFrom = "VaseShineWait"
+      ChainTo = "Asphodel_Vase_01d_Shine"
+    }
+
+
+    {
+      Name = "BreakableAsphodelHighValueIdleSuper"
+      InheritFrom = "BreakableAsphodelHighValueIdle"
+      VisualFx = "MoneySparkleUrn"
+	  VisualFxManagerCap = 300
+      VisualFxIntervalMax = 0.1
+      VisualFxIntervalMin = 0.05
+    }
+
+    {
+      Name = "BreakableElysiumHighValueIdle"
+      FilePath = "Tilesets\Elysium\Elysium_Urn_04"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -130.0
+      Scale = 0.25
+      ChildAnimation = "Elysium_Urn_04_Shine_Wait"
+    }
+
+    {
+      Name = "Elysium_Urn_04_Shine"
+      InheritFrom = "VaseShine"
+      FilePath = "Fx\Elysium_Urn_04_Shine\Elysium_Urn_04_Shine"
+      Scale = 2
+      OffsetY = -180
+      ChainTo = "Elysium_Urn_04_Shine_Wait"
+    }
+    {
+      Name = "Elysium_Urn_04_Shine_Wait"
+      InheritFrom = "VaseShineWait"
+      ChainTo = "Elysium_Urn_04_Shine"
+    }
+
+    {
+      Name = "BreakableElysiumHighValueIdleSuper"
+      InheritFrom = "BreakableElysiumHighValueIdle"
+      VisualFx = "MoneySparkleUrn"
+	  VisualFxManagerCap = 300
+      VisualFxIntervalMax = 0.1
+      VisualFxIntervalMin = 0.05
+    }
+
+    {
+      Name = "BreakableStyxHighValueIdle"
+      FilePath = "Tilesets\Styx\Styx_Vase_Gold_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -100.0
+      Scale = 0.25
+      ChildAnimation = "Styx_Vase_Gold_01_Shine"
+    }
+
+    {
+      Name = "Styx_Vase_Gold_01_Shine"
+      InheritFrom = "VaseShine"
+      FilePath = "Fx\Styx_Vase_Gold_01_Shine\Styx_Vase_Gold_01_Shine"
+      Scale = 1
+      OffsetY = -100
+      ChainTo = "Styx_Vase_Gold_01_Shine_Wait"
+    }
+    {
+      Name = "Styx_Vase_Gold_01_Shine_Wait"
+      InheritFrom = "VaseShineWait"
+      ChainTo = "Styx_Vase_Gold_01_Shine"
+    }
+
+    {
+      Name = "BreakableStyxHighValueIdleSuper"
+      InheritFrom = "BreakableStyxHighValueIdle"
+      VisualFx = "MoneySparkleUrn"
+	  VisualFxManagerCap = 300
+      VisualFxIntervalMax = 0.1
+      VisualFxIntervalMin = 0.05
+    }
+
+    {
+      Name = "BaseThiefDeath"
+      FilePath = "Fx\Temple_Urn_01_ShatterA\Temple_Urn_01_ShatterA"
+      GroupName = "FX_Terrain"
+      Type = "Book"
+      VisualFx = "UrnFragments"
+	  VisualFxManagerCap = 400
+      AngleFromOwner = "Ignore"
+      UseOwnAngle = false
+      EaseIn = 0.99
+      EaseOut = 1.0
+      EndFrame = 35
+      NumFrames = 35
+      RandomPlaySpeedMax = 45.0
+      RandomPlaySpeedMin = 30.0
+      StartFrame = 1
+      OffsetY = 4.0
+      OriginX = 120.0
+      OriginY = 204.0
+      SortFromOwner = "Take"
+      Scale = 0.75
+      VisualFxCap = 20
+      VisualFxIntervalMax = 0.002
+      VisualFxIntervalMin = 0.001
+	  SoundManagerCap = 32
+      Slides = [
+        { Frame = 1 Sound = "/SFX/Enemy Sounds/EnemyDeathExplode" }
+        { Frame = 6 Sound = "/SFX/CeramicPotSmash" },
+      ]
+    }
+
+    {
+      Name = "BreakableDeathAnim"
+      FilePath = "Animations\BreakableDeathAnim\BreakableDeathAnim"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "BreakableDeathA" }
+        { Name = "BreakableDeathB" }
+      ]
+    }
+
+    {
+      Name = "BreakableDeathElysium"
+      FilePath = "Animations\BreakableDeathAnim\BreakableDeathAnim"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "BreakableDeathA_Elysium" }
+        { Name = "BreakableDeathB_Elysium" }
+      ]
+    }
+
+    {
+      Name = "BreakableDeathA"
+      ChainTo = "BreakableDeathA_End"
+      FilePath = "Fx\Temple_Urn_01_ShatterA\Temple_Urn_01_ShatterA"
+	  UseAttachedGroup = false
+	  LocationZFromOwner = "Ignore"
+      GroupName = "Standing"
+      Type = "Book"
+      VisualFx = "UrnFragments"
+	  VisualFxManagerCap = 400
+      AngleFromOwner = "Ignore"
+      UseOwnAngle = false
+      EaseIn = 0.99
+      EaseOut = 1.0
+      EndFrame = 36
+      NumFrames = 36
+      RandomPlaySpeedMax = 45.0
+      RandomPlaySpeedMin = 30.0
+      StartFrame = 1
+      OffsetY = 4.0
+      OriginX = 120.0
+      OriginY = 204.0
+      SortFromOwner = "Take"
+      TransferDrawLayer = false
+      Scale = 0.75
+      VisualFxCap = 10
+      VisualFxIntervalMax = 0.002
+      VisualFxIntervalMin = 0.001
+      OnlyWhenVisible = true
+    }
+
+    {
+      Name = "BreakableDeathA_End"
+      InheritFrom = "BreakableDeathA"
+      ChainTo = "null"
+      FilePath = "Fx\Temple_Urn_01_ShatterA\Temple_Urn_01_ShatterA0036"
+      GroupName = "FX_Terrain"
+      Type = "ConstantNoUpdate"
+      VisualFx = "null"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "BreakableDeathB"
+      InheritFrom = "BreakableDeathA"
+      ChainTo = "BreakableDeathB_End"
+      FilePath = "Fx\Temple_Urn_01_ShatterB\Temple_Urn_01_ShatterB"
+      EndFrame = 20
+      NumFrames = 20
+      StartFrame = 1
+    }
+
+    {
+      Name = "BreakableDeathB_End"
+      InheritFrom = "BreakableDeathB"
+      ChainTo = "null"
+      FilePath = "Fx\Temple_Urn_01_ShatterB\Temple_Urn_01_ShatterB0020"
+      GroupName = "FX_Terrain"
+	  Type = "ConstantNoUpdate"
+      VisualFx = "null"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "BreakableDeathA_Elysium"
+      InheritFrom = "BreakableDeathA"
+      ChainTo = "BreakableDeathA_Elysium_End"
+      FilePath = "Fx\Elysium_Urn_01_ShatterA\Elysium_Urn_01_ShatterA"
+      EndFrame = 19
+      NumFrames = 19
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      Scale = 1.7
+    }
+
+    {
+      Name = "BreakableDeathB_Elysium"
+      InheritFrom = "BreakableDeathB"
+      ChainTo = "BreakableDeathB_Elysium_End"
+      FilePath = "Fx\Elysium_Urn_01_ShatterB\Elysium_Urn_01_ShatterB"
+      EndFrame = 21
+      NumFrames = 21
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      Scale = 1.7
+    }
+
+    {
+      Name = "BreakableDeathA_Elysium_End"
+      InheritFrom = "BreakableDeathA_End"
+      FilePath = "Fx\Elysium_Urn_01_ShatterA\Elysium_Urn_01_ShatterA0019"
+      Scale = 1.7
+    }
+
+    {
+      Name = "BreakableDeathB_Elysium_End"
+      InheritFrom = "BreakableDeathB_End"
+      FilePath = "Fx\Elysium_Urn_01_ShatterB\Elysium_Urn_01_ShatterB0021"
+      Scale = 1.7
+    }
+
+    {
+      Name = "UrnFragments"
+      FilePath = "Animations\UrnFragments\UrnFragments"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "UrnFragment01" }
+        { Name = "UrnFragment02" }
+        { Name = "UrnFragment03" }
+        { Name = "UrnFragment04" }
+        { Name = "UrnFragment05" }
+      ]
+    }
+
+    {
+      Name = "UrnFragment01"
+      FilePath = "Particles\UrnFragment01"
+      GroupName = "Standing"
+      Type = "Constant"
+      AngleFromOwner = "Take"
+      AngleMax = 30.00
+      AngleMin = -30.00
+      EndFrame = 1
+      NumFrames = 1
+      RandomDurationMax = 0.8
+      RandomDurationMin = 0.4
+      StartFrame = 1
+      RandomOffsetX = 30.0
+      RandomOffsetY = 30.0
+      LocationFromOwner = "Take"
+      Gravity = 1000.0
+      VelocityMax = 900.0
+      VelocityMin = 300.0
+      RandomRotationSpeedMax = 360.00
+      RandomRotationSpeedMin = -360.00
+      EndScale = 0.0
+      ScaleMax = 0.9
+      ScaleMin = 0.4
+      Ambient = 0.0
+      RandomAccelerationMax = -500.0
+      RandomAccelerationMin = -2500.0
+    }
+
+    {
+      Name = "UrnFragment02"
+      InheritFrom = "UrnFragment01"
+      FilePath = "Particles\UrnFragment02"
+    }
+
+    {
+      Name = "UrnFragment03"
+      InheritFrom = "UrnFragment01"
+      FilePath = "Particles\UrnFragment03"
+    }
+
+    {
+      Name = "UrnFragment04"
+      InheritFrom = "UrnFragment01"
+      FilePath = "Particles\UrnFragment04"
+    }
+
+    {
+      Name = "UrnFragment05"
+      InheritFrom = "UrnFragment01"
+      FilePath = "Particles\UrnFragment05"
+    }
+
+    {
+      Name = "BreakableDeathDust"
+      FilePath = "Fx\DustPuffA\DustPuffA"
+      Type = "Book"
+      ColorFromOwner = "Ignore"
+      EndFrame = 40
+      NumFrames = 40
+      RandomPlaySpeedMax = 60.0
+      RandomPlaySpeedMin = 50.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      OffsetY = -120.0
+      Ambient = 0.25
+    }
+
+
+    {
+      Name = "BreakableDeathStyx"
+      FilePath = "Animations\BreakableDeathAnim\BreakableDeathAnim"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "Styx_Vase_01_Shatter" }
+        { Name = "Styx_Vase_02_Shatter" }
+        { Name = "Styx_Vase_03_Shatter" }
+      ]
+    }
+
+    {
+      Name = "Styx_Vase_01_Shatter"
+      ChainTo = "Styx_Vase_01_Shatter_End"
+      FilePath = "Fx\Styx_Vase_01_Shatter\Styx_Vase_01_Shatter"
+      GroupName = "Standing"
+      Type = "Book"
+      VisualFx = "UrnFragments"
+	  VisualFxManagerCap = 400
+      AngleFromOwner = "Ignore"
+      UseOwnAngle = false
+      EaseIn = 0.99
+      EaseOut = 1.0
+      EndFrame = 20
+      NumFrames = 20
+      RandomPlaySpeedMax = 45.0
+      RandomPlaySpeedMin = 30.0
+      StartFrame = 1
+      SortFromOwner = "Take"
+      TransferDrawLayer = false
+      VisualFxCap = 10
+      VisualFxIntervalMax = 0.002
+      VisualFxIntervalMin = 0.001
+      OnlyWhenVisible = true
+      OriginX = 140
+      OriginY = 290
+      StartScale = 1
+      EndScale = 0.66
+    }
+
+    {
+      Name = "Styx_Vase_01_Shatter_End"
+      InheritFrom = "Styx_Vase_01_Shatter"
+      ChainTo = "null"
+      FilePath = "Fx\Styx_Vase_01_Shatter\Styx_Vase_01_Shatter0020"
+      GroupName = "FX_Terrain"
+      Type = "Constant"
+      VisualFx = "null"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      StartScale = 0.661
+    }
+
+    {
+      Name = "Styx_Vase_02_Shatter"
+      InheritFrom = "Styx_Vase_01_Shatter"
+      FilePath = "Fx\Styx_Vase_02_Shatter\Styx_Vase_02_Shatter"
+      ChainTo="Styx_Vase_02_Shatter_End"
+    }
+
+    {
+      Name = "Styx_Vase_02_Shatter_End"
+      InheritFrom = "Styx_Vase_01_Shatter_End"
+      FilePath = "Fx\Styx_Vase_02_Shatter\Styx_Vase_02_Shatter0020"
+    }
+
+    {
+      Name = "Styx_Vase_03_Shatter"
+      InheritFrom = "Styx_Vase_01_Shatter"
+      FilePath = "Fx\Styx_Vase_03_Shatter\Styx_Vase_03_Shatter"
+      ChainTo="Styx_Vase_03_Shatter_End"
+    }
+
+    {
+      Name = "Styx_Vase_03_Shatter_End"
+      InheritFrom = "Styx_Vase_01_Shatter_End"
+      FilePath = "Fx\Styx_Vase_03_Shatter\Styx_Vase_03_Shatter0020"
+    }
+
+    {
+      Name = "DartTrapIdle"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadUnpressed"
+    }
+
+    {
+      Name = "DartTrapPreFire"
+      InheritFrom = "DartTrapIdle"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Traps\Traps_DartPadPressed_AboutToFire"
+    }
+
+    {
+      Name = "DartTrapPressed"
+      InheritFrom = "DartTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadPressed"
+    }
+
+    {
+      Name = "TrapsDartPadPressedSmoke"
+      FilePath = "Fx\TrapsDartPadPressedSmoke\TrapsDartPadPressedSmoke"
+      GroupName = "FX_Terrain"
+      Type = "Book"
+      EndFrame = 55
+      NumFrames = 55
+      PlaySpeed = 60.0
+      StartFrame = 1
+      Ambient = 0.0
+    }
+
+    {
+      Name = "DartTrapDeactivated"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadDeactivated"
+    }
+
+    {
+      Name = "AxeTrapTriggerIdle"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadUnpressed"
+    }
+
+    {
+      Name = "AxeTrapTriggerPreFire"
+      InheritFrom = "DartTrapIdle"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Traps\Traps_DartPadPressed_AboutToFire"
+    }
+
+    {
+      Name = "AxeTrapTriggerPressed"
+      InheritFrom = "DartTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadPressed"
+    }
+
+    {
+      Name = "AxeTrapTriggerDeactivated"
+      InheritFrom = "SpikeTrapIdle"
+      FilePath = "Tilesets\Traps\Traps_DartPadDeactivated"
+    }
+
+    {
+      Name = "DartTrapEmitterIdle"
+      ChildAnimation = "DartTrapEmitterTopIdle"
+      FilePath = "Tilesets\Traps\Traps_DartTrapBottom_Idle"
+      AngleFromOwner = "Ignore"
+      Duration = 1.0
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      Scale = 0.16
+      Ambient = 0.0
+    }
+
+    {
+      Name = "DartTrapEmitterTopIdle"
+      FilePath = "Tilesets\Traps\Traps_DartTrapTop_Idle"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      Scale = 0.16
+      Ambient = 0.0
+    }
+
+    {
+      Name = "DartTrapEmitterReturnToIdle"
+      InheritFrom = "DartTrapEmitterIdle"
+      ChildAnimation = "DartTrapEmitterTopReturnToIdle"
+      Sound = "/SFX/DartTrapEmitterDeactivateSlam"
+    }
+
+    {
+      Name = "DartTrapEmitterTopReturnToIdle"
+      InheritFrom = "DartTrapEmitterTopIdle"
+      Duration = 0.25
+      EaseIn = 0.9
+      EaseOut = 1.0
+      HoldLastFrame = true
+      StartOffsetY = -80.0
+    }
+
+    {
+      Name = "DartTrapEmitterFire"
+      ChildAnimation = "DartTrapEmitterTopFire"
+      FilePath = "Tilesets\Traps\Traps_DartTrapBottom_Idle"
+      AngleFromOwner = "Ignore"
+      Sound = "/SFX/DartTrapEmitterActivateSlide"
+      StopSoundOnFinishFade = 0.2
+      Duration = 1.0
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -40.0
+      Scale = 0.16
+      Ambient = 0.0
+    }
+
+    {
+      Name = "DartTrapEmitterTopFire"
+      ChainTo = "DartTrapEmitterTopFiring"
+      FilePath = "Fx\Traps_DartTrapTop_Activate\Traps_DartTrapTop_Activate"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      Duration = 0.125
+      EaseIn = 0.9
+      EaseOut = 1.0
+      EndFrame = 28
+      LoopFramesOnly = true
+      NumFrames = 28
+      PlaySpeed = 60.0
+      StartFrame = 1
+      EndOffsetY = -220.0
+      StartOffsetY = -140.0
+      TransferFrameFromThis = true
+      Scale = 0.8
+    }
+
+    {
+      Name = "DartTrapEmitterTopFiring"
+      FilePath = "Fx\Traps_DartTrapTop_Activate\Traps_DartTrapTop_Activate"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      EndFrame = 28
+      HoldLastFrame = true
+      NumFrames = 28
+      PlaySpeed = 60.0
+      StartFrame = 1
+      OffsetY = -220.0
+      Scale = 0.8
+    }
+
+    {
+      Name = "GasTrapIdle"
+      FilePath = "Tilesets\Asphodel\Asphodel_TrapFissure_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.15
+      Ambient = 0.0
+    }
+
+    {
+      Name = "GasTrapActivated"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Asphodel\Asphodel_TrapFissure_01"
+      Type = "Constant"
+      Sound = "/Leftovers/Object Ambiences/LavaSplash"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.15
+      Ambient = 0.0
+    }
+
+    {
+      Name = "GasTrapPoisonIdle"
+      FilePath = "Tilesets\Styx\Styx_Terrain_PoisonTrap_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.25
+      Ambient = 0.0
+    }
+
+    {
+      Name = "GasTrapPoisonActivated"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Styx\Styx_Terrain_PoisonTrap_01"
+      Type = "Constant"
+      Sound = "/Leftovers/Object Ambiences/LavaSplash"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.25
+      Ambient = 0.0
+    }
+
+    {
+      Name = "GasTrapPoisonDisabled"
+      CreateAnimation = "TrapsDartPadPressedSmoke"
+      FilePath = "Tilesets\Styx\Styx_Terrain_PoisonTrap_01a"
+      Type = "Constant"
+      Sound = "null"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.25
+      Ambient = 0.0
+    }
+
+    {
+      Name = "TrapFissureDisabled"
+      FilePath = "Tilesets\Asphodel\Asphodel_TrapFissureDisabled_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Scale = 0.15
+      Ambient = 0.0
+    }
+
+    {
+      Name = "WallSegmentIdle"
+      FilePath = "Tilesets\Temple\Temple_Cube_Marble_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -60.0
+      Scale = 0.2
+      Ambient = 0.0
+    }
+
+    {
+      Name = "WallSegmentNarrow01Idle"
+      FilePath = "Tilesets\Temple\Temple_WallBrick_01"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OffsetY = -580.0
+      Ambient = 0.0
+    }
+
+    {
+      Name = "TartarusWallBrick03Destructible"
+      FilePath = "Tilesets\Tartarus\Tartarus_WallBrick_03_Destructible"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Ambient = 0.0
+    }
+
+
+    {
+      Name = "HadesTombstoneSpawn"
+      Type = "Book"
+      FilePath = "Fx\HadesStunTotemSpawn\HadesStunTotemSpawn"
+      ChainTo = "HadesStunTotemStatic"
+      Scale = 4
+      NumFrames = 60
+      PlaySpeed = 30
+      Material = "Unlit"
+      AngleFromOwner = "Ignore"
+
+      OwnerInvulnerable = true
+      ChildAnimation = "HadesStunTotemFlameSpawn"
+    }
+
+    {
+      Name = "HadesTombstoneExplode"
+      Type = "Book"
+      FilePath = "Fx\HadesStunTotemExplode\HadesStunTotemExplode"
+      Scale = 4
+      NumFrames = 47
+      RandomPlaySpeedMin = 30
+      RandomPlaySpeedMax = 40
+      Material = "Unlit"
+      AngleFromOwner = "Ignore"
+      CreateAnimation = "QuickFlashGreen"
+      Sound = "/Leftovers/Menu Sounds/PlayerKilledLong_Small"
+    }
+
+    {
+      Name = "HadesStunTotemFlame"
+      Type = "Book"
+      FilePath = "Fx\HadesStunTotemFlame\HadesStunTotemFlame"
+      NumFrames = 40
+      Loop = true
+      PlaySpeed = 30
+      RandomStartFrame = false
+      ReRandomizeOnLoop = false
+      Material = "Unlit"
+      ScaleFromOwner = "Ignore"
+      SortMode = "FromParent"
+      OffsetY = -490
+      Scale = 1.25
+      LocationZFromOwner = "Ignore"
+    }
+
+    {
+      Name = "HadesStunTotemFlameSpawn"
+      Type = "Book"
+      FilePath = "Fx\HadesStunTotemFlame\HadesStunTotemFlame"
+      NumFrames = 40
+      PlaySpeed = 20
+      Loop = false
+      Material = "Unlit"
+      ScaleFromOwner = "Ignore"
+      SortMode = "FromParent"
+      OffsetY = -490
+      Scale = 1.25
+      StartAlpha = 0
+      EndAlpha = 1
+      ColorFromOwner = "Ignore"
+      HoldLastFrame = true
+    }
+
+
+    {
+      Name = "HadesStunTotemSpawnDecal"
+      Type = "Slide"
+      GroupName = "FX_Terrain"
+      FilePath = "Fx\HadesStunTotemSpawnDecal\HadesStunTotemSpawnDecal"
+      NumFrames = 60
+      Scale = 1
+      LocationFromOwner = "Take"
+      LocationZFromOwner = "Ignore"
+      ScaleFromOwner = "Ignore"
+      AngleFromOwner = "Ignore"
+      ColorFromOwner = "Ignore"
+      Ambient = 0.2
+      OffsetZ = -30
+      CancelOverCap = false
+      OnlyWhenVisible = false
+      RandomFlipHorizontal = true
+      ChainTo = "HadesStunTotemSpawnDecalFade"
+      DieWithOwner = true
+      Slides = [
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }{ DurationFrames = 2 }
+        { DurationFrames = 9999 }
+      ]
+    }
+
+    {
+      Name = "HadesStunTotemSpawnDecalFade"
+      Type = "Constant"
+      FilePath = "Fx\HadesStunTotemSpawnDecal\HadesStunTotemSpawnDecal0060"
+      NumFrames = 60
+      Scale = 1
+      OffsetY = -280
+      LocationFromOwner = "Take"
+      LocationZFromOwner = "Ignore"
+      ScaleFromOwner = "Ignore"
+      AngleFromOwner = "Ignore"
+      ColorFromOwner = "Ignore"
+      CancelOverCap = false
+      OnlyWhenVisible = false
+      StartAlpha = 1
+      EndAlpha = 0
+      Ambient = 0.2
+      RandomDurationMin = 1
+      RandomDurationMax = 2
+      UseOwnAngle = false
+    }
+
+    {
+      Name = "HadesStunTotemStatic"
+      Type = "Constant"
+      FilePath = "Tilesets\Surface\Surface_Gravemarker_01Active"
+      Material = "Unlit"
+      ChildAnimation = "HadesStunTotemFlame"
+    }
+
+
+
+    {
+      Name = "HadesTombstoneActivate"
+      FilePath = "Tilesets\Surface\Surface_Gravemarker_01Active"
+      GroupName = "Standing"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      Ambient = 0.0
+    }
+  ]
+}

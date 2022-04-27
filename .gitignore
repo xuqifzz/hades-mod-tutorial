@@ -1,0 +1,10 @@
+/Audio
+/Movies
+/Win
+*.exe
+*.log.txt
+*.sga
+/Subtitles/*/
+!/Subtitles/zh-CN/
+/Game/Text/*/
+!/Game/Text/zh-CN/

@@ -1,0 +1,54 @@
+{
+	"AlegreyaSansExtraBold": 40,
+	"AlegreyaSansExtraBoldItalic": 40,
+	"AlegreyaSansItalic": 28,
+	"AlegreyaSansRegular": 28,
+	"AlegreyaSansSCBold": 40,
+	"AlegreyaSansSCExtraBold": 35,
+	"AlegreyaSansSCLight": 40,
+	"AlegreyaSansSCMedium": 40,
+	"AlegreyaSansSCRegular": 40,
+	"AlegreyaSCBold": 20,
+	"AlegreyaSCBoldTracking": 40,
+	"AlegreyaSCRegular": 28,
+
+	/* Virtual Fonts should copy the values from the base fonts */
+	"Credits_AlegreyaSansItalic": 28,
+	"Credits_AlegreyaSansRegular": 28,
+	"Credits_AlegreyaSansSCExtraBold": 35,
+	"Credits_AlegreyaSansSCMedium": 40,
+	"Credits_AlegreyaSansSCRegular": 40,
+	"Credits_SpectralSCExtraLight": 20,
+	"Credits_AlegreyaSansSCLight": 40,
+	"Credits_AlegreyaSansExtraBold": 40,
+	"Credits_AlegreyaSansSCBold": 40,
+
+	"CaesarDressing": 36,
+	"CaesarDressingTitling": 64,
+
+	"CrimsonTextBoldItalic": 30,
+	"CrimsonTextItalic": 30,
+	"CrimsonTextRoman": 30,
+	"CrimsonTextRomanCondensed": 30,
+	"CrimsonTextSemibold": 60,
+
+	"FellType": 20,
+	"FellTypeCondensed": 20,
+	"FellTypeItalic": 20,
+
+	"Garamond": 40,
+	"ja": 20,
+	"ko": 20,
+	"Lang": 32,
+	"MonospaceTypewriterBold": 12,
+
+	"SpectralSCBold": 20,
+	"SpectralSCExtraLight": 20,
+	"SpectralSCLight": 20,
+	"SpectralSCLightTitling": 20,
+	"SpectralSCMedium": 20,
+
+	"UbuntuMono": 20,
+	"UbuntuMonoBold": 20,
+	"zh-CN": 32
+}

@@ -1,0 +1,2347 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "StyxTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -720 Y = -92 }
+          { X = 30 Y = 283 }
+          { X = 710 Y = -68 }
+          { X = -30 Y = -437 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_07"
+        Tallness = 248.0
+        Offset = { X = 0 Y = -165 }
+        Points = [
+          { X = -425 Y = -103 }
+          { X = 103 Y = 148 }
+          { X = 418 Y = -5 }
+          { X = -101 Y = -264 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStandingBrick07"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_07"
+        Tallness = 241.0
+        Offset = { X = 0 Y = -165 }
+        Points = [
+          { X = -425 Y = -103 }
+          { X = 103 Y = 148 }
+          { X = 418 Y = -5 }
+          { X = -101 Y = -264 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_08"
+        Tallness = 140.0
+        Offset = { X = 0 Y = 120 }
+        Points = [
+          { X = -238 Y = 20 }
+          { X = 44 Y = 165 }
+          { X = 228 Y = 70 }
+          { X = -62 Y = -73 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick08a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_08a"
+        Tallness = 113.0
+        Offset = { X = 0 Y = -52 }
+        Points = [
+          { X = -216 Y = -33 }
+          { X = 52 Y = 115 }
+          { X = 216 Y = 21 }
+          { X = -56 Y = -115 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_09"
+        Tallness = 113.0
+        Offset = { X = 0 Y = -52 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick10"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_10"
+        Tallness = 113.0
+        Offset = { X = 0 Y = -52 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_06"
+        Tallness = 57.0
+        Offset = { X = 0 Y = -61 }
+        Points = [
+          { X = 739 Y = 24 }
+          { X = -132 Y = -419 }
+          { X = -768 Y = -80 }
+          { X = 103 Y = 340 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick01d"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_01d"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -720 Y = -92 }
+          { X = 30 Y = 283 }
+          { X = 710 Y = -68 }
+          { X = -30 Y = -437 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick01c"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_01c"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -720 Y = -92 }
+          { X = 30 Y = 283 }
+          { X = 710 Y = -68 }
+          { X = -30 Y = -437 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_05"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -304 Y = 11 }
+          { X = -4 Y = 207 }
+          { X = 398 Y = -16 }
+          { X = 217 Y = -336 }
+          { X = -154 Y = -344 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainSkeleton01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Skeleton_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainDrain01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Drain_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainDrain02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Drain_02"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainRoots01"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Roots_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainRoots02"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Roots_02"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainAxedropDecal01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Axedrop_Decal_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxSawTrap01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_SawTrap_01"
+        Tallness = 919.0
+        Offset = { X = 0 Y = -336 }
+        Points = [
+          { X = -442 Y = -16 }
+          { X = -81 Y = 193 }
+          { X = 457 Y = -68 }
+          { X = 66 Y = -260 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxVase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Vase_01"
+        Tallness = 612.0
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = -212 Y = 15 }
+          { X = 23 Y = 100 }
+          { X = 207 Y = 31 }
+          { X = -18 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxVase02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Vase_02"
+        Tallness = 612.0
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = -212 Y = 15 }
+          { X = 23 Y = 100 }
+          { X = 207 Y = 31 }
+          { X = -18 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxVase03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Vase_03"
+        Tallness = 612.0
+        Offset = { X = 0 Y = -257 }
+        Points = [
+          { X = -212 Y = 15 }
+          { X = 23 Y = 100 }
+          { X = 207 Y = 31 }
+          { X = -18 Y = -82 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxVaseGold01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Vase_Gold_01"
+        Tallness = 270.0
+        Offset = { X = 0 Y = -307 }
+        Points = [
+          { X = -213 Y = -27 }
+          { X = 31 Y = 67 }
+          { X = 272 Y = -44 }
+          { X = 59 Y = -160 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainDirt01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Dirt_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainLeaves01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Leaves_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_01a"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -720 Y = -92 }
+          { X = -327 Y = 304 }
+          { X = 710 Y = -68 }
+          { X = -30 Y = -437 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick01b"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_01b"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+        Points = [
+          { X = -738 Y = -145 }
+          { X = 24 Y = 238 }
+          { X = 718 Y = -118 }
+          { X = 64 Y = -427 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainWarpGate01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_WarpGate_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainPoisonTrap01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_PoisonTrap_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainPoisonTrap01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_PoisonTrap_01a"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick04"
+      InheritFrom = "1_BaseTerrainDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_04"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_03"
+        Tallness = 177.0
+        Offset = { X = 0 Y = -119 }
+        Points = [
+          { X = 87 Y = 222 }
+          { X = 515 Y = -15 }
+          { X = -91 Y = -318 }
+          { X = -530 Y = -105 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxClothesline01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Clothesline_01"
+        Tallness = 236.0
+        Offset = { X = 0 Y = -200 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainCorpse01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Corpse_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxGears01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gears_01"
+        Tallness = 484.0
+        Offset = { X = 0 Y = -143 }
+      }
+    }
+    
+    {
+      Name = "StyxGears02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gears_02"
+        Tallness = 1456.0
+        Offset = { X = 0 Y = -592 }
+        Points = [
+          { X = -211 Y = 67 }
+          { X = -77 Y = 116 }
+          { X = 201 Y = -24 }
+          { X = 108 Y = -85 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxGears03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gears_03"
+        Tallness = 949.0
+        Offset = { X = 0 Y = -398 }
+        Points = [
+          { X = 113 Y = 114 }
+          { X = 204 Y = 53 }
+          { X = -167 Y = -117 }
+          { X = -256 Y = -74 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxGate01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gate_01"
+        Tallness = 1742.0
+        Offset = { X = 0 Y = -535 }
+        Points = [
+          { X = 680 Y = 467 }
+          { X = 965 Y = 307 }
+          { X = -406 Y = -394 }
+          { X = -712 Y = -252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTent01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Tent_01"
+        Tallness = 1005.0
+        Offset = { X = 0 Y = -484 }
+        Points = [
+          { X = 672 Y = -179 }
+          { X = 279 Y = -375 }
+          { X = -651 Y = 117 }
+          { X = -191 Y = 261 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxCrate01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Crate_01"
+        Tallness = 331.0
+        Offset = { X = 0 Y = -216 }
+        Points = [
+          { X = -204 Y = -3 }
+          { X = 26 Y = 117 }
+          { X = 246 Y = -9 }
+          { X = 28 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxBrazier01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Brazier_01"
+        Tallness = 566.0
+        Offset = { X = 0 Y = -216 }
+        Points = [
+          { X = -451 Y = -10 }
+          { X = -311 Y = 153 }
+          { X = 17 Y = 209 }
+          { X = 348 Y = 127 }
+          { X = 465 Y = -33 }
+          { X = 11 Y = -241 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxHook01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Hook_01"
+        Tallness = 82.0
+        Offset = { X = 0 Y = -143 }
+        Points = [
+          { X = -465 Y = -168 }
+          { X = 176 Y = 185 }
+          { X = 582 Y = -12 }
+          { X = -73 Y = -344 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxHook02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Hook_02"
+        Tallness = 82.0
+        Offset = { X = 0 Y = -37 }
+        Points = [
+          { X = -413 Y = 208 }
+          { X = 392 Y = -192 }
+          { X = 362 Y = -200 }
+          { X = -442 Y = 196 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_02"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainBrick02a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Brick_02a"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainPlanks01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Planks_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxGibletsRat01a"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = ""
+        HitFx = ""
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RatDeath"
+        Scale = 1.2
+        Tallness = 35.0
+        Offset = { X = 0 Y = -3 }
+      }
+    }
+    
+    {
+      Name = "StyxGibletsRat01b"
+      InheritFrom = "StyxGibletsRat01a"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RatDeathSmall"
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "StyxTerrainFlourish02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Flourish_02"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainFlourish01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Flourish_01"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainFlourish04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Flourish_04"
+        Tallness = 35.0
+        Offset = { X = 0 Y = -94 }
+      }
+    }
+    
+    {
+      Name = "StyxWallBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Brick_01"
+        Tallness = 1173.0
+        Offset = { X = 0 Y = -519 }
+        Points = [
+          { X = -617 Y = 148 }
+          { X = -330 Y = 294 }
+          { X = 621 Y = -183 }
+          { X = 333 Y = -326 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallBrick01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Brick_01b"
+        Tallness = 1173.0
+        Offset = { X = 0 Y = -519 }
+        Points = [
+          { X = -609 Y = 154 }
+          { X = -354 Y = 280 }
+          { X = 623 Y = -189 }
+          { X = 338 Y = -326 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallBrick01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Brick_01a"
+        Tallness = 1173.0
+        Offset = { X = 0 Y = -519 }
+        Points = [
+          { X = -622 Y = 162 }
+          { X = -335 Y = 309 }
+          { X = 623 Y = -189 }
+          { X = 338 Y = -326 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallBrick01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Brick_01c"
+        Tallness = 293.0
+        Offset = { X = 0 Y = -127 }
+        Points = [
+          { X = -618 Y = 157 }
+          { X = -333 Y = 302 }
+          { X = 629 Y = -174 }
+          { X = 333 Y = -324 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallBrick01d"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Brick_01d"
+        Tallness = 863.0
+        Offset = { X = 0 Y = -356 }
+        Points = [
+          { X = -506 Y = 119 }
+          { X = -217 Y = 237 }
+          { X = 548 Y = -142 }
+          { X = 272 Y = -284 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Stairs_01"
+        Tallness = 1173.0
+        Offset = { X = 0 Y = -8 }
+      }
+    }
+    
+    {
+      Name = "StyxWallDecor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Decor_01"
+        Tallness = 1171.0
+        Offset = { X = 0 Y = -469 }
+        Points = [
+          { X = -473 Y = 252 }
+          { X = -444 Y = 270 }
+          { X = 502 Y = -208 }
+          { X = 473 Y = -229 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallDecor01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Decor_01a"
+        Tallness = 1171.0
+        Offset = { X = 0 Y = -469 }
+        Points = [
+          { X = -473 Y = 252 }
+          { X = -444 Y = 270 }
+          { X = 502 Y = -208 }
+          { X = 473 Y = -229 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallDecor02"
+      InheritFrom = "1_BaseStandingDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Decor_02"
+        Tallness = 797.0
+        Offset = { X = 0 Y = -189 }
+        Points = [
+          { X = -269 Y = 201 }
+          { X = -241 Y = 232 }
+          { X = 231 Y = 8 }
+          { X = 181 Y = -21 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPillarBase02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_Base_02"
+        Tallness = 460.0
+        Offset = { X = 0 Y = -373 }
+        Points = [
+          { X = -313 Y = -133 }
+          { X = -28 Y = 16 }
+          { X = 317 Y = -171 }
+          { X = 40 Y = -309 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStatueSnake01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Statue_Snake_01"
+        Tallness = 606.0
+        Offset = { X = 0 Y = -271 }
+        Points = [
+          { X = -255 Y = 14 }
+          { X = -28 Y = 123 }
+          { X = 261 Y = -3 }
+          { X = 19 Y = -123 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStatueSnake02a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Statue_Snake_02a"
+        Tallness = 1293.0
+        Offset = { X = 0 Y = -532 }
+        Points = [
+          { X = -708 Y = -59 }
+          { X = 54 Y = 305 }
+          { X = 713 Y = -45 }
+          { X = -31 Y = -408 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStatueSnake03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Statue_Snake_03a"
+        Tallness = 1200.0
+        Offset = { X = 0 Y = -532 }
+        Points = [
+          { X = -708 Y = -59 }
+          { X = 54 Y = 305 }
+          { X = 713 Y = -45 }
+          { X = -31 Y = -408 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxStatueCerberus01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Statue_Cerberus_01"
+        Tallness = 963.0
+        Offset = { X = 0 Y = -412 }
+        Points = [
+          { X = -569 Y = 17 }
+          { X = -89 Y = 252 }
+          { X = 572 Y = -68 }
+          { X = 78 Y = -308 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxFountain01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Fountain_01"
+        Tallness = 1017.0
+        Offset = { X = 0 Y = -373 }
+        Points = [
+          { X = -707 Y = 42 }
+          { X = -28 Y = 373 }
+          { X = 710 Y = 34 }
+          { X = 12 Y = -311 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxFountain01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Fountain_01b"
+        Tallness = 1017.0
+        Offset = { X = 0 Y = -373 }
+        Points = [
+          { X = -707 Y = 42 }
+          { X = -28 Y = 373 }
+          { X = 710 Y = 34 }
+          { X = 12 Y = -311 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPoisonCure01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_PoisonCure_01"
+        Tallness = 669.0
+        Offset = { X = 0 Y = -373 }
+        Points = [
+          { X = -585 Y = 14 }
+          { X = -133 Y = 216 }
+          { X = 368 Y = 106 }
+          { X = 502 Y = -193 }
+          { X = 2 Y = -358 }
+          { X = -409 Y = -216 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPoisonCure01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_PoisonCure_01b"
+        Tallness = 669.0
+        Offset = { X = 0 Y = -373 }
+        Points = [
+          { X = -585 Y = 14 }
+          { X = -133 Y = 216 }
+          { X = 368 Y = 106 }
+          { X = 502 Y = -193 }
+          { X = 2 Y = -358 }
+          { X = -409 Y = -216 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxShrine01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Shrine_01"
+        Tallness = 885.0
+        Offset = { X = 0 Y = -342 }
+        Points = [
+          { X = -265 Y = -4 }
+          { X = 31 Y = 146 }
+          { X = 302 Y = 8 }
+          { X = 2 Y = -139 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_02"
+        Tallness = 150.0
+        Offset = { X = 0 Y = -29 }
+        Points = [
+          { X = -334 Y = 133 }
+          { X = 388 Y = -52 }
+          { X = 191 Y = -155 }
+          { X = -440 Y = 26 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPillarBase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_Base_01"
+        Tallness = 372.0
+        Offset = { X = 0 Y = -89 }
+        Points = [
+          { X = -375 Y = 96 }
+          { X = -30 Y = 254 }
+          { X = 319 Y = 128 }
+          { X = 351 Y = -18 }
+          { X = 16 Y = -83 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPillar03a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_03a"
+        Tallness = 2789.0
+        Offset = { X = 0 Y = -1052 }
+        Points = [
+          { X = -494 Y = 6 }
+          { X = -17 Y = 213 }
+          { X = 477 Y = -10 }
+          { X = 5 Y = -252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPlanks01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Planks_01"
+        Tallness = 372.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "StyxPlanks02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Planks_02"
+        Tallness = 372.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "StyxTerrainPlanks02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Terrain_Planks_02"
+        Tallness = 372.0
+        Offset = { X = 0 Y = -29 }
+      }
+    }
+    
+    {
+      Name = "StyxTable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Table_01"
+        Tallness = 242.0
+        Offset = { X = 0 Y = -129 }
+        Points = [
+          { X = -426 Y = -124 }
+          { X = 155 Y = 189 }
+          { X = 470 Y = 55 }
+          { X = -166 Y = -257 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxTable02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Table_02"
+        Tallness = 836.0
+        Offset = { X = 0 Y = -369 }
+        Points = [
+          { X = -255 Y = -31 }
+          { X = -170 Y = 106 }
+          { X = 190 Y = 112 }
+          { X = 283 Y = -31 }
+          { X = 31 Y = -146 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxCandle01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Candle_01"
+        Tallness = 836.0
+        Offset = { X = 0 Y = -271 }
+        Points = [
+          { X = -246 Y = -3 }
+          { X = 6 Y = 134 }
+          { X = 380 Y = 56 }
+          { X = 399 Y = -28 }
+          { X = 79 Y = -133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxRubble01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Rubble_01"
+        Tallness = 617.0
+        Offset = { X = 0 Y = -289 }
+        Points = [
+          { X = 440 Y = 8 }
+          { X = 175 Y = -225 }
+          { X = -252 Y = -201 }
+          { X = -475 Y = -30 }
+          { X = -375 Y = 127 }
+          { X = -1 Y = 151 }
+          { X = 162 Y = 135 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxRubble02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Rubble_02"
+        Tallness = 321.0
+        Offset = { X = 0 Y = -107 }
+        Points = [
+          { X = -367 Y = 74 }
+          { X = -90 Y = 213 }
+          { X = 329 Y = 102 }
+          { X = 398 Y = 42 }
+          { X = 216 Y = -109 }
+          { X = -118 Y = -89 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxChair01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Chair_01"
+        Tallness = 589.0
+        Offset = { X = 0 Y = -214 }
+        Points = [
+          { X = -187 Y = -1 }
+          { X = 10 Y = 98 }
+          { X = 145 Y = 36 }
+          { X = -64 Y = -72 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxDoor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Door_01b"
+        StopsLight = false
+        Tallness = 1700.0
+        Interact = 
+        {
+          Distance = 170.0
+        }
+        Offset = { X = 0 Y = -725 }
+        Points = [
+          { X = -539 Y = -164 }
+          { X = 554 Y = 371 }
+          { X = 646 Y = 321 }
+          { X = -431 Y = -217 }
+        ]
+        Using = [
+          { Name = "StyxDoorOpen" }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxDoor01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Door_01a"
+        Tallness = 1727.0
+        Offset = { X = 0 Y = -818 }
+        Points = [
+          { X = -646 Y = -274 }
+          { X = 469 Y = 283 }
+          { X = 669 Y = 172 }
+          { X = -421 Y = -389 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallCapital"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Capital"
+        OcclusionInterpolateDuration = 0.0
+        OcclusionOpacity = 0.0
+        Tallness = 487.0
+        Offset = { X = 0 Y = -205 }
+        Points = [
+          { X = -183 Y = 26 }
+          { X = -25 Y = 103 }
+          { X = 184 Y = 13 }
+          { X = 12 Y = -71 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxArch01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Arch_01"
+        Tallness = 630.0
+        Offset = { X = 0 Y = -217 }
+        Points = [
+          { X = -311 Y = 95 }
+          { X = -193 Y = 139 }
+          { X = -4 Y = 63 }
+          { X = -132 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxArch02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Arch_02"
+        Tallness = 368.0
+        Offset = { X = 0 Y = -202 }
+        Points = [
+          { X = 38 Y = -62 }
+          { X = 201 Y = 0 }
+          { X = 364 Y = -85 }
+          { X = 220 Y = -162 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxChandelier01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Chandelier_01"
+        Tallness = 368.0
+        Offset = { X = 0 Y = -317 }
+      }
+    }
+    
+    {
+      Name = "StyxPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_01"
+        Tallness = 1374.0
+        Offset = { X = 0 Y = -551 }
+        Points = [
+          { X = -260 Y = 79 }
+          { X = -118 Y = 152 }
+          { X = 184 Y = 70 }
+          { X = 257 Y = -29 }
+          { X = 100 Y = -114 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxPillar04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Pillar_04"
+        Tallness = 1588.0
+        Offset = { X = 0 Y = -661 }
+        Points = [
+          { X = -188 Y = 48 }
+          { X = -77 Y = 109 }
+          { X = 130 Y = 2 }
+          { X = 10 Y = -58 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxGable01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gable_01"
+        Tallness = 259.0
+        Offset = { X = 0 Y = -99 }
+        Points = [
+          { X = -562 Y = 210 }
+          { X = -393 Y = 290 }
+          { X = 562 Y = -187 }
+          { X = 399 Y = -273 }
+          { X = 399 Y = -273 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxGable01a"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Gable_01a"
+        Tallness = 259.0
+        Offset = { X = 0 Y = -43 }
+        Points = [
+          { X = -549 Y = 245 }
+          { X = -429 Y = 311 }
+          { X = 562 Y = -187 }
+          { X = 399 Y = -273 }
+          { X = 399 Y = -273 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_01"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -739 }
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots02"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_02"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 2343.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -850 }
+        Points = [
+          { X = -295 Y = 23 }
+          { X = -149 Y = 106 }
+          { X = 136 Y = 144 }
+          { X = 301 Y = 22 }
+          { X = 201 Y = -56 }
+          { X = 28 Y = -117 }
+          { X = -153 Y = -75 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_03"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -739 }
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots04"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_04"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -739 }
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots05"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_05"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -739 }
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots06"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFxCap = 6
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_06"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 351.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -181 }
+        Points = [
+          { X = -600 Y = 108 }
+          { X = -569 Y = 147 }
+          { X = -98 Y = 172 }
+          { X = 610 Y = -243 }
+          { X = 586 Y = -333 }
+          { X = 437 Y = -437 }
+          { X = 161 Y = -431 }
+          { X = -484 Y = -60 }
+          { X = -484 Y = -60 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallRoots07"
+      CollisionBounce = 0.3
+      CollisionBounceRequiredVelocity = 700.0
+      CollisionDamagePerVelocity = 0.01
+      CollisionReactionFx = "WallSlamCrumble"
+      CollisionReactionRequiredVelocity = 500.0
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFxCap = 6
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Roots_07"
+        Grip = 999999.0
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        Tallness = 1249.0
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -554 }
+        Points = [
+          { X = -447 Y = -97 }
+          { X = -398 Y = 108 }
+          { X = -183 Y = 201 }
+          { X = -111 Y = 181 }
+          { X = 63 Y = 26 }
+          { X = -2 Y = -179 }
+          { X = -249 Y = -269 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxWallSpout01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Wall_Spout_01"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -140 }
+      }
+    }
+    
+    {
+      Name = "StyxLantern01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "null"
+        Invulnerable = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Styx\Styx_Lantern_01"
+        Tallness = 2103.0
+        Offset = { X = 0 Y = -140 }
+      }
+    }
+    
+    {
+      Name = "StyxDestructiblePillar"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      ReflectLobProjectiles = false
+      Life = 
+      {
+        HitFx = "PillarHitFx"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxPillarA"
+        OcclusionBaseAnim = "StyxPillarFootprint"
+        OcclusionOpacity = 0.25
+        Tallness = 2242.0
+        Offset = { X = 0 Y = -993 }
+        Points = [
+          { X = 160 Y = 220 }
+          { X = 480 Y = 60 }
+          { X = 480 Y = -100 }
+          { X = 160 Y = -260 }
+          { X = -160 Y = -260 }
+          { X = -480 Y = -100 }
+          { X = -480 Y = 60 }
+          { X = -160 Y = 220 }
+        ]
+        Using = [
+          { Name = "StyxDestructiblePillarA" }
+          { Name = "StyxDestructiblePillarB" }
+          { Name = "StyxDestructiblePillarC" }
+          { Name = "StyxPillarD" }
+          { Name = "TartarusRubble01" Scale = 0.4 }
+          { Name = "TartarusRubble02" Scale = 0.4 }
+          { Name = "TartarusRubble02b" Scale = 0.4 }
+          { Name = "TartarusRubble02c" Scale = 0.4 }
+        ]
+      }
+    }
+    
+    {
+      Name = "StyxDestructiblePillarA"
+      InheritFrom = "StyxDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 2274.0
+      }
+    }
+    
+    {
+      Name = "StyxDestructiblePillarB"
+      InheritFrom = "StyxDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxPillarB"
+        Tallness = 864.0
+      }
+    }
+    
+    {
+      Name = "StyxDestructiblePillarC"
+      InheritFrom = "StyxDestructiblePillar"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StyxPillarC"
+        Tallness = 370.0
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedCrystal1"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      CollisionDamagePerVelocity = 0.0
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathSound = "/SFX/PillarBoulderDestroyedSmall"
+        DieOnCollision = true
+        HitFx = "null"
+        Invulnerable = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowStatic"
+        DieOnTouchdown = true
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedForkedCrystal1"
+        Grip = 3000.0
+        OffsetZ = 84.0
+        Tallness = 50.0
+        TouchdownSound = "/Leftovers/SFX/BallImpact"
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedCrystal2"
+      InheritFrom = "HeavyRangedForkedCrystal1"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "LootShadowStaticSmall"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedForkedCrystal2"
+        Points = [
+          { X = 0 Y = 8 }
+          { X = 16 Y = 0 }
+          { X = 0 Y = -8 }
+          { X = -16 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedCrystal3"
+      InheritFrom = "HeavyRangedForkedCrystal2"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedForkedCrystal3"
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedCrystal4"
+      InheritFrom = "HeavyRangedForkedCrystal2"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HeavyRangedForkedDeath"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedForkedCrystal4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  Animations = [
+    
+    /* _______________________________________Persephone Garden_______________________________ */
+
+    {
+      Name = "PersephoneGardenIdle"
+      FilePath = "Animations\NPCPersephone\GardenIdleHip\PersephoneGardenIdleHip"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenIdleHip_Bink"
+      EndFrame = 60
+      Loop = true
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 1.0
+      CancelOnOwnerMove = true
+	  OnlyWhenVisible = true
+      SetOwnerEndAngle = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+{
+      Name = "PersephoneGarden_Greeting"
+      FilePath = "Animations\NPCPersephone\GardenGreeting\PersephoneGardenGreeting"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenGreeting_Bink"
+      EndFrame = 60
+      Loop = false
+      NumAngles = 16
+      NumFrames = 60
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 1.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = false
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "PersephoneGarden_Walk"
+      FilePath = "Animations\NPCPersephone\GardenWalk\PersephoneGardenWalk"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenWalk_Bink"
+      StopAnimation = "PersephoneGarden_WalkStop"
+      EndFrame = 38
+      /*FrameDataFile = "Game\Animations\FrameData\PersephoneWalk.sga"*/
+      Loop = true
+      NumAngles = 64
+      NumFrames = 38
+      PlaySpeed = 30
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 1.0
+      NativeMoveSpeed = 110.0
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+      Slides = [
+        { Frame = 19 Sound = "/Leftovers/SFX/FootstepsWheat2Small" },
+        { Frame = 38 Sound = "/Leftovers/SFX/FootstepsWheat2Small" },
+      ]      
+    }
+
+      
+    
+{
+      Name = "PersephoneGarden_WalkStop"
+      ChainTo = "null"
+      FilePath = "Animations\NPCPersephone\GardenWalkStop\PersephoneGardenWalkStop"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenWalkStop_Bink"
+      Loop = false
+      EndFrame = 34
+      FrameDataFile = "null"
+      NumAngles = 64
+      NumFrames = 34
+      StartFrame = 1
+      PlaySpeed = 30
+      OffsetY = -45.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      Scale = 1.0
+      Sound = "/Leftovers/SFX/RobeFlutterInScene"
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+ {
+      Name = "PersephoneGarden_Dismiss"
+      FilePath = "Animations\NPCPersephone\GardenDismiss\PersephoneGardenDismiss"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenDismiss_Bink"
+      EndFrame = 120
+      NumAngles = 16
+      NumFrames = 120
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 1.0
+      CancelOnOwnerMove = true
+      SetOwnerEndAngle = true
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/* ___________________________Persephone Vulnerable_______________________________ */
+    {
+      Name = "PersephoneGarden_Vulnerable"
+      FilePath = "Animations\NPCPersephone\GardenVulnerable\PersephoneGardenVulnerable"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneGardenVulnerable_Bink"
+      EndFrame = 180
+      NumAngles = 16
+      NumFrames = 180
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      CancelOnOwnerMove = true
+
+      Scale = 1.0
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+/* ___ Vulverable breakdown_____ */
+    {
+      Name = "PersephoneGarden_Vulnerable_ToShock" /* ___going into hand on mouth gasp_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      ChainTo = "PersephoneGarden_Vulnerable_ShockIdleLoop"
+      EndFrame = 9
+      NumFrames = 180
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+    }
+    {
+      Name = "PersephoneGarden_Shocked" /* ___going into hand on mouth gasp_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable_ToShock"
+      ChainTo = "PersephoneGarden_Vulnerable_ShockIdleLoop_Looping"
+
+    }
+
+    {
+      Name = "PersephoneGarden_Vulnerable_ShockIdleLoop"/* ___ cycle can be play infinite if needed_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      ChainTo = "PersephoneGarden_Vulnerable_ShockToThoughtful"
+      EndFrame = 70
+      Loop = false
+      NumFrames = 180
+      StartFrame = 10
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+    {
+      Name = "PersephoneGarden_Vulnerable_ShockIdleLoop_Looping"/* ___ cycle can be play infinite if needed_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable_ShockIdleLoop"
+      ChainTo = "null"
+      Loop = true
+    }
+
+    {
+      Name = "PersephoneGarden_Vulnerable_ShockToThoughtful" /* ___going into thoughtful pose_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      ChainTo = "PersephoneGarden_Vulnerable_ThoughtfulIdleLoop"
+      EndFrame = 89
+      Loop = false
+      NumFrames = 180
+      StartFrame = 71
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+{
+      Name = "PersephoneGarden_Vulnerable_ThoughtfulIdleLoop"/* ___ cycle can be play infinite if needed_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      ChainTo = "PersephoneGarden_Vulnerable_ReturnToIdle"
+      EndFrame = 150
+      Loop = false
+      NumFrames = 180
+      StartFrame = 90
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "PersephoneGarden_Vulnerable_ReturnToIdle"/* ___ return to hands on hip idle_____ */
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      ChainTo = "PersephoneGardenIdle"
+      EndFrame = 180
+      NumFrames = 180
+      StartFrame = 151
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+
+     
+
+
+  
+
+
+ /* _______________________________________Persephone Underworld_______________________________ */
+
+
+      {
+      Name = "PersephoneUnderworldIdle"
+      InheritFrom = "PersephoneGardenIdle"
+      FilePath = "Animations\NPCPersephone\UnderworldIdleHip\PersephoneUnderworldIdleHip"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldIdle_Bink"
+      }
+
+      {
+      Name = "PersephoneUnderworld_Walk"
+      InheritFrom = "PersephoneGarden_Walk"
+      FilePath = "Animations\NPCPersephone\UnderworldWalk\PersephoneUnderworldWalk"
+      StopAnimation = "PersephoneUnderworld_WalkStop"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldWalk_Bink"
+      }
+
+      {
+      Name = "PersephoneUnderworld_WalkStop"
+      InheritFrom = "PersephoneGarden_WalkStop"
+      FilePath = "Animations\NPCPersephone\UnderworldWalkStop\PersephoneUnderworldWalkStop"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldWalkStop_Bink"
+      }
+
+      {
+      Name = "PersephoneUnderworld_Greeting"
+      InheritFrom = "PersephoneGarden_Greeting"
+      FilePath = "Animations\NPCPersephone\UnderworldGreeting\PersephoneUnderworldGreeting"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldGreeting_Bink"
+      }
+
+      {
+      Name = "PersephoneUnderworld_Dismiss"
+      InheritFrom = "PersephoneGarden_Dismiss"
+      FilePath = "Animations\NPCPersephone\UnderworldDismiss\PersephoneUnderworldDismiss"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldDismiss_Bink"
+      }
+
+      {
+      Name = "PersephoneUnderworld_Vulnerable"
+      InheritFrom = "PersephoneGarden_Vulnerable"
+      FilePath = "Animations\NPCPersephone\UnderworldVulnerable\PersephoneUnderworldVulnerable"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneUnderworldVulnerable_Bink"
+      }
+
+      /* ___ Vulverable breakdown_____ */
+    {
+      Name = "PersephoneUnderworld_Vulnerable_ToShock" /* ___going into hand on mouth gasp_____ */
+      InheritFrom = "PersephoneUnderworld_Vulnerable"
+      ChainTo = "PersephoneUnderworld_Vulnerable_ShockIdleLoop"
+      EndFrame = 9
+      NumFrames = 180
+      StartFrame = 1
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "PersephoneUnderworld_Vulnerable_ShockIdleLoop"/* ___ cycle can be play infinite if needed_____ */
+      InheritFrom = "PersephoneUnderworld_Vulnerable"
+      ChainTo = "PersephoneUnderworld_Vulnerable_ShockToThoughtful"
+      EndFrame = 70
+      Loop = false
+      NumFrames = 180
+      StartFrame = 10
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+{
+      Name = "PersephoneUnderworld_Vulnerable_ShockToThoughtful" /* ___going into thoughtful pose_____ */
+      InheritFrom = "PersephoneUnderworld_Vulnerable"
+      ChainTo = "PersephoneUnderworld_Vulnerable_ThoughtfulIdleLoop"
+      EndFrame = 89
+      Loop = false
+      NumFrames = 180
+      StartFrame = 71
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+{
+      Name = "PersephoneUnderworld_Vulnerable_ThoughtfulIdleLoop"/* ___ cycle can be play infinite if needed_____ */
+      InheritFrom = "PersephoneUnderworld_Vulnerable"
+      ChainTo = "PersephoneUnderworld_Vulnerable_ReturnToIdle"
+      EndFrame = 150
+      Loop = false
+      NumFrames = 180
+      StartFrame = 90
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+    {
+      Name = "PersephoneUnderworld_Vulnerable_ReturnToIdle"/* ___ return to hands on hip idle_____ */
+      InheritFrom = "PersephoneUnderworld_Vulnerable"
+      ChainTo = "PersephoneUnderworldIdle"
+      EndFrame = 180
+      NumFrames = 180
+      StartFrame = 151
+      DisableOwnerRotation = false
+      TimeModifierFraction = 0.0
+    }
+
+ /*__Ending Boat Ride___*/ 
+ {
+      Name = "PersephoneEndingBoat_IdleLoop" 
+      FilePath = "Animations\NPCPersephone\EndingBoatIdleLoop\PersephoneEndingBoatIdleLoop"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneEndingBoatIdleLoop_Bink"
+      ChainTo = "null" 
+      EndFrame = 120
+      Loop = true
+      NumAngles = 1
+      NumFrames = 120
+      AngleFromOwner = "Ignore"
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+ {
+      Name = "PersephoneEndingBoat_IdleFidget1" 
+      FilePath = "Animations\NPCPersephone\EndingBoatIdleFidget1\PersephoneEndingBoatIdleFidget1"
+      Type = "Book"
+      VideoTexture = "NPC_PersephoneEndingBoatIdleFidget1_Bink"
+      ChainTo = "PersephoneEndingBoat_IdleLoop" 
+      EndFrame = 240
+      NumAngles = 1
+      NumFrames = 240
+      AngleFromOwner = "Ignore"
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -45.0
+      Scale = 0.8
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+    {
+      Name = "PersephoneEndingBoat_IdleLoop1"
+      InheritFrom = "PersephoneEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "PersephoneEndingBoat_IdleLoop2"
+    }
+    {
+      Name = "PersephoneEndingBoat_IdleLoop2"
+      InheritFrom = "PersephoneEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "PersephoneEndingBoat_IdleFidgetLoop1"
+    }
+    {
+      Name = "PersephoneEndingBoat_IdleFidgetLoop1"
+      InheritFrom = "PersephoneEndingBoat_IdleFidget1"
+      ChainTo = "PersephoneEndingBoat_IdleLoop3"
+    }
+    {
+      Name = "PersephoneEndingBoat_IdleLoop3"
+      InheritFrom = "PersephoneEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "PersephoneEndingBoat_IdleLoop4"
+    }
+    {
+      Name = "PersephoneEndingBoat_IdleLoop4"
+      InheritFrom = "PersephoneEndingBoat_IdleLoop"
+      Loop = false
+      ChainTo = "PersephoneEndingBoat_IdleLoop1"
+    }
+ 
+
+  ]
+}

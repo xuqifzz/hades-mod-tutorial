@@ -1,0 +1,4521 @@
+{
+  Units = [
+    
+    {
+      Name = "SmallEnemy"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 470.0
+      DefaultAngle = 270.0
+      DisplayInEditor = true
+      OnStunAnimation = "EnemyWretchSwarmerAlert"
+      RotationSpeed = 1200.0
+      Speed = 800.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathSound = "/EmptyCue"
+        HitSound = "/SFX/StabSplatterSmall"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivate"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchSwarmerIdle"
+        Grip = 2500.0
+        SelectionHeight = 300.0
+        SelectionWidth = 300.0
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BaseSupport"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      DisplayInEditor = false
+      ImmuneToStun = true
+      Life = 
+      {
+        DeathSound = "/Leftovers/Menu Sounds/TitanToggleLong"
+        InvulnerableFx = "Invincibubble"
+      }
+      Thing = 
+      {
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "GhostSupportIdleAnim"
+        ImpulsedFx = "KnockbackLines"
+        OffsetZ = 40.0
+        SelectionHeight = 250.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 250.0
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BaseSkeleton"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 400.0
+      DisplayInEditor = false
+      MoveGraphic = "EnemySkellyWalk_Original"
+      OnStunAnimation = "SkeletonOnHit"
+      RotationSpeed = 800.0
+      Speed = 800.0
+      StartGraphic = "EnemySkellyStart"
+      StopGraphic = "EnemySkellyStop"
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "ExplosionBone"
+        DeathGraphic = "EnemySkeletonDead"
+        DeathSound = "/SFX/Enemy Sounds/Bloodless01/EmoteDying"
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInBloodlessNakedContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemySkellyIdle"
+        Grip = 5000.0
+        ImpulsedFx = "KnockbackLines"
+        SelectionHeight = 350.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 320.0
+        Tallness = 300.0
+        Points = [
+          { X = 0 Y = 64 }
+          { X = 128 Y = 0 }
+          { X = 0 Y = -64 }
+          { X = -128 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BaseMedusaHead"
+      DisplayInEditor = false
+      MoveGraphic = "EnemyMedusaHeadMove"
+      OnStunAnimation = "EnemyMedusaOnHit"
+      RotationSpeed = 1200.0
+      Speed = 380.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathGraphic = "EnemyMedusaHeadDeath"
+        DeathSound = "/EmptyCue"
+        HitSound = "/SFX/StabSplatter"
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 512.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneMedium"
+        ActivateGraphic = "EnemyActivationFadeInMedusaHeadContainer"
+        AttachedAnim = "MedusaShadow"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyMedusaHeadIdle"
+        Grip = 6100.0
+        OffsetZ = 80.0
+        SelectionHeight = 420.0
+        SelectionShiftY = 20.0
+        SelectionWidth = 380.0
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "FreezeShotUnit"
+      InheritFrom = "BaseMedusaHead"
+      DisplayInEditor = true
+      Speed = 300.0
+      Life = 
+      {
+        DeathSound = "/SFX/Enemy Sounds/Spitter/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Spitter/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 0.475
+      }
+    }
+    
+    {
+      Name = "FreezeShotUnitElite"
+      InheritFrom = "FreezeShotUnit"
+      DisplayInEditor = false
+      Speed = 400.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HitAndRunUnit"
+      InheritFrom = "BaseMedusaHead"
+      CosmeticRotationSpeed = 300.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Speed = 300.0
+      StunBreakModifier = 100.0
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx"
+        DeathSound = "/SFX/Enemy Sounds/MegaGorgon/EmoteTaunting"
+        HitSound = "/SFX/Enemy Sounds/MegaGorgon/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInHitAndRunUnitContainer"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.3
+        Grip = 15000.0
+        Hue = 0.35
+        Saturation = 0.1
+        SelectionHeight = 380.0
+        SelectionShiftY = 60.0
+        Value = -0.1
+      }
+    }
+    
+    {
+      Name = "HitAndRunUnitElite"
+      InheritFrom = "HitAndRunUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadowMiniboss"
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HitAndRunUnitSuperElite"
+      InheritFrom = "HitAndRunUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadowMiniboss"
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "Swarmer"
+      InheritFrom = "SmallEnemy"
+      DisplayInEditor = true
+      Speed = 300.0
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx_Small"
+        DeathGraphic = "EnemyWretchSwarmerDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Swarmer/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Swarmer/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneSmall"
+        ActivateGraphic = "EnemyActivationFadeInWretchSwarmerContainer"
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Grip = 6000.0
+        ImpulsedFx = "KnockbackLinesWithBloodSmall"
+        OffsetZ = 50.0
+        Scale = 0.7
+        SelectionHeight = 200.0
+        SelectionShiftY = -10.0
+        SelectionWidth = 200.0
+        Tallness = 100.0
+        UseBoundsForSortDrawArea = true
+        Using = [
+          { Name = "EnemyWretchSwarmerAlert" }
+          { Name = "EnemyWretchSwarmerAttackCharge" }
+          { Name = "EnemyWretchSwarmerAttackFire" }
+          { Name = "EnemyWretchSwarmerPostAttack" }
+          { Name = "EnemyWretchSwarmerDeathVFX" }
+        ]
+      }
+    }
+    
+    {
+      Name = "SwarmerElite"
+      InheritFrom = "Swarmer"
+      DisplayInEditor = true
+      RotationSpeed = 2000.0
+      Speed = 600.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 0.75
+      }
+    }
+    
+    {
+      Name = "SwarmerSuperElite"
+      InheritFrom = "Swarmer"
+      DisplayInEditor = true
+      Speed = 800.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "SwarmerHelmeted"
+      InheritFrom = "Swarmer"
+      DisplayInEditor = true
+      RotationSpeed = 6000.0
+      Speed = 600.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 0.9
+      }
+    }
+    
+    {
+      Name = "SimpleSwarmer"
+      InheritFrom = "Swarmer"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "WretchAssassin"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 3000.0
+      DisplayInEditor = false
+      OnStunAnimation = "EnemyWretchAssassinOnHit"
+      RotationSpeed = 9999.0
+      StunBreakModifier = 10.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "EnemyWretchAssassinDeath"
+        DeathSound = "/SFX/Enemy Sounds/WretchedShadeAssassin/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/WretchedShadeAssassin/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivate"
+        AttachedAnim = "WretchAssassinShadow"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchAssassin_Idle"
+        Grip = 8000.0
+        ImpulsedFx = "KnockbackLinesWithBlood"
+        SelectionHeight = 500.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 500.0
+        Tallness = 380.0
+        Points = [
+          { X = 0 Y = 38 }
+          { X = 76 Y = 0 }
+          { X = 0 Y = -38 }
+          { X = -76 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "WretchAssassinMiniboss"
+      InheritFrom = "WretchAssassin"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "WretchAssassinMinibossSuperElite"
+      InheritFrom = "WretchAssassin"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "BaseThug"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 300.0
+      DisplayInEditor = false
+      MoveGraphic = "EnemyWretchThugStart"
+      OnStunAnimation = "EnemyWretchThugOnHit"
+      RotationSpeed = 1500.0
+      Speed = 400.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "EnemyWretchThugDeath"
+        DeathSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInWretchThugContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchThugIdle"
+        Grip = 8000.0
+        ImpulsedFx = "KnockbackLinesWithBlood"
+        SelectionHeight = 500.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 500.0
+        Tallness = 380.0
+        Points = [
+          { X = 0 Y = 38 }
+          { X = 76 Y = 0 }
+          { X = 0 Y = -38 }
+          { X = -76 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyMelee"
+      InheritFrom = "BaseThug"
+      DisplayInEditor = true
+      Speed = 250.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HeavyMeleeElite"
+      InheritFrom = "HeavyMelee"
+      DisplayInEditor = true
+      Speed = 360.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HeavyMeleeSuperElite"
+      InheritFrom = "HeavyMeleeElite"
+      CosmeticRotationSpeed = 600.0
+      DisplayInEditor = true
+      RotationSpeed = 2000.0
+      Speed = 560.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "SimpleMelee"
+      InheritFrom = "HeavyMelee"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SimpleMelee2"
+      InheritFrom = "SimpleMelee"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BaseGlutton"
+      DisplayInEditor = false
+      OnStunAnimation = "EnemyWretchGluttonOnHit"
+      RagDollOnDeath = false
+      RotationSpeed = 360.0
+      Speed = 800.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "EnemyWretchGluttonDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/PunchingBag/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/PunchingBag/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInWretchGluttonContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchGluttonIdle"
+        Grip = 12000.0
+        ImpulsedFx = "KnockbackLinesWithBlood"
+        SelectionHeight = 260.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 280.0
+        SortBoundsScale = 1.5
+        SpinDeceleration = 0.0
+        Tallness = 175.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "PunchingBagUnit"
+      InheritFrom = "BaseGlutton"
+      DisplayInEditor = true
+      Speed = 320.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "PunchingBagUnitElite"
+      InheritFrom = "BaseGlutton"
+      DisplayInEditor = true
+      Speed = 400.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "PunchingBagUnitSuperElite"
+      InheritFrom = "BaseGlutton"
+      DisplayInEditor = true
+      Speed = 600.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "BaseThief"
+      CosmeticRotationSpeed = 470.0
+      DisplayInEditor = false
+      MoveGraphic = "EnemyWretchThiefWalk"
+      RagDollOnDeath = false
+      RotationSpeed = 1200.0
+      Speed = 800.0
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx_Small"
+        DeathGraphic = "BaseThiefDeath"
+        DeathSound = "/SFX/Enemy Sounds/Swarmer/EmoteDying"
+        HitGraphic = "EnemyWretchThiefOnHit"
+        HitSound = "/SFX/ArrowMetalStoneClang"
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        NodeDistance = 16.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneSmall"
+        ActivateGraphic = "EnemyActivationFadeInThiefMineLayerContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchThiefIdle"
+        Grip = 4500.0
+        ImpulsedFx = "KnockbackLines"
+        SelectionHeight = 200.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 200.0
+        Points = [
+          { X = 0 Y = 18 }
+          { X = 36 Y = 0 }
+          { X = 0 Y = -18 }
+          { X = -36 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ThiefMineLayer"
+      InheritFrom = "BaseThief"
+      DisplayInEditor = true
+      Speed = 400.0
+      Life = 
+      {
+        DeathSound = "/SFX/Enemy Sounds/ThiefMineLayer/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/ThiefMineLayer/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ThiefMineLayerElite"
+      InheritFrom = "ThiefMineLayer"
+      DisplayInEditor = true
+      Speed = 425.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ThiefImpulseMineLayer"
+      InheritFrom = "BaseThief"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyStyxThiefWalk"
+      Speed = 400.0
+      Life = 
+      {
+        DeathFx = "null"
+        DeathGraphic = "EnemyStyxThiefDeath"
+        DeathSound = "/SFX/Enemy Sounds/ImpulseMineLayer/EmoteDying"
+        HitGraphic = "EnemyStyxThiefOnHit"
+        HitSound = "/SFX/Enemy Sounds/ImpulseMineLayer/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "null"
+        ActivateGraphic = "EnemyStyxThiefEntranceDrop"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyStyxThiefIdle"
+        AttachedAnim = "ThiefImpulseMineLayerShadow"
+      }
+    }
+    
+    {
+      Name = "ThiefImpulseMineLayerElite"
+      InheritFrom = "ThiefImpulseMineLayer"
+      DisplayInEditor = true
+      Speed = 500.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ThiefImpulseMineLayerMiniboss"
+      InheritFrom = "ThiefImpulseMineLayer"
+      DisplayInEditor = true
+      Speed = 500.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = -0.5
+        Saturation = -0.4
+        Scale = 1.4
+        Value = 0.2
+        Color = { Red = 0.2 Green = 0.90 Blue = 0.90 }
+      }
+    }
+    
+    {
+      Name = "ThiefPoisonLayer"
+      InheritFrom = "BaseThief"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ThiefArmorer"
+      InheritFrom = "BaseThief"
+      DisplayInEditor = true
+      Speed = 400.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BaseBloodless"
+      InheritFrom = "BaseSkeleton"
+      DisplayInEditor = false
+      Speed = 400.0
+      Life = 
+      {
+        DeathGraphic = "Enemy_SkellyDeathVFX"
+        HitSound = "/SFX/Enemy Sounds/Bloodless01/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        TouchdownSound = "/Leftovers/SFX/DemonLand"
+        Points = [
+          { X = 0 Y = 45 }
+          { X = 90 Y = 0 }
+          { X = 0 Y = -45 }
+          { X = -90 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BloodlessNaked"
+      InheritFrom = "BaseBloodless"
+      DisplayInEditor = true
+      OnStunAnimation = "EnemySkellyOnHit"
+      Speed = 350.0
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneMedium"
+        EditorOutlineDrawBounds = false
+        ImpulsedFx = "KnockbackLinesBloodlessMedium"
+        Scale = 0.9
+        SelectionHeight = 250.0
+        SelectionWidth = 200.0
+      }
+    }
+    
+    {
+      Name = "BloodlessNakedElite"
+      InheritFrom = "BloodlessNaked"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessNakedSuperElite"
+      InheritFrom = "BloodlessNaked"
+      DisplayInEditor = true
+      Speed = 500.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Scale = 1.05
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "BloodlessNakedBerserker"
+      InheritFrom = "BloodlessNaked"
+      DisplayInEditor = true
+      Speed = 400.0
+      Life = 
+      {
+        DeathSound = "/SFX/Enemy Sounds/BloodlessBerserker/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/BloodlessBerserker/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ImpulsedFx = "KnockbackLinesBloodlessMediumBerserker"
+        EditorOutlineDrawBounds = false
+        Color = { Red = 0.32 Green = 0.69 Blue = 1.0 }
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "BloodlessNakedBerserkerElite"
+      InheritFrom = "BloodlessNakedBerserker"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessWaveFist"
+      InheritFrom = "BaseBloodless"
+      DisplayInEditor = true
+      OnStunAnimation = "EnemySkellyOnHit"
+      Speed = 250.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = 0.9
+        ImpulsedFx = "KnockbackLinesBloodlessMedium"
+        Saturation = 0.5
+        Scale = 1.2
+        SelectionHeight = 250.0
+        SelectionWidth = 200.0
+      }
+    }
+    
+    {
+      Name = "BloodlessWaveFistElite"
+      InheritFrom = "BloodlessWaveFist"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessGrenadier"
+      InheritFrom = "BaseBloodless"
+      CosmeticRotationSpeed = 200.0
+      DisplayInEditor = true
+      MoveGraphic = "Enemy_BloodlessGrenadierWalk"
+      OnDeathWeapon = "BloodlessGrenadierDeathDrop"
+      OnStunAnimation = "Enemy_BloodlessGrenadierOnHit"
+      RotationSpeed = 1000.0
+      StartGraphic = "null"
+      StopGraphic = "null"
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "Enemy_BloodlessGrenadierDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Bloodless02/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Bloodless02/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInBloodlessGrenadierContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "Enemy_BloodlessGrenadierIdle"
+        Grip = 8000.0
+        Using = [
+          { Name = "Projectile_BloodlessGrenadier" }
+          { Name = "Projectile_BloodlessGrenadierActivate" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BloodlessGrenadierElite"
+      InheritFrom = "BloodlessGrenadier"
+      DisplayInEditor = true
+      Speed = 550.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessSelfDestruct"
+      InheritFrom = "BloodlessGrenadier"
+      CosmeticRotationSpeed = 800.0
+      DisplayInEditor = true
+      OnDeathWeapon = "BloodlessSelfDestructDeathLob"
+      RotationSpeed = 800.0
+      Speed = 600.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = 0.75
+        Scale = 0.775
+        Using = [
+          { Name = "Projectile_BloodlessGrenadier" }
+          { Name = "Projectile_BloodlessGrenadierActivate" }
+          { Name = "Projectile_BloodlessGrenadierToss" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BloodlessSelfDestructElite"
+      InheritFrom = "BloodlessSelfDestruct"
+      DisplayInEditor = true
+      Speed = 700.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessPitcher"
+      InheritFrom = "BloodlessGrenadier"
+      DisplayInEditor = true
+      OnDeathWeapon = "BloodlessPitcherDeathLob"
+      Speed = 600.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = -0.7
+        Scale = 0.855
+      }
+    }
+    
+    {
+      Name = "BloodlessPitcherElite"
+      InheritFrom = "BloodlessPitcher"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "BloodlessPitcherSuperElite"
+      InheritFrom = "BloodlessPitcher"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "BaseShade"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 1340.0
+      DisplayInEditor = false
+      FinishMoveAnimationOnIdle = false
+      RotationSpeed = 1500.0
+      Speed = 600.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx_Shade"
+        DeathGraphic = "ShadeDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Exalted/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Exalted/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 768.0
+        MoveWithoutPath = true
+        NodeDistance = 24.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInShadeNakedContainer"
+        Ambient = 0.0
+        AttachedAnim = "ShadeSpotlight"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeNaked_Idle"
+        Grip = 8000.0
+        HighlightTopAnimOnly = true
+        ImpulsedFx = "KnockbackLines"
+        SelectionHeight = 200.0
+        SelectionShiftY = 40.0
+        SelectionWidth = 160.0
+        Tallness = 300.0
+        Points = [
+          { X = 12 Y = 18 }
+          { X = 36 Y = 6 }
+          { X = 36 Y = -6 }
+          { X = 12 Y = -18 }
+          { X = -12 Y = -18 }
+          { X = -36 Y = -6 }
+          { X = -36 Y = 6 }
+          { X = -12 Y = 18 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeNaked"
+      InheritFrom = "BaseShade"
+      DisplayInEditor = true
+      Speed = 300.0
+      Life = 
+      {
+        DeathFx = "ShadeNakedDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Exalted/EmoteDestroyed"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneSmall"
+        AmbientSound = "/SFX/Enemy Sounds/Exalted/NakedShadeAmbientLoop"
+        AttachedAnim = "NakedShadeSpotlight"
+        EditorOutlineDrawBounds = false
+        OffsetZ = 70.0
+      }
+    }
+    
+    {
+      Name = "ShadeNakedElite"
+      InheritFrom = "ShadeNaked"
+      DisplayInEditor = true
+      Speed = 350.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        OutlineOpacity = 0.8
+        OutlineThickness = 2.0
+        OutlineThreshold = 0.6
+        OutlineColor = { Red = 1.0 Green = 1.0 Blue = 0.0 }
+      }
+    }
+    
+    {
+      Name = "ShadeNakedEliteTrap"
+      InheritFrom = "ShadeNakedElite"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeNakedEliteTrapDeath"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeNaked_Idle_Trap"
+        OutlineOpacity = 1.0
+        OutlineThickness = 4.5
+        OutlineThreshold = 0.65
+        OutlineColor = { Red = 1.0 Green = 0.50 Blue = 0.0 }
+      }
+    }
+    
+    {
+      Name = "ShadeNakedSuperElite"
+      InheritFrom = "ShadeNaked"
+      DisplayInEditor = true
+      Speed = 375.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShadeBowUnit"
+      InheritFrom = "BaseShade"
+      CosmeticRotationSpeed = 360.0
+      DisplayInEditor = true
+      IgnoreTargetCollision = false
+      MoveGraphic = "ShadeBow_Move"
+      OnDeathWeapon = "ShadeDeathSpawn"
+      OnStunAnimation = "ShadeBow_OnHit"
+      RotationSpeed = 1800.0
+      Speed = 650.0
+      MoveAI = 
+      {
+        IgnoreTargetForLoS = false
+        LookAheadDistance = 512.0
+        NodeSuccessDistance = 8.0
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeBowContainer"
+        AttachedAnim = "ShadeSpotlightBow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeBow_Idle"
+        Scale = 0.8
+        Using = [
+          { Name = "EnemyBowIdle" }
+          { Name = "EnemyBowPickup" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeBowUnitElite"
+      InheritFrom = "ShadeBowUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnElite"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShadeBowUnitSuperElite"
+      InheritFrom = "ShadeBowUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnSuperElite"
+      Speed = 800.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ShadeSpearUnit"
+      InheritFrom = "BaseShade"
+      DisplayInEditor = true
+      MoveGraphic = "ShadeSpear_Move"
+      OnDeathWeapon = "ShadeDeathSpawn"
+      OnStunAnimation = "ShadeSpear_OnHit"
+      OnTouchdownWeapon = "ShadeSpearTouchdown"
+      RotationSpeed = 3200.0
+      Speed = 500.0
+      TouchdownVelocityRetention = 1.0
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeSpearContainer"
+        AttachedAnim = "ShadeSpotlightSpear"
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeSpear_Idle"
+        Scale = 0.8
+        Using = [
+          { Name = "EnemySpeardIdle" }
+          { Name = "EnemySpearPickup" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeSpearUnitElite"
+      InheritFrom = "ShadeSpearUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnElite"
+      Speed = 700.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShadeSpearUnitSuperElite"
+      InheritFrom = "ShadeSpearUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnSuperElite"
+      Speed = 750.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ShadeShieldUnit"
+      InheritFrom = "BaseShade"
+      DisplayInEditor = true
+      MoveGraphic = "ShadeShield_Walk"
+      OnDeathWeapon = "ShadeDeathSpawn"
+      OnStunAnimation = "ShadeShield_OnHit"
+      RotationSpeed = 280.0
+      Speed = 250.0
+      Life = 
+      {
+        InvulnerableCoverage = 140.0
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeShieldContainer"
+        AttachedAnim = "ShadeSpotlightShield"
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeShield_Idle"
+        Scale = 0.85
+        Using = [
+          { Name = "EnemyShieldIdle" }
+          { Name = "EnemyShieldPickup" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeShieldUnitElite"
+      InheritFrom = "ShadeShieldUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnElite"
+      Speed = 350.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        HighlightTopAnimOnly = false
+      }
+    }
+    
+    {
+      Name = "ShadeShieldUnitSuperElite"
+      InheritFrom = "ShadeShieldUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnSuperElite"
+      RotationSpeed = 500.0
+      Speed = 350.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        HighlightTopAnimOnly = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ShadeSwordUnit"
+      InheritFrom = "BaseShade"
+      DisplayInEditor = true
+      MoveGraphic = "ShadeSword_Move"
+      OnDeathWeapon = "ShadeDeathSpawn"
+      OnStunAnimation = "ShadeSword_OnHit"
+      RotationSpeed = 216000.0
+      Speed = 500.0
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeSwordContainer"
+        AttachedAnim = "ShadeSpotlightSword"
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeSword_Idle"
+        Scale = 0.85
+        Using = [
+          { Name = "EnemySwordIdle" }
+          { Name = "EnemySwordPickup" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeSwordUnitTest"
+      InheritFrom = "ShadeSwordUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShadeSwordUnitElite"
+      InheritFrom = "ShadeSwordUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnElite"
+      Speed = 575.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShadeSwordUnitSuperElite"
+      InheritFrom = "ShadeSwordUnit"
+      DisplayInEditor = true
+      OnDeathWeapon = "ShadeDeathSpawnSuperElite"
+      Speed = 625.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ShadeMagicUnit"
+      InheritFrom = "BaseShade"
+      CosmeticRotationSpeed = 360.0
+      DisplayInEditor = true
+      IgnoreTargetCollision = false
+      MoveGraphic = "ShadeBow_Move"
+      OnDeathWeapon = "null"
+      OnStunAnimation = "ShadeBow_OnHit"
+      RotationSpeed = 1800.0
+      Speed = 650.0
+      MoveAI = 
+      {
+        IgnoreTargetForLoS = false
+        LookAheadDistance = 512.0
+        NodeSuccessDistance = 8.0
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeBowContainer"
+        AttachedAnim = "ShadeSpotlightBow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ShadeBow_Idle"
+        Scale = 0.8
+        Using = [
+          { Name = "EnemyBowIdle" }
+          { Name = "EnemyBowPickup" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShadeMagicUnitSuperElite"
+      InheritFrom = "ShadeMagicUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "BaseSatyr"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 500.0
+      DisplayInEditor = false
+      FinishMoveAnimationOnIdle = false
+      MoveGraphic = "SatyrMove"
+      OnStunAnimation = "SatyrOnHit"
+      RotationSpeed = 500.0
+      Speed = 600.0
+      StopGraphic = "SatyrMoveStop"
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathSplatGroundRandomRed"
+        DeathGraphic = "SatyrDeath"
+        DeathSound = "/SFX/Enemy Sounds/Satyr/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Satyr/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 768.0
+        MoveWithoutPath = true
+        NodeDistance = 24.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemyCeilingEntranceDust"
+        ActivateGraphic = "SatyrEntranceDrop"
+        Ambient = 0.0
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "SatyrIdle"
+        Grip = 8000.0
+        HighlightTopAnimOnly = true
+        ImpulsedFx = "KnockbackLines"
+        SelectionHeight = 200.0
+        SelectionShiftY = 40.0
+        SelectionWidth = 160.0
+        Tallness = 155.0
+        Points = [
+          { X = 12 Y = 18 }
+          { X = 36 Y = 6 }
+          { X = 36 Y = -6 }
+          { X = 12 Y = -18 }
+          { X = -12 Y = -18 }
+          { X = -36 Y = -6 }
+          { X = -36 Y = 6 }
+          { X = -12 Y = 18 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SatyrRanged"
+      InheritFrom = "BaseSatyr"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SatyrRangedElite"
+      InheritFrom = "BaseSatyr"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SatyrRangedMiniboss"
+      InheritFrom = "BaseSatyr"
+      DisplayInEditor = true
+      MoveGraphic = "SatyrMinibossMove"
+      OnStunAnimation = "SatyrMinibossOnHit"
+      StopGraphic = "SatyrMinibossMoveStop"
+      Thing = 
+      {
+        ActivateGraphic = "SatyrMinibossEntranceDrop"
+        EditorOutlineDrawBounds = false
+        Graphic = "SatyrMinibossIdle"
+        Tallness = 255.0
+        Offset = { X = 0 Y = -38 }
+        Points = [
+          { X = 24 Y = 36 }
+          { X = 72 Y = 12 }
+          { X = 72 Y = -12 }
+          { X = 24 Y = -36 }
+          { X = -24 Y = -36 }
+          { X = -72 Y = -12 }
+          { X = -72 Y = 12 }
+          { X = -24 Y = 36 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Crawler"
+      InheritFrom = "SmallEnemy"
+      CanOnlyMoveForward = true
+      CollisionWeaponRequiredVelocity = 510.0
+      DisplayInEditor = true
+      HaltOnSlowMovement = false
+      InitiatedCollisionWeapon = "CrawlerRam"
+      MoveGraphic = "EnemyCrawlerRun"
+      OnStunAnimation = "null"
+      RotationSpeed = 500.0
+      Speed = 750.0
+      Life = 
+      {
+        DeathGraphic = "RatDeathSmall"
+        DeathSound = "/SFX/Enemy Sounds/Crawler/EmoteDying"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemyBurrowEntranceSmall"
+        ActivateGraphic = "EnemyCrawlerBurrow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyCrawlerIdle"
+        Grip = 6000.0
+        SelectionHeight = 200.0
+        SelectionShiftY = -10.0
+        SelectionWidth = 200.0
+        Tallness = 82.0
+        UseBoundsForSortDrawArea = true
+      }
+    }
+    
+    {
+      Name = "CrawlerMiniBoss"
+      InheritFrom = "Crawler"
+      CharmBreakModifier = 3.0
+      DisplayInEditor = false
+      ImmuneToStun = true
+      InitiatedCollisionWeapon = "CrawlerRamMiniBoss"
+      SlowEffectModifier = 0.3
+      Life = 
+      {
+        DeathGraphic = "null"
+        DeathSound = "/EmptyCue"
+      }
+      MoveAI = 
+      {
+        LookAheadDistance = 128.0
+        MoveWithoutPath = false
+        NodeDistance = 24.0
+        NodeSuccessDistance = 64.0
+        RepathDelayMax = 0.1
+        SuccessDistance = 300.0
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = 0.5
+        Using = [
+          { Name = "EnemyCrawlerReburrow" }
+          { Name = "EnemyCrawlerHowling" }
+        ]
+      }
+    }
+    
+    {
+      Name = "RatThug"
+      InheritFrom = "SmallEnemy"
+      CanOnlyMoveForward = true
+      CollisionWeaponRequiredVelocity = 510.0
+      DisplayInEditor = true
+      HaltOnSlowMovement = false
+      MoveGraphic = "EnemyRatThugMove"
+      OnDeathWeapon = "RatDeathPuddle"
+      OnStunAnimation = "EnemyRatThugOnHit"
+      RotationSpeed = 1600.0
+      Speed = 390.0
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "RatDeath"
+        DeathSound = "/SFX/Enemy Sounds/RatThug/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/RatThug/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemyBurrowEntrance"
+        ActivateGraphic = "EnemyRatThugBurrow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyRatThugIdle"
+        Grip = 6000.0
+        SelectionHeight = 200.0
+        SelectionShiftY = -10.0
+        SelectionWidth = 200.0
+        Tallness = 150.0
+        UseBoundsForSortDrawArea = true
+      }
+    }
+    
+    {
+      Name = "RatThugElite"
+      InheritFrom = "RatThug"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "RatThugMiniboss"
+      InheritFrom = "RatThug"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = -0.2
+        Scale = 1.35
+        Value = -0.4
+      }
+    }
+    
+    {
+      Name = "TrainingMelee"
+      InheritFrom = "BaseSkeleton"
+      DefaultAngle = 235.0
+      DisplayInEditor = true
+      MoveGraphic = "EnemySkeletonRun"
+      NoAllegiance = true
+      OnStunAnimation = "EnemySkeletonOnHit"
+      Speed = 500.0
+      Life = 
+      {
+        HitSound = "/SFX/SkellyEmoteOnHit"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInTrainingMeleeContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemySkeletonIdle"
+        Grip = 20000.0
+        Scale = 0.7
+        SelectionHeight = 250.0
+        SelectionWidth = 250.0
+        SpeechCapable = true
+        Interact = 
+        {
+          Cooldown = 2.0
+          Distance = 250.0
+        }
+        Points = [
+          { X = 0 Y = 54 }
+          { X = 108 Y = 0 }
+          { X = 0 Y = -54 }
+          { X = -108 Y = 0 }
+        ]
+        SubtitleColor = { Red = 0.87 Green = 0.82 Blue = 0.53 }
+      }
+    }
+    
+    {
+      Name = "TrainingMeleeSummon"
+      InheritFrom = "BaseSkeleton"
+      AutoLockable = false
+      DefaultAngle = 235.0
+      DisplayInEditor = true
+      MoveGraphic = "null"
+      NoAllegiance = true
+      OnStunAnimation = "null"
+      Speed = 500.0
+      StartGraphic = "null"
+      StopGraphic = "null"
+      Life = 
+      {
+        CollisionDamageMultiplier = 0.2
+        HitSound = "/SFX/SkellySummonEmoteOnHit"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInTrainingMeleeSummonContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "SkellyAssistTrait_Start"
+        Grip = 8000.0
+        Scale = 0.7
+        SelectionHeight = 250.0
+        SelectionWidth = 250.0
+        Points = [
+          { X = 0 Y = 54 }
+          { X = 108 Y = 0 }
+          { X = 0 Y = -54 }
+          { X = -108 Y = 0 }
+        ]
+        SubtitleColor = { Red = 0.87 Green = 0.82 Blue = 0.53 }
+      }
+    }
+    
+    {
+      Name = "DusaSummon"
+      InheritFrom = "BaseMedusaHead"
+      DefaultAngle = 235.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      MoveGraphic = "NPCDusaMove"
+      OnStunAnimation = "NPCDusaStun"
+      Speed = 650.0
+      Life = 
+      {
+        DeathFx = "ExplosionBone"
+        DeathGraphic = "NPCMedusaHiding"
+        DeathSound = "/SFX/Enemy Sounds/Bloodless01/EmoteDying"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "NPCDusaIdle"
+        Grip = 8000.0
+        SelectionHeight = 250.0
+        SelectionWidth = 250.0
+        Points = [
+          { X = 0 Y = 54 }
+          { X = 108 Y = 0 }
+          { X = 0 Y = -54 }
+          { X = -108 Y = 0 }
+        ]
+        SubtitleColor = { Red = 0.57 Green = 1.0 Blue = 0.36 }
+        Using = [
+          { Name = "NPCDusaPreAttack" }
+          { Name = "NPCDusaAttack" }
+          { Name = "DusaFreezeShotSpray" }
+          { Name = "DusaFreezeShotSpread" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BaseCaster"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 800.0
+      DisplayInEditor = false
+      IgnoreTargetCollision = false
+      MoveGraphic = "EnemyWretchCasterMove"
+      OnStunAnimation = "EnemyWretchCasterOnHit"
+      RotationSpeed = 1200.0
+      Speed = 380.0
+      StartGraphic = "EnemyWretchCasterStart"
+      StopGraphic = "EnemyWretchCasterStop"
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx_Medium"
+        DeathGraphic = "EnemyWretchCasterDeath"
+        DeathSound = "/SFX/Enemy Sounds/Caster/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/Caster/EmoteHurt"
+		SoundManagerCap = 32
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        IgnoreTargetForLoS = false
+        LookAheadDistance = 512.0
+        OnFailBehavior = "GOTO_NEAREST_TO_GOAL"
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneMedium"
+        ActivateGraphic = "EnemyActivationFadeInWretchCasterContainer"
+        AttachedAnim = "WretchCasterShadow"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchCasterIdle"
+        Grip = 6100.0
+        ImpulsedFx = "KnockbackLinesWithBloodMedium"
+        OffsetZ = 30.0
+        SelectionHeight = 260.0
+        SelectionShiftY = 30.0
+        SelectionWidth = 220.0
+        Tallness = 150.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "LightRanged"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "LightRangedElite"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      Speed = 520.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "LightRangedSuperElite"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      Speed = 620.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Scale = 1.05
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "Grenadier"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "TimeCrystal"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      MoveGraphic = "null"
+      OnStunAnimation = "null"
+      OnStunWeapon = "HeavyRangedOnHit"
+      RotationSpeed = 999999.063
+      Speed = 1200.0
+      StopGraphic = "null"
+      Life = 
+      {
+        ArmorCoverage = 360.0
+        DeathGraphic = "HeavyRangedCrystal4Shatter"
+        DeathSound = "/SFX/Enemy Sounds/Brimstone/CrystalDestroyed"
+        HitSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInHeavyRangedContainer"
+        AttachedAnim = "LootShadowStatic"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal1"
+        Hue = 0.5
+        OffsetZ = 84.0
+        SelectionHeight = 280.0
+        SelectionShiftY = 25.0
+        Tallness = 120.0
+        Points = [
+          { X = 0 Y = 10 }
+          { X = 20 Y = 0 }
+          { X = 0 Y = -10 }
+          { X = -20 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRanged"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      MoveGraphic = "null"
+      OnStunAnimation = "null"
+      OnStunWeapon = "HeavyRangedOnHit"
+      RotationSpeed = 999999.063
+      StopGraphic = "null"
+      Life = 
+      {
+        ArmorCoverage = 360.0
+        DeathGraphic = "HeavyRangedCrystal4Shatter"
+        DeathSound = "/SFX/Enemy Sounds/Brimstone/CrystalDestroyed"
+        HitSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInHeavyRangedContainer"
+        AttachedAnim = "LootShadowStatic"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedCrystal4"
+        OffsetZ = 50.0
+        SelectionHeight = 280.0
+        SelectionShiftY = 25.0
+        Tallness = 120.0
+        Points = [
+          { X = 0 Y = 20 }
+          { X = 40 Y = 0 }
+          { X = 0 Y = -20 }
+          { X = -40 Y = 0 }
+        ]
+        Using = [
+          { Name = "HeavyRangedCrystal1" }
+          { Name = "HeavyRangedCrystal2" }
+          { Name = "HeavyRangedCrystal3" }
+          { Name = "HeavyRangedCrystal4" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedElite"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForked"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      RotationSpeed = 1250.0
+      Life = 
+      {
+        DeathFx = "null"
+        DeathGraphic = "null"
+        DeathSound = "/SFX/Enemy Sounds/HeavyRangedForked/CrystalDestroyed"
+      }
+      Thing = 
+      {
+        ActivateFx = "null"
+        ActivateGraphic = "HeavyRangedForkedBurrow"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedForkedCrystal4"
+        Using = [
+          { Name = "HeavyRangedCrystal1" }
+          { Name = "HeavyRangedCrystal2" }
+          { Name = "HeavyRangedCrystal3" }
+          { Name = "HeavyRangedCrystal4" }
+          { Name = "HeavyRangedForkedCrystal1" }
+          { Name = "HeavyRangedForkedCrystal2" }
+          { Name = "HeavyRangedForkedCrystal3" }
+          { Name = "HeavyRangedForkedCrystal4" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedElite"
+      InheritFrom = "HeavyRangedForked"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HeavyRangedForkedMiniboss"
+      InheritFrom = "HeavyRangedForked"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = 0.4
+        Saturation = -0.3
+        Scale = 1.4
+        Points = [
+          { X = 0 Y = 30 }
+          { X = 60 Y = 0 }
+          { X = 0 Y = -30 }
+          { X = -60 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedSplitterMiniboss"
+      InheritFrom = "HeavyRangedElite"
+      DisplayInEditor = true
+      RotationSpeed = 1250.0
+      Speed = 420.0
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "HeavyRangedSplitterCrystalDeath"
+        DeathSound = "/SFX/Enemy Sounds/HeavyRangedSplitterMiniboss/EmoteDying"
+        HitGraphic = "HeavyRangedSplitterCrystalHit"
+        HitSound = "/SFX/Enemy Sounds/HeavyRangedSplitterMiniboss/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneExtraLarge"
+        ActivateGraphic = "EnemyActivationFadeInHeavyRangedSplitterContainer"
+        AttachedAnim = "HeavyRangedSplitterShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedSplitterCrystal"
+        Grip = 10000.0
+        Tallness = 475.0
+        Points = [
+          { X = 0 Y = 60 }
+          { X = 120 Y = 0 }
+          { X = 0 Y = -60 }
+          { X = -120 Y = 0 }
+        ]
+        Using = [
+          { Name = "HeavyRangedCrystal1" }
+          { Name = "HeavyRangedCrystal2" }
+          { Name = "HeavyRangedCrystal3" }
+          { Name = "HeavyRangedCrystal4" }
+          { Name = "HeavyRangedSplitterCrystal" }
+          { Name = "HeavyRangedSplitterFragment" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedSplitterMinibossSuperElite"
+      InheritFrom = "HeavyRangedSplitterMiniboss"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "HeavyRangedSplitterFragment"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      Speed = 580.0
+      Life = 
+      {
+        DeathFx = "HeavyRangedSplitterFragmentDeath"
+        DeathGraphic = "HeavyRangedSplitterFragmentDeath"
+        DeathSound = "/SFX/Enemy Sounds/HeavyRangedSplitterFragment/CrystalDestroyedSMALL"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneSmall"
+        ActivateGraphic = "EnemyActivate"
+        EditorOutlineDrawBounds = false
+        Graphic = "HeavyRangedSplitterFragment"
+        Points = [
+          { X = 0 Y = 15 }
+          { X = 30 Y = 0 }
+          { X = 0 Y = -15 }
+          { X = -30 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HeavyRangedSplitterFragmentSuperElite"
+      InheritFrom = "HeavyRangedSplitterFragment"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "HealRanged"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal4"
+        Using = [
+          { Name = "HeavyRangedCrystal1" }
+          { Name = "HeavyRangedCrystal2" }
+          { Name = "HeavyRangedCrystal3" }
+          { Name = "HeavyRangedCrystal4" }
+          { Name = "HealRangedCrystal1" }
+          { Name = "HealRangedCrystal2" }
+          { Name = "HealRangedCrystal3" }
+          { Name = "HealRangedCrystal4" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HealRangedElite"
+      InheritFrom = "HealRanged"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShieldRanged"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathGraphic = "HealRangedDeath"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealRangedCrystal4"
+        Using = [
+          { Name = "HeavyRangedCrystal1" }
+          { Name = "HeavyRangedCrystal2" }
+          { Name = "HeavyRangedCrystal3" }
+          { Name = "HeavyRangedCrystal4" }
+          { Name = "HealRangedCrystal1" }
+          { Name = "HealRangedCrystal2" }
+          { Name = "HealRangedCrystal3" }
+          { Name = "HealRangedCrystal4" }
+        ]
+      }
+    }
+    
+    {
+      Name = "ShieldRangedElite"
+      InheritFrom = "ShieldRanged"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ShieldRangedSuperElite"
+      InheritFrom = "ShieldRanged"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ShieldRangedMiniBoss"
+      InheritFrom = "ShieldRanged"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "HealRangedDeathMiniBoss"
+        DeathGraphic = null
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneExtraLarge"
+        EditorOutlineDrawBounds = false
+        Scale = 1.4
+        Hue = 0.9
+        OffsetZ = 75.0
+      }
+    }
+    
+    {
+      Name = "RangedBurrower"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      OnStunAnimation = "EnemyBoneDraconOnHit"
+      Speed = 0.0
+      StartGraphic = "null"
+      StopGraphic = "null"
+      Life = 
+      {
+        DeathGraphic = "EnemyBoneDraconDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/RangedBurrower/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/RangedBurrower/EmoteHurt"
+		    SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemyBurrowEntrance_BoneDraconActivate"
+        ActivateGraphic = "EnemyBoneDraconBurrowSet_Unborrow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyBoneDracon_Idle"
+        ImmuneToForce = true
+      }
+    }
+    
+    {
+      Name = "RangedBurrowerElite"
+      InheritFrom = "RangedBurrower"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "RangedBurrowerSuperElite"
+      InheritFrom = "RangedBurrower"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "Chariot"
+      InheritFrom = "BaseCaster"
+      CanOnlyMoveForward = true
+      CollisionWeaponRequiredVelocity = 280.0
+      CosmeticRotationSpeed = 99999.0
+      DangerDistance = 300.0
+      DangerDistanceVelocity = 500.0
+      DisplayInEditor = true
+      HaltOnSlowMovement = false
+      IgnoreTargetCollision = true
+      InitiatedCollisionWeapon = "ChariotRam"
+      MoveGraphic = "ChariotMove"
+      OnStunAnimation = "ChariotOnHit"
+      RotationSpeed = 280.0
+      Speed = 300.0
+      StartGraphic = "null"
+      StopGraphic = "ChariotStop"
+      Life = 
+      {
+        DeathGraphic = "ChariotDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Chariot/ChariotDeath"
+      }
+      MoveAI = 
+      {
+        IgnoreTargetForLoS = true
+        LookAheadDistance = 768.0
+        MoveWithoutPath = true
+        NodeDistance = 24.0
+        NodeSuccessDistance = 64.0
+        RepathDelayMax = 0.1
+        SlowToRotate = false
+        SuccessDistance = 300.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInChariotContainer"
+        AttachedAnim = "ChariotShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ChariotIdle"
+        Grip = 6000.0
+        OffsetZ = 0.0
+        SelectionHeight = 280.0
+        SelectionShiftY = 50.0
+        Tallness = 230.0
+        Points = [
+          { X = 18 Y = 27 }
+          { X = 54 Y = 9 }
+          { X = 54 Y = -9 }
+          { X = 18 Y = -27 }
+          { X = -18 Y = -27 }
+          { X = -54 Y = -9 }
+          { X = -54 Y = 9 }
+          { X = -18 Y = 27 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChariotElite"
+      InheritFrom = "Chariot"
+      DisplayInEditor = true
+      InitiatedCollisionWeapon = "ChariotRamElite"
+      RotationSpeed = 360.0
+      Speed = 400.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ChariotSuperElite"
+      InheritFrom = "Chariot"
+      DisplayInEditor = true
+      InitiatedCollisionWeapon = "ChariotRamElite"
+      RotationSpeed = 360.0
+      Speed = 500.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "ChariotSuicide"
+      InheritFrom = "Chariot"
+      DisplayInEditor = true
+      InitiatedCollisionWeapon = "ChariotRamSelfDestruct"
+      MoveGraphic = "ChariotSuicideMove"
+      OnDeathWeapon = "ChariotRamDeathWeapon"
+      RotationSpeed = 520.0
+      Speed = 200.0
+      StopGraphic = "ChariotSuicideStop"
+      OnStunAnimation = "ChariotSuicideOnHit"
+      Life = 
+      {
+        DeathGraphic = "ChariotSuicideDeathVFX"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneMedium"
+        ActivateGraphic = "EnemyActivationFadeInChariotSuicideContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "ChariotSuicideIdle"
+        Hue = 0.1
+        Saturation = -0.1
+        Scale = 0.5
+      }
+    }
+    
+    {
+      Name = "ChariotSuicideElite"
+      InheritFrom = "ChariotSuicide"
+      DisplayInEditor = true
+      Speed = 250.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 0.6
+      }
+    }
+    
+    {
+      Name = "DisembodiedHand"
+      InheritFrom = "SmallEnemy"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyWringerMove"
+      OnStunAnimation = "EnemyWringerOnHit"
+      Speed = 490.0
+      StartGraphic = "EnemyWringerStart"
+      Life = 
+      {
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "EnemyWringerDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRuneMedium"
+        ActivateGraphic = "EnemyActivationFadeInDisembodiedHandContainer"
+        AttachedAnim = "DisembodiedHandShadow"
+        RotationSound = "/Leftovers/World Sounds/Caravan Interior/ChainInteract"
+        RotationSoundThreshold = 90
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWringerIdle"
+        Grip = 16000.0
+        OffsetZ = 20.0
+        Tallness = 140.0
+      }
+    }
+    
+    {
+      Name = "DisembodiedHandElite"
+      InheritFrom = "DisembodiedHand"
+      DisplayInEditor = true
+      Speed = 780.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "DisembodiedHandSuperElite"
+      InheritFrom = "DisembodiedHand"
+      DisplayInEditor = true
+      Speed = 850.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "Illusionist"
+      InheritFrom = "HeavyRanged"
+      DisplayInEditor = true
+      OnHitWeapon = "HitBlink"
+      RotationSpeed = 1200.0
+      Speed = 350.0
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        OnDamagedSpin = 1800.0
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "3DGhostIdle"
+        Hue = 0.25
+        OffsetZ = 20.0
+        SpinDeceleration = 3200.0
+        Color = { Red = 0.2 Green = 0.8 Blue = 0.25 }
+      }
+    }
+    
+    {
+      Name = "IllusionistElite"
+      InheritFrom = "Illusionist"
+      DisplayInEditor = true
+      Speed = 500.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "IllusionistClone"
+      InheritFrom = "Illusionist"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Hue = 0.28
+        Scale = 0.9
+      }
+    }
+    
+    {
+      Name = "IllusionistCloneElite"
+      InheritFrom = "IllusionistClone"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "CrusherUnit"
+      InheritFrom = "SmallEnemy"
+      DangerDistance = 300.0
+      DangerDistanceDescendingZ = 500.0
+      DisplayInEditor = true
+      OnStunAnimation = "null"
+      OnTouchdownWeapon = "CrusherUnitTouchdown"
+      RandomDefaultAngle = true
+      RotationSpeed = 450.0
+      Speed = 600.0
+      Life = 
+      {
+        ArmorCoverage = 180.0
+        DeathFx = "EnemyDeathFxBone"
+        DeathGraphic = "CrusherUnitDeathVFX"
+        DeathSound = "/SFX/Enemy Sounds/Crusher/EmoteDying"
+        HitGraphic = "CrusherUnitOnHit"
+        HitSound = "/SFX/Enemy Sounds/Crusher/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInCrusherUnitContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "CrusherUnitOnGround"
+        ImmuneToForce = true
+        Scale = 0.8
+        SelectionHeight = 380.0
+        SelectionShiftY = 100.0
+        Tallness = 270.0
+        Offset = { X = 0 Y = 43 }
+        Points = [
+          { X = -10 Y = 67 }
+          { X = 79 Y = 23 }
+          { X = 1 Y = -15 }
+          { X = -88 Y = 29 }
+        ]
+        Using = [
+          { Name = "CrusherUnitIdle" }
+        ]
+      }
+    }
+    
+    {
+      Name = "CrusherUnitElite"
+      InheritFrom = "CrusherUnit"
+      DisplayInEditor = true
+      OnTouchdownWeapon = "CrusherUnitTouchdownElite"
+      Speed = 800.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "CrusherUnitSuperElite"
+      InheritFrom = "CrusherUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "SeekingShotUnit"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SpreadShotUnit"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyWretchCasterMove_SpreadShot"
+      OnStunAnimation = "EnemyWretchCasterOnHit_SpreadShot"
+      StartGraphic = "EnemyWretchCasterStart_SpreadShot"
+      StopGraphic = "EnemyWretchCasterStop_SpreadShot"
+      Life = 
+      {
+        DeathGraphic = "EnemyWretchCasterDeath_SpreadShot"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInWretchCasterSpreadShotContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchCasterIdle_SpreadShot"
+        Saturation = -0.4
+      }
+    }
+    
+    {
+      Name = "SpreadShotUnitElite"
+      InheritFrom = "SpreadShotUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SpreadShotUnitMiniboss"
+      InheritFrom = "SpreadShotUnit"
+      DisplayInEditor = true
+      Speed = 550.0
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Color = { Red = 0.47 Green = 0.47 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "SplitShotUnit"
+      InheritFrom = "BaseCaster"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyWretchCasterMove_SplitShot"
+      OnStunAnimation = "EnemyWretchCasterOnHit_SplitShot"
+      Speed = 320.0
+      StartGraphic = "EnemyWretchCasterStart_SplitShot"
+      StopGraphic = "EnemyWretchCasterStop_SplitShot"
+      Life = 
+      {
+        DeathGraphic = "EnemyWretchCasterDeath_SplitShot"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInWretchCasterSplitShotContainer"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyWretchCasterIdle_SplitShot"
+        Saturation = -0.55
+      }
+    }
+    
+    {
+      Name = "SplitShotUnitElite"
+      InheritFrom = "SplitShotUnit"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "1_BaseBoss"
+      InheritFrom = "SmallEnemy"
+      CharmBreakModifier = 3.0
+      DisplayInEditor = false
+      ImmuneToStun = true
+      OnStunAnimation = "null"
+      SlowEffectModifier = 0.3
+      Life = 
+      {
+        DeathFx = "BloodImpactA"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "null"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.3
+        Graphic = "null"
+        Grip = 5000.0
+        OcclusionAreaScalar = 0.5
+		HighPrioritySfx = true
+      }
+    }
+    
+    {
+      Name = "Harpy"
+      InheritFrom = "1_BaseBoss"
+      CollisionDamagePerVelocity = 0.0
+      CollisionWeapon = "HarpyCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 500.0
+      CosmeticRotationSpeed = 360.0
+      DefaultAngle = 210.0
+      DisplayInEditor = true
+      ImmuneToStun = false
+      MoveGraphic = "FuryRun"
+      RotationSpeed = 900.0
+      Speed = 600.0
+      StartGraphic = "FuryStart"
+      StopGraphic = "FuryStop"
+      StunBreakModifier = 100.0
+      Life = 
+      {
+        DeathFx = "null"
+        DieOnCollisionRequiredVelocityMultiplier = 0.0
+        HitSound = "/SFX/Enemy Sounds/Megaera/EmoteHurt"
+        InvulnerableFx = "Invincibubble"
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "FuryIdle"
+        SelectionHeight = 350.0
+        SelectionShiftY = 40.0
+        SortBoundsScale = 2.0
+        SpeechCapable = true
+        Tallness = 254.0
+        Points = [
+          { X = 0 Y = 8 }
+          { X = 51 Y = -17 }
+          { X = -1 Y = -44 }
+          { X = -52 Y = -18 }
+        ]
+        SubtitleColor = { Red = 0.14 Green = 0.48 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "Harpy2"
+      InheritFrom = "Harpy"
+      DisplayInEditor = true
+      MoveGraphic = "Fury2Run"
+      RotationSpeed = 2500.0
+      StartGraphic = "Fury2Start"
+      StopGraphic = "Fury2Stop"
+      Life = 
+      {
+        HitSound = "/SFX/Enemy Sounds/Alecto/EmoteHurt"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Fury2Idle"
+        SubtitleColor = { Red = 0.94 Green = 0.27 Blue = 0.16 }
+      }
+    }
+    
+    {
+      Name = "Harpy3"
+      InheritFrom = "Harpy"
+      DisplayInEditor = true
+      MoveGraphic = "Fury3Run"
+      Speed = 850.0
+      StartGraphic = "Fury3Start"
+      StopGraphic = "Fury3Stop"
+      Life = 
+      {
+        HitSound = "/SFX/Enemy Sounds/Tisiphone/EmoteHurt"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Fury3Idle"
+        SubtitleColor = { Red = 0.22 Green = 1.0 Blue = 0.22 }
+      }
+    }
+    
+    {
+      Name = "HydraHeadImmortal"
+      InheritFrom = "1_BaseBoss"
+      CollisionWeaponRequiredVelocity = 300.0
+      CosmeticRotationSpeed = 720.0
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraMove"
+      OnTouchdownWeapon = "HydraTouchdown"
+      RotationSpeed = 900.0
+      Speed = 1500.0
+      Life = 
+      {
+        ArmorCoverage = 360.0
+        HitSound = "/SFX/Enemy Sounds/HydraHead/EmoteHurt"
+        InvulnerableFx = "HydraBubble"
+      }
+      MoveAI = 
+      {
+        NodeSuccessDistance = 32.0
+      }
+      Thing = 
+      {
+        ActivateFx = "null"
+        AttachedAnim = "HydraNeckShadow"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.1
+        Graphic = "EnemyHydraIdle"
+        Grip = 10000.0
+        OffsetZ = 150.0
+        RetractDistance = 40.0
+        Scale = 1.2
+        SelectionHeight = 420.0
+        SelectionShiftY = 40.0
+        Tallness = 200.0
+        TetherOffset = -100.0
+        Points = [
+          { X = 0 Y = 70 }
+          { X = 140 Y = 0 }
+          { X = 0 Y = -70 }
+          { X = -140 Y = 0 }
+        ]
+        Using = [
+          { Name = "HydraNeck" }
+          { Name = "HydraNeckBroken" }
+          { Name = "HydraBase" }
+          { Name = "HydraTooth" }
+        ]
+      }
+    }
+    
+    {
+      Name = "HydraHeadImmortalLavamaker"
+      InheritFrom = "HydraHeadImmortal"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraOrangeMove"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraOrangeIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadImmortalSummoner"
+      InheritFrom = "HydraHeadImmortal"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraGreenMove"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraGreenIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadImmortalSlammer"
+      InheritFrom = "HydraHeadImmortal"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraBlueMove"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraBlueIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadImmortalWavemaker"
+      InheritFrom = "HydraHeadImmortal"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraPurpleMove"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraPurpleIdle"
+      }
+    }
+    
+    {
+      Name = "BaseHydraHead"
+      InheritFrom = "HydraHeadImmortal"
+      CharmBreakModifier = 1.0
+      DisplayInEditor = false
+      OnStunAnimation = "EnemyHydraOnHit"
+      Thing = 
+      {
+        ActivateFx = "null"
+        ActivateGraphic = "HydraHeadLavaBubbles"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.15
+        OffsetZ = 100.0
+        RetractDistance = 10.0
+        Scale = 1.0
+        TetherOffset = -40.0
+        UseBoundsForSortDrawArea = true
+      }
+    }
+    
+    {
+      Name = "HydraHeadDartmaker"
+      InheritFrom = "BaseHydraHead"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HydraHeadLavamaker"
+      InheritFrom = "BaseHydraHead"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraOrangeMove"
+      OnStunAnimation = "EnemyHydraOrangeOnHit"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraOrangeIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadSummoner"
+      InheritFrom = "BaseHydraHead"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraGreenMove"
+      OnStunAnimation = "EnemyHydraGreenOnHit"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraGreenIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadSlammer"
+      InheritFrom = "BaseHydraHead"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraBlueMove"
+      OnStunAnimation = "EnemyHydraBlueOnHit"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraBlueIdle"
+      }
+    }
+    
+    {
+      Name = "HydraHeadWavemaker"
+      InheritFrom = "BaseHydraHead"
+      DisplayInEditor = true
+      MoveGraphic = "EnemyHydraPurpleMove"
+      OnStunAnimation = "EnemyHydraPurpleOnHit"
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHydraPurpleIdle"
+      }
+    }
+    
+    {
+      Name = "Theseus"
+      InheritFrom = "1_BaseBoss"
+      CollisionDamagePerVelocity = 0.0
+      CollisionWeapon = "HarpyCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 500.0
+      CosmeticRotationSpeed = 500.0
+      DefaultAngle = 210.0
+      DisplayInEditor = true
+      MoveGraphic = "Theseus_Walk"
+      OnTouchdownWeapon = "TheseusSpearTouchdown"
+      RotationSpeed = 1500.0
+      Speed = 300.0
+      Life = 
+      {
+        DeathFx = "null"
+        DieOnCollisionRequiredVelocityMultiplier = 0.0
+        InvulnerableCoverage = 140.0
+        InvulnerableFx = "Invincibubble"
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Theseus_Idle"
+        SelectionHeight = 350.0
+        SelectionShiftY = 40.0
+        SpeechCapable = true
+        Tallness = 154.0
+        SubtitleColor = { Red = 1.0 Green = 0.76 Blue = 0.18 }
+      }
+    }
+    
+    {
+      Name = "Theseus2"
+      InheritFrom = "Theseus"
+      CanOnlyMoveForward = true
+      CollisionWeaponRequiredVelocity = 280.0
+      CosmeticRotationSpeed = 99999.0
+      DangerDistance = 300.0
+      DangerDistanceVelocity = 500.0
+      DefaultAngle = 235.0
+      DisplayInEditor = true
+      HaltOnSlowMovement = false
+      InitiatedCollisionWeapon = "TheseusChariotRam"
+      MoveGraphic = "TheseusChariot_Ride"
+      RotationSpeed = 350.0
+      Speed = 500.0
+      Life = 
+      {
+        DeathSound = "/SFX/Explosion1"
+        HitSound = "/SFX/Player Sounds/ZagreusShieldRicochet"
+        InvulnerableCoverage = 0.0
+      }
+      MoveAI = 
+      {
+        LookAheadDistance = 1280.0
+        NodeDistance = 24.0
+        NodeSuccessDistance = 128.0
+        RepathDelayMax = 0.1
+        SlowToRotate = false
+        SuccessDistance = 128.0
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TheseusChariot_Idle"
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "Minotaur"
+      InheritFrom = "1_BaseBoss"
+      CollisionWeaponRequiredVelocity = 500.0
+      CosmeticRotationSpeed = 360.0
+      DefaultAngle = 210.0
+      DisplayInEditor = true
+      HaltOnSlowMovement = false
+      InitiatedCollisionWeapon = "MinotaurBullRushRam"
+      MoveGraphic = "Minotaur_Walk"
+      OnTouchdownWeapon = "MinotaurOverheadTouchdown"
+      RotationSpeed = 450.0
+      Speed = 475.0
+      StopGraphic = "Minotaur_WalkStop"
+      Life = 
+      {
+        DeathFx = "null"
+        DieOnCollisionRequiredVelocityMultiplier = 0.0
+        HitSound = "/SFX/Enemy Sounds/Minotaur/EmoteHurt"
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        NodeSuccessDistance = 128.0
+        NodeSuccessDistanceRequiresLoS = 4.0
+        OnFailBehavior = "GOTO_NEAREST_TO_GOAL"
+        RepathDelayMax = 0.1
+        SlowToRotate = false
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivate"
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.2
+        Graphic = "Minotaur_Idle"
+        SelectionHeight = 350.0
+        SelectionShiftY = 40.0
+        SpeechCapable = true
+        Tallness = 300.0
+        Points = [
+          { X = 0 Y = 30 }
+          { X = 60 Y = 0 }
+          { X = 0 Y = -30 }
+          { X = -60 Y = 0 }
+        ]
+        SubtitleColor = { Red = 0.62 Green = 0.50 Blue = 0.42 }
+      }
+    }
+    
+    {
+      Name = "Minotaur2"
+      InheritFrom = "Minotaur"
+      DisplayInEditor = true
+      InitiatedCollisionWeapon = "MinotaurArmoredBullRushRam"
+      MoveGraphic = "MinotaurArmored_Walk"
+      OnTouchdownWeapon = "MinotaurArmoredOverheadTouchdown"
+      StopGraphic = "MinotaurArmored_WalkStop"
+      Life = 
+      {
+        HitSound = "/SFX/Player Sounds/ZagreusShieldRicochet"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MinotaurArmored_Idle"
+      }
+    }
+    
+    {
+      Name = "Hades"
+      InheritFrom = "1_BaseBoss"
+      CharmBreakModifier = 5.0
+      CollisionDamagePerVelocity = 0.0
+      CollisionWeapon = "HarpyCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 500.0
+      CosmeticRotationSpeed = 500.0
+      DefaultAngle = 30.0
+      DisplayInEditor = true
+      MoveGraphic = "HadesBattleRun"
+      RotationSpeed = 1500.0
+      Speed = 600.0
+      Life = 
+      {
+        DeathFx = "null"
+        DieOnCollisionRequiredVelocityMultiplier = 0.0
+        HitSound = "/SFX/Enemy Sounds/Hades/EmoteHurt"
+        InvulnerableFx = "Invincibubble_Hades"
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.2
+        Graphic = "HadesBattleIdle"
+        SelectionHeight = 350.0
+        SelectionShiftY = 40.0
+        SpeechCapable = true
+        Tallness = 350.0
+        Points = [
+          { X = -10 Y = 75 }
+          { X = 110 Y = 0 }
+          { X = 0 Y = -75 }
+          { X = -110 Y = 10 }
+        ]
+        SubtitleColor = { Red = 0.95 Green = 0.31 Blue = 0.26 }
+      }
+    }
+    
+    {
+      Name = "Charon"
+      InheritFrom = "1_BaseBoss"
+      CollisionDamagePerVelocity = 0.0
+      CosmeticRotationSpeed = 360.0
+      DefaultAngle = 210.0
+      DisplayInEditor = true
+      ImmuneToStun = false
+      MoveGraphic = "Charon_Move"
+      RotationSpeed = 900.0
+      Speed = 1000.0
+      StunBreakModifier = 100.0
+      Life = 
+      {
+        DeathFx = "null"
+        DieOnCollisionRequiredVelocityMultiplier = 0.0
+        HitSound = "/SFX/Enemy Sounds/Charon/EmoteHurt"
+        InvulnerableFx = "Invincibubble_Charon"
+      }
+      MoveAI = 
+      {
+        NodeSuccessDistance = 32.0
+      }
+      Thing = 
+      {
+        AmbientSound = "/SFX/NPCLoops/Charon_0008Loop"
+        AttachedAnim = "CharonShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Charon_IdleBattle"
+        SelectionHeight = 350.0
+        SelectionShiftY = 40.0
+        SortBoundsScale = 2.0
+        SpeechCapable = true
+        Tallness = 275.0
+        Points = [
+          { X = 0 Y = 30 }
+          { X = 60 Y = 0 }
+          { X = 0 Y = -30 }
+          { X = -60 Y = 0 }
+        ]
+        SubtitleColor = { Red = 0.14 Green = 0.48 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "Trap"
+      AutoLockable = false
+      BlockAllEffects = true
+      DebugDraw = false
+      DisplayInEditor = true
+      ImmuneToCharm = true
+      ImmuneToLifeSteal = true
+      PathfindersPreferAvoid = true
+      Life = 
+      {
+        HomingEligible = false
+        JumpTargetEligible = false
+        RequiresDamageToAffect = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "CharonGhostChargeSource"
+      InheritFrom = "Trap"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      RotationSpeed = 9999.0
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CharonGhostChargeSource"
+        Grip = 99999.0
+        ImmuneToForce = true
+        Saturation = -1.0
+        Tallness = 225.0
+        Offset = { X = 0 Y = -75 }
+        Points = [
+          { X = 0 Y = 8 }
+          { X = 51 Y = -17 }
+          { X = -1 Y = -44 }
+          { X = -52 Y = -18 }
+        ]
+        Using = [
+          { Name = "CharonGhostChargeSource" }
+          { Name = "CharonGhostCharge" }
+        ]
+      }
+    }
+    
+    {
+      Name = "TrapPadDisabled"
+      InheritFrom = "Trap"
+      CollideWithUnits = false
+      DisplayInEditor = true
+      ImmuneToStun = true
+      PathfindersPreferAvoid = false
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "tilesets\tartarus\tartarus_traptile_01"
+        Grip = 999999.0
+        Scale = 0.24
+        StopsProjectiles = false
+        StopsUnits = false
+        Points = [
+          { X = 151 Y = -11 }
+          { X = 6 Y = -82 }
+          { X = -151 Y = -6 }
+          { X = 0 Y = 68 }
+          { X = 151 Y = -11 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HarpySupportUnit"
+      AutoLockable = false
+      BlockAllEffects = true
+      CollideWithUnits = false
+      DebugDraw = false
+      DisplayInEditor = true
+      ImmuneToCharm = true
+      ImmuneToLifeSteal = true
+      PathfindersPreferAvoid = true
+      Life = 
+      {
+        HomingEligible = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+    
+    {
+      Name = "PassiveRoomWeapon"
+      AutoLockable = false
+      BlockAllEffects = true
+      CollideWithUnits = false
+      DebugDraw = false
+      DisplayInEditor = true
+      ImmuneToCharm = true
+      ImmuneToLifeSteal = true
+      PathfindersPreferAvoid = true
+      Life = 
+      {
+        HomingEligible = false
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+    
+    {
+      Name = "DionysusUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "DemeterUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "AresUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ZeusUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "ArtemisUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "AphroditeUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "AthenaUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "PoseidonUpgradeRoomWeapon"
+      InheritFrom = "PassiveRoomWeapon"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "SpikeTrap"
+      InheritFrom = "TrapPadDisabled"
+      DisplayInEditor = true
+      PathfindersPreferAvoid = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SpikeTrapIdle"
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "AxeTrap"
+      InheritFrom = "TrapPadDisabled"
+      CollideWithUnits = true
+      DisplayInEditor = true
+      PathfindersPreferAvoid = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AxeTrapIdle"
+        Scale = 1.5
+        StopsUnits = true
+        Points = [
+          { X = 105 Y = -28 }
+          { X = 60 Y = -51 }
+          { X = -85 Y = 23 }
+          { X = -41 Y = 45 }
+        ]
+        Using = [
+          { Name = "AxeTrapBlur" }
+        ]
+      }
+    }
+    
+    {
+      Name = "AxeTrapTrigger"
+      InheritFrom = "TrapPadDisabled"
+      DisplayInEditor = true
+      PathfindersPreferAvoid = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AxeTrapTriggerIdle"
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "TrapFissureDisabled"
+      InheritFrom = "TrapPadDisabled"
+      DisplayInEditor = true
+      PathfindersPreferAvoid = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TrapFissureDisabled"
+        Scale = 1.0
+        Points = [
+          { X = -122 Y = 26 }
+          { X = -63 Y = 70 }
+          { X = 80 Y = 75 }
+          { X = 136 Y = 3 }
+          { X = -37 Y = -19 }
+        ]
+      }
+    }
+    
+    {
+      Name = "GasTrapPassive"
+      InheritFrom = "TrapFissureDisabled"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GasTrapPoisonIdle"
+        Tallness = 9.0
+        Points = [
+          { X = -109 Y = -2 }
+          { X = -67 Y = 36 }
+          { X = 19 Y = 35 }
+          { X = 95 Y = 5 }
+          { X = 78 Y = -29 }
+          { X = -32 Y = -47 }
+        ]
+      }
+    }
+    
+    {
+      Name = "PoisonTrap"
+      InheritFrom = "TrapFissureDisabled"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GasTrapPoisonIdle"
+        Tallness = 9.0
+        Points = [
+          { X = -109 Y = -2 }
+          { X = -67 Y = 36 }
+          { X = 19 Y = 35 }
+          { X = 95 Y = 5 }
+          { X = 78 Y = -29 }
+          { X = -32 Y = -47 }
+        ]
+        Using = [
+          { Name = "GasTrapPoisonDisabled" }
+        ]
+      }
+    }
+    
+    {
+      Name = "SpikeCube"
+      InheritFrom = "Trap"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      NoAllegiance = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SpikeCubeIdle"
+        Grip = 99999.0
+        Points = [
+          { X = 32 Y = 48 }
+          { X = 96 Y = 16 }
+          { X = 96 Y = -16 }
+          { X = 32 Y = -48 }
+          { X = -32 Y = -48 }
+          { X = -96 Y = -16 }
+          { X = -96 Y = 16 }
+          { X = -32 Y = 48 }
+        ]
+      }
+    }
+    
+    {
+      Name = "PhalanxTrap"
+      InheritFrom = "Trap"
+      CosmeticRotationSpeed = 0.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      PathfindersPreferAvoidOverrideOffset = 100.0
+      PathfindersPreferAvoidOverrideRadius = 90.0
+      RotationSpeed = 0.0
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PhalanxTrapIdle"
+        Grip = 99999.0
+        Tallness = 250.0
+        RotateGeometry = true
+        Offset = { X = 0 Y = -60 }
+        Points = [
+          { X = -9 Y = 67 }
+          { X = 116 Y = 0 }
+          { X = -5 Y = -60 }
+          { X = -134 Y = 4 }
+        ]
+        Using = [
+          { Name = "PhalanxTrapPreAttack" }
+          { Name = "PhalanxTrapFire" }
+          { Name = "PhalanxTrapDeactivated" }
+        ]
+      }
+    }
+    
+    {
+      Name = "PhalanxTrapPassive"
+      InheritFrom = "PhalanxTrap"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 200.0
+        Points = [
+          { X = 0 Y = 45 }
+          { X = 90 Y = 0 }
+          { X = 0 Y = -45 }
+          { X = -90 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "SupportShields"
+      InheritFrom = "BaseSupport"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "BreakableDeathAnim"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        SelectionHeight = 240.0
+        SelectionShiftY = 30.0
+        SelectionWidth = 200.0
+        Color = { Red = 0.0 Green = 1.0 Blue = 1.0 }
+      }
+    }
+    
+    {
+      Name = "LightSpawner"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Life = 
+      {
+        DamagedAnimation = "SpawnerAttackAnim"
+        DeathFx = "BreakableDeathAnim"
+        DeathGraphic = "SpawnerDeath"
+        DeathSound = "/SFX/Enemy Sounds/LightSpawner/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/LightSpawner/EmoteHurt"
+		SoundManagerCap = 32
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInLightSpawnerContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        ExtentScale = 7.0
+        Graphic = "SpawnerIdleAnim"
+        ImpulsedFx = "KnockbackLines"
+        Scale = 0.23
+        SelectionHeight = 950.0
+        SelectionShiftY = 250.0
+        SelectionWidth = 1050.0
+        Tallness = 350.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+        Using = [
+          { Name = "SpawnerPopingSkulls" }
+        ]
+      }
+    }
+    
+    {
+      Name = "LightSpawnerElite"
+      InheritFrom = "LightSpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "LightSpawnerSuperElite"
+      InheritFrom = "LightSpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "SelfDestructSpawner"
+      InheritFrom = "LightSpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Color = { Red = 1.0 Green = 0.0 Blue = 0.0 }
+      }
+    }
+    
+    {
+      Name = "ShadeSpawner"
+      InheritFrom = "LightSpawner"
+      DisplayInEditor = true
+      Life = 
+      {
+        DamagedAnimation = "null"
+        DeathGraphic = "null"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "EnemyActivationFadeInShadeSpawnerContainer"
+        EditorOutlineDrawBounds = false
+        ExtentScale = 1.25
+        Graphic = "ShadeSpawnerIdle"
+        Scale = 1.0
+      }
+    }
+    
+    {
+      Name = "ShadeSpawnerElite"
+      InheritFrom = "ShadeSpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "FlurrySpawner"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      RotationSpeed = 9999.0
+      Speed = 315.0
+      Life = 
+      {
+        DeathFx = "QuickFlashEnemy"
+        DeathGraphic = "SoulSpawnerDeath"
+        DeathSound = "/SFX/Enemy Sounds/FlurrySpawnerDeathSFX"
+        InvulnerableFx = "Invincibubble"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        LookAheadDistance = 512.0
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInSoulSpawnerContainer"
+        AttachedAnim = "SoulSpawnerShadow"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        ExternalForceMultiplier = 0.3
+        Graphic = "SoulSpawnerIdle"
+        Grip = 15000.0
+        ImpulsedFx = "KnockbackLines"
+        OffsetZ = 120.0
+        SelectionHeight = 450.0
+        SelectionShiftY = 75.0
+        SelectionWidth = 300.0
+        Tallness = 350.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "FlurrySpawnerElite"
+      InheritFrom = "FlurrySpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 1.5
+      }
+    }
+    
+    {
+      Name = "FlurrySpawnerSuperElite"
+      InheritFrom = "FlurrySpawner"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Saturation = -1.0
+        Scale = 1.6
+        Color = { Red = 0.50 Green = 0.50 Blue = 0.50 }
+      }
+    }
+    
+    {
+      Name = "UnstableGenerator"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Life = 
+      {
+        DeathFx = "QuickFlashEnemy"
+        DeathGraphic = "SoulSpawnerDeath"
+        DeathSound = "/SFX/Enemy Sounds/FlurrySpawnerDeathSFX"
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInSoulSpawnerContainer"
+        AttachedAnim = "SoulSpawnerShadow"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "UnstableGeneratorIdle_Level0"
+        Hue = 0.5
+        ImpulsedFx = "KnockbackLines"
+        OffsetZ = 120.0
+        SelectionHeight = 450.0
+        SelectionShiftY = 75.0
+        SelectionWidth = 300.0
+        Tallness = 350.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "UnstableGeneratorElite"
+      InheritFrom = "UnstableGenerator"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 1.2
+      }
+    }
+    
+    {
+      Name = "Breakable"
+      AllDamageAffects = true
+      AutoLockable = false
+      CollisionTriggerMinSpeed = 900.0
+      DebugDraw = false
+      DisplayInEditor = true
+      ImmuneToLifeSteal = true
+      ImmuneToStun = true
+	  CanMove = false
+	  CanAttack = false
+      Life = 
+      {
+        CanBeCrit = false
+        DeathFx = "BreakableDeathAnim"
+        DeathSound = "/SFX/CeramicPotSmash"
+		SoundManagerCap = 28
+        HitSound = "/EmptyCue"
+        HomingEligible = false
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+        RequiresDamageToAffect = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableIdle1"
+        StopsLight = true
+        Tallness = 114.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+        Using = [
+          { Name = "BreakableIdle2" }
+          { Name = "BreakableIdle3" }
+          { Name = "BreakableHighValueIdle" }
+          { Name = "BreakableHighValueIdleSuper" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BreakableAsphodel"
+      InheritFrom = "Breakable"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableAsphodelIdle"
+        Tallness = 141.0
+        Offset = { X = 0 Y = -28 }
+        Points = [
+          { X = -5 Y = 28 }
+          { X = 26 Y = 10 }
+          { X = -8 Y = -11 }
+          { X = -39 Y = 8 }
+        ]
+        Using = [
+          { Name = "BreakableIdle2" }
+          { Name = "BreakableIdle3" }
+          { Name = "BreakableHighValueIdle" }
+          { Name = "BreakableHighValueIdleSuper" }
+          { Name = "BreakableAsphodelIdle2" }
+          { Name = "BreakableAsphodelIdle3" }
+          { Name = "BreakableAsphodelHighValueIdle" }
+          { Name = "BreakableAsphodelHighValueIdleSuper" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BreakableAsphodelHeal"
+      InheritFrom = "BreakableAsphodel"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableAsphodelHeal"
+        Tallness = 262.0
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BreakableElysium"
+      InheritFrom = "Breakable"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "BreakableDeathElysium"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableElysiumIdle1"
+        Tallness = 270.0
+        Offset = { X = 0 Y = -50 }
+        Points = [
+          { X = 0 Y = 35 }
+          { X = 55 Y = 0 }
+          { X = 0 Y = -25 }
+          { X = -55 Y = 0 }
+        ]
+        Using = [
+          { Name = "BreakableIdle2" }
+          { Name = "BreakableIdle3" }
+          { Name = "BreakableHighValueIdle" }
+          { Name = "BreakableHighValueIdleSuper" }
+          { Name = "BreakableElysiumIdle2" }
+          { Name = "BreakableElysiumIdle3" }
+          { Name = "BreakableElysiumHighValueIdle" }
+          { Name = "BreakableElysiumHighValueIdleSuper" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BreakableStyx"
+      InheritFrom = "Breakable"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathFx = "BreakableDeathStyx"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableStyxIdle1"
+        Using = [
+          { Name = "BreakableIdle2" }
+          { Name = "BreakableIdle3" }
+          { Name = "BreakableHighValueIdle" }
+          { Name = "BreakableHighValueIdleSuper" }
+          { Name = "BreakableStyxIdle2" }
+          { Name = "BreakableStyxIdle3" }
+          { Name = "BreakableStyxHighValueIdle" }
+          { Name = "BreakableStyxHighValueIdleSuper" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BreakableHighValue"
+      InheritFrom = "Breakable"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathSound = "/SFX/GoldCoinJackpotUrnDeath"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BreakableHighValueIdle"
+        Tallness = 85.0
+      }
+    }
+    
+    {
+      Name = "ReflectiveMirror"
+      InheritFrom = "Breakable"
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathGraphic = "HeavyRangedCrystal4Shatter"
+        DeathSound = "/SFX/Enemy Sounds/Brimstone/CrystalDestroyed"
+        HitSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteHurt"
+		SoundManagerCap = 32
+        ProjectilesAlwaysPenetrate = false
+      }
+      Thing = 
+      {
+        AttachedAnim = "MedusaShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "ReflectiveMirrorIdle"
+        Grip = 500.0
+        OffsetZ = 90.0
+        Tallness = 161.0
+        Points = [
+          { X = 25 Y = 88 }
+          { X = 50 Y = 26 }
+          { X = -54 Y = 45 }
+        ]
+        Using = [
+          { Name = "BreakableIdle2" }
+          { Name = "BreakableIdle3" }
+          { Name = "BreakableHighValueIdle" }
+          { Name = "BreakableHighValueIdleSuper" }
+          { Name = "ReflectiveMirrorIdle" }
+          { Name = "ReflectiveMirrorTriggered" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BlastCubeFused"
+      InheritFrom = "Trap"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      DisplayInEditor = true
+      ImmuneToDoTs = true
+      ImmuneToStun = true
+      OnDeathWeapon = "BlastCubeExplosion"
+      Life = 
+      {
+        DeathSound = "/SFX/Explosion1"
+        HitSound = "/SFX/Player Sounds/ClubImpactHit"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "BlastCubeOnSpawn"
+        EditorOutlineDrawBounds = false
+        Graphic = "BlastCubeIdle"
+        Grip = 99999.0
+        Scale = 0.55
+        SelectionHeight = 300.0
+        SelectionShiftY = 30.0
+        SelectionWidth = 250.0
+        Tallness = 329.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 52 }
+          { X = 100 Y = 0 }
+          { X = 0 Y = -52 }
+          { X = -100 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "GunBombUnit"
+      InheritFrom = "Trap"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      DisplayInEditor = true
+      ImmuneToDoTs = true
+      ImmuneToStun = true
+      NoAllegiance = true
+      CollideWithUnits = false
+      Life = 
+      {
+        DeathSound = "/SFX/LuciferBombExplosion"
+        HitSound = "/SFX/Player Sounds/ZagreusLuciferBombPulse"
+      }
+      Thing = 
+      {
+        ActivateGraphic = "BlastCubeOnSpawn"
+        AttachedAnim = "LootShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "Blank"
+        Grip = 99999.0
+        OffsetZ = 45.0
+        SelectionHeight = 300.0
+        SelectionShiftY = 110.0
+        SelectionWidth = 400.0
+        Tallness = 72.0
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 52 }
+          { X = 100 Y = 0 }
+          { X = 0 Y = -52 }
+          { X = -100 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "BlastCubeFusedRegenerating"
+      InheritFrom = "BlastCubeFused"
+      DisplayInEditor = true
+      OnDeathWeapon = "null"
+      Thing = 
+      {
+        ActivateGraphic = "BlastCubeFusedRegeneratingOnSpawn"
+        EditorOutlineDrawBounds = false
+        Graphic = "BlastCubeFusedRegeneratingIdle"
+        Offset = { X = 0 Y = -26 }
+        Points = [
+          { X = 65 Y = -22 }
+          { X = -3 Y = -60 }
+          { X = -72 Y = -20 }
+          { X = 0 Y = 9 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HydraTooth"
+      InheritFrom = "Trap"
+      AutoLockable = true
+      BlockAllEffects = false
+      DisplayInEditor = true
+      Life = 
+      {
+        DeathGraphic = "HydraToothDeath"
+        DeathSound = "/SFX/Enemy Sounds/HydraHead/HydraEggHatch"
+        RequiresDamageToAffect = false
+        JumpTargetEligible = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowHydraTooth"
+        EditorOutlineDrawBounds = false
+        Graphic = "HydraToothLanded"
+        Grip = 6000.0
+        ImmuneToForce = true
+        OnTouchdownFxAnim = "DoorCloseDust"
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HydraTooth2"
+      InheritFrom = "HydraTooth"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+    
+    {
+      Name = "HadesAmmo"
+      InheritFrom = "Trap"
+      AutoLockable = true
+      BlockAllEffects = false
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Life = 
+      {
+        DeathGraphic = "HadesAmmoBurst"
+        DeathSound = "/SFX/Enemy Sounds/Hades/HadesFireSkullImpact"
+        HomingEligible = true
+        JumpTargetEligible = true
+        RequiresDamageToAffect = false
+		InvulnerableFx = "Invincibubble"
+      
+      }
+      Thing = 
+      {
+        AttachedAnim = "LootShadowHydraTooth"
+        EditorOutlineDrawBounds = false
+        Graphic = "HadesAmmo"
+        Grip = 6000.0
+        ImmuneToForce = true
+        OnTouchdownFxAnim = "DoorCloseDust"
+        SelectionHeight = 200.0
+        SelectionWidth = 200.0
+        SelectionShiftY = -40.0
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 32 Y = 0 }
+          { X = 0 Y = -16 }
+          { X = -32 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HadesTombstone"
+      InheritFrom = "Trap"
+      AutoLockable = true
+      DisplayInEditor = true
+      ImmuneToStun = true
+      NoAllegiance = true
+      OnDeathWeapon = "HadesGraspingHands"
+      Life = 
+      {
+        DeathGraphic = "HadesTombstoneExplode"
+        DeathSound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        AttachedAnim = "HadesStunTotemSpawnDecal"
+        EditorOutlineDrawBounds = false
+        Graphic = "HadesTombstoneSpawn"
+        Scale = 0.35
+        Tallness = 550.0
+        Offset = { X = 0 Y = -290 }
+        Points = [
+          { X = 0 Y = 42 }
+          { X = 88 Y = 0 }
+          { X = 48 Y = -54 }
+          { X = -47 Y = -56 }
+          { X = -85 Y = 2 }
+        ]
+        Using = [
+          { Name = "HadesTombstoneActivate" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BloodMine"
+      InheritFrom = "SmallEnemy"
+      AutoLockable = false
+      CollideWithUnits = false
+      DefaultAngle = 0.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      OnDeathWeapon = "BloodMineBlast"
+      Life = 
+      {
+        CanBeCrit = false
+        DeathSound = "/SFX/Explosion1"
+        HomingEligible = false
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        ActivateFx = "null"
+        ActivateGraphic = "null"
+        EditorOutlineDrawBounds = false
+        Graphic = "BloodMineDeployed"
+        Grip = 6000.0
+        OnTouchdownFxAnim = "DoorCloseDust"
+        StopsProjectiles = false
+        Points = [
+          { X = 0 Y = 52 }
+          { X = 100 Y = 0 }
+          { X = 0 Y = -52 }
+          { X = -100 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ImpulseMine"
+      InheritFrom = "SmallEnemy"
+      AutoLockable = false
+      CollideWithUnits = false
+      ContinuousWeapon = "ImpulseMineDrag"
+      DefaultAngle = 0.0
+      DisplayInEditor = true
+      ImmuneToStun = true
+      OnDeathWeapon = "ImpulseMineBlast"
+      Life = 
+      {
+        CanBeCrit = false
+        DeathSound = "/SFX/Explosion1"
+        HomingEligible = false
+        JumpTargetEligible = false
+        ProjectilesAlwaysPenetrate = true
+      }
+      Thing = 
+      {
+        ActivateFx = "null"
+        ActivateGraphic = "null"
+        EditorOutlineDrawBounds = false
+        Graphic = "ImpulseMineDeployed"
+        Grip = 6000.0
+        OnTouchdownFxAnim = "DoorCloseDust"
+        StopsProjectiles = false
+        Points = [
+          { X = 0 Y = 52 }
+          { X = 100 Y = 0 }
+          { X = 0 Y = -52 }
+          { X = -100 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "DartTrap"
+      InheritFrom = "SpikeTrap"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DartTrapIdle"
+      }
+    }
+    
+    {
+      Name = "DartTrapEmitter"
+      InheritFrom = "SpikeCube"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DartTrapEmitterIdle"
+        Tallness = 200.0
+      }
+    }
+    
+    {
+      Name = "ArcherTrap"
+      InheritFrom = "Trap"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      NoAllegiance = true
+      RotationSpeed = 9999.0
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "ArcherTrapIdle"
+        Grip = 99999.0
+        ImmuneToForce = true
+        Tallness = 400.0
+        Offset = { X = 0 Y = -175 }
+        Points = [
+          { X = 32 Y = 48 }
+          { X = 96 Y = 16 }
+          { X = 96 Y = -16 }
+          { X = 32 Y = -48 }
+          { X = -32 Y = -48 }
+          { X = -96 Y = -16 }
+          { X = -96 Y = 16 }
+          { X = -32 Y = 48 }
+        ]
+        Using = [
+          { Name = "ArcherTrapDeactivated" }
+        ]
+      }
+    }
+    
+    {
+      Name = "SawTrap"
+      InheritFrom = "Trap"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      NoAllegiance = true
+      RotationSpeed = 9999.0
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "SawTrapIdle"
+        Grip = 99999.0
+        ImmuneToForce = true
+        Tallness = 400.0
+        Offset = { X = 0 Y = -175 }
+        Points = [
+          { X = 32 Y = 48 }
+          { X = 96 Y = 16 }
+          { X = 96 Y = -16 }
+          { X = 32 Y = -48 }
+          { X = -32 Y = -48 }
+          { X = -96 Y = -16 }
+          { X = -96 Y = 16 }
+          { X = -32 Y = 48 }
+        ]
+        Using = [
+          { Name = "SawTrapDeactivated" }
+        ]
+      }
+    }
+    
+    {
+      Name = "BannerSupport"
+      InheritFrom = "Trap"
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "BannerSupportIdle"
+        Grip = 99999.0
+        ImmuneToForce = true
+        Tallness = 400.0
+        Offset = { X = 0 Y = -235 }
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+      }
+    }
+    
+    {
+      Name = "HazardPoint"
+      InheritFrom = "Trap"
+      CollideWithUnits = false
+      DisplayInEditor = true
+      ImmuneToStun = true
+      PathfindersPreferAvoid = false
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CandleFlame"
+        Grip = 999999.0
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+    
+    {
+      Name = "LavaSplash"
+      InheritFrom = "SpikeCube"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LavaProjectileBubbling"
+        Grip = 999999.0
+        StopsProjectiles = false
+        StopsUnits = false
+        Points = [
+          { X = 0 Y = 10 }
+          { X = 10 Y = 0 }
+          { X = 0 Y = -10 }
+          { X = -10 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "LavaTile"
+      InheritFrom = "Trap"
+      BlockSpawns = true
+      CollideWithUnits = false
+      DisplayInEditor = true
+      ImmuneToStun = true
+      Life = 
+      {
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        FootstepFxL = "LavaRippleStepL"
+        FootstepFxR = "LavaRippleStepR"
+        FootstepSound = "/Leftovers/SFX/FootstepsSand"
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso"
+        Grip = 999999.0
+        Invisible = true
+        MeshType = "Flat"
+        RotateGeometry = true
+        StopsProjectiles = false
+        StopsUnits = false
+        Color = { Red = 0.0 Green = 0.0 Blue = 1.0 }
+        Points = [
+          { X = 0 Y = 32 }
+          { X = 64 Y = 0 }
+          { X = 0 Y = -32 }
+          { X = -64 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "LavaTileTriangle01"
+      InheritFrom = "LavaTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso_Half_01"
+        Points = [
+          { X = -32 Y = 32 }
+          { X = 32 Y = 0 }
+          { X = -32 Y = -32 }
+        ]
+      }
+    }
+    
+    {
+      Name = "LavaTileTriangle02"
+      InheritFrom = "LavaTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Graybox\_Impassable_Tile64Iso_Half_02"
+        Points = [
+          { X = 0 Y = 16 }
+          { X = 64 Y = -16 }
+          { X = -64 Y = -16 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TestCharacter"
+      CollisionDamagePerVelocity = 0.01
+      CollisionWeapon = "BaseCollisionWeapon"
+      CollisionWeaponRequiredVelocity = 1000.0
+      CosmeticRotationSpeed = 300.0
+      DisplayInEditor = true
+      MoveGraphic = "SatyrMove"
+      OnStunAnimation = "SatyrOnHit"
+      RotationSpeed = 1500.0
+      Speed = 600.0
+      StopGraphic = "SatyrMoveStop"
+      Life = 
+      {
+        ArmorCoverage = 220.0
+        DeathFx = "EnemyDeathFx"
+        DeathGraphic = "EnemyWretchThugDeath"
+        DeathSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteDying"
+        HitSound = "/SFX/Enemy Sounds/HeavyMelee/EmoteHurt"
+      }
+      MoveAI = 
+      {
+        Name = "Pathfind"
+        AvoidLocationDistance = 120.0
+        LookAheadDistance = 512.0
+        MoveWithoutPath = true
+        SuccessDistance = 100.0
+      }
+      Thing = 
+      {
+        ActivateFx = "EnemySummonRune"
+        ActivateGraphic = "EnemyActivationFadeInWretchThugContainer"
+        CanBeOccluded = true
+        EditorOutlineDrawBounds = false
+        Graphic = "SatyrIdle"
+        Grip = 8000.0
+        ImpulsedFx = "KnockbackLinesWithBlood"
+        SelectionHeight = 500.0
+        SelectionShiftY = 50.0
+        SelectionWidth = 500.0
+        Tallness = 380.0
+        Points = [
+          { X = 0 Y = 38 }
+          { X = 76 Y = 0 }
+          { X = 0 Y = -38 }
+          { X = -76 Y = 0 }
+        ]
+      }
+    }
+  ]
+}

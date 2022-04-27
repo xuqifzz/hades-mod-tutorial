@@ -1,0 +1,30 @@
+{
+  LoadScreen = {
+    Platform = "default"
+    ShowControls = false
+    UseClickAnimation = false
+    ForceHideCursor = true
+    Back = {
+      Justification = "Left"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 1.0
+    }
+    AnimatedBackground = {
+      X = 960
+      Y = 540
+      Graphic = "null"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+    ProgressBar = {
+      X = 960
+      Y = 540
+      Graphic = "Launch\\load_bar"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 0.0
+    }
+  }
+}

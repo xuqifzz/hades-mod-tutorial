@@ -1,0 +1,772 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "HighriseGlow01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Basic_Glow_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereLightShaft01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Light_Shaft_01"
+      }
+    }
+    
+    {
+      Name = "GrainGlow01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Grain_Glow_01"
+        Points = [
+          { X = -37 Y = -128 }
+          { X = -154 Y = 11 }
+          { X = 15 Y = 207 }
+          { X = 238 Y = 71 }
+          { X = 181 Y = -109 }
+        ]
+      }
+    }
+    
+    {
+      Name = "WatercolorSplat01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\WatercolorSplat_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeDotMulti01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_DotMulti_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeShortMulti02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_ShortMulti_02"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeLongSingle01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_LongSingle_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeLongSingle02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_LongSingle_02"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeShortDouble01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_ShortDouble_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereStrokeShortMulti01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Stroke_ShortMulti_01"
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Brick_01"
+        StopsLight = false
+        StopsUnits = false
+        Offset = { X = 0 Y = 19 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRound01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Round_01"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRound02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Round_02"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRound03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Round_03"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRound04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Round_04"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereGlow01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Glow_01"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrick02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Brick_02"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrick03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Brick_03"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrick04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Brick_04"
+        Offset = { X = 0 Y = 9 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRoundCast01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_RoundCast_01"
+        Offset = { X = 0 Y = -155 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrickWall01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_BrickWall_01"
+        StopsLight = false
+        Offset = { X = 0 Y = -197 }
+        Points = [
+          { X = 527 Y = 244 }
+          { X = 546 Y = 212 }
+          { X = -580 Y = -298 }
+          { X = -623 Y = -289 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrickWall02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_BrickWall_02"
+        StopsLight = false
+        Offset = { X = 0 Y = -1060 }
+        Points = [
+          { X = -891 Y = 440 }
+          { X = 250 Y = -146 }
+          { X = 220 Y = -205 }
+          { X = -949 Y = 403 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrickWall03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_BrickWall_03"
+        StopsLight = false
+        Offset = { X = 0 Y = -299 }
+        Points = [
+          { X = -553 Y = 242 }
+          { X = -477 Y = 280 }
+          { X = 717 Y = -315 }
+          { X = 669 Y = -347 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowBrickWall02A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_BrickWall_02A"
+        StopsLight = false
+        Offset = { X = 0 Y = -1440 }
+        Points = [
+          { X = 939 Y = -433 }
+          { X = -146 Y = 46 }
+          { X = -80 Y = 93 }
+          { X = 1060 Y = -400 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowFireSmoke01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_FireSmoke_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -554 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowFireSmoke02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_FireSmoke_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -554 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowFireSmoke03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_FireSmoke_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -554 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowDecor01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Decor_01"
+        StopsLight = false
+        Offset = { X = 0 Y = -148 }
+        Points = [
+          { X = 1162 Y = -589 }
+          { X = -1372 Y = 633 }
+          { X = -1254 Y = 697 }
+          { X = 1211 Y = -498 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowAngledCast01"
+      InheritFrom = "1_BaseTerrainTile"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_AngledCast_01"
+        Offset = { X = 0 Y = -146 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowAngledCast02"
+      InheritFrom = "1_BaseTerrainTile"
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_AngledCast_02"
+        Offset = { X = 0 Y = -146 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowCorner01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Corner_01"
+        Offset = { X = 0 Y = -547 }
+        Points = [
+          { X = 17 Y = -25 }
+          { X = -52 Y = 18 }
+          { X = 52 Y = 57 }
+          { X = 86 Y = 22 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowCube01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Cube_01"
+        Offset = { X = 0 Y = -416 }
+        Points = [
+          { X = 654 Y = -25 }
+          { X = 7 Y = -307 }
+          { X = -609 Y = 32 }
+          { X = 22 Y = 296 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowCorner02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Corner_02"
+        Offset = { X = 0 Y = -416 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowCorner03"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      CollidesWithObstacles = false
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Corner_03"
+        StopsLight = false
+        StopsProjectiles = false
+        StopsUnits = false
+        Offset = { X = 0 Y = -495 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowCorner04"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Corner_04"
+        Offset = { X = 0 Y = -573 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -38 }
+        Points = [
+          { X = 549 Y = -158 }
+          { X = 193 Y = -357 }
+          { X = -663 Y = 62 }
+          { X = -257 Y = 254 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -90 }
+        Points = [
+          { X = -74 Y = 663 }
+          { X = 202 Y = 707 }
+          { X = 1412 Y = -42 }
+          { X = 1409 Y = -120 }
+          { X = 517 Y = -789 }
+          { X = -419 Y = -894 }
+          { X = -1166 Y = -556 }
+          { X = -1416 Y = -96 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle03"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_03"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -90 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle04"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_04"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+        Points = [
+          { X = 656 Y = 463 }
+          { X = 902 Y = 340 }
+          { X = -682 Y = -452 }
+          { X = -936 Y = -326 }
+        ]
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle05"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_05"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle06"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_06"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle07"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_07"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle08"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_08"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereShadowRectangle09"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Shadow_Rectangle_09"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = 14 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereParticleTrail01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_ParticleTrail_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -90 }
+      }
+    }
+    
+    {
+      Name = "AtmosphereWaterEdge01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Atmosphere\Atmosphere_Water_Edge_01"
+        Offset = { X = 0 Y = -9 }
+      }
+    }
+  ]
+}

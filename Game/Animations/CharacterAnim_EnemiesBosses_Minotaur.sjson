@@ -1,0 +1,3512 @@
+{
+  Animations = [
+
+    /* _____________________Minotaur_____________________ */
+    
+    {
+      Name = "Minotaur_Idle"
+      FilePath = "Animations\Minotaur\MinotaurIdle\MinotaurIdle"
+      Type = "Book"
+      VideoTexture = "MinotaurIdle_Bink"
+      EndFrame = 58
+      Loop = true
+      NumAngles = 64
+      NumFrames = 58
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      StopSoundOnFinishFade = 0.2
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "Minotaur_Walk"
+      FilePath = "Animations\Minotaur\MinotaurWalk\MinotaurWalk"
+      Type = "Book"
+      VideoTexture = "MinotaurWalk_Bink"
+      StopAnimation = "Minotaur_WalkStop"
+      EndFrame = 38
+      FrameDataFile = "Game\Animations\FrameData\MinotaurWalk.sga"
+      Loop = true
+      NumAngles = 64
+      NumFrames = 38
+      PlaySpeed = 55.0
+      StartFrame = 1
+      OffsetY = -115.0
+      NativeMoveSpeed = 475.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHuge" Frame = 11 VisualFx = "MinotaurFootstepRight" }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHuge" Frame = 31 VisualFx = "MinotaurFootstepLeft" }
+      ]
+    }
+    
+{
+      Name = "Minotaur_WalkStop"
+      ChainTo = "null"
+      FilePath = "Animations\Minotaur\MinotaurWalkStop\MinotaurWalkStop"
+      Type = "Book"
+      VideoTexture = "MinotaurWalkStop_Bink"
+      Loop = false
+      EndFrame = 42
+      FrameDataFile = "null"
+      NumAngles = 64
+      NumFrames = 42
+      StartFrame = 1
+      PlaySpeed = 30
+      OffsetY = -115.0
+      SetOwnerEndAngle = true
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    {
+      Name = "Minotaur_Taunt"
+      FilePath = "Animations\Minotaur\MinotaurTaunt\MinotaurTaunt"
+      Type = "Book"
+      VideoTexture = "MinotaurTaunt_Bink"
+      EndFrame = 76
+      NumAngles = 16
+      NumFrames = 76
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/EmoteBashing" Frame = 16 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" Frame = 18 }
+        { DurationFrames = 1 Sound = "/Leftovers/World Sounds/PhysicalImpactPunch" Frame = 32 }
+        { DurationFrames = 1 Sound = "/Leftovers/World Sounds/PhysicalImpactPunch" Frame = 46 }
+        { DurationFrames = 1 Sound = "/Leftovers/World Sounds/Disappearance" Frame = 62 }
+      ]
+    }
+    
+    {
+      Name = "Minotaur_OnHitDeath"
+      FilePath = "Animations\Minotaur\MinotaurOnHitDeath\MinotaurOnHitDeath"
+      Type = "Book"
+      VideoTexture = "MinotaurOnHitDeath_Bink"
+      AngleFromOwner = "Ignore"
+      EndFrame = 30
+      HoldLastFrame = true
+      NumFrames = 30
+      PlaySpeed = 30.0
+      StartFrame = 1
+      Mirror = true
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      OwnerHasNoCollision = true
+    }
+    
+    {
+      Name = "Minotaur_Crouch"
+      ChainTo = "Minotaur_CrouchHold"
+      FilePath = "Animations\Minotaur\MinotaurCrouchThrow\MinotaurCrouchThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrouchThrow_Bink"
+      EndFrame = 99
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrouchThrow.sga"
+      NumAngles = 16
+      NumFrames = 99
+      StartFrame = 1
+      OffsetY = -115.0
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*crouch*/
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Minotaur/EmoteCharging" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        /*crouchComeHereGesture*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 40 }
+        /*crouchHold*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*crouchComeHereGestureEND*/
+        { DurationFrames = 0 }
+        /*windUpThrow*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*THROW*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*99*/
+      ]
+    }
+
+    {
+      Name = "Minotaur_CrouchHold"
+      FilePath = "Animations\Minotaur\MinotaurCrouchThrow\MinotaurCrouchThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrouchThrow_Bink"
+      EndFrame = 99
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrouchThrow.sga"
+      NumAngles = 16
+      NumFrames = 99
+      StartFrame = 1
+      OffsetY = -115.0
+      Loop = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*crouch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*crouchComeHereGesture*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*crouchHold*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*crouchComeHereGestureEND*/
+        { DurationFrames = 0 }
+        /*windUpThrow*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*THROW*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*99*/
+      ]
+    }
+    
+    
+    {
+      Name = "Minotaur_Throw"
+      ChainTo = "Minotaur_ThrowReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurCrouchThrow\MinotaurCrouchThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrouchThrow_Bink"
+      EndFrame = 99
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrouchThrow.sga"
+      NumAngles = 16
+      NumFrames = 99
+      StartFrame = 1
+      OffsetY = -115.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*crouch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*crouchHold*/
+
+        { DurationFrames = 0 }
+        /*crouchComeHereGesture*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*crouchComeHereGestureEND*/
+        { DurationFrames = 0 }
+        /*windUpThrow*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*THROW*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*99*/
+      ]
+    }
+    
+    {
+      Name = "Minotaur_ThrowReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurCrouchThrow\MinotaurCrouchThrow"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrouchThrow_Bink"
+      EndFrame = 99
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrouchThrow.sga"
+      NumAngles = 16
+      NumFrames = 99
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*crouch*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*crouchHold*/
+
+        { DurationFrames = 0 }
+        /*crouchComeHereGesture*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*crouchComeHereGestureEND*/
+        { DurationFrames = 0 }
+        /*windUpThrow*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*THROW*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*60*/
+
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 90*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*99*/
+      ]
+    }
+
+    /* _____________________SwingCombo_____________________ */
+    
+    {
+      Name = "MinotaurAttackSwings_PreAttack"
+      FilePath = "Animations\Minotaur\MinotaurAttackSwings\MinotaurAttackSwings"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackSwings_Bink"
+      EndFrame = 70
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackSwings.sga"
+      HoldLastFrame = true
+      NumAngles = 32
+      NumFrames = 70
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "/SFX/Enemy Sounds/Minotaur/EmotePoweringUp"
+      StopSoundOnFinishFade = 0.65
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*preAttack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 1 DangerDistance = 350 }
+        { DurationFrames = 50 DangerDistance = 350 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAxeSpinLoop"
+      FilePath = "Animations\Minotaur\MinotaurAttackSwings\MinotaurAttackSwings"
+      MoveAnimation = "Minotaur_Walk"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackSwings_Bink"
+      VisualFx = "CastDustBullRush"
+      EndFrame = 70
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackSwings.sga"
+      NumAngles = 32
+      NumFrames = 70
+      StartFrame = 1
+      OffsetY = -115.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 40
+      AllowRestart = true
+      Sound = "/SFX/Enemy Sounds/Minotaur/EmoteSustainedAttacking"
+      StopSoundOnFinishFade = 0.5
+      DangerDistance = 500
+      Loop = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*Attack1*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_Attack1"
+      FilePath = "Animations\Minotaur\MinotaurAttackSwings\MinotaurAttackSwings"
+      MoveAnimation = "Minotaur_Walk"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackSwings_Bink"
+      VisualFx = "CastDustBullRush"
+      EndFrame = 70
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackSwings.sga"
+      NumAngles = 32
+      NumFrames = 70
+      StartFrame = 1
+      OffsetY = -115.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      ActiveVisualFxCap = 40
+      AllowRestart = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*Attack1*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_Attack2"
+      ChainTo = "MinotaurAttackSwings_ReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurAttackSwings\MinotaurAttackSwings"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackSwings_Bink"
+      EndFrame = 70
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackSwings.sga"
+      NumAngles = 32
+      NumFrames = 70
+      StartFrame = 1
+      OffsetY = -115.0
+      VisualFxDistanceMax = 30.0
+      VisualFxDistanceMin = 30.0
+      AllowRestart = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*Attack2*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_ReturnToIdle"
+      ChainTo = "Minotaur_Idle"
+      FilePath = "Animations\Minotaur\MinotaurAttackSwings\MinotaurAttackSwings"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackSwings_Bink"
+      EndFrame = 70
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackSwings.sga"
+      NumAngles = 32
+      NumFrames = 70
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack1*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Attack2*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 30 }
+        /*returnToIdle*/
+        { DurationFrames = 2 }
+        /*60*/
+
+        { DurationFrames = 2 }
+        /*blendToAxeCombo2*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+      ]
+    }
+
+    /* _____________________AttackLeap_____________________ */
+    
+    {
+      Name = "MinotaurAttackSwings_PreAttackLeap"
+      ChainTo = "MinotaurAttackSwings_AirLoop"
+      FilePath = "Animations\Minotaur\MinotaurAttackLeap\MinotaurAttackLeap"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackLeap_Bink"
+      EndFrame = 124
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackLeap.sga"
+      NumAngles = 32
+      NumFrames = 124
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 1 }
+        /*preAttack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/WrechPunchSwing" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*20*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*60*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*124*/
+        
+        
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_AirLoop"
+      FilePath = "Animations\Minotaur\MinotaurAttackLeap\MinotaurAttackLeap"
+      ChainTo = "MinotaurAttackSwings_AttackLeap"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackLeap_Bink"
+      EndFrame = 124
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackLeap.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 124
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = false
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*airLoop*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*airLoop*/
+
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*124*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_AttackLeap"
+      ChainTo = "MinotaurAttackSwings_AttackLeapReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurAttackLeap\MinotaurAttackLeap"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackLeap_Bink"
+      EndFrame = 124
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackLeap.sga"
+      NumAngles = 32
+      NumFrames = 124
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      CancelOnOwnerMove = false
+      DisableOwnerRotation = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airLoop*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airBornHoldEnd*/
+
+        { DurationFrames = 1 VisualFx = "MinotaurSwordSwipeOverhead" }
+        /*Attack*/
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" }
+        { DurationFrames = 1 Sound = "/SFX/StabSplatterEndSequence" VisualFx = "MinotaurLandDust" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*40*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 90*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*120*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*124*/
+      ]
+    }
+    
+    {
+      Name = "MinotaurAttackSwings_AttackLeapReturnToIdle"
+      ChainTo = "Minotaur_Idle"
+      FilePath = "Animations\Minotaur\MinotaurAttackLeap\MinotaurAttackLeap"
+      Type = "Slide"
+      VideoTexture = "MinotaurAttackLeap_Bink"
+      EndFrame = 124
+      FrameDataFile = "Game\Animations\FrameData\MinotaurAttackLeap.sga"
+      NumAngles = 32
+      NumFrames = 124
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      CancelOnOwnerMove = true
+      DisableOwnerRotation = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airBornHold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*airBornHoldEnd*/
+
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        /*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*60*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Player Sounds/ZagreusSwordPull" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" }
+        { DurationFrames = 1 }
+        /*Frame 90*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*120*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*124*/
+      ]
+    }
+
+    /* _____________________BullRush_____________________ */
+    
+    {
+      Name = "Minotaur_BullRushCharge"
+      FilePath = "Animations\Minotaur\MinotaurBullRushCharge\MinotaurBullRushCharge"
+      Type = "Book"
+      VideoTexture = "MinotaurBullRushCharge_Bink"
+      EndFrame = 17
+      FrameDataFile = "Game\Animations\FrameData\MinotaurBullRushCharge.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 17
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" Frame = 3 VisualFx = "CastDustBullRushLeft" }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" Frame = 16 VisualFx = "CastDustBullRushLeft" }
+      ]
+    }
+    
+    {
+      Name = "Minotaur_BullRush"
+      FilePath = "Animations\Minotaur\MinotaurBullRush\MinotaurBullRush"
+      Type = "Book"
+      VideoTexture = "MinotaurBullRush_Bink"
+      VisualFx = "Minotaur_BullRushFx"
+      Sound = "/SFX/Enemy Sounds/Minotaur/EmoteBreathingLoop"
+      StopSoundOnFinishFade = 0.2
+      EndFrame = 24
+      FrameDataFile = "Game\Animations\FrameData\MinotaurBullRush.sga"
+      Loop = true
+      NumAngles = 32
+      NumFrames = 24
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      VisualFxDistanceMax = 41.0
+      VisualFxDistanceMin = 40.0
+      DangerDistance = 350
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" Frame = 9 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/MinotaurFootstepsHugeRUSH" Frame = 21 }
+      ]
+    }
+    
+    {
+      Name = "Minotaur_BullRushFx"
+      CreateAnimation = "CastDustBullRush"
+      FilePath = "Fx\KnockbackLines\KnockbackLines"
+      GroupName = "Standing"
+      Type = "Book"
+      AngleFromOwner = "Take"
+      ColorFromOwner = "Ignore"
+      StartBlue = 0.1
+      StartGreen = 0.1
+      StartRed = 0.1
+      EndFrame = 19
+      NumFrames = 19
+      PlaySpeed = 60.0
+      StartFrame = 1
+      RandomFlipVertical = true
+      OffsetZ = 80.0
+      OriginX = 90.0
+      OriginY = 138.0
+      LocationFromOwner = "Ignore"
+      LocationZFromOwner = "Ignore"
+      SortMode = "FromParent"
+      EndScaleX = 5.0
+      ScaleFromOwner = "Ignore"
+      ScaleMax = 1.0
+      ScaleMin = 0.6
+      ScaleY = 0.6
+      StartScaleX = 2.0
+      Material = "Unlit"
+      UseVelocityAngleFromOwner = true
+    }
+    
+    {
+      Name = "MinotaurBullRush_PreStrike"
+      ChainTo = "MinotaurBullRush_Strike"
+      FilePath = "Animations\Minotaur\MinotaurBullRushStrike\MinotaurBullRushStrike"
+      MoveAnimation = "Minotaur_Walk"
+      Type = "Slide"
+      VideoTexture = "MinotaurBullRushStrike_Bink"
+      Sound = "/SFX/Enemy Sounds/Minotaur/EmoteBashing"
+      EndFrame = 29
+      FrameDataFile = "Game\Animations\FrameData\MinotaurBullRushStrike.sga"
+      NumAngles = 32
+      NumFrames = 29
+      StartFrame = 1
+      OffsetY = -115.0
+      Slides = [
+
+        { DurationFrames = 2 }
+        /*PreStrike*/
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*Strike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+    
+    {
+      Name = "MinotaurBullRush_Strike"
+      ChainTo = "MinotaurBullRush_StrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurBullRushStrike\MinotaurBullRushStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurBullRushStrike_Bink"
+      Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing"
+      EndFrame = 29
+      FrameDataFile = "Game\Animations\FrameData\MinotaurBullRushStrike.sga"
+      NumAngles = 32
+      NumFrames = 29
+      StartFrame = 1
+      OffsetY = -115.0
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*PreStrike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 1 Sound = "/SFX/StabSplatterEndSequence" }
+        /*Strike*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 2 }
+        /*Frame 10*/
+
+        { DurationFrames = 2 }
+        /*PreStrike*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Strike*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Theseus/TheseusFootstepsWheatHeavy3" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        /*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+      ]
+    }
+    
+    {
+      Name = "MinotaurBullRush_StrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurBullRushStrike\MinotaurBullRushStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurBullRushStrike_Bink"
+      EndFrame = 29
+      FrameDataFile = "Game\Animations\FrameData\MinotaurBullRushStrike.sga"
+      NumAngles = 32
+      NumFrames = 29
+      StartFrame = 1
+      OffsetY = -115.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*PreStrike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Strike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*PreStrike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Strike*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        /*ReturnToIdle*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+      ]
+    }
+
+/* ___CrescentStrike___*/
+    
+    {
+      Name = "Minotaur_PreCrescentStrike"
+      FilePath = "Animations\Minotaur\MinotaurCrescentStrike\MinotaurCrescentStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrescentStrike_Bink"
+      EndFrame = 93
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 93
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 1 }/*preAttack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }/*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+
+        { DurationFrames = 0 }/*attackPoseHold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*attackPoseHoldEnd*/
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        
+      ]
+    }
+    
+    {
+      Name = "MinotaurCrescentStrikeArc"
+      FilePath = "Fx\MinotaurAxeArc\MinotaurAxeArc"
+      Type = "Book"
+      Angle = 90.00
+      AngleFromOwner = "Take"
+      ColorFromOwner = "Ignore"
+      EndFrame = 28
+      NumFrames = 28
+      PlaySpeed = 90.0
+      StartFrame = 1
+      IsometricSkew = "Y"
+      Scale = 2.0
+      Material = "Unlit"
+      CreateAnimations = [
+        { Name = "QuickFlashEnemy" }
+      ]
+    }
+    
+    {
+      Name = "Minotaur_CrescentStrike"
+      ChainTo = "Minotaur_CrescentStrikeHold"
+      FilePath = "Animations\Minotaur\MinotaurCrescentStrike\MinotaurCrescentStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrescentStrike_Bink"
+      EndFrame = 93
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 93
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 10*/
+
+        { DurationFrames = 1 VisualFx = "MinotaurCrescentStrikeArc" }
+        /*Attack*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 Sound = "/SFX/StabSplatterEndSequence" }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*attackPoseHold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*40_attackPoseHoldEnd*/
+
+        { DurationFrames = 0 }
+        /*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        
+      ]
+    }
+    
+    {
+      Name = "Minotaur_CrescentStrikeHold"
+      ChainTo = "Minotaur_CrescentStrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurCrescentStrike\MinotaurCrescentStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrescentStrike_Bink"
+      EndFrame = 93
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      Loop = true
+      NumAngles = 16
+      NumFrames = 93
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      DangerDistance = 350
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 10 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 30*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*40_attackPoseHoldEnd*/
+        
+
+        { DurationFrames = 0 }/*returnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*80*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        
+      ]
+    }
+    
+    {
+      Name = "Minotaur_CrescentStrikeReturnToIdle"
+      ChainTo = "Minotaur_Idle"
+      FilePath = "Animations\Minotaur\MinotaurCrescentStrike\MinotaurCrescentStrike"
+      Type = "Slide"
+      VideoTexture = "MinotaurCrescentStrike_Bink"
+      EndFrame = 93
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 93
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = false
+      CancelOnOwnerMove = true
+      DisableOwnerRotation = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        /*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 10*/
+
+        { DurationFrames = 0 }
+        /*Attack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*attackPoseHold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 30*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*40*/
+        
+
+        { DurationFrames = 1 }/*returnToIdle*/
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 50*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*60*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*Frame 70*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        /*80*/
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        
+        
+      ]
+    }
+
+
+    /* _____________________Death____________________ */
+    
+    {
+      Name = "MinotaurDeathVFX"
+      CreateAnimation = "MinotaurDeathLighting"
+      FilePath = "Animations\Minotaur\MinotaurDeathVFX\MinotaurDeathVFX"
+      Type = "Book"
+      VideoTexture = "MinotaurDeathVFX_Bink"
+      AngleFromOwner = "Ignore"
+      Sound = "/SFX/Enemy Sounds/TheseusMinotaurDeathSFX"
+      EndFrame = 140
+      NumFrames = 140
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -115.0
+      Material = "Unlit"
+      BlockNewOwnerAnims = true
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      CreateAnimations = [
+        { Name = "EnemyDeathFxBlue" }
+      ]
+    }
+
+    {
+      Name = "MinotaurArmoredDeathVFX"
+      InheritFrom = "MinotaurDeathVFX"
+      FilePath = "Animations\Minotaur\MinotaurArmoredDeathVFX\MinotaurArmoredDeathVFX"
+      VideoTexture = "MinotaurArmoredDeathVFX_Bink"
+    }
+    
+    {
+      Name = "MinotaurDeathLighting"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      EndAlpha = 0.5
+      EndBlue = 1.0
+      EndGreen = 0.6
+      EndRed = 0.05
+      PingPongColor = true
+      StartBlue = 1.0
+      StartGreen = 0.2
+      DurationFrames = 280
+      EaseOut = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      EndScale = 1.15
+      PingPongScale = true
+      Scale = 2.0
+      ScaleX = 2.0
+      Material = "Unlit"
+    }
+/*_______MINOTAURARMORED______*/
+
+    {
+      Name = "MinotaurArmored_Idle"
+      InheritFrom = "Minotaur_Idle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredIdle\MinotaurArmoredIdle"
+      VideoTexture = "MinotaurArmoredIdle_Bink"
+      Slides = [
+        { Frame = 12 Sound = "/SFX/ArmorIdleSFX2" }
+        { Frame = 44 Sound = "/SFX/ArmorIdleSFX" }
+      ]
+    }
+
+    {
+      Name = "MinotaurArmored_Walk"
+      InheritFrom = "Minotaur_Walk"
+      FilePath = "Animations\Minotaur\MinotaurArmoredWalk\MinotaurArmoredWalk"
+      StopAnimation = "MinotaurArmored_WalkStop"
+      VideoTexture = "MinotaurArmoredWalk_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_WalkStop"
+      InheritFrom = "Minotaur_WalkStop"
+      FilePath = "Animations\Minotaur\MinotaurArmoredWalkStop\MinotaurArmoredWalkStop"
+      VideoTexture = "MinotaurArmoredWalkStop_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_Taunt"
+      InheritFrom = "Minotaur_Taunt"
+      FilePath = "Animations\Minotaur\MinotaurArmoredTaunt\MinotaurArmoredTaunt"
+      VideoTexture = "MinotaurArmoredTaunt_Bink"  
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 32 }
+        { DurationFrames = 1 Sound = "/SFX/ArrowMetalStoneClang" Frame = 46 }
+      ]
+    }
+
+    {
+      Name = "MinotaurArmored_OnHitDeath"
+      InheritFrom = "Minotaur_OnHitDeath"
+      FilePath = "Animations\Minotaur\MinotaurArmoredOnHitDeath\MinotaurArmoredOnHitDeath"
+      VideoTexture = "MinotaurArmoredOnHitDeath_Bink"
+    }
+
+/*_______MINOTAURARMORED_SwingCombo______*/
+    {
+      Name = "MinotaurArmoredAttackSwings_PreAttack"
+      InheritFrom = "MinotaurAttackSwings_PreAttack"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackSwings\MinotaurArmoredAttackSwings"
+      VideoTexture = "MinotaurArmoredAttackSwings_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAxeSpinLoop"
+      InheritFrom = "MinotaurAxeSpinLoop"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackSwings\MinotaurArmoredAttackSwings"
+      VideoTexture = "MinotaurArmoredAttackSwings_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_Attack1"
+      InheritFrom = "MinotaurAttackSwings_Attack1"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackSwings\MinotaurArmoredAttackSwings"
+      VideoTexture = "MinotaurArmoredAttackSwings_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_Attack2"
+      InheritFrom = "MinotaurAttackSwings_Attack2"
+      ChainTo = "MinotaurArmoredAttackSwings_ReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackSwings\MinotaurArmoredAttackSwings"
+      VideoTexture = "MinotaurArmoredAttackSwings_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_ReturnToIdle"
+      InheritFrom = "MinotaurAttackSwings_ReturnToIdle"
+      ChainTo = "MinotaurArmored_Idle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackSwings\MinotaurArmoredAttackSwings"
+      VideoTexture = "MinotaurArmoredAttackSwings_Bink"
+    }
+
+    /* ___MinotaurArmored_Leap___*/
+
+    {
+      Name = "MinotaurArmoredAttackSwings_PreAttackLeap"
+      InheritFrom = "MinotaurAttackSwings_PreAttackLeap"
+      ChainTo = "MinotaurArmoredAttackSwings_AirLoop"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackLeap\MinotaurArmoredAttackLeap"
+      VideoTexture = "MinotaurArmoredAttackLeap_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_AirLoop"
+      InheritFrom = "MinotaurAttackSwings_AirLoop"
+      ChainTo = "MinotaurArmoredAttackSwings_AttackLeap"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackLeap\MinotaurArmoredAttackLeap"
+      VideoTexture = "MinotaurArmoredAttackLeap_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_AttackLeap"
+      InheritFrom = "MinotaurAttackSwings_AttackLeap"
+      ChainTo = "MinotaurArmoredAttackSwings_AttackLeapReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackLeap\MinotaurArmoredAttackLeap"
+      VideoTexture = "MinotaurArmoredAttackLeap_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredAttackSwings_AttackLeapReturnToIdle"
+      InheritFrom = "MinotaurAttackSwings_AttackLeapReturnToIdle"
+      ChainTo = "MinotaurArmored_Idle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackLeap\MinotaurArmoredAttackLeap"
+      VideoTexture = "MinotaurArmoredAttackLeap_Bink"
+    }
+
+/* ___MinotaurArmored_BullRush___*/
+
+   {
+      Name = "MinotaurArmored_BullRushCharge"
+      InheritFrom = "Minotaur_BullRushCharge"
+      FilePath = "Animations\Minotaur\MinotaurArmoredBullRushCharge\MinotaurArmoredBullRushCharge"
+      VideoTexture = "MinotaurArmoredBullRushCharge_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_BullRush"
+      InheritFrom = "Minotaur_BullRush"
+      FilePath = "Animations\Minotaur\MinotaurArmoredBullRush\MinotaurArmoredBullRush"
+      VideoTexture = "MinotaurArmoredBullRush_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredBullRush_PreStrike"
+      InheritFrom = "MinotaurBullRush_PreStrike"
+      ChainTo = "MinotaurArmoredBullRush_Strike"
+      FilePath = "Animations\Minotaur\MinotaurArmoredBullRushStrike\MinotaurArmoredBullRushStrike"
+      VideoTexture = "MinotaurArmoredBullRushStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredBullRush_Strike"
+      InheritFrom = "MinotaurBullRush_Strike"
+      ChainTo = "MinotaurArmoredBullRush_StrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredBullRushStrike\MinotaurArmoredBullRushStrike"
+      VideoTexture = "MinotaurArmoredBullRushStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredBullRush_StrikeReturnToIdle"
+      InheritFrom = "MinotaurBullRush_StrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredBullRushStrike\MinotaurArmoredBullRushStrike"
+      VideoTexture = "MinotaurArmoredBullRushStrike_Bink"
+    }
+
+/* ___MinotaurArmored_CrescentStrike___*/
+
+    {
+      Name = "MinotaurArmored_PreCrescentStrike"
+      InheritFrom = "Minotaur_PreCrescentStrike"
+      FilePath = "Animations\Minotaur\MinotaurArmoredCrescentStrike\MinotaurArmoredCrescentStrike"
+      VideoTexture = "MinotaurArmoredCrescentStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmoredCrescentStrikeArc"
+      InheritFrom = "MinotaurCrescentStrikeArc"
+      FilePath = "Animations\Minotaur\MinotaurArmoredCrescentStrike\MinotaurArmoredCrescentStrike"
+      VideoTexture = "MinotaurArmoredCrescentStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_CrescentStrike"
+      InheritFrom = "Minotaur_CrescentStrike"
+      ChainTo = "MinotaurArmored_CrescentStrikeHold"
+      FilePath = "Animations\Minotaur\MinotaurArmoredCrescentStrike\MinotaurArmoredCrescentStrike"
+      VideoTexture = "MinotaurArmoredCrescentStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_CrescentStrikeHold"
+      InheritFrom = "Minotaur_CrescentStrikeHold"
+      ChainTo = "Minotaur_CrescentStrikeReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredCrescentStrike\MinotaurArmoredCrescentStrike"
+      VideoTexture = "MinotaurArmoredCrescentStrike_Bink"
+    }
+
+    {
+      Name = "MinotaurArmored_CrescentStrikeReturnToIdle"
+      InheritFrom = "Minotaur_CrescentStrikeReturnToIdle"
+      ChainTo = "MinotaurArmored_Idle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredCrescentStrike\MinotaurArmoredCrescentStrike"
+      VideoTexture = "MinotaurArmoredCrescentStrike_Bink"
+    }
+
+
+
+    /* ___AxeSpin___*/
+    
+    {
+      Name = "MinotaurArmored_AxeSpinStart"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackAxeSpin\MinotaurArmoredAttackAxeSpin"
+      Type = "Slide"
+      VideoTexture = "MinotaurArmoredAttackAxeSpin_Bink"
+      EndFrame = 104
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 104
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = true
+      Sound = "/SFX/Enemy Sounds/Minotaur/EmoteChuckle"
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Hades/HadesLaserBlastChargeUp" }/*preAttack*/
+        { DurationFrames = 2  }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Megaera/MegaeraRapidEnergyBlastStartup" }
+        { DurationFrames = 2 DangerDistance = 350 Sound = "/SFX/Enemy Sounds/Minotaur/EmotePoweringUp" }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 2 DangerDistance = 350 }
+        { DurationFrames = 3 DangerDistance = 350 }/*Attack*/
+        { DurationFrames = 3 DangerDistance = 350 }
+        { DurationFrames = 3 DangerDistance = 350 }
+        { DurationFrames = 3 DangerDistance = 350 }
+        
+
+        { DurationFrames = 3 DangerDistance = 350 }
+        { DurationFrames = 3 DangerDistance = 350 }
+        { DurationFrames = 100 DangerDistance = 350 }/*AnticHold*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*30*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+           
+      ]
+    }
+    {
+      Name = "MinotaurArmored_AxeSpin_Fire"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackAxeSpin\MinotaurArmoredAttackAxeSpin"
+      ChainTo = "MinotaurArmored_AxeSpinLoop"
+      Type = "Slide"
+      VideoTexture = "MinotaurArmoredAttackAxeSpin_Bink"
+      EndFrame = 104
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 104
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = false
+      DangerDistance = 550
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*20*/
+        
+
+        { DurationFrames = 1 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*30*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+           
+      ]
+    }
+    {
+      Name = "MinotaurArmored_AxeSpinLoop"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackAxeSpin\MinotaurArmoredAttackAxeSpin"
+      Type = "Slide"
+      VideoTexture = "MinotaurArmoredAttackAxeSpin_Bink"
+      Loop = true
+      EndFrame = 104
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 104
+      StartFrame = 1
+      OffsetY = -115.0
+      AllowRestart = false
+      DangerDistance = 550
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 1 }/*AttackSpinLoop*/
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*30*/
+        
+
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }
+        { DurationFrames = 1 }/*AttackSpinLoopEnd*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 50*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*60*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        /*Frame 70*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*80*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*100*/
+           
+      ]
+    }
+
+    {
+      Name = "MinotaurArmored_AxeSpin_ReturnToIdle"
+      FilePath = "Animations\Minotaur\MinotaurArmoredAttackAxeSpin\MinotaurArmoredAttackAxeSpin"
+      ChainTo = "MinotaurArmored_Idle"
+      Type = "Slide"
+      VideoTexture = "MinotaurArmoredAttackAxeSpin_Bink"
+      EndFrame = 104
+      FrameDataFile = "Game\Animations\FrameData\MinotaurCrescentStrike.sga"
+      NumAngles = 16
+      NumFrames = 104
+      StartFrame = 1
+      OffsetY = -115.0
+      CancelOnOwnerMove = true
+      DisableOwnerRotation = true
+      AllowRestart = false
+      Slides = [
+
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*20*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*30*/
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*AttackSpinLoopEnd*/
+        { DurationFrames = 1 }/*ReturnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Minotaur/EmotePowerAttacking" }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 50*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*60*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Minotaur/HugeAxeSwing" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        /*Frame 70*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*80*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*100*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*100*/
+           
+      ]
+    }
+
+    
+
+  ]
+}

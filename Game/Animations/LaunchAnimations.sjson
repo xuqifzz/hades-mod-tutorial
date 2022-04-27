@@ -1,0 +1,85 @@
+{
+  Animations = [
+    
+    {
+      Name = "BootImage"
+      ChainTo = "BootFade"
+      FilePath = "Launch\load_bg"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "BootFade"
+      FilePath = "Launch\load_bg"
+      Type = "Constant"
+      EndRed = 0.5
+      StartAlpha = 1.0
+      StartRed = 1.0
+      Duration = 0.325
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "MainMenuBG_Static"
+      FilePath = "Launch\load_bg_blank"
+      Type = "Constant"
+      EndAlpha = 1.0
+      Duration = 2.0
+      EndFrame = 1
+      HoldLastFrame = true
+      NumFrames = 1
+      StartFrame = 1
+    }
+    
+    {
+      Name = "MainMenuBG_Announcement"
+      ChildAnimation = "AnnouncementBox"
+      FilePath = "Launch\load_bg_blank"
+      Type = "Constant"
+      EndFrame = 1
+      HoldLastFrame = true
+      NumFrames = 1
+      StartFrame = 1
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "AnnouncementBox"
+      FilePath = "GUI\Shell\Box_HalfScreen"
+      Type = "Constant"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Material = "Unlit"
+    }
+
+    {
+      Name = "AnnouncementBox_CloudSave"
+      InheritFrom = "AnnouncementBox"
+      ChildAnimation = "CloudSaveScreenHorizontalDiv"
+    }
+
+    {
+      Name = "CloudSaveScreenHorizontalDiv"
+      InheritFrom = "AnnouncementBox"
+      FilePath = "GUI\HorizontalDivider"
+      OffsetY = -315
+      ScaleX = 1.25
+      ChildAnimation = "CloudSaveScreenHorizontalDiv_Bottom"
+    }
+
+    {
+      Name = "CloudSaveScreenHorizontalDiv_Bottom"
+      InheritFrom = "CloudSaveScreenHorizontalDiv"
+      ChildAnimation = null
+      OffsetY = 305
+    }
+  ]
+}

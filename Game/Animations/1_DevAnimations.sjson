@@ -1,0 +1,358 @@
+{
+  Animations = [
+
+    {
+      Name = "Blank"
+      FilePath = "Dev\blank_invisible"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "BlackScreen"
+      FilePath = "Backgrounds\rectangle_01"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      Color = { Red = 0.0 Green = 0.0 Blue = 0.0 }
+    }
+
+    {
+      Name = "FadingCircle"
+      FilePath = "Dev\Circle"
+      GroupName = "Overlay"
+      Type = "Constant"
+      StartAlpha = 1.0
+      Duration = 1.0
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      ScaleRadius = 149.0
+      Material = "Emissive"
+      AllowRestart = true
+    }
+
+    {
+      Name = "DefaultShadow"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "Shadows"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      LocationZFromOwner = "Ignore"
+      PostRotateScaleY = 0.5
+      Scale = 0.5
+    }
+
+    {
+      Name = "DefaultShadowSmall"
+      FilePath = "Particles\AuraBasicFillCircle"
+      GroupName = "Shadows"
+      Type = "ConstantNoUpdate"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      LocationZFromOwner = "Ignore"
+      PostRotateScaleY = 0.5
+      Scale = 0.25
+    }
+
+    {
+      Name = "BlueShadow"
+      InheritFrom = "DefaultShadow"
+      AddColor = true
+      EndFrame = 1
+      StartFrame = 1
+      Scale = 0.25
+      Color = { Red = 0.0 Green = 0.15 Blue = 0.50 }
+    }
+
+    {
+      Name = "ReflectionBlob"
+      FilePath = "Tilesets\Gradients\Blob"
+      GroupName = "Additive_01"
+      Type = "ConstantNoUpdate"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      DieWithOwner = true
+      Scale = 0.5
+    }
+
+    {
+      Name = "PerfTestAnimSpawner"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      VisualFx = "PerfTestAnim"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      VisualFxIntervalMax = 0.02
+      VisualFxIntervalMin = 0.01
+    }
+
+    {
+      Name = "PerfTestAnim"
+      ChildAnimation = "SpearSwipe360BaseEmitter"
+      FilePath = "Fx\SpearSwipe\SpearSwipeGlow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      EndBlue = 0.5
+      EndRed = 1.0
+      StartAlpha = 1.0
+      StartBlue = 0.9
+      StartGreen = 0.2
+      StartRed = 1.0
+      DurationFrames = 28
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      RotationSpeed = -720.00
+      PostRotateScaleY = 0.5
+      Scale = 0.5
+      ScaleRadius = 300.0
+      Material = "Unlit"
+      TimeModifierFraction = 0.9
+	}
+
+    {
+      Name = "TestFlame"
+      FilePath = "Fx\TorchFlame\TorchFlame"
+      Type = "Book"
+      Angle = 90.00
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      EndFrame = 80
+      Loop = true
+      NumFrames = 80
+      RandomPlaySpeedMax = 42.0
+      RandomPlaySpeedMin = 28.0
+      StartFrame = 1
+      OriginX = 160.0
+      OriginY = 110.0
+      Material = "Unlit"
+    }
+
+    {
+      Name = "GhostSupportIdleAnim"
+      ChildAnimation = "GhostParticles"
+      FilePath = "Fx\Tartarus_Ghost_01\Tartarus_Ghost_01"
+      Type = "Book"
+      EndFrame = 90
+      Loop = true
+      NumFrames = 90
+      PlaySpeed = 30.0
+      RandomStartFrame = true
+      ReRandomizeOnLoop = false
+      StartFrame = 1
+      OffsetY = -50.0
+      PingPongShiftOverDuration = true
+      Color = { Red = 0.0 Green = 1.0 Blue = 0.30 }
+    }
+
+    {
+      Name = "GhostSupportAttackAnim"
+      InheritFrom = "GhostSupportIdleAnim"
+      FilePath = "Fx\Tartarus_Ghost_02\Tartarus_Ghost_02"
+      EndFrame = 90
+      StartFrame = 1
+      OffsetY = 0.0
+    }
+
+    {
+      Name = "LightElevator"
+      ChainTo = "LightElevator2"
+      FilePath = "Particles\particle_flare_ring_spectral"
+      Light = "Lights\DiffuseSpotlight"
+      Type = "Constant"
+      EndAngle = 25.00
+      Duration = 0.4
+      EaseOut = 0.1
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      EndScale = 3.0
+      StartScale = 0.0
+      Material = "Unlit"
+    }
+
+    {
+      Name = "LightElevator2"
+      InheritFrom = "LightElevator"
+      ChainTo = "LightElevator3"
+      EndAngle = 50.00
+      StartAngle = 25.00
+      EaseIn = 1.0
+      EaseOut = 1.0
+      EndFrame = 1
+      StartFrame = 1
+      EndScale = 0.0
+      StartScale = 3.0
+    }
+
+    {
+      Name = "LightElevator3"
+      FilePath = "Fx\SpeedUpFront\SpeedUpFront"
+      Type = "Book"
+      AngleFromOwner = "Ignore"
+      AddColor = true
+      EndFrame = 30
+      Loop = true
+      NumFrames = 30
+      PlaySpeed = 60.0
+      StartFrame = 1
+      Scale = 2.0
+      Material = "Unlit"
+    }
+
+    {
+      Name = "BladeSpin"
+      ChildAnimation = "BladeSpinB"
+      FilePath = "Fx\SpearSwipe\SpearSwipe"
+      GroupName = "FX_Standing_Add"
+      Type = "Book"
+      AddColor = true
+      ColorFromOwner = "Ignore"
+      EndBlue = 0.5
+      EndRed = 1.0
+      StartBlue = 0.9
+      StartGreen = 0.2
+      StartRed = 1.0
+      EndFrame = 28
+      NumFrames = 28
+      PlaySpeed = 90.0
+      StartFrame = 1
+      SortFromOwner = "Maintain"
+      PostRotateScaleY = 0.62
+      ScaleRadius = 260.0
+      Material = "Unlit"
+      TimeModifierFraction = 0.9
+    }
+
+    {
+      Name = "BladeSpinB"
+      InheritFrom = "BladeSpin"
+      ChildAnimation = "BladeSpinGlow"
+      EndFrame = 28
+      StartFrame = 1
+    }
+
+    {
+      Name = "BladeSpinGlow"
+      ChildAnimation = "SpearSwipe360BaseEmitter"
+      FilePath = "Fx\SpearSwipe\SpearSwipeGlow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      EndBlue = 0.5
+      EndRed = 1.0
+      StartAlpha = 1.0
+      StartBlue = 0.9
+      StartGreen = 0.2
+      StartRed = 1.0
+      DurationFrames = 14
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      RotationSpeed = -720.00
+      PostRotateScaleY = 0.5
+      Scale = 0.5
+      ScaleRadius = 300.0
+      Material = "Unlit"
+      TimeModifierFraction = 0.9
+    }
+
+    {
+      Name = "ShadeBladeSpin"
+      InheritFrom = "BladeSpin"
+      ChildAnimation = "BladeSpinGlow"
+      EndFrame = 28
+      StartFrame = 1
+      ScaleRadius = 200.0
+    }
+
+    {
+      Name = "ShadeBladeSpinPreview"
+      ChildAnimation = "SpearSwipe360BaseEmitter"
+      FilePath = "Fx\SpearSwipe\SpearSwipeGlow"
+      GroupName = "FX_Standing_Add"
+      Type = "Constant"
+      StartAlpha = 1.0
+      StartBlue = 0.9
+      StartGreen = 0.9
+      StartRed = 1.0
+      DurationFrames = 28
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      RotationSpeed = -720.00
+      PostRotateScaleY = 0.5
+      Scale = 2.5
+      Material = "Unlit"
+      TimeModifierFraction = 0.9
+    }
+
+    {
+      Name = "EnemyDaggerIdle"
+      FilePath = "Tilesets\Gameplay\Dagger_Inert_01"
+      Type = "ConstantNoUpdate"
+      AngleFromOwner = "Ignore"
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      OffsetX = -20.0
+      OffsetY = -90.0
+      Scale = 0.5
+      Material = "Emissive"
+    }
+
+    {
+      Name = "EnemyActivationFadeInContainer"
+      FilePath = "Dev\blank_invisible"
+      UseAttachedTimeMultiplier = true
+      Type = "Constant"
+      Duration = 1.9
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+    }
+
+    {
+      Name = "EnemyActivationFadeIn"
+      FilePath = "Dev\blank_invisible"
+	  UseAttachedTimeMultiplier = true
+      Type = "Constant"
+      DurationFrames = 80
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+
+    {
+      Name = "EnemyActivationFlash"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      AddColor = true
+      EndAlpha = 1.0
+      EndBlue = 1.0
+      EndGreen = 1.0
+      EndRed = 1.0
+      DurationFrames = 4
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+    }
+  ]
+}

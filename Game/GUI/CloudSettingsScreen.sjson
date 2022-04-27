@@ -1,0 +1,176 @@
+{
+  CloudSettingsScreen = {
+    Platform = "default"
+    CloseSound = "null"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    UseSelectionSoundWithMouse = false
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.15
+    ShowControls = false
+    ForceShowCursor = true
+    GamepadSelectionStyle = "VerticalCycle"
+    FreeFormSelectWrapping = true
+    Back = {
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Width = 1920
+      Height = 1080
+      Alpha = 0.8
+    }
+    AnimatedBackground = {
+      X = 960
+      Y = 540
+      Graphic = "AnnouncementBox_CloudSave"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+    TitleText = {
+      X = 960
+      Y = 185
+      Justification = "Center"
+      VerticalJustification = "Center"
+      HelpTextId = "MainMenuScreen_CloudSave"
+      Font = "SpectralSCLightTitling"
+      NonEnglishFont = "SpectralSCLight"
+      LangDeScaleModifier = 0.90
+      
+      AlwaysUpperCase = false
+      LangJaUpperCase = true
+      FontSize = 32
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 2
+    }
+    ConnectSteamButton = {
+      X = 960
+      Y = 350
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextOffsetX = 0
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      FontSize = 36
+      SelectedTextRed = 1
+      SelectedTextGreen = 0.75
+      SelectedTextBlue = 0.3
+
+      DisabledTextRed = 0.5
+      DisabledTextGreen = 0.5
+      DisabledTextBlue = 0.5
+      DisabledTextAlpha = 0.25
+      AlwaysUpperCase = false
+      TextJustification = "Center"
+      SelectedTextScale = 1.0
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      HelpTextId = "CloudSaveButton_ConnectSteam"
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    }
+    DisconnectSteamButton = {
+      InheritFrom = "ConnectSteamButton"
+      AttachTo = "ConnectSteamButton"
+      OffsetY = 50
+      HelpTextId = "CloudSaveButton_DisconnectSteam"
+    }
+    ConnectEpicButton = {
+      InheritFrom = "ConnectSteamButton"
+      AttachTo = "DisconnectSteamButton"
+      OffsetY = 130
+      HelpTextId = "CloudSaveButton_ConnectEpic"
+    }
+    DisconnectEpicButton = {
+      InheritFrom = "ConnectSteamButton"
+      AttachTo = "ConnectEpicButton"
+      OffsetY = 50
+      HelpTextId = "CloudSaveButton_DisconnectEpic"
+    }
+    HelpButton = {
+      InheritFrom = "ConnectSteamButton"
+      AttachTo = "DisconnectEpicButton"
+      OffsetY = 130
+      HelpTextId = "CloudSaveButton_Info"
+    }
+    CancelButton =
+    {
+      Graphic = "CancelButtonFlash"
+      UnderCursorOnAnimation = "CancelButtonFlashHover"
+      UnderCursorOffAnimation = "CancelButtonFlash"
+      FreeFormSelectable = false
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 960
+      Y = 1030
+      FlashMin = 0.0
+      FlashMax = 0.5
+      FlashSpeed = 1.2
+      FlashRed = 0.6
+      FlashGreen = 0.4
+      FlashBlue = 0.0
+      MouseOverSound = "null"
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      TooltipId = "SettingsScreen_Back"
+      Scale = 0.8
+    }
+    DescriptionBox =
+    {
+      X = 960
+      Y = 910
+      VerticalJustification = "Center"
+      DisplayNameId = "CloudSaves_InstructionHint"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 22
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.1
+      SelectedTextBlue = 0.1
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      AlwaysUpperCase = false
+      TextSymbolScale = 0.4
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 0
+      ShadowAlpha = 0
+      ShadowBlur = 0
+      Width = 650
+      Height = 200
+      NonEnglishScaleModifier = 0.9
+    }
+  }
+}

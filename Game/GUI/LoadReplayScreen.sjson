@@ -1,0 +1,51 @@
+{
+  LoadReplayScreen = {
+    Platform = "default"
+    SelectionSound = "null"
+    UseSelectionSoundWithMouse = false
+    UseClickAnimation = false
+    GamepadCursorControl = true
+    TransitionOnTime = 0.0
+    TransitionOffTime = 0.0
+    Back = {
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.9
+    }
+    ReplayFileButton = {
+      Name = "ReplayFileButton"
+      Graphic = "null"
+      SelectedOnAnimation = "PauseMenuHighlight"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      Width = 300
+      Height = 50
+      MaxCursorRadius = 8
+      TextScale = 0.66
+      Font = "AlegreyaSCRegular"
+      TextRed = 0.87
+      TextGreen = 0.74
+      TextBlue = 0.59
+      TooltipId = "LoadSaveScreen_DevSaveFile"
+    }
+    CancelButton = {
+      Graphic = "GUI\\PS4Controller\\ps4ControllerCircle"
+      HelpTextId = "GuideBook_Back"
+      TextScale = 0.66
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 0.5
+      TextJustification = "Center"
+      MouseScale = 1.0
+      Font = "AlegreyaSCRegular"
+      TextRed = 0.87
+      TextGreen = 0.74
+      TextBlue = 0.59
+      X = 960
+      Y = 1010
+    }
+  }
+}

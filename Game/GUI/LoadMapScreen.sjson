@@ -1,0 +1,134 @@
+{
+  LoadMapScreen = {
+    Platform = "default"
+    SelectionSound = "null"
+    UseSelectionSoundWithMouse = false
+    UseClickAnimation = false
+    GamepadCursorControl = true
+    TransitionOnTime = 0.0
+    TransitionOffTime = 0.0
+    FreeFormSelectSuccessDistance = 16
+    FreeFormSelectSuccessDistanceStep = 4
+    ValidateCursorLocation = false
+    Back = {
+      Width = 1920
+      Height = 1080
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.9
+    }
+    MapButton = {
+      Name = "MapButton"
+      X = 50
+      Y = 150
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = false
+      AddTextArea = true
+      Font = "AlegreyaSansSCBold"
+      FontSize = 18
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      OutlineThickness = 2
+      ShadowAlpha = 1
+      ShadowOffsetX = 0
+      ShadowOffsetY = 2
+      SelectedTextRed = 1.0
+      SelectedTextGreen = 1.0
+      SelectedTextBlue = 0.0
+      SpacingX = 500
+      SpacingY = 300
+      Justification = "Left"
+      VerticalJustification = "Top"
+      TextOffsetY = 0
+      AddColor = true
+      Red = 0
+      Green = 0
+      Blue = 0
+      SelectedRed = 0.2
+      SelectedGreen = 0.2
+      SelectedBlue = 0.2
+      Width = 640
+      Height = 360
+    }
+    LeftArrow = {
+      X = 600
+      Y = 50
+      Graphic = "GUI\\Graybox\\Arrow_Left"
+      SelectedGraphic = "GUI\\Graybox\\Arrow_Left_Highlight"
+      SelectedAnimationIsOverlay = false
+      PressSound = "/Leftovers/Menu Sounds/RosterSelection"
+      FadeOpacity = 0.0
+    }
+    RightArrow = {
+      InheritFrom = "LeftArrow"
+      AttachTo = "LeftArrow"
+      OffsetX = 100
+      Graphic = "GUI\\Graybox\\Arrow_Right"
+      SelectedGraphic = "GUI\\Graybox\\Arrow_Right_Highlight"
+      SelectedAnimationIsOverlay = false
+      PressSound = "/Leftovers/Menu Sounds/RosterSelection"
+      FadeOpacity = 0.0
+    }
+    FileFilter = {
+      X = 50
+      Y = 50
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 40
+      Width = 700
+      Height = 200
+      TextRed = 1.0
+      TextGreen = 1.0
+      TextBlue = 1.0
+    }
+    FileFilterHint = {
+      InheritFrom = "FileFilter"
+      AttachTo = "FileFilter"
+      TextRed = 0.6
+      TextGreen = 0.6
+      TextBlue = 0.6
+      HelpTextId = "FilterSearchHint"
+    }
+    AlphabeticalSortButton = {
+      Graphic = "GUI\\Graybox\\Button_Default"
+      SelectedGraphic = "GUI\\Graybox\\Button_Highlight"
+      SelectedAnimationIsOverlay = false
+      HelpTextId = "LoadMapScreen_SortAlphabetical"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 20
+      X = 1060
+      Y = 60
+      PressSound = "/Leftovers/Menu Sounds/BookInteract"
+    }
+    ChronologicalSortButton = {
+      Graphic = "GUI\\Graybox\\Button_Default"
+      SelectedGraphic = "GUI\\Graybox\\Button_Highlight"
+      SelectedAnimationIsOverlay = false
+      HelpTextId = "LoadMapScreen_SortChronological"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 20
+      X = 1460
+      Y = 60
+      PressSound = "/Leftovers/Menu Sounds/BookInteract"
+    }
+    CancelButton = {
+      X = 1800
+      Y = 60
+      Graphic = "GUI\ExitButton"
+      SelectedGraphic = "GUI\ExitButtonHighlight"
+      SelectedAnimationIsOverlay = false
+      Scale = 0.5
+    }
+  }
+}

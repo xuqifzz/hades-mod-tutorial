@@ -1,0 +1,271 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "HandShake_00_FrontFx"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_00_FrontFx"
+      }
+    }
+        {
+      Name = "HandShake_01_Characters"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_01_Characters"
+      }
+    }
+    {
+      Name = "HandShake_02_Gradient"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_02_Gradient"
+      }
+    }
+    {
+      Name = "HandShake_03_Vignette"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_03_Vignette"
+      }
+    }
+    {
+      Name = "HandShake_04_BGChars"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_04_BGChars"
+      }
+    }
+    {
+      Name = "HandShake_05_Trees"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_05_Trees"
+      }
+    }
+    {
+      Name = "HandShake_06_Pillars_Left"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_06_Pillars_Left"
+      }
+    }
+    {
+      Name = "HandShake_07_Pillars_Right"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_07_Pillars_Right"
+      }
+    }
+    {
+      Name = "HandShake_08_BG"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "HandShake_08_BG"
+      }
+    }
+
+    {
+      Name = "Olympus_01_OuterCircle"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_01_OuterCircle"
+      }
+    }
+    {
+      Name = "Olympus_01a_InnerCircle"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_01a_InnerCircle"
+      }
+    }
+    {
+      Name = "Olympus_02_Vignette"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_02_Vignette"
+      }
+    }
+    {
+      Name = "Olympus_03_Background"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_03_Background"
+      }
+    }
+    {
+      Name = "Olympus_Aphrodite"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Aphrodite"
+      }
+    }
+    {
+      Name = "Olympus_Ares"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Ares"
+      }
+    }
+    {
+      Name = "Olympus_Artemis"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Artemis"
+      }
+    }
+    {
+      Name = "Olympus_Athena"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Athena"
+      }
+    }
+    {
+      Name = "Olympus_Demeter"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Demeter"
+      }
+    }
+    {
+      Name = "Olympus_Dionysus"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Dionysus"
+      }
+    }
+    {
+      Name = "Olympus_Hermes"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Hermes"
+      }
+    }
+    {
+      Name = "Olympus_Poseidon"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Poseidon"
+      }
+    }
+    {
+      Name = "Olympus_Zeus"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Zeus"
+      }
+    }
+    {
+      Name = "Olympus_Hades"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_Hades"
+      }
+    }
+    {
+      Name = "Olympus_HadesGlow"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = true
+        Graphic = "Olympus_HadesGlow"
+      }
+    }
+
+  ]
+}

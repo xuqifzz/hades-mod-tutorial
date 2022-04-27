@@ -1,0 +1,176 @@
+{
+  AnnouncementScreen =
+  {
+    Platform = "default"
+    OpenSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    CloseSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    SelectionSound = "null"
+    UseSelectionSoundWithMouse = false
+    TransitionOnTime = 0
+    TransitionOffTime = 0
+    ShowControls = false
+    ForceShowCursor = true
+
+	Back =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.8
+      Width = 1920
+      Height = 1080
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "AnnouncementBox"
+      Scale = 1.0
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 185
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextJustification = "Center"
+      Font = "SpectralSCLightTitling"
+      Width = 800
+      NonEnglishFont = "SpectralSCLight"
+      LangDeScaleModifier = 0.90
+      AlwaysUpperCase = false
+      FontSize = 32
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 0
+    }
+
+    SubHeader =
+	{
+      X = 960
+      Y = 950
+      Justification = "Center"
+      VerticalJustification = "Top"
+      Font = "AlegreyaSansRegular"
+      FontSize = 20
+      AlwaysUpperCase = false
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.0
+      ShadowGreen = 0.0
+      ShadowBlue = 0.0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      Width = 720
+      Height = 580
+      UseLineFading = true
+      ScrollSpeed = 400
+      MouseWheelScrollSpeed = 30
+      TextSymbolScale = 0.8
+      LineSpacingBottom = 8
+      LangCnScaleModifier = 0.9
+      NonEnglishScaleModifier = 0.95
+      LangJaScaleModifier = 0.85
+    }
+
+    UpArrow =
+	{
+      X = 1300
+      Y = 245
+      Graphic = "GUI\Shell\UpArrow_Base"
+      SelectedGraphic = "GUI\Shell\UpArrow_Highlight"
+      FreeFormSelectable = false
+      Scale = 0.4
+    }
+
+    DownArrow =
+	{
+      X = 1300
+      Y = 940
+      Graphic = "GUI\Shell\DownArrow_Base"
+      SelectedGraphic = "GUI\Shell\DownArrow_Highlight"
+      FreeFormSelectable = false
+      Scale = 0.4
+    }
+
+    AnnouncementText =
+	{
+      X = 610
+      Y = 300
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Font = "AlegreyaSansRegular"
+      FontSize = 20
+      AlwaysUpperCase = false
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.0
+      ShadowGreen = 0.0
+      ShadowBlue = 0.0
+      ShadowOffsetX = 2
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      Width = 720
+      Height = 580
+      UseLineFading = true
+      ScrollSpeed = 400
+      MouseWheelScrollSpeed = 30
+      TextSymbolScale = 0.8
+      LineSpacingBottom = 8
+      LangCnScaleModifier = 0.9
+      NonEnglishScaleModifier = 0.95
+      LangJaScaleModifier = 1.0
+    }
+
+	/* Controls */
+    CancelButton =
+	{
+      Graphic = "CancelButtonFlash"
+      UnderCursorOnAnimation = "CancelButtonFlashHover"
+      UnderCursorOffAnimation = "CancelButtonFlash"
+      FreeFormSelectable = false
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 960
+      Y = 1030
+      FlashMin = 0.0
+      FlashMax = 0.5
+      FlashSpeed = 1.2
+      FlashRed = 0.6
+      FlashGreen = 0.4
+      FlashBlue = 0.0
+      MouseOverSound = "/SFX/Menu Sounds/DialoguePanelOut"
+      PressSound = "null"
+	  Scale = 0.8
+    }
+
+  }
+}

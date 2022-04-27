@@ -1,0 +1,19 @@
+{
+  Animations = [
+
+    /* Deprecated */
+    
+    {
+      Name = "FacetsLightAnim"
+      FilePath = "Fx\FacetsLight\FacetsLight"
+      Type = "Book"
+      EndFrame = 80
+      Loop = true
+      NumFrames = 80
+      RandomPlaySpeedMax = 30.0
+      RandomPlaySpeedMin = 24.0
+      StartFrame = 1
+      Material = "Emissive"
+    }
+  ]
+}

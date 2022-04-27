@@ -1,0 +1,617 @@
+{
+  Animations = [
+
+      
+    /*BoneDracon*/
+
+   {
+      Name = "EnemyBoneDracon_Idle"
+      FilePath = "Animations\BoneDracon\Idle\BoneDraconIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_BoneDracon_Idle_Bink"
+      PlaySpeed = 30.0
+      Loop = true
+      EndFrame = 50
+      NumAngles = 16
+      NumFrames = 50
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+
+
+    {
+      Name = "EnemyBoneDraconOnHit"
+      FilePath = "Animations\BoneDracon\OnHit\BoneDraconOnHit"
+      Type = "Random"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      Random = [
+        { Name = "EnemyBoneDraconOnHit1" }
+        { Name = "EnemyBoneDraconOnHit2" }
+      ]
+    }
+
+    {
+      Name = "EnemyBoneDraconOnHit1"
+      FilePath = "Animations\BoneDracon\OnHit\BoneDraconOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDracon_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 2 }/*preAttack*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+     {
+      Name = "EnemyBoneDraconOnHit2"
+      FilePath = "Animations\BoneDracon\OnHit\BoneDraconOnHit"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDracon_OnHit_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = true
+      AllowRestart = true
+      Slides = [
+      /*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*loop1 end*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30*/
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+/*___BurrowSet___*/
+
+          {
+      Name = "EnemyBoneDraconBurrowSet"
+      ChainTo = "null"
+      FilePath = "Animations\BoneDracon\BurrowSetVFX\BoneDraconBurrowSetVFX"
+      Type = "BOOK"
+      VideoTexture = "Enemy_BoneDraconBurrowSet_Bink"
+      EndFrame = 30
+      NumAngles = 16
+      NumFrames = 30
+      StartFrame = 1
+      OffsetY = -55.0
+      PlaySpeed = 30.0
+      Scale = 1
+      Material =
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+/*________Burrow___BreakDown______*/
+   {
+      Name = "EnemyBoneDraconBurrowSet_Burrow"
+      InheritFrom = "EnemyBoneDraconBurrowSet"
+      ChainTo = "null"
+      EndFrame = 12
+      Loop = false
+      NumFrames = 30
+      StartFrame = 1
+      TimeModifierFraction = 0.0
+      HoldLastFrame = true
+      StartRed = 1
+      StartGreen = 1
+      StartBlue = 1
+      EndRed = 0.75
+      EndGreen = 0.75
+      EndBlue = 0.75
+      EaseIn = 0.9
+      EaseOut = 1.0
+      Sound = "/SFX/Enemy Sounds/RangedBurrower/DraconSubmerge"
+    }
+
+{
+      Name = "EnemyBoneDraconBurrowSet_UnborrowWiggle"
+      InheritFrom = "EnemyBoneDraconBurrowSet"
+      ChainTo = "EnemyBoneDraconBurrowSet_Unborrow"
+      PlaySpeed = 30
+      EndFrame = 19
+      Loop = false
+      NumFrames = 30
+      StartFrame = 13
+      TimeModifierFraction = 0.0
+      }
+
+      {
+      Name = "EnemyBoneDraconBurrowSet_Unborrow"
+      InheritFrom = "EnemyBoneDraconBurrowSet"
+      ChainTo = "null"
+      PlaySpeed = 30
+      EndFrame = 30
+      Loop = false
+      NumFrames = 30
+      StartFrame = 20
+      TimeModifierFraction = 0.0
+      StartRed = 0.75
+      StartGreen = 0.75
+      StartBlue = 0.75
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      }
+
+
+
+
+
+/*___Range___*/
+
+      {
+      Name = "EnemyBoneDraconRange_Start"
+      ChainTo = "null"
+      FilePath = "Animations\BoneDracon\AttackRange\BoneDraconAttackRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDraconAttackRange_Bink"
+      Loop = false
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 2 }/*preRange*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 999 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+          
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+   {
+      Name = "EnemyBoneDraconRangeSingle_Fire"
+      ChainTo = "EnemyBoneDraconRange_ReturnToIdle"
+      FilePath = "Animations\BoneDracon\AttackRange\BoneDraconAttackRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDraconAttackRange_Bink"
+      Loop = false
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preRange*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/    
+        
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+     
+   {
+      Name = "EnemyBoneDraconRangeRapid_Fire"             /*____________for Elite____________ */
+      ChainTo = "EnemyBoneDraconRange_ReturnToIdle"
+      FilePath = "Animations\BoneDracon\AttackRange\BoneDraconAttackRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDraconAttackRange_Bink"
+      Loop = false
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = false
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preRange*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/    
+        
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 30_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 50_*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  
+
+    {
+      Name = "EnemyBoneDraconRange_ReturnToIdle"
+      ChainTo = "EnemyBoneDracon_Idle"
+      FilePath = "Animations\BoneDracon\AttackRange\BoneDraconAttackRange"
+      Type = "Slide"
+      VideoTexture = "Enemy_BoneDraconAttackRange_Bink"
+      Loop = false
+      EndFrame = 54
+      NumAngles = 16
+      NumFrames = 54
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = true
+      Slides = [
+/*collapse*/
+        { DurationFrames = 0 }/*preAttack*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 30_*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40_*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 50_*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       ]
+      Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "EnemyBoneDraconDeathVFX"
+      FilePath = "Animations\BoneDracon\DeathVFX\BoneDraconDeathVFX"
+      Type = "Book"
+      VideoTexture = "Enemy_BoneDraconDeathVFX_Bink"
+      Loop = false
+      EndFrame = 32
+      NumAngles = 16
+      NumFrames = 32
+      PlaySpeed = 30
+      StartFrame = 1
+      OffsetY = -30.0
+      CancelOnOwnerMove = true
+      Material = "Unlit"
+      Sound = "/SFX/Enemy Sounds/EnemyDeathExplode"
+    }
+
+    {
+      Name = "EnemyBoneDraconUnburrowStreak"
+      Type = "Book"
+      FilePath = "Fx\KnockbackLines\KnockbackLines"
+      NumFrames = 17
+      Angle = 90
+      AngleFromOwner = "Ignore"
+      Material = "Unlit"
+      RandomFlipVertical = true
+      Red = 0.82
+      Green = 0.79
+      Blue = 0.64
+      ScaleX = 4
+      Scale = 0.75
+      PlaySpeed = 90
+      ScaleY = 0.66
+      StartOffsetY = 0
+      EndOffsetY = -200
+      EaseIn = 0.90
+      EaseOut = 1.0
+      LocationFromOwner = "Ignore"
+      ScaleFromOwner = "Ignore"
+    }
+
+    {
+      Name = "EnemyBoneDraconBurrowStreak"
+      InheritFrom = "EnemyBoneDraconUnburrowStreak"
+      FlipHorizontal = true
+    }
+
+  ]
+}

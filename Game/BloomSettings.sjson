@@ -1,0 +1,708 @@
+{
+  BloomSettings = [
+    {
+      Name = "Off"
+      BloomThreshold = 0
+      BlurAmount = 0
+      BloomIntensity = 0
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Default"
+      BloomThreshold = 0.25
+      BlurAmount = 4
+      BloomIntensity = 1.25
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "NewType"
+      BloomThreshold = 0.65
+      BlurAmount = 4.0
+      BloomIntensity = 0.75
+      BaseIntensity = 0.25
+      BloomSaturation = 1.25
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "NewType04"
+      BloomThreshold = 0.85
+      BlurAmount = 4.0
+      BloomIntensity = 0.75
+      BaseIntensity = 0.75
+      BloomSaturation = 1.25
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "NewType05"
+      BloomThreshold = 0.5
+      BlurAmount = 4.0
+      BloomIntensity = 0.75
+      BaseIntensity = 0.25
+      BloomSaturation = 10.25
+      BaseSaturation = 0.75
+    }
+    {
+      Name = "NewType06"
+      BloomThreshold = 0
+      BlurAmount = 3
+      BloomIntensity = 1.0
+      BaseIntensity = 3
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "NewType07"
+      BloomThreshold = 0
+      BlurAmount = 3
+      BloomIntensity = 2.6
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "NewType08"
+      BloomThreshold = 0.4
+      BlurAmount = 2
+      BloomIntensity = 1.5
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "NewType09"
+      BloomThreshold = 0.25
+      BlurAmount = 2
+      BloomIntensity = 1.5
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "NewType10"
+      BloomThreshold = 0.01
+      BlurAmount = 1
+      BloomIntensity = 2.0
+      BaseIntensity = 1
+      BloomSaturation = 0.5
+      BaseSaturation = 4
+    }
+    {
+      Name = "Soft"
+      BloomThreshold = 0
+      BlurAmount = 3
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Desaturated"
+      BloomThreshold = 0.5
+      BlurAmount = 8
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "Saturated"
+      BloomThreshold = 0.25
+      BlurAmount = 4
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 2
+      BaseSaturation = 0
+    }
+    {
+      Name = "Blur"
+      BloomThreshold = 0
+      BlurAmount = 3
+      BloomIntensity = 1
+      BaseIntensity = 0
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Blurry"
+      BloomThreshold = 0
+      BlurAmount = 16
+      BloomIntensity = 1
+      BaseIntensity = 0
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "BlurryLight"
+      BloomThreshold = 0
+      BlurAmount = 1.5
+      BloomIntensity = 0
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "BlurryDark"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 1
+      BaseIntensity = 0.1
+      BloomSaturation = 0.3
+      BaseSaturation = 1
+    }
+    {
+      Name = "BlurryZoom"
+      BloomThreshold = 0
+      BlurAmount = 2
+      BloomIntensity = 0.7
+      BaseIntensity = 0.5
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Subtle"
+      BloomThreshold = 0.5
+      BlurAmount = 2
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "BlurrySubtle"
+      BloomThreshold = 0.5
+      BlurAmount = 2
+      BloomIntensity = 1
+      BaseIntensity = 0.1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Subtler"
+      BloomThreshold = 0.5
+      BlurAmount = 1.75
+      BloomIntensity = 0.75
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Menu"
+      BloomThreshold = 0.5
+      BlurAmount = 4.5
+      BloomIntensity = 0.75
+      BaseIntensity = 0.25
+      BloomSaturation = 0.25
+      BaseSaturation = 0.75
+    }
+    {
+      Name = "Menu01a"
+      BloomThreshold = 0.5
+      BlurAmount = 2.5
+      BloomIntensity = 0.75
+      BaseIntensity = 0.25
+      BloomSaturation = 0.25
+      BaseSaturation = 0.75
+    }
+    {
+      Name = "Menu02"
+      BloomThreshold = 0.5
+      BlurAmount = 1.5
+      BloomIntensity = 0.75
+      BaseIntensity = 0.25
+      BloomSaturation = 0.25
+      BaseSaturation = 0.75
+    }
+    {
+      Name = "SubtleD"
+      BloomThreshold = 0.5
+      BlurAmount = 1.15
+      BloomIntensity = 0.75
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 0.65
+    }
+    {
+      Name = "SoftLight"
+      BloomThreshold = 0
+      BlurAmount = 2
+      BloomIntensity = 0.5
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "SaturatedLight"
+      BloomThreshold = 0.25
+      BlurAmount = 1.15
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 1.3
+      BaseSaturation = 0
+    }
+    {
+      Name = "DesaturatedLight"
+      BloomThreshold = 0.5
+      BlurAmount = 5
+      BloomIntensity = 1.5
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "FocusBlur"
+      BloomThreshold = 0.5
+      BlurAmount = 1.15
+      BloomIntensity = 0.75
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 0.65
+    }
+    {
+      Name = "FocusReloading"
+      BloomThreshold = 1.0
+      BlurAmount = 1.15
+      BloomIntensity = 0.75
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 0.75
+    }
+    {
+      Name = "SoftPickup"
+      BloomThreshold = 0
+      BlurAmount = 8
+      BloomIntensity = 1.05
+      BaseIntensity = 0.5
+      BloomSaturation = 0.9
+      BaseSaturation = 1
+    }
+    {
+      Name = "SubtleLess"
+      BloomThreshold = 0.5
+      BlurAmount = 6
+      BloomIntensity = 1
+      BaseIntensity = 0.9
+      BloomSaturation = 0.5
+      BaseSaturation = 1
+    }
+    {
+      Name = "SubtleLessOLD"
+      BloomThreshold = 0.6
+      BlurAmount = 4
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "Intro"
+      BloomThreshold = 0.5
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.25
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "IntroLight"
+      BloomThreshold = 0.5
+      BlurAmount = 8
+      BloomIntensity = 2
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "IntroLightSat"
+      BloomThreshold = 0.5
+      BlurAmount = 8
+      BloomIntensity = 2
+      BaseIntensity = 0.75
+      BloomSaturation = 0.5
+      BaseSaturation = 1
+    }
+    {
+      Name = "Stinkweed"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 1.65
+      BaseIntensity = 0.1
+      BloomSaturation = 1.5
+      BaseSaturation = 1.5
+    }
+    {
+      Name = "StinkweedLight"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 1.45
+      BaseIntensity = 0.1
+      BloomSaturation = 1.5
+      BaseSaturation = 1.5
+    }
+    {
+      Name = "StinkweedLighter"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 1.65
+      BaseIntensity = 1.0
+      BloomSaturation = 1.15
+      BaseSaturation = 0.6
+    }
+    {
+      Name = "Dream"
+      BloomThreshold = 0.45
+      BlurAmount = 8
+      BloomIntensity = 2
+      BaseIntensity = 0.8
+      BloomSaturation = 1.5
+      BaseSaturation = 0
+    }
+    {
+      Name = "DreamLight"
+      BloomThreshold = 0.45
+      BlurAmount = 7
+      BloomIntensity = 2
+      BaseIntensity = 0.8
+      BloomSaturation = 1
+      BaseSaturation = 0
+    }
+    {
+      Name = "DreamExtraLight"
+      BloomThreshold = 0.75
+      BlurAmount = 6
+      BloomIntensity = 1.4
+      BaseIntensity = 0.8
+      BloomSaturation = 1
+      BaseSaturation = 0
+    }
+    {
+      Name = "DreamSubtleLight"
+      BloomThreshold = 0.35
+      BlurAmount = 5
+      BloomIntensity = 1.25
+      BaseIntensity = 0.8
+      BloomSaturation = 1.25
+      BaseSaturation = 0
+    }
+    {
+      Name = "DreamSubtle"
+      BloomThreshold = 0.45
+      BlurAmount = 4
+      BloomIntensity = 1.25
+      BaseIntensity = 0.8
+      BloomSaturation = 1.25
+      BaseSaturation = 0
+    }
+    {
+      Name = "Cloudy"
+      BloomThreshold = 0.5
+      BlurAmount = 8
+      BloomIntensity = 1.375
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1
+    }
+    {
+      Name = "RainBlurSlight"
+      BloomThreshold = 0
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.45
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "RainBlurSlighter"
+      BloomThreshold = 0
+      BlurAmount = 8
+      BloomIntensity = 0.45
+      BaseIntensity = 0.55
+      BloomSaturation = 0.5
+      BaseSaturation = 0.5
+    }
+    {
+      Name = "SnowBlurSlighter"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 0.5
+      BaseIntensity = 0.85
+      BloomSaturation = 0.5
+      BaseSaturation = 0.5
+    }
+    {
+      Name = "ZiaMoment"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1.25
+      BaseIntensity = 1
+      BloomSaturation = 0.345
+      BaseSaturation = 1
+    }
+    {
+      Name = "MemoryLight"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 0
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "Memory_01"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.7
+    }
+    {
+      Name = "Memory_02"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.6
+    }
+    {
+      Name = "Memory_03"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.5
+    }
+    {
+      Name = "Memory_04"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.4
+    }
+    {
+      Name = "Memory_05"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.3
+    }
+    {
+      Name = "Memory_06"
+      BloomThreshold = 0.4
+      BlurAmount = 8
+      BloomIntensity = 1
+      BaseIntensity = 0.75
+      BloomSaturation = 0
+      BaseSaturation = 0.2
+    }
+    {
+      Name = "TestJosh"
+      BloomThreshold = 0.4
+      BlurAmount = 16
+      BloomIntensity = 2.0
+      BaseIntensity = 1.0
+      BloomSaturation = 1.1
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "Sandbox"
+      BloomThreshold = 0.5
+      BlurAmount = 16
+      BloomIntensity = 2.0
+      BaseIntensity = 0.8
+      BloomSaturation = 0.05
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "FocusDisruptionBloom"
+      BloomThreshold = 0.5
+      BlurAmount = 1
+      BloomIntensity = 2.5
+      BaseIntensity = 0.5
+      BloomSaturation = 1.0
+      BaseSaturation = 0
+    }
+    {
+      Name = "EndCreditsBloom"
+      BloomThreshold = 0.6
+      BlurAmount = 16
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 0.5
+      BaseSaturation = 1
+    }
+    {
+      Name = "FairviewFloat"
+      BloomThreshold = 0.6
+      BlurAmount = 16
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 0.56
+      BaseSaturation = 1
+    }
+    {
+      Name = "WeatherSnowBloom"
+      BloomThreshold = 0
+      BlurAmount = 16
+      BloomIntensity = 0.5
+      BaseIntensity = 1
+      BloomSaturation = 0.5
+      BaseSaturation = 1
+    }
+    {
+      Name = "WeatherSnowBloomDialogue"
+      BloomThreshold = 0
+      BlurAmount = 2
+      BloomIntensity = 1
+      BaseIntensity = 0
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "LightningWeather"
+      BloomThreshold = 0.4
+      BlurAmount = 16
+      BloomIntensity = 0.1
+      BaseIntensity = 1.0
+      BloomSaturation = 0.01
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "LightningWeatherDialogue"
+      BloomThreshold = 0
+      BlurAmount = 2
+      BloomIntensity = 1
+      BaseIntensity = 0
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "LightningStrike"
+      BloomThreshold = 0.1
+      BlurAmount = 8
+      BloomIntensity = 2
+      BaseIntensity = 2
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "WrathPhase2"
+      BloomThreshold = 0.25
+      BlurAmount = 1
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 2
+      BaseSaturation = 0.2
+    }
+    {
+      Name = "OvermapCindersBloom"
+      BloomThreshold = 0.5
+      BlurAmount = 16
+      BloomIntensity = 0.5
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "OvermapCindersBloomDialogue"
+      BloomThreshold = 0
+      BlurAmount = 2
+      BloomIntensity = 1
+      BaseIntensity = 0
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "AscensionVictoryBloom"
+      BloomThreshold = 0.8
+      BlurAmount = 16
+      BloomIntensity = 0.5
+      BaseIntensity = 1
+      BloomSaturation = 0.2
+      BaseSaturation = 1
+    }
+    {
+      Name = "LastKillBloom"
+      BloomThreshold = 0.6
+      BlurAmount = 4
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "AlertBloom"
+      BloomThreshold = 0.8
+      BlurAmount = 4
+      BloomIntensity = 2
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "FullscreenFlash"
+      BloomThreshold = 0
+      BlurAmount = 4
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 1.5
+      BaseSaturation = 1.5
+    }
+    {
+      Name = "TimeStop"
+      BloomThreshold = 0.5
+      BlurAmount = 16
+      BloomIntensity = 1
+      BaseIntensity = 1
+      BloomSaturation = 1
+      BaseSaturation = 1
+    }
+    {
+      Name = "DeathDefiance"
+      BloomThreshold = 0.6
+      BlurAmount = 4
+      BloomIntensity = 2
+      BaseIntensity = 2
+      BloomSaturation = 0.1
+      BaseSaturation = 1
+    }
+    {
+      Name = "WeaponAspect"
+      BloomThreshold = 0.0
+      BlurAmount = 16
+      BloomIntensity = 0.75
+      BaseIntensity = 0.75
+      BloomSaturation = 0.5
+      BaseSaturation = 0.5
+    }
+    {
+      Name = "CottageBloom"
+      BloomThreshold = 0.0
+      BlurAmount = 16
+      BloomIntensity = 0.5
+      BaseIntensity = 1.0
+      BloomSaturation = 1.0
+      BaseSaturation = 1.0
+    }
+    {
+      Name = "CerberusSummon"
+      BloomThreshold = 0.0
+      BlurAmount = 16
+      BloomIntensity = 0.5
+      BaseIntensity = 0.75
+      BloomSaturation = 0.5
+      BaseSaturation = 1.0
+    }
+
+
+  ]
+}

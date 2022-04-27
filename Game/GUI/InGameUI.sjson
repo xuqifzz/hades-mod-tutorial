@@ -1,0 +1,296 @@
+{
+  InGameUI =
+  {
+    AllowUnitInput = true
+    HideWithUI = true
+	ValidateCursorLocation = false
+    GamepadSelectionStyle = "None"
+    AimLine =
+	{
+      FlashSpeed = 8.0
+      FlashMin = 0.2
+      FlashMax = 1.0
+      FadeOpacity = 1.0
+      FadeTarget = 1.0
+    }
+
+	SubtitlesABacking =
+	{
+      Graphic = "SubtitleBacking"
+      X = 960
+      Y = 890
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+
+    SubtitlesA =
+	{
+      AttachTo = "SubtitlesABacking"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextJustification = "Center"
+      Font = "AlegreyaSansExtraBold"
+      FontSize = 24
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      Width = 1000
+      Height = 80
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+      ShadowRed = 0
+      ShadowBlue = 0
+      ShadowGreen = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0.5
+      ShadowOffsetY = 3
+      ShadowOffsetX = 0
+      UseLineFading = false
+      AutoScrollDelay = 3.0
+      AutoScrollSpeed = 50
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+    }
+
+    SubtitlesBBacking =
+	{
+      InheritFrom = "SubtitlesABacking"
+      X = 960
+      Y = 940
+    }
+
+    SubtitlesB =
+	{
+      InheritFrom = "SubtitlesA"
+      AttachTo = "SubtitlesBBacking"
+      TextRed = 0.7
+      TextGreen = 0.7
+      TextBlue = 0.7
+    }
+
+    BuildNumberText =
+	{
+      X = 1900
+      Y = 30
+      HelpTextId = "DevBuildWatermark"
+      Justification = "Right"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 18
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+	  FadeSpeed = 1.0
+      FadeOpacity = 0.5
+      FadeTarget = 0.5
+    }
+
+    AudioWarningText =
+	{
+      AttachTo = "BuildNumberText"
+      OffsetX = 100
+      HelpTextId = "AudioDriverWarning"
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansExtraBold"
+      FontSize = 18
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextAlpha = 1
+      FadeOpacity = 1.0
+      FadeTarget = 1.0
+      Alpha = 1
+    }
+
+    ElapsedRunTimeText =
+	{
+      X = 1820
+      Y = 60
+      HelpTextId = "PauseScreen_GameplayTime"
+      TextJustification = "Left"
+      Font = "AlegreyaSansSCBold"
+      FontSize = 20
+      TextRed = 0.95
+      TextGreen = 0.92
+      TextBlue = 0.9
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      UseLineFading = false
+      FadeOpacity = 0
+      FadeTarget = 0
+      TextAlpha = 0.8
+      LangCnScaleModifier = 0.8
+      LangJaScaleModifier = 0.8
+      LangKoScaleModifier = 0.8
+    }
+
+    ElapsedBiomeTimeText =
+	{
+      X = 60
+      Y = 940
+      HelpTextId = "PauseScreen_BiomeTime"
+      TextJustification = "Left"
+      Font = "AlegreyaSansExtraBoldItalic"
+      FontSize = 20
+      TextRed = 1
+      TextGreen = 0.2
+      TextBlue = 0.125
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0.3
+      ShadowGreen = 0.2
+      ShadowBlue = 0.2
+      ShadowOffsetX = 0
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      UseLineFading = false
+      FadeOpacity = 0
+      FadeTarget = 0
+      TextAlpha = 1
+    }
+
+	BiomeTimeBacking =
+	{
+      Graphic = "BiomeTimerBacking"
+      AttachTo = "ElapsedBiomeTimeText"
+  	  OffsetX = 35
+  	  Scale = 0.5
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+
+    ActiveShrinePointText =
+	{
+      InheritFrom = "ElapsedRunTimeText"
+      X = 26
+      Y = 54
+	  FontSize = 22
+	  Justification = "Left"
+	  TextJustification = "Left"
+      HelpTextId = "InGameUI_ActiveShrinePoints"
+      TextRed = 0.85
+      TextGreen = 0.85
+      TextBlue = 0.85
+      TextOutlineRed = 0.25
+      TextOutlineGreen = 0.22
+      TextOutlineBlue = 0.19
+      OutlineThickness = 1.0
+      ShadowRed = 0
+      ShadowBlue = 0
+      ShadowGreen = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      ShadowOffsetY = 3
+      ShadowOffsetX = 0
+      TextAlpha = 1.0
+      FadeOpacity = 0
+      FadeTarget = 0
+      TextSymbolScale = 1.6
+    }
+
+	/* Use Text */
+    UseText =
+	{
+      OffsetX = 0
+      OffsetY = 40
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextJustification = "Center"
+      Font = "AlegreyaSansSCBold"
+      FontSize = 60
+      TextSymbolScale = 0.5
+      ScaleSpeed = 16
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      Width = 1920
+      Height = 1080
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+      FadeSpeed = 8.0
+      TextOutlineRed = 0.25
+      TextOutlineGreen = 0.22
+      TextOutlineBlue = 0.19
+      OutlineThickness = 1.0
+      ShadowRed = 0
+      ShadowBlue = 0
+      ShadowGreen = 0
+      ShadowAlpha = 1
+      ShadowBlur = 1
+      ShadowOffsetY = 1
+      ShadowOffsetX = 0
+      UseLineFading = false
+    }
+
+    UseKeyText =
+	{
+      OffsetX = 0
+      OffsetY = -4
+      TextRed = 0.9
+      TextGreen = 0.9
+      TextBlue = 0.9
+      Width = 48
+      Height = 48
+      Font = "AlegreyaSansSCExtraBold"
+      FontSize = 50
+      ShadowRed = 0
+      ShadowBlue = 0
+      ShadowGreen = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      ShadowOffsetY = 2
+      ShadowOffsetX = 0
+    }
+
+    SaveAnim =
+	{
+      X = 1850
+      Y = 160
+      Graphic = "MinosSaveSpinnerIn"
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+      Scale = 0.5
+    }
+
+    SaveText =
+	{
+      AttachTo = "SaveAnim"
+      OffsetY = 10
+      FontSize = 20
+      Font = "AlegreyaSansExtraBold"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextRed = 0.95
+      TextGreen = 1.0
+      TextBlue = 0.5
+      TextOutlineRed = 0.4
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      ShadowRed = 0
+      ShadowBlue = 0
+      ShadowGreen = 0
+      ShadowAlpha = 1
+      ShadowBlur = 2
+      ShadowOffsetY = 1
+      ShadowOffsetX = 0
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+      AlwaysUpperCase = true
+      NonEnglishScaleModifier = 0.8
+    }
+  }
+}

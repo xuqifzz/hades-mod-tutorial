@@ -1,0 +1,719 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "WastelandAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/WastelandAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "TownAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ScummyTownAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "FireAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/FireAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "FireAmbienceGeneratorTORCH"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/FireAmbientLoopTORCHES"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "FogRiverAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/ElysiumFogRiverAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "CookingAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/FoodCookingLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "SpiderAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/SpiderSkitterLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "MetalCreakAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/MediumMetalSqueakLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "BogAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/BogAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "FrogsAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/CroakingFrogsAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "BubblesAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/WaterBubblesAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "SludgeBubblesAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/LavaBubbleLoop1_Campaign"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "BonesAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/SkeletonBonesAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "InsectScamperingAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ScamperingAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "HowlerAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Match SFX/HowlerImpSnarlGroupLoop_3D"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "AnimalsPawingInSandAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/PawingInSandAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LavaAmbienceGeneratorBubbles"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/LavaBubbleLoop2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LavaAmbienceGeneratorRumbles"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/LavaEruptRumbleLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LavaEruptionAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/LavaEruptRumbleLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "SteamAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/SteamLoop2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "CelestialAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/StarPickerAmbienceLoopQuiet"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "HauntedWindAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Ambience/CreepyHauntedWindLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ChimesAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/ChimesAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "WaterfallAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/WaterfallAmbience2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "FountainAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/WaterRushingBloodFall"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "DeathAreaFountainAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/WaterRushingBloodFall"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "DeathAreaFountainAmbienceGenerator2"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/WaterRushingBloodFall2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "DeathAreaBloodPoolAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Ambience/StillWaterLocalAmbienceBloodPool"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "OceanWaterAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Ambience/DistantOceanWavesWaterAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "MuffledCrowdAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/TheseusCrowdAmbientLoopMUFFLED"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LoungeKitchenAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/LoungeKitchenAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "LoungeAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/LoungeAmbientLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "CalmPoolWaterAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/DrippingWaterAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "SlowMovingBloodRiverAmbience"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/SlowMovingWaterLocalAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+
+    {
+      Name = "WaterStreamAmbience"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/WaterRushingStream"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "WoodsAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/CountryAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "WindAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Ambience/WhippingWindLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "OccultAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/OccultAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ShipwreckAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShipwreckAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "BeachIslandAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShipwreckAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "OceanStormAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/StormSwathAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "CreepyIslandAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/CreepyIslandAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "CreepyHandAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/HandAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ThunderAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ThunderLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LavaBubbleAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Object Ambiences/LavaBubbleLoop2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "WindyFieldAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Ambience/MediumWindFieldLeavesAmbience_3d"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "WindyFieldAmbienceGeneratorBigRadius"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/Leftovers/Ambience/MediumWindFieldLeavesAmbience_BigRadius"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "CreakingTreeAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/TreeCreakingAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "RocksFallingAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/RocksFallingLoop"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ShimmeringCrystalSmallAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShimmeringCrystalAmbience_3"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ShimmeringCrystalMediumAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShimmeringCrystalAmbience_2"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ShimmeringCrystalLargeAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShimmeringCrystalAmbience_1"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "ShimmeringCrystalHolyAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/ShimmeringCrystalAmbience_4"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "MagneticHolyRingsAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/MagneticHolyRingsAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+    
+    {
+      Name = "LakeAmbienceGenerator"
+      InheritFrom = "InvisibleTarget"
+      DisplayInEditor = true
+      Thing = 
+      {
+        AmbientSound = "/SFX/Object Ambiences/DrippingWaterAmbience"
+        EditorOutlineDrawBounds = false
+        Scale = 0.7
+        Color = { Red = 1.0 Green = 0.10 Blue = 0.70 }
+      }
+    }
+  ]
+}

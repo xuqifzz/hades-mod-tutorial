@@ -1,0 +1,1692 @@
+{
+  Obstacles = [
+
+    {
+      Name = "HealthFountain"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthFountainFullStart"
+        Scale = 0.35
+        Interact =
+        {
+          AirborneMaxZ = 9999.0
+          Distance = 300.0
+          DistanceZ = 120.0
+          MaxZ = 9999.0
+          OffsetX = -30.0
+          OffsetY = 30.0
+          UsedFrontFx = "ReprieveHealFx"
+        }
+        Offset = { X = 0 Y = -461 }
+        Points = [
+          { X = 99 Y = 784 }
+          { X = 899 Y = 357 }
+          { X = -342 Y = -264 }
+          { X = -1160 Y = 150 }
+        ]
+        Using = [
+          { Name = "HealthFountainEmpty" }
+        ]
+      }
+    }
+
+    {
+      Name = "HealthFountainAsphodel"
+      InheritFrom = "HealthFountain"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthFountainFullAsphodelStart"
+        Tallness = 1352.0
+        Offset = { X = 0 Y = -501 }
+        Points = [
+          { X = -3 Y = 432 }
+          { X = 791 Y = 42 }
+          { X = -22 Y = -352 }
+          { X = -785 Y = 29 }
+        ]
+        Using = [
+          { Name = "HealthFountainEmpty" }
+          { Name = "HealthFountainEmptyAsphodel" }
+        ]
+      }
+    }
+
+    {
+      Name = "HealthFountainElysium"
+      InheritFrom = "HealthFountain"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthFountainFullElysiumStart"
+        Tallness = 300.0
+        Offset = { X = 0 Y = -130 }
+        Points = [
+          { X = -552 Y = -31 }
+          { X = -355 Y = 157 }
+          { X = 61 Y = 249 }
+          { X = 407 Y = 1 }
+          { X = 498 Y = -230 }
+          { X = -317 Y = -447 }
+          { X = -542 Y = -276 }
+        ]
+        Using = [
+          { Name = "HealthFountainEmpty" }
+          { Name = "HealthFountainEmptyElysium" }
+        ]
+      }
+    }
+
+    {
+      Name = "HealthFountainStyx"
+      InheritFrom = "HealthFountain"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthFountainFullStyxStart"
+        Tallness = 300.0
+        Offset = { X = 0 Y = -130 }
+        Points = [
+          { X = -552 Y = -31 }
+          { X = -355 Y = 157 }
+          { X = 61 Y = 249 }
+          { X = 407 Y = 1 }
+          { X = 498 Y = -230 }
+          { X = -317 Y = -447 }
+          { X = -542 Y = -276 }
+        ]
+        Using = [
+          { Name = "HealthFountainEmpty" }
+          { Name = "HealthFountainEmptyStyx" }
+        ]
+      }
+    }
+
+    {
+      Name = "PoisonCureFountainStyx"
+      InheritFrom = "HealthFountainStyx"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PoisonCureFountainStyxFullStart"
+        Tallness = 200.0
+        Interact =
+        {
+          Distance = 170.0
+          OffsetX = 0.0
+          OffsetY = -20.0
+        }
+        Offset = { X = 0 Y = 256 }
+        Points = [
+          { X = -191 Y = -24 }
+          { X = -141 Y = 45 }
+          { X = 107 Y = 52 }
+          { X = 202 Y = -21 }
+          { X = 94 Y = -92 }
+          { X = -90 Y = -91 }
+        ]
+        Using = [
+          { Name = "HealthFountainEmpty" }
+          { Name = "HealthFountainEmptyStyx" }
+          { Name = "PoisonCureFountainEmpty" }
+        ]
+      }
+    }
+
+    {
+      Name = "GiftRack"
+      DisplayInEditor = true
+      Life =
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Shelf_03"
+        Grip = 999999.0
+        Tallness = 1345.0
+        TouchdownSound = "/EmptyCue"
+        Interact =
+        {
+          Distance = 220.0
+        }
+        Offset = { X = 0 Y = -702 }
+        Points = [
+          { X = -616 Y = 86 }
+          { X = -172 Y = 299 }
+          { X = 657 Y = -110 }
+          { X = 220 Y = -333 }
+        ]
+        Using = [
+          { Name = "GiftRackGlean" }
+          { Name = "GiftRackClosed" }
+        ]
+      }
+    }
+
+    {
+      Name = "BaseLoot"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = false
+      MagnetismSpeedMax = 600.0
+      MagnetismSpeedMin = 600.0
+      MagnetismWhileBlocked = 9999.0
+      MaxMagnetismZ = 140.0
+      Thing =
+      {
+        AttachedAnim = "LootShadowStatic"
+        BounceMultiplier = 1E-05
+        EditorOutlineDrawBounds = false
+        CanBeOccluded = true
+        Graphic = "PowerUp01"
+        Gravity = 1500.0
+        Grip = 4000.0
+        ImmuneToForce = true
+        OcclusionOutlineBlue = 0.71
+        OcclusionOutlineFadeSpeed = 0.1
+        OcclusionOutlineGreen = 1.0
+        OcclusionOutlineOpacity = 1.0
+        OcclusionOutlineRed = 0.29
+        OcclusionOutlineThickness = 1.0
+        OcclusionOutlineThreshold = 0.5
+        OffsetZ = 130.0
+        OnTouchdownFxAnim = "BallDropPuff"
+        Interact =
+        {
+          Distance = 140.0
+          MaxZ = 230.0
+          ShowInfo = false
+        }
+        Points = [
+          { X = 0 Y = 24 }
+          { X = 48 Y = 0 }
+          { X = 0 Y = -24 }
+          { X = -48 Y = 0 }
+        ]
+      }
+    }
+
+    {
+      Name = "BaseBoon"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        AttachedAnim = "LootShadowBoon"
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropAphrodite"
+        Grip = 999999.0
+        SortBoundsScale = 2.0
+        Tallness = 62.0
+        OffsetZ = 139
+        Scale = 1.15
+        UseBoundsForSortDrawArea = true
+        Points = [
+          { X = 0 Y = 55 }
+          { X = 46 Y = 32 }
+          { X = 0 Y = 8 }
+          { X = -46 Y = 32 }
+        ]
+      }
+    }
+
+    {
+      Name = "HadesUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "ZeusUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropZeus"
+      }
+    }
+
+    {
+      Name = "PoseidonUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropPoseidon"
+      }
+    }
+
+    {
+      Name = "ArtemisUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropArtemis"
+      }
+    }
+
+    {
+      Name = "DionysusUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropDionysus"
+      }
+    }
+
+    {
+      Name = "AphroditeUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropAphrodite"
+      }
+    }
+
+    {
+      Name = "AresUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropAres"
+      }
+    }
+
+    {
+      Name = "AthenaUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropAthena"
+      }
+    }
+
+    {
+      Name = "HermesUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropHermes"
+      }
+    }
+
+    {
+      Name = "DemeterUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropDemeter"
+      }
+    }
+
+    {
+      Name = "ApolloUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "TrialUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropChaos"
+      }
+    }
+    {
+      Name = "StoreTrialUpgradeDrop"
+      InheritFrom = "BaseBoon"
+      Thing =
+      {
+        Graphic = "BoonDropChaos"
+      }
+    }
+
+    {
+      Name = "HeraUpgrade"
+      InheritFrom = "BaseBoon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "Money"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      DisplayInEditor = true
+      MaxMagnetismZ = 100.0
+      Life =
+      {
+        DeathFx = "MoneyPileC-Out"
+      }
+      Thing =
+      {
+        BounceMultiplier = 1E-05
+        EditorOutlineDrawBounds = false
+        Gravity = 1500.0
+        Grip = 2500.0
+        OcclusionOutlineBlue = 0.71
+        OcclusionOutlineFadeSpeed = 0.1
+        OcclusionOutlineGreen = 1.0
+        OcclusionOutlineOpacity = 1.0
+        OcclusionOutlineRed = 0.29
+        OcclusionOutlineThickness = 2.0
+        OcclusionOutlineThreshold = 0.5
+        Tallness = 10.0
+        TouchdownGraphic = "MoneyPileC"
+        TouchdownSound = "/Leftovers/Menu Sounds/CoinLand"
+        Interact =
+        {
+          AutoActivate = true
+          Cooldown = 0.8
+          DestroyOnUse = true
+          Distance = 9999.0
+          MaxZ = 0.0
+          ShowInfo = false
+          StartsCoolingDown = true
+          UseableWhileInputDisabled = true
+        }
+        Points = [
+          { X = -57 Y = 8 }
+          { X = -1 Y = 35 }
+          { X = 58 Y = 3 }
+          { X = -2 Y = -28 }
+        ]
+      }
+    }
+
+    {
+      Name = "MoneySmall"
+      InheritFrom = "Money"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "MoneyPileA-Out"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MoneyPileA"
+      }
+    }
+
+    {
+      Name = "MoneyMedium"
+      InheritFrom = "Money"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "MoneyPileB-Out"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MoneyPileB"
+      }
+    }
+
+    {
+      Name = "MoneyLarge"
+      InheritFrom = "Money"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MoneyPileC"
+      }
+    }
+
+    {
+      Name = "HealDropRange"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthDrop1"
+        Interact =
+        {
+          AutoActivate = true
+          AutoUseFailedAnimation = "ConsumableCannotUse"
+          DestroyOnUse = true
+          OffsetY = -60.0
+          RequiresMissingHealth = true
+          UsedFrontFx = "Heal"
+        }
+      }
+    }
+
+    {
+      Name = "GemDropRange"
+      InheritFrom = "HealDropRange"
+    }
+
+    {
+      Name = "AspectRarityDrop"
+      InheritFrom = "HealDropRange"
+    }
+    {
+      Name = "DamageSelfDrop"
+      InheritFrom = "HealDropRange"
+    }
+    {
+      Name = "EmptyMaxHealthDrop"
+      InheritFrom = "HealDropRange"
+    }
+    {
+      Name = "KeepsakeChargeDrop"
+      InheritFrom = "HealDropRange"
+    }
+	{
+	  Name = "RandomStoreItem"
+      InheritFrom = "HealDropRange"
+	}
+	{
+	  Name = "RandomKeepsake"
+      InheritFrom = "HealDropRange"
+	}
+    {
+      Name = "HealDrop1"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Magnetism = 1.0
+      MagnetismWhileBlockedDistance = 9999.0
+      RequiresUsable = true
+      Life =
+      {
+        DeathFx = "HealthSparkleBurst"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthDrop1"
+        Interact =
+        {
+          AutoActivate = true
+          AutoUseFailedAnimation = "ConsumableCannotUse"
+          OffsetY = -60.0
+          RequiresMissingHealth = true
+          UsedFrontFx = "Heal"
+        }
+      }
+    }
+
+    {
+      Name = "HealDropMinor"
+      InheritFrom = "HealDrop1"
+      DisplayInEditor = true
+	  VelocityAbsorbtionFraction = 0.5
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Scale = 0.8
+        StopsProjectiles = false
+        StopsUnits = false
+      }
+    }
+
+    {
+      Name = "BaseBoonDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "InfernalContractIdle"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "LastStandDrop"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "RandomLoot"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "BoostedRandomLoot"
+      InheritFrom = "RandomLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "GiftDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "GiftDropPickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GiftDrop"
+      }
+    }
+
+    {
+      Name = "HarvestBoonDrop"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+	{
+      Name = "GiftDropRunProgress"
+      InheritFrom = "GiftDrop"
+      Life = {
+        DeathFx = "GiftDropPickupUpgraded"
+      }
+	  Thing =
+      {
+		Graphic = "GiftDropRunProgress"
+	  },
+	}
+
+    {
+      Name = "SuperGiftDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "GiftDropPickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SuperGiftDrop"
+        AmbientSound = "/SFX/Object Ambiences/SuperAmbrosiaAmbience"
+      }
+    }
+
+    {
+      Name = "LockKeyDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "LockKeyPickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LockKeyDropContainer"
+      }
+    }
+	{
+      Name = "StoreRewardLockKeyDrop"
+      InheritFrom = "LockKeyDrop"
+	}
+
+	{
+      Name = "LockKeyDropRunProgress"
+      InheritFrom = "LockKeyDrop"
+      Life =
+      {
+        DeathFx = "LockKeyPickupUpgraded"
+      }
+
+      Thing =
+      {
+        Graphic = "LockKeyDropRunProgressContainer"
+      },
+	}
+
+    {
+      Name = "RoomRewardMetaPointDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+	    VelocityAbsorbtionFraction = 0.5
+      Life =
+      {
+        DeathFx = "MetaPointPickup"
+      }
+      Thing =
+      {
+        AttachedAnim = "LootShadowMetapoint"
+        EditorOutlineDrawBounds = false
+        Graphic = "MetaPointObjectFx"
+        AmbientSound = "/SFX/DarknessObjectAmbienceLoop"
+      }
+    }
+
+    {
+      Name = "MetaPointSmall"
+      InheritFrom = "RoomRewardMetaPointDrop"
+      MagnetismSpeedMax = 600.0
+      MagnetismSpeedMin = 600.0
+      MagnetismWhileBlocked = 9999.0
+      MaxMagnetismZ = 132.0
+      Thing =
+      {
+        Scale = 0.75
+        AmbientSound = "/Blank"
+        Interact =
+        {
+          AutoActivate = true
+          Distance = 600.0
+          DestroyOnUse = true
+        }
+      }
+    }
+
+
+	{
+      Name = "RoomRewardMetaPointDropRunProgress"
+      InheritFrom = "RoomRewardMetaPointDrop"
+      Life =
+      {
+        DeathFx = "MetaPointPickupUpgraded"
+      }
+	  Thing =
+      {
+		Graphic = "MetaPointRunProgressObjectFx"
+	  },
+	}
+
+	{
+      Name = "StoreRewardMetaPointDrop"
+      InheritFrom = "RoomRewardMetaPointDrop"
+	}
+
+    {
+      Name = "GemDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "LockKeyPickup"
+      }
+      Thing =
+      {
+        AttachedAnim = "LootShadowMetapoint"
+        EditorOutlineDrawBounds = false
+        Graphic = "GemPointObjectFx"
+        AmbientSound = "/SFX/Object Ambiences/MoneyChimeLoop"
+      }
+    }
+	{
+      Name = "StoreRewardGemDrop"
+      InheritFrom = "GemDrop"
+	}
+
+
+	{
+      Name = "GemDropRunProgress"
+      InheritFrom = "GemDrop"
+      Life =
+      {
+        DeathFx = "LockKeyPickupUpgraded"
+      }
+	  Thing =
+      {
+		Graphic = "GemPointRunProgressObjectFx"
+	  },
+	}
+
+    {
+      Name = "SuperGemDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "LockKeyPickup"
+      }
+      Thing =
+      {
+        AttachedAnim = "LootShadowMetapoint"
+        EditorOutlineDrawBounds = false
+        Graphic = "SuperGemPointObjectFx"
+        AmbientSound = "/SFX/Object Ambiences/SuperGemAmbience"
+      }
+    }
+    {
+      Name = "BlindBoxLoot"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "LootShadowMetapoint"
+        EditorOutlineDrawBounds = false
+        Graphic = "BlindBoxLoot"
+        AmbientSound = "/SFX/Object Ambiences/BlindBoxLootAmbience"
+      }
+    }
+
+    {
+      Name = "SuperLockKeyDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "LockKeyPickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BloodDrop"
+        AmbientSound = "/SFX/Object Ambiences/TitanBloodAmbience"
+      }
+    }
+
+    {
+      Name = "RoomRewardMoneyDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "RoomRewardMoneyDropCoinPickup"
+      }
+      Thing =
+      {
+        AttachedAnim = "LootShadowCoin"
+        EditorOutlineDrawBounds = false
+        Graphic = "RoomRewardMoneyDropCoin"
+        AmbientSound = "/SFX/Object Ambiences/MoneyChimeLoop"
+      }
+    }
+
+    {
+      Name = "RoomRewardHealDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "HealthSparkleBurst"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthDropMajor"
+      }
+    }
+
+    {
+      Name = "RoomRewardConsolationPrize"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "ConsolationPrizeBurst"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ConsolationPrize"
+      }
+    }
+
+	{
+      Name = "StoreRewardConsolationDrop"
+      InheritFrom = "RoomRewardConsolationPrize"
+	}
+
+    {
+      Name = "RoomRewardMaxHealthDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "RoomRewardMaxHealthDropPickupFx"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RoomRewardMaxHealthDrop"
+        TouchdownSound = "/SFX/BloodstoneAmmoDrop"
+      }
+    }
+
+    {
+      Name = "CharonStoreDiscount"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "RoomRewardMoneyDropCoinPickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CharonStoreDiscount"
+        AttachedAnim = "LootShadowSmall"
+        TouchdownSound = "/SFX/BloodstoneAmmoDrop"
+      }
+    }
+
+    {
+      Name = "CerberusKey"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "CerberusKeyPickup"
+      }
+      Thing =
+      {
+        AttachedAnim = "LootShadowCerberusKey"
+        EditorOutlineDrawBounds = false
+        Graphic = "CerberusKey"
+      }
+    }
+
+    {
+      Name = "StackUpgrade"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StackUpgrade"
+        Grip = 999999.0
+      }
+    }
+
+    {
+      Name = "StackUpgradeDrop"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StackUpgrade"
+        Grip = 999999.0
+      }
+    }
+
+	{
+	  Name = "StoreRewardRandomStack"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "PomSlicePickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "StoreRewardRandomStack"
+        Grip = 999999.0
+		Scale = 0.8
+      }
+	}
+
+	{
+	  Name = "ChaosWeaponUpgrade"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Life =
+      {
+        DeathFx = "ChaosWeaponUpgradePickup"
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ChaosWeaponUpgrade"
+        Grip = 999999.0
+		Scale = 0.8
+      }
+	}
+
+    {
+      Name = "StackUpgradeDropRare"
+      InheritFrom = "StackUpgradeDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "WeaponUpgrade"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponUpgrade"
+        Grip = 999999.0
+      }
+    }
+
+    {
+      Name = "WeaponUpgradeDrop"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponUpgrade"
+        Grip = 999999.0
+      }
+    }
+
+    {
+      Name = "ForbiddenShopItem"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        AttachedAnim = "LootShadowCoin"
+        Graphic = "ForbiddenShopItem"
+        Grip = 999999.0
+        Hue = -0.12
+		Interact =
+		{
+			AutoActivate = false
+			DestroyOnUse = true
+		}
+      }
+    }
+
+    {
+      Name = "HermesUpgradeDrop"
+      InheritFrom = "BaseBoonDrop"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonDropHermes"
+        Grip = 999999.0
+      }
+    }
+
+    {
+      Name = "MoneyDrop"
+      InheritFrom = "Money"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "FallbackMoneyDrop"
+      InheritFrom = "Money"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "MetaDropRange"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MetaPointIcon"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "RandomMinorLootDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "DionysusGiftDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "LastStandHealDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "HealingPotencyDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "LastStandDurationDrop"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "null"
+        Interact =
+        {
+          AutoActivate = true
+          DestroyOnUse = true
+        }
+      }
+    }
+
+    {
+      Name = "MinorMoneyDrop"
+      InheritFrom = "RoomRewardMoneyDrop"
+      DisplayInEditor = false
+	  VelocityAbsorbtionFraction = 0.5
+      Thing =
+      {
+        AttachedAnim = "LootShadowCoin"
+        EditorOutlineDrawBounds = false
+        Graphic = "RoomRewardMoneyDropCoin_NoFlare"
+        AmbientSound = "/SFX/Object Ambiences/MoneyChimeLoop"
+      }
+    }
+
+    {
+      Name = "AmmoPack"
+      InheritFrom = "BaseLoot"
+      DisplayInEditor = true
+      Magnetism = 250.0
+      MagnetismSpeedMax = 1000.0
+      MagnetismSpeedMin = 350.0
+      MagnetismWhileBlocked = 0.0
+      RequiresUsable = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AmmoPack"
+        OffsetZ = 60.0
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 100.0
+        TouchdownSound = "/SFX/BloodstoneAmmoDrop"
+        UseBoundsForSortDrawArea = true
+        Interact =
+        {
+          AutoActivate = true
+          AutoUseFailedAnimation = "ConsumableCannotUse"
+          Cooldown = 0.5
+          Distance = 50.0
+          StartsCoolingDown = true
+          UseableWhileInputDisabled = true
+        }
+      }
+    }
+
+    {
+      Name = "SpearReturnPoint"
+      DisplayInEditor = true
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SpearReturnPoint"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 227.0
+        UseBoundsForSortDrawArea = true
+        Interact =
+        {
+          AutoActivate = true
+          Distance = 100.0
+          UserFireWeapon = "SpearWeaponThrowInvisibleReturn"
+          VisualFx = "SpearManualPickupFx"
+        }
+        Points = [
+          { X = 0 Y = 10 }
+          { X = 10 Y = 5 }
+          { X = 0 Y = 0 }
+          { X = -10 Y = 5 }
+        ]
+      }
+    }
+
+    {
+      Name = "SpearReturnPointAlt01"
+      InheritFrom = "SpearReturnPoint"
+      Thing =
+      {
+        Graphic = "SpearReturnPointAlt01"
+        Interact =
+        {
+          UserFireWeapon = "SpearWeaponThrowInvisibleReturn"
+        }
+      }
+    }
+
+    {
+      Name = "SpearReturnPointAlt02"
+      InheritFrom = "SpearReturnPoint"
+      Thing =
+      {
+        Graphic = "SpearReturnPointAlt02"
+      }
+    }
+    {
+      Name = "SpearReturnPointAlt03"
+      InheritFrom = "SpearReturnPoint"
+      Thing =
+      {
+        Graphic = "SpearReturnPointAlt03"
+        Interact =
+        {
+          UserFireWeapon = "SpearWeaponThrowInvisibleReturn"
+        }
+      }
+    }
+
+    {
+      Name = "TheseusSpearReturnPoint"
+      DisplayInEditor = true
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TheseusSpearReturnPoint"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 227.0
+        Points = [
+          { X = 0 Y = 10 }
+          { X = 10 Y = 5 }
+          { X = 0 Y = 0 }
+          { X = -10 Y = 5 }
+        ]
+      }
+    }
+
+    {
+      Name = "HadesBidentReturnPoint"
+      DisplayInEditor = true
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HadesBidentReturnPoint"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 227.0
+        Points = [
+          { X = 0 Y = 10 }
+          { X = 10 Y = 5 }
+          { X = 0 Y = 0 }
+          { X = -10 Y = 5 }
+        ]
+      }
+    }
+
+    {
+      Name = "GunReloadIndicator"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GunReloadIndicator"
+        Scale = 0.5
+      }
+    }
+
+    {
+      Name = "GunReloadIndicatorFast"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PortraitRespawnFillGunFast"
+        Scale = 0.5
+      }
+    }
+
+    {
+      Name = "GunReloadIndicatorSlow"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PortraitRespawnFillGunSlow"
+        Scale = 0.5
+      }
+    }
+
+    {
+      Name = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemySpearIdleContainer"
+        StopsProjectiles = false
+        StopsUnits = false
+        Tallness = 60.0
+        Points = [
+          { X = 0 Y = 14 }
+          { X = 32 Y = -2 }
+          { X = 1 Y = -18 }
+          { X = -32 Y = -2 }
+        ]
+      }
+    }
+
+    {
+      Name = "EnemyJavelin"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SpearReturnPoint"
+        Tallness = 120.0
+      }
+    }
+
+    {
+      Name = "EnemySpear"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "EnemyShadeWeaponShadow"
+        EditorOutlineDrawBounds = false
+        Tallness = 100.0
+      }
+    }
+
+    {
+      Name = "EnemyShield"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "EnemyShadeWeaponShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyShieldIdleContainer"
+      }
+    }
+
+    {
+      Name = "EnemyBow"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "EnemyShadeWeaponShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyBowIdleContainer"
+      }
+    }
+
+    {
+      Name = "EnemyMagicGauntlets"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "EnemyShadeWeaponShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyBowIdleContainer"
+        Hue = 0.5
+      }
+    }
+
+    {
+      Name = "EnemySword"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        AttachedAnim = "EnemyShadeWeaponShadow"
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemySwordIdleContainer"
+      }
+    }
+
+    {
+      Name = "EnemyDagger"
+      InheritFrom = "EnemyShadeWeapon"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyDaggerIdle"
+      }
+    }
+
+    {
+      Name = "BaseMetaUpgrade"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Tallness = 120.0
+      }
+    }
+
+    {
+      Name = "HealthMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeHealth"
+      }
+    }
+
+    {
+      Name = "WeaponDamageMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeDamage"
+      }
+    }
+
+    {
+      Name = "MagicDamageMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeMagicDamage"
+      }
+    }
+
+    {
+      Name = "AmmoMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeAmmo"
+      }
+    }
+
+    {
+      Name = "DashMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeDash"
+      }
+    }
+
+    {
+      Name = "StaminaMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeStamina"
+      }
+    }
+
+    {
+      Name = "SpeedMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeSpeed"
+      }
+    }
+
+    {
+      Name = "LimitMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeSuper"
+      }
+    }
+
+    {
+      Name = "BackstabMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeCunning"
+      }
+    }
+
+    {
+      Name = "MythPointMetaUpgrade"
+      InheritFrom = "BaseMetaUpgrade"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "UpgradeMythPoint"
+      }
+    }
+
+    {
+      Name = "WeaponKit01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        ActivateGraphic = "WeaponBowFloatingIdle"
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponBowFloatingIdleOff"
+        Scale = 7.0
+        Tallness = 260.0
+        Interact =
+        {
+          Distance = 170.0
+        }
+        Offset = { X = 0 Y = -16 }
+        Points = [
+          { X = 10 Y = 18 }
+          { X = 81 Y = -13 }
+          { X = 7 Y = -50 }
+          { X = -55 Y = -16 }
+        ]
+      }
+    }
+
+    {
+      Name = "ChallengeSwitchBase"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        Ambient = 0.0
+        DrawEmbeddedBehind = true
+        DrawVfxOnTop = true
+        EditorOutlineDrawBounds = false
+        Graphic = "ChallengeSwitchBase"
+        Tallness = 100.0
+        UseBoundsForSortDrawArea = true
+        StopsProjectiles = false
+        Interact =
+        {
+          Distance = 250.0
+          OffsetX = -30.0
+          OffsetY = -30.0
+          StartsUseable = false
+        }
+        Offset = { X = 0 Y = -69 }
+        Points = [
+          { X = -4 Y = -49 }
+          { X = -104 Y = 1 }
+          { X = 20 Y = 63 }
+          { X = 120 Y = 13 }
+          { X = -4 Y = -49 }
+        ]
+      }
+    }
+
+    {
+      Name = "FishingPoint"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "FishingPoint"
+        MeshType = "Vertical"
+        Scale = 1.0
+        Color = { Red = 1.0 Green = 0.0 Blue = 1.0 }
+        Interact =
+        {
+          Distance = 300.0
+        }
+      }
+    }
+
+    {
+      Name = "BiomeMap"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\House\House_Desk_01"
+        Scale = 0.25
+        Tallness = 70.0
+        Interact =
+        {
+          Distance = 350.0
+          OffsetX = 50.0
+          OffsetY = -175.0
+        }
+        Offset = { X = 0 Y = -154 }
+        Points = [
+          { X = 116 Y = 339 }
+          { X = 458 Y = 156 }
+          { X = -64 Y = -118 }
+          { X = -432 Y = 68 }
+        ]
+      }
+    }
+  ]
+}

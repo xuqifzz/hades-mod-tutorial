@@ -1,0 +1,70 @@
+{
+  Animations = [
+
+    /* Deprecated */
+    
+    {
+      Name = "PowerUp01"
+      ChildAnimation = "PowerUpParticleSpawner"
+      FilePath = "Fx\StarPulse\StarPulse"
+      Type = "Book"
+      EndFrame = 80
+      Loop = true
+      NumFrames = 80
+      PlaySpeed = 30.0
+      ReRandomizeOnLoop = false
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      RandomFlipVertical = true
+      RandomRotation = true
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "DarkPowerUp01"
+      InheritFrom = "PowerUp01"
+      VisualFx = "AntiLootClouds"
+      EndFrame = 80
+      StartFrame = 1
+      VisualFxIntervalMax = 0.3
+      VisualFxIntervalMin = 0.2
+    }
+    
+    {
+      Name = "PowerUp01Trail"
+      FilePath = "Fx\StarPulseB\StarPulseB"
+      GroupName = "Art_Standing01"
+      Type = "Book"
+      AngleMax = 360.00
+      EndRed = 0.2
+      StartRed = 1.0
+      EndFrame = 60
+      NumFrames = 60
+      RandomDurationMax = 2.0
+      RandomDurationMin = 1.0
+      StartFrame = 1
+      RandomOffsetX = 4.0
+      RandomOffsetY = 4.0
+      Acceleration = -300.0
+      Gravity = -100.0
+      VelocityMax = 200.0
+      VelocityMin = 80.0
+      EndScale = 0.0
+      ScaleMax = 2.0
+      ScaleMin = 0.5
+      Material = "Unlit"
+    }
+    
+    {
+      Name = "PowerUpParticleSpawner"
+      FilePath = "Dev\blank_invisible"
+      Type = "Constant"
+      VisualFx = "PowerUp01Trail"
+      EndFrame = 1
+      NumFrames = 1
+      StartFrame = 1
+      VisualFxIntervalMax = 0.2
+      VisualFxIntervalMin = 0.1
+    }
+  ]
+}

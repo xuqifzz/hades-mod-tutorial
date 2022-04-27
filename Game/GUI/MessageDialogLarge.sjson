@@ -1,0 +1,141 @@
+{
+  MessageDialogLarge =
+  {
+    Platform = "default"
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.15
+    OpenSound = "/SFX/Menu Sounds/HadesLocationTextAppear"
+    CloseSound = "null"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    ForceShowCursor = true
+    GamepadCursorControl = true
+
+   Back =
+   {
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Width = 1920
+      Height = 1080
+      Alpha = 0.8
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "null"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 185
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCBold"
+      AlwaysUpperCase = false
+      FontSize = 40
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0.104
+      TextOutlineGreen = 0.1
+      TextOutlineBlue = 0.092
+      ShadowRed = 0.054
+      ShadowGreen = 0.05
+      ShadowBlue = 0.042
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      ShadowOffsetY = 4
+      OutlineThickness = 4
+    }
+
+    MessageText =
+	{
+      X = 610
+      Y = 250
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Font = "AlegreyaSansRegular"
+      FontSize = 20
+      AlwaysUpperCase = false
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.0
+      ShadowGreen = 0.0
+      ShadowBlue = 0.0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      TextSymbolScale = 0.8
+      Width = 720
+      Height = 580
+      LineSpacingBottom = 3
+      VariableAutoFormat = "NameFormat"
+      HighlightFormat = "NameHighlightFormat"
+      FlashMin = 0.0
+      FlashMax = 0.8
+      FlashSpeed = 3.0
+      FlashRed = 1.0
+      FlashGreen = 0.4
+      FlashBlue = 0.1
+    }
+
+    TextBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "GUI\\Shell\\Box_HalfScreen"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    ConfirmButton =
+	{
+      Graphic = "Button_Default"
+      UnderCursorOnAnimation = "Button_HighlightOn"
+      UnderCursorOffAnimation = "Button_HighlightOff"
+      PressAnimation = "Button_Press"
+      HelpTextId = "SaveWarning_Confirm"
+      X = 960
+      Y = 900
+      TextOffsetY = 0
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextScale = 0.7
+      TextJustification = "Center"
+      AlwaysUpperCase = false
+      Font = "AlegreyaSansSCBold"
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      FontSize = 36
+      UseTooltipHeader = false
+      PressSound = "/SFX/Menu Sounds/GodBoonInteract"
+    }
+
+    XButton =
+	{
+      Scale = 0.0
+    }
+
+    YButton =
+	{
+      Scale = 0.0
+    }
+
+  }
+}

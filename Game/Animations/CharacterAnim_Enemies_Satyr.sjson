@@ -1,0 +1,996 @@
+{
+  Animations = [
+
+    /* Satyr */
+    
+    {
+      Name = "SatyrIdle"
+      FilePath = "Animations\Satyr\SatyrIdle\SatyrIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrIdle_Bink"
+      EndFrame = 32
+      Loop = true
+      NumAngles = 64
+      NumFrames = 32
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      ActiveVisualFxCap = 15
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+     {
+      Name = "SatyrMove"
+      FilePath = "Animations\Satyr\SatyrMove\SatyrMove"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMove_Bink"
+      Sound = "null"
+      EndFrame = 32
+      Loop = true
+      NumAngles = 32
+      NumFrames = 32
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 2 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 2 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 17 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 18 }
+      ]      
+    }
+    
+    {
+      Name = "SatyrMoveStop"
+      FilePath = "Animations\Satyr\SatyrMoveStop\SatyrMoveStop"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMoveStop_Bink"
+      CancelOnOwnerMove = true
+      Sound = "null"
+      EndFrame = 12
+      StartFrame = 1
+      NumFrames = 12
+      NumAngles = 32
+      PlaySpeed = 30.0
+      OffsetY = -70.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "SatyrEntranceDrop"
+      FilePath = "Animations\Satyr\SatyrRangedAttack\SatyrRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrRangedAttack_Bink"
+      Duration = 0.2
+      Sound = "null"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      StartOffsetZ = 400.0
+      EndOffsetZ = 0.0
+      SetOwnerEndAngle = true
+      EaseIn = 0
+      EaseOut = 0.2
+      StartRed = 0
+      StartGreen = 0
+      StartBlue = 0
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      CreateAnimationOnEnd = "DustPuffA"
+      ChildAnimation = "StyxEnemyEntranceStreak"
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrLand" }/*Start*/
+        { DurationFrames = 8 }
+        { DurationFrames = 2 }
+        
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*End*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrOnHit"
+      FilePath = "Animations\Satyr\SatyrOnHit\SatyrOnHit"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrOnHit_Bink"
+      Sound = "null"
+      StopSoundOnFinishFade = 0.5
+      EndFrame = 19
+      Loop = false
+      NumAngles = 32
+      NumFrames = 19
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      AllowRestart = true
+      ActiveVisualFxCap = 15
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    /*_______RangedAttack_______*/
+     {
+      Name = "SatyrRangedAttack_Start"
+      FilePath = "Animations\Satyr\SatyrRangedAttack\SatyrRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrRangedAttack_ChargeLoop"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/EmoteCharging" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrRangedAttack_ChargeLoop"
+      FilePath = "Animations\Satyr\SatyrRangedAttack\SatyrRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrRangedAttack_Fire"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      Loop = true
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrRangedAttack_Fire"
+      FilePath = "Animations\Satyr\SatyrRangedAttack\SatyrRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrRangedAttack_Bink"
+      Sound = "/SFX/AresBladeSlice"
+      
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }/*Fire*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrRangedAttack_ReturnToIdle"
+      FilePath = "Animations\Satyr\SatyrRangedAttack\SatyrRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrIdle"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopBegin*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*ReturnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }
+        
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+    
+     {
+      Name = "SatyrMinibossIdle"
+      FilePath = "Animations\Satyr\SatyrRedAltIdle\SatyrRedAltIdle"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMinibossIdle_Bink"
+      EndFrame = 32
+      Loop = true
+      NumAngles = 64
+      NumFrames = 32
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      ActiveVisualFxCap = 15
+      CancelOnOwnerMove = true
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+     {
+      Name = "SatyrMinibossMove"
+      FilePath = "Animations\Satyr\SatyrRedAltMove\SatyrRedAltMove"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMinibossMove_Bink"
+      Sound = "null"
+      EndFrame = 32
+      Loop = true
+      NumAngles = 32
+      NumFrames = 32
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+      Slides = [
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 2 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 2 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 17 }
+        { DurationFrames = 1 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" Frame = 18 }
+      ]      
+    }
+    
+    {
+      Name = "SatyrMinibossMoveStop"
+      FilePath = "Animations\Satyr\SatyrRedAltMoveStop\SatyrRedAltMoveStop"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMinibossMoveStop_Bink"
+      CancelOnOwnerMove = true
+      Sound = "null"
+      EndFrame = 12
+      StartFrame = 1
+      NumFrames = 12
+      NumAngles = 32
+      PlaySpeed = 30.0
+      OffsetY = -70.0
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+    
+    {
+      Name = "SatyrMinibossEntranceDrop"
+      FilePath = "Animations\Satyr\SatyrRedAltRangedAttack\SatyrRedAltRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrMinibossRangedAttack_Bink"
+      Duration = 0.2
+      Sound = "null"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      StartOffsetZ = 400.0
+      EndOffsetZ = 0.0
+      SetOwnerEndAngle = true
+      EaseIn = 0
+      EaseOut = 0.2
+      StartRed = 0
+      StartGreen = 0
+      StartBlue = 0
+      EndRed = 1
+      EndGreen = 1
+      EndBlue = 1
+      CreateAnimationOnEnd = "DustPuffA"
+      ChildAnimation = "StyxEnemyEntranceStreak"
+      OwnerHasNoCollision = true
+      OwnerImmobile = true
+      OwnerInvulnerable = true
+      OwnerUntargetable = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrLand" }/*Start*/
+        { DurationFrames = 8 }
+        { DurationFrames = 2 }
+        
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*End*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrMinibossOnHit"
+      FilePath = "Animations\Satyr\SatyrRedAltOnHit\SatyrRedAltOnHit"
+      Type = "Book"
+      VideoTexture = "Enemy_SatyrMinibossOnHit_Bink"
+      Sound = "null"
+      StopSoundOnFinishFade = 0.5
+      EndFrame = 19
+      Loop = false
+      NumAngles = 32
+      NumFrames = 19
+      PlaySpeed = 30.0
+      StartFrame = 1
+      OffsetY = -70.0
+      AllowRestart = true
+      ActiveVisualFxCap = 15
+      Material = 
+      {
+        Ambient = 0.5
+        Diffuse = 0.5
+      }
+    }
+
+    /*_______RangedAttack_______*/
+     {
+      Name = "SatyrMinibossRangedAttack_Start"
+      FilePath = "Animations\Satyr\SatyrRedAltRangedAttack\SatyrRedAltRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrMinibossRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrMinibossRangedAttack_ChargeLoop"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/EmoteCharging" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrMinibossRangedAttack_ChargeLoop"
+      FilePath = "Animations\Satyr\SatyrRedAltRangedAttack\SatyrRedAltRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrMinibossRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrMinibossRangedAttack_Fire"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      Loop = true
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 }/*ChargeLoopEnd*/
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrMinibossRangedAttack_Fire"
+      FilePath = "Animations\Satyr\SatyrRedAltRangedAttack\SatyrRedAltRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrMinibossRangedAttack_Bink"
+      Sound = "/SFX/AresBladeSlice"
+      
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopBegin*/
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }/*Fire*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 0 }/*ReturnToIdle*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 20*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Frame 40*/
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+
+    {
+      Name = "SatyrMinibossRangedAttack_ReturnToIdle"
+      FilePath = "Animations\Satyr\SatyrRedAltRangedAttack\SatyrRedAltRangedAttack"
+      Type = "Slide"
+      VideoTexture = "Enemy_SatyrMinibossRangedAttack_Bink"
+      Sound = "null"
+      ChainTo = "SatyrMinibossIdle"
+      EndFrame = 47
+      NumAngles = 64
+      NumFrames = 47
+      StartFrame = 1
+      OffsetY = -70.0
+      CancelOnOwnerMove = true
+      Slides = [
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*ChargeLoopBegin*/
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }/*Fire*/
+        { DurationFrames = 0 }
+        
+
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 0 }
+        { DurationFrames = 2 }/*ReturnToIdle*/
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 20*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }
+        
+
+        { DurationFrames = 2 Sound = "/SFX/Enemy Sounds/Satyr/SatyrHoofFootsteps" }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }/*Frame 40*/
+
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+        { DurationFrames = 2 }
+       
+       ]
+       Material = 
+      {
+        Ambient = 0.0
+        Diffuse = 0.0
+        Directionality = 0.0
+      }
+    }
+  ]
+}

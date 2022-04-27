@@ -1,0 +1,467 @@
+{
+  MainMenuScreen =
+  {
+    Platform = "default"
+    OpenSound = "null"
+    CloseSound = "null"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    UseSelectionSoundWithMouse = false
+    GamepadCursorControl = true
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.1
+    ShowControls = false
+    ForceShowCursor = true
+    FreeFormSelectInitialStepDistance = 48
+    FreeFormSelectStepDistance = 6
+    FreeFormSelectSuccessDistance = 8
+    FreeFormSelectSuccessDistanceStep = 0
+    FreeFormSelectGridLock = true
+    FreeFormSelectOneDimension = true
+    FreeFormSelectWrapping = true
+    FreeFormSelectMaxGridDistance = 1920
+
+    Back =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.85
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "MainMenuBG_Static"
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    Logo =
+	{
+      X = 960
+      Y = 540
+      Graphic = "MainMenuIn"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.77
+      FadeDelayMax = 0.77
+      FadeSpeed = 99.0
+    }
+
+    Character =
+	{
+      X = 526
+      Y = 252
+      Graphic = "MainMenuLogo"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 2.55
+      FadeDelayMax = 2.551
+      FadeSpeed = 99.0
+    }
+
+    UpdateTitleBacking =
+	{
+      X = 960
+      Y = 540
+      Graphic = "null"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 2.5
+      FadeDelayMax = 2.51
+      FadeSpeed = 1.0
+    }
+
+    FullScreenFade =
+	{
+      X = 960
+      Y = 540
+      Graphic = "RoomTransitionIn"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 0.0
+    }
+
+    PlayGameButton =
+	{
+      X = 120
+      Y = 520
+      Justification = "Left"
+      HelpTextId = "MainMenuScreen_PlayGame"
+      TextOffsetX = 0
+      Graphic = "null"
+      SelectedOnAnimation = "MainMenuSelector"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      Font = "Credits_AlegreyaSansSCExtraBold"
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      FontSize = 40
+      SelectedTextRed = 1
+      SelectedTextGreen = 0.75
+      SelectedTextBlue = 0.3
+      SelectedAnimationIsOverlay = true
+      HighlightOffsetX = -80
+      AlwaysUpperCase = false
+      TextJustification = "Left"
+      SelectedTextScale = 1.0
+      NonEnglishScaleModifier = 0.85
+      LangJaScaleModifier = 1.0
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowOffsetX = 0
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.0
+      FadeDelayMax = 1.1
+      FadeSpeed = 4.0
+    }
+
+    CloudSaveButton =
+  {
+      InheritFrom = "PlayGameButton"
+      AttachTo = "PlayGameButton"
+      OffsetY = -70
+      PressSound = "null"
+      HelpTextId = "MainMenuScreen_CloudSave_Alt"
+    }
+
+	/* Options */
+    SettingsButton =
+	{
+      InheritFrom = "PlayGameButton"
+      AttachTo = "PlayGameButton"
+      OffsetY = 90
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      HelpTextId = "MainMenuScreen_Settings"
+    }
+
+    AnnouncementButton =
+	{
+		Scale = 0
+    }
+
+    NewAnnouncementTag =
+	{
+      OffsetX = 45
+      Graphic = "NewPatchNotesTag"
+      Justification = "Left"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 2.5
+      FadeDelayMax = 2.6
+      FadeSpeed = 4.0
+	  Scale = 0
+    }
+
+    LastUpdateText =
+	{
+      AttachTo = "SettingsButton"
+      OffsetY = 110
+      HelpTextId = "LastUpdate"
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCMedium"
+      FontSize = 18
+      AlwaysUpperCase = false
+      AlwaysLowerCase = true
+      TextRed = 0.5
+      TextGreen = 0.5
+      TextBlue = 0.5
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 1
+      ShadowBlur = 2
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.5
+      FadeDelayMax = 1.6
+      FadeSpeed = 4.0
+    }
+
+    NextUpdateButton =
+	{
+      X = 1680
+      Y = 955
+      Graphic = "MainMenuNextUpdateBox"
+      HelpTextId = "MainMenuScreen_RoadmapLabel"
+      UnderCursorOnAnimation = "MainMenuNextUpdateBoxHighlightOn"
+      UnderCursorOffAnimation = "MainMenuNextUpdateBox"
+      PressAnimation = "MainMenuNextUpdateBoxPress"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.4
+      FadeDelayMax = 1.5
+      FadeSpeed = 99.0
+      FreeFormSearchFromOffsetY = -5
+      Font = "AlegreyaSansSCBold"
+      FontSize = 16
+      TextJustification = "Center"
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextAlpha = 0.0
+      TextOffsetY = 80
+      SelectedTextRed = 1
+      SelectedTextGreen = 1
+      SelectedTextBlue = 1
+      SelectedTextAlpha = 1.0
+      SelectedTextScale = 1.0
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+    }
+
+    NextUpdateText =
+	{
+      AttachTo = "NextUpdateButton"
+      OffsetY = 5
+      OffsetX = 4
+      HelpTextId = "NextUpdateCountdown"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 21
+      NonEnglishScaleModifier = 0.7
+      AlwaysUpperCase = false
+      TextRed = 0.812
+      TextGreen = 0.792
+      TextBlue = 0.29
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.5
+      FadeDelayMax = 1.6
+      FadeSpeed = 4.0
+      Width = 250
+      Height = 125
+    }
+
+    UpdateTitleText =
+	{
+      X = 440
+      Y = 410
+      HelpTextId = "MainMenuScreen_UpdateName"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Font = "SpectralSCLight"
+      FontSize = 28
+      AlwaysUpperCase = false
+      TextRed = 0
+      TextGreen = 0
+      TextBlue = 0
+      TextAlpha = 0
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 5
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 4
+      FadeDelayMax = 4.01
+      FadeSpeed = 0.5
+    }
+
+	Front =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Alpha = 0.9
+	  Width = 1920
+      Height = 1080
+	  FadeSpeed = 8.0
+    }
+
+	/* Quit */
+    ExitButton =
+	{
+      InheritFrom = "PlayGameButton"
+      AttachTo = "SettingsButton"
+      OffsetY = 100
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      HelpTextId = "MainMenuScreen_Quit"
+    }
+
+	/* Misc Buttons */
+    FeedbackButton =
+	{
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 400
+      Y = 950
+      Graphic = "GUI\\Shell\\MainMenu_Discord"
+      MouseGraphicHover = "GUI\\Shell\\MainMenu_Discord_Highlight"
+      HelpTextId = "MainMenuScreen_Feedback"
+      Font = "AlegreyaSansSCBold"
+      FontSize = 16
+      TextJustification = "Center"
+      TextRed = 1
+      TextGreen = 1
+      TextBlue = 1
+      TextAlpha = 0.0
+      TextOffsetY = 50
+      SelectedTextRed = 1
+      SelectedTextGreen = 1
+      SelectedTextBlue = 1
+      SelectedTextAlpha = 1.0
+      SelectedTextScale = 1.0
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      PressSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.5
+      FadeDelayMax = 1.6
+      FadeSpeed = 4.0
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      Scale = 0.5
+    }
+
+    MailingListButton =
+	{
+      InheritFrom = "FeedbackButton"
+      AttachTo = "FeedbackButton"
+      OffsetX = 128
+      OffsetY = 0
+      Graphic = "GUI\\Shell\\MainMenu_MailingList"
+      MouseGraphicHover = "GUI\\Shell\\MainMenu_MailingList_Highlight"
+      HelpTextId = "MainMenuScreen_MailingList"
+    }
+
+    SoundtrackButton =
+	{
+      InheritFrom = "FeedbackButton"
+      AttachTo = "MailingListButton"
+      OffsetX = 128
+      OffsetY = 0
+      Graphic = "GUI\\Shell\\MainMenu_Soundtrack"
+      MouseGraphicHover = "GUI\\Shell\\MainMenu_Soundtrack_Highlight"
+      HelpTextId = "MainMenuScreen_Soundtrack"
+    }
+
+    StoreButton =
+	{
+      InheritFrom = "FeedbackButton"
+      AttachTo = "SoundtrackButton"
+      OffsetX = 128
+      OffsetY = 0
+      Graphic = "GUI\\Shell\\MainMenu_Shop"
+      MouseGraphicHover = "GUI\\Shell\\MainMenu_Shop_Highlight"
+      HelpTextId = "MainMenuScreen_Store"
+    }
+
+    WebsiteButton =
+	{
+      InheritFrom = "FeedbackButton"
+      AttachTo = "FeedbackButton"
+      OffsetX = -180
+      OffsetY = 0
+      Graphic = "GUI\\Shell\\MainMenu_Supergiant"
+      MouseGraphicHover = "GUI\\Shell\\MainMenu_Supergiant_Highlight"
+      HelpTextId = "MainMenuScreen_Website"
+      FreeFormSearchFromOffsetX = -50
+    }
+
+    ControllerWarningText =
+	{
+      AttachTo = "WebsiteButton"
+      OffsetY = 85
+      OffsetX = -100
+      HelpTextId = "ControllerWarning"
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansRegular"
+      FontSize = 21
+      NonEnglishScaleModifier = 0.7
+      AlwaysUpperCase = false
+      TextRed = 0.094
+      TextGreen = 0.757
+      TextBlue = 0.337
+      TextAlpha = 1.0
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 0
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 1.5
+      FadeDelayMax = 1.6
+      FadeSpeed = 4.0
+    }
+
+	GraphicsDriverWarningText =
+	{
+      InheritFrom = "ControllerWarningText"
+	  AttachTo = "ExitButton"
+      OffsetY = 70
+      OffsetX = 0
+	  HelpTextId = "GraphicsDriverWarning"
+	  TextRed = 1.0
+      TextGreen = 0.957
+      TextBlue = 0.337
+	  OutlineThickness = 1
+	}
+  }
+}

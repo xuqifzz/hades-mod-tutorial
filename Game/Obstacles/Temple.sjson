@@ -1,0 +1,388 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "WallSegment"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WallSegmentIdle"
+        Grip = 99999.0
+        Points = [
+          { X = 0 Y = 52 }
+          { X = 100 Y = 0 }
+          { X = 0 Y = -52 }
+          { X = -100 Y = 0 }
+        ]
+      }
+    }
+    
+    {
+      Name = "CharonTogglePillar"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      AllowStoppingImpacts = false
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "PillarHitFx"
+      }
+      Thing = 
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Travel\Travel_CharonPillar_01"
+        Hue = 1.0
+        OcclusionOpacity = 0.25
+        Tallness = 2546.0
+        Offset = { X = 0 Y = -993 }
+        Points = [
+          { X = 160 Y = 220 }
+          { X = 480 Y = 60 }
+          { X = 480 Y = -100 }
+          { X = 160 Y = -260 }
+          { X = -160 Y = -260 }
+          { X = -480 Y = -100 }
+          { X = -480 Y = 60 }
+          { X = -160 Y = 220 }
+        ]
+        Using = [
+          { Name = "CharonTogglePillarToggleOn" }
+          { Name = "CharonTogglePillarToggleOff" }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleCubeMarble01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Cube_Marble_01"
+        Offset = { X = 0 Y = -320 }
+        Points = [
+          { X = 526 Y = -14 }
+          { X = -6 Y = -263 }
+          { X = -520 Y = -11 }
+          { X = -21 Y = 241 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TemplePillarBase01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Pillar_Base_01"
+        Offset = { X = 0 Y = -320 }
+        Points = [
+
+          { X = 808 Y = -82 }
+          { X = 616 Y = -257 }
+          { X = 341 Y = -320 }
+          { X = -54 Y = -370 }
+          { X = -558 Y = -290 }
+          { X = -800 Y = -90 }
+          { X = -808 Y = 142 }
+          { X = -604 Y = 363 }
+          { X = -295 Y = 475 }
+          { X = 329 Y = 467 }
+
+          { X = 654 Y = 317 }
+          { X = 816 Y = 150 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TemplePillarSection01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Pillar_Section_01"
+        Offset = { X = 0 Y = -320 }
+        Points = [
+          { X = 601 Y = -168 }
+          { X = 276 Y = -333 }
+          { X = -56 Y = -349 }
+          { X = -391 Y = -304 }
+          { X = -631 Y = -152 }
+          { X = -619 Y = 12 }
+          { X = -255 Y = 189 }
+          { X = 144 Y = 211 }
+          { X = 475 Y = 121 }
+          { X = 601 Y = -1 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TemplePillar02"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Pillar_02"
+        Offset = { X = 0 Y = -307 }
+        Points = [
+          { X = 184 Y = -224 }
+          { X = -119 Y = -234 }
+          { X = -434 Y = -71 }
+          { X = -442 Y = 230 }
+          { X = -170 Y = 295 }
+          { X = 318 Y = 295 }
+          { X = 422 Y = 210 }
+          { X = 413 Y = -20 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleDoor01A"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Door_01A"
+        Offset = { X = 0 Y = -1103 }
+        Points = [
+          { X = -478 Y = -349 }
+          { X = -669 Y = -260 }
+          { X = 573 Y = 409 }
+          { X = 747 Y = 307 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleDoor01B"
+      InheritFrom = "TempleDoor01A"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Door_01B"
+      }
+    }
+    
+    {
+      Name = "TempleUrn01"
+      InheritFrom = "TempleDoor01A"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Urn_01"
+        Tallness = 595.0
+        Offset = { X = 0 Y = -255 }
+        Points = [
+          { X = 106 Y = -23 }
+          { X = 1 Y = -51 }
+          { X = -103 Y = -26 }
+          { X = -124 Y = 26 }
+          { X = -13 Y = 79 }
+          { X = 89 Y = 42 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleSpawnTile01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_SpawnTile_01"
+        MeshType = "Vertical"
+        Offset = { X = 0 Y = -14 }
+        Points = [
+          { X = 501 Y = -191 }
+          { X = 37 Y = -301 }
+          { X = -436 Y = -209 }
+          { X = -572 Y = 47 }
+          { X = -265 Y = 243 }
+          { X = 227 Y = 257 }
+          { X = 554 Y = 76 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleTrapTile01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_TrapTile_01"
+        MeshType = "Vertical"
+        Offset = { X = 0 Y = -14 }
+        Points = [
+          { X = 463 Y = -295 }
+          { X = -9 Y = -391 }
+          { X = -442 Y = -282 }
+          { X = -628 Y = -56 }
+          { X = -445 Y = 192 }
+          { X = -3 Y = 280 }
+          { X = 445 Y = 192 }
+          { X = 626 Y = -33 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleStairs01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ExplosionFastSmall"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Stairs_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -59 }
+        Points = [
+          { X = 695 Y = 825 }
+          { X = 1371 Y = 431 }
+          { X = -637 Y = -590 }
+          { X = -1381 Y = -237 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TemplePedastal01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Pedastal_01"
+        Offset = { X = 0 Y = -165 }
+        Points = [
+          { X = 219 Y = -72 }
+          { X = -207 Y = -82 }
+          { X = -204 Y = 128 }
+          { X = 232 Y = 133 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ExplosionFastSmall"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_TerrainBrick_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -32 }
+      }
+    }
+    
+    {
+      Name = "TempleWallBrick01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ExplosionFastSmall"
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_WallBrick_01"
+        Grip = 3.402823E+38
+        Offset = { X = 0 Y = -566 }
+        Points = [
+          { X = 499 Y = -187 }
+          { X = 313 Y = -282 }
+          { X = -521 Y = 161 }
+          { X = -339 Y = 252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "WallSegmentNarrow01"
+      InheritFrom = "WallSegment"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WallSegmentNarrow01Idle"
+        Offset = { X = 0 Y = -566 }
+        Points = [
+          { X = 512 Y = -213 }
+          { X = 303 Y = -291 }
+          { X = -544 Y = 171 }
+          { X = -319 Y = 252 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleStairs02"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "ExplosionFastSmall"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_Stairs_02"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -59 }
+        Points = [
+          { X = 274 Y = 349 }
+          { X = 742 Y = 95 }
+          { X = -283 Y = -434 }
+          { X = -743 Y = -196 }
+        ]
+      }
+    }
+    
+    {
+      Name = "TempleTrapTile01B"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Temple\Temple_TrapTile_01B"
+        MeshType = "Vertical"
+        Offset = { X = 0 Y = 61 }
+      }
+    }
+  ]
+}

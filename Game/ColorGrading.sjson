@@ -1,0 +1,238 @@
+{
+  ColorGradings = [
+    {
+      Name = "Alert"
+      FilePath = "ColorGrading\Alert"
+    }
+    {
+      Name = "Test"
+      FilePath = "ColorGrading\Test"
+    }
+    {
+      Name = "Sepia"
+      FilePath = "ColorGrading\Sepia"
+    }
+    {
+      Name = "Dusk"
+      FilePath = "ColorGrading\Dusk"
+    }
+    {
+      Name = "DuskA"
+      FilePath = "ColorGrading\DuskA"
+    }
+    {
+      Name = "LateAfternoon"
+      FilePath = "ColorGrading\LateAfternoon"
+    }
+    {
+      Name = "MeteorStrike"
+      FilePath = "ColorGrading\MeteorStrike"
+    }
+    {
+      Name = "NightBlue"
+      FilePath = "ColorGrading\NightBlue"
+    }
+    {
+      Name = "NightDark"
+      FilePath = "ColorGrading\NightDark"
+    }
+    {
+      Name = "NightMoon"
+      FilePath = "ColorGrading\NightMoon"
+    }
+    {
+      Name = "Night50"
+      FilePath = "ColorGrading\Night50"
+    }
+    {
+      Name = "Scoring"
+      FilePath = "ColorGrading\Scoring"
+    }
+    {
+      Name = "Sunrise"
+      FilePath = "ColorGrading\Sunrise"
+    }
+    {
+      Name = "Rain"
+      FilePath = "ColorGrading\Rain"
+    }
+    {
+      Name = "Banished"
+      FilePath = "ColorGrading\Banished"
+    }
+    {
+      Name = "Desaturated"
+      FilePath = "ColorGrading\Desaturated"
+    }
+    {
+      Name = "DesaturatedContrast"
+      FilePath = "ColorGrading\DesaturatedContrast"
+    }
+    {
+      Name = "Team01"
+      FilePath = "ColorGrading\TeamColorFlash01"
+    }
+    {
+      Name = "Team02"
+      FilePath = "ColorGrading\TeamColorFlash02"
+    }
+    {
+      Name = "Team03"
+      FilePath = "ColorGrading\TeamColorFlash03"
+    }
+    {
+      Name = "Team04"
+      FilePath = "ColorGrading\TeamColorFlash04"
+    }
+    {
+      Name = "Team05"
+      FilePath = "ColorGrading\TeamColorFlash05"
+    }
+    {
+      Name = "Team06"
+      FilePath = "ColorGrading\TeamColorFlash06"
+    }
+    {
+      Name = "Team07"
+      FilePath = "ColorGrading\TeamColorFlash07"
+    }
+    {
+      Name = "Team08"
+      FilePath = "ColorGrading\TeamColorFlash08"
+    }
+    {
+      Name = "Team09"
+      FilePath = "ColorGrading\TeamColorFlash09"
+    }
+    {
+      Name = "Team10"
+      FilePath = "ColorGrading\TeamColorFlash10"
+    }
+    {
+      Name = "Team11"
+      FilePath = "ColorGrading\TeamColorFlash11"
+    }
+    {
+      Name = "WeatherRain"
+      FilePath = "ColorGrading\WeatherRain"
+    }
+    {
+      Name = "WeatherLightningRain"
+      FilePath = "ColorGrading\WeatherLightningRain"
+    }
+    {
+      Name = "WeatherSnow"
+      FilePath = "ColorGrading\WeatherSnow"
+    }
+    {
+      Name = "WeatherCinders"
+      FilePath = "ColorGrading\WeatherCinders"
+    }
+    {
+      Name = "WeatherCinders2"
+      FilePath = "ColorGrading\WeatherCinders2"
+    }
+    {
+      Name = "WeatherSnowCinders"
+      FilePath = "ColorGrading\WeatherSnowCinders"
+    }
+    {
+      Name = "Ascension"
+      FilePath = "ColorGrading\Ascension"
+    }
+    {
+      Name = "Mythmaker"
+      FilePath = "ColorGrading\Mythmaker"
+    }
+    {
+      Name = "ZeusLightning"
+      FilePath = "ColorGrading\ZeusLightning"
+    }
+    {
+      Name = "SmokeTrap"
+      FilePath = "ColorGrading\SmokeTrap"
+    }
+    {
+      Name = "PerfectClear"
+      FilePath = "ColorGrading\PerfectClear"
+    }
+    {
+      Name = "Thanatos"
+      FilePath = "ColorGrading\Thanatos"
+    }
+    {
+      Name = "AlectoRage"
+      FilePath = "ColorGrading\AlectoRage"
+    }
+    {
+      Name = "Chaos"
+      FilePath = "ColorGrading\Chaos"
+    }
+    {
+      Name = "ChaosInversion"
+      FilePath = "ColorGrading\ChaosInversion"
+    }
+    {
+      Name = "TimeStop"
+      FilePath = "ColorGrading\TimeStop"
+    }
+    {
+      Name = "DeathDefiance"
+      FilePath = "ColorGrading\DeathDefiance"
+    }
+    {
+      Name = "DeathDefianceBright"
+      FilePath = "ColorGrading\DeathDefianceBright"
+    }
+    {
+      Name = "Poison"
+      FilePath = "ColorGrading\Poison"
+    }
+    {
+      Name = "HadesBloodstone"
+      FilePath = "ColorGrading\HadesBloodstone"
+    }
+    {
+      Name = "ItemGet"
+      FilePath = "ColorGrading\ItemGet"
+    }
+    {
+      Name = "DeathDefianceSubtle"
+      FilePath = "ColorGrading\DeathDefianceSubtle"
+    }
+    {
+      Name = "Frozen"
+      FilePath = "ColorGrading\Frozen"
+    }
+    {
+      Name = "WeaponKitInteract"
+      FilePath = "ColorGrading\WeaponKitInteract"
+    }
+    {
+      Name = "Devotion"
+      FilePath = "ColorGrading\Devotion"
+    }
+    {
+      Name = "BoonInteract"
+      FilePath = "ColorGrading\BoonInteract"
+    }
+    {
+      Name = "LegendaryProphecy"
+      FilePath = "ColorGrading\LegendaryProphecy"
+    }
+    {
+      Name = "CottageTrellis"
+      FilePath = "ColorGrading\CottageTrellis"
+    }
+    {
+      Name = "HadesSpawns"
+      FilePath = "ColorGrading\HadesSpawns"
+    }
+
+    /*Room Specific*/
+    {
+      Name = "RoomCombat08Cooler01"
+      FilePath = "ColorGrading\RoomCombat08Cooler01"
+    }
+  ]
+}

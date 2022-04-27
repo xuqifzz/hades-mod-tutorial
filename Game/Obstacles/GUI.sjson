@@ -1,0 +1,2727 @@
+{
+  Obstacles = [
+
+    {
+      Name = "DirectionHintArrow"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DirectionHintArrow"
+      }
+    }
+
+    {
+      Name = "CodexChapterArrow"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexChapterArrow"
+      }
+    }
+
+    {
+      Name = "CodexEntryArrow"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexEntryArrow"
+      }
+    }
+
+
+    {
+      Name = "CodexUnreadStar"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexUnreadStar"
+      }
+    }
+
+    {
+      Name = "CodexChapterScrollLeft"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexChapterScrollLeft"
+      }
+    }
+
+    {
+      Name = "CodexChapterScrollRight"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexChapterScrollRight"
+      }
+    }
+
+    {
+      Name = "CodexEntryScrollUp"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexEntryScrollUp"
+      }
+    }
+
+    {
+      Name = "CodexEntryScrollDown"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexEntryScrollDown"
+      }
+    }
+
+    {
+      Name = "CodexBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexBackgroundIn"
+      }
+    }
+
+    {
+      Name = "LevelUpBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpBackground"
+      }
+    }
+    {
+      Name = "ShrineMeterBarFill"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrineMeterBarFill"
+      }
+    }
+	{
+	  Name = "PactBiomeComplete"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "PactBiomeComplete"
+      }
+	}
+    {
+      Name = "ShrineMeterBar"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrineMeterBar"
+      }
+    }
+
+    {
+      Name = "MusicPlayerBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MusicPlayerBackground"
+      }
+    }
+
+    {
+      Name = "DialogueBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DialogueBackgroundIn"
+      }
+    }
+
+    {
+      Name = "DialogueSpeechBubble"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DialogueSpeechBubble"
+      }
+    }
+
+    {
+      Name = "NarrationBubble"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "NarrationBubble"
+      }
+    }
+
+    {
+      Name = "DialogueChoiceBubble"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "DialogueChoiceBubble"
+      }
+    }
+
+    {
+      Name = "Box_HalfScreen"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Shell\Box_HalfScreen"
+      }
+    }
+
+    {
+      Name = "BaseInteractableButton"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        ClearPoints = true
+        Interact =
+        {
+          CursorOnly = true
+          UseExtents = true
+        }
+      }
+    }
+
+	{
+	  Name = "GreaterRewardsThresholdIndicator"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GreaterRewardsThresholdIndicator"
+		Interact =
+		{
+			FreeFormSelectable = false
+		}
+      }
+	}
+    {
+      Name = "ButtonDefault"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Default"
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo2"
+          HighlightOffAnimation = "Button_Default"
+          HighlightOnAnimation = "Button_Highlight"
+        }
+      }
+    }
+    {
+      Name = "ShrineUpgradeMenuConfirm"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Default"
+        Interact =
+        {
+          FreeFormSelectable = true
+		  FreeFormSelectOffsetX = 180
+		  FreeFormSelectOffsetY = 0
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo2"
+          HighlightOffAnimation = "Button_Default"
+          HighlightOnAnimation = "Button_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ShrineUpgradeMenuInfo"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Info"
+        Interact =
+        {
+          FreeFormSelectable = true
+      FreeFormSelectOffsetX = 180
+      FreeFormSelectOffsetY = 0
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo2"
+          HighlightOffAnimation = "Button_Info"
+          HighlightOnAnimation = "Button_Info_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonCodexTab"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Default"
+        Interact =
+        {
+          FreeFormSelectable = false
+		  FreeFormSelectInputMultiplierX = 0.0
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "Button_Default"
+          HighlightOnAnimation = "Button_Highlight"
+        }
+      }
+    }
+
+	{
+      Name = "ButtonCodexEntry"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Default"
+        Interact =
+        {
+          FreeFormSelectable = true
+		  AutoActivateWithGamepad = true
+		  FreeFormSelectInputMultiplierX = 0.0
+		  FreeFormSelectOffsetX = -80
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "Button_Default"
+          HighlightOnAnimation = "Button_Highlight"
+        }
+      }
+    }
+
+	{
+      Name = "ButtonGhostAdminTab"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ContractorTab"
+        Interact =
+        {
+          FreeFormSelectable = false
+		  FreeFormSelectInputMultiplierX = 0.0
+		  FreeFormSelectInputMultiplierY = 0.0
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "ContractorTab"
+          HighlightOnAnimation = "ContractorTabHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonCodexDown"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexButton_Down"
+        Interact =
+        {
+          AutoActivateWithGamepad = true
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "CodexButton_Down"
+          HighlightOnAnimation = "CodexButton_Down_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonContractorDown"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ContractorButton_Down"
+        Interact =
+        {
+          AutoActivateWithGamepad = true
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "CodexButton_Down"
+          HighlightOnAnimation = "CodexButton_Down_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonCodexUp"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexButton_Up"
+        Interact =
+        {
+          AutoActivateWithGamepad = true
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "CodexButton_Up"
+          HighlightOnAnimation = "CodexButton_Up_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonCodexLeft"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexButton_Left"
+        Interact =
+        {
+          FreeFormSelectable = false
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "CodexButton_Left"
+          HighlightOnAnimation = "CodexButton_Left_Highlight"
+        }
+      }
+    }
+
+	{
+      Name = "ButtonRunHistoryLeft"
+      InheritFrom = "ButtonCodexLeft"
+      Thing =
+      {
+        Interact =
+        {
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+        }
+      }
+    }
+
+    {
+      Name = "ButtonCodexRight"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexButton_Right"
+        Interact =
+        {
+          FreeFormSelectable = false
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "CodexButton_Right"
+          HighlightOnAnimation = "CodexButton_Right_Highlight"
+        }
+      }
+    }
+
+	{
+      Name = "ButtonRunHistoryRight"
+      InheritFrom = "ButtonCodexRight"
+      Thing =
+      {
+        Interact =
+        {
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+        }
+      }
+    }
+
+    {
+      Name = "ButtonNowPlaying"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MusicPlayerNowPlayingIcon"
+        Interact =
+        {
+			UseExtents = true
+			AutoActivateWithGamepad = true
+			DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+			HighlightOffAnimation = "MusicPlayerNowPlayingIcon"
+			HighlightOnAnimation = "MusicPlayerNowPlayingIcon_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonPlayMusic"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MusicPlayerPlayButton"
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "MusicPlayerPlayButton"
+          HighlightOnAnimation = "MusicPlayerPlayButton_Highlight"
+        }
+      }
+    }
+
+  	{
+  		Name = "ButtonMetaUpgradeUnlockPanel"
+  		InheritFrom = "BaseInteractableButton"
+  		DisplayInEditor = true
+  		Thing =
+  		{
+  			EditorOutlineDrawBounds = false
+  			Graphic = "LevelUpMirrorUnlockButton"
+  			Interact =
+  			{
+  			  DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+  			  HighlightOffAnimation = "LevelUpMirrorUnlockButton"
+  			  HighlightOnAnimation = "LevelUpMirrorUnlockButton_Highlight"
+			  FreeFormSelectOffsetX = 200
+  			}
+  		}
+  	}
+	
+	{
+      Name = "BoonInfoButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonInfoTraitBacking"
+        Material = "Unlit"
+		Scale = 0.5,
+  			Interact =
+  			{
+			  FreeFormSelectInputMultiplierX = 0.0
+  			  FreeFormSelectable = true
+			  AutoActivateWithGamepad = true
+  			  DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+  			  HighlightOffAnimation = "BoonInfoTraitBacking"
+  			  HighlightOnAnimation = "BoonInfoTraitBacking_Highlight"
+			  TooltipOffsetX = 1130
+  			}
+      }
+    }
+	{
+		Name = "MetaUpgradeInvisibleHoverTarget"
+		InheritFrom = "BaseInteractableButton"
+		DisplayInEditor = false
+		Thing =
+		{
+  			EditorOutlineDrawBounds = false
+			Graphic = "Blank"
+			Interact =
+			{
+				FreeFormSelectable = false
+  			}
+			Points = [
+			  { X = -250 Y = 21 }
+			  { X = 250 Y = 21 }
+			  { X = 250 Y = -21 }
+			  { X = -250 Y = -21 }
+			]
+		}
+	}
+
+    {
+      Name = "ButtonRefund"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpRefund"
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "LevelUpRefund"
+          HighlightOnAnimation = "LevelUpRefundHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonPauseMusic"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MusicPlayerPauseButton"
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "MusicPlayerPauseButton"
+          HighlightOnAnimation = "MusicPlayerPauseButton_Highlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonDialogueChoice"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "Blank"
+          HighlightOnAnimation = "DialogueChoiceHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonQuestLogEntry"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo"
+          HighlightOffAnimation = "Blank"
+          HighlightOnAnimation = "QuestLogEntryArrow"
+		  FreeFormSelectOffsetX = -130
+		  FreeFormSelectSetOffsetX = -30
+		  FreeFormSelectInputMultiplierX = 0.0
+        }
+      }
+    }
+
+    {
+      Name = "ButtonClose"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Close"
+        Interact =
+        {
+          FreeFormSelectable = false
+          HighlightOffAnimation = "Button_Close"
+          HighlightOnAnimation = "Button_CloseHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonConfirm"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Confirm"
+        Interact =
+        {
+          FreeFormSelectable = false
+          HighlightOffAnimation = "Button_Confirm"
+          HighlightOnAnimation = "Button_ConfirmHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ButtonConfirm_FreeFormSelectable"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Button_Confirm"
+        Interact =
+        {
+          FreeFormSelectable = true
+          HighlightOffAnimation = "Button_Confirm"
+          HighlightOnAnimation = "Button_ConfirmHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ArrowRight"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Arrow_Right"
+        Interact =
+        {
+          HighlightOffAnimation = "Arrow_Right"
+          HighlightOnAnimation = "Arrow_RightHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ArrowLeft"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Arrow_Left"
+        Interact =
+        {
+          HighlightOffAnimation = "Arrow_Left"
+          HighlightOnAnimation = "Arrow_LeftHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpPlus"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpPlus"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpPlus"
+          HighlightOnAnimation = "LevelUpPlusHighlight"
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+          StartsCoolingDown = true
+          UnuseableAnimation = "LevelUpPlusDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpArrowRight"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpArrowRight"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpArrowRight"
+          HighlightOnAnimation = "LevelUpArrowRightHighlight"
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+          StartsCoolingDown = true
+          UnuseableAnimation = "LevelUpArrowRightDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "ExchangeMetaupgrade"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MetaupgradeSwap"
+        Interact =
+        {
+          HighlightOffAnimation = "MetaupgradeSwap"
+          HighlightOnAnimation = "MetaupgradeSwapHighlight"
+          UnuseableAnimation = "MetaupgradeSwap"
+        }
+      }
+    }
+
+    {
+      Name = "ShopRerollButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShopRerollButton"
+		AllowDrawableCache = false
+        Interact =
+        {
+          HighlightOffAnimation = "ShopRerollButton"
+          HighlightOnAnimation = "ShopRerollButtonHighlight"
+          UnuseableAnimation = "ShopRerollDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpPlusDisabled"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpPlusDisabled"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpPlusDisabled"
+          HighlightOnAnimation = "LevelUpPlusHighlightDisabled"
+          UnuseableAnimation = "LevelUpPlusDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpArrowLeftDisabled"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpArrowLeftDisabled"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpArrowLeftDisabled"
+          HighlightOnAnimation = "LevelUpArrowLeftHighlightDisabled"
+          UnuseableAnimation = "LevelUpArrowLeftDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpArrowRightDisabled"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpArrowRightDisabled"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpArrowRightDisabled"
+          HighlightOnAnimation = "LevelUpArrowRightHighlightDisabled"
+          UnuseableAnimation = "LevelUpArrowRightDisabled"
+        }
+      }
+    }
+    {
+      Name = "WeaponLevelUpArrowRight"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponUpgradeButton"
+		AllowDrawableCache = false
+        Interact =
+        {
+          HighlightOffAnimation = "WeaponUpgradeButton"
+          HighlightOnAnimation = "WeaponUpgradeButtonHighlight"
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+          StartsCoolingDown = true
+          UnuseableAnimation = "WeaponUpgradeButtonDisabled"
+        }
+      }
+    }
+    {
+      Name = "WeaponUnlockRight"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponUnlockButton"
+		AllowDrawableCache = false
+        Interact =
+        {
+          HighlightOffAnimation = "WeaponUnlockButton"
+          HighlightOnAnimation = "WeaponUnlockButtonHighlight"
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+          StartsCoolingDown = true
+          UnuseableAnimation = "WeaponUpgradeButtonDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpArrowLeft"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpArrowLeft"
+        Interact =
+        {
+          HighlightOffAnimation = "LevelUpArrowLeft"
+          HighlightOnAnimation = "LevelUpArrowLeftHighlight"
+          RepeatDelay = 0.6
+          RepeatInterval = 0.1
+          StartsCoolingDown = true
+          UnuseableAnimation = "LevelUpArrowLeftDisabled"
+        }
+      }
+    }
+
+    {
+      Name = "LevelUpUnlockButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LockKeyIcon"
+        Scale = 0.75
+        Interact =
+        {
+          HighlightOffAnimation = "LockKeyIcon"
+          HighlightOnAnimation = "LockKeyIconHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "ShrineStatHighlight"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrineStatHighlight"
+      }
+    }
+
+    {
+      Name = "LevelUpStatHighlight"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LevelUpStatHighlight"
+      }
+    }
+
+    {
+      Name = "RadioButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RadioButton_Unselected"
+      }
+    }
+    {
+      Name = "LegendaryKeepsakeLockedButton"
+      InheritFrom = "RadioButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Keepsake_Legendary_Locked"
+      }
+    }
+
+    {
+      Name = "TraitTrayIconButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "RadioButton_Unselected"
+      }
+    }
+
+	{
+      Name = "TraitTrayMetaUpgradeIconButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShrineIcon_ShieldHealth"
+		Interact =
+		{
+			UseTextBoxes = false
+		}
+      }
+    }
+
+    {
+      Name = "SmallLabel"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\SmallLabel"
+      }
+    }
+
+    {
+      Name = "SmallLabelHighlightA"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\SmallLabelHighlightA"
+      }
+    }
+
+    {
+      Name = "SmallLabelHighlightB"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\SmallLabelHighlightB"
+      }
+    }
+
+    {
+      Name = "SlotSelectionBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\SlotSelection"
+      }
+    }
+
+    {
+      Name = "TraitBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\TraitBacking"
+      }
+    }
+
+    {
+      Name = "IconProfile"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\Icon_Profile"
+      }
+    }
+
+    {
+      Name = "IconRanged"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\Icon_Ranged"
+      }
+    }
+
+    {
+      Name = "IconMelee"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Graybox\Icon_Melee"
+      }
+    }
+
+    {
+      Name = "MythmakerChoiceBackground"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MythmakerBoxDefault"
+        Interact =
+        {
+          DisableOnUse = true
+          HighlightOffAnimation = "MythmakerBoxHighlightOut"
+          HighlightOnAnimation = "MythmakerBoxHighlightIn"
+          OnUseAnimation = "MythmakerBoxSelected"
+        }
+      }
+    }
+
+    {
+      Name = "ShopBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShopBackground"
+      }
+    }
+
+    {
+      Name = "GhostAdminScreenBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GhostAdminScreenIn"
+      }
+    }
+
+    {
+      Name = "WellShopBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WellShopIn"
+      }
+    }
+
+    {
+      Name = "SellShopBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SellShopIn"
+      }
+    }
+
+    {
+      Name = "ShopItemGeneric"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\ShopItemGeneric"
+        Interact =
+        {
+          DisabledUseSound = "/Leftovers/SFX/OutOfAmmo2"
+          HighlightOffAnimation = "ShopItemGeneric"
+          HighlightOnAnimation = "ShopItemGenericWithFrame"
+        }
+      }
+    }
+
+    {
+      Name = "ShopItemSoldOut"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ShopItemSoldOut"
+      }
+    }
+
+    {
+      Name = "BoonBox"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSelectIn"
+      }
+    }
+
+    {
+      Name = "BoonSelectLighting"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSelectLighting"
+      }
+    }
+
+    {
+      Name = "BoonSelectInFrontFx"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSelectInFrontFx"
+      }
+    }
+
+    {
+      Name = "BoonBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonBackground"
+      }
+    }
+
+    {
+      Name = "EnemyHealthBar"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBar"
+		SortMode = "Id"
+      }
+    }
+
+	{
+      Name = "EnemyArmorIcon"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthArmored"
+		SortMode = "Id"
+		AllowDrawableCache = false
+      }
+    }
+
+	{
+      Name = "EnemyShieldIcon"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthShielded_Small"
+		SortMode = "Id"
+		AllowDrawableCache = false
+      }
+    }
+
+    {
+      Name = "BaseBoonIcon"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Boon_Athena_01_Small"
+      }
+    }
+    {
+      Name = "BaseBoonFrame"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonIcon_Frame_Common"
+      }
+    }
+    {
+      Name = "BossHealthBarBack"
+      DisplayInEditor = false
+      Thing =
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBarBoss"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+      }
+    }
+
+    {
+      Name = "BossHealthBarFill"
+      DisplayInEditor = false
+      Thing =
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBarFillBoss"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+      }
+    }
+
+    {
+      Name = "BossNameShadow"
+      DisplayInEditor = false
+      Thing =
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "BossNameShadow"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+      }
+    }
+
+    {
+      Name = "BossHealthBarFillFalloff"
+      DisplayInEditor = false
+      Thing =
+      {
+        CausesOcclusion = true
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBarFillSlowBoss"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+      }
+    }
+    {
+      Name = "PoisonSmall"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Poison_Small"
+		SortMode = "Id"
+		CausesOcclusion = true
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+		AllowDrawableCache = false
+      }
+    }
+    {
+      Name = "RuptureSmall"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MaimedStatus"
+		SortMode = "Id"
+		CausesOcclusion = true
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+		AllowDrawableCache = false
+      }
+    }
+    {
+      Name = "ChillSmall"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Freeze_Small"
+		SortMode = "Id"
+		CausesOcclusion = true
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.25
+		AllowDrawableCache = false
+      }
+    }
+
+    {
+      Name = "AmmoSmall"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AmmoEmbeddedInEnemyIcon"
+        SortMode = "Id"
+		AllowDrawableCache = false
+      }
+    }
+
+    {
+      Name = "HealthbarVulnerability"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "VulnerabilityIcon"
+        SortMode = "Id"
+		AllowDrawableCache = false
+      }
+    }
+
+    {
+      Name = "EnemyHealthBarFill"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBarFill"
+		SortMode = "Id"
+      }
+    }
+    {
+      Name = "EnemyHealthBarFillSlow"
+      InheritFrom = "1_BaseTerrainTile"
+      DisplayInEditor = false
+	  NeedsLife = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EnemyHealthBarFillSlow"
+		SortMode = "Id"
+      }
+    }
+
+    {
+      Name = "KeepsakeBar"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeBar"
+      }
+    }
+
+    {
+      Name = "KeepsakeBarFill"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeBarFill"
+      }
+    }
+
+    {
+      Name = "KeepsakeRank1"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeRank1"
+      }
+    }
+
+    {
+      Name = "KeepsakeRank2"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeRank2"
+      }
+    }
+
+    {
+      Name = "KeepsakeRank3"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeRank3"
+      }
+    }
+
+    {
+      Name = "KeepsakeRank4"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeRank4"
+      }
+    }
+
+    {
+      Name = "KeepsakeRank5"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "KeepsakeRank5"
+      }
+    }
+
+    {
+      Name = "HealthElite"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthElite"
+		AllowDrawableCache = false
+      }
+    }
+
+    {
+      Name = "BoonSlotBase"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonSlotGift"
+        Interact =
+        {
+          FloatHighlightAnimation = true
+          HighlightOnAnimation = "BoonSlotHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "BoonSlotPact"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotPact"
+      }
+    }
+
+    {
+      Name = "BoonSlotGift"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotGift"
+      }
+    }
+
+    {
+      Name = "BoonSlotBlessing"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotBlessing"
+      }
+    }
+
+    {
+      Name = "BoonSlotBloodstone"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotBloodstone"
+      }
+    }
+
+    {
+      Name = "BoonSlotDash"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotDash"
+      }
+    }
+
+    {
+      Name = "BoonSlotAttack"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlotAttack"
+      }
+    }
+
+    {
+      Name = "BoonSlot1"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1"
+      }
+    }
+
+    {
+      Name = "BoonSlot2"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot2"
+      }
+    }
+
+    {
+      Name = "BoonSlot3"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot3"
+      }
+    }
+
+    {
+      Name = "MarketSlot"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MarketSlot"
+        Interact =
+        {
+          FloatHighlightAnimation = true
+          HighlightOnAnimation = "MarketSlotHighlight"
+        }
+      }
+
+    }
+
+    {
+      Name = "ButtonGhostAdminItem"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = true
+      Thing =
+      {
+        Scale = 1.0
+        EditorOutlineDrawBounds = false
+        Graphic = "ContractorSlot"
+        Interact =
+        {
+			FreeFormSelectOffsetX = -400
+			FreeFormSelectInputMultiplierX = 0.0
+			HighlightOnAnimation = "ContractorSlotHighlight"
+        }
+      }
+    }
+
+
+    {
+      Name = "ButtonGhostAdminItemDisabled"
+      InheritFrom = "ButtonGhostAdminItem"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ContractorSlotInactive"
+        Interact = {
+          HighlightOnAnimation = "ContractorSlotInactiveHighlight"
+        }
+      }
+    }
+
+    {
+      Name = "MarketSlotInactive"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MarketSlotInactive"
+      }
+    }
+
+    {
+      Name = "AssistUpgradeButton"
+      InheritFrom = "BaseInteractableButton"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "LegendaryKeepsakeUpgradeButton"
+		AllowDrawableCache = false
+		Interact =
+		{
+			HighlightOnAnimation = "LegendaryKeepsakeUpgradeButtonHighlight"
+			HighlightOffAnimation = "LegendaryKeepsakeUpgradeButton"
+			UnuseableAnimation = "LegendaryKeepsakeUpgradeButtonDisabled"
+		}
+      }
+    }
+
+    {
+      Name = "BoonSlot1_WeaponSelect"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1_WeaponSelect"
+		Interact =
+		  {
+			HighlightOnAnimation = "BoonSlotHighlight_WeaponSelect"
+		  }
+      }
+    }
+
+    {
+      Name = "BoonSlot2_WeaponSelect"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1_WeaponSelect"
+		Interact =
+		  {
+			HighlightOnAnimation = "BoonSlotHighlight_WeaponSelect"
+		  }
+      }
+    }
+
+    {
+      Name = "BoonSlot3_WeaponSelect"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1_WeaponSelect"
+		Interact =
+      {
+        HighlightOnAnimation = "BoonSlotHighlight_WeaponSelect"
+      }
+      }
+    }
+
+    {
+      Name = "BoonSlot4_WeaponSelect"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1_WeaponSelect"
+		Interact =
+      {
+        HighlightOnAnimation = "BoonSlotHighlight_WeaponSelect"
+      }
+      }
+
+    }
+
+    {
+      Name = "BoonSlot4_WeaponSelect_Seasonal"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot4_WeaponSelect_Seasonal"
+		Interact =
+      {
+        HighlightOnAnimation = "BoonSlotHighlight_WeaponSelect"
+      }
+      }
+
+    }
+
+    {
+      Name = "SellSlot1"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SellSlot1"
+		Interact =
+        {
+		  FreeFormSelectOffsetX = -200
+		}
+      }
+    }
+
+    {
+      Name = "SellSlot2"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SellSlot2"
+		Interact =
+        {
+		  FreeFormSelectOffsetX = -200
+		}
+      }
+    }
+
+    {
+      Name = "SellSlot3"
+      InheritFrom = "BoonSlotBase"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "SellSlot3"
+		Interact =
+        {
+		  FreeFormSelectOffsetX = -200
+		}
+      }
+    }
+
+    {
+      Name = "BoonSlotInactive1"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot1"
+      }
+    }
+
+    {
+      Name = "BoonSlotInactive2"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot2"
+      }
+    }
+
+    {
+      Name = "BoonSlotInactive3"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonSlot3"
+      }
+    }
+
+    {
+      Name = "BoonSlotHighlight"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonHighlight"
+      }
+    }
+
+    {
+      Name = "HealthBarFlash"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "HealthBarFlash"
+      }
+    }
+
+    {
+      Name = "MetapointRefundStreak"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "MetapointRefundStreak"
+      }
+    }
+
+    {
+      Name = "AwardMenuBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AwardMenuBackground"
+      }
+    }
+
+    {
+      Name = "TraitTrayBackground"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TraitTray_Base"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Artemis"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\TraitTop_Artemis"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Artemis"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\TraitBottom_Artemis"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Chaos"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Chaos\TraitTop_Chaos"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Chaos"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Chaos\TraitBottom_Chaos"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+  {
+      Name = "TraitTrayTop_Music"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Music\TraitTop_Music"
+        Material = "Unlit"
+    SortMode = "Id"
+    UseScreenLocation = true
+      }
+    }
+  {
+      Name = "TraitTrayBottom_Music"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Music\TraitBottom_Music"
+        Material = "Unlit"
+    SortMode = "Id"
+    UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Hades"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Hades\TraitTop_Hades"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Hades"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Hades\TraitBottom_Hades"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Chthonic"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Chthonic\TraitTop_Chthonic"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Chthonic"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Chthonic\TraitBottom_Chthonic"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Blood"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\TraitTop_Artemis"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Blood"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\TraitBottom_Artemis"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Heat"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Heat\TraitTop_Heat"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Heat"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Heat\TraitBottom_Heat"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Stone"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Stone\TraitTop_Stone"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Stone"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Stone\TraitBottom_Stone"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayTop_Love"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Love\TraitTop_Love"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+	{
+      Name = "TraitTrayBottom_Love"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\VictoryScreen_Love\TraitBottom_Love"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTrayDetailsBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TraitTray_DetailsBacking"
+        Material = "Unlit"
+		Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Center"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TraitTray_Center"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Right"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TraitTray_Right"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_ShortColumn"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\TraitTray_ShortColumn"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_LongColumn"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\TraitTray_LongColumn"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Slots_4"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\PrimaryBoonBacking_4"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Slots_5"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\PrimaryBoonBacking_5"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Slots_6"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\PrimaryBoonBacking_6"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Artemis"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\PrimaryBoonBacking_6_Artemis"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Artemis"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\BoonBottomDecor_Artemis"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Chaos"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Chaos\PrimaryBoonBacking_6_Chaos"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Chaos"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Chaos\BoonBottomDecor_Chaos"
+      }
+    }
+
+  {
+      Name = "TraitTray_Slots_6_Music"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Music\PrimaryBoonBacking_6_Music"
+      }
+    }
+
+  {
+      Name = "TraitTrayDecor_Music"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Music\BoonBottomDecor_Music"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Hades"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Hades\PrimaryBoonBacking_6_Hades"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Hades"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Hades\BoonBottomDecor_Hades"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Chthonic"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Chthonic\PrimaryBoonBacking_6_Chthonic"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Chthonic"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Chthonic\BoonBottomDecor_Chthonic"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Blood"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\PrimaryBoonBacking_6_Artemis"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Blood"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Artemis\BoonBottomDecor_Artemis"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Heat"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Heat\PrimaryBoonBacking_6_Heat"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Heat"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Heat\BoonBottomDecor_Heat"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Stone"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Stone\PrimaryBoonBacking_6_Stone"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Stone"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Stone\BoonBottomDecor_Stone"
+      }
+    }
+
+	{
+      Name = "TraitTray_Slots_6_Love"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Love\PrimaryBoonBacking_6_Love"
+      }
+    }
+
+	{
+      Name = "TraitTrayDecor_Love"
+      InheritFrom = "TraitTray_Slots_6"
+      DisplayInEditor = false
+      Thing =
+      {
+        Graphic = "GUI\Screens\VictoryScreen_Love\BoonBottomDecor_Love"
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotIcon_Attack"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\SlotIcon_Attack"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotIcon_Secondary"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\SlotIcon_Secondary"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotIcon_Ranged"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\SlotIcon_Ranged"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotIcon_Dash"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\SlotIcon_Dash"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotIcon_Wrath"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\SlotIcon_Wrath"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_SlotFrame"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonIconFrames\primary"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_KeepsakeBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\Keepsake_Backing"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_EmptyBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonIconFrames\tray"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Passive"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonIconFrames\passive"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_Highlight"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TraitTray_Highlight"
+        Material = "Unlit"
+        Scale = 0.5
+        SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_LevelBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\HUD\PrimaryBoons\TraitLevelBacking"
+        Material = "Unlit"
+        Scale = 0.5
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+    {
+      Name = "TraitTray_TraitBaseFrame"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonIconFrames\tray"
+        Material = "Unlit"
+		SortMode = "Id"
+		UseScreenLocation = true
+      }
+    }
+
+
+    {
+      Name = "BoonInfoTraitFrame"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "GUI\Screens\BoonIconFrames\booninfo"
+        Material = "Unlit"
+        Scale = 0.60
+      }
+    }
+
+    {
+      Name = "EndPanelBox"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndPanelBox"
+      }
+    }
+
+    {
+      Name = "WeaponSelectPanelBox"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "WeaponSelectPanelBoxIn"
+      }
+    }
+
+    {
+      Name = "BoonInfoBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BoonInfoBacking"
+      }
+    }
+
+    {
+      Name = "CodexBoonInfoTextBacking"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "CodexBoonInfoTextBacking"
+      }
+    }
+
+    {
+      Name = "BadgeNamePlate01"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "BadgeNamePlate01"
+      }
+    }
+
+    {
+      Name = "EndCreditsVignette"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndCreditsVignette"
+      }
+    }
+
+    {
+      Name = "EndCreditsSupergiantLogo"
+      InheritFrom = "1_BaseGUIObstacle"
+      DisplayInEditor = false
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "EndCreditsSupergiantLogo"
+      }
+    }
+
+  ]
+}

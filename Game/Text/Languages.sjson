@@ -1,0 +1,603 @@
+{
+  HelpTexts = [
+    {
+      lang = "zh-CN"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "语言"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+        {
+          Id = "_Dates"
+          DisplayName = "午一二三四五六七八九十天日月"
+        }
+        {
+          Id = "_ModdedLanguageCharacters"
+          DisplayName = "Türkçe"
+        }
+        {
+          Id = "_CreditsSpecialCharacters"
+          DisplayName = "ă"
+        }
+      ]
+    }
+    {
+      lang = "ko"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "언어"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "ja"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "言語"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+        {
+          Id = "_Dates"
+          DisplayName = "午"
+        }
+      ]
+    }
+    {
+      lang = "de"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Sprachen"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "es"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Idiomas"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "fr"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Langues"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "it"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Lingue"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "ru"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Языки"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "pl"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Języki"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "pt-BR"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Idiomas"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+    {
+      lang = "en"
+      Texts = [
+        {
+          Id = "SettingsMenuScreen_Language"
+          DisplayName = "Languages"
+        }
+        {
+          Id = "en"
+          DisplayName = "English"
+        }
+        {
+          Id = "de"
+          DisplayName = "Deutsch"
+        }
+        {
+          Id = "es"
+          DisplayName = "Español"
+        }
+        {
+          Id = "fr"
+          DisplayName = "Français"
+        }
+        {
+          Id = "it"
+          DisplayName = "Italiano"
+        }
+        {
+          Id = "ru"
+          DisplayName = "Русский"
+        }
+        {
+          Id = "pl"
+          DisplayName = "Polski"
+        }
+        {
+          Id = "pt-BR"
+          DisplayName = "Português - BR"
+        }
+        {
+          Id = "ja"
+          DisplayName = "日本語"
+        }
+        {
+          Id = "zh-CN"
+          DisplayName = "简体中文"
+        }
+        {
+          Id = "ko"
+          DisplayName = "한국어"
+        }
+      ]
+    }
+  ]
+}

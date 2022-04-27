@@ -1,0 +1,121 @@
+{
+  Units = [
+
+    {
+      Name = "1_BasePlayerUnit"
+      DisplayInEditor = false
+      PlayerControlled = true
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+      }
+    }
+
+    {
+      Name = "_PlayerUnit"
+      InheritFrom = "1_BasePlayerUnit"
+      Acceleration = 2000.0
+      BackpedalSpeedModifier = 0.34
+      CosmeticRotationSpeed = 1340.00
+      DisplayInEditor = true
+      FinishMoveAnimationOnIdle = false
+      FullControlVelocityThreshold = 400.0
+      HighSpeedAnimation = "ZagreusRun"
+      HighSpeedThreshold = 700.0
+      LowSpeedAnimation = "ZagreusWalk"
+      LowSpeedFraction = 0.2
+      LowSpeedThreshold = 0.5
+      Magnetism = 1.0
+      MaxUseZ = 10.0
+      MoveGraphic = "ZagreusRun"
+      OnDodgeFx = "ZagreusDodgeVFX"
+      OnTouchdownWeapon = "HeroTouchdown"
+      PriorityWeapon = "RushWeapon"
+      RotationSpeed = 216000.00
+      Speed = 540.0
+      StartGraphic = "ZagreusStart"
+      StopGraphic = "ZagreusStop"
+      TouchdownVelocityRetention = 0.7
+	  CanVelocityBeAbsorbed = false
+	  StopShiftOnCollision = false
+      TraitorsTreatAsFriendly = true
+      Life =
+      {
+        CollisionDamageMultiplier = 0.0
+        LobReflectionSpeedMultiplier = 1.5
+        ProjectileHealCap = 100.0
+        ProjectileHealModifier = 0.1
+        ReflectionSpeedMultiplier = 3.0
+      }
+      PlayerUnitData =
+      {
+        MinMoveDistance = 8.0
+        ReticleMagnetismDistance = 100.0
+        ReticleMagnetismSpeed = 1000.0
+        ReticleMoveDelay = 0.04
+        ReticleMoveSpeed = 2500.0
+        ReticleReMagnetizeTimeout = 1.0
+      }
+      Thing =
+      {
+        CanBeOccluded = true
+        DrawEmbeddedBehind = true
+        EditorOutlineDrawBounds = false
+        FootstepSound = "/SFX/Player Sounds/FootstepsHardSurfaceRun"
+        Graphic = "ZagreusIdle"
+        Grip = 1000.0
+        Material = "Unlit"
+        Scale = 0.7
+        SelectionHeight = 270.0
+        SelectionWidth = 150.0
+        SpeechCapable = true
+        Tallness = 200.0
+        TerminalVelocity = 5000.0
+        TouchdownGraphic = "ZagreusDash"
+        TouchdownRumbleDuration = 0.15
+        TouchdownRumbleIntensity = 0.4
+        TouchdownSound = "/EmptyCue"
+        UseBoundsForSortDrawArea = true
+    	SubtitleColor = {	Red = 1.0 Green = 1.0	Blue = 1.0 Alpha = 1.0 }
+        Points = [
+          { X = 16 Y = 24 }
+          { X = 48 Y = 8 }
+          { X = 48 Y = -8 }
+          { X = 16 Y = -24 }
+          { X = -16 Y = -24 }
+          { X = -48 Y = -8 }
+          { X = -48 Y = 8 }
+          { X = -16 Y = 24 }
+        ]
+        Size = { X = 104 Y = 64 }
+      }
+    }
+
+    {
+      Name = "AthenaShield"
+      ContinuousWeapon = "AthenaShieldAuraBlast"
+      DisplayInEditor = true
+      Life =
+      {
+        Invulnerable = true
+      }
+      Thing =
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "AthenaSingleShield"
+        Grip = 200.0
+        Offset = { X = 0 Y = -40 }
+        Points = [
+          { X = 24 Y = 33 }
+          { X = 72 Y = 9 }
+          { X = 72 Y = -15 }
+          { X = 24 Y = -39 }
+          { X = -24 Y = -39 }
+          { X = -72 Y = -15 }
+          { X = -72 Y = 9 }
+          { X = -24 Y = 33 }
+        ]
+      }
+    }
+  ]
+}

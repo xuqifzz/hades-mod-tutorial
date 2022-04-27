@@ -1,0 +1,247 @@
+{
+  ResolutionScreen =
+  {
+    Platform = "default"
+    CloseSound = "/SFX/Menu Sounds/GodBoonMenuClose"
+    SelectionSound = "/SFX/Menu Sounds/DialoguePanelOutMenu"
+    TransitionOnTime = 0.1
+    TransitionOffTime = 0.15
+    UseSelectionSoundWithMouse = false
+    ForceShowCursor = true
+    ShowControls = false
+
+	Back =
+	{
+      Justification = "Left"
+      VerticalJustification = "Top"
+      Red = 0
+      Green = 0
+      Blue = 0
+      Width = 1920
+      Height = 1080
+    }
+
+    AnimatedBackground =
+	{
+      X = 960
+      Y = 540
+      Graphic = "GUI\Shell\Box_HalfScreen"
+      Scale = 1.0
+      Justification = "Center"
+      VerticalJustification = "Center"
+    }
+
+    TitleText =
+	{
+      X = 960
+      Y = 168
+      Justification = "Center"
+      VerticalJustification = "Center"
+      HelpTextId = "SettingsMenuScreen_DisplaySettings"
+      Font = "SpectralSCLightTitling"
+      
+      AlwaysUpperCase = false
+      FontSize = 40
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0.1
+      TextOutlineGreen = 0.1
+      TextOutlineBlue = 0.1
+      OutlineThickness = 1
+      ShadowRed = 0.176
+      ShadowGreen = 0.184
+      ShadowBlue = 0.18
+      ShadowOffsetY = 2
+      ShadowAlpha = 0
+      ShadowBlur = 2
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.05
+      FadeDelayMax = 0.1
+      FadeSpeed = 10.0
+    }
+
+    ResolutionButton =
+	{
+      X = 960
+      Y = 460
+      Spacing = 60
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextOffsetX = 0
+      Graphic = "null"
+      SelectedOnAnimation = "null"
+      SelectOnMouseOver = true
+      DeselectOnMouseOff = true
+      UseTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      TextRed = 0.75
+      TextGreen = 0.75
+      TextBlue = 0.75
+      FontSize = 28
+      SelectedTextRed = 0.808
+      SelectedTextGreen = 0.1
+      SelectedTextBlue = 0.1
+      DisabledTextRed = 0.2
+      DisabledTextGreen = 0.2
+      DisabledTextBlue = 0.2
+      AlwaysUpperCase = false
+      TextJustification = "Center"
+      SelectedTextScale = 1.0
+      NonEnglishScaleModifier = 0.85
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 2
+      ShadowRed = 0
+      ShadowGreen = 0
+      ShadowBlue = 0
+      ShadowOffsetY = 4
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      PressSound = "/SFX/Menu Sounds/GodBoonInteract"
+    }
+
+    ActiveMarker =
+	{
+      OffsetX = -120
+      Graphic = "GUI\Shell\selector"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Scale = 1.0
+      OffsetY = 3
+      MoveSpeed = 8000
+    }
+
+    DescriptionBox =
+	{
+      OffsetX = 50
+      Justification = "Left"
+      VerticalJustification = "Center"
+      Font = "AlegreyaSansRegular"
+      FontSize = 20
+      TextRed = 0.87
+      TextGreen = 0.87
+      TextBlue = 0.87
+      TextOutlineRed = 0
+      TextOutlineGreen = 0
+      TextOutlineBlue = 0
+      OutlineThickness = 3
+      ShadowRed = 0.0
+      ShadowGreen = 0.0
+      ShadowBlue = 0.0
+      ShadowOffsetY = 3
+      ShadowAlpha = 1
+      ShadowBlur = 0
+      Width = 380
+      Height = 600
+    }
+
+    FullScreenButton =
+	{
+      AttachTo = "TitleText"
+      OffsetX = -50
+      OffsetY = 90
+      HelpTextId = "ResolutionScreen_Fullscreen"
+      Justification = "Center"
+      VerticalJustification = "Center"
+      Graphic = "GUI\\Shell\\settings_toggle_on"
+      AlternateGraphic = "GUI\\Shell\\settings_toggle_off"
+      AddTextArea = true
+      Font = "AlegreyaSansSCRegular"
+      FontSize = 22
+      TextRed = 0.8
+      TextGreen = 0.8
+      TextBlue = 0.8
+      SelectedTextRed = 0.85
+      SelectedTextGreen = 0.6
+      SelectedTextBlue = 0.25
+      AddColor = true
+      Red = 0
+      Green = 0
+      Blue = 0
+      SelectedRed = 0.2
+      SelectedGreen = 0.2
+      SelectedBlue = 0.2
+      AlwaysUpperCase = false
+      TextOffsetX = -70
+      TextJustification = "Right"
+      FadeOpacity = 0.0
+      FadeTarget = 1.0
+      FadeDelayMin = 0.15
+      FadeDelayMax = 0.2
+      FadeSpeed = 10.0
+      ToggleOnSound = "/SFX/Menu Sounds/MirrorMenuStatIncrease"
+      ToggleOffSound = "/SFX/Menu Sounds/MirrorMenuStatLower"
+      PressTopAnimation = "InvincibleHitSpark"
+    }
+
+    NoBorderButton =
+	{
+      InheritFrom = "FullScreenButton"
+      AttachTo = "FullScreenButton"
+      OffsetX = 0
+      OffsetY = 62
+      HelpTextId = "ResolutionScreen_NoBorder"
+    }
+
+	VSyncButton =
+	{
+      InheritFrom = "NoBorderButton"
+      AttachTo = "NoBorderButton"
+      OffsetX = 0
+      OffsetY = 62
+      HelpTextId = "ResolutionScreen_VSync"
+    }
+
+    ConfirmButton =
+	{
+      Graphic = "Button_Default"
+      UnderCursorOnAnimation = "Button_HighlightOn"
+      UnderCursorOffAnimation = "Button_HighlightOff"
+      PressAnimation = "Button_Press"
+      HelpTextId = "Shell_Confirm"
+      X = 960
+      Y = 970
+      TextOffsetY = -5
+      Justification = "Center"
+      VerticalJustification = "Center"
+      TextScale = 0.7
+      TextJustification = "Center"
+      AlwaysUpperCase = false
+      Font = "AlegreyaSCRegular"
+      TextRed = 0.8
+      TextGreen = 0.714
+      TextBlue = 0.588
+      TextOutlineRed = 0.0
+      TextOutlineGreen = 0.0
+      TextOutlineBlue = 0.0
+      FontSize = 36
+      UseTooltipHeader = false
+      PressSound = "/SFX/Menu Sounds/MenuButtonOn"
+    }
+
+    CancelButton =
+	{
+      Graphic = "CancelButtonFlash"
+      UnderCursorOnAnimation = "CancelButtonFlashHover"
+      UnderCursorOffAnimation = "CancelButtonFlash"
+      FreeFormSelectable = false
+      Justification = "Center"
+      VerticalJustification = "Center"
+      X = 960
+      Y = 1030
+      FlashMin = 0.0
+      FlashMax = 0.5
+      FlashSpeed = 1.2
+      FlashRed = 0.6
+      FlashGreen = 0.4
+      FlashBlue = 0.0
+	  Scale = 0.8
+      MouseOverSound = "/SFX/Menu Sounds/DialoguePanelOut"
+      PressSound = "null"
+    }
+
+  }
+}

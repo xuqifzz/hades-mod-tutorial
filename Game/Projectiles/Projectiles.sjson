@@ -1,0 +1,54 @@
+{
+  Projectiles = [
+    {
+      Name = "1_BaseProjectile"
+      InvincibleImpactSound = "null"
+      ReflectFx = "AthenaDeflectedFx"
+    }
+    {
+      Name = "1_BaseLargeProjectile"
+      InheritFrom = "1_BaseProjectile"
+    }
+    {
+      Name = "1_BaseSmallProjectile"
+      InheritFrom = "1_BaseProjectile"
+    }
+    {
+      Name = "1_BaseBuffProjectile"
+      InheritFrom = "1_BaseProjectile"
+      ImpactFxInterval = 0.2
+    }
+    {
+      Name = "1_BaseDebuffProjectile"
+      InheritFrom = "1_BaseProjectile"
+    }
+    {
+      Name = "1_BasePlayerLargeProjectile"
+      InheritFrom = "1_BaseLargeProjectile"
+      ImpactFxInterval = 0.0
+      SpawnType = "PROJECTILE"
+    }
+    {
+      Name = "1_BasePlayerSmallProjectile"
+      InheritFrom = "1_BaseSmallProjectile"
+      ImpactFxInterval = 0.0
+    }
+    /* Enemy Weapons */
+    {
+      Name = "1_BaseEnemyProjectile"
+      InheritFrom = "1_BaseProjectile"
+      PlayerImpactScreenFx = "null"
+      PlayerImpactScreenFxInterval = 0.05
+      ImpactFilterOpacity = 0.0
+      ImpactFilterDuration = 0.0
+      Effect = {
+        Name = "GenericSlow"
+        Type = "SPEED"
+        Duration = 1.25
+        Modifier = 0.5
+        Stacks = false
+        Active = false
+      }
+    }
+  ]
+}

@@ -1,0 +1,867 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "Light3D"
+      InheritFrom = "1_BaseInvulnerablePassableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        Ambient = 0.0
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\3dLight"
+        Invisible = true
+      }
+    }
+    
+    {
+      Name = "LightFacets"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "FacetsLightAnim"
+      }
+    }
+    
+    {
+      Name = "ElysiumLightFacetsCrystallineA"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "ElysiumLightFacetsCrystallineA"
+      }
+    }
+    
+    {
+      Name = "ElysiumLightFacetsCrystallineB"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "ElysiumLightFacetsCrystallineB"
+      }
+    }
+    
+    {
+      Name = "LightDappled01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Dappled_01"
+      }
+    }
+    
+    {
+      Name = "LightInkedTerrain01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_InkedTerrain01"
+      }
+    }
+    
+    {
+      Name = "LightInkedTerrain01a"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_InkedTerrain01a"
+      }
+    }
+    
+    {
+      Name = "LightBeachSparkle"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\LightGeneric"
+        Invisible = true
+        Light = "Lights\Light_BeachSparkle"
+      }
+    }
+    
+    {
+      Name = "LightBokehSplatter"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\LightGeneric"
+        Invisible = true
+        Light = "Lights\Light_BokehSplatter"
+      }
+    }
+    
+    {
+      Name = "LightBokehSplatter2"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\LightGeneric"
+        Invisible = true
+        Light = "Lights\Light_BokehSplatter2"
+      }
+    }
+    
+    {
+      Name = "LightSpot01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Spot01"
+      }
+    }
+    
+    {
+      Name = "LightDiamondScatter"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_DiamondScatter01"
+      }
+    }
+    
+    {
+      Name = "LightScatteredRectangleTerrain01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_ScatteredRectangleTerrain01"
+      }
+    }
+    
+    {
+      Name = "LightScatteredRectangleTerrain02"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_ScatteredRectangleTerrain02"
+      }
+    }
+    
+    {
+      Name = "LightScatteredRectangleTerrain02a"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_ScatteredRectangleTerrain02a"
+      }
+    }
+    
+    {
+      Name = "LightRadial01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\LightGeneric"
+        Invisible = true
+        Light = "Lights\Light_Radial_01"
+      }
+    }
+    
+    {
+      Name = "LightPoint01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        CreatesShadows = true
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_RadialSpot"
+      }
+    }
+    
+    {
+      Name = "LightShaft01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Shaft01"
+      }
+    }
+    
+    {
+      Name = "LightVerticalBeam"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_VerticalBeam"
+      }
+    }
+    
+    {
+      Name = "LightAngularCircle01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_AngularCircle01"
+      }
+    }
+    
+    {
+      Name = "LightShaft02"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Shaft02"
+      }
+    }
+    
+    {
+      Name = "LightShaft02Darken"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Shaft02Inverse"
+      }
+    }
+    
+    {
+      Name = "LightReflectionDarken01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev/ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Reflection_Darken_01"
+      }
+    }
+    
+    {
+      Name = "LightJaggedDarken01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_JaggedDarken_01"
+      }
+    }
+    
+    {
+      Name = "LightShaft03"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Shaft03"
+      }
+    }
+    
+    {
+      Name = "LightShaft04"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Shaft04"
+      }
+    }
+    
+    {
+      Name = "LightShaft05"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Shaft05"
+      }
+    }
+    
+    {
+      Name = "LightShaft06"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Shaft06"
+      }
+    }
+    
+    {
+      Name = "LightStarPulseB"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "StarPulseBLight"
+      }
+    }
+    
+    {
+      Name = "LightTorch"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\DiffuseSpotlight"
+      }
+    }
+    
+    {
+      Name = "LightTorchFlicker"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "LightTorchFlicker"
+      }
+    }
+    
+    {
+      Name = "LightEllipseDisplaced"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchFlame"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Displaced"
+      }
+    }
+    
+    {
+      Name = "LightEllipseMottled"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Mottled"
+      }
+    }
+    
+    {
+      Name = "LightEllipseRipple"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Ripple"
+      }
+    }
+    
+    {
+      Name = "LightEllipseFractal"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Fractal"
+      }
+    }
+    
+    {
+      Name = "LightTorchDarken"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\DiffuseSpotlightInverse"
+      }
+    }
+    
+    {
+      Name = "LightShaft02Inversea"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Shaft02Inverse_a"
+      }
+    }
+    
+    {
+      Name = "LightDappledDarken01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Dappled_01_Inverse"
+      }
+    }
+    
+    {
+      Name = "LightDappled02"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Dappled_02"
+      }
+    }
+    
+    {
+      Name = "LightDappled03"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Dappled_03"
+      }
+    }
+    
+    {
+      Name = "LightDappled04"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Dappled_04"
+      }
+    }
+    
+    {
+      Name = "LightPrism01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Prism_01"
+      }
+    }
+    
+    {
+      Name = "LightPrism02"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Prism_02"
+      }
+    }
+    
+    {
+      Name = "LightPrism03"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Prism_03"
+      }
+    }
+    
+    {
+      Name = "LightDappled01Inverse2"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      CollisionReactionFx = "WallSlamSpike"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Dappled_01_Inverse_2"
+      }
+    }
+    
+    {
+      Name = "LightEllipseMottledDarken"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      CollisionReactionFx = "WallSlamSpike"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Dev\ShadowGeneric"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Mottled_Darken"
+      }
+    }
+    
+    {
+      Name = "LightCurved"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_EdgeArc"
+      }
+    }
+    
+    {
+      Name = "LightStainedGlasRites01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_StainedGlasRites01"
+      }
+    }
+    
+    {
+      Name = "LightEllipse01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_01"
+      }
+    }
+    
+    {
+      Name = "LightReflection01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "LightReflection01Anim"
+      }
+    }
+    
+    {
+      Name = "LightEllipse01Flicker"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "LightEllipse01Flicker"
+      }
+    }
+    
+    {
+      Name = "LightEllipse02"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_02"
+      }
+    }
+    
+    {
+      Name = "LightEllipse02Flicker"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "LightEllipse02Flicker"
+      }
+    }
+    
+    {
+      Name = "LightEllipse02Anim"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Ellipse02-Light"
+      }
+    }
+    
+    {
+      Name = "LightCharacterEllipse01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        CreatesShadows = true
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+		AllowDrawableCache = false
+        Light = "Lights\Light_Ellipse_01"
+      }
+    }
+    
+    {
+      Name = "LightFractalStretch"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_FractalStretch"
+      }
+    }
+    
+    {
+      Name = "LightFractalSmear"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_FractalSmear"
+      }
+    }
+    
+    {
+      Name = "LightEllipseMottledHard"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Mottled_Hard"
+      }
+    }
+    
+    {
+      Name = "LightEllipseMottledInvert"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_Ellipse_Mottled_Invert"
+      }
+    }
+    
+    {
+      Name = "LightRectangleWall01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_RectangleWall01"
+      }
+    }
+    
+    {
+      Name = "LightRectangleTerrain01"
+      InheritFrom = "1_BaseFlyingDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarkerLarge"
+        Invisible = true
+        Light = "Lights\Light_RectangleTerrain01"
+      }
+    }
+    
+    {
+      Name = "LightSunbeamA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "SunbeamA"
+      }
+    }
+    
+    {
+      Name = "LightSunbeamB"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "SunbeamB"
+      }
+    }
+    
+    {
+      Name = "LightSunbeamD"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "SunbeamD"
+      }
+    }
+    
+    {
+      Name = "LightSpectralA"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "Lights\Light_Spectral_01"
+      }
+    }
+    
+    {
+      Name = "ElysiumLightPrism"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "TorchMarker"
+        Invisible = true
+        Light = "ElysiumLightPrism"
+      }
+    }
+  ]
+}

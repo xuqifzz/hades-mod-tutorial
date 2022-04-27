@@ -1,0 +1,19 @@
+{
+  Animations = [
+    
+    {
+      Name = "BallDropPuff"
+      FilePath = "Fx\BallDropPuff\BallDropPuff"
+      GroupName = "Shadows"
+      Type = "Book"
+      EndAlpha = 0.33
+      StartAlpha = 1.0
+      EndFrame = 45
+      NumFrames = 45
+      PlaySpeed = 40.0
+      StartFrame = 1
+      RandomFlipHorizontal = true
+      Sound = "/SFX/DustTouchdownPuff"
+    }
+  ]
+}

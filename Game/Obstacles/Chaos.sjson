@@ -1,0 +1,241 @@
+{
+  Obstacles = [
+    
+    {
+      Name = "ChaosPillar01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Pillar_01"
+        ClearPoints = true
+        Tallness = 3846.0
+        UseBoundsForSortDrawArea = true
+        Offset = { X = 0 Y = -1549 }
+        Points = [
+          { X = -614 Y = 67 }
+          { X = -20 Y = 354 }
+          { X = 621 Y = 20 }
+          { X = 33 Y = -259 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosPillar01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Pillar_01b"
+        ClearPoints = true
+        Tallness = 1894.0
+        Offset = { X = 0 Y = -743 }
+        Points = [
+          { X = -607 Y = 31 }
+          { X = 26 Y = 336 }
+          { X = 645 Y = 42 }
+          { X = 0 Y = -259 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosPillar01c"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Pillar_01c"
+        ClearPoints = true
+        Tallness = 346.0
+        Offset = { X = 0 Y = -137 }
+        Points = [
+          { X = -329 Y = 57 }
+          { X = -68 Y = 200 }
+          { X = 333 Y = 159 }
+          { X = 409 Y = -14 }
+          { X = 200 Y = -208 }
+          { X = -228 Y = -174 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosTerrainBrick01"
+      InheritFrom = "1_BaseTerrainTile"
+      CollisionDamagePerVelocity = 0.02
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Terrain_Brick_01"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -43 }
+        Points = [
+          { X = -898 Y = 100 }
+          { X = -45 Y = 525 }
+          { X = 909 Y = 74 }
+          { X = 39 Y = -381 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosArchitrave01"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Architrave_01"
+        ClearPoints = true
+        Offset = { X = 0 Y = -317 }
+        Points = [
+          { X = -1000 Y = -168 }
+          { X = 361 Y = 522 }
+          { X = 1006 Y = 202 }
+          { X = -341 Y = -483 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosArchitrave01b"
+      InheritFrom = "1_BaseInvulnerableObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Architrave_01b"
+        ClearPoints = true
+        Offset = { X = 0 Y = -317 }
+        Points = [
+          { X = -1000 Y = -168 }
+          { X = 361 Y = 522 }
+          { X = 1006 Y = 202 }
+          { X = -341 Y = -483 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosTerrainBrick01b"
+      InheritFrom = "1_BaseTerrainTile"
+      CollisionDamagePerVelocity = 0.02
+      DisplayInEditor = true
+      Life = 
+      {
+        HitFx = "InvincibleHitSpark"
+        Invulnerable = true
+      }
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Terrain_Brick_01b"
+        Grip = 999999.0
+        MeshType = "Vertical"
+        OcclusionInterpolateDuration = 0.5
+        OcclusionOpacity = 0.5
+        StopsLight = true
+        StopsProjectiles = true
+        StopsUnits = true
+        TouchdownSound = "/EmptyCue"
+        Offset = { X = 0 Y = -43 }
+        Points = [
+          { X = -898 Y = 100 }
+          { X = -45 Y = 525 }
+          { X = 909 Y = 74 }
+          { X = 39 Y = -381 }
+        ]
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyStars01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Stars_01"
+        ClearPoints = true
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyStars02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Stars_02"
+        ClearPoints = true
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyStars03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "Tilesets\Chaos\Chaos_Stars_03"
+        ClearPoints = true
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyNebula01"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ChaosNebula01"
+        ClearPoints = true
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyNebula02"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ChaosNebula02"
+        ClearPoints = true
+      }
+    }
+    
+    {
+      Name = "ChaosGalaxyNebula03"
+      InheritFrom = "1_BaseDecalObstacle"
+      DisplayInEditor = true
+      Thing = 
+      {
+        EditorOutlineDrawBounds = false
+        Graphic = "ChaosNebula03"
+        ClearPoints = true
+      }
+    }
+  ]
+}
