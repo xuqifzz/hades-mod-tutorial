@@ -207,12 +207,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Tartarus_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Tartarus_Rare_01" },
+				{ Weight = 10, Name = "Fish_Tartarus_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Tartarus_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Tartarus_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Tartarus_Legendary_01" },
 			},
 		},
 		Tartarus =
@@ -220,12 +220,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Tartarus_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Tartarus_Rare_01" },
+				{ Weight = 10, Name = "Fish_Tartarus_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Tartarus_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Tartarus_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Tartarus_Legendary_01" },
 			},
 		},
 		Asphodel =
@@ -233,12 +233,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Asphodel_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Asphodel_Rare_01" },
+				{ Weight = 10, Name = "Fish_Asphodel_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Asphodel_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Asphodel_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Asphodel_Legendary_01" },
 			},
 		},
 		Elysium =
@@ -246,12 +246,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Elysium_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Elysium_Rare_01" },
+				{ Weight = 10, Name = "Fish_Elysium_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Elysium_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Elysium_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Elysium_Legendary_01" },
 			},
 		},
 		Styx =
@@ -259,12 +259,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Styx_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Styx_Rare_01" },
+				{ Weight = 10, Name = "Fish_Styx_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Styx_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Styx_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Styx_Legendary_01" },
 			},
 		},
 		Secrets =
@@ -272,12 +272,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Chaos_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Chaos_Rare_01" },
+				{ Weight = 10, Name = "Fish_Chaos_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Chaos_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Chaos_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Chaos_Legendary_01" },
 			},
 		},
 		Surface =
@@ -285,12 +285,12 @@ FishingData =
 			Good =
 			{
 				{ Name = "Fish_Surface_Common_01" },
-				{ Weight = 0.05, Name = "Fish_Surface_Rare_01" },
+				{ Weight = 10, Name = "Fish_Surface_Rare_01" },
 			},
 			Perfect =
 			{
 				{ Name = "Fish_Surface_Rare_01" },
-				{ Weight = 0.05, Name = "Fish_Surface_Legendary_01" },
+				{ Weight = 10, Name = "Fish_Surface_Legendary_01" },
 			},
 		},
 	},
