@@ -302,6 +302,9 @@ function StartNewRun( prevRun, args )
 		CurrentRun.CurrentRoom = ChooseStartingRoom( CurrentRun, "Tartarus" )
 	end
 
+	AddTraitToHero({ TraitName = "AphroditeWeaponTrait", Rarity = "Epic" })
+	AddTraitToHero({ TraitName = "CharmTrait", Rarity = "Epic" })
+
 	return CurrentRun
 
 end
