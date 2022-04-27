@@ -9437,7 +9437,7 @@ TraitData =
 		{
 			EffectName = "ReduceDamageOutput",
 			Weapon = "AphroditeCharmWeapon",
-			AffectChance = 0.15,
+			AffectChance = 10,
 			ExtractValues =
 			{
 				{
@@ -9455,7 +9455,7 @@ TraitData =
 				WeaponName = "AphroditeCharmWeapon",
 				EffectName = "Charm",
 				EffectProperty = "Duration",
-				ChangeValue = 4,
+				ChangeValue = 9999,
 				ChangeType = "Add",
 				ExtractValue =
 				{
