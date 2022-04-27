@@ -18990,6 +18990,20 @@ TraitData =
 
 	DistanceDamageTrait =
 	{
+		AddOutgoingLifestealModifiers =
+		{
+			ValidMultiplier = 0.05,
+			MaxLifesteal = 1,
+			MinLifesteal = 1,
+			ExtractValues =
+			{
+				{
+					Key = "MinLifesteal",
+					ExtractAs = "TooltipLifesteal",
+				},
+			}
+		},
+
 		Icon = "Keepsake_Memory",
 		EquipSound = "/SFX/Menu Sounds/KeepsakeOrpheysDistantMemoryJar",
 		InheritFrom = { "GiftTrait" },
