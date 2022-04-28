@@ -86,6 +86,30 @@ function DoAssist( unit )
 			_G[functionName]( assistData )
 		end
 		thread( AssistCompletePresentation, assistData )
+
+		if("NPC_Thanatos_01_Assist" == weaponName) then
+			local currentRun = CurrentRun
+			local currentRoom = CurrentRun.CurrentRoom
+		
+			local newUnit = DeepCopyTable( EnemyData.NPC_Thanatos_Field_01 )
+			newUnit.BlocksLootInteraction = false
+			local spawnPointId = SelectSpawnPoint( currentRoom, newUnit, { SpawnNearId = currentRun.Hero.ObjectId, SpawnRadius = 500 })
+			if spawnPointId == nil then
+				DebugPrint({ Text = "Thanatos no spawn point; spawning on player." })
+				spawnPointId = currentRun.Hero.ObjectId
+			end
+			newUnit.ObjectId = SpawnUnit({ Name = "NPC_Thanatos_Field_01", Group = "Standing", DestinationId = spawnPointId })
+		
+			SetupEnemyObject( newUnit, CurrentRun, { IgnoreAI = true, PreLoadBinks = true, } )
+			UseableOff({ Id = newUnit.ObjectId })
+			--ActivatedObjects[newUnit.ObjectId] = newUnit
+			newUnit.PostCombatAI = nil
+			
+			ThanatosSpawnPresentation( newUnit )
+			SetupAI( CurrentRun, newUnit )		
+			CurrentRun.CurrentRoom.DestroyAssistUnitOnEncounterEndId = newUnit.ObjectId
+		end
+
 		break
 	end
 	for i, traitData in pairs( unit.Traits ) do
