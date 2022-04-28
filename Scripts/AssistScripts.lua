@@ -40,7 +40,7 @@ function CanFireAssist()
 		end
 	end
 	for i, traitData in pairs( CurrentRun.Hero.Traits ) do
-		if traitData.AddAssist and traitData.RemainingUses == 0 then
+		if traitData.AddAssist and false then
 			return false
 		end
 	end
