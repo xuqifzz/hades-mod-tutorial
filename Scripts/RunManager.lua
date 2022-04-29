@@ -517,6 +517,11 @@ function ChooseNextRoomData( currentRun, args )
 	args = args or {}
 
 	local currentRoom = currentRun.CurrentRoom
+
+	if(currentRoom.ForceNextRoom ~= nil) then
+		return RoomData[currentRoom.ForceNextRoom]
+	end
+
 	local roomSetName = currentRun.CurrentRoom.RoomSetName or "Tartarus"
 	if args.ForceNextRoomSet ~= nil then
 		roomSetName = args.ForceNextRoomSet
