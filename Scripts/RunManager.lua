@@ -296,6 +296,12 @@ function StartNewRun( prevRun, args )
 	InitializeRewardStores( CurrentRun )
 	SelectBannedEliteAttributes( CurrentRun )
 
+	RoomData["A_Boss01"].ForceNextRoom = "B_Boss01"
+	RoomData["B_Boss01"].ForceNextRoom = "C_Boss01"
+	RoomData["C_Boss01"].ForceNextRoom = "D_Boss01"
+
+	args = {RoomName = "A_Boss01"}
+
 	if args ~= nil and args.RoomName ~= nil then
 		CurrentRun.CurrentRoom = CreateRoom( RoomData[args.RoomName], args )
 	else
