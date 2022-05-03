@@ -17451,6 +17451,7 @@ TraitData =
 		AddAssist =
 		{
 			WeaponName = "NPC_FurySister_01_Assist",
+			FunctionName = "HarpyAssist",
 			GameStateRequirements = {
 				CurrentRoomValueFalse = "BlockHadesAssistTraits",
 				RequiredFalseRooms = { "A_Boss01", "A_Boss02", "A_Boss03" },

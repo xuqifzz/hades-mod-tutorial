@@ -187,6 +187,27 @@ function SkellyAssist()
 	CurrentRun.CurrentRoom.TauntTargetId = newEnemy.ObjectId
 end
 
+function HarpyAssist()
+
+	local enemyName = "Harpy"
+	local enemyData = EnemyData[enemyName]
+	local newEnemy = DeepCopyTable( enemyData )
+	newEnemy.AlwaysTraitor = true
+	newEnemy.RequiredKill = false
+	newEnemy.OnDeathFunctionName = nil
+	newEnemy.BlocksLootInteraction = false
+
+	local invaderSpawnPoint = CurrentRun.Hero.ObjectId
+	newEnemy.ObjectId = SpawnUnit({
+			Name = enemyData.Name,
+			Group = "Standing",
+			DestinationId = invaderSpawnPoint, OffsetX = 0, OffsetY = 0 })
+
+	SetupEnemyObject( newEnemy, CurrentRun )
+	CurrentRun.CurrentRoom.DestroyAssistUnitOnEncounterEndId = newEnemy.ObjectId
+
+end
+
 function DusaAssist( assistData )
 
 	local enemyName = "DusaSummon"
