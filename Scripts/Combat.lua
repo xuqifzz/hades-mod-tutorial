@@ -1,4 +1,6 @@
-  OnProjectileReflect{
+Import "DamageLog.lua"
+
+OnProjectileReflect{
 	function( triggerArgs )
 		if CheckCooldown("ParryAttackPresentation", 0.25) then
 			thread( ParryAttackPresentation, triggerArgs.triggeredById )
