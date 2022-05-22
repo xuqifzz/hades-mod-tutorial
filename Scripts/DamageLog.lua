@@ -11,16 +11,47 @@ OnAnyLoad{ function()
         Text = "Hello World!", 
         FontSize = 20, 
         Color = {1,1,1,1}, 
-        Justification = "Left",
-        OffsetX = -50,
-        OffsetY = -100,
+        OffsetX = -500
      })
 
-     local damageCount = 0;
+     
      function OnDamage(victim,  triggerArgs)
-        -- Move({ Ids = objId, Angle = 180, Distance = 50, Speed = 1000 })
-        damageCount = damageCount + 1;
-        ModifyTextBox({ Id = objId, Text = "造成了" .. damageCount .. "次伤害"})   
+        local roundedAmount = round( triggerArgs.DamageAmount )
+        local victimName = victim.Name
+        local damageSourceName = triggerArgs.AttackerName
+        local damageProjectileSourceName = triggerArgs.EffectName or triggerArgs.SourceProjectile
+        if not triggerArgs.EffectName and triggerArgs.AttackerWeaponData then
+            damageProjectileSourceName = GetGenusName(triggerArgs.AttackerWeaponData)
+            if triggerArgs.AttackerWeaponData.DamageNumberGenusName then
+                damageProjectileSourceName = triggerArgs.AttackerWeaponData.DamageNumberGenusName
+            end
+        end
+        if(damageSourceName == nil) then
+            damageSourceName = "未知单位"
+        end
+        if(damageProjectileSourceName == nil) then
+            damageSourceName = "未知武器"
+        end
+    
+        if(damageSourceName == "_PlayerUnit") then
+            damageSourceName = "你"
+        end
+    
+        if(victim == CurrentRun.Hero) then
+            victimName = "你"
+        end
+
+        local LuaKey = "Data"
+        local LuaValue = { 
+            attackerName = damageSourceName,
+            victimName = victimName,
+            weaponName = damageProjectileSourceName,
+            amount = roundedAmount
+        }
+        local text ="{$Data.attackerName} 的 {$Data.weaponName} 对 {$Data.victimName} 造成了 {$Data.amount} 点伤害"
+       
+        ModifyTextBox({ Id = objId, Text = text, LuaKey = LuaKey, LuaValue =LuaValue})
+
      end
 
 end}
