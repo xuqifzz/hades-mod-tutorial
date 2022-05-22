@@ -16,13 +16,11 @@ OnAnyLoad{ function()
         OffsetY = -100,
      })
 
-     wait(2)
-     Move({ Ids = objId, Angle = 90, Distance = 200, Speed = 1000 })
-     wait(0.2)
-     Move({ Ids = objId, Angle = 180, Distance = 500, Speed = 1000 })
-     wait(0.5)
-     Move({ Ids = objId, Angle = 270, Distance = 200, Speed = 1000 })
-     wait(0.2)
-     Move({ Ids = objId, Angle = 0, Distance = 500, Speed = 1000 })
+     local damageCount = 0;
+     function OnDamage(victim,  triggerArgs)
+        -- Move({ Ids = objId, Angle = 180, Distance = 50, Speed = 1000 })
+        damageCount = damageCount + 1;
+        ModifyTextBox({ Id = objId, Text = "造成了" .. damageCount .. "次伤害"})   
+     end
 
 end}

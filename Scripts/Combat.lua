@@ -808,6 +808,10 @@ function Damage( victim, triggerArgs )
 		DamageEnemy( victim, triggerArgs )
 	end
 
+	if(OnDamage) then
+		OnDamage(victim,  triggerArgs )
+	end
+	
 	if BlockHeroDeath and victim == CurrentRun.Hero then
 		victim.CannotDieFromDamage = true
 	end
