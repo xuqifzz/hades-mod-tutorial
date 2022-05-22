@@ -3,7 +3,7 @@ OnAnyLoad{ function()
     local objId = CreateScreenObstacle({ Name = "BlankObstacle",  X = 1500, Y = 100})
 
     local damageItems = {}
-    
+
      function OnDamage(victim,  triggerArgs)
         local roundedAmount = round( triggerArgs.DamageAmount )
         local victimName = victim.Name
@@ -39,7 +39,7 @@ OnAnyLoad{ function()
         }
         local text ="{$Data.attackerName} 的 {$Data.weaponName} 对 {$Data.victimName} 造成了 {$Data.amount} 点伤害"
        
-        local itemId = CreateScreenObstacle({ Name = "rectangle01", X = 1500, Y = 100 + 25 * (#damageItems)})
+        local itemId = CreateScreenObstacle({ Name = "rectangle01"})
         SetScaleX({Id = itemId, Fraction = 10/6})
         SetScaleY({Id = itemId, Fraction = 0.1})
         SetColor({Id = itemId, Color = {0.5, 0.5, 0.5,0.2} })
@@ -54,6 +54,16 @@ OnAnyLoad{ function()
         })
 
         table.insert(damageItems,itemId)
+
+        while (#damageItems > 30) do
+            --  local removedId = table.remove(damageItems,1)
+            --  Destroy({Ids = { romovedItem.Id }})
+            Destroy({Ids = { table.remove(damageItems,1) }})
+        end
+       
+        for i=1,#damageItems do         
+           Attach({ Id = damageItems[i], DestinationId = objId,  OffsetY = 25 * i })           
+        end
 
      end
 
