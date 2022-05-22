@@ -1,20 +1,9 @@
 OnAnyLoad{ function()
 
-    local objId = CreateScreenObstacle({ Name = "rectangle01", X = 1400, Y = 500})
-    SetColor({ Id = objId, Color = {0, 0, 0, 0.5} })   
+    local objId = CreateScreenObstacle({ Name = "BlankObstacle",  X = 1500, Y = 100})
 
-    SetScaleX({ Id = objId, Fraction = 300 / 480 })
-    SetScaleY({ Id = objId, Fraction = 300 / 267 })
-
-    CreateTextBox({ 
-        Id = objId, 
-        Text = "Hello World!", 
-        FontSize = 20, 
-        Color = {1,1,1,1}, 
-        OffsetX = -500
-     })
-
-     
+    local damageItems = {}
+    
      function OnDamage(victim,  triggerArgs)
         local roundedAmount = round( triggerArgs.DamageAmount )
         local victimName = victim.Name
@@ -50,7 +39,21 @@ OnAnyLoad{ function()
         }
         local text ="{$Data.attackerName} 的 {$Data.weaponName} 对 {$Data.victimName} 造成了 {$Data.amount} 点伤害"
        
-        ModifyTextBox({ Id = objId, Text = text, LuaKey = LuaKey, LuaValue =LuaValue})
+        local itemId = CreateScreenObstacle({ Name = "rectangle01", X = 1500, Y = 100 + 25 * (#damageItems)})
+        SetScaleX({Id = itemId, Fraction = 10/6})
+        SetScaleY({Id = itemId, Fraction = 0.1})
+        SetColor({Id = itemId, Color = {0.5, 0.5, 0.5,0.2} })
+
+        CreateTextBox({ 
+            Id = itemId, 
+            Text = text, 
+            FontSize = 13, 
+            Color = {1,1,1,1}, 
+            LuaKey = LuaKey,
+            LuaValue = LuaValue
+        })
+
+        table.insert(damageItems,itemId)
 
      end
 
