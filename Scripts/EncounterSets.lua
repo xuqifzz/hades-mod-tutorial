@@ -41,6 +41,7 @@ EncounterSets =
 	{
 		{ FunctionName = "EncounterAudio" },
 		{ FunctionName = "HandleTrapChains" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
 		{ FunctionName = "PostCombatAudio" },
@@ -51,6 +52,7 @@ EncounterSets =
 	{
 		{ FunctionName = "EncounterAudio" },
 		{ FunctionName = "HandleTrapChains" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
 		{ FunctionName = "PostCombatAudio" },
@@ -61,6 +63,7 @@ EncounterSets =
 	{
 		{ FunctionName = "SurvivalEncounterStartPresentation" },
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "BeginSurvivalEncounter" },
 		{ FunctionName = "HandleTimedSpawns" },
 		{ FunctionName = "DisableRoomTraps" },
@@ -73,6 +76,7 @@ EncounterSets =
 	{
 		{ FunctionName = "PerfectClearEncounterStartPresentation" },
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "BeginPerfectClearEncounter" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
@@ -99,6 +103,7 @@ EncounterSets =
 	{
 		{ FunctionName = "WrappingEncounterStartPresentation" },
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "BeginWrappingEncounter" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
@@ -121,6 +126,7 @@ EncounterSets =
 	{
 		{ FunctionName = "EncounterAudio" },
 		{ FunctionName = "HandleTrapChains" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
 		{ FunctionName = "CrawlerMiniBossEndPresentation" },
@@ -132,6 +138,7 @@ EncounterSets =
 	{
 		{ FunctionName = "ChallengeEncounterStartPresentation" },
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
 		{ FunctionName = "PostCombatAudio" },
@@ -142,6 +149,7 @@ EncounterSets =
 	EncounterEventsOnslaught =
 	{
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleCoverSpawns" },
 		{ FunctionName = "SpawnOnslaughtObjects" },
 		{ FunctionName = "HandleEnemySpawns" },
@@ -159,6 +167,7 @@ EncounterSets =
 	EncounterEventsCharonFight =
 	{
 		{ FunctionName = "EncounterAudio" },
+		{ FunctionName = "HandleThanatosSpawn" },
 		{ FunctionName = "HandleEnemySpawns" },
 		{ FunctionName = "CheckForAllEnemiesDead" },
 		{ FunctionName = "PostCombatAudio" },
