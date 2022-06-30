@@ -662,7 +662,10 @@ end
 
 function HandleThanatosEncounterReward( thanatos, args )
 	local encounter = CurrentRun.CurrentRoom.Encounter
-
+	if not (encounter.ThanatosKills or encounter.PlayerKills ) then
+		encounter.ThanatosKills = 0;
+		encounter.PlayerKills = 2;
+	end
 	if (encounter.ThanatosKills or 0) > (encounter.PlayerKills or 0) then
 		-- Player loss
 		thread( MarkObjectiveComplete, "ThanatosKills" )
