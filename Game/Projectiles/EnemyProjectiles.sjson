@@ -1687,7 +1687,7 @@
       ImmunityDuration = 0.18
       Damage = 0.5
       MoveInterval = 0.19
-      DamagePerConsecutiveHit = 0.5
+      DamagePerConsecutiveHit = 0
 	  RoundDamageDown = true
       ConsecutiveHitWindow = 0.8
 	  IgnoreCoverageAngles = true
@@ -8740,7 +8740,7 @@
       MoveInterval = 0.19
 	  CanHitWithoutDamage = true
       Damage = 0
-      DamagePerConsecutiveHit = 0.5
+      DamagePerConsecutiveHit = 0
 	  RoundDamageDown = true
       ConsecutiveHitWindow = 0.8
       MaxVictimZ = 1
