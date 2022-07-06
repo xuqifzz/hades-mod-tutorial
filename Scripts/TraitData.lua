@@ -150,7 +150,7 @@ TraitData =
 		Frame = "Gift",
 		Slot = "Keepsake",
 		RecordCacheOnEquip = true,
-		ChamberThresholds =  { 25, 50 },
+		ChamberThresholds =  { 1, 1 },
 
 		RarityLevels =
 		{
