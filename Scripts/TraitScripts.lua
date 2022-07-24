@@ -1649,7 +1649,7 @@ function SetTraitsOnLoot( lootData, args )
 			upgradeOptions[i].Rarity = upgradeData.Rarity
 		elseif rarityTable.Legendary[upgradeData.ItemName] and lootData.RarityChances.Legendary and RandomChance( lootData.RarityChances.Legendary ) then
 			upgradeOptions[i].Rarity = "Legendary"
-		elseif rarityTable.Epic[upgradeData.ItemName] and lootData.RarityChances.Heroic and RandomChance( lootData.RarityChances.Heroic) then
+		elseif rarityTable.Heroic[upgradeData.ItemName] then
 			upgradeOptions[i].Rarity = "Heroic"
 		elseif rarityTable.Epic[upgradeData.ItemName] and lootData.RarityChances.Epic and RandomChance( lootData.RarityChances.Epic ) then
 			upgradeOptions[i].Rarity = "Epic"
@@ -1677,10 +1677,10 @@ function SetTraitsOnLoot( lootData, args )
 
 		local chosenUpgrade = nil
 		local chosenRarity = "Common"
-		if validRarities.Legendary and lootData.RarityChances.Legendary and RandomChance( lootData.RarityChances.Legendary ) then
+		if validRarities.Legendary  then
 			chosenRarity = "Legendary"
 			chosenUpgrade = GetRandomValue( rarityTable.Legendary )
-		elseif validRarities.Heroic and lootData.RarityChances.Heroic and RandomChance( lootData.RarityChances.Heroic ) then
+		elseif validRarities.Heroic  then
 			chosenRarity = "Heroic"
 			chosenUpgrade = GetRandomValue( rarityTable.Heroic )
 		elseif validRarities.Epic and lootData.RarityChances.Epic and RandomChance( lootData.RarityChances.Epic ) then
@@ -1731,15 +1731,15 @@ function SetTraitsOnLoot( lootData, args )
 
 		local chosenUpgrade = nil
 		local chosenRarity = "Common"
-		if validRarities.Rare and lootData.RarityChances.Rare then
-			chosenRarity = "Rare"
-			chosenUpgrade = GetRandomValue( rarityTable.Rare )
+		if validRarities.Heroic  then
+			chosenRarity = "Heroic"
+			chosenUpgrade = GetRandomValue( rarityTable.Heroic )
 		elseif validRarities.Epic and lootData.RarityChances.Epic then
 			chosenRarity = "Epic"
 			chosenUpgrade = GetRandomValue( rarityTable.Epic )
-		elseif validRarities.Heroic and lootData.RarityChances.Heroic then
-			chosenRarity = "Heroic"
-			chosenUpgrade = GetRandomValue( rarityTable.Heroic )
+		elseif validRarities.Rare and lootData.RarityChances.Rare then
+			chosenRarity = "Rare"
+			chosenUpgrade = GetRandomValue( rarityTable.Rare )
 		elseif validRarities.Legendary and lootData.RarityChances.Legendary then
 			chosenRarity = "Legendary"
 			chosenUpgrade = GetRandomValue( rarityTable.Legendary )
