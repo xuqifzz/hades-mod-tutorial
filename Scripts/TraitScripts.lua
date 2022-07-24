@@ -1529,7 +1529,7 @@ function SetTransformingTraitsOnLoot( lootData, upgradeChoiceData )
 		else
 			upgradeData.Rarity = "Common"
 		end
-
+		upgradeData.Rarity = "Epic"
 		table.insert( upgradeOptions, upgradeData )
 	end
 	lootData.UpgradeOptions = upgradeOptions
