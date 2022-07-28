@@ -754,7 +754,7 @@ function ChooseEncounter( currentRun, room )
 		ForceNextEncounter = nil
 	elseif currentRun.ForceNextEncounterData ~= nil then
 		encounterData = currentRun.ForceNextEncounterData
-	elseif HasHeroTraitValue( "ForceThanatosEncounter" ) then
+	elseif true then
 		local legalEncounters = {}
 		for i, encounterName in pairs( EncounterSets.ThanatosEncounters ) do
 			if IsEncounterEligible( currentRun, room, EncounterData[encounterName] ) then
