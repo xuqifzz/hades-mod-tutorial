@@ -4913,7 +4913,7 @@ EncounterData =
 		StartRoomUnthreadedEvents =
 		{
 			{ FunctionName = "SpawnRoomReward" },
-			{ FunctionName = "CheckForbiddenShopItem", GameStateRequirements = { ChanceToPlay = 0.22, RequiredMinRunsCleared = 1, CurrentRunValueFalse = "ForbiddenShopItemOffered", } },
+			{ FunctionName = "CheckForbiddenShopItem", GameStateRequirements = { ChanceToPlay = 1, RequiredMinRunsCleared = 1,  } },
 		},
 		DistanceTriggers =
 		{
