@@ -1709,7 +1709,7 @@ end
 
 function ReachedMaxGods( excludedGods )
 	excludedGods = excludedGods or {}
-	local maxLootTypes = 4
+	local maxLootTypes = 1
 	local gods = ShallowCopyTable( excludedGods )
 	for i, godName in pairs(GetInteractedGodsThisRun()) do
 		if not Contains( gods, godName ) then
