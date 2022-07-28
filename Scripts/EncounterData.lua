@@ -1059,7 +1059,7 @@ EncounterData =
 		EnemySet = EnemySets.EnemiesBiome1Thanatos,
 		ActiveEnemyCapBase = 7,
 
-		RequiredMinBiomeDepth = 9,
+		RequiredMinBiomeDepth = 1,
 
 		HardEncounterOverrideValues =
 		{
