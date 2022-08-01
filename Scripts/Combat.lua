@@ -2388,8 +2388,8 @@ function DoSpearCharge()
 
 	local spearWeaponStages =
 	{
-		{ OverrideFire = "SpearWeaponSpin2", Wait = 0.33 },
-		{ OverrideFire = "SpearWeaponSpin3", Wait = 0.66 },
+		{ OverrideFire = "SpearWeaponSpin2", Wait = 0.1 },
+		{ OverrideFire = "SpearWeaponSpin3", Wait = 0.1 },
 	}
 
 	if HeroHasTrait( "SpearSpinChargeLevelTime" ) then
