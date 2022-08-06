@@ -1353,6 +1353,40 @@ function AttemptReroll( run, target )
 	RemoveInputBlock({ Name = "AttemptReroll" })
 end
 
+function CodexMain(triggerArgs)
+	if CodexUI.Screen == nil or not IsScreenOpen("Codex") or not CurrentRun  then
+		return
+	end
+	CurrentRun.XBoonList = {
+		"ZeusUpgrade",
+		"PoseidonUpgrade",
+		"AthenaUpgrade",
+		"AphroditeUpgrade",
+		"ArtemisUpgrade",
+		"AresUpgrade",
+		"DionysusUpgrade",		
+		"DemeterUpgrade",
+		"WeaponUpgrade"
+	}
+	CurrentRun.OtherUpgradeList ={
+		"WeaponUpgrade",
+		"HermesUpgrade",
+	}
+	local selection = CodexStatus.SelectedEntryNames[CodexStatus.SelectedChapterName]
+	if(Contains(CurrentRun.XBoonList,selection) or Contains(CurrentRun.OtherUpgradeList,selection)) then
+		CurrentRun.NextReollForceReward = selection
+		CloseCodexScreen()
+	end
+
+
+end
+
+OnControlPressed{ "Confirm",
+	function( triggerArgs )
+		CodexMain(triggerArgs)
+	end
+}
+
 function AttemptRerollDoor( run, door )
 
 	local room = door.Room
@@ -1382,7 +1416,22 @@ function AttemptRerollDoor( run, door )
 
 	run.CurrentRoom.DeferReward = false
 	room.ChosenRewardType = ChooseRoomReward( run, room, room.RewardStoreName, rewardsChosen, { IgnoreGameStateRequirements = true, } )
+	
+	local isForceBoon = false;
+	if(CurrentRun.NextReollForceReward) then
+		if(Contains(CurrentRun.XBoonList,CurrentRun.NextReollForceReward)) then
+			isForceBoon = true
+			room.ChosenRewardType = "Boon"
+		else
+			room.ChosenRewardType = CurrentRun.NextReollForceReward
+		end
+	end
+
 	SetupRoomReward( run, room, rewardsChosen )
+	
+	if(isForceBoon) then room.ForceLootName = CurrentRun.NextReollForceReward end
+	CurrentRun.NextReollForceReward = nil
+	
 	run.CurrentRoom.OfferedRewards[door.ObjectId] = { Type = room.ChosenRewardType, ForceLootName = room.ForceLootName, UseOptionalOverrides = room.UseOptionalOverrides }
 
 	CreateDoorRewardPreview( door )
