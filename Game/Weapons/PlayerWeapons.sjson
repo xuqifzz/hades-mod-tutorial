@@ -3027,7 +3027,7 @@
       ScatterSubside = 170
       ScatterCap = 35
       TriggerTapIgnoresCooldown = false
-      MaxAmmo = 12
+      MaxAmmo = 9999
       CanCancelDisables = false
       AllowExternalForceRelease = false
       TriggersStoredAmmoVulnerability = true
