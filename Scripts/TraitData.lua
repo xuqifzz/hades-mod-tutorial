@@ -39353,7 +39353,7 @@ TraitData =
 			{
 				WeaponName = "GunWeapon",
 				WeaponProperty = "MaxAmmo",
-				ChangeValue = 20,
+				ChangeValue = 9999,
 				ChangeType = "Absolute",
 				ExtractValue =
 				{
