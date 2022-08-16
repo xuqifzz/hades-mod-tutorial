@@ -104,7 +104,8 @@ OnWeaponFired{ "GunWeapon GunWeaponDash SniperGunWeapon SniperGunWeaponDash",
 		end
 
 		if triggerArgs.name == "SniperGunWeapon" then
-			SwapWeapon({ Name = triggerArgs.name, SwapWeaponName = "GunWeapon", StompOriginalWeapon = true, DestinationId = CurrentRun.Hero.ObjectId, RequireCurrentControl = true })
+			--SwapWeapon({ Name = triggerArgs.name, SwapWeaponName = "GunWeapon", StompOriginalWeapon = true, DestinationId = CurrentRun.Hero.ObjectId, RequireCurrentControl = true })
+			return
 		elseif triggerArgs.name == "SniperGunWeaponDash" then
 			SwapWeapon({ Name = triggerArgs.name, SwapWeaponName = "GunWeapon", StompOriginalWeapon = true, DestinationId = CurrentRun.Hero.ObjectId, RequireCurrentControl = true })
 		end
