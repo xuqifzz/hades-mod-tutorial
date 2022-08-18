@@ -39870,23 +39870,23 @@ TraitData =
 			},
 			Rare =
 			{
-				MinMultiplier = 4/5,
-				MaxMultiplier = 4/5,
+				MinMultiplier = 1,
+				MaxMultiplier = 1,
 			},
 			Epic =
 			{
-				MinMultiplier = 3/5,
-				MaxMultiplier = 3/5,
+				MinMultiplier = 1,
+				MaxMultiplier = 1,
 			},
 			Heroic =
 			{
-				MinMultiplier = 2/5,
-				MaxMultiplier = 2/5,
+				MinMultiplier = 1,
+				MaxMultiplier = 1
 			},
 			Legendary =
 			{
-				MinMultiplier = 1/5,
-				MaxMultiplier = 1/5,
+				MinMultiplier = 1,
+				MaxMultiplier = 1,
 			},
 		},
 		WeaponBinks =
@@ -39945,7 +39945,7 @@ TraitData =
 			{
 				WeaponNames = { "BowSplitShot" },
 				WeaponProperty = "NumProjectiles",
-				BaseValue = -5,
+				BaseValue = 10,
 				ChangeType = "Add",
 				ExcludeLinked = true,
 			},
