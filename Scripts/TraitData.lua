@@ -42483,9 +42483,15 @@ TraitData =
 		RequiredMetaUpgradeSelected = "AmmoMetaUpgrade",
 		AmmoDropUseDelay =
 		{
-			BaseMin = 10,
-			BaseMax = 15,
-			ToNearest = 0.25,
+			BaseMin = 60,
+			BaseMax = 60,
+		--	ToNearest = 0.25,
+		},
+		RemainingUses =
+		{
+			BaseMin = 99,
+			BaseMax = 99,
+			AsInt = true,
 		},
 	},
 
