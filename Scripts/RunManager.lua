@@ -302,6 +302,8 @@ function StartNewRun( prevRun, args )
 		CurrentRun.CurrentRoom = ChooseStartingRoom( CurrentRun, "Tartarus" )
 	end
 
+	AddTraitToHero({TraitName = "ChaosCurseAmmoUseDelayTrait"})
+	
 	return CurrentRun
 
 end
