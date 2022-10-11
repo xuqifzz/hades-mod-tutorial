@@ -2841,7 +2841,7 @@ function CreateLoot( args )
 	loot.ObjectId = lootId
 	loot.BlockExitText = "ExitBlockedByBoon"
 	loot.BoughtFromShop = args.BoughtFromShop
-	loot.StackNum = args.StackNum
+	loot.StackNum = 5
 	loot.ExchangeOnlyFromLootName = args.ExchangeOnlyFromLootName
 
 	if args.AddBoostedAnimation then
