@@ -18343,7 +18343,7 @@ TraitData =
 		},
 		RoomsPerUpgrade = 
 		{ 
-			BaseValue = 6, 
+			BaseValue = 1, 
 			AsInt = true,
 		},
 		ExtractValues = 
