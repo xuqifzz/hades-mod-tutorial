@@ -302,6 +302,11 @@ function StartNewRun( prevRun, args )
 		CurrentRun.CurrentRoom = ChooseStartingRoom( CurrentRun, "Tartarus" )
 	end
 
+	if(HeroHasTrait("SpearSpinTravel")) then
+		AddTraitToHero({ TraitName = "SpearSpinDamageRadius"})
+		AddTraitToHero({ TraitName = "SpearSpinChargeLevelTime"})
+	end
+
 	return CurrentRun
 
 end
