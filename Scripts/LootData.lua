@@ -20924,7 +20924,7 @@ RewardStoreData =
 			Name = "WeaponUpgrade",
 			GameStateRequirements =
 			{
-				RequiredMaxWeaponUpgrades = 0,
+				--RequiredMaxWeaponUpgrades = 0,
 				RequiredNotInStore = "WeaponUpgradeDrop",
 				RequiredMinCompletedRuns = 3,
 			}
