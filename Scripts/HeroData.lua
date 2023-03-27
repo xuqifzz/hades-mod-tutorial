@@ -35,7 +35,7 @@ HeroData =
 		TriggersOnDamageEffects = true,
 		TriggersOnHitEffects = true,
 
-		ComboThreshold = 12,
+		ComboThreshold = 1,
 
 		CanBeFrozen = true,
 		FreezeTimeReductionPerInput = 1.3,
