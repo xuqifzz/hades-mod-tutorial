@@ -4097,7 +4097,7 @@
     {
       Id = "AchillesAspect"
       DisplayName = "冲锋陷阵"
-      Description = "按 {A3} 冲到你的矛的位置，被撞的敌人会受到伤害。接下来的 {#BoldFormatGraft}4 {#PreviousFormat}次 {$Keywords.AttackPlural} 或 {$Keywords.CastPlural} 可造成更高伤害。"
+      Description = "按 {A3} 冲到你的矛的位置，被撞的敌人会受到伤害。接下来的 {#BoldFormatGraft}99 {#PreviousFormat}次 {$Keywords.AttackPlural} 或 {$Keywords.CastPlural} 可造成更高伤害。"
     }
     {
       Id = "HadesAspect"
