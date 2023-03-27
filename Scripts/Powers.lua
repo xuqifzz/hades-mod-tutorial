@@ -330,7 +330,7 @@ end
 function SpearRushBonusApply( triggerArgs )
 	if not triggerArgs.Reapplied then
 		local validWeapons = ConcatTableValues( DeepCopyTable( WeaponSets.HeroRangedWeapons ), AddLinkedWeapons( WeaponSets.HeroPhysicalWeapons ))
-		AddLimitedWeaponBonus({ AsMultiplier = true, EffectName = triggerArgs.EffectName, Amount = 4, DamageBonus = triggerArgs.Modifier, WeaponNames = validWeapons } )
+		AddLimitedWeaponBonus({ AsMultiplier = true, EffectName = triggerArgs.EffectName, Amount = 99, DamageBonus = triggerArgs.Modifier, WeaponNames = validWeapons } )
 	end
 end
 
