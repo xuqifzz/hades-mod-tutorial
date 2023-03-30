@@ -23495,7 +23495,7 @@ TraitData =
 			{
 				WeaponName = "ChaosShieldThrow",
 				WeaponProperty = "NumProjectiles",
-				BaseValue = 1,
+				BaseValue = 2,
 				ChangeType = "Absolute",
 				ExcludeLinked = true,
 				ExtractValue =
