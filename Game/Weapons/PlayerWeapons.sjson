@@ -548,8 +548,8 @@
       ChargeFinishFx = "null"
       SelfVelocity = 0
       ReloadTime = 0.3
-      MinChargeToFire = 0.2
-      ChargeTime = 0.6
+      MinChargeToFire = 0.01
+      ChargeTime = 0.01
       ChargeRumbleRight = 0.0
       BelowMinChargeCooldown = 0.02
       DisableOwnerForDuration = 0.0
@@ -681,8 +681,8 @@
       SelfVelocity = 0
       ChargeStartFx = "BowChargeFast"
       Cooldown = 0.02
-      MinChargeToFire = 0.3
-      ChargeTime = 0.4
+      MinChargeToFire = 0.01
+      ChargeTime = 0.01
       ChargeRumbleRight = 0.0
       CanCancelDisables = true
       CanCancelOwnDisables = true
