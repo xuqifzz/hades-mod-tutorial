@@ -3822,7 +3822,7 @@
         {
           Name = "GrenadeSelfDamageOutput"
           Type = "DAMAGE_OUTPUT"
-          Duration = 4.0
+          Duration = 99.0
           Modifier = 1.0
           CanAffectInvulnerable = true
           FrontFx = "ErisPowerUpFx"
