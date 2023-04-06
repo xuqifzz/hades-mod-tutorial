@@ -3180,17 +3180,17 @@
     {
       Id = "GunGrenadeSelfEmpowerTrait"
       DisplayName = "厄里斯形态"
-      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}4 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P} \n\n {#ItalicFormatDark}纷争女神曾带着它潜逃，就因为它具有毁灭性的诱惑。"
+      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}99 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P} \n\n {#ItalicFormatDark}纷争女神曾带着它潜逃，就因为它具有毁灭性的诱惑。"
     }
     {
       Id = "GunGrenadeSelfEmpowerTrait_Delta"
       InheritFrom = "GunGrenadeSelfEmpowerTrait"
-      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}4 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}纷争女神曾带着它潜逃，就因为它具有毁灭性的诱惑。"
+      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}99 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}纷争女神曾带着它潜逃，就因为它具有毁灭性的诱惑。"
     }
     {
       Id = "GunGrenadeSelfEmpowerTrait_Tray"
       InheritFrom = "GunGrenadeSelfEmpowerTrait"
-      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}4 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+      Description = "被自己的{$Keywords.Special}击中后，所有攻击造成更高伤害。效果持续 {#BoldFormat}99 {#PreviousFormat}秒。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成：\Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
     }
     {
       Id = "GunLoadedGrenadeTrait"
