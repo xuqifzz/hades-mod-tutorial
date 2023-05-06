@@ -993,8 +993,8 @@
       FireGraphic = "ZagreusShieldAttackFire"
       FireOnRelease = true
       Cooldown = 0
-      MinChargeToFire = 0.2
-      ChargeTime = 0.8
+      MinChargeToFire = 0.01
+      ChargeTime = 0.01
       ShowFreeAimLine = true
       AimLineAnimation = "AuraAimLineShield"
       SelfVelocity = 600
