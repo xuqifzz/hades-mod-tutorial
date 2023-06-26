@@ -3224,7 +3224,7 @@
       CancelMovement = true
       ChargeCancelMovement = true
       ClipSize = 1
-      ReloadTime = 1.5
+      ReloadTime = 0.1
       ReloadOnCreation = false
       ChargeStartAnimation = "ZagreusGunGrenadeTossCharge"
       FireGraphic = "ZagreusGunGrenadeTossFire"
