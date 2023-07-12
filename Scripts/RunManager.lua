@@ -301,7 +301,7 @@ function StartNewRun( prevRun, args )
 	else
 		CurrentRun.CurrentRoom = ChooseStartingRoom( CurrentRun, "Tartarus" )
 	end
-
+	CurrentRun.CurrentRoom.ChosenRewardType = "WeaponUpgrade"
 	return CurrentRun
 
 end
